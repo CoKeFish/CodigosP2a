@@ -1,0 +1,1579 @@
+[p GLOBOPT AUTOSTATIC IEEE_FLT IEEE_DBL LFSROK EMI_WORD ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 18F46K42 ]
+[d frameptr 16353 ]
+"69 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/i2c_host/src/i2c2.c
+[e E16163 . `uc
+I2C_ERROR_NONE 0
+I2C_ERROR_ADDR_NACK 1
+I2C_ERROR_DATA_NACK 2
+I2C_ERROR_BUS_COLLISION 3
+]
+"106 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/adc/src/adcc.c
+[e E15846 . `uc
+channel_VSS 59
+channel_Temp 60
+channel_DAC1 61
+channel_FVR_Buffer1 62
+channel_FVR_Buffer2 63
+channel_ANA0 0
+channel_ANA1 1
+]
+"4 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\fleq.c
+[v ___fleq __fleq `(b  1 e 0 0 ]
+"62 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\float.c
+[v ___ftpack __ftpack `(f  1 e 4 0 ]
+"86 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 4 0 ]
+"54 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 4 0 ]
+"62 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 4 0 ]
+"19 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 4 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"245
+[v ___flsub __flsub `(d  1 e 4 0 ]
+"11 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+"8 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+"15 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"91 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\Umul64.c
+[v ___omul __omul `(uo  1 e 8 0 ]
+"39 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\main.c
+[v _main main `(i  1 e 2 0 ]
+"47 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/adc/src/adcc.c
+[v _ADCC_Initialize ADCC_Initialize `(v  1 e 1 0 ]
+"286
+[v _ADCC_ISR ADCC_ISR `IIH(v  1 e 1 0 ]
+"297
+[v _ADCC_SetADIInterruptHandler ADCC_SetADIInterruptHandler `(v  1 e 1 0 ]
+"302
+[v _ADCC_DefaultADI_ISR ADCC_DefaultADI_ISR `(v  1 s 1 ADCC_DefaultADI_ISR ]
+"43 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/fvr/src/fvr.c
+[v _FVR_Initialize FVR_Initialize `(v  1 e 1 0 ]
+"91 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/i2c_host/src/i2c2.c
+[v _I2C2_Initialize I2C2_Initialize `(v  1 e 1 0 ]
+"133
+[v _I2C2_Deinitialize I2C2_Deinitialize `(v  1 e 1 0 ]
+"147
+[v _I2C2_Write I2C2_Write `(a  1 e 1 0 ]
+"166
+[v _I2C2_Read I2C2_Read `(a  1 e 1 0 ]
+"185
+[v _I2C2_WriteRead I2C2_WriteRead `(a  1 e 1 0 ]
+"204
+[v _I2C2_ErrorGet I2C2_ErrorGet `(E16163  1 e 1 0 ]
+"211
+[v _I2C2_IsBusy I2C2_IsBusy `(a  1 e 1 0 ]
+"216
+[v _I2C2_CallbackRegister I2C2_CallbackRegister `(v  1 e 1 0 ]
+"224
+[v _I2C2_ISR I2C2_ISR `IIH(v  1 e 1 0 ]
+"253
+[v _I2C2_ERROR_ISR I2C2_ERROR_ISR `IIH(v  1 e 1 0 ]
+"289
+[v _I2C2_RX_ISR I2C2_RX_ISR `IIH(v  1 e 1 0 ]
+"294
+[v _I2C2_TX_ISR I2C2_TX_ISR `IIH(v  1 e 1 0 ]
+"302
+[v _I2C2_ReadStart I2C2_ReadStart `(v  1 s 1 I2C2_ReadStart ]
+"313
+[v _I2C2_WriteStart I2C2_WriteStart `(v  1 s 1 I2C2_WriteStart ]
+"328
+[v _I2C2_Close I2C2_Close `(v  1 s 1 I2C2_Close ]
+"339
+[v _I2C2_DefaultCallback I2C2_DefaultCallback `(v  1 s 1 I2C2_DefaultCallback ]
+"347
+[v _I2C2_StartSend I2C2_StartSend `(v  1 s 1 I2C2_StartSend ]
+"352
+[v _I2C2_AddrTransmit I2C2_AddrTransmit `(v  1 s 1 I2C2_AddrTransmit ]
+"357
+[v _I2C2_DataTransmit I2C2_DataTransmit `(v  1 s 1 I2C2_DataTransmit ]
+"362
+[v _I2C2_DataReceive I2C2_DataReceive `(uc  1 s 1 I2C2_DataReceive ]
+"367
+[v _I2C2_CounterSet I2C2_CounterSet `(v  1 s 1 I2C2_CounterSet ]
+"372
+[v _I2C2_CounterGet I2C2_CounterGet `(uc  1 s 1 I2C2_CounterGet ]
+"377
+[v _I2C2_BusReset I2C2_BusReset `T(v  1 s 1 I2C2_BusReset ]
+"403
+[v _I2C2_RestartEnable I2C2_RestartEnable `T(v  1 s 1 I2C2_RestartEnable ]
+"408
+[v _I2C2_RestartDisable I2C2_RestartDisable `T(v  1 s 1 I2C2_RestartDisable ]
+"413
+[v _I2C2_StopSend I2C2_StopSend `(v  1 s 1 I2C2_StopSend ]
+"423
+[v _I2C2_IsNack I2C2_IsNack `(a  1 s 1 I2C2_IsNack ]
+"428
+[v _I2C2_IsBusCol I2C2_IsBusCol `(a  1 s 1 I2C2_IsBusCol ]
+"433
+[v _I2C2_IsBusTimeOut I2C2_IsBusTimeOut `(a  1 s 1 I2C2_IsBusTimeOut ]
+"438
+[v _I2C2_IsData I2C2_IsData `(a  1 s 1 I2C2_IsData ]
+"443
+[v _I2C2_IsAddr I2C2_IsAddr `(a  1 s 1 I2C2_IsAddr ]
+"448
+[v _I2C2_InterruptsEnable I2C2_InterruptsEnable `T(v  1 s 1 I2C2_InterruptsEnable ]
+[v i2_I2C2_InterruptsEnable I2C2_InterruptsEnable `T(v  1 s 1 i2_I2C2_InterruptsEnable ]
+"461
+[v _I2C2_InterruptsDisable I2C2_InterruptsDisable `T(v  1 s 1 I2C2_InterruptsDisable ]
+"471
+[v _I2C2_InterruptsClear I2C2_InterruptsClear `T(v  1 s 1 I2C2_InterruptsClear ]
+"476
+[v _I2C2_ErrorFlagsClear I2C2_ErrorFlagsClear `T(v  1 s 1 I2C2_ErrorFlagsClear ]
+"483
+[v _I2C2_BufferClear I2C2_BufferClear `T(v  1 s 1 I2C2_BufferClear ]
+"26 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/peripheral/src/i2c1.c
+[v _I2C1_Initialize I2C1_Initialize `(v  1 e 1 0 ]
+"26 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/peripheral/src/uart2.c
+[v _UART2_Initialize UART2_Initialize `(v  1 e 1 0 ]
+"70 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/spi/src/spi1.c
+[v _SPI_Initialize SPI_Initialize `(v  1 e 1 0 ]
+"85
+[v _SPI_Open SPI_Open `(a  1 e 1 0 ]
+"101
+[v _SPI_Close SPI_Close `(v  1 e 1 0 ]
+"106
+[v _SPI_ByteExchange SPI_ByteExchange `(uc  1 e 1 0 ]
+"114
+[v _SPI_BufferExchange SPI_BufferExchange `(v  1 e 1 0 ]
+"127
+[v _SPI_BufferWrite SPI_BufferWrite `(v  1 e 1 0 ]
+"136
+[v _SPI_BufferRead SPI_BufferRead `(v  1 e 1 0 ]
+"145
+[v _SPI_ByteWrite SPI_ByteWrite `(v  1 e 1 0 ]
+"150
+[v _SPI_ByteRead SPI_ByteRead `(uc  1 e 1 0 ]
+"37 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/clock.c
+[v _CLOCK_Initialize CLOCK_Initialize `(v  1 e 1 0 ]
+"42 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
+[v _INTERRUPT_Initialize INTERRUPT_Initialize `(v  1 e 1 0 ]
+"97
+[v _Default_ISR Default_ISR `IIH(v  1 e 1 0 ]
+"101
+[v _IOC_ISR IOC_ISR `IIH(v  1 e 1 0 ]
+"114
+[v _INT0_ISR INT0_ISR `IIH(v  1 e 1 0 ]
+"123
+[v _INT0_CallBack INT0_CallBack `(v  1 e 1 0 ]
+"132
+[v _INT0_SetInterruptHandler INT0_SetInterruptHandler `(v  1 e 1 0 ]
+"136
+[v _INT0_DefaultInterruptHandler INT0_DefaultInterruptHandler `(v  1 e 1 0 ]
+"148
+[v _INT1_ISR INT1_ISR `IIH(v  1 e 1 0 ]
+"157
+[v _INT1_CallBack INT1_CallBack `(v  1 e 1 0 ]
+"166
+[v _INT1_SetInterruptHandler INT1_SetInterruptHandler `(v  1 e 1 0 ]
+"170
+[v _INT1_DefaultInterruptHandler INT1_DefaultInterruptHandler `(v  1 e 1 0 ]
+"182
+[v _INT2_ISR INT2_ISR `IIL(v  1 e 1 0 ]
+"191
+[v _INT2_CallBack INT2_CallBack `(v  1 e 1 0 ]
+"200
+[v _INT2_SetInterruptHandler INT2_SetInterruptHandler `(v  1 e 1 0 ]
+"204
+[v _INT2_DefaultInterruptHandler INT2_DefaultInterruptHandler `(v  1 e 1 0 ]
+"38 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/pins.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+"145
+[v _PIN_MANAGER_IOC PIN_MANAGER_IOC `(v  1 e 1 0 ]
+"36 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/system.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+"118 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
+[v _UART1_Initialize UART1_Initialize `(v  1 e 1 0 ]
+"180
+[v _UART1_Deinitialize UART1_Deinitialize `(v  1 e 1 0 ]
+"215
+[v _UART1_TransmitEnable UART1_TransmitEnable `T(v  1 e 1 0 ]
+"220
+[v _UART1_TransmitDisable UART1_TransmitDisable `T(v  1 e 1 0 ]
+"245
+[v _UART1_AutoBaudSet UART1_AutoBaudSet `T(v  1 e 1 0 ]
+"258
+[v _UART1_AutoBaudQuery UART1_AutoBaudQuery `T(a  1 e 1 0 ]
+"297
+[v _UART1_IsRxReady UART1_IsRxReady `(a  1 e 1 0 ]
+"302
+[v _UART1_IsTxReady UART1_IsTxReady `(a  1 e 1 0 ]
+"307
+[v _UART1_IsTxDone UART1_IsTxDone `(a  1 e 1 0 ]
+"312
+[v _UART1_ErrorGet UART1_ErrorGet `(ui  1 e 2 0 ]
+"319
+[v _UART1_Read UART1_Read `(uc  1 e 1 0 ]
+"336
+[v _UART1_Receive_Vector_ISR UART1_Receive_Vector_ISR `IIH(v  1 e 1 0 ]
+"341
+[v _UART1_ReceiveISR UART1_ReceiveISR `(v  1 e 1 0 ]
+"385
+[v _UART1_Write UART1_Write `(v  1 e 1 0 ]
+"409
+[v _UART1_Transmit_Vector_ISR UART1_Transmit_Vector_ISR `IIH(v  1 e 1 0 ]
+"414
+[v _UART1_TransmitISR UART1_TransmitISR `(v  1 e 1 0 ]
+"440
+[v _UART1_DefaultFramingErrorCallback UART1_DefaultFramingErrorCallback `(v  1 s 1 UART1_DefaultFramingErrorCallback ]
+"445
+[v _UART1_DefaultOverrunErrorCallback UART1_DefaultOverrunErrorCallback `(v  1 s 1 UART1_DefaultOverrunErrorCallback ]
+"450
+[v _UART1_DefaultParityErrorCallback UART1_DefaultParityErrorCallback `(v  1 s 1 UART1_DefaultParityErrorCallback ]
+"455
+[v _UART1_FramingErrorCallbackRegister UART1_FramingErrorCallbackRegister `(v  1 e 1 0 ]
+"463
+[v _UART1_OverrunErrorCallbackRegister UART1_OverrunErrorCallbackRegister `(v  1 e 1 0 ]
+"471
+[v _UART1_ParityErrorCallbackRegister UART1_ParityErrorCallbackRegister `(v  1 e 1 0 ]
+"478
+[v _UART1_RxCompleteCallbackRegister UART1_RxCompleteCallbackRegister `(v  1 e 1 0 ]
+"486
+[v _UART1_TxCompleteCallbackRegister UART1_TxCompleteCallbackRegister `(v  1 e 1 0 ]
+[s S216 . 1 `uc 1 SWIP 1 0 :1:0 
+`uc 1 HLVDIP 1 0 :1:1 
+`uc 1 OSFIP 1 0 :1:2 
+`uc 1 CSWIP 1 0 :1:3 
+`uc 1 NVMIP 1 0 :1:4 
+`uc 1 SCANIP 1 0 :1:5 
+`uc 1 CRCIP 1 0 :1:6 
+`uc 1 IOCIP 1 0 :1:7 
+]
+"2782 D:/Program Files/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h
+[u S225 . 1 `S216 1 . 1 0 ]
+[v _IPR0bits IPR0bits `VES225  1 e 1 @14720 ]
+[s S237 . 1 `uc 1 INT0IP 1 0 :1:0 
+`uc 1 ZCDIP 1 0 :1:1 
+`uc 1 ADIP 1 0 :1:2 
+`uc 1 ADTIP 1 0 :1:3 
+`uc 1 C1IP 1 0 :1:4 
+`uc 1 SMT1IP 1 0 :1:5 
+`uc 1 SMT1PRAIP 1 0 :1:6 
+`uc 1 SMT1PWAIP 1 0 :1:7 
+]
+"2844
+[u S246 . 1 `S237 1 . 1 0 ]
+[v _IPR1bits IPR1bits `VES246  1 e 1 @14721 ]
+[s S258 . 1 `uc 1 I2C1TXIP 1 0 :1:0 
+`uc 1 I2C1IP 1 0 :1:1 
+`uc 1 I2C1EIP 1 0 :1:2 
+`uc 1 U1RXIP 1 0 :1:3 
+`uc 1 U1TXIP 1 0 :1:4 
+`uc 1 U1EIP 1 0 :1:5 
+`uc 1 U1IP 1 0 :1:6 
+`uc 1 TMR0IP 1 0 :1:7 
+]
+"2968
+[u S267 . 1 `S258 1 . 1 0 ]
+[v _IPR3bits IPR3bits `VES267  1 e 1 @14723 ]
+[s S279 . 1 `uc 1 INT1IP 1 0 :1:0 
+`uc 1 C2IP 1 0 :1:1 
+`uc 1 DMA2SCNTIP 1 0 :1:2 
+`uc 1 DMA2DCNTIP 1 0 :1:3 
+`uc 1 DMA2ORIP 1 0 :1:4 
+`uc 1 DMA2AIP 1 0 :1:5 
+`uc 1 I2C2RXIP 1 0 :1:6 
+`uc 1 I2C2TXIP 1 0 :1:7 
+]
+"3087
+[u S288 . 1 `S279 1 . 1 0 ]
+[v _IPR5bits IPR5bits `VES288  1 e 1 @14725 ]
+[s S300 . 1 `uc 1 I2C2IP 1 0 :1:0 
+`uc 1 I2C2EIP 1 0 :1:1 
+`uc 1 U2RXIP 1 0 :1:2 
+`uc 1 U2TXIP 1 0 :1:3 
+`uc 1 U2EIP 1 0 :1:4 
+`uc 1 U2IP 1 0 :1:5 
+`uc 1 TMR3IP 1 0 :1:6 
+`uc 1 TMR3GIP 1 0 :1:7 
+]
+"3149
+[u S309 . 1 `S300 1 . 1 0 ]
+[v _IPR6bits IPR6bits `VES309  1 e 1 @14726 ]
+[s S2210 . 1 `uc 1 INT0IE 1 0 :1:0 
+`uc 1 ZCDIE 1 0 :1:1 
+`uc 1 ADIE 1 0 :1:2 
+`uc 1 ADTIE 1 0 :1:3 
+`uc 1 C1IE 1 0 :1:4 
+`uc 1 SMT1IE 1 0 :1:5 
+`uc 1 SMT1PRAIE 1 0 :1:6 
+`uc 1 SMT1PWAIE 1 0 :1:7 
+]
+"3409
+[u S2219 . 1 `S2210 1 . 1 0 ]
+[v _PIE1bits PIE1bits `VES2219  1 e 1 @14737 ]
+[s S1722 . 1 `uc 1 I2C1TXIE 1 0 :1:0 
+`uc 1 I2C1IE 1 0 :1:1 
+`uc 1 I2C1EIE 1 0 :1:2 
+`uc 1 U1RXIE 1 0 :1:3 
+`uc 1 U1TXIE 1 0 :1:4 
+`uc 1 U1EIE 1 0 :1:5 
+`uc 1 U1IE 1 0 :1:6 
+`uc 1 TMR0IE 1 0 :1:7 
+]
+"3533
+[u S1731 . 1 `S1722 1 . 1 0 ]
+[v _PIE3bits PIE3bits `VES1731  1 e 1 @14739 ]
+[s S1297 . 1 `uc 1 INT1IE 1 0 :1:0 
+`uc 1 C2IE 1 0 :1:1 
+`uc 1 DMA2SCNTIE 1 0 :1:2 
+`uc 1 DMA2DCNTIE 1 0 :1:3 
+`uc 1 DMA2ORIE 1 0 :1:4 
+`uc 1 DMA2AIE 1 0 :1:5 
+`uc 1 I2C2RXIE 1 0 :1:6 
+`uc 1 I2C2TXIE 1 0 :1:7 
+]
+"3652
+[u S1306 . 1 `S1297 1 . 1 0 ]
+[v _PIE5bits PIE5bits `VES1306  1 e 1 @14741 ]
+[s S1276 . 1 `uc 1 I2C2IE 1 0 :1:0 
+`uc 1 I2C2EIE 1 0 :1:1 
+`uc 1 U2RXIE 1 0 :1:2 
+`uc 1 U2TXIE 1 0 :1:3 
+`uc 1 U2EIE 1 0 :1:4 
+`uc 1 U2IE 1 0 :1:5 
+`uc 1 TMR3IE 1 0 :1:6 
+`uc 1 TMR3GIE 1 0 :1:7 
+]
+"3714
+[u S1285 . 1 `S1276 1 . 1 0 ]
+[v _PIE6bits PIE6bits `VES1285  1 e 1 @14742 ]
+[s S321 . 1 `uc 1 INT0IF 1 0 :1:0 
+`uc 1 ZCDIF 1 0 :1:1 
+`uc 1 ADIF 1 0 :1:2 
+`uc 1 ADTIF 1 0 :1:3 
+`uc 1 C1IF 1 0 :1:4 
+`uc 1 SMT1IF 1 0 :1:5 
+`uc 1 SMT1PRAIF 1 0 :1:6 
+`uc 1 SMT1PWAIF 1 0 :1:7 
+]
+"3974
+[u S330 . 1 `S321 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES330  1 e 1 @14753 ]
+[s S697 . 1 `uc 1 DMA1SCNTIF 1 0 :1:0 
+`uc 1 DMA1DCNTIF 1 0 :1:1 
+`uc 1 DMA1ORIF 1 0 :1:2 
+`uc 1 DMA1AIF 1 0 :1:3 
+`uc 1 SPI1RXIF 1 0 :1:4 
+`uc 1 SPI1TXIF 1 0 :1:5 
+`uc 1 SPI1IF 1 0 :1:6 
+`uc 1 I2C1RXIF 1 0 :1:7 
+]
+"4036
+[u S706 . 1 `S697 1 . 1 0 ]
+[v _PIR2bits PIR2bits `VES706  1 e 1 @14754 ]
+[s S352 . 1 `uc 1 INT1IF 1 0 :1:0 
+`uc 1 C2IF 1 0 :1:1 
+`uc 1 DMA2SCNTIF 1 0 :1:2 
+`uc 1 DMA2DCNTIF 1 0 :1:3 
+`uc 1 DMA2ORIF 1 0 :1:4 
+`uc 1 DMA2AIF 1 0 :1:5 
+`uc 1 I2C2RXIF 1 0 :1:6 
+`uc 1 I2C2TXIF 1 0 :1:7 
+]
+"4217
+[u S361 . 1 `S352 1 . 1 0 ]
+[v _PIR5bits PIR5bits `VES361  1 e 1 @14757 ]
+[s S383 . 1 `uc 1 TMR4IF 1 0 :1:0 
+`uc 1 CCP2IF 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 CWG2IF 1 0 :1:3 
+`uc 1 CLC2IF 1 0 :1:4 
+`uc 1 INT2IF 1 0 :1:5 
+]
+"4339
+[u S390 . 1 `S383 1 . 1 0 ]
+[v _PIR7bits PIR7bits `VES390  1 e 1 @14759 ]
+"4958
+[v _OSCCON1 OSCCON1 `VEuc  1 e 1 @14809 ]
+"5098
+[v _OSCCON3 OSCCON3 `VEuc  1 e 1 @14811 ]
+"5250
+[v _OSCEN OSCEN `VEuc  1 e 1 @14813 ]
+"5301
+[v _OSCTUNE OSCTUNE `VEuc  1 e 1 @14814 ]
+"5405
+[v _OSCFRQ OSCFRQ `VEuc  1 e 1 @14815 ]
+"6717
+[v _RB1PPS RB1PPS `VEuc  1 e 1 @14857 ]
+"6767
+[v _RB2PPS RB2PPS `VEuc  1 e 1 @14858 ]
+"7217
+[v _RC3PPS RC3PPS `VEuc  1 e 1 @14867 ]
+"7317
+[v _RC5PPS RC5PPS `VEuc  1 e 1 @14869 ]
+"7367
+[v _RC6PPS RC6PPS `VEuc  1 e 1 @14870 ]
+"8017
+[v _ANSELA ANSELA `VEuc  1 e 1 @14912 ]
+"8079
+[v _WPUA WPUA `VEuc  1 e 1 @14913 ]
+"8141
+[v _ODCONA ODCONA `VEuc  1 e 1 @14914 ]
+"8203
+[v _SLRCONA SLRCONA `VEuc  1 e 1 @14915 ]
+"8265
+[v _INLVLA INLVLA `VEuc  1 e 1 @14916 ]
+"8327
+[v _IOCAP IOCAP `VEuc  1 e 1 @14917 ]
+"8389
+[v _IOCAN IOCAN `VEuc  1 e 1 @14918 ]
+"8451
+[v _IOCAF IOCAF `VEuc  1 e 1 @14919 ]
+"8637
+[v _ANSELB ANSELB `VEuc  1 e 1 @14928 ]
+"8699
+[v _WPUB WPUB `VEuc  1 e 1 @14929 ]
+"8761
+[v _ODCONB ODCONB `VEuc  1 e 1 @14930 ]
+"8823
+[v _SLRCONB SLRCONB `VEuc  1 e 1 @14931 ]
+"8885
+[v _INLVLB INLVLB `VEuc  1 e 1 @14932 ]
+"8947
+[v _IOCBP IOCBP `VEuc  1 e 1 @14933 ]
+"9009
+[v _IOCBN IOCBN `VEuc  1 e 1 @14934 ]
+"9071
+[v _IOCBF IOCBF `VEuc  1 e 1 @14935 ]
+"9257
+[v _RB1I2C RB1I2C `VEuc  1 e 1 @14938 ]
+"9365
+[v _RB2I2C RB2I2C `VEuc  1 e 1 @14939 ]
+"9473
+[v _ANSELC ANSELC `VEuc  1 e 1 @14944 ]
+"9535
+[v _WPUC WPUC `VEuc  1 e 1 @14945 ]
+"9597
+[v _ODCONC ODCONC `VEuc  1 e 1 @14946 ]
+"9659
+[v _SLRCONC SLRCONC `VEuc  1 e 1 @14947 ]
+"9721
+[v _INLVLC INLVLC `VEuc  1 e 1 @14948 ]
+"9783
+[v _IOCCP IOCCP `VEuc  1 e 1 @14949 ]
+"9845
+[v _IOCCN IOCCN `VEuc  1 e 1 @14950 ]
+"9907
+[v _IOCCF IOCCF `VEuc  1 e 1 @14951 ]
+"10093
+[v _RC3I2C RC3I2C `VEuc  1 e 1 @14954 ]
+"10201
+[v _RC4I2C RC4I2C `VEuc  1 e 1 @14955 ]
+"10309
+[v _ANSELD ANSELD `VEuc  1 e 1 @14960 ]
+"10371
+[v _WPUD WPUD `VEuc  1 e 1 @14961 ]
+"10433
+[v _ODCOND ODCOND `VEuc  1 e 1 @14962 ]
+"10495
+[v _SLRCOND SLRCOND `VEuc  1 e 1 @14963 ]
+"10557
+[v _INLVLD INLVLD `VEuc  1 e 1 @14964 ]
+"10743
+[v _RD0I2C RD0I2C `VEuc  1 e 1 @14970 ]
+"10851
+[v _RD1I2C RD1I2C `VEuc  1 e 1 @14971 ]
+"10959
+[v _ANSELE ANSELE `VEuc  1 e 1 @14976 ]
+"10991
+[v _WPUE WPUE `VEuc  1 e 1 @14977 ]
+"11029
+[v _ODCONE ODCONE `VEuc  1 e 1 @14978 ]
+"11061
+[v _SLRCONE SLRCONE `VEuc  1 e 1 @14979 ]
+"11093
+[v _INLVLE INLVLE `VEuc  1 e 1 @14980 ]
+"11131
+[v _IOCEP IOCEP `VEuc  1 e 1 @14981 ]
+"11152
+[v _IOCEN IOCEN `VEuc  1 e 1 @14982 ]
+"11173
+[v _IOCEF IOCEF `VEuc  1 e 1 @14983 ]
+"11934
+[v _SPI1SCKPPS SPI1SCKPPS `VEuc  1 e 1 @15070 ]
+"11954
+[v _SPI1SDIPPS SPI1SDIPPS `VEuc  1 e 1 @15071 ]
+"12034
+[v _I2C2SCLPPS I2C2SCLPPS `VEuc  1 e 1 @15075 ]
+"12054
+[v _I2C2SDAPPS I2C2SDAPPS `VEuc  1 e 1 @15076 ]
+"12074
+[v _U1RXPPS U1RXPPS `VEuc  1 e 1 @15077 ]
+"22648
+[v _SPI1RXB SPI1RXB `VEuc  1 e 1 @15632 ]
+"22718
+[v _SPI1TXB SPI1TXB `VEuc  1 e 1 @15633 ]
+"22795
+[v _SPI1TCNTL SPI1TCNTL `VEuc  1 e 1 @15634 ]
+"22835
+[v _SPI1CON0 SPI1CON0 `VEuc  1 e 1 @15636 ]
+[s S667 . 1 `uc 1 BMODE 1 0 :1:0 
+`uc 1 MST 1 0 :1:1 
+`uc 1 LSBF 1 0 :1:2 
+`uc 1 . 1 0 :4:3 
+`uc 1 EN 1 0 :1:7 
+]
+"22856
+[s S673 . 1 `uc 1 SPI1BMODE 1 0 :1:0 
+`uc 1 SPI1MST 1 0 :1:1 
+`uc 1 SPI1LSBF 1 0 :1:2 
+`uc 1 . 1 0 :4:3 
+`uc 1 SPI1SPIEN 1 0 :1:7 
+]
+[u S679 . 1 `S667 1 . 1 0 `S673 1 . 1 0 ]
+[v _SPI1CON0bits SPI1CON0bits `VES679  1 e 1 @15636 ]
+"22901
+[v _SPI1CON1 SPI1CON1 `VEuc  1 e 1 @15637 ]
+"23003
+[v _SPI1CON2 SPI1CON2 `VEuc  1 e 1 @15638 ]
+"23203
+[v _SPI1BAUD SPI1BAUD `VEuc  1 e 1 @15641 ]
+"23457
+[v _SPI1CLK SPI1CLK `VEuc  1 e 1 @15644 ]
+"23525
+[v _I2C2RXB I2C2RXB `VEuc  1 e 1 @15700 ]
+"23545
+[v _I2C2TXB I2C2TXB `VEuc  1 e 1 @15701 ]
+"23565
+[v _I2C2CNT I2C2CNT `VEuc  1 e 1 @15702 ]
+"23655
+[v _I2C2ADB1 I2C2ADB1 `VEuc  1 e 1 @15704 ]
+"23757
+[v _I2C2CON0 I2C2CON0 `VEuc  1 e 1 @15709 ]
+[s S991 . 1 `uc 1 MODE 1 0 :3:0 
+`uc 1 MDR 1 0 :1:3 
+`uc 1 CSTR 1 0 :1:4 
+`uc 1 S 1 0 :1:5 
+`uc 1 RSEN 1 0 :1:6 
+`uc 1 EN 1 0 :1:7 
+]
+"23779
+[s S998 . 1 `uc 1 MODE0 1 0 :1:0 
+`uc 1 MODE1 1 0 :1:1 
+`uc 1 MODE2 1 0 :1:2 
+`uc 1 . 1 0 :4:3 
+`uc 1 I2CEN 1 0 :1:7 
+]
+[u S1004 . 1 `S991 1 . 1 0 `S998 1 . 1 0 ]
+[v _I2C2CON0bits I2C2CON0bits `VES1004  1 e 1 @15709 ]
+"23834
+[v _I2C2CON1 I2C2CON1 `VEuc  1 e 1 @15710 ]
+[s S1255 . 1 `uc 1 CSD 1 0 :1:0 
+`uc 1 TXU 1 0 :1:1 
+`uc 1 RXO 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 ACKT 1 0 :1:4 
+`uc 1 ACKSTAT 1 0 :1:5 
+`uc 1 ACKDT 1 0 :1:6 
+`uc 1 ACKCNT 1 0 :1:7 
+]
+"23851
+[u S1264 . 1 `S1255 1 . 1 0 ]
+[v _I2C2CON1bits I2C2CON1bits `VES1264  1 e 1 @15710 ]
+"23891
+[v _I2C2CON2 I2C2CON2 `VEuc  1 e 1 @15711 ]
+"23967
+[v _I2C2ERR I2C2ERR `VEuc  1 e 1 @15712 ]
+[s S1152 . 1 `uc 1 NACKIE 1 0 :1:0 
+`uc 1 BCLIE 1 0 :1:1 
+`uc 1 BTOIE 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 NACKIF 1 0 :1:4 
+`uc 1 BCLIF 1 0 :1:5 
+`uc 1 BTOIF 1 0 :1:6 
+]
+"23992
+[s S1160 . 1 `uc 1 NACK2IE 1 0 :1:0 
+`uc 1 BCL2IE 1 0 :1:1 
+`uc 1 BTO2IE 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 NACK2IF 1 0 :1:4 
+`uc 1 BCL2IF 1 0 :1:5 
+`uc 1 BTO2IF 1 0 :1:6 
+]
+[u S1168 . 1 `S1152 1 . 1 0 `S1160 1 . 1 0 ]
+[v _I2C2ERRbits I2C2ERRbits `VES1168  1 e 1 @15712 ]
+[s S1088 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 D 1 0 :1:3 
+`uc 1 R 1 0 :1:4 
+`uc 1 MMA 1 0 :1:5 
+`uc 1 SMA 1 0 :1:6 
+`uc 1 BFRE 1 0 :1:7 
+]
+"24087
+[s S1095 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 DATA 1 0 :1:3 
+`uc 1 READ 1 0 :1:4 
+]
+[s S1099 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 NOT_ADDRESS 1 0 :1:3 
+`uc 1 NOT_WRITE 1 0 :1:4 
+]
+[s S1103 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 NOT_A 1 0 :1:3 
+`uc 1 NOT_W 1 0 :1:4 
+]
+[u S1107 . 1 `S1088 1 . 1 0 `S1095 1 . 1 0 `S1099 1 . 1 0 `S1103 1 . 1 0 ]
+[v _I2C2STAT0bits I2C2STAT0bits `VES1107  1 e 1 @15713 ]
+"24147
+[v _I2C2STAT1 I2C2STAT1 `VEuc  1 e 1 @15714 ]
+[s S1319 . 1 `uc 1 RXBF 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 CLRBF 1 0 :1:2 
+`uc 1 RXRE 1 0 :1:3 
+`uc 1 . 1 0 :1:4 
+`uc 1 TXBE 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+`uc 1 TXWE 1 0 :1:7 
+]
+"24164
+[u S1328 . 1 `S1319 1 . 1 0 ]
+[v _I2C2STAT1bits I2C2STAT1bits `VES1328  1 e 1 @15714 ]
+"24194
+[v _I2C2PIR I2C2PIR `VEuc  1 e 1 @15715 ]
+[s S1031 . 1 `uc 1 SCIF 1 0 :1:0 
+`uc 1 RSCIF 1 0 :1:1 
+`uc 1 PCIF 1 0 :1:2 
+`uc 1 ADRIF 1 0 :1:3 
+`uc 1 WRIF 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 ACKTIF 1 0 :1:6 
+`uc 1 CNTIF 1 0 :1:7 
+]
+"24221
+[s S1040 . 1 `uc 1 SC2IF 1 0 :1:0 
+`uc 1 RSC2IF 1 0 :1:1 
+`uc 1 PC2IF 1 0 :1:2 
+`uc 1 ADR2IF 1 0 :1:3 
+`uc 1 WR2IF 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 ACKT2IF 1 0 :1:6 
+`uc 1 CNT2IF 1 0 :1:7 
+]
+[u S1049 . 1 `S1031 1 . 1 0 `S1040 1 . 1 0 ]
+[v _I2C2PIRbits I2C2PIRbits `VES1049  1 e 1 @15715 ]
+"24296
+[v _I2C2PIE I2C2PIE `VEuc  1 e 1 @15716 ]
+[s S951 . 1 `uc 1 SCIE 1 0 :1:0 
+`uc 1 RSCIE 1 0 :1:1 
+`uc 1 PCIE 1 0 :1:2 
+`uc 1 ADRIE 1 0 :1:3 
+`uc 1 WRIE 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 ACKTIE 1 0 :1:6 
+`uc 1 CNTIE 1 0 :1:7 
+]
+"24323
+[s S960 . 1 `uc 1 SC2IE 1 0 :1:0 
+`uc 1 RSC2IE 1 0 :1:1 
+`uc 1 PC2IE 1 0 :1:2 
+`uc 1 ADR2IE 1 0 :1:3 
+`uc 1 WR2IE 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 ACKT2IE 1 0 :1:6 
+`uc 1 CNT2IE 1 0 :1:7 
+]
+[u S969 . 1 `S951 1 . 1 0 `S960 1 . 1 0 ]
+[v _I2C2PIEbits I2C2PIEbits `VES969  1 e 1 @15716 ]
+"24398
+[v _I2C2CLK I2C2CLK `VEuc  1 e 1 @15717 ]
+"24566
+[v _I2C1TXB I2C1TXB `VEuc  1 e 1 @15723 ]
+"24586
+[v _I2C1CNT I2C1CNT `VEuc  1 e 1 @15724 ]
+"24656
+[v _I2C1ADB0 I2C1ADB0 `VEuc  1 e 1 @15725 ]
+"24676
+[v _I2C1ADB1 I2C1ADB1 `VEuc  1 e 1 @15726 ]
+"24696
+[v _I2C1ADR0 I2C1ADR0 `VEuc  1 e 1 @15727 ]
+"24716
+[v _I2C1ADR1 I2C1ADR1 `VEuc  1 e 1 @15728 ]
+"24737
+[v _I2C1ADR2 I2C1ADR2 `VEuc  1 e 1 @15729 ]
+"24757
+[v _I2C1ADR3 I2C1ADR3 `VEuc  1 e 1 @15730 ]
+"24778
+[v _I2C1CON0 I2C1CON0 `VEuc  1 e 1 @15731 ]
+"24855
+[v _I2C1CON1 I2C1CON1 `VEuc  1 e 1 @15732 ]
+"24912
+[v _I2C1CON2 I2C1CON2 `VEuc  1 e 1 @15733 ]
+"24988
+[v _I2C1ERR I2C1ERR `VEuc  1 e 1 @15734 ]
+"25168
+[v _I2C1STAT1 I2C1STAT1 `VEuc  1 e 1 @15736 ]
+"25215
+[v _I2C1PIR I2C1PIR `VEuc  1 e 1 @15737 ]
+"25317
+[v _I2C1PIE I2C1PIE `VEuc  1 e 1 @15738 ]
+"25419
+[v _I2C1CLK I2C1CLK `VEuc  1 e 1 @15739 ]
+"25499
+[v _I2C1BTO I2C1BTO `VEuc  1 e 1 @15740 ]
+"25605
+[v _U2TXB U2TXB `VEuc  1 e 1 @15826 ]
+"25650
+[v _U2P1L U2P1L `VEuc  1 e 1 @15828 ]
+"25677
+[v _U2P2L U2P2L `VEuc  1 e 1 @15830 ]
+"25704
+[v _U2P3L U2P3L `VEuc  1 e 1 @15832 ]
+"25724
+[v _U2CON0 U2CON0 `VEuc  1 e 1 @15834 ]
+"25840
+[v _U2CON1 U2CON1 `VEuc  1 e 1 @15835 ]
+"25920
+[v _U2CON2 U2CON2 `VEuc  1 e 1 @15836 ]
+"26059
+[v _U2BRGL U2BRGL `VEuc  1 e 1 @15837 ]
+"26079
+[v _U2BRGH U2BRGH `VEuc  1 e 1 @15838 ]
+"26099
+[v _U2FIFO U2FIFO `VEuc  1 e 1 @15839 ]
+"26229
+[v _U2UIR U2UIR `VEuc  1 e 1 @15840 ]
+"26285
+[v _U2ERRIR U2ERRIR `VEuc  1 e 1 @15841 ]
+"26397
+[v _U2ERRIE U2ERRIE `VEuc  1 e 1 @15842 ]
+"26509
+[v _U1RXB U1RXB `VEuc  1 e 1 @15848 ]
+"26547
+[v _U1RXCHK U1RXCHK `VEuc  1 e 1 @15849 ]
+"26567
+[v _U1TXB U1TXB `VEuc  1 e 1 @15850 ]
+"26605
+[v _U1TXCHK U1TXCHK `VEuc  1 e 1 @15851 ]
+"26632
+[v _U1P1L U1P1L `VEuc  1 e 1 @15852 ]
+"26652
+[v _U1P1H U1P1H `VEuc  1 e 1 @15853 ]
+"26679
+[v _U1P2L U1P2L `VEuc  1 e 1 @15854 ]
+"26699
+[v _U1P2H U1P2H `VEuc  1 e 1 @15855 ]
+"26726
+[v _U1P3L U1P3L `VEuc  1 e 1 @15856 ]
+"26746
+[v _U1P3H U1P3H `VEuc  1 e 1 @15857 ]
+"26766
+[v _U1CON0 U1CON0 `VEuc  1 e 1 @15858 ]
+[s S1818 . 1 `uc 1 MODE0 1 0 :1:0 
+`uc 1 MODE1 1 0 :1:1 
+`uc 1 MODE2 1 0 :1:2 
+`uc 1 MODE3 1 0 :1:3 
+]
+"26799
+[s S1823 . 1 `uc 1 U1MODE 1 0 :4:0 
+`uc 1 U1RXEN 1 0 :1:4 
+`uc 1 U1TXEN 1 0 :1:5 
+`uc 1 U1ABDEN 1 0 :1:6 
+`uc 1 U1BRGS 1 0 :1:7 
+]
+[s S1829 . 1 `uc 1 U1MODE0 1 0 :1:0 
+`uc 1 U1MODE1 1 0 :1:1 
+`uc 1 U1MODE2 1 0 :1:2 
+`uc 1 U1MODE3 1 0 :1:3 
+]
+[s S1834 . 1 `uc 1 MODE 1 0 :4:0 
+`uc 1 RXEN 1 0 :1:4 
+`uc 1 TXEN 1 0 :1:5 
+`uc 1 ABDEN 1 0 :1:6 
+`uc 1 BRGS 1 0 :1:7 
+]
+[u S1840 . 1 `S1818 1 . 1 0 `S1823 1 . 1 0 `S1829 1 . 1 0 `S1834 1 . 1 0 ]
+[v _U1CON0bits U1CON0bits `VES1840  1 e 1 @15858 ]
+"26894
+[v _U1CON1 U1CON1 `VEuc  1 e 1 @15859 ]
+[s S1782 . 1 `uc 1 SENDB 1 0 :1:0 
+`uc 1 BRKOVR 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 RXBIMD 1 0 :1:3 
+`uc 1 WUE 1 0 :1:4 
+`uc 1 . 1 0 :2:5 
+`uc 1 ON 1 0 :1:7 
+]
+"26919
+[s S1790 . 1 `uc 1 U1SENDB 1 0 :1:0 
+`uc 1 U1BRKOVR 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 U1RXBIMD 1 0 :1:3 
+`uc 1 U1WUE 1 0 :1:4 
+`uc 1 . 1 0 :2:5 
+`uc 1 U1ON 1 0 :1:7 
+]
+[u S1798 . 1 `S1782 1 . 1 0 `S1790 1 . 1 0 ]
+[v _U1CON1bits U1CON1bits `VES1798  1 e 1 @15859 ]
+"26974
+[v _U1CON2 U1CON2 `VEuc  1 e 1 @15860 ]
+"27123
+[v _U1BRGL U1BRGL `VEuc  1 e 1 @15861 ]
+"27143
+[v _U1BRGH U1BRGH `VEuc  1 e 1 @15862 ]
+"27163
+[v _U1FIFO U1FIFO `VEuc  1 e 1 @15863 ]
+"27293
+[v _U1UIR U1UIR `VEuc  1 e 1 @15864 ]
+[s S1868 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 ABDIE 1 0 :1:2 
+`uc 1 . 1 0 :3:3 
+`uc 1 ABDIF 1 0 :1:6 
+`uc 1 WUIF 1 0 :1:7 
+]
+"27314
+[s S1874 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 U1ABDIE 1 0 :1:2 
+`uc 1 . 1 0 :3:3 
+`uc 1 U1ABDIF 1 0 :1:6 
+`uc 1 U1WUIF 1 0 :1:7 
+]
+[u S1880 . 1 `S1868 1 . 1 0 `S1874 1 . 1 0 ]
+[v _U1UIRbits U1UIRbits `VES1880  1 e 1 @15864 ]
+"27349
+[v _U1ERRIR U1ERRIR `VEuc  1 e 1 @15865 ]
+[s S1896 . 1 `uc 1 TXCIF 1 0 :1:0 
+`uc 1 RXFOIF 1 0 :1:1 
+`uc 1 RXBKIF 1 0 :1:2 
+`uc 1 FERIF 1 0 :1:3 
+`uc 1 CERIF 1 0 :1:4 
+`uc 1 ABDOVF 1 0 :1:5 
+`uc 1 PERIF 1 0 :1:6 
+`uc 1 TXMTIF 1 0 :1:7 
+]
+"27376
+[s S1905 . 1 `uc 1 U1TXCIF 1 0 :1:0 
+`uc 1 U1RXFOIF 1 0 :1:1 
+`uc 1 U1RXBKIF 1 0 :1:2 
+`uc 1 U1FERIF 1 0 :1:3 
+`uc 1 U1CERIF 1 0 :1:4 
+`uc 1 U1ABDOVF 1 0 :1:5 
+`uc 1 U1PERIF 1 0 :1:6 
+`uc 1 U1TXMTIF 1 0 :1:7 
+]
+[u S1914 . 1 `S1896 1 . 1 0 `S1905 1 . 1 0 ]
+[v _U1ERRIRbits U1ERRIRbits `VES1914  1 e 1 @15865 ]
+"27461
+[v _U1ERRIE U1ERRIE `VEuc  1 e 1 @15866 ]
+"28240
+[v _FVRCON FVRCON `VEuc  1 e 1 @16065 ]
+[s S2122 . 1 `uc 1 ADFVR 1 0 :2:0 
+`uc 1 CDAFVR 1 0 :2:2 
+`uc 1 TSRNG 1 0 :1:4 
+`uc 1 TSEN 1 0 :1:5 
+`uc 1 RDY 1 0 :1:6 
+`uc 1 EN 1 0 :1:7 
+]
+"28264
+[s S2129 . 1 `uc 1 ADFVR0 1 0 :1:0 
+`uc 1 ADFVR1 1 0 :1:1 
+`uc 1 CDAFVR0 1 0 :1:2 
+`uc 1 CDAFVR1 1 0 :1:3 
+`uc 1 . 1 0 :2:4 
+`uc 1 FVRRDY 1 0 :1:6 
+`uc 1 FVREN 1 0 :1:7 
+]
+[u S2137 . 1 `S2122 1 . 1 0 `S2129 1 . 1 0 ]
+[v _FVRCONbits FVRCONbits `VES2137  1 e 1 @16065 ]
+"28619
+[v _ADLTHL ADLTHL `VEuc  1 e 1 @16094 ]
+"28747
+[v _ADLTHH ADLTHH `VEuc  1 e 1 @16095 ]
+"28882
+[v _ADUTHL ADUTHL `VEuc  1 e 1 @16096 ]
+"29010
+[v _ADUTHH ADUTHH `VEuc  1 e 1 @16097 ]
+"29145
+[v _ADERRL ADERRL `VEuc  1 e 1 @16098 ]
+"29273
+[v _ADERRH ADERRH `VEuc  1 e 1 @16099 ]
+"29408
+[v _ADSTPTL ADSTPTL `VEuc  1 e 1 @16100 ]
+"29536
+[v _ADSTPTH ADSTPTH `VEuc  1 e 1 @16101 ]
+"29671
+[v _ADFLTRL ADFLTRL `VEuc  1 e 1 @16102 ]
+"29799
+[v _ADFLTRH ADFLTRH `VEuc  1 e 1 @16103 ]
+"29936
+[v _ADACCL ADACCL `VEuc  1 e 1 @16104 ]
+"30064
+[v _ADACCH ADACCH `VEuc  1 e 1 @16105 ]
+"30192
+[v _ADACCU ADACCU `VEuc  1 e 1 @16106 ]
+"30320
+[v _ADCNT ADCNT `VEuc  1 e 1 @16107 ]
+"30448
+[v _ADRPT ADRPT `VEuc  1 e 1 @16108 ]
+"30583
+[v _ADPREVL ADPREVL `VEuc  1 e 1 @16109 ]
+"30711
+[v _ADPREVH ADPREVH `VEuc  1 e 1 @16110 ]
+"30846
+[v _ADRESL ADRESL `VEuc  1 e 1 @16111 ]
+"30974
+[v _ADRESH ADRESH `VEuc  1 e 1 @16112 ]
+"31094
+[v _ADPCH ADPCH `VEuc  1 e 1 @16113 ]
+"31205
+[v _ADACQL ADACQL `VEuc  1 e 1 @16115 ]
+"31333
+[v _ADACQH ADACQH `VEuc  1 e 1 @16116 ]
+"31425
+[v _ADCAP ADCAP `VEuc  1 e 1 @16117 ]
+"31524
+[v _ADPREL ADPREL `VEuc  1 e 1 @16118 ]
+"31652
+[v _ADPREH ADPREH `VEuc  1 e 1 @16119 ]
+"31744
+[v _ADCON0 ADCON0 `VEuc  1 e 1 @16120 ]
+[s S2239 . 1 `uc 1 GO 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 FM 1 0 :2:2 
+`uc 1 CS 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 CONT 1 0 :1:6 
+`uc 1 ON 1 0 :1:7 
+]
+"31782
+[s S2247 . 1 `uc 1 ADGO 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 ADFM 1 0 :2:2 
+`uc 1 ADCS 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 ADCONT 1 0 :1:6 
+`uc 1 ADON 1 0 :1:7 
+]
+[s S2255 . 1 `uc 1 DONE 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 FM0 1 0 :1:2 
+]
+[s S2259 . 1 `uc 1 GO_NOT_DONE 1 0 :1:0 
+]
+[s S2261 . 1 `uc 1 GO_nDONE 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 ADFM0 1 0 :1:2 
+]
+[u S2265 . 1 `S2239 1 . 1 0 `S2247 1 . 1 0 `S2255 1 . 1 0 `S2259 1 . 1 0 `S2261 1 . 1 0 ]
+[v _ADCON0bits ADCON0bits `VES2265  1 e 1 @16120 ]
+"31862
+[v _ADCON1 ADCON1 `VEuc  1 e 1 @16121 ]
+[s S2494 . 1 `uc 1 DSEN 1 0 :1:0 
+`uc 1 . 1 0 :4:1 
+`uc 1 GPOL 1 0 :1:5 
+`uc 1 IPEN 1 0 :1:6 
+`uc 1 PPOL 1 0 :1:7 
+]
+"31883
+[s S2500 . 1 `uc 1 ADDSEN 1 0 :1:0 
+`uc 1 . 1 0 :4:1 
+`uc 1 ADGPOL 1 0 :1:5 
+`uc 1 ADIPEN 1 0 :1:6 
+`uc 1 ADPPOL 1 0 :1:7 
+]
+[u S2506 . 1 `S2494 1 . 1 0 `S2500 1 . 1 0 ]
+[v _ADCON1bits ADCON1bits `VES2506  1 e 1 @16121 ]
+"31928
+[v _ADCON2 ADCON2 `VEuc  1 e 1 @16122 ]
+[s S2355 . 1 `uc 1 MODE 1 0 :3:0 
+`uc 1 ACLR 1 0 :1:3 
+`uc 1 CRS 1 0 :3:4 
+`uc 1 PSIS 1 0 :1:7 
+]
+"31976
+[s S2360 . 1 `uc 1 ADMD0 1 0 :1:0 
+`uc 1 ADMD1 1 0 :1:1 
+`uc 1 ADMD2 1 0 :1:2 
+`uc 1 ADACLR 1 0 :1:3 
+`uc 1 ADCRS0 1 0 :1:4 
+`uc 1 ADCRS1 1 0 :1:5 
+`uc 1 ADCRS2 1 0 :1:6 
+`uc 1 ADPSIS 1 0 :1:7 
+]
+[s S2369 . 1 `uc 1 ADMD 1 0 :3:0 
+`uc 1 . 1 0 :1:3 
+`uc 1 ADCRS 1 0 :3:4 
+]
+[s S2373 . 1 `uc 1 MODE0 1 0 :1:0 
+`uc 1 MODE1 1 0 :1:1 
+`uc 1 MODE2 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 CRS0 1 0 :1:4 
+`uc 1 CRS1 1 0 :1:5 
+`uc 1 CRS2 1 0 :1:6 
+]
+[s S2381 . 1 `uc 1 MD 1 0 :3:0 
+]
+[s S2383 . 1 `uc 1 MD0 1 0 :1:0 
+`uc 1 MD1 1 0 :1:1 
+`uc 1 MD2 1 0 :1:2 
+]
+[s S2387 . 1 `uc 1 ADMODE 1 0 :3:0 
+]
+[u S2389 . 1 `S2355 1 . 1 0 `S2360 1 . 1 0 `S2369 1 . 1 0 `S2373 1 . 1 0 `S2381 1 . 1 0 `S2383 1 . 1 0 `S2387 1 . 1 0 ]
+[v _ADCON2bits ADCON2bits `VES2389  1 e 1 @16122 ]
+"32106
+[v _ADCON3 ADCON3 `VEuc  1 e 1 @16123 ]
+[s S2300 . 1 `uc 1 TMD 1 0 :3:0 
+`uc 1 SOI 1 0 :1:3 
+`uc 1 CALC 1 0 :3:4 
+]
+"32141
+[s S2304 . 1 `uc 1 ADTMD0 1 0 :1:0 
+`uc 1 ADTMD1 1 0 :1:1 
+`uc 1 ADTMD2 1 0 :1:2 
+`uc 1 ADSOI 1 0 :1:3 
+`uc 1 ADCALC0 1 0 :1:4 
+`uc 1 ADCALC1 1 0 :1:5 
+`uc 1 ADCALC2 1 0 :1:6 
+]
+[s S2312 . 1 `uc 1 ADTMD 1 0 :3:0 
+`uc 1 . 1 0 :1:3 
+`uc 1 ADCALC 1 0 :3:4 
+]
+[s S2316 . 1 `uc 1 TMD0 1 0 :1:0 
+`uc 1 TMD1 1 0 :1:1 
+`uc 1 TMD2 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 CALC0 1 0 :1:4 
+`uc 1 CALC1 1 0 :1:5 
+`uc 1 CALC2 1 0 :1:6 
+]
+[u S2324 . 1 `S2300 1 . 1 0 `S2304 1 . 1 0 `S2312 1 . 1 0 `S2316 1 . 1 0 ]
+[v _ADCON3bits ADCON3bits `VES2324  1 e 1 @16123 ]
+"32236
+[v _ADSTAT ADSTAT `VEuc  1 e 1 @16124 ]
+[s S2434 . 1 `uc 1 STAT 1 0 :3:0 
+`uc 1 . 1 0 :1:3 
+`uc 1 MATH 1 0 :1:4 
+`uc 1 LTHR 1 0 :1:5 
+`uc 1 UTHR 1 0 :1:6 
+`uc 1 OV 1 0 :1:7 
+]
+"32271
+[s S2441 . 1 `uc 1 ADSTAT0 1 0 :1:0 
+`uc 1 ADSTAT1 1 0 :1:1 
+`uc 1 ADSTAT2 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 ADMATH 1 0 :1:4 
+`uc 1 ADLTHR 1 0 :1:5 
+`uc 1 ADUTHR 1 0 :1:6 
+`uc 1 ADAOV 1 0 :1:7 
+]
+[s S2450 . 1 `uc 1 ADSTAT 1 0 :3:0 
+`uc 1 . 1 0 :4:3 
+`uc 1 ADOV 1 0 :1:7 
+]
+[s S2454 . 1 `uc 1 STAT0 1 0 :1:0 
+`uc 1 STAT1 1 0 :1:1 
+`uc 1 STAT2 1 0 :1:2 
+]
+[u S2458 . 1 `S2434 1 . 1 0 `S2441 1 . 1 0 `S2450 1 . 1 0 `S2454 1 . 1 0 ]
+[v _ADSTATbits ADSTATbits `VES2458  1 e 1 @16124 ]
+"32361
+[v _ADREF ADREF `VEuc  1 e 1 @16125 ]
+"32443
+[v _ADACT ADACT `VEuc  1 e 1 @16126 ]
+"32535
+[v _ADCLK ADCLK `VEuc  1 e 1 @16127 ]
+"45435
+[v _LATA LATA `VEuc  1 e 1 @16314 ]
+"45547
+[v _LATB LATB `VEuc  1 e 1 @16315 ]
+"45659
+[v _LATC LATC `VEuc  1 e 1 @16316 ]
+"45771
+[v _LATD LATD `VEuc  1 e 1 @16317 ]
+"45883
+[v _LATE LATE `VEuc  1 e 1 @16318 ]
+"45935
+[v _TRISA TRISA `VEuc  1 e 1 @16322 ]
+"45997
+[v _TRISB TRISB `VEuc  1 e 1 @16323 ]
+"46059
+[v _TRISC TRISC `VEuc  1 e 1 @16324 ]
+[s S645 . 1 `uc 1 TRISC0 1 0 :1:0 
+`uc 1 TRISC1 1 0 :1:1 
+`uc 1 TRISC2 1 0 :1:2 
+`uc 1 TRISC3 1 0 :1:3 
+`uc 1 TRISC4 1 0 :1:4 
+`uc 1 TRISC5 1 0 :1:5 
+`uc 1 TRISC6 1 0 :1:6 
+`uc 1 TRISC7 1 0 :1:7 
+]
+"46076
+[u S654 . 1 `S645 1 . 1 0 ]
+"46076
+"46076
+[v _TRISCbits TRISCbits `VES654  1 e 1 @16324 ]
+"46121
+[v _TRISD TRISD `VEuc  1 e 1 @16325 ]
+"46183
+[v _TRISE TRISE `VEuc  1 e 1 @16326 ]
+[s S71 . 1 `uc 1 INT0EDG 1 0 :1:0 
+`uc 1 INT1EDG 1 0 :1:1 
+`uc 1 INT2EDG 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 IPEN 1 0 :1:5 
+`uc 1 GIEL 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+"46521
+[s S79 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 GIEH 1 0 :1:7 
+]
+"46521
+[u S82 . 1 `S71 1 . 1 0 `S79 1 . 1 0 ]
+"46521
+"46521
+[v _INTCON0bits INTCON0bits `VES82  1 e 1 @16338 ]
+"46597
+[v _IVTLOCK IVTLOCK `VEuc  1 e 1 @16340 ]
+[s S206 . 1 `uc 1 IVTLOCKED 1 0 :1:0 
+]
+"46607
+[u S208 . 1 `S206 1 . 1 0 ]
+"46607
+"46607
+[v _IVTLOCKbits IVTLOCKbits `VES208  1 e 1 @16340 ]
+"46626
+[v _IVTBASEL IVTBASEL `VEuc  1 e 1 @16341 ]
+"46688
+[v _IVTBASEH IVTBASEH `VEuc  1 e 1 @16342 ]
+"46750
+[v _IVTBASEU IVTBASEU `VEuc  1 e 1 @16343 ]
+"51922
+[v _GIE GIE `VEb  1 e 0 @130711 ]
+"40 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/adc/src/adcc.c
+[v _ADCC_ADI_InterruptHandler ADCC_ADI_InterruptHandler `*.37(v  1 s 2 ADCC_ADI_InterruptHandler ]
+"85 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/i2c_host/src/i2c2.c
+[v _I2C2_Callback I2C2_Callback `*.37(v  1 s 2 I2C2_Callback ]
+[s S927 . 13 `a 1 busy 1 0 `us 1 address 2 1 `*.2uc 1 writePtr 2 3 `ui 1 writeLength 2 5 `*.2uc 1 readPtr 2 7 `ui 1 readLength 2 9 `a 1 switchToRead 1 11 `E16163 1 errorState 1 12 ]
+"86
+[v _i2c2Status i2c2Status `VES927  1 e 13 0 ]
+[s S635 . 5 `uc 1 con0 1 0 `uc 1 con1 1 1 `uc 1 con2 1 2 `uc 1 baud 1 3 `uc 1 operation 1 4 ]
+"65 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/spi/src/spi1.c
+[v _spi1_configuration spi1_configuration `C[1]S635  1 s 5 spi1_configuration ]
+"38 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
+[v _INT0_InterruptHandler INT0_InterruptHandler `*.37(v  1 e 2 0 ]
+"39
+[v _INT1_InterruptHandler INT1_InterruptHandler `*.37(v  1 e 2 0 ]
+"40
+[v _INT2_InterruptHandler INT2_InterruptHandler `*.37(v  1 e 2 0 ]
+"83 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
+[v _uart1TxHead uart1TxHead `VEuc  1 s 1 uart1TxHead ]
+"84
+[v _uart1TxTail uart1TxTail `VEuc  1 s 1 uart1TxTail ]
+"85
+[v _uart1TxBuffer uart1TxBuffer `VE[8]uc  1 s 8 uart1TxBuffer ]
+"86
+[v _uart1TxBufferRemaining uart1TxBufferRemaining `VEuc  1 e 1 0 ]
+"88
+[v _uart1RxHead uart1RxHead `VEuc  1 s 1 uart1RxHead ]
+"89
+[v _uart1RxTail uart1RxTail `VEuc  1 s 1 uart1RxTail ]
+"90
+[v _uart1RxBuffer uart1RxBuffer `VE[8]uc  1 s 8 uart1RxBuffer ]
+[s S1707 . 1 `uc 1 perr 1 0 :1:0 
+`uc 1 ferr 1 0 :1:1 
+`uc 1 oerr 1 0 :1:2 
+`uc 1 reserved 1 0 :5:3 
+]
+"91
+[u S1712 . 2 `S1707 1 . 1 0 `ui 1 status 2 0 ]
+[v _uart1RxStatusBuffer uart1RxStatusBuffer `VE[8]S1712  1 s 16 uart1RxStatusBuffer ]
+"92
+[v _uart1RxCount uart1RxCount `VEuc  1 e 1 0 ]
+[s S1707 . 1 `uc 1 perr 1 0 :1:0 
+`uc 1 ferr 1 0 :1:1 
+`uc 1 oerr 1 0 :1:2 
+`uc 1 reserved 1 0 :5:3 
+]
+"94
+[u S1712 . 2 `S1707 1 . 1 0 `ui 1 status 2 0 ]
+[v _uart1RxLastError uart1RxLastError `VES1712  1 e 2 0 ]
+"100
+[v _UART1_FramingErrorHandler UART1_FramingErrorHandler `*.37(v  1 e 2 0 ]
+"101
+[v _UART1_OverrunErrorHandler UART1_OverrunErrorHandler `*.37(v  1 e 2 0 ]
+"102
+[v _UART1_ParityErrorHandler UART1_ParityErrorHandler `*.37(v  1 e 2 0 ]
+"103
+[v _UART1_TxInterruptHandler UART1_TxInterruptHandler `*.37(v  1 e 2 0 ]
+"104
+[v _UART1_TxCompleteInterruptHandler UART1_TxCompleteInterruptHandler `*.37(v  1 s 2 UART1_TxCompleteInterruptHandler ]
+"105
+[v _UART1_RxInterruptHandler UART1_RxInterruptHandler `*.37(v  1 e 2 0 ]
+"106
+[v _UART1_RxCompleteInterruptHandler UART1_RxCompleteInterruptHandler `*.37(v  1 s 2 UART1_RxCompleteInterruptHandler ]
+"39 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\main.c
+[v _main main `(i  1 e 2 0 ]
+{
+"64
+} 0
+"36 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/system.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+{
+"48
+} 0
+"26 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/peripheral/src/uart2.c
+[v _UART2_Initialize UART2_Initialize `(v  1 e 1 0 ]
+{
+"53
+} 0
+"118 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
+[v _UART1_Initialize UART1_Initialize `(v  1 e 1 0 ]
+{
+"178
+} 0
+"471
+[v _UART1_ParityErrorCallbackRegister UART1_ParityErrorCallbackRegister `(v  1 e 1 0 ]
+{
+[v UART1_ParityErrorCallbackRegister@callbackHandler callbackHandler `*.37(v  1 p 2 3 ]
+"477
+} 0
+"463
+[v _UART1_OverrunErrorCallbackRegister UART1_OverrunErrorCallbackRegister `(v  1 e 1 0 ]
+{
+[v UART1_OverrunErrorCallbackRegister@callbackHandler callbackHandler `*.37(v  1 p 2 3 ]
+"469
+} 0
+"455
+[v _UART1_FramingErrorCallbackRegister UART1_FramingErrorCallbackRegister `(v  1 e 1 0 ]
+{
+[v UART1_FramingErrorCallbackRegister@callbackHandler callbackHandler `*.37(v  1 p 2 3 ]
+"461
+} 0
+"70 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/spi/src/spi1.c
+[v _SPI_Initialize SPI_Initialize `(v  1 e 1 0 ]
+{
+"83
+} 0
+"38 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/pins.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+{
+"143
+} 0
+"42 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
+[v _INTERRUPT_Initialize INTERRUPT_Initialize `(v  1 e 1 0 ]
+{
+"46
+[v INTERRUPT_Initialize@state state `a  1 a 1 16 ]
+"95
+} 0
+"200
+[v _INT2_SetInterruptHandler INT2_SetInterruptHandler `(v  1 e 1 0 ]
+{
+[v INT2_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 3 ]
+"202
+} 0
+"166
+[v _INT1_SetInterruptHandler INT1_SetInterruptHandler `(v  1 e 1 0 ]
+{
+[v INT1_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 3 ]
+"168
+} 0
+"132
+[v _INT0_SetInterruptHandler INT0_SetInterruptHandler `(v  1 e 1 0 ]
+{
+[v INT0_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 3 ]
+"134
+} 0
+"91 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/i2c_host/src/i2c2.c
+[v _I2C2_Initialize I2C2_Initialize `(v  1 e 1 0 ]
+{
+"131
+} 0
+"448
+[v _I2C2_InterruptsEnable I2C2_InterruptsEnable `T(v  1 s 1 I2C2_InterruptsEnable ]
+{
+"459
+} 0
+"216
+[v _I2C2_CallbackRegister I2C2_CallbackRegister `(v  1 e 1 0 ]
+{
+[v I2C2_CallbackRegister@callbackHandler callbackHandler `*.37(v  1 p 2 3 ]
+"222
+} 0
+"26 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/peripheral/src/i2c1.c
+[v _I2C1_Initialize I2C1_Initialize `(v  1 e 1 0 ]
+{
+"61
+} 0
+"43 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/fvr/src/fvr.c
+[v _FVR_Initialize FVR_Initialize `(v  1 e 1 0 ]
+{
+"47
+} 0
+"37 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/clock.c
+[v _CLOCK_Initialize CLOCK_Initialize `(v  1 e 1 0 ]
+{
+"51
+} 0
+"47 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/adc/src/adcc.c
+[v _ADCC_Initialize ADCC_Initialize `(v  1 e 1 0 ]
+{
+"104
+} 0
+"297
+[v _ADCC_SetADIInterruptHandler ADCC_SetADIInterruptHandler `(v  1 e 1 0 ]
+{
+[v ADCC_SetADIInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 3 ]
+"300
+} 0
+"182 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
+[v _INT2_ISR INT2_ISR `IIL(v  1 e 1 0 ]
+{
+"188
+} 0
+"191
+[v _INT2_CallBack INT2_CallBack `(v  1 e 1 0 ]
+{
+"198
+} 0
+"204
+[v _INT2_DefaultInterruptHandler INT2_DefaultInterruptHandler `(v  1 e 1 0 ]
+{
+"207
+} 0
+"97
+[v _Default_ISR Default_ISR `IIH(v  1 e 1 0 ]
+{
+"99
+} 0
+"101
+[v _IOC_ISR IOC_ISR `IIH(v  1 e 1 0 ]
+{
+"104
+} 0
+"145 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/pins.c
+[v _PIN_MANAGER_IOC PIN_MANAGER_IOC `(v  1 e 1 0 ]
+{
+"147
+} 0
+"114 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
+[v _INT0_ISR INT0_ISR `IIH(v  1 e 1 0 ]
+{
+"120
+} 0
+"123
+[v _INT0_CallBack INT0_CallBack `(v  1 e 1 0 ]
+{
+"130
+} 0
+"136
+[v _INT0_DefaultInterruptHandler INT0_DefaultInterruptHandler `(v  1 e 1 0 ]
+{
+"139
+} 0
+"148
+[v _INT1_ISR INT1_ISR `IIH(v  1 e 1 0 ]
+{
+"154
+} 0
+"157
+[v _INT1_CallBack INT1_CallBack `(v  1 e 1 0 ]
+{
+"164
+} 0
+"170
+[v _INT1_DefaultInterruptHandler INT1_DefaultInterruptHandler `(v  1 e 1 0 ]
+{
+"173
+} 0
+"224 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/i2c_host/src/i2c2.c
+[v _I2C2_ISR I2C2_ISR `IIH(v  1 e 1 0 ]
+{
+"251
+} 0
+"413
+[v _I2C2_StopSend I2C2_StopSend `(v  1 s 1 I2C2_StopSend ]
+{
+"421
+} 0
+"408
+[v _I2C2_RestartDisable I2C2_RestartDisable `T(v  1 s 1 I2C2_RestartDisable ]
+{
+"411
+} 0
+"357
+[v _I2C2_DataTransmit I2C2_DataTransmit `(v  1 s 1 I2C2_DataTransmit ]
+{
+[v I2C2_DataTransmit@data data `uc  1 a 1 wreg ]
+[v I2C2_DataTransmit@data data `uc  1 a 1 wreg ]
+"359
+[v I2C2_DataTransmit@data data `uc  1 a 1 8 ]
+"360
+} 0
+"372
+[v _I2C2_CounterGet I2C2_CounterGet `(uc  1 s 1 I2C2_CounterGet ]
+{
+"375
+} 0
+"302
+[v _I2C2_ReadStart I2C2_ReadStart `(v  1 s 1 I2C2_ReadStart ]
+{
+"311
+} 0
+"347
+[v _I2C2_StartSend I2C2_StartSend `(v  1 s 1 I2C2_StartSend ]
+{
+"350
+} 0
+"367
+[v _I2C2_CounterSet I2C2_CounterSet `(v  1 s 1 I2C2_CounterSet ]
+{
+[v I2C2_CounterSet@counter counter `uc  1 a 1 wreg ]
+[v I2C2_CounterSet@counter counter `uc  1 a 1 wreg ]
+"369
+[v I2C2_CounterSet@counter counter `uc  1 a 1 5 ]
+"370
+} 0
+"352
+[v _I2C2_AddrTransmit I2C2_AddrTransmit `(v  1 s 1 I2C2_AddrTransmit ]
+{
+[v I2C2_AddrTransmit@addr addr `uc  1 a 1 wreg ]
+[v I2C2_AddrTransmit@addr addr `uc  1 a 1 wreg ]
+"354
+[v I2C2_AddrTransmit@addr addr `uc  1 a 1 4 ]
+"355
+} 0
+"328
+[v _I2C2_Close I2C2_Close `(v  1 s 1 I2C2_Close ]
+{
+"337
+} 0
+"471
+[v _I2C2_InterruptsClear I2C2_InterruptsClear `T(v  1 s 1 I2C2_InterruptsClear ]
+{
+"474
+} 0
+"476
+[v _I2C2_ErrorFlagsClear I2C2_ErrorFlagsClear `T(v  1 s 1 I2C2_ErrorFlagsClear ]
+{
+"481
+} 0
+"483
+[v _I2C2_BufferClear I2C2_BufferClear `T(v  1 s 1 I2C2_BufferClear ]
+{
+"487
+} 0
+"253
+[v _I2C2_ERROR_ISR I2C2_ERROR_ISR `IIH(v  1 e 1 0 ]
+{
+"287
+} 0
+"423
+[v _I2C2_IsNack I2C2_IsNack `(a  1 s 1 I2C2_IsNack ]
+{
+"426
+} 0
+"438
+[v _I2C2_IsData I2C2_IsData `(a  1 s 1 I2C2_IsData ]
+{
+"441
+} 0
+"433
+[v _I2C2_IsBusTimeOut I2C2_IsBusTimeOut `(a  1 s 1 I2C2_IsBusTimeOut ]
+{
+"436
+} 0
+"428
+[v _I2C2_IsBusCol I2C2_IsBusCol `(a  1 s 1 I2C2_IsBusCol ]
+{
+"431
+} 0
+"443
+[v _I2C2_IsAddr I2C2_IsAddr `(a  1 s 1 I2C2_IsAddr ]
+{
+"446
+} 0
+"339
+[v _I2C2_DefaultCallback I2C2_DefaultCallback `(v  1 s 1 I2C2_DefaultCallback ]
+{
+"342
+} 0
+"377
+[v _I2C2_BusReset I2C2_BusReset `T(v  1 s 1 I2C2_BusReset ]
+{
+"401
+} 0
+"448
+[v i2_I2C2_InterruptsEnable I2C2_InterruptsEnable `T(v  1 s 1 i2_I2C2_InterruptsEnable ]
+{
+"459
+} 0
+"461
+[v _I2C2_InterruptsDisable I2C2_InterruptsDisable `T(v  1 s 1 I2C2_InterruptsDisable ]
+{
+"469
+} 0
+"289
+[v _I2C2_RX_ISR I2C2_RX_ISR `IIH(v  1 e 1 0 ]
+{
+"292
+} 0
+"362
+[v _I2C2_DataReceive I2C2_DataReceive `(uc  1 s 1 I2C2_DataReceive ]
+{
+"365
+} 0
+"294
+[v _I2C2_TX_ISR I2C2_TX_ISR `IIH(v  1 e 1 0 ]
+{
+"297
+} 0
+"336 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
+[v _UART1_Receive_Vector_ISR UART1_Receive_Vector_ISR `IIH(v  1 e 1 0 ]
+{
+"339
+} 0
+"341
+[v _UART1_ReceiveISR UART1_ReceiveISR `(v  1 e 1 0 ]
+{
+"344
+[v UART1_ReceiveISR@tempRxHead tempRxHead `uc  1 a 1 10 ]
+"343
+[v UART1_ReceiveISR@regValue regValue `uc  1 a 1 9 ]
+"383
+} 0
+"445
+[v _UART1_DefaultOverrunErrorCallback UART1_DefaultOverrunErrorCallback `(v  1 s 1 UART1_DefaultOverrunErrorCallback ]
+{
+"448
+} 0
+"440
+[v _UART1_DefaultFramingErrorCallback UART1_DefaultFramingErrorCallback `(v  1 s 1 UART1_DefaultFramingErrorCallback ]
+{
+"443
+} 0
+"409
+[v _UART1_Transmit_Vector_ISR UART1_Transmit_Vector_ISR `IIH(v  1 e 1 0 ]
+{
+"412
+} 0
+"414
+[v _UART1_TransmitISR UART1_TransmitISR `(v  1 e 1 0 ]
+{
+"416
+[v UART1_TransmitISR@tempTxTail tempTxTail `uc  1 a 1 13 ]
+"434
+} 0
+"286 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/adc/src/adcc.c
+[v _ADCC_ISR ADCC_ISR `IIH(v  1 e 1 0 ]
+{
+"295
+} 0
+"302
+[v _ADCC_DefaultADI_ISR ADCC_DefaultADI_ISR `(v  1 s 1 ADCC_DefaultADI_ISR ]
+{
+"306
+} 0
