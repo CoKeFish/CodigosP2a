@@ -59,14 +59,15 @@ void  INTERRUPT_Initialize (void)
 
     GIE = state;
     // Assign peripheral interrupt priority vectors
-    IPR0bits.IOCIP = 1;
     IPR1bits.ADIP = 1;
     IPR3bits.U1RXIP = 1;
-    IPR3bits.U1TXIP = 1;
-    IPR5bits.I2C2RXIP = 1;
-    IPR5bits.I2C2TXIP = 1;
-    IPR6bits.I2C2IP = 1;
-    IPR6bits.I2C2EIP = 1;
+    IPR3bits.TMR0IP = 1;
+    IPR0bits.IOCIP = 0;
+    IPR3bits.U1TXIP = 0;
+    IPR5bits.I2C2RXIP = 0;
+    IPR5bits.I2C2TXIP = 0;
+    IPR6bits.I2C2IP = 0;
+    IPR6bits.I2C2EIP = 0;
 
     // Clear the interrupt flag
     // Set the external interrupt edge detect
@@ -98,7 +99,7 @@ void __interrupt(irq(default),base(8)) Default_ISR()
 {
 }
 
-void __interrupt(irq(IOC), base(8)) IOC_ISR()
+void __interrupt(irq(IOC), base(8), low_priority) IOC_ISR()
 {
     PIN_MANAGER_IOC();
 }
@@ -111,7 +112,7 @@ void __interrupt(irq(IOC), base(8)) IOC_ISR()
  * @param None.
  * @return None.
  */
-void __interrupt(irq(INT0),base(8)) INT0_ISR()
+void __interrupt(irq(INT0),base(8),low_priority) INT0_ISR()
 {
     EXT_INT0_InterruptFlagClear();
 
@@ -145,7 +146,7 @@ void INT0_DefaultInterruptHandler(void){
  * @param None.
  * @return None.
  */
-void __interrupt(irq(INT1),base(8)) INT1_ISR()
+void __interrupt(irq(INT1),base(8),low_priority) INT1_ISR()
 {
     EXT_INT1_InterruptFlagClear();
 

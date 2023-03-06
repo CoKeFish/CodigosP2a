@@ -406,7 +406,7 @@ void UART1_Write(uint8_t txData)
     PIE3bits.U1TXIE = 1;
 }
 
-void __interrupt(irq(IRQ_U1TX), base(8)) UART1_Transmit_Vector_ISR(void)
+void __interrupt(irq(IRQ_U1TX), base(8), low_priority) UART1_Transmit_Vector_ISR(void)
 {   
     UART1_TransmitISR();
 }

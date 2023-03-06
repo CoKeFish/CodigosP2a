@@ -14,6 +14,8 @@ mcc_generated_files/uart/src/../../system/../i2c_host/i2c_host_interface.h  \
 mcc_generated_files/uart/src/../../system/../peripheral/i2c1.h  \
 mcc_generated_files/uart/src/../../system/../spi/spi1.h  \
 mcc_generated_files/uart/src/../../system/../spi/spi_interface.h  \
+mcc_generated_files/uart/src/../../system/../timer/tmr0.h  \
+mcc_generated_files/uart/src/../../system/../timer/timer_interface.h  \
 mcc_generated_files/uart/src/../../system/../uart/uart1.h  \
 mcc_generated_files/uart/src/../../system/../peripheral/uart2.h  \
 mcc_generated_files/uart/src/../../system/../system/interrupt.h  \

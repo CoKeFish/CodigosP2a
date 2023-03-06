@@ -429,26 +429,6 @@
 #define SDI_SetAnalogMode()      do { ANSELCbits.ANSELC4 = 1; } while(0)
 #define SDI_SetDigitalMode()     do { ANSELCbits.ANSELC4 = 0; } while(0)
 
-// get/set RC5 aliases
-#define SDO_TRIS                 TRISCbits.TRISC5
-#define SDO_LAT                  LATCbits.LATC5
-#define SDO_PORT                 PORTCbits.RC5
-#define SDO_WPU                  WPUCbits.WPUC5
-#define SDO_OD                   ODCONCbits.ODCC5
-#define SDO_ANS                  ANSELCbits.ANSELC5
-#define SDO_SetHigh()            do { LATCbits.LATC5 = 1; } while(0)
-#define SDO_SetLow()             do { LATCbits.LATC5 = 0; } while(0)
-#define SDO_Toggle()             do { LATCbits.LATC5 = ~LATCbits.LATC5; } while(0)
-#define SDO_GetValue()           PORTCbits.RC5
-#define SDO_SetDigitalInput()    do { TRISCbits.TRISC5 = 1; } while(0)
-#define SDO_SetDigitalOutput()   do { TRISCbits.TRISC5 = 0; } while(0)
-#define SDO_SetPullup()          do { WPUCbits.WPUC5 = 1; } while(0)
-#define SDO_ResetPullup()        do { WPUCbits.WPUC5 = 0; } while(0)
-#define SDO_SetPushPull()        do { ODCONCbits.ODCC5 = 0; } while(0)
-#define SDO_SetOpenDrain()       do { ODCONCbits.ODCC5 = 1; } while(0)
-#define SDO_SetAnalogMode()      do { ANSELCbits.ANSELC5 = 1; } while(0)
-#define SDO_SetDigitalMode()     do { ANSELCbits.ANSELC5 = 0; } while(0)
-
 // get/set RC6 aliases
 #define TX_TRIS                 TRISCbits.TRISC6
 #define TX_LAT                  LATCbits.LATC6

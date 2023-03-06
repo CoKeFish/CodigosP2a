@@ -26821,13 +26821,6 @@ unsigned char __t3rd16on(void);
 # 1 "C:\\Program Files\\Microchip\\xc8\\v2.40\\pic\\include\\c99\\stdbool.h" 1 3
 # 38 "mcc_generated_files/system/src/../system.h" 2
 
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.40\\pic\\include\\c99\\conio.h" 1 3
-
-
-
-
-
-
 # 1 "C:\\Program Files\\Microchip\\xc8\\v2.40\\pic\\include\\c99\\stdio.h" 1 3
 # 24 "C:\\Program Files\\Microchip\\xc8\\v2.40\\pic\\include\\c99\\stdio.h" 3
 # 1 "C:\\Program Files\\Microchip\\xc8\\v2.40\\pic\\include\\c99\\bits/alltypes.h" 1 3
@@ -26972,7 +26965,6 @@ char *ctermid(char *);
 
 
 char *tempnam(const char *, const char *);
-# 7 "C:\\Program Files\\Microchip\\xc8\\v2.40\\pic\\include\\c99\\conio.h" 2 3
 # 39 "mcc_generated_files/system/src/../system.h" 2
 
 # 1 "mcc_generated_files/system/src/../config_bits.h" 1
@@ -27349,6 +27341,45 @@ void __attribute__((deprecated)) SPI1_WriteByte(uint8_t byte);
 uint8_t __attribute__((deprecated)) SPI1_ReadByte(void);
 # 47 "mcc_generated_files/system/src/../system.h" 2
 
+# 1 "mcc_generated_files/system/src/../../timer/tmr0.h" 1
+# 38 "mcc_generated_files/system/src/../../timer/tmr0.h"
+# 1 "mcc_generated_files/system/src/../../timer/timer_interface.h" 1
+# 50 "mcc_generated_files/system/src/../../timer/timer_interface.h"
+struct TMR_INTERFACE
+{
+    void (*Initialize)(void);
+    void (*Start)(void);
+    void (*Stop)(void);
+    void (*PeriodCountSet)(size_t count);
+    void (*TimeoutCallbackRegister)(void (* CallbackHandler)(void));
+    void (*Tasks)(void);
+};
+# 38 "mcc_generated_files/system/src/../../timer/tmr0.h" 2
+
+
+
+
+
+
+
+
+extern const struct TMR_INTERFACE Timer;
+# 55 "mcc_generated_files/system/src/../../timer/tmr0.h"
+void Timer_Initialize(void);
+# 64 "mcc_generated_files/system/src/../../timer/tmr0.h"
+void Timer_Start(void);
+# 73 "mcc_generated_files/system/src/../../timer/tmr0.h"
+void Timer_Stop(void);
+# 82 "mcc_generated_files/system/src/../../timer/tmr0.h"
+uint8_t Timer_Read(void);
+# 91 "mcc_generated_files/system/src/../../timer/tmr0.h"
+void Timer_Write(uint8_t timerVal);
+# 100 "mcc_generated_files/system/src/../../timer/tmr0.h"
+void Timer_Reload(size_t periodVal);
+# 109 "mcc_generated_files/system/src/../../timer/tmr0.h"
+ void Timer_OverflowCallbackRegister(void (* CallbackHandler)(void));
+# 48 "mcc_generated_files/system/src/../system.h" 2
+
 # 1 "mcc_generated_files/system/src/../../uart/uart1.h" 1
 # 43 "mcc_generated_files/system/src/../../uart/uart1.h"
 # 1 "mcc_generated_files/system/src/../../uart/../system/system.h" 1
@@ -27609,12 +27640,12 @@ void UART1_RxCompleteCallbackRegister(void (* callbackHandler)(void));
 
 
 void UART1_ReceiveISR(void);
-# 48 "mcc_generated_files/system/src/../../uart/../system/system.h" 2
+# 49 "mcc_generated_files/system/src/../../uart/../system/system.h" 2
 
 # 1 "mcc_generated_files/system/src/../../peripheral/uart2.h" 1
 # 22 "mcc_generated_files/system/src/../../peripheral/uart2.h"
 void UART2_Initialize(void);
-# 49 "mcc_generated_files/system/src/../../uart/../system/system.h" 2
+# 50 "mcc_generated_files/system/src/../../uart/../system/system.h" 2
 
 # 1 "mcc_generated_files/system/src/../../system/interrupt.h" 1
 # 91 "mcc_generated_files/system/src/../../system/interrupt.h"
@@ -27643,8 +27674,8 @@ void INT2_SetInterruptHandler(void (* InterruptHandler)(void));
 extern void (*INT2_InterruptHandler)(void);
 # 330 "mcc_generated_files/system/src/../../system/interrupt.h"
 void INT2_DefaultInterruptHandler(void);
-# 50 "mcc_generated_files/system/src/../../uart/../system/system.h" 2
-# 59 "mcc_generated_files/system/src/../../uart/../system/system.h"
+# 51 "mcc_generated_files/system/src/../../uart/../system/system.h" 2
+# 60 "mcc_generated_files/system/src/../../uart/../system/system.h"
 void SYSTEM_Initialize(void);
 # 33 "mcc_generated_files/system/src/system.c" 2
 
@@ -27659,6 +27690,7 @@ void SYSTEM_Initialize(void)
     I2C2_Initialize();
     I2C1_Initialize();
     SPI_Initialize();
+    Timer_Initialize();
     UART1_Initialize();
     UART2_Initialize();
     INTERRUPT_Initialize();

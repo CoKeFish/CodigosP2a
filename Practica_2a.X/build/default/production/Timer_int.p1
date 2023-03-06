@@ -1,0 +1,51 @@
+Version 4.0 HI-TECH Software Intermediate Code
+"14 Timer_int.c
+[; ;Timer_int.c: 14:         ADCC_StartConversion(channel_ANA0);
+[c E41 59 60 61 62 63 0 1 .. ]
+[n E41 . channel_VSS channel_Temp channel_DAC1 channel_FVR_Buffer1 channel_FVR_Buffer2 channel_ANA0 channel_ANA1  ]
+"89 ./mcc_generated_files/adc/adcc.h
+[; ;./mcc_generated_files/adc/adcc.h: 89: void ADCC_StartConversion(adcc_channel_t channel);
+[v _ADCC_StartConversion `(v ~T0 @X0 0 ef1`E41 ]
+"10 ./Practica2a.h
+[; ;./Practica2a.h: 10: uint16_t PERIOD = 1;
+[v _PERIOD `us ~T0 @X0 1 e ]
+[i _PERIOD
+-> -> 1 `i `us
+]
+"6 Timer_int.c
+[; ;Timer_int.c: 6: void Timer_int(void)
+[v _Timer_int `(v ~T0 @X0 1 ef ]
+"7
+[; ;Timer_int.c: 7: {
+{
+[e :U _Timer_int ]
+[f ]
+"8
+[; ;Timer_int.c: 8:     static int count = 0;
+[v F100 `i ~T0 @X0 1 s count ]
+[i F100
+-> 0 `i
+]
+"9
+[; ;Timer_int.c: 9:     count++;
+[e ++ F100 -> 1 `i ]
+"11
+[; ;Timer_int.c: 11:     if(count == PERIOD)
+[e $ ! == -> F100 `ui -> _PERIOD `ui 2  ]
+"12
+[; ;Timer_int.c: 12:     {
+{
+"13
+[; ;Timer_int.c: 13:         count = 0;
+[e = F100 -> 0 `i ]
+"14
+[; ;Timer_int.c: 14:         ADCC_StartConversion(channel_ANA0);
+[e ( _ADCC_StartConversion (1 . `E41 5 ]
+"15
+[; ;Timer_int.c: 15:     }
+}
+[e :U 2 ]
+"16
+[; ;Timer_int.c: 16: }
+[e :UE 1 ]
+}

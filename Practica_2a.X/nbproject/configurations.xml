@@ -24,8 +24,8 @@
           <itemPath>mcc_generated_files/peripheral/uart2.h</itemPath>
         </logicalFolder>
         <logicalFolder name="spi" displayName="spi" projectFiles="true">
-          <itemPath>mcc_generated_files/spi/spi_interface.h</itemPath>
           <itemPath>mcc_generated_files/spi/spi1.h</itemPath>
+          <itemPath>mcc_generated_files/spi/spi_interface.h</itemPath>
         </logicalFolder>
         <logicalFolder name="system" displayName="system" projectFiles="true">
           <itemPath>mcc_generated_files/system/system.h</itemPath>
@@ -34,6 +34,10 @@
           <itemPath>mcc_generated_files/system/interrupt.h</itemPath>
           <itemPath>mcc_generated_files/system/config_bits.h</itemPath>
         </logicalFolder>
+        <logicalFolder name="timer" displayName="timer" projectFiles="true">
+          <itemPath>mcc_generated_files/timer/tmr0.h</itemPath>
+          <itemPath>mcc_generated_files/timer/timer_interface.h</itemPath>
+        </logicalFolder>
         <logicalFolder name="uart" displayName="uart" projectFiles="true">
           <itemPath>mcc_generated_files/uart/uart1.h</itemPath>
           <itemPath>mcc_generated_files/uart/uart_types.h</itemPath>
@@ -41,6 +45,9 @@
         </logicalFolder>
       </logicalFolder>
       <itemPath>ADC_int.h</itemPath>
+      <itemPath>Practica2a.h</itemPath>
+      <itemPath>UART_int.h</itemPath>
+      <itemPath>Timer_int.h</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
@@ -87,6 +94,11 @@
             <itemPath>mcc_generated_files/system/src/interrupt.c</itemPath>
           </logicalFolder>
         </logicalFolder>
+        <logicalFolder name="timer" displayName="timer" projectFiles="true">
+          <logicalFolder name="src" displayName="src" projectFiles="true">
+            <itemPath>mcc_generated_files/timer/src/tmr0.c</itemPath>
+          </logicalFolder>
+        </logicalFolder>
         <logicalFolder name="uart" displayName="uart" projectFiles="true">
           <logicalFolder name="src" displayName="src" projectFiles="true">
             <itemPath>mcc_generated_files/uart/src/uart1.c</itemPath>
@@ -95,6 +107,8 @@
       </logicalFolder>
       <itemPath>main.c</itemPath>
       <itemPath>ADC_int.c</itemPath>
+      <itemPath>UART_int.c</itemPath>
+      <itemPath>Timer_int.c</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"

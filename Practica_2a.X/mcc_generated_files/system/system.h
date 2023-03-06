@@ -45,6 +45,7 @@
 #include "../i2c_host/i2c2.h"
 #include "../peripheral/i2c1.h"
 #include "../spi/spi1.h"
+#include "../timer/tmr0.h"
 #include "../uart/uart1.h"
 #include "../peripheral/uart2.h"
 #include "../system/interrupt.h"

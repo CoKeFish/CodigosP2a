@@ -181,7 +181,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 [v F16342 `(v ~T0 @X0 0 tf ]
 [v F16343 `(v ~T0 @X0 0 tf ]
 [t ~ __interrupt . k ]
-[t T1 __interrupt irq ( I2C2 ) base ( 8 ) ]
+[t T1 __interrupt irq ( I2C2 ) base ( 8 ) low_priority ]
 "41 mcc_generated_files/i2c_host/src/i2c2.c
 [; ;mcc_generated_files/i2c_host/src/i2c2.c: 41: static void I2C2_Close(void);
 [v _I2C2_Close `(v ~T0 @X0 0 sf ]
@@ -192,7 +192,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 "53
 [; ;mcc_generated_files/i2c_host/src/i2c2.c: 53: static __attribute__((inline)) void I2C2_RestartDisable(void);
 [v _I2C2_RestartDisable `TF16260 ~T0 @X0 0 s ]
-[t T2 __interrupt irq ( I2C2E ) base ( 8 ) ]
+[t T2 __interrupt irq ( I2C2E ) base ( 8 ) low_priority ]
 "56
 [; ;mcc_generated_files/i2c_host/src/i2c2.c: 56: static _Bool I2C2_IsBusCol(void);
 [v _I2C2_IsBusCol `(a ~T0 @X0 0 sf ]
@@ -227,11 +227,11 @@ Version 4.0 HI-TECH Software Intermediate Code
 "57
 [; ;mcc_generated_files/i2c_host/src/i2c2.c: 57: static _Bool I2C2_IsBusTimeOut(void);
 [v _I2C2_IsBusTimeOut `(a ~T0 @X0 0 sf ]
-[t T3 __interrupt irq ( I2C2RX ) base ( 8 ) ]
+[t T3 __interrupt irq ( I2C2RX ) base ( 8 ) low_priority ]
 "48
 [; ;mcc_generated_files/i2c_host/src/i2c2.c: 48: static uint8_t I2C2_DataReceive(void);
 [v _I2C2_DataReceive `(uc ~T0 @X0 0 sf ]
-[t T4 __interrupt irq ( I2C2TX ) base ( 8 ) ]
+[t T4 __interrupt irq ( I2C2TX ) base ( 8 ) low_priority ]
 "47
 [; ;mcc_generated_files/i2c_host/src/i2c2.c: 47: static void I2C2_DataTransmit(uint8_t data);
 [v _I2C2_DataTransmit `(v ~T0 @X0 0 sf1`uc ]
@@ -2988,7 +2988,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 }
 [v $root$_I2C2_ISR `(v ~T0 @X0 0 e ]
 "224
-[; ;mcc_generated_files/i2c_host/src/i2c2.c: 224: void __attribute__((picinterrupt(("irq(I2C2), base(8)")))) I2C2_ISR(void)
+[; ;mcc_generated_files/i2c_host/src/i2c2.c: 224: void __attribute__((picinterrupt(("irq(I2C2), base(8), low_priority")))) I2C2_ISR(void)
 [v _I2C2_ISR `(v ~T1 @X0 1 ef ]
 "225
 [; ;mcc_generated_files/i2c_host/src/i2c2.c: 225: {
@@ -3082,7 +3082,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 }
 [v $root$_I2C2_ERROR_ISR `(v ~T0 @X0 0 e ]
 "253
-[; ;mcc_generated_files/i2c_host/src/i2c2.c: 253: void __attribute__((picinterrupt(("irq(I2C2E), base(8)")))) I2C2_ERROR_ISR(void)
+[; ;mcc_generated_files/i2c_host/src/i2c2.c: 253: void __attribute__((picinterrupt(("irq(I2C2E), base(8), low_priority")))) I2C2_ERROR_ISR(void)
 [v _I2C2_ERROR_ISR `(v ~T2 @X0 1 ef ]
 "254
 [; ;mcc_generated_files/i2c_host/src/i2c2.c: 254: {
@@ -3200,7 +3200,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 }
 [v $root$_I2C2_RX_ISR `(v ~T0 @X0 0 e ]
 "289
-[; ;mcc_generated_files/i2c_host/src/i2c2.c: 289: void __attribute__((picinterrupt(("irq(I2C2RX), base(8)")))) I2C2_RX_ISR(void)
+[; ;mcc_generated_files/i2c_host/src/i2c2.c: 289: void __attribute__((picinterrupt(("irq(I2C2RX), base(8), low_priority")))) I2C2_RX_ISR(void)
 [v _I2C2_RX_ISR `(v ~T3 @X0 1 ef ]
 "290
 [; ;mcc_generated_files/i2c_host/src/i2c2.c: 290: {
@@ -3216,7 +3216,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 }
 [v $root$_I2C2_TX_ISR `(v ~T0 @X0 0 e ]
 "294
-[; ;mcc_generated_files/i2c_host/src/i2c2.c: 294: void __attribute__((picinterrupt(("irq(I2C2TX), base(8)")))) I2C2_TX_ISR(void)
+[; ;mcc_generated_files/i2c_host/src/i2c2.c: 294: void __attribute__((picinterrupt(("irq(I2C2TX), base(8), low_priority")))) I2C2_TX_ISR(void)
 [v _I2C2_TX_ISR `(v ~T4 @X0 1 ef ]
 "295
 [; ;mcc_generated_files/i2c_host/src/i2c2.c: 295: {

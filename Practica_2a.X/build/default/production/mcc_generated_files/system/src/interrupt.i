@@ -26850,13 +26850,6 @@ unsigned char __t3rd16on(void);
 # 1 "C:\\Program Files\\Microchip\\xc8\\v2.40\\pic\\include\\c99\\stdbool.h" 1 3
 # 38 "mcc_generated_files/system/src/../../system/system.h" 2
 
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.40\\pic\\include\\c99\\conio.h" 1 3
-
-
-
-
-
-
 # 1 "C:\\Program Files\\Microchip\\xc8\\v2.40\\pic\\include\\c99\\stdio.h" 1 3
 # 24 "C:\\Program Files\\Microchip\\xc8\\v2.40\\pic\\include\\c99\\stdio.h" 3
 # 1 "C:\\Program Files\\Microchip\\xc8\\v2.40\\pic\\include\\c99\\bits/alltypes.h" 1 3
@@ -27001,7 +26994,6 @@ char *ctermid(char *);
 
 
 char *tempnam(const char *, const char *);
-# 7 "C:\\Program Files\\Microchip\\xc8\\v2.40\\pic\\include\\c99\\conio.h" 2 3
 # 39 "mcc_generated_files/system/src/../../system/system.h" 2
 
 # 1 "mcc_generated_files/system/src/../../system/config_bits.h" 1
@@ -27378,6 +27370,45 @@ void __attribute__((deprecated)) SPI1_WriteByte(uint8_t byte);
 uint8_t __attribute__((deprecated)) SPI1_ReadByte(void);
 # 47 "mcc_generated_files/system/src/../../system/system.h" 2
 
+# 1 "mcc_generated_files/system/src/../../system/../timer/tmr0.h" 1
+# 38 "mcc_generated_files/system/src/../../system/../timer/tmr0.h"
+# 1 "mcc_generated_files/system/src/../../system/../timer/timer_interface.h" 1
+# 50 "mcc_generated_files/system/src/../../system/../timer/timer_interface.h"
+struct TMR_INTERFACE
+{
+    void (*Initialize)(void);
+    void (*Start)(void);
+    void (*Stop)(void);
+    void (*PeriodCountSet)(size_t count);
+    void (*TimeoutCallbackRegister)(void (* CallbackHandler)(void));
+    void (*Tasks)(void);
+};
+# 38 "mcc_generated_files/system/src/../../system/../timer/tmr0.h" 2
+
+
+
+
+
+
+
+
+extern const struct TMR_INTERFACE Timer;
+# 55 "mcc_generated_files/system/src/../../system/../timer/tmr0.h"
+void Timer_Initialize(void);
+# 64 "mcc_generated_files/system/src/../../system/../timer/tmr0.h"
+void Timer_Start(void);
+# 73 "mcc_generated_files/system/src/../../system/../timer/tmr0.h"
+void Timer_Stop(void);
+# 82 "mcc_generated_files/system/src/../../system/../timer/tmr0.h"
+uint8_t Timer_Read(void);
+# 91 "mcc_generated_files/system/src/../../system/../timer/tmr0.h"
+void Timer_Write(uint8_t timerVal);
+# 100 "mcc_generated_files/system/src/../../system/../timer/tmr0.h"
+void Timer_Reload(size_t periodVal);
+# 109 "mcc_generated_files/system/src/../../system/../timer/tmr0.h"
+ void Timer_OverflowCallbackRegister(void (* CallbackHandler)(void));
+# 48 "mcc_generated_files/system/src/../../system/system.h" 2
+
 # 1 "mcc_generated_files/system/src/../../system/../uart/uart1.h" 1
 # 43 "mcc_generated_files/system/src/../../system/../uart/uart1.h"
 # 1 "mcc_generated_files/system/src/../../system/../uart/../system/system.h" 1
@@ -27638,13 +27669,13 @@ void UART1_RxCompleteCallbackRegister(void (* callbackHandler)(void));
 
 
 void UART1_ReceiveISR(void);
-# 48 "mcc_generated_files/system/src/../../system/../uart/../system/system.h" 2
+# 49 "mcc_generated_files/system/src/../../system/../uart/../system/system.h" 2
 
 # 1 "mcc_generated_files/system/src/../../system/../peripheral/uart2.h" 1
 # 22 "mcc_generated_files/system/src/../../system/../peripheral/uart2.h"
 void UART2_Initialize(void);
-# 49 "mcc_generated_files/system/src/../../system/../uart/../system/system.h" 2
-# 59 "mcc_generated_files/system/src/../../system/../uart/../system/system.h"
+# 50 "mcc_generated_files/system/src/../../system/../uart/../system/system.h" 2
+# 60 "mcc_generated_files/system/src/../../system/../uart/../system/system.h"
 void SYSTEM_Initialize(void);
 # 35 "mcc_generated_files/system/src/interrupt.c" 2
 
@@ -27674,14 +27705,15 @@ void INTERRUPT_Initialize (void)
 
     GIE = state;
 
-    IPR0bits.IOCIP = 1;
     IPR1bits.ADIP = 1;
     IPR3bits.U1RXIP = 1;
-    IPR3bits.U1TXIP = 1;
-    IPR5bits.I2C2RXIP = 1;
-    IPR5bits.I2C2TXIP = 1;
-    IPR6bits.I2C2IP = 1;
-    IPR6bits.I2C2EIP = 1;
+    IPR3bits.TMR0IP = 1;
+    IPR0bits.IOCIP = 0;
+    IPR3bits.U1TXIP = 0;
+    IPR5bits.I2C2RXIP = 0;
+    IPR5bits.I2C2TXIP = 0;
+    IPR6bits.I2C2IP = 0;
+    IPR6bits.I2C2EIP = 0;
 
 
 
@@ -27713,12 +27745,12 @@ void __attribute__((picinterrupt(("irq(default),base(8)")))) Default_ISR()
 {
 }
 
-void __attribute__((picinterrupt(("irq(IOC), base(8)")))) IOC_ISR()
+void __attribute__((picinterrupt(("irq(IOC), base(8), low_priority")))) IOC_ISR()
 {
     PIN_MANAGER_IOC();
 }
-# 114 "mcc_generated_files/system/src/interrupt.c"
-void __attribute__((picinterrupt(("irq(INT0),base(8)")))) INT0_ISR()
+# 115 "mcc_generated_files/system/src/interrupt.c"
+void __attribute__((picinterrupt(("irq(INT0),base(8),low_priority")))) INT0_ISR()
 {
     (PIR1bits.INT0IF = 0);
 
@@ -27744,8 +27776,8 @@ void INT0_DefaultInterruptHandler(void){
 
 
 }
-# 148 "mcc_generated_files/system/src/interrupt.c"
-void __attribute__((picinterrupt(("irq(INT1),base(8)")))) INT1_ISR()
+# 149 "mcc_generated_files/system/src/interrupt.c"
+void __attribute__((picinterrupt(("irq(INT1),base(8),low_priority")))) INT1_ISR()
 {
     (PIR5bits.INT1IF = 0);
 
@@ -27771,7 +27803,7 @@ void INT1_DefaultInterruptHandler(void){
 
 
 }
-# 182 "mcc_generated_files/system/src/interrupt.c"
+# 183 "mcc_generated_files/system/src/interrupt.c"
 void __attribute__((picinterrupt(("irq(INT2),base(8),low_priority")))) INT2_ISR()
 {
     (PIR7bits.INT2IF = 0);

@@ -42,6 +42,7 @@ void SYSTEM_Initialize(void)
     I2C_Host_Initialize();
     I2C1_Initialize();
     SPI_Initialize();
+    Timer_Initialize();
     UART1_Initialize();
     UART2_Initialize();
     INTERRUPT_Initialize();

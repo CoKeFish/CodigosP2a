@@ -221,7 +221,7 @@ void I2C2_CallbackRegister(void (*callbackHandler)(void))
     }
 }
 
-void __interrupt(irq(I2C2), base(8)) I2C2_ISR(void)
+void __interrupt(irq(I2C2), base(8), low_priority) I2C2_ISR(void)
 {
     if (I2C2PIEbits.PCIE && I2C2PIRbits.PCIF)
     {
@@ -250,7 +250,7 @@ void __interrupt(irq(I2C2), base(8)) I2C2_ISR(void)
     }
 }
 
-void __interrupt(irq(I2C2E), base(8)) I2C2_ERROR_ISR(void)
+void __interrupt(irq(I2C2E), base(8), low_priority) I2C2_ERROR_ISR(void)
 {
     if (I2C2_IsBusCol())
     {
@@ -286,12 +286,12 @@ void __interrupt(irq(I2C2E), base(8)) I2C2_ERROR_ISR(void)
     }
 }
 
-void __interrupt(irq(I2C2RX), base(8)) I2C2_RX_ISR(void)
+void __interrupt(irq(I2C2RX), base(8), low_priority) I2C2_RX_ISR(void)
 {
     *i2c2Status.readPtr++ = I2C2_DataReceive();
 }
 
-void __interrupt(irq(I2C2TX), base(8)) I2C2_TX_ISR(void)
+void __interrupt(irq(I2C2TX), base(8), low_priority) I2C2_TX_ISR(void)
 {
     I2C2_DataTransmit(*i2c2Status.writePtr++);
 }

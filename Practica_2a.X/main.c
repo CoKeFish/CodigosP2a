@@ -31,6 +31,9 @@
     THIS SOFTWARE.
 */
 #include "mcc_generated_files/system/system.h"
+#include "Practica2a.h"
+
+#include <stdbool.h>
 
 /*
     Main application
@@ -40,6 +43,12 @@ int main(void)
 {
     
     SYSTEM_Initialize();
+    
+    
+    ADCC_SetADIInterruptHandler(ADC_int);
+    Timer_OverflowCallbackRegister(Timer_int);
+    
+    
 
     // If using interrupts in PIC18 High/Low Priority Mode you need to enable the Global High and Low Interrupts 
     // If using interrupts in PIC Mid-Range Compatibility Mode you need to enable the Global Interrupts 
