@@ -1,6 +1,7 @@
 
 #include "Practica2a.h"
 #include "Timer_int.h"
+#include <xc.h>
 
 
 void Timer_int(void)
@@ -10,6 +11,7 @@ void Timer_int(void)
     
     if(count == PERIOD)
     {
+        //LATDbits.LATD0 = !LATDbits.LATD0;
         count = 0;
         ADCC_StartConversion(channel_ANA0);
     }

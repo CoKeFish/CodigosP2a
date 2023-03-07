@@ -429,26 +429,6 @@
 #define SDI_SetAnalogMode()      do { ANSELCbits.ANSELC4 = 1; } while(0)
 #define SDI_SetDigitalMode()     do { ANSELCbits.ANSELC4 = 0; } while(0)
 
-// get/set RC6 aliases
-#define TX_TRIS                 TRISCbits.TRISC6
-#define TX_LAT                  LATCbits.LATC6
-#define TX_PORT                 PORTCbits.RC6
-#define TX_WPU                  WPUCbits.WPUC6
-#define TX_OD                   ODCONCbits.ODCC6
-#define TX_ANS                  ANSELCbits.ANSELC6
-#define TX_SetHigh()            do { LATCbits.LATC6 = 1; } while(0)
-#define TX_SetLow()             do { LATCbits.LATC6 = 0; } while(0)
-#define TX_Toggle()             do { LATCbits.LATC6 = ~LATCbits.LATC6; } while(0)
-#define TX_GetValue()           PORTCbits.RC6
-#define TX_SetDigitalInput()    do { TRISCbits.TRISC6 = 1; } while(0)
-#define TX_SetDigitalOutput()   do { TRISCbits.TRISC6 = 0; } while(0)
-#define TX_SetPullup()          do { WPUCbits.WPUC6 = 1; } while(0)
-#define TX_ResetPullup()        do { WPUCbits.WPUC6 = 0; } while(0)
-#define TX_SetPushPull()        do { ODCONCbits.ODCC6 = 0; } while(0)
-#define TX_SetOpenDrain()       do { ODCONCbits.ODCC6 = 1; } while(0)
-#define TX_SetAnalogMode()      do { ANSELCbits.ANSELC6 = 1; } while(0)
-#define TX_SetDigitalMode()     do { ANSELCbits.ANSELC6 = 0; } while(0)
-
 // get/set RC7 aliases
 #define RX_TRIS                 TRISCbits.TRISC7
 #define RX_LAT                  LATCbits.LATC7
