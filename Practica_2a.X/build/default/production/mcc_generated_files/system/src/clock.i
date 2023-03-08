@@ -26831,7 +26831,7 @@ void CLOCK_Initialize(void)
 
     OSCEN = 0x0;
 
-    OSCFRQ = 0x5;
+    OSCFRQ = 0x8;
 
     OSCTUNE = 0x0;
 

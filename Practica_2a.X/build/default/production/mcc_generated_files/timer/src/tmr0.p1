@@ -2354,8 +2354,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;mcc_generated_files/timer/src/tmr0.c: 56:     TMR0L = 0x0;
 [e = _TMR0L -> -> 0 `i `uc ]
 "59
-[; ;mcc_generated_files/timer/src/tmr0.c: 59:     T0CON1 = 0x51;
-[e = _T0CON1 -> -> 81 `i `uc ]
+[; ;mcc_generated_files/timer/src/tmr0.c: 59:     T0CON1 = 0x43;
+[e = _T0CON1 -> -> 67 `i `uc ]
 "63
 [; ;mcc_generated_files/timer/src/tmr0.c: 63:     Timer_OverflowCallbackRegister(Timer_DefaultOverflowCallback);
 [e ( _Timer_OverflowCallbackRegister (1 &U _Timer_DefaultOverflowCallback ]

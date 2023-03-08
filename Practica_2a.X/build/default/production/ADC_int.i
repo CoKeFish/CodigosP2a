@@ -27146,7 +27146,10 @@ char *tempnam(const char *, const char *);
 # 42 "./mcc_generated_files/uart/uart1.h" 2
 
 # 1 "./mcc_generated_files/uart/../system/system.h" 1
-# 40 "./mcc_generated_files/uart/../system/system.h"
+# 39 "./mcc_generated_files/uart/../system/system.h"
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.40\\pic\\include\\c99\\conio.h" 1 3
+# 39 "./mcc_generated_files/uart/../system/system.h" 2
+
 # 1 "./mcc_generated_files/uart/../system/config_bits.h" 1
 # 37 "./mcc_generated_files/uart/../system/config_bits.h"
 # 1 "./mcc_generated_files/uart/../system/../system/clock.h" 1
@@ -27157,7 +27160,7 @@ void CLOCK_Initialize(void);
 
 
 # 1 "./mcc_generated_files/uart/../system/../system/pins.h" 1
-# 718 "./mcc_generated_files/uart/../system/../system/pins.h"
+# 698 "./mcc_generated_files/uart/../system/../system/pins.h"
 void PIN_MANAGER_Initialize (void);
 
 
@@ -27698,7 +27701,7 @@ void UART1_ReceiveISR(void);
 
 void ADC_int(void)
 {
-
+    LATDbits.LATD0 = !LATDbits.LATD0;
     if(ADPCH == 0)
     {
         ADCC_StartConversion(channel_ANA1);

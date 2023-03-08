@@ -64,7 +64,7 @@ typedef struct
 //con0 == SPIxCON0, con1 == SPIxCON1, con2 == SPIxCON2, baud == SPIxBAUD, operation == Host/Client
 static const spi1_configuration_t spi1_configuration[] = 
 {   
-    { 0x2, 0x40, 0x0, 0xF, 0 }
+    { 0x2, 0x40, 0x0, 0x1F, 0 }
 };
 
 void SPI_Initialize(void)
@@ -75,8 +75,8 @@ void SPI_Initialize(void)
     SPI1CON2 = 0x0;
     //CLKSEL FOSC; 
     SPI1CLK = 0x0;
-    //BAUD 15; 
-    SPI1BAUD = 0xF;
+    //BAUD 31; 
+    SPI1BAUD = 0x1F;
     TRISCbits.TRISC3 = 0;
     //BMODE last byte; MST bus host; LSBF MSb first; EN disabled; 
     SPI1CON0 = 0x2;

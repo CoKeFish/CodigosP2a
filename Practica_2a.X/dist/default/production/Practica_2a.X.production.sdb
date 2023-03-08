@@ -3,13 +3,6 @@
 [d edition pro ]
 [d chip 18F46K42 ]
 [d frameptr 16353 ]
-"69 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/i2c_host/src/i2c2.c
-[e E16163 . `uc
-I2C_ERROR_NONE 0
-I2C_ERROR_ADDR_NACK 1
-I2C_ERROR_DATA_NACK 2
-I2C_ERROR_BUS_COLLISION 3
-]
 "106 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/adc/src/adcc.c
 [e E15846 . `uc
 channel_VSS 59
@@ -19,6 +12,13 @@ channel_FVR_Buffer1 62
 channel_FVR_Buffer2 63
 channel_ANA0 0
 channel_ANA1 1
+]
+"69 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/i2c_host/src/i2c2.c
+[e E16163 . `uc
+I2C_ERROR_NONE 0
+I2C_ERROR_ADDR_NACK 1
+I2C_ERROR_DATA_NACK 2
+I2C_ERROR_BUS_COLLISION 3
 ]
 "13 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\ADC_int.c
 [e E15847 . `uc
@@ -30,7 +30,7 @@ channel_FVR_Buffer2 63
 channel_ANA0 0
 channel_ANA1 1
 ]
-"14 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\Timer_int.c
+"16 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\Timer_int.c
 [e E41 . `uc
 channel_VSS 59
 channel_Temp 60
@@ -209,7 +209,7 @@ channel_ANA1 1
 [v _INT2_DefaultInterruptHandler INT2_DefaultInterruptHandler `(v  1 e 1 0 ]
 "38 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/pins.c
 [v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
-"145
+"144
 [v _PIN_MANAGER_IOC PIN_MANAGER_IOC `(v  1 e 1 0 ]
 "36 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/system.c
 [v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
@@ -257,25 +257,25 @@ channel_ANA1 1
 [v _UART1_Write UART1_Write `(v  1 e 1 0 ]
 "409
 [v _UART1_Transmit_Vector_ISR UART1_Transmit_Vector_ISR `IIL(v  1 e 1 0 ]
-"414
+"415
 [v _UART1_TransmitISR UART1_TransmitISR `(v  1 e 1 0 ]
-"440
+"441
 [v _UART1_DefaultFramingErrorCallback UART1_DefaultFramingErrorCallback `(v  1 s 1 UART1_DefaultFramingErrorCallback ]
-"445
+"446
 [v _UART1_DefaultOverrunErrorCallback UART1_DefaultOverrunErrorCallback `(v  1 s 1 UART1_DefaultOverrunErrorCallback ]
-"450
+"451
 [v _UART1_DefaultParityErrorCallback UART1_DefaultParityErrorCallback `(v  1 s 1 UART1_DefaultParityErrorCallback ]
-"455
+"456
 [v _UART1_FramingErrorCallbackRegister UART1_FramingErrorCallbackRegister `(v  1 e 1 0 ]
-"463
+"464
 [v _UART1_OverrunErrorCallbackRegister UART1_OverrunErrorCallbackRegister `(v  1 e 1 0 ]
-"471
+"472
 [v _UART1_ParityErrorCallbackRegister UART1_ParityErrorCallbackRegister `(v  1 e 1 0 ]
-"478
+"479
 [v _UART1_RxCompleteCallbackRegister UART1_RxCompleteCallbackRegister `(v  1 e 1 0 ]
-"486
+"487
 [v _UART1_TxCompleteCallbackRegister UART1_TxCompleteCallbackRegister `(v  1 e 1 0 ]
-"6 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\Timer_int.c
+"7 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\Timer_int.c
 [v _Timer_int Timer_int `(v  1 e 1 0 ]
 "354 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X/mcc_generated_files/uart/uart1.h
 [v _UART1_TxInterruptHandler UART1_TxInterruptHandler `*.37(v  1 e 2 0 ]
@@ -283,7 +283,7 @@ channel_ANA1 1
 [v _UART1_RxInterruptHandler UART1_RxInterruptHandler `*.37(v  1 e 2 0 ]
 "10 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X/Practica2a.h
 [v _PERIOD PERIOD `us  1 e 2 0 ]
-[s S283 . 1 `uc 1 SWIP 1 0 :1:0 
+[s S1713 . 1 `uc 1 SWIP 1 0 :1:0 
 `uc 1 HLVDIP 1 0 :1:1 
 `uc 1 OSFIP 1 0 :1:2 
 `uc 1 CSWIP 1 0 :1:3 
@@ -293,9 +293,9 @@ channel_ANA1 1
 `uc 1 IOCIP 1 0 :1:7 
 ]
 "2782 D:/Program Files/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h
-[u S292 . 1 `S283 1 . 1 0 ]
-[v _IPR0bits IPR0bits `VES292  1 e 1 @14720 ]
-[s S241 . 1 `uc 1 INT0IP 1 0 :1:0 
+[u S1722 . 1 `S1713 1 . 1 0 ]
+[v _IPR0bits IPR0bits `VES1722  1 e 1 @14720 ]
+[s S1671 . 1 `uc 1 INT0IP 1 0 :1:0 
 `uc 1 ZCDIP 1 0 :1:1 
 `uc 1 ADIP 1 0 :1:2 
 `uc 1 ADTIP 1 0 :1:3 
@@ -305,9 +305,9 @@ channel_ANA1 1
 `uc 1 SMT1PWAIP 1 0 :1:7 
 ]
 "2844
-[u S250 . 1 `S241 1 . 1 0 ]
-[v _IPR1bits IPR1bits `VES250  1 e 1 @14721 ]
-[s S262 . 1 `uc 1 I2C1TXIP 1 0 :1:0 
+[u S1680 . 1 `S1671 1 . 1 0 ]
+[v _IPR1bits IPR1bits `VES1680  1 e 1 @14721 ]
+[s S1692 . 1 `uc 1 I2C1TXIP 1 0 :1:0 
 `uc 1 I2C1IP 1 0 :1:1 
 `uc 1 I2C1EIP 1 0 :1:2 
 `uc 1 U1RXIP 1 0 :1:3 
@@ -317,9 +317,9 @@ channel_ANA1 1
 `uc 1 TMR0IP 1 0 :1:7 
 ]
 "2968
-[u S271 . 1 `S262 1 . 1 0 ]
-[v _IPR3bits IPR3bits `VES271  1 e 1 @14723 ]
-[s S304 . 1 `uc 1 INT1IP 1 0 :1:0 
+[u S1701 . 1 `S1692 1 . 1 0 ]
+[v _IPR3bits IPR3bits `VES1701  1 e 1 @14723 ]
+[s S1734 . 1 `uc 1 INT1IP 1 0 :1:0 
 `uc 1 C2IP 1 0 :1:1 
 `uc 1 DMA2SCNTIP 1 0 :1:2 
 `uc 1 DMA2DCNTIP 1 0 :1:3 
@@ -329,9 +329,9 @@ channel_ANA1 1
 `uc 1 I2C2TXIP 1 0 :1:7 
 ]
 "3087
-[u S313 . 1 `S304 1 . 1 0 ]
-[v _IPR5bits IPR5bits `VES313  1 e 1 @14725 ]
-[s S325 . 1 `uc 1 I2C2IP 1 0 :1:0 
+[u S1743 . 1 `S1734 1 . 1 0 ]
+[v _IPR5bits IPR5bits `VES1743  1 e 1 @14725 ]
+[s S1755 . 1 `uc 1 I2C2IP 1 0 :1:0 
 `uc 1 I2C2EIP 1 0 :1:1 
 `uc 1 U2RXIP 1 0 :1:2 
 `uc 1 U2TXIP 1 0 :1:3 
@@ -341,9 +341,9 @@ channel_ANA1 1
 `uc 1 TMR3GIP 1 0 :1:7 
 ]
 "3149
-[u S334 . 1 `S325 1 . 1 0 ]
-[v _IPR6bits IPR6bits `VES334  1 e 1 @14726 ]
-[s S2231 . 1 `uc 1 INT0IE 1 0 :1:0 
+[u S1764 . 1 `S1755 1 . 1 0 ]
+[v _IPR6bits IPR6bits `VES1764  1 e 1 @14726 ]
+[s S78 . 1 `uc 1 INT0IE 1 0 :1:0 
 `uc 1 ZCDIE 1 0 :1:1 
 `uc 1 ADIE 1 0 :1:2 
 `uc 1 ADTIE 1 0 :1:3 
@@ -353,9 +353,9 @@ channel_ANA1 1
 `uc 1 SMT1PWAIE 1 0 :1:7 
 ]
 "3409
-[u S2240 . 1 `S2231 1 . 1 0 ]
-[v _PIE1bits PIE1bits `VES2240  1 e 1 @14737 ]
-[s S1747 . 1 `uc 1 I2C1TXIE 1 0 :1:0 
+[u S87 . 1 `S78 1 . 1 0 ]
+[v _PIE1bits PIE1bits `VES87  1 e 1 @14737 ]
+[s S2060 . 1 `uc 1 I2C1TXIE 1 0 :1:0 
 `uc 1 I2C1IE 1 0 :1:1 
 `uc 1 I2C1EIE 1 0 :1:2 
 `uc 1 U1RXIE 1 0 :1:3 
@@ -365,9 +365,9 @@ channel_ANA1 1
 `uc 1 TMR0IE 1 0 :1:7 
 ]
 "3533
-[u S1756 . 1 `S1747 1 . 1 0 ]
-[v _PIE3bits PIE3bits `VES1756  1 e 1 @14739 ]
-[s S1322 . 1 `uc 1 INT1IE 1 0 :1:0 
+[u S2069 . 1 `S2060 1 . 1 0 ]
+[v _PIE3bits PIE3bits `VES2069  1 e 1 @14739 ]
+[s S1021 . 1 `uc 1 INT1IE 1 0 :1:0 
 `uc 1 C2IE 1 0 :1:1 
 `uc 1 DMA2SCNTIE 1 0 :1:2 
 `uc 1 DMA2DCNTIE 1 0 :1:3 
@@ -377,9 +377,9 @@ channel_ANA1 1
 `uc 1 I2C2TXIE 1 0 :1:7 
 ]
 "3652
-[u S1331 . 1 `S1322 1 . 1 0 ]
-[v _PIE5bits PIE5bits `VES1331  1 e 1 @14741 ]
-[s S1301 . 1 `uc 1 I2C2IE 1 0 :1:0 
+[u S1030 . 1 `S1021 1 . 1 0 ]
+[v _PIE5bits PIE5bits `VES1030  1 e 1 @14741 ]
+[s S1000 . 1 `uc 1 I2C2IE 1 0 :1:0 
 `uc 1 I2C2EIE 1 0 :1:1 
 `uc 1 U2RXIE 1 0 :1:2 
 `uc 1 U2TXIE 1 0 :1:3 
@@ -389,9 +389,9 @@ channel_ANA1 1
 `uc 1 TMR3GIE 1 0 :1:7 
 ]
 "3714
-[u S1310 . 1 `S1301 1 . 1 0 ]
-[v _PIE6bits PIE6bits `VES1310  1 e 1 @14742 ]
-[s S346 . 1 `uc 1 INT0IF 1 0 :1:0 
+[u S1009 . 1 `S1000 1 . 1 0 ]
+[v _PIE6bits PIE6bits `VES1009  1 e 1 @14742 ]
+[s S47 . 1 `uc 1 INT0IF 1 0 :1:0 
 `uc 1 ZCDIF 1 0 :1:1 
 `uc 1 ADIF 1 0 :1:2 
 `uc 1 ADTIF 1 0 :1:3 
@@ -401,9 +401,9 @@ channel_ANA1 1
 `uc 1 SMT1PWAIF 1 0 :1:7 
 ]
 "3974
-[u S355 . 1 `S346 1 . 1 0 ]
-[v _PIR1bits PIR1bits `VES355  1 e 1 @14753 ]
-[s S722 . 1 `uc 1 DMA1SCNTIF 1 0 :1:0 
+[u S56 . 1 `S47 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES56  1 e 1 @14753 ]
+[s S1429 . 1 `uc 1 DMA1SCNTIF 1 0 :1:0 
 `uc 1 DMA1DCNTIF 1 0 :1:1 
 `uc 1 DMA1ORIF 1 0 :1:2 
 `uc 1 DMA1AIF 1 0 :1:3 
@@ -413,9 +413,9 @@ channel_ANA1 1
 `uc 1 I2C1RXIF 1 0 :1:7 
 ]
 "4036
-[u S731 . 1 `S722 1 . 1 0 ]
-[v _PIR2bits PIR2bits `VES731  1 e 1 @14754 ]
-[s S2721 . 1 `uc 1 I2C1TXIF 1 0 :1:0 
+[u S1438 . 1 `S1429 1 . 1 0 ]
+[v _PIR2bits PIR2bits `VES1438  1 e 1 @14754 ]
+[s S2039 . 1 `uc 1 I2C1TXIF 1 0 :1:0 
 `uc 1 I2C1IF 1 0 :1:1 
 `uc 1 I2C1EIF 1 0 :1:2 
 `uc 1 U1RXIF 1 0 :1:3 
@@ -425,9 +425,9 @@ channel_ANA1 1
 `uc 1 TMR0IF 1 0 :1:7 
 ]
 "4098
-[u S2730 . 1 `S2721 1 . 1 0 ]
-[v _PIR3bits PIR3bits `VES2730  1 e 1 @14755 ]
-[s S377 . 1 `uc 1 INT1IF 1 0 :1:0 
+[u S2048 . 1 `S2039 1 . 1 0 ]
+[v _PIR3bits PIR3bits `VES2048  1 e 1 @14755 ]
+[s S1798 . 1 `uc 1 INT1IF 1 0 :1:0 
 `uc 1 C2IF 1 0 :1:1 
 `uc 1 DMA2SCNTIF 1 0 :1:2 
 `uc 1 DMA2DCNTIF 1 0 :1:3 
@@ -437,9 +437,9 @@ channel_ANA1 1
 `uc 1 I2C2TXIF 1 0 :1:7 
 ]
 "4217
-[u S386 . 1 `S377 1 . 1 0 ]
-[v _PIR5bits PIR5bits `VES386  1 e 1 @14757 ]
-[s S408 . 1 `uc 1 TMR4IF 1 0 :1:0 
+[u S1807 . 1 `S1798 1 . 1 0 ]
+[v _PIR5bits PIR5bits `VES1807  1 e 1 @14757 ]
+[s S1829 . 1 `uc 1 TMR4IF 1 0 :1:0 
 `uc 1 CCP2IF 1 0 :1:1 
 `uc 1 . 1 0 :1:2 
 `uc 1 CWG2IF 1 0 :1:3 
@@ -447,8 +447,8 @@ channel_ANA1 1
 `uc 1 INT2IF 1 0 :1:5 
 ]
 "4339
-[u S415 . 1 `S408 1 . 1 0 ]
-[v _PIR7bits PIR7bits `VES415  1 e 1 @14759 ]
+[u S1836 . 1 `S1829 1 . 1 0 ]
+[v _PIR7bits PIR7bits `VES1836  1 e 1 @14759 ]
 "4958
 [v _OSCCON1 OSCCON1 `VEuc  1 e 1 @14809 ]
 "5098
@@ -465,8 +465,6 @@ channel_ANA1 1
 [v _RB2PPS RB2PPS `VEuc  1 e 1 @14858 ]
 "7217
 [v _RC3PPS RC3PPS `VEuc  1 e 1 @14867 ]
-"7317
-[v _RC5PPS RC5PPS `VEuc  1 e 1 @14869 ]
 "7367
 [v _RC6PPS RC6PPS `VEuc  1 e 1 @14870 ]
 "8017
@@ -573,21 +571,21 @@ channel_ANA1 1
 [v _SPI1TCNTL SPI1TCNTL `VEuc  1 e 1 @15634 ]
 "22835
 [v _SPI1CON0 SPI1CON0 `VEuc  1 e 1 @15636 ]
-[s S692 . 1 `uc 1 BMODE 1 0 :1:0 
+[s S1399 . 1 `uc 1 BMODE 1 0 :1:0 
 `uc 1 MST 1 0 :1:1 
 `uc 1 LSBF 1 0 :1:2 
 `uc 1 . 1 0 :4:3 
 `uc 1 EN 1 0 :1:7 
 ]
 "22856
-[s S698 . 1 `uc 1 SPI1BMODE 1 0 :1:0 
+[s S1405 . 1 `uc 1 SPI1BMODE 1 0 :1:0 
 `uc 1 SPI1MST 1 0 :1:1 
 `uc 1 SPI1LSBF 1 0 :1:2 
 `uc 1 . 1 0 :4:3 
 `uc 1 SPI1SPIEN 1 0 :1:7 
 ]
-[u S704 . 1 `S692 1 . 1 0 `S698 1 . 1 0 ]
-[v _SPI1CON0bits SPI1CON0bits `VES704  1 e 1 @15636 ]
+[u S1411 . 1 `S1399 1 . 1 0 `S1405 1 . 1 0 ]
+[v _SPI1CON0bits SPI1CON0bits `VES1411  1 e 1 @15636 ]
 "22901
 [v _SPI1CON1 SPI1CON1 `VEuc  1 e 1 @15637 ]
 "23003
@@ -606,7 +604,7 @@ channel_ANA1 1
 [v _I2C2ADB1 I2C2ADB1 `VEuc  1 e 1 @15704 ]
 "23757
 [v _I2C2CON0 I2C2CON0 `VEuc  1 e 1 @15709 ]
-[s S1016 . 1 `uc 1 MODE 1 0 :3:0 
+[s S715 . 1 `uc 1 MODE 1 0 :3:0 
 `uc 1 MDR 1 0 :1:3 
 `uc 1 CSTR 1 0 :1:4 
 `uc 1 S 1 0 :1:5 
@@ -614,17 +612,17 @@ channel_ANA1 1
 `uc 1 EN 1 0 :1:7 
 ]
 "23779
-[s S1023 . 1 `uc 1 MODE0 1 0 :1:0 
+[s S722 . 1 `uc 1 MODE0 1 0 :1:0 
 `uc 1 MODE1 1 0 :1:1 
 `uc 1 MODE2 1 0 :1:2 
 `uc 1 . 1 0 :4:3 
 `uc 1 I2CEN 1 0 :1:7 
 ]
-[u S1029 . 1 `S1016 1 . 1 0 `S1023 1 . 1 0 ]
-[v _I2C2CON0bits I2C2CON0bits `VES1029  1 e 1 @15709 ]
+[u S728 . 1 `S715 1 . 1 0 `S722 1 . 1 0 ]
+[v _I2C2CON0bits I2C2CON0bits `VES728  1 e 1 @15709 ]
 "23834
 [v _I2C2CON1 I2C2CON1 `VEuc  1 e 1 @15710 ]
-[s S1280 . 1 `uc 1 CSD 1 0 :1:0 
+[s S979 . 1 `uc 1 CSD 1 0 :1:0 
 `uc 1 TXU 1 0 :1:1 
 `uc 1 RXO 1 0 :1:2 
 `uc 1 . 1 0 :1:3 
@@ -634,13 +632,13 @@ channel_ANA1 1
 `uc 1 ACKCNT 1 0 :1:7 
 ]
 "23851
-[u S1289 . 1 `S1280 1 . 1 0 ]
-[v _I2C2CON1bits I2C2CON1bits `VES1289  1 e 1 @15710 ]
+[u S988 . 1 `S979 1 . 1 0 ]
+[v _I2C2CON1bits I2C2CON1bits `VES988  1 e 1 @15710 ]
 "23891
 [v _I2C2CON2 I2C2CON2 `VEuc  1 e 1 @15711 ]
 "23967
 [v _I2C2ERR I2C2ERR `VEuc  1 e 1 @15712 ]
-[s S1177 . 1 `uc 1 NACKIE 1 0 :1:0 
+[s S876 . 1 `uc 1 NACKIE 1 0 :1:0 
 `uc 1 BCLIE 1 0 :1:1 
 `uc 1 BTOIE 1 0 :1:2 
 `uc 1 . 1 0 :1:3 
@@ -649,7 +647,7 @@ channel_ANA1 1
 `uc 1 BTOIF 1 0 :1:6 
 ]
 "23992
-[s S1185 . 1 `uc 1 NACK2IE 1 0 :1:0 
+[s S884 . 1 `uc 1 NACK2IE 1 0 :1:0 
 `uc 1 BCL2IE 1 0 :1:1 
 `uc 1 BTO2IE 1 0 :1:2 
 `uc 1 . 1 0 :1:3 
@@ -657,9 +655,9 @@ channel_ANA1 1
 `uc 1 BCL2IF 1 0 :1:5 
 `uc 1 BTO2IF 1 0 :1:6 
 ]
-[u S1193 . 1 `S1177 1 . 1 0 `S1185 1 . 1 0 ]
-[v _I2C2ERRbits I2C2ERRbits `VES1193  1 e 1 @15712 ]
-[s S1113 . 1 `uc 1 . 1 0 :3:0 
+[u S892 . 1 `S876 1 . 1 0 `S884 1 . 1 0 ]
+[v _I2C2ERRbits I2C2ERRbits `VES892  1 e 1 @15712 ]
+[s S812 . 1 `uc 1 . 1 0 :3:0 
 `uc 1 D 1 0 :1:3 
 `uc 1 R 1 0 :1:4 
 `uc 1 MMA 1 0 :1:5 
@@ -667,23 +665,23 @@ channel_ANA1 1
 `uc 1 BFRE 1 0 :1:7 
 ]
 "24087
-[s S1120 . 1 `uc 1 . 1 0 :3:0 
+[s S819 . 1 `uc 1 . 1 0 :3:0 
 `uc 1 DATA 1 0 :1:3 
 `uc 1 READ 1 0 :1:4 
 ]
-[s S1124 . 1 `uc 1 . 1 0 :3:0 
+[s S823 . 1 `uc 1 . 1 0 :3:0 
 `uc 1 NOT_ADDRESS 1 0 :1:3 
 `uc 1 NOT_WRITE 1 0 :1:4 
 ]
-[s S1128 . 1 `uc 1 . 1 0 :3:0 
+[s S827 . 1 `uc 1 . 1 0 :3:0 
 `uc 1 NOT_A 1 0 :1:3 
 `uc 1 NOT_W 1 0 :1:4 
 ]
-[u S1132 . 1 `S1113 1 . 1 0 `S1120 1 . 1 0 `S1124 1 . 1 0 `S1128 1 . 1 0 ]
-[v _I2C2STAT0bits I2C2STAT0bits `VES1132  1 e 1 @15713 ]
+[u S831 . 1 `S812 1 . 1 0 `S819 1 . 1 0 `S823 1 . 1 0 `S827 1 . 1 0 ]
+[v _I2C2STAT0bits I2C2STAT0bits `VES831  1 e 1 @15713 ]
 "24147
 [v _I2C2STAT1 I2C2STAT1 `VEuc  1 e 1 @15714 ]
-[s S1344 . 1 `uc 1 RXBF 1 0 :1:0 
+[s S1043 . 1 `uc 1 RXBF 1 0 :1:0 
 `uc 1 . 1 0 :1:1 
 `uc 1 CLRBF 1 0 :1:2 
 `uc 1 RXRE 1 0 :1:3 
@@ -693,11 +691,11 @@ channel_ANA1 1
 `uc 1 TXWE 1 0 :1:7 
 ]
 "24164
-[u S1353 . 1 `S1344 1 . 1 0 ]
-[v _I2C2STAT1bits I2C2STAT1bits `VES1353  1 e 1 @15714 ]
+[u S1052 . 1 `S1043 1 . 1 0 ]
+[v _I2C2STAT1bits I2C2STAT1bits `VES1052  1 e 1 @15714 ]
 "24194
 [v _I2C2PIR I2C2PIR `VEuc  1 e 1 @15715 ]
-[s S1056 . 1 `uc 1 SCIF 1 0 :1:0 
+[s S755 . 1 `uc 1 SCIF 1 0 :1:0 
 `uc 1 RSCIF 1 0 :1:1 
 `uc 1 PCIF 1 0 :1:2 
 `uc 1 ADRIF 1 0 :1:3 
@@ -707,7 +705,7 @@ channel_ANA1 1
 `uc 1 CNTIF 1 0 :1:7 
 ]
 "24221
-[s S1065 . 1 `uc 1 SC2IF 1 0 :1:0 
+[s S764 . 1 `uc 1 SC2IF 1 0 :1:0 
 `uc 1 RSC2IF 1 0 :1:1 
 `uc 1 PC2IF 1 0 :1:2 
 `uc 1 ADR2IF 1 0 :1:3 
@@ -716,11 +714,11 @@ channel_ANA1 1
 `uc 1 ACKT2IF 1 0 :1:6 
 `uc 1 CNT2IF 1 0 :1:7 
 ]
-[u S1074 . 1 `S1056 1 . 1 0 `S1065 1 . 1 0 ]
-[v _I2C2PIRbits I2C2PIRbits `VES1074  1 e 1 @15715 ]
+[u S773 . 1 `S755 1 . 1 0 `S764 1 . 1 0 ]
+[v _I2C2PIRbits I2C2PIRbits `VES773  1 e 1 @15715 ]
 "24296
 [v _I2C2PIE I2C2PIE `VEuc  1 e 1 @15716 ]
-[s S976 . 1 `uc 1 SCIE 1 0 :1:0 
+[s S675 . 1 `uc 1 SCIE 1 0 :1:0 
 `uc 1 RSCIE 1 0 :1:1 
 `uc 1 PCIE 1 0 :1:2 
 `uc 1 ADRIE 1 0 :1:3 
@@ -730,7 +728,7 @@ channel_ANA1 1
 `uc 1 CNTIE 1 0 :1:7 
 ]
 "24323
-[s S985 . 1 `uc 1 SC2IE 1 0 :1:0 
+[s S684 . 1 `uc 1 SC2IE 1 0 :1:0 
 `uc 1 RSC2IE 1 0 :1:1 
 `uc 1 PC2IE 1 0 :1:2 
 `uc 1 ADR2IE 1 0 :1:3 
@@ -739,8 +737,8 @@ channel_ANA1 1
 `uc 1 ACKT2IE 1 0 :1:6 
 `uc 1 CNT2IE 1 0 :1:7 
 ]
-[u S994 . 1 `S976 1 . 1 0 `S985 1 . 1 0 ]
-[v _I2C2PIEbits I2C2PIEbits `VES994  1 e 1 @15716 ]
+[u S693 . 1 `S675 1 . 1 0 `S684 1 . 1 0 ]
+[v _I2C2PIEbits I2C2PIEbits `VES693  1 e 1 @15716 ]
 "24398
 [v _I2C2CLK I2C2CLK `VEuc  1 e 1 @15717 ]
 "24566
@@ -825,34 +823,34 @@ channel_ANA1 1
 [v _U1P3H U1P3H `VEuc  1 e 1 @15857 ]
 "26766
 [v _U1CON0 U1CON0 `VEuc  1 e 1 @15858 ]
-[s S1843 . 1 `uc 1 MODE0 1 0 :1:0 
+[s S2467 . 1 `uc 1 MODE0 1 0 :1:0 
 `uc 1 MODE1 1 0 :1:1 
 `uc 1 MODE2 1 0 :1:2 
 `uc 1 MODE3 1 0 :1:3 
 ]
 "26799
-[s S1848 . 1 `uc 1 U1MODE 1 0 :4:0 
+[s S2472 . 1 `uc 1 U1MODE 1 0 :4:0 
 `uc 1 U1RXEN 1 0 :1:4 
 `uc 1 U1TXEN 1 0 :1:5 
 `uc 1 U1ABDEN 1 0 :1:6 
 `uc 1 U1BRGS 1 0 :1:7 
 ]
-[s S1854 . 1 `uc 1 U1MODE0 1 0 :1:0 
+[s S2478 . 1 `uc 1 U1MODE0 1 0 :1:0 
 `uc 1 U1MODE1 1 0 :1:1 
 `uc 1 U1MODE2 1 0 :1:2 
 `uc 1 U1MODE3 1 0 :1:3 
 ]
-[s S1859 . 1 `uc 1 MODE 1 0 :4:0 
+[s S2483 . 1 `uc 1 MODE 1 0 :4:0 
 `uc 1 RXEN 1 0 :1:4 
 `uc 1 TXEN 1 0 :1:5 
 `uc 1 ABDEN 1 0 :1:6 
 `uc 1 BRGS 1 0 :1:7 
 ]
-[u S1865 . 1 `S1843 1 . 1 0 `S1848 1 . 1 0 `S1854 1 . 1 0 `S1859 1 . 1 0 ]
-[v _U1CON0bits U1CON0bits `VES1865  1 e 1 @15858 ]
+[u S2489 . 1 `S2467 1 . 1 0 `S2472 1 . 1 0 `S2478 1 . 1 0 `S2483 1 . 1 0 ]
+[v _U1CON0bits U1CON0bits `VES2489  1 e 1 @15858 ]
 "26894
 [v _U1CON1 U1CON1 `VEuc  1 e 1 @15859 ]
-[s S1807 . 1 `uc 1 SENDB 1 0 :1:0 
+[s S2431 . 1 `uc 1 SENDB 1 0 :1:0 
 `uc 1 BRKOVR 1 0 :1:1 
 `uc 1 . 1 0 :1:2 
 `uc 1 RXBIMD 1 0 :1:3 
@@ -861,7 +859,7 @@ channel_ANA1 1
 `uc 1 ON 1 0 :1:7 
 ]
 "26919
-[s S1815 . 1 `uc 1 U1SENDB 1 0 :1:0 
+[s S2439 . 1 `uc 1 U1SENDB 1 0 :1:0 
 `uc 1 U1BRKOVR 1 0 :1:1 
 `uc 1 . 1 0 :1:2 
 `uc 1 U1RXBIMD 1 0 :1:3 
@@ -869,8 +867,8 @@ channel_ANA1 1
 `uc 1 . 1 0 :2:5 
 `uc 1 U1ON 1 0 :1:7 
 ]
-[u S1823 . 1 `S1807 1 . 1 0 `S1815 1 . 1 0 ]
-[v _U1CON1bits U1CON1bits `VES1823  1 e 1 @15859 ]
+[u S2447 . 1 `S2431 1 . 1 0 `S2439 1 . 1 0 ]
+[v _U1CON1bits U1CON1bits `VES2447  1 e 1 @15859 ]
 "26974
 [v _U1CON2 U1CON2 `VEuc  1 e 1 @15860 ]
 "27123
@@ -881,24 +879,24 @@ channel_ANA1 1
 [v _U1FIFO U1FIFO `VEuc  1 e 1 @15863 ]
 "27293
 [v _U1UIR U1UIR `VEuc  1 e 1 @15864 ]
-[s S1893 . 1 `uc 1 . 1 0 :2:0 
+[s S2517 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 ABDIE 1 0 :1:2 
 `uc 1 . 1 0 :3:3 
 `uc 1 ABDIF 1 0 :1:6 
 `uc 1 WUIF 1 0 :1:7 
 ]
 "27314
-[s S1899 . 1 `uc 1 . 1 0 :2:0 
+[s S2523 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 U1ABDIE 1 0 :1:2 
 `uc 1 . 1 0 :3:3 
 `uc 1 U1ABDIF 1 0 :1:6 
 `uc 1 U1WUIF 1 0 :1:7 
 ]
-[u S1905 . 1 `S1893 1 . 1 0 `S1899 1 . 1 0 ]
-[v _U1UIRbits U1UIRbits `VES1905  1 e 1 @15864 ]
+[u S2529 . 1 `S2517 1 . 1 0 `S2523 1 . 1 0 ]
+[v _U1UIRbits U1UIRbits `VES2529  1 e 1 @15864 ]
 "27349
 [v _U1ERRIR U1ERRIR `VEuc  1 e 1 @15865 ]
-[s S1921 . 1 `uc 1 TXCIF 1 0 :1:0 
+[s S2545 . 1 `uc 1 TXCIF 1 0 :1:0 
 `uc 1 RXFOIF 1 0 :1:1 
 `uc 1 RXBKIF 1 0 :1:2 
 `uc 1 FERIF 1 0 :1:3 
@@ -908,7 +906,7 @@ channel_ANA1 1
 `uc 1 TXMTIF 1 0 :1:7 
 ]
 "27376
-[s S1930 . 1 `uc 1 U1TXCIF 1 0 :1:0 
+[s S2554 . 1 `uc 1 U1TXCIF 1 0 :1:0 
 `uc 1 U1RXFOIF 1 0 :1:1 
 `uc 1 U1RXBKIF 1 0 :1:2 
 `uc 1 U1FERIF 1 0 :1:3 
@@ -917,13 +915,13 @@ channel_ANA1 1
 `uc 1 U1PERIF 1 0 :1:6 
 `uc 1 U1TXMTIF 1 0 :1:7 
 ]
-[u S1939 . 1 `S1921 1 . 1 0 `S1930 1 . 1 0 ]
-[v _U1ERRIRbits U1ERRIRbits `VES1939  1 e 1 @15865 ]
+[u S2563 . 1 `S2545 1 . 1 0 `S2554 1 . 1 0 ]
+[v _U1ERRIRbits U1ERRIRbits `VES2563  1 e 1 @15865 ]
 "27461
 [v _U1ERRIE U1ERRIE `VEuc  1 e 1 @15866 ]
 "28240
 [v _FVRCON FVRCON `VEuc  1 e 1 @16065 ]
-[s S2147 . 1 `uc 1 ADFVR 1 0 :2:0 
+[s S501 . 1 `uc 1 ADFVR 1 0 :2:0 
 `uc 1 CDAFVR 1 0 :2:2 
 `uc 1 TSRNG 1 0 :1:4 
 `uc 1 TSEN 1 0 :1:5 
@@ -931,7 +929,7 @@ channel_ANA1 1
 `uc 1 EN 1 0 :1:7 
 ]
 "28264
-[s S2154 . 1 `uc 1 ADFVR0 1 0 :1:0 
+[s S508 . 1 `uc 1 ADFVR0 1 0 :1:0 
 `uc 1 ADFVR1 1 0 :1:1 
 `uc 1 CDAFVR0 1 0 :1:2 
 `uc 1 CDAFVR1 1 0 :1:3 
@@ -939,8 +937,8 @@ channel_ANA1 1
 `uc 1 FVRRDY 1 0 :1:6 
 `uc 1 FVREN 1 0 :1:7 
 ]
-[u S2162 . 1 `S2147 1 . 1 0 `S2154 1 . 1 0 ]
-[v _FVRCONbits FVRCONbits `VES2162  1 e 1 @16065 ]
+[u S516 . 1 `S501 1 . 1 0 `S508 1 . 1 0 ]
+[v _FVRCONbits FVRCONbits `VES516  1 e 1 @16065 ]
 "28619
 [v _ADLTHL ADLTHL `VEuc  1 e 1 @16094 ]
 "28747
@@ -993,7 +991,7 @@ channel_ANA1 1
 [v _ADPREH ADPREH `VEuc  1 e 1 @16119 ]
 "31744
 [v _ADCON0 ADCON0 `VEuc  1 e 1 @16120 ]
-[s S2260 . 1 `uc 1 GO 1 0 :1:0 
+[s S107 . 1 `uc 1 GO 1 0 :1:0 
 `uc 1 . 1 0 :1:1 
 `uc 1 FM 1 0 :2:2 
 `uc 1 CS 1 0 :1:4 
@@ -1002,7 +1000,7 @@ channel_ANA1 1
 `uc 1 ON 1 0 :1:7 
 ]
 "31782
-[s S2268 . 1 `uc 1 ADGO 1 0 :1:0 
+[s S115 . 1 `uc 1 ADGO 1 0 :1:0 
 `uc 1 . 1 0 :1:1 
 `uc 1 ADFM 1 0 :2:2 
 `uc 1 ADCS 1 0 :1:4 
@@ -1010,44 +1008,44 @@ channel_ANA1 1
 `uc 1 ADCONT 1 0 :1:6 
 `uc 1 ADON 1 0 :1:7 
 ]
-[s S2276 . 1 `uc 1 DONE 1 0 :1:0 
+[s S123 . 1 `uc 1 DONE 1 0 :1:0 
 `uc 1 . 1 0 :1:1 
 `uc 1 FM0 1 0 :1:2 
 ]
-[s S2280 . 1 `uc 1 GO_NOT_DONE 1 0 :1:0 
+[s S127 . 1 `uc 1 GO_NOT_DONE 1 0 :1:0 
 ]
-[s S2282 . 1 `uc 1 GO_nDONE 1 0 :1:0 
+[s S129 . 1 `uc 1 GO_nDONE 1 0 :1:0 
 `uc 1 . 1 0 :1:1 
 `uc 1 ADFM0 1 0 :1:2 
 ]
-[u S2286 . 1 `S2260 1 . 1 0 `S2268 1 . 1 0 `S2276 1 . 1 0 `S2280 1 . 1 0 `S2282 1 . 1 0 ]
-[v _ADCON0bits ADCON0bits `VES2286  1 e 1 @16120 ]
+[u S133 . 1 `S107 1 . 1 0 `S115 1 . 1 0 `S123 1 . 1 0 `S127 1 . 1 0 `S129 1 . 1 0 ]
+[v _ADCON0bits ADCON0bits `VES133  1 e 1 @16120 ]
 "31862
 [v _ADCON1 ADCON1 `VEuc  1 e 1 @16121 ]
-[s S2515 . 1 `uc 1 DSEN 1 0 :1:0 
+[s S362 . 1 `uc 1 DSEN 1 0 :1:0 
 `uc 1 . 1 0 :4:1 
 `uc 1 GPOL 1 0 :1:5 
 `uc 1 IPEN 1 0 :1:6 
 `uc 1 PPOL 1 0 :1:7 
 ]
 "31883
-[s S2521 . 1 `uc 1 ADDSEN 1 0 :1:0 
+[s S368 . 1 `uc 1 ADDSEN 1 0 :1:0 
 `uc 1 . 1 0 :4:1 
 `uc 1 ADGPOL 1 0 :1:5 
 `uc 1 ADIPEN 1 0 :1:6 
 `uc 1 ADPPOL 1 0 :1:7 
 ]
-[u S2527 . 1 `S2515 1 . 1 0 `S2521 1 . 1 0 ]
-[v _ADCON1bits ADCON1bits `VES2527  1 e 1 @16121 ]
+[u S374 . 1 `S362 1 . 1 0 `S368 1 . 1 0 ]
+[v _ADCON1bits ADCON1bits `VES374  1 e 1 @16121 ]
 "31928
 [v _ADCON2 ADCON2 `VEuc  1 e 1 @16122 ]
-[s S2376 . 1 `uc 1 MODE 1 0 :3:0 
+[s S223 . 1 `uc 1 MODE 1 0 :3:0 
 `uc 1 ACLR 1 0 :1:3 
 `uc 1 CRS 1 0 :3:4 
 `uc 1 PSIS 1 0 :1:7 
 ]
 "31976
-[s S2381 . 1 `uc 1 ADMD0 1 0 :1:0 
+[s S228 . 1 `uc 1 ADMD0 1 0 :1:0 
 `uc 1 ADMD1 1 0 :1:1 
 `uc 1 ADMD2 1 0 :1:2 
 `uc 1 ADACLR 1 0 :1:3 
@@ -1056,11 +1054,11 @@ channel_ANA1 1
 `uc 1 ADCRS2 1 0 :1:6 
 `uc 1 ADPSIS 1 0 :1:7 
 ]
-[s S2390 . 1 `uc 1 ADMD 1 0 :3:0 
+[s S237 . 1 `uc 1 ADMD 1 0 :3:0 
 `uc 1 . 1 0 :1:3 
 `uc 1 ADCRS 1 0 :3:4 
 ]
-[s S2394 . 1 `uc 1 MODE0 1 0 :1:0 
+[s S241 . 1 `uc 1 MODE0 1 0 :1:0 
 `uc 1 MODE1 1 0 :1:1 
 `uc 1 MODE2 1 0 :1:2 
 `uc 1 . 1 0 :1:3 
@@ -1068,24 +1066,24 @@ channel_ANA1 1
 `uc 1 CRS1 1 0 :1:5 
 `uc 1 CRS2 1 0 :1:6 
 ]
-[s S2402 . 1 `uc 1 MD 1 0 :3:0 
+[s S249 . 1 `uc 1 MD 1 0 :3:0 
 ]
-[s S2404 . 1 `uc 1 MD0 1 0 :1:0 
+[s S251 . 1 `uc 1 MD0 1 0 :1:0 
 `uc 1 MD1 1 0 :1:1 
 `uc 1 MD2 1 0 :1:2 
 ]
-[s S2408 . 1 `uc 1 ADMODE 1 0 :3:0 
+[s S255 . 1 `uc 1 ADMODE 1 0 :3:0 
 ]
-[u S2410 . 1 `S2376 1 . 1 0 `S2381 1 . 1 0 `S2390 1 . 1 0 `S2394 1 . 1 0 `S2402 1 . 1 0 `S2404 1 . 1 0 `S2408 1 . 1 0 ]
-[v _ADCON2bits ADCON2bits `VES2410  1 e 1 @16122 ]
+[u S257 . 1 `S223 1 . 1 0 `S228 1 . 1 0 `S237 1 . 1 0 `S241 1 . 1 0 `S249 1 . 1 0 `S251 1 . 1 0 `S255 1 . 1 0 ]
+[v _ADCON2bits ADCON2bits `VES257  1 e 1 @16122 ]
 "32106
 [v _ADCON3 ADCON3 `VEuc  1 e 1 @16123 ]
-[s S2321 . 1 `uc 1 TMD 1 0 :3:0 
+[s S168 . 1 `uc 1 TMD 1 0 :3:0 
 `uc 1 SOI 1 0 :1:3 
 `uc 1 CALC 1 0 :3:4 
 ]
 "32141
-[s S2325 . 1 `uc 1 ADTMD0 1 0 :1:0 
+[s S172 . 1 `uc 1 ADTMD0 1 0 :1:0 
 `uc 1 ADTMD1 1 0 :1:1 
 `uc 1 ADTMD2 1 0 :1:2 
 `uc 1 ADSOI 1 0 :1:3 
@@ -1093,11 +1091,11 @@ channel_ANA1 1
 `uc 1 ADCALC1 1 0 :1:5 
 `uc 1 ADCALC2 1 0 :1:6 
 ]
-[s S2333 . 1 `uc 1 ADTMD 1 0 :3:0 
+[s S180 . 1 `uc 1 ADTMD 1 0 :3:0 
 `uc 1 . 1 0 :1:3 
 `uc 1 ADCALC 1 0 :3:4 
 ]
-[s S2337 . 1 `uc 1 TMD0 1 0 :1:0 
+[s S184 . 1 `uc 1 TMD0 1 0 :1:0 
 `uc 1 TMD1 1 0 :1:1 
 `uc 1 TMD2 1 0 :1:2 
 `uc 1 . 1 0 :1:3 
@@ -1105,11 +1103,11 @@ channel_ANA1 1
 `uc 1 CALC1 1 0 :1:5 
 `uc 1 CALC2 1 0 :1:6 
 ]
-[u S2345 . 1 `S2321 1 . 1 0 `S2325 1 . 1 0 `S2333 1 . 1 0 `S2337 1 . 1 0 ]
-[v _ADCON3bits ADCON3bits `VES2345  1 e 1 @16123 ]
+[u S192 . 1 `S168 1 . 1 0 `S172 1 . 1 0 `S180 1 . 1 0 `S184 1 . 1 0 ]
+[v _ADCON3bits ADCON3bits `VES192  1 e 1 @16123 ]
 "32236
 [v _ADSTAT ADSTAT `VEuc  1 e 1 @16124 ]
-[s S2455 . 1 `uc 1 STAT 1 0 :3:0 
+[s S302 . 1 `uc 1 STAT 1 0 :3:0 
 `uc 1 . 1 0 :1:3 
 `uc 1 MATH 1 0 :1:4 
 `uc 1 LTHR 1 0 :1:5 
@@ -1117,7 +1115,7 @@ channel_ANA1 1
 `uc 1 OV 1 0 :1:7 
 ]
 "32271
-[s S2462 . 1 `uc 1 ADSTAT0 1 0 :1:0 
+[s S309 . 1 `uc 1 ADSTAT0 1 0 :1:0 
 `uc 1 ADSTAT1 1 0 :1:1 
 `uc 1 ADSTAT2 1 0 :1:2 
 `uc 1 . 1 0 :1:3 
@@ -1126,16 +1124,16 @@ channel_ANA1 1
 `uc 1 ADUTHR 1 0 :1:6 
 `uc 1 ADAOV 1 0 :1:7 
 ]
-[s S2471 . 1 `uc 1 ADSTAT 1 0 :3:0 
+[s S318 . 1 `uc 1 ADSTAT 1 0 :3:0 
 `uc 1 . 1 0 :4:3 
 `uc 1 ADOV 1 0 :1:7 
 ]
-[s S2475 . 1 `uc 1 STAT0 1 0 :1:0 
+[s S322 . 1 `uc 1 STAT0 1 0 :1:0 
 `uc 1 STAT1 1 0 :1:1 
 `uc 1 STAT2 1 0 :1:2 
 ]
-[u S2479 . 1 `S2455 1 . 1 0 `S2462 1 . 1 0 `S2471 1 . 1 0 `S2475 1 . 1 0 ]
-[v _ADSTATbits ADSTATbits `VES2479  1 e 1 @16124 ]
+[u S326 . 1 `S302 1 . 1 0 `S309 1 . 1 0 `S318 1 . 1 0 `S322 1 . 1 0 ]
+[v _ADSTATbits ADSTATbits `VES326  1 e 1 @16124 ]
 "32361
 [v _ADREF ADREF `VEuc  1 e 1 @16125 ]
 "32443
@@ -1148,31 +1146,31 @@ channel_ANA1 1
 [v _TMR0H TMR0H `VEuc  1 e 1 @16311 ]
 "45195
 [v _T0CON0 T0CON0 `VEuc  1 e 1 @16312 ]
-[s S2755 . 1 `uc 1 OUTPS 1 0 :4:0 
+[s S2082 . 1 `uc 1 OUTPS 1 0 :4:0 
 `uc 1 MD16 1 0 :1:4 
 `uc 1 OUT 1 0 :1:5 
 `uc 1 . 1 0 :1:6 
 `uc 1 EN 1 0 :1:7 
 ]
 "45223
-[s S2761 . 1 `uc 1 T0OUTPS 1 0 :4:0 
+[s S2088 . 1 `uc 1 T0OUTPS 1 0 :4:0 
 `uc 1 T0MD16 1 0 :1:4 
 `uc 1 T0OUT 1 0 :1:5 
 `uc 1 . 1 0 :1:6 
 `uc 1 T0EN 1 0 :1:7 
 ]
 "45223
-[s S2767 . 1 `uc 1 OUTPS0 1 0 :1:0 
+[s S2094 . 1 `uc 1 OUTPS0 1 0 :1:0 
 `uc 1 OUTPS1 1 0 :1:1 
 `uc 1 OUTPS2 1 0 :1:2 
 `uc 1 OUTPS3 1 0 :1:3 
 `uc 1 T016BIT 1 0 :1:4 
 ]
 "45223
-[u S2773 . 1 `S2755 1 . 1 0 `S2761 1 . 1 0 `S2767 1 . 1 0 ]
+[u S2100 . 1 `S2082 1 . 1 0 `S2088 1 . 1 0 `S2094 1 . 1 0 ]
 "45223
 "45223
-[v _T0CON0bits T0CON0bits `VES2773  1 e 1 @16312 ]
+[v _T0CON0bits T0CON0bits `VES2100  1 e 1 @16312 ]
 "45293
 [v _T0CON1 T0CON1 `VEuc  1 e 1 @16313 ]
 "45435
@@ -1183,6 +1181,30 @@ channel_ANA1 1
 [v _LATC LATC `VEuc  1 e 1 @16316 ]
 "45771
 [v _LATD LATD `VEuc  1 e 1 @16317 ]
+[s S2588 . 1 `uc 1 LATD0 1 0 :1:0 
+`uc 1 LATD1 1 0 :1:1 
+`uc 1 LATD2 1 0 :1:2 
+`uc 1 LATD3 1 0 :1:3 
+`uc 1 LATD4 1 0 :1:4 
+`uc 1 LATD5 1 0 :1:5 
+`uc 1 LATD6 1 0 :1:6 
+`uc 1 LATD7 1 0 :1:7 
+]
+"45798
+[s S2597 . 1 `uc 1 LD0 1 0 :1:0 
+`uc 1 LD1 1 0 :1:1 
+`uc 1 LD2 1 0 :1:2 
+`uc 1 LD3 1 0 :1:3 
+`uc 1 LD4 1 0 :1:4 
+`uc 1 LD5 1 0 :1:5 
+`uc 1 LD6 1 0 :1:6 
+`uc 1 LD7 1 0 :1:7 
+]
+"45798
+[u S2606 . 1 `S2588 1 . 1 0 `S2597 1 . 1 0 ]
+"45798
+"45798
+[v _LATDbits LATDbits `VES2606  1 e 1 @16317 ]
 "45883
 [v _LATE LATE `VEuc  1 e 1 @16318 ]
 "45935
@@ -1191,7 +1213,7 @@ channel_ANA1 1
 [v _TRISB TRISB `VEuc  1 e 1 @16323 ]
 "46059
 [v _TRISC TRISC `VEuc  1 e 1 @16324 ]
-[s S670 . 1 `uc 1 TRISC0 1 0 :1:0 
+[s S1377 . 1 `uc 1 TRISC0 1 0 :1:0 
 `uc 1 TRISC1 1 0 :1:1 
 `uc 1 TRISC2 1 0 :1:2 
 `uc 1 TRISC3 1 0 :1:3 
@@ -1201,15 +1223,15 @@ channel_ANA1 1
 `uc 1 TRISC7 1 0 :1:7 
 ]
 "46076
-[u S679 . 1 `S670 1 . 1 0 ]
+[u S1386 . 1 `S1377 1 . 1 0 ]
 "46076
 "46076
-[v _TRISCbits TRISCbits `VES679  1 e 1 @16324 ]
+[v _TRISCbits TRISCbits `VES1386  1 e 1 @16324 ]
 "46121
 [v _TRISD TRISD `VEuc  1 e 1 @16325 ]
 "46183
 [v _TRISE TRISE `VEuc  1 e 1 @16326 ]
-[s S96 . 1 `uc 1 INT0EDG 1 0 :1:0 
+[s S1633 . 1 `uc 1 INT0EDG 1 0 :1:0 
 `uc 1 INT1EDG 1 0 :1:1 
 `uc 1 INT2EDG 1 0 :1:2 
 `uc 1 . 1 0 :2:3 
@@ -1218,23 +1240,23 @@ channel_ANA1 1
 `uc 1 GIE 1 0 :1:7 
 ]
 "46521
-[s S104 . 1 `uc 1 . 1 0 :7:0 
+[s S1641 . 1 `uc 1 . 1 0 :7:0 
 `uc 1 GIEH 1 0 :1:7 
 ]
 "46521
-[u S107 . 1 `S96 1 . 1 0 `S104 1 . 1 0 ]
+[u S1644 . 1 `S1633 1 . 1 0 `S1641 1 . 1 0 ]
 "46521
 "46521
-[v _INTCON0bits INTCON0bits `VES107  1 e 1 @16338 ]
+[v _INTCON0bits INTCON0bits `VES1644  1 e 1 @16338 ]
 "46597
 [v _IVTLOCK IVTLOCK `VEuc  1 e 1 @16340 ]
-[s S231 . 1 `uc 1 IVTLOCKED 1 0 :1:0 
+[s S1661 . 1 `uc 1 IVTLOCKED 1 0 :1:0 
 ]
 "46607
-[u S233 . 1 `S231 1 . 1 0 ]
+[u S1663 . 1 `S1661 1 . 1 0 ]
 "46607
 "46607
-[v _IVTLOCKbits IVTLOCKbits `VES233  1 e 1 @16340 ]
+[v _IVTLOCKbits IVTLOCKbits `VES1663  1 e 1 @16340 ]
 "46626
 [v _IVTBASEL IVTBASEL `VEuc  1 e 1 @16341 ]
 "46688
@@ -1247,12 +1269,12 @@ channel_ANA1 1
 [v _ADCC_ADI_InterruptHandler ADCC_ADI_InterruptHandler `*.37(v  1 s 2 ADCC_ADI_InterruptHandler ]
 "85 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/i2c_host/src/i2c2.c
 [v _I2C2_Callback I2C2_Callback `*.37(v  1 s 2 I2C2_Callback ]
-[s S952 . 13 `a 1 busy 1 0 `us 1 address 2 1 `*.2uc 1 writePtr 2 3 `ui 1 writeLength 2 5 `*.2uc 1 readPtr 2 7 `ui 1 readLength 2 9 `a 1 switchToRead 1 11 `E16163 1 errorState 1 12 ]
+[s S651 . 13 `a 1 busy 1 0 `us 1 address 2 1 `*.2uc 1 writePtr 2 3 `ui 1 writeLength 2 5 `*.2uc 1 readPtr 2 7 `ui 1 readLength 2 9 `a 1 switchToRead 1 11 `E16163 1 errorState 1 12 ]
 "86
-[v _i2c2Status i2c2Status `VES952  1 e 13 0 ]
-[s S660 . 5 `uc 1 con0 1 0 `uc 1 con1 1 1 `uc 1 con2 1 2 `uc 1 baud 1 3 `uc 1 operation 1 4 ]
+[v _i2c2Status i2c2Status `VES651  1 e 13 0 ]
+[s S1367 . 5 `uc 1 con0 1 0 `uc 1 con1 1 1 `uc 1 con2 1 2 `uc 1 baud 1 3 `uc 1 operation 1 4 ]
 "65 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/spi/src/spi1.c
-[v _spi1_configuration spi1_configuration `C[1]S660  1 s 5 spi1_configuration ]
+[v _spi1_configuration spi1_configuration `C[1]S1367  1 s 5 spi1_configuration ]
 "38 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
 [v _INT0_InterruptHandler INT0_InterruptHandler `*.37(v  1 e 2 0 ]
 "39
@@ -1275,24 +1297,24 @@ channel_ANA1 1
 [v _uart1RxTail uart1RxTail `VEuc  1 s 1 uart1RxTail ]
 "90
 [v _uart1RxBuffer uart1RxBuffer `VE[8]uc  1 s 8 uart1RxBuffer ]
-[s S1732 . 1 `uc 1 perr 1 0 :1:0 
+[s S2365 . 1 `uc 1 perr 1 0 :1:0 
 `uc 1 ferr 1 0 :1:1 
 `uc 1 oerr 1 0 :1:2 
 `uc 1 reserved 1 0 :5:3 
 ]
 "91
-[u S1737 . 2 `S1732 1 . 1 0 `ui 1 status 2 0 ]
-[v _uart1RxStatusBuffer uart1RxStatusBuffer `VE[8]S1737  1 s 16 uart1RxStatusBuffer ]
+[u S2370 . 2 `S2365 1 . 1 0 `ui 1 status 2 0 ]
+[v _uart1RxStatusBuffer uart1RxStatusBuffer `VE[8]S2370  1 s 16 uart1RxStatusBuffer ]
 "92
 [v _uart1RxCount uart1RxCount `VEuc  1 e 1 0 ]
-[s S1732 . 1 `uc 1 perr 1 0 :1:0 
+[s S2365 . 1 `uc 1 perr 1 0 :1:0 
 `uc 1 ferr 1 0 :1:1 
 `uc 1 oerr 1 0 :1:2 
 `uc 1 reserved 1 0 :5:3 
 ]
 "94
-[u S1737 . 2 `S1732 1 . 1 0 `ui 1 status 2 0 ]
-[v _uart1RxLastError uart1RxLastError `VES1737  1 e 2 0 ]
+[u S2370 . 2 `S2365 1 . 1 0 `ui 1 status 2 0 ]
+[v _uart1RxLastError uart1RxLastError `VES2370  1 e 2 0 ]
 "100
 [v _UART1_FramingErrorHandler UART1_FramingErrorHandler `*.37(v  1 e 2 0 ]
 "101
@@ -1323,23 +1345,23 @@ channel_ANA1 1
 {
 "178
 } 0
-"471
+"472
 [v _UART1_ParityErrorCallbackRegister UART1_ParityErrorCallbackRegister `(v  1 e 1 0 ]
 {
-[v UART1_ParityErrorCallbackRegister@callbackHandler callbackHandler `*.37(v  1 p 2 10 ]
-"477
+[v UART1_ParityErrorCallbackRegister@callbackHandler callbackHandler `*.37(v  1 p 2 19 ]
+"478
 } 0
-"463
+"464
 [v _UART1_OverrunErrorCallbackRegister UART1_OverrunErrorCallbackRegister `(v  1 e 1 0 ]
 {
-[v UART1_OverrunErrorCallbackRegister@callbackHandler callbackHandler `*.37(v  1 p 2 10 ]
-"469
+[v UART1_OverrunErrorCallbackRegister@callbackHandler callbackHandler `*.37(v  1 p 2 19 ]
+"470
 } 0
-"455
+"456
 [v _UART1_FramingErrorCallbackRegister UART1_FramingErrorCallbackRegister `(v  1 e 1 0 ]
 {
-[v UART1_FramingErrorCallbackRegister@callbackHandler callbackHandler `*.37(v  1 p 2 10 ]
-"461
+[v UART1_FramingErrorCallbackRegister@callbackHandler callbackHandler `*.37(v  1 p 2 19 ]
+"462
 } 0
 "50 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/timer/src/tmr0.c
 [v _Timer_Initialize Timer_Initialize `(v  1 e 1 0 ]
@@ -1349,7 +1371,7 @@ channel_ANA1 1
 "117
 [v _Timer_OverflowCallbackRegister Timer_OverflowCallbackRegister `(v  1 e 1 0 ]
 {
-[v Timer_OverflowCallbackRegister@CallbackHandler CallbackHandler `*.37(v  1 p 2 10 ]
+[v Timer_OverflowCallbackRegister@CallbackHandler CallbackHandler `*.37(v  1 p 2 19 ]
 "120
 } 0
 "70 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/spi/src/spi1.c
@@ -1360,31 +1382,31 @@ channel_ANA1 1
 "38 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/pins.c
 [v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
 {
-"143
+"142
 } 0
 "42 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
 [v _INTERRUPT_Initialize INTERRUPT_Initialize `(v  1 e 1 0 ]
 {
 "46
-[v INTERRUPT_Initialize@state state `a  1 a 1 12 ]
+[v INTERRUPT_Initialize@state state `a  1 a 1 21 ]
 "96
 } 0
 "201
 [v _INT2_SetInterruptHandler INT2_SetInterruptHandler `(v  1 e 1 0 ]
 {
-[v INT2_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 10 ]
+[v INT2_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 19 ]
 "203
 } 0
 "167
 [v _INT1_SetInterruptHandler INT1_SetInterruptHandler `(v  1 e 1 0 ]
 {
-[v INT1_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 10 ]
+[v INT1_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 19 ]
 "169
 } 0
 "133
 [v _INT0_SetInterruptHandler INT0_SetInterruptHandler `(v  1 e 1 0 ]
 {
-[v INT0_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 10 ]
+[v INT0_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 19 ]
 "135
 } 0
 "91 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/i2c_host/src/i2c2.c
@@ -1400,7 +1422,7 @@ channel_ANA1 1
 "216
 [v _I2C2_CallbackRegister I2C2_CallbackRegister `(v  1 e 1 0 ]
 {
-[v I2C2_CallbackRegister@callbackHandler callbackHandler `*.37(v  1 p 2 10 ]
+[v I2C2_CallbackRegister@callbackHandler callbackHandler `*.37(v  1 p 2 19 ]
 "222
 } 0
 "26 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/peripheral/src/i2c1.c
@@ -1426,63 +1448,8 @@ channel_ANA1 1
 "297
 [v _ADCC_SetADIInterruptHandler ADCC_SetADIInterruptHandler `(v  1 e 1 0 ]
 {
-[v ADCC_SetADIInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 10 ]
+[v ADCC_SetADIInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 19 ]
 "300
-} 0
-"102 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
-[v _IOC_ISR IOC_ISR `IIL(v  1 e 1 0 ]
-{
-"105
-} 0
-"145 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/pins.c
-[v _PIN_MANAGER_IOC PIN_MANAGER_IOC `(v  1 e 1 0 ]
-{
-"147
-} 0
-"115 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
-[v _INT0_ISR INT0_ISR `IIL(v  1 e 1 0 ]
-{
-"121
-} 0
-"124
-[v _INT0_CallBack INT0_CallBack `(v  1 e 1 0 ]
-{
-"131
-} 0
-"137
-[v _INT0_DefaultInterruptHandler INT0_DefaultInterruptHandler `(v  1 e 1 0 ]
-{
-"140
-} 0
-"149
-[v _INT1_ISR INT1_ISR `IIL(v  1 e 1 0 ]
-{
-"155
-} 0
-"158
-[v _INT1_CallBack INT1_CallBack `(v  1 e 1 0 ]
-{
-"165
-} 0
-"171
-[v _INT1_DefaultInterruptHandler INT1_DefaultInterruptHandler `(v  1 e 1 0 ]
-{
-"174
-} 0
-"183
-[v _INT2_ISR INT2_ISR `IIL(v  1 e 1 0 ]
-{
-"189
-} 0
-"192
-[v _INT2_CallBack INT2_CallBack `(v  1 e 1 0 ]
-{
-"199
-} 0
-"205
-[v _INT2_DefaultInterruptHandler INT2_DefaultInterruptHandler `(v  1 e 1 0 ]
-{
-"208
 } 0
 "224 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/i2c_host/src/i2c2.c
 [v _I2C2_ISR I2C2_ISR `IIL(v  1 e 1 0 ]
@@ -1505,7 +1472,7 @@ channel_ANA1 1
 [v I2C2_DataTransmit@data data `uc  1 a 1 wreg ]
 [v I2C2_DataTransmit@data data `uc  1 a 1 wreg ]
 "359
-[v I2C2_DataTransmit@data data `uc  1 a 1 6 ]
+[v I2C2_DataTransmit@data data `uc  1 a 1 22 ]
 "360
 } 0
 "372
@@ -1529,7 +1496,7 @@ channel_ANA1 1
 [v I2C2_CounterSet@counter counter `uc  1 a 1 wreg ]
 [v I2C2_CounterSet@counter counter `uc  1 a 1 wreg ]
 "369
-[v I2C2_CounterSet@counter counter `uc  1 a 1 1 ]
+[v I2C2_CounterSet@counter counter `uc  1 a 1 20 ]
 "370
 } 0
 "352
@@ -1538,7 +1505,7 @@ channel_ANA1 1
 [v I2C2_AddrTransmit@addr addr `uc  1 a 1 wreg ]
 [v I2C2_AddrTransmit@addr addr `uc  1 a 1 wreg ]
 "354
-[v I2C2_AddrTransmit@addr addr `uc  1 a 1 20 ]
+[v I2C2_AddrTransmit@addr addr `uc  1 a 1 12 ]
 "355
 } 0
 "328
@@ -1626,46 +1593,72 @@ channel_ANA1 1
 {
 "297
 } 0
+"102 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
+[v _IOC_ISR IOC_ISR `IIL(v  1 e 1 0 ]
+{
+"105
+} 0
+"144 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/pins.c
+[v _PIN_MANAGER_IOC PIN_MANAGER_IOC `(v  1 e 1 0 ]
+{
+"146
+} 0
+"115 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
+[v _INT0_ISR INT0_ISR `IIL(v  1 e 1 0 ]
+{
+"121
+} 0
+"124
+[v _INT0_CallBack INT0_CallBack `(v  1 e 1 0 ]
+{
+"131
+} 0
+"137
+[v _INT0_DefaultInterruptHandler INT0_DefaultInterruptHandler `(v  1 e 1 0 ]
+{
+"140
+} 0
+"149
+[v _INT1_ISR INT1_ISR `IIL(v  1 e 1 0 ]
+{
+"155
+} 0
+"158
+[v _INT1_CallBack INT1_CallBack `(v  1 e 1 0 ]
+{
+"165
+} 0
+"171
+[v _INT1_DefaultInterruptHandler INT1_DefaultInterruptHandler `(v  1 e 1 0 ]
+{
+"174
+} 0
+"183
+[v _INT2_ISR INT2_ISR `IIL(v  1 e 1 0 ]
+{
+"189
+} 0
+"192
+[v _INT2_CallBack INT2_CallBack `(v  1 e 1 0 ]
+{
+"199
+} 0
+"205
+[v _INT2_DefaultInterruptHandler INT2_DefaultInterruptHandler `(v  1 e 1 0 ]
+{
+"208
+} 0
 "409 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
 [v _UART1_Transmit_Vector_ISR UART1_Transmit_Vector_ISR `IIL(v  1 e 1 0 ]
 {
-"412
+"413
 } 0
-"414
+"415
 [v _UART1_TransmitISR UART1_TransmitISR `(v  1 e 1 0 ]
 {
-"416
-[v UART1_TransmitISR@tempTxTail tempTxTail `uc  1 a 1 8 ]
-"434
-} 0
-"98 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
-[v _Default_ISR Default_ISR `IIH(v  1 e 1 0 ]
-{
-"100
-} 0
-"336 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
-[v _UART1_Receive_Vector_ISR UART1_Receive_Vector_ISR `IIH(v  1 e 1 0 ]
-{
-"339
-} 0
-"341
-[v _UART1_ReceiveISR UART1_ReceiveISR `(v  1 e 1 0 ]
-{
-"344
-[v UART1_ReceiveISR@tempRxHead tempRxHead `uc  1 a 1 1 ]
-"343
-[v UART1_ReceiveISR@regValue regValue `uc  1 a 1 0 ]
-"383
-} 0
-"445
-[v _UART1_DefaultOverrunErrorCallback UART1_DefaultOverrunErrorCallback `(v  1 s 1 UART1_DefaultOverrunErrorCallback ]
-{
-"448
-} 0
-"440
-[v _UART1_DefaultFramingErrorCallback UART1_DefaultFramingErrorCallback `(v  1 s 1 UART1_DefaultFramingErrorCallback ]
-{
-"443
+"417
+[v UART1_TransmitISR@tempTxTail tempTxTail `uc  1 a 1 16 ]
+"435
 } 0
 "286 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/adc/src/adcc.c
 [v _ADCC_ISR ADCC_ISR `IIH(v  1 e 1 0 ]
@@ -1687,11 +1680,11 @@ channel_ANA1 1
 {
 [v UART1_Write@txData txData `uc  1 a 1 wreg ]
 "387
-[v UART1_Write@tempTxHead tempTxHead `uc  1 a 1 4 ]
+[v UART1_Write@tempTxHead tempTxHead `uc  1 a 1 0 ]
 "385
 [v UART1_Write@txData txData `uc  1 a 1 wreg ]
 "389
-[v UART1_Write@txData txData `uc  1 a 1 5 ]
+[v UART1_Write@txData txData `uc  1 a 1 1 ]
 "407
 } 0
 "106 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/adc/src/adcc.c
@@ -1700,8 +1693,13 @@ channel_ANA1 1
 [v ADCC_StartConversion@channel channel `E15846  1 a 1 wreg ]
 [v ADCC_StartConversion@channel channel `E15846  1 a 1 wreg ]
 "109
-[v ADCC_StartConversion@channel channel `E15846  1 a 1 8 ]
+[v ADCC_StartConversion@channel channel `E15846  1 a 1 5 ]
 "113
+} 0
+"98 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
+[v _Default_ISR Default_ISR `IIH(v  1 e 1 0 ]
+{
+"100
 } 0
 "107 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/timer/src/tmr0.c
 [v _Timer_OverflowISR Timer_OverflowISR `IIH(v  1 e 1 0 ]
@@ -1713,10 +1711,34 @@ channel_ANA1 1
 {
 "126
 } 0
-"6 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\Timer_int.c
+"7 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\Timer_int.c
 [v _Timer_int Timer_int `(v  1 e 1 0 ]
 {
-"8
+"10
 [v Timer_int@count count `i  1 s 2 count ]
-"16
+"18
+} 0
+"336 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
+[v _UART1_Receive_Vector_ISR UART1_Receive_Vector_ISR `IIH(v  1 e 1 0 ]
+{
+"339
+} 0
+"341
+[v _UART1_ReceiveISR UART1_ReceiveISR `(v  1 e 1 0 ]
+{
+"344
+[v UART1_ReceiveISR@tempRxHead tempRxHead `uc  1 a 1 9 ]
+"343
+[v UART1_ReceiveISR@regValue regValue `uc  1 a 1 8 ]
+"383
+} 0
+"446
+[v _UART1_DefaultOverrunErrorCallback UART1_DefaultOverrunErrorCallback `(v  1 s 1 UART1_DefaultOverrunErrorCallback ]
+{
+"449
+} 0
+"441
+[v _UART1_DefaultFramingErrorCallback UART1_DefaultFramingErrorCallback `(v  1 s 1 UART1_DefaultFramingErrorCallback ]
+{
+"444
 } 0

@@ -27040,7 +27040,7 @@ void ADCC_Initialize(void)
 
     ADACT = 0x0;
 
-    ADCLK = 0x9;
+    ADCLK = 0x1F;
 
     ADCON0 = 0x84;
 

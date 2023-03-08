@@ -55,8 +55,8 @@ void Timer_Initialize(void)
     //TMR0L 0; 
     TMR0L = 0x0;
 
-    //T0CS FOSC/4; T0CKPS 1:2; T0ASYNC synchronised; 
-    T0CON1 = 0x41;
+    //T0CS FOSC/4; T0CKPS 1:8; T0ASYNC synchronised; 
+    T0CON1 = 0x43;
 
 
     //Set default callback for TMR0 overflow interrupt
