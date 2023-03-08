@@ -27136,7 +27136,7 @@ void I2C2_Initialize(void)
     I2C2PIEbits.SCIE = 0;
     I2C2PIEbits.PCIE = 0;
     I2C2CON0bits.EN = 1;
-    _delay((unsigned long)((1)*(64000000/4000000.0)));
+    _delay((unsigned long)((1)*(16000000/4000000.0)));
     __nop();
     __nop();
     __nop();
@@ -27407,7 +27407,7 @@ static __attribute__((inline)) void I2C2_BusReset(void)
     I2C2PIEbits.SCIE = 0;
     I2C2PIEbits.PCIE = 0;
     I2C2CON0bits.EN = 1;
-    _delay((unsigned long)((1)*(64000000/4000000.0)));
+    _delay((unsigned long)((1)*(16000000/4000000.0)));
     __nop();
     __nop();
     __nop();

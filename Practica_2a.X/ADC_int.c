@@ -7,7 +7,7 @@
 
 void ADC_int(void)
 {
-    LATDbits.LATD0 = !LATDbits.LATD0;
+    
     if(ADPCH == 0)  //Si hicimos la convercion de la primera muestra
     {
         ADCC_StartConversion(channel_ANA1); //Iniciamos la segunda

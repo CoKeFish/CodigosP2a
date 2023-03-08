@@ -26924,7 +26924,7 @@ void Timer_Initialize(void)
     TMR0L = 0x0;
 
 
-    T0CON1 = 0x43;
+    T0CON1 = 0x51;
 
 
 

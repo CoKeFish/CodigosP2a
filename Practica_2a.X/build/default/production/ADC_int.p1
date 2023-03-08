@@ -1,22 +1,7 @@
 Version 4.0 HI-TECH Software Intermediate Code
 [v F16577 `(v ~T0 @X0 0 tf ]
 [v F16584 `(v ~T0 @X0 0 tf ]
-"45777 D:/Program Files/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h
-[; ;D:/Program Files/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h: 45777:     struct {
-[s S2060 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S2060 . LATD0 LATD1 LATD2 LATD3 LATD4 LATD5 LATD6 LATD7 ]
-"45787
-[; ;D:/Program Files/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h: 45787:     struct {
-[s S2061 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S2061 . LD0 LD1 LD2 LD3 LD4 LD5 LD6 LD7 ]
-"45776
-[; ;D:/Program Files/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h: 45776: typedef union {
-[u S2059 `S2060 1 `S2061 1 ]
-[n S2059 . . . ]
-"45798
-[; ;D:/Program Files/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h: 45798: extern volatile LATDbits_t LATDbits __attribute__((address(0x3FBD)));
-[v _LATDbits `VS2059 ~T0 @X0 0 e@16317 ]
-"31094
+"31094 D:/Program Files/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h
 [; ;D:/Program Files/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h: 31094: extern volatile unsigned char ADPCH __attribute__((address(0x3EF1)));
 [v _ADPCH `Vuc ~T0 @X0 0 e@16113 ]
 "13 ADC_int.c
@@ -2280,9 +2265,6 @@ Version 4.0 HI-TECH Software Intermediate Code
 {
 [e :U _ADC_int ]
 [f ]
-"10
-[; ;ADC_int.c: 10:     LATDbits.LATD0 = !LATDbits.LATD0;
-[e = . . _LATDbits 0 0 -> -> ! != -> . . _LATDbits 0 0 `i -> 0 `i `i `uc ]
 "11
 [; ;ADC_int.c: 11:     if(ADPCH == 0)
 [e $ ! == -> _ADPCH `i -> 0 `i 2203  ]

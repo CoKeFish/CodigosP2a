@@ -1,12 +1,10 @@
 
 #include "Practica2a.h"
 #include "Timer_int.h"
-#include <xc.h>
 
 
 void Timer_int(void)
 {
-    //LATDbits.LATD0 = !LATDbits.LATD0;
     static int count = 0;
     count++;
     

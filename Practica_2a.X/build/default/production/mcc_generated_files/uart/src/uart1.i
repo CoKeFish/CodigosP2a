@@ -26979,8 +26979,6 @@ unsigned char __t3rd16on(void);
 
 
 
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.40\\pic\\include\\c99\\conio.h" 1 3
-# 39 "mcc_generated_files/uart/src/../../system/system.h" 2
 
 # 1 "mcc_generated_files/uart/src/../../system/config_bits.h" 1
 # 37 "mcc_generated_files/uart/src/../../system/config_bits.h"
@@ -26992,7 +26990,7 @@ void CLOCK_Initialize(void);
 
 
 # 1 "mcc_generated_files/uart/src/../../system/../system/pins.h" 1
-# 698 "mcc_generated_files/uart/src/../../system/../system/pins.h"
+# 718 "mcc_generated_files/uart/src/../../system/../system/pins.h"
 void PIN_MANAGER_Initialize (void);
 
 
@@ -27793,9 +27791,9 @@ void UART1_Initialize(void)
 
     U1CON2 = 0x8;
 
-    U1BRGL = 0x7;
+    U1BRGL = 0xA0;
 
-    U1BRGH = 0x0;
+    U1BRGH = 0x1;
 
     U1FIFO = 0x20;
 
@@ -28050,7 +28048,6 @@ void UART1_Write(uint8_t txData)
 
 void __attribute__((picinterrupt(("irq(28), base(8), low_priority")))) UART1_Transmit_Vector_ISR(void)
 {
-    LATDbits.LATD1 = !LATDbits.LATD1;
     UART1_TransmitISR();
 }
 
