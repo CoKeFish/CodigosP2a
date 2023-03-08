@@ -12,15 +12,15 @@ void ADC_int(void)
     {
         ADCC_StartConversion(channel_ANA1); //Iniciamos la segunda
         // y Cargamos la lectura al buffer de transmicion
-        UART_Write(ADRESL);
-        UART_Write(ADRESH);
+        UART_Write(9);
+        UART_Write(8);
         UART_Write(',');    // y separamos por ","
     }
     else            //Si es la segunda convercion
     {
         // Cargamos la lectura al buffer de transmicion
-        UART_Write(ADRESL);
-        UART_Write(ADRESH);
+        UART_Write(7);
+        UART_Write(6);
         UART_Write('\n');   // y separamos por un salto de linea
     }
 }

@@ -27706,15 +27706,15 @@ void ADC_int(void)
     {
         ADCC_StartConversion(channel_ANA1);
 
-        UART1_Write(ADRESL);
-        UART1_Write(ADRESH);
+        UART1_Write(9);
+        UART1_Write(8);
         UART1_Write(',');
     }
     else
     {
 
-        UART1_Write(ADRESL);
-        UART1_Write(ADRESH);
+        UART1_Write(7);
+        UART1_Write(6);
         UART1_Write('\n');
     }
 }

@@ -28,12 +28,6 @@ Version 4.0 HI-TECH Software Intermediate Code
 "321 ./mcc_generated_files/uart/../system/../uart/uart1.h
 [; ;./mcc_generated_files/uart/../system/../uart/uart1.h: 321: void UART1_Write(uint8_t txData);
 [v _UART1_Write `(v ~T0 @X0 0 ef1`uc ]
-"30846 D:/Program Files/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h
-[; ;D:/Program Files/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h: 30846: extern volatile unsigned char ADRESL __attribute__((address(0x3EEF)));
-[v _ADRESL `Vuc ~T0 @X0 0 e@16111 ]
-"30974
-[; ;D:/Program Files/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h: 30974: extern volatile unsigned char ADRESH __attribute__((address(0x3EF0)));
-[v _ADRESH `Vuc ~T0 @X0 0 e@16112 ]
 "250 D:/Program Files/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h
 [; ;D:/Program Files/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h: 250: __asm("STATUS_CSHAD equ 03880h");
 [; <" STATUS_CSHAD equ 03880h ;# ">
@@ -2293,11 +2287,11 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;ADC_int.c: 13:         ADCC_StartConversion(channel_ANA1);
 [e ( _ADCC_StartConversion (1 . `E15847 6 ]
 "15
-[; ;ADC_int.c: 15:         UART1_Write(ADRESL);
-[e ( _UART1_Write (1 _ADRESL ]
+[; ;ADC_int.c: 15:         UART1_Write(9);
+[e ( _UART1_Write (1 -> -> 9 `i `uc ]
 "16
-[; ;ADC_int.c: 16:         UART1_Write(ADRESH);
-[e ( _UART1_Write (1 _ADRESH ]
+[; ;ADC_int.c: 16:         UART1_Write(8);
+[e ( _UART1_Write (1 -> -> 8 `i `uc ]
 "17
 [; ;ADC_int.c: 17:         UART1_Write(',');
 [e ( _UART1_Write (1 -> -> 44 `ui `uc ]
@@ -2312,11 +2306,11 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;ADC_int.c: 20:     {
 {
 "22
-[; ;ADC_int.c: 22:         UART1_Write(ADRESL);
-[e ( _UART1_Write (1 _ADRESL ]
+[; ;ADC_int.c: 22:         UART1_Write(7);
+[e ( _UART1_Write (1 -> -> 7 `i `uc ]
 "23
-[; ;ADC_int.c: 23:         UART1_Write(ADRESH);
-[e ( _UART1_Write (1 _ADRESH ]
+[; ;ADC_int.c: 23:         UART1_Write(6);
+[e ( _UART1_Write (1 -> -> 6 `i `uc ]
 "24
 [; ;ADC_int.c: 24:         UART1_Write('\n');
 [e ( _UART1_Write (1 -> -> 10 `ui `uc ]
