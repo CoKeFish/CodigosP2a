@@ -3,7 +3,7 @@
 [d edition pro ]
 [d chip 18F46K42 ]
 [d frameptr 16353 ]
-"106 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/adc/src/adcc.c
+"106 C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/adc/src/adcc.c
 [e E15846 . `uc
 channel_VSS 59
 channel_Temp 60
@@ -13,14 +13,14 @@ channel_FVR_Buffer2 63
 channel_ANA0 0
 channel_ANA1 1
 ]
-"69 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/i2c_host/src/i2c2.c
+"69 C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/i2c_host/src/i2c2.c
 [e E16163 . `uc
 I2C_ERROR_NONE 0
 I2C_ERROR_ADDR_NACK 1
 I2C_ERROR_DATA_NACK 2
 I2C_ERROR_BUS_COLLISION 3
 ]
-"13 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\ADC_int.c
+"14 C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\ADC_int.c
 [e E15847 . `uc
 channel_VSS 59
 channel_Temp 60
@@ -30,7 +30,7 @@ channel_FVR_Buffer2 63
 channel_ANA0 0
 channel_ANA1 1
 ]
-"16 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\Timer_int.c
+"16 C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\Timer_int.c
 [e E41 . `uc
 channel_VSS 59
 channel_Temp 60
@@ -40,7 +40,7 @@ channel_FVR_Buffer2 63
 channel_ANA0 0
 channel_ANA1 1
 ]
-"8 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\ADC_int.c
+"8 C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\ADC_int.c
 [v _ADC_int ADC_int `(v  1 e 1 0 ]
 "4 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\fleq.c
 [v ___fleq __fleq `(b  1 e 0 0 ]
@@ -66,9 +66,9 @@ channel_ANA1 1
 [v ___lmul __lmul `(ul  1 e 4 0 ]
 "91 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\Umul64.c
 [v ___omul __omul `(uo  1 e 8 0 ]
-"42 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\main.c
+"42 C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\main.c
 [v _main main `(i  1 e 2 0 ]
-"47 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/adc/src/adcc.c
+"47 C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/adc/src/adcc.c
 [v _ADCC_Initialize ADCC_Initialize `(v  1 e 1 0 ]
 "106
 [v _ADCC_StartConversion ADCC_StartConversion `(v  1 e 1 0 ]
@@ -78,9 +78,9 @@ channel_ANA1 1
 [v _ADCC_SetADIInterruptHandler ADCC_SetADIInterruptHandler `(v  1 e 1 0 ]
 "302
 [v _ADCC_DefaultADI_ISR ADCC_DefaultADI_ISR `(v  1 s 1 ADCC_DefaultADI_ISR ]
-"43 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/fvr/src/fvr.c
+"43 C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/fvr/src/fvr.c
 [v _FVR_Initialize FVR_Initialize `(v  1 e 1 0 ]
-"91 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/i2c_host/src/i2c2.c
+"91 C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/i2c_host/src/i2c2.c
 [v _I2C2_Initialize I2C2_Initialize `(v  1 e 1 0 ]
 "133
 [v _I2C2_Deinitialize I2C2_Deinitialize `(v  1 e 1 0 ]
@@ -153,11 +153,11 @@ channel_ANA1 1
 [v _I2C2_ErrorFlagsClear I2C2_ErrorFlagsClear `T(v  1 s 1 I2C2_ErrorFlagsClear ]
 "483
 [v _I2C2_BufferClear I2C2_BufferClear `T(v  1 s 1 I2C2_BufferClear ]
-"26 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/peripheral/src/i2c1.c
+"26 C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/peripheral/src/i2c1.c
 [v _I2C1_Initialize I2C1_Initialize `(v  1 e 1 0 ]
-"26 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/peripheral/src/uart2.c
+"26 C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/peripheral/src/uart2.c
 [v _UART2_Initialize UART2_Initialize `(v  1 e 1 0 ]
-"70 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/spi/src/spi1.c
+"70 C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/spi/src/spi1.c
 [v _SPI_Initialize SPI_Initialize `(v  1 e 1 0 ]
 "85
 [v _SPI_Open SPI_Open `(a  1 e 1 0 ]
@@ -175,9 +175,9 @@ channel_ANA1 1
 [v _SPI_ByteWrite SPI_ByteWrite `(v  1 e 1 0 ]
 "150
 [v _SPI_ByteRead SPI_ByteRead `(uc  1 e 1 0 ]
-"37 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/clock.c
+"37 C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/clock.c
 [v _CLOCK_Initialize CLOCK_Initialize `(v  1 e 1 0 ]
-"42 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
+"42 C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
 [v _INTERRUPT_Initialize INTERRUPT_Initialize `(v  1 e 1 0 ]
 "98
 [v _Default_ISR Default_ISR `IIH(v  1 e 1 0 ]
@@ -207,27 +207,27 @@ channel_ANA1 1
 [v _INT2_SetInterruptHandler INT2_SetInterruptHandler `(v  1 e 1 0 ]
 "205
 [v _INT2_DefaultInterruptHandler INT2_DefaultInterruptHandler `(v  1 e 1 0 ]
-"38 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/pins.c
+"38 C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/pins.c
 [v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
 "144
 [v _PIN_MANAGER_IOC PIN_MANAGER_IOC `(v  1 e 1 0 ]
-"36 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/system.c
+"36 C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/system.c
 [v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
-"50 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/timer/src/tmr0.c
+"51 C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/timer/src/tmr0.c
 [v _Timer_Initialize Timer_Initialize `(v  1 e 1 0 ]
-"75
+"78
 [v _Timer_Start Timer_Start `(v  1 e 1 0 ]
-"80
+"83
 [v _Timer_Stop Timer_Stop `(v  1 e 1 0 ]
-"101
-[v _Timer_Reload Timer_Reload `(v  1 e 1 0 ]
-"107
+"113
+[v _Timer_PeriodCountSet Timer_PeriodCountSet `(v  1 e 1 0 ]
+"118
 [v _Timer_OverflowISR Timer_OverflowISR `IIH(v  1 e 1 0 ]
-"117
+"132
 [v _Timer_OverflowCallbackRegister Timer_OverflowCallbackRegister `(v  1 e 1 0 ]
-"122
+"137
 [v _Timer_DefaultOverflowCallback Timer_DefaultOverflowCallback `(v  1 s 1 Timer_DefaultOverflowCallback ]
-"118 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
+"118 C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
 [v _UART1_Initialize UART1_Initialize `(v  1 e 1 0 ]
 "180
 [v _UART1_Deinitialize UART1_Deinitialize `(v  1 e 1 0 ]
@@ -275,13 +275,13 @@ channel_ANA1 1
 [v _UART1_RxCompleteCallbackRegister UART1_RxCompleteCallbackRegister `(v  1 e 1 0 ]
 "487
 [v _UART1_TxCompleteCallbackRegister UART1_TxCompleteCallbackRegister `(v  1 e 1 0 ]
-"7 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\Timer_int.c
+"7 C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\Timer_int.c
 [v _Timer_int Timer_int `(v  1 e 1 0 ]
-"354 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X/mcc_generated_files/uart/uart1.h
+"354 C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X/mcc_generated_files/uart/uart1.h
 [v _UART1_TxInterruptHandler UART1_TxInterruptHandler `*.37(v  1 e 2 0 ]
 "379
 [v _UART1_RxInterruptHandler UART1_RxInterruptHandler `*.37(v  1 e 2 0 ]
-"10 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X/Practica2a.h
+"10 C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X/Practica2a.h
 [v _PERIOD PERIOD `us  1 e 2 0 ]
 [s S1713 . 1 `uc 1 SWIP 1 0 :1:0 
 `uc 1 HLVDIP 1 0 :1:1 
@@ -292,7 +292,7 @@ channel_ANA1 1
 `uc 1 CRCIP 1 0 :1:6 
 `uc 1 IOCIP 1 0 :1:7 
 ]
-"2782 D:/Program Files/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h
+"2782 C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h
 [u S1722 . 1 `S1713 1 . 1 0 ]
 [v _IPR0bits IPR0bits `VES1722  1 e 1 @14720 ]
 [s S1671 . 1 `uc 1 INT0IP 1 0 :1:0 
@@ -823,34 +823,34 @@ channel_ANA1 1
 [v _U1P3H U1P3H `VEuc  1 e 1 @15857 ]
 "26766
 [v _U1CON0 U1CON0 `VEuc  1 e 1 @15858 ]
-[s S2467 . 1 `uc 1 MODE0 1 0 :1:0 
+[s S2471 . 1 `uc 1 MODE0 1 0 :1:0 
 `uc 1 MODE1 1 0 :1:1 
 `uc 1 MODE2 1 0 :1:2 
 `uc 1 MODE3 1 0 :1:3 
 ]
 "26799
-[s S2472 . 1 `uc 1 U1MODE 1 0 :4:0 
+[s S2476 . 1 `uc 1 U1MODE 1 0 :4:0 
 `uc 1 U1RXEN 1 0 :1:4 
 `uc 1 U1TXEN 1 0 :1:5 
 `uc 1 U1ABDEN 1 0 :1:6 
 `uc 1 U1BRGS 1 0 :1:7 
 ]
-[s S2478 . 1 `uc 1 U1MODE0 1 0 :1:0 
+[s S2482 . 1 `uc 1 U1MODE0 1 0 :1:0 
 `uc 1 U1MODE1 1 0 :1:1 
 `uc 1 U1MODE2 1 0 :1:2 
 `uc 1 U1MODE3 1 0 :1:3 
 ]
-[s S2483 . 1 `uc 1 MODE 1 0 :4:0 
+[s S2487 . 1 `uc 1 MODE 1 0 :4:0 
 `uc 1 RXEN 1 0 :1:4 
 `uc 1 TXEN 1 0 :1:5 
 `uc 1 ABDEN 1 0 :1:6 
 `uc 1 BRGS 1 0 :1:7 
 ]
-[u S2489 . 1 `S2467 1 . 1 0 `S2472 1 . 1 0 `S2478 1 . 1 0 `S2483 1 . 1 0 ]
-[v _U1CON0bits U1CON0bits `VES2489  1 e 1 @15858 ]
+[u S2493 . 1 `S2471 1 . 1 0 `S2476 1 . 1 0 `S2482 1 . 1 0 `S2487 1 . 1 0 ]
+[v _U1CON0bits U1CON0bits `VES2493  1 e 1 @15858 ]
 "26894
 [v _U1CON1 U1CON1 `VEuc  1 e 1 @15859 ]
-[s S2431 . 1 `uc 1 SENDB 1 0 :1:0 
+[s S2435 . 1 `uc 1 SENDB 1 0 :1:0 
 `uc 1 BRKOVR 1 0 :1:1 
 `uc 1 . 1 0 :1:2 
 `uc 1 RXBIMD 1 0 :1:3 
@@ -859,7 +859,7 @@ channel_ANA1 1
 `uc 1 ON 1 0 :1:7 
 ]
 "26919
-[s S2439 . 1 `uc 1 U1SENDB 1 0 :1:0 
+[s S2443 . 1 `uc 1 U1SENDB 1 0 :1:0 
 `uc 1 U1BRKOVR 1 0 :1:1 
 `uc 1 . 1 0 :1:2 
 `uc 1 U1RXBIMD 1 0 :1:3 
@@ -867,8 +867,8 @@ channel_ANA1 1
 `uc 1 . 1 0 :2:5 
 `uc 1 U1ON 1 0 :1:7 
 ]
-[u S2447 . 1 `S2431 1 . 1 0 `S2439 1 . 1 0 ]
-[v _U1CON1bits U1CON1bits `VES2447  1 e 1 @15859 ]
+[u S2451 . 1 `S2435 1 . 1 0 `S2443 1 . 1 0 ]
+[v _U1CON1bits U1CON1bits `VES2451  1 e 1 @15859 ]
 "26974
 [v _U1CON2 U1CON2 `VEuc  1 e 1 @15860 ]
 "27123
@@ -879,24 +879,24 @@ channel_ANA1 1
 [v _U1FIFO U1FIFO `VEuc  1 e 1 @15863 ]
 "27293
 [v _U1UIR U1UIR `VEuc  1 e 1 @15864 ]
-[s S2517 . 1 `uc 1 . 1 0 :2:0 
+[s S2521 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 ABDIE 1 0 :1:2 
 `uc 1 . 1 0 :3:3 
 `uc 1 ABDIF 1 0 :1:6 
 `uc 1 WUIF 1 0 :1:7 
 ]
 "27314
-[s S2523 . 1 `uc 1 . 1 0 :2:0 
+[s S2527 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 U1ABDIE 1 0 :1:2 
 `uc 1 . 1 0 :3:3 
 `uc 1 U1ABDIF 1 0 :1:6 
 `uc 1 U1WUIF 1 0 :1:7 
 ]
-[u S2529 . 1 `S2517 1 . 1 0 `S2523 1 . 1 0 ]
-[v _U1UIRbits U1UIRbits `VES2529  1 e 1 @15864 ]
+[u S2533 . 1 `S2521 1 . 1 0 `S2527 1 . 1 0 ]
+[v _U1UIRbits U1UIRbits `VES2533  1 e 1 @15864 ]
 "27349
 [v _U1ERRIR U1ERRIR `VEuc  1 e 1 @15865 ]
-[s S2545 . 1 `uc 1 TXCIF 1 0 :1:0 
+[s S2549 . 1 `uc 1 TXCIF 1 0 :1:0 
 `uc 1 RXFOIF 1 0 :1:1 
 `uc 1 RXBKIF 1 0 :1:2 
 `uc 1 FERIF 1 0 :1:3 
@@ -906,7 +906,7 @@ channel_ANA1 1
 `uc 1 TXMTIF 1 0 :1:7 
 ]
 "27376
-[s S2554 . 1 `uc 1 U1TXCIF 1 0 :1:0 
+[s S2558 . 1 `uc 1 U1TXCIF 1 0 :1:0 
 `uc 1 U1RXFOIF 1 0 :1:1 
 `uc 1 U1RXBKIF 1 0 :1:2 
 `uc 1 U1FERIF 1 0 :1:3 
@@ -915,8 +915,8 @@ channel_ANA1 1
 `uc 1 U1PERIF 1 0 :1:6 
 `uc 1 U1TXMTIF 1 0 :1:7 
 ]
-[u S2563 . 1 `S2545 1 . 1 0 `S2554 1 . 1 0 ]
-[v _U1ERRIRbits U1ERRIRbits `VES2563  1 e 1 @15865 ]
+[u S2567 . 1 `S2549 1 . 1 0 `S2558 1 . 1 0 ]
+[v _U1ERRIRbits U1ERRIRbits `VES2567  1 e 1 @15865 ]
 "27461
 [v _U1ERRIE U1ERRIE `VEuc  1 e 1 @15866 ]
 "28240
@@ -1181,7 +1181,7 @@ channel_ANA1 1
 [v _LATC LATC `VEuc  1 e 1 @16316 ]
 "45771
 [v _LATD LATD `VEuc  1 e 1 @16317 ]
-[s S2588 . 1 `uc 1 LATD0 1 0 :1:0 
+[s S2808 . 1 `uc 1 LATD0 1 0 :1:0 
 `uc 1 LATD1 1 0 :1:1 
 `uc 1 LATD2 1 0 :1:2 
 `uc 1 LATD3 1 0 :1:3 
@@ -1191,7 +1191,7 @@ channel_ANA1 1
 `uc 1 LATD7 1 0 :1:7 
 ]
 "45798
-[s S2597 . 1 `uc 1 LD0 1 0 :1:0 
+[s S2817 . 1 `uc 1 LD0 1 0 :1:0 
 `uc 1 LD1 1 0 :1:1 
 `uc 1 LD2 1 0 :1:2 
 `uc 1 LD3 1 0 :1:3 
@@ -1201,10 +1201,10 @@ channel_ANA1 1
 `uc 1 LD7 1 0 :1:7 
 ]
 "45798
-[u S2606 . 1 `S2588 1 . 1 0 `S2597 1 . 1 0 ]
+[u S2826 . 1 `S2808 1 . 1 0 `S2817 1 . 1 0 ]
 "45798
 "45798
-[v _LATDbits LATDbits `VES2606  1 e 1 @16317 ]
+[v _LATDbits LATDbits `VES2826  1 e 1 @16317 ]
 "45883
 [v _LATE LATE `VEuc  1 e 1 @16318 ]
 "45935
@@ -1265,25 +1265,27 @@ channel_ANA1 1
 [v _IVTBASEU IVTBASEU `VEuc  1 e 1 @16343 ]
 "51922
 [v _GIE GIE `VEb  1 e 0 @130711 ]
-"40 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/adc/src/adcc.c
+"40 C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/adc/src/adcc.c
 [v _ADCC_ADI_InterruptHandler ADCC_ADI_InterruptHandler `*.37(v  1 s 2 ADCC_ADI_InterruptHandler ]
-"85 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/i2c_host/src/i2c2.c
+"85 C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/i2c_host/src/i2c2.c
 [v _I2C2_Callback I2C2_Callback `*.37(v  1 s 2 I2C2_Callback ]
 [s S651 . 13 `a 1 busy 1 0 `us 1 address 2 1 `*.2uc 1 writePtr 2 3 `ui 1 writeLength 2 5 `*.2uc 1 readPtr 2 7 `ui 1 readLength 2 9 `a 1 switchToRead 1 11 `E16163 1 errorState 1 12 ]
 "86
 [v _i2c2Status i2c2Status `VES651  1 e 13 0 ]
 [s S1367 . 5 `uc 1 con0 1 0 `uc 1 con1 1 1 `uc 1 con2 1 2 `uc 1 baud 1 3 `uc 1 operation 1 4 ]
-"65 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/spi/src/spi1.c
+"65 C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/spi/src/spi1.c
 [v _spi1_configuration spi1_configuration `C[1]S1367  1 s 5 spi1_configuration ]
-"38 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
+"38 C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
 [v _INT0_InterruptHandler INT0_InterruptHandler `*.37(v  1 e 2 0 ]
 "39
 [v _INT1_InterruptHandler INT1_InterruptHandler `*.37(v  1 e 2 0 ]
 "40
 [v _INT2_InterruptHandler INT2_InterruptHandler `*.37(v  1 e 2 0 ]
-"47 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/timer/src/tmr0.c
+"37 C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/timer/src/tmr0.c
+[v _timerTMR0ReloadVal16bit timerTMR0ReloadVal16bit `VEus  1 e 2 0 ]
+"48
 [v _Timer_OverflowCallback Timer_OverflowCallback `*.37(v  1 s 2 Timer_OverflowCallback ]
-"83 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
+"83 C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
 [v _uart1TxHead uart1TxHead `VEuc  1 s 1 uart1TxHead ]
 "84
 [v _uart1TxTail uart1TxTail `VEuc  1 s 1 uart1TxTail ]
@@ -1297,24 +1299,24 @@ channel_ANA1 1
 [v _uart1RxTail uart1RxTail `VEuc  1 s 1 uart1RxTail ]
 "90
 [v _uart1RxBuffer uart1RxBuffer `VE[8]uc  1 s 8 uart1RxBuffer ]
-[s S2365 . 1 `uc 1 perr 1 0 :1:0 
+[s S2369 . 1 `uc 1 perr 1 0 :1:0 
 `uc 1 ferr 1 0 :1:1 
 `uc 1 oerr 1 0 :1:2 
 `uc 1 reserved 1 0 :5:3 
 ]
 "91
-[u S2370 . 2 `S2365 1 . 1 0 `ui 1 status 2 0 ]
-[v _uart1RxStatusBuffer uart1RxStatusBuffer `VE[8]S2370  1 s 16 uart1RxStatusBuffer ]
+[u S2374 . 2 `S2369 1 . 1 0 `ui 1 status 2 0 ]
+[v _uart1RxStatusBuffer uart1RxStatusBuffer `VE[8]S2374  1 s 16 uart1RxStatusBuffer ]
 "92
 [v _uart1RxCount uart1RxCount `VEuc  1 e 1 0 ]
-[s S2365 . 1 `uc 1 perr 1 0 :1:0 
+[s S2369 . 1 `uc 1 perr 1 0 :1:0 
 `uc 1 ferr 1 0 :1:1 
 `uc 1 oerr 1 0 :1:2 
 `uc 1 reserved 1 0 :5:3 
 ]
 "94
-[u S2370 . 2 `S2365 1 . 1 0 `ui 1 status 2 0 ]
-[v _uart1RxLastError uart1RxLastError `VES2370  1 e 2 0 ]
+[u S2374 . 2 `S2369 1 . 1 0 `ui 1 status 2 0 ]
+[v _uart1RxLastError uart1RxLastError `VES2374  1 e 2 0 ]
 "100
 [v _UART1_FramingErrorHandler UART1_FramingErrorHandler `*.37(v  1 e 2 0 ]
 "101
@@ -1325,22 +1327,22 @@ channel_ANA1 1
 [v _UART1_TxCompleteInterruptHandler UART1_TxCompleteInterruptHandler `*.37(v  1 s 2 UART1_TxCompleteInterruptHandler ]
 "106
 [v _UART1_RxCompleteInterruptHandler UART1_RxCompleteInterruptHandler `*.37(v  1 s 2 UART1_RxCompleteInterruptHandler ]
-"42 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\main.c
+"42 C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\main.c
 [v _main main `(i  1 e 2 0 ]
 {
 "73
 } 0
-"36 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/system.c
+"36 C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/system.c
 [v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
 {
 "49
 } 0
-"26 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/peripheral/src/uart2.c
+"26 C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/peripheral/src/uart2.c
 [v _UART2_Initialize UART2_Initialize `(v  1 e 1 0 ]
 {
 "53
 } 0
-"118 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
+"118 C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
 [v _UART1_Initialize UART1_Initialize `(v  1 e 1 0 ]
 {
 "178
@@ -1348,68 +1350,68 @@ channel_ANA1 1
 "472
 [v _UART1_ParityErrorCallbackRegister UART1_ParityErrorCallbackRegister `(v  1 e 1 0 ]
 {
-[v UART1_ParityErrorCallbackRegister@callbackHandler callbackHandler `*.37(v  1 p 2 19 ]
+[v UART1_ParityErrorCallbackRegister@callbackHandler callbackHandler `*.37(v  1 p 2 18 ]
 "478
 } 0
 "464
 [v _UART1_OverrunErrorCallbackRegister UART1_OverrunErrorCallbackRegister `(v  1 e 1 0 ]
 {
-[v UART1_OverrunErrorCallbackRegister@callbackHandler callbackHandler `*.37(v  1 p 2 19 ]
+[v UART1_OverrunErrorCallbackRegister@callbackHandler callbackHandler `*.37(v  1 p 2 18 ]
 "470
 } 0
 "456
 [v _UART1_FramingErrorCallbackRegister UART1_FramingErrorCallbackRegister `(v  1 e 1 0 ]
 {
-[v UART1_FramingErrorCallbackRegister@callbackHandler callbackHandler `*.37(v  1 p 2 19 ]
+[v UART1_FramingErrorCallbackRegister@callbackHandler callbackHandler `*.37(v  1 p 2 18 ]
 "462
 } 0
-"50 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/timer/src/tmr0.c
+"51 C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/timer/src/tmr0.c
 [v _Timer_Initialize Timer_Initialize `(v  1 e 1 0 ]
 {
-"73
+"76
 } 0
-"117
+"132
 [v _Timer_OverflowCallbackRegister Timer_OverflowCallbackRegister `(v  1 e 1 0 ]
 {
-[v Timer_OverflowCallbackRegister@CallbackHandler CallbackHandler `*.37(v  1 p 2 19 ]
-"120
+[v Timer_OverflowCallbackRegister@CallbackHandler CallbackHandler `*.37(v  1 p 2 18 ]
+"135
 } 0
-"70 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/spi/src/spi1.c
+"70 C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/spi/src/spi1.c
 [v _SPI_Initialize SPI_Initialize `(v  1 e 1 0 ]
 {
 "83
 } 0
-"38 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/pins.c
+"38 C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/pins.c
 [v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
 {
 "142
 } 0
-"42 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
+"42 C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
 [v _INTERRUPT_Initialize INTERRUPT_Initialize `(v  1 e 1 0 ]
 {
 "46
-[v INTERRUPT_Initialize@state state `a  1 a 1 21 ]
+[v INTERRUPT_Initialize@state state `a  1 a 1 20 ]
 "96
 } 0
 "201
 [v _INT2_SetInterruptHandler INT2_SetInterruptHandler `(v  1 e 1 0 ]
 {
-[v INT2_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 19 ]
+[v INT2_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 18 ]
 "203
 } 0
 "167
 [v _INT1_SetInterruptHandler INT1_SetInterruptHandler `(v  1 e 1 0 ]
 {
-[v INT1_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 19 ]
+[v INT1_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 18 ]
 "169
 } 0
 "133
 [v _INT0_SetInterruptHandler INT0_SetInterruptHandler `(v  1 e 1 0 ]
 {
-[v INT0_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 19 ]
+[v INT0_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 18 ]
 "135
 } 0
-"91 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/i2c_host/src/i2c2.c
+"91 C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/i2c_host/src/i2c2.c
 [v _I2C2_Initialize I2C2_Initialize `(v  1 e 1 0 ]
 {
 "131
@@ -1422,25 +1424,25 @@ channel_ANA1 1
 "216
 [v _I2C2_CallbackRegister I2C2_CallbackRegister `(v  1 e 1 0 ]
 {
-[v I2C2_CallbackRegister@callbackHandler callbackHandler `*.37(v  1 p 2 19 ]
+[v I2C2_CallbackRegister@callbackHandler callbackHandler `*.37(v  1 p 2 18 ]
 "222
 } 0
-"26 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/peripheral/src/i2c1.c
+"26 C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/peripheral/src/i2c1.c
 [v _I2C1_Initialize I2C1_Initialize `(v  1 e 1 0 ]
 {
 "61
 } 0
-"43 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/fvr/src/fvr.c
+"43 C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/fvr/src/fvr.c
 [v _FVR_Initialize FVR_Initialize `(v  1 e 1 0 ]
 {
 "47
 } 0
-"37 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/clock.c
+"37 C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/clock.c
 [v _CLOCK_Initialize CLOCK_Initialize `(v  1 e 1 0 ]
 {
 "51
 } 0
-"47 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/adc/src/adcc.c
+"47 C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/adc/src/adcc.c
 [v _ADCC_Initialize ADCC_Initialize `(v  1 e 1 0 ]
 {
 "104
@@ -1448,10 +1450,10 @@ channel_ANA1 1
 "297
 [v _ADCC_SetADIInterruptHandler ADCC_SetADIInterruptHandler `(v  1 e 1 0 ]
 {
-[v ADCC_SetADIInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 19 ]
+[v ADCC_SetADIInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 18 ]
 "300
 } 0
-"224 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/i2c_host/src/i2c2.c
+"224 C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/i2c_host/src/i2c2.c
 [v _I2C2_ISR I2C2_ISR `IIL(v  1 e 1 0 ]
 {
 "251
@@ -1593,17 +1595,17 @@ channel_ANA1 1
 {
 "297
 } 0
-"102 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
+"102 C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
 [v _IOC_ISR IOC_ISR `IIL(v  1 e 1 0 ]
 {
 "105
 } 0
-"144 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/pins.c
+"144 C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/pins.c
 [v _PIN_MANAGER_IOC PIN_MANAGER_IOC `(v  1 e 1 0 ]
 {
 "146
 } 0
-"115 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
+"115 C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
 [v _INT0_ISR INT0_ISR `IIL(v  1 e 1 0 ]
 {
 "121
@@ -1648,7 +1650,7 @@ channel_ANA1 1
 {
 "208
 } 0
-"409 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
+"409 C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
 [v _UART1_Transmit_Vector_ISR UART1_Transmit_Vector_ISR `IIL(v  1 e 1 0 ]
 {
 "413
@@ -1660,7 +1662,7 @@ channel_ANA1 1
 [v UART1_TransmitISR@tempTxTail tempTxTail `uc  1 a 1 16 ]
 "435
 } 0
-"286 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/adc/src/adcc.c
+"286 C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/adc/src/adcc.c
 [v _ADCC_ISR ADCC_ISR `IIH(v  1 e 1 0 ]
 {
 "295
@@ -1670,12 +1672,12 @@ channel_ANA1 1
 {
 "306
 } 0
-"8 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\ADC_int.c
+"8 C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\ADC_int.c
 [v _ADC_int ADC_int `(v  1 e 1 0 ]
 {
-"26
+"28
 } 0
-"385 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
+"385 C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
 [v _UART1_Write UART1_Write `(v  1 e 1 0 ]
 {
 [v UART1_Write@txData txData `uc  1 a 1 wreg ]
@@ -1687,7 +1689,7 @@ channel_ANA1 1
 [v UART1_Write@txData txData `uc  1 a 1 1 ]
 "407
 } 0
-"106 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/adc/src/adcc.c
+"106 C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/adc/src/adcc.c
 [v _ADCC_StartConversion ADCC_StartConversion `(v  1 e 1 0 ]
 {
 [v ADCC_StartConversion@channel channel `E15846  1 a 1 wreg ]
@@ -1696,29 +1698,29 @@ channel_ANA1 1
 [v ADCC_StartConversion@channel channel `E15846  1 a 1 5 ]
 "113
 } 0
-"98 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
+"98 C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
 [v _Default_ISR Default_ISR `IIH(v  1 e 1 0 ]
 {
 "100
 } 0
-"107 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/timer/src/tmr0.c
+"118 C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/timer/src/tmr0.c
 [v _Timer_OverflowISR Timer_OverflowISR `IIH(v  1 e 1 0 ]
 {
-"115
+"130
 } 0
-"122
+"137
 [v _Timer_DefaultOverflowCallback Timer_DefaultOverflowCallback `(v  1 s 1 Timer_DefaultOverflowCallback ]
 {
-"126
+"141
 } 0
-"7 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\Timer_int.c
+"7 C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\Timer_int.c
 [v _Timer_int Timer_int `(v  1 e 1 0 ]
 {
 "10
 [v Timer_int@count count `i  1 s 2 count ]
 "18
 } 0
-"336 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
+"336 C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
 [v _UART1_Receive_Vector_ISR UART1_Receive_Vector_ISR `IIH(v  1 e 1 0 ]
 {
 "339

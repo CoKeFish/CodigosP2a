@@ -34,12 +34,13 @@
 #include "../tmr0.h"
 #include "../../system/interrupt.h"
 
+volatile uint16_t timerTMR0ReloadVal16bit;
 
 const struct TMR_INTERFACE Timer = {
     .Initialize = Timer_Initialize,
     .Start = Timer_Start,
     .Stop = Timer_Stop,
-    .PeriodCountSet = Timer_Reload,
+    .PeriodCountSet = Timer_PeriodCountSet,
     .TimeoutCallbackRegister = Timer_OverflowCallbackRegister,
     .Tasks = NULL
 };
@@ -49,15 +50,17 @@ static void Timer_DefaultOverflowCallback(void);
 
 void Timer_Initialize(void)
 {
-    //TMR0H 199; 
-    TMR0H = 0xC7;
+    //TMR0H 231; 
+    TMR0H = 0xE7;
 
-    //TMR0L 0; 
-    TMR0L = 0x0;
+    //TMR0L 90; 
+    TMR0L = 0x5F;
 
-    //T0CS FOSC/4; T0CKPS 1:8; T0ASYNC synchronised; 
-    T0CON1 = 0x43;
+    //T0CS HFINTOSC; T0CKPS 1:1; T0ASYNC not_synchronised; 
+    T0CON1 = 0x70;
 
+    //Load TMRTMR0 value to the 16-bit reload variable
+    timerTMR0ReloadVal16bit = ((uint16_t)TMR0H << 8) | TMR0L;
 
     //Set default callback for TMR0 overflow interrupt
     Timer_OverflowCallbackRegister(Timer_DefaultOverflowCallback);
@@ -68,8 +71,8 @@ void Timer_Initialize(void)
     //Enable TMR0 interrupt.
     PIE3bits.TMR0IE = 1;
 	
-    //T0OUTPS 1:1; T0EN enabled; T016BIT 8-bit; 
-    T0CON0 = 0x80;
+    //T0OUTPS 1:1; T0EN enabled; T016BIT 16-bit; 
+    T0CON0 = 0x90;
 }
 
 void Timer_Start(void)
@@ -82,32 +85,44 @@ void Timer_Stop(void)
     T0CON0bits.T0EN = 0;
 }
 
-uint8_t Timer_Read(void)
+uint16_t Timer_Read(void)
 {
-    uint8_t readVal;
+    uint16_t readVal;
+    uint8_t readValLow;
+    uint8_t readValHigh;
 
-    //Read TMR0 register, low byte only
-    readVal = TMR0L;
+    readValLow  = TMR0L;
+    readValHigh = TMR0H;
+    readVal  = ((uint16_t)readValHigh << 8) + readValLow;
 
     return readVal;
 }
 
-void Timer_Write(uint8_t timerVal)
+void Timer_Write(size_t timerVal)
 {
-    //Write to TMR0 register, low byte only
-    TMR0L = timerVal;
- }
+    TMR0H = timerVal >> 8;
+    TMR0L = (uint8_t) timerVal;
+}
 
-void Timer_Reload(size_t periodVal)
+void Timer_Reload(void)
 {
-   //Write to TMR0 register, high byte only
-   TMR0H = (uint8_t)periodVal;
+    TMR0H = timerTMR0ReloadVal16bit >> 8;
+    TMR0L = (uint8_t) timerTMR0ReloadVal16bit;
+}
+
+void Timer_PeriodCountSet(size_t periodVal)
+{
+   timerTMR0ReloadVal16bit = (uint16_t) periodVal;
 }
 
 void __interrupt(irq(TMR0),base(8)) Timer_OverflowISR()
 {
     //Clear the TMR0 interrupt flag
     PIR3bits.TMR0IF = 0;
+    //Write to the TimerTMR0 register
+    TMR0H = timerTMR0ReloadVal16bit >> 8;
+    TMR0L = (uint8_t) timerTMR0ReloadVal16bit;
+
     if(Timer_OverflowCallback)
     {
         Timer_OverflowCallback();
