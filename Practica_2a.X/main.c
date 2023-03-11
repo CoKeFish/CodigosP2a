@@ -47,6 +47,7 @@ int main(void)
     
     ADCC_SetADIInterruptHandler(ADC_int);
     Timer_OverflowCallbackRegister(Timer_int);
+    SPI1_Open(0);
     
     
 

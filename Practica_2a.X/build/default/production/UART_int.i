@@ -26992,7 +26992,7 @@ void CLOCK_Initialize(void);
 
 
 # 1 "./mcc_generated_files/uart/../system/../system/pins.h" 1
-# 698 "./mcc_generated_files/uart/../system/../system/pins.h"
+# 718 "./mcc_generated_files/uart/../system/../system/pins.h"
 void PIN_MANAGER_Initialize (void);
 
 
@@ -27296,19 +27296,19 @@ struct SPI_INTERFACE
 typedef enum
 {
     SPI1_DEFAULT
-} spi_modes_t;
+} spi1_modes_t;
 
-extern const struct SPI_INTERFACE SPI;
-
-
+extern const struct SPI_INTERFACE SPI1;
 
 
 
 
 
-void SPI_Initialize(void);
+
+
+void SPI1_Initialize(void);
 # 74 "./mcc_generated_files/uart/../system/../spi/spi1.h"
-_Bool SPI_Open(uint8_t spiConfigIndex);
+_Bool SPI1_Open(uint8_t spiConfigIndex);
 
 
 
@@ -27316,7 +27316,7 @@ _Bool SPI_Open(uint8_t spiConfigIndex);
 
 
 
-void SPI_Close(void);
+void SPI1_Close(void);
 
 
 
@@ -27324,13 +27324,13 @@ void SPI_Close(void);
 
 
 
-uint8_t SPI_ByteExchange(uint8_t byteData);
+uint8_t SPI1_ByteExchange(uint8_t byteData);
 # 99 "./mcc_generated_files/uart/../system/../spi/spi1.h"
-void SPI_BufferExchange(void * bufferData, size_t bufferSize);
+void SPI1_BufferExchange(void * bufferData, size_t bufferSize);
 # 108 "./mcc_generated_files/uart/../system/../spi/spi1.h"
-void SPI_BufferWrite(void * bufferData, size_t bufferSize);
+void SPI1_BufferWrite(void * bufferData, size_t bufferSize);
 # 117 "./mcc_generated_files/uart/../system/../spi/spi1.h"
-void SPI_BufferRead(void * bufferData, size_t bufferSize);
+void SPI1_BufferRead(void * bufferData, size_t bufferSize);
 
 
 
@@ -27338,7 +27338,7 @@ void SPI_BufferRead(void * bufferData, size_t bufferSize);
 
 
 
-void SPI_ByteWrite(uint8_t byteData);
+void SPI1_ByteWrite(uint8_t byteData);
 
 
 
@@ -27346,7 +27346,7 @@ void SPI_ByteWrite(uint8_t byteData);
 
 
 
-uint8_t SPI_ByteRead(void);
+uint8_t SPI1_ByteRead(void);
 
 uint8_t __attribute__((deprecated)) SPI1_ExchangeByte(uint8_t data);
 void __attribute__((deprecated)) SPI1_ExchangeBlock(void *block, size_t blockSize);

@@ -18,6 +18,9 @@ Version 4.0 HI-TECH Software Intermediate Code
 "5 ./Timer_int.h
 [; ;./Timer_int.h: 5: void Timer_int(void);
 [v _Timer_int `(v ~T0 @X0 0 ef ]
+"74 ./mcc_generated_files/system/../spi/spi1.h
+[; ;./mcc_generated_files/system/../spi/spi1.h: 74: _Bool SPI1_Open(uint8_t spiConfigIndex);
+[v _SPI1_Open `(a ~T0 @X0 0 ef1`uc ]
 "46507 C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h
 [; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h: 46507:     struct {
 [s S2086 :1 `uc 1 :1 `uc 1 :1 `uc 1 :2 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
@@ -2295,25 +2298,28 @@ Version 4.0 HI-TECH Software Intermediate Code
 "49
 [; ;main.c: 49:     Timer_OverflowCallbackRegister(Timer_int);
 [e ( _Timer_OverflowCallbackRegister (1 &U _Timer_int ]
-"58
-[; ;main.c: 58:     (INTCON0bits.GIE = 1);
+"50
+[; ;main.c: 50:     SPI1_Open(0);
+[e ( _SPI1_Open (1 -> -> 0 `i `uc ]
+"59
+[; ;main.c: 59:     (INTCON0bits.GIE = 1);
 [e = . . _INTCON0bits 0 6 -> -> 1 `i `uc ]
-"64
-[; ;main.c: 64:     (INTCON0bits.GIEL = 1);
+"65
+[; ;main.c: 65:     (INTCON0bits.GIEL = 1);
 [e = . . _INTCON0bits 0 5 -> -> 1 `i `uc ]
-"70
-[; ;main.c: 70:     while(1)
-[e :U 2204 ]
 "71
-[; ;main.c: 71:     {
-{
+[; ;main.c: 71:     while(1)
+[e :U 2204 ]
 "72
-[; ;main.c: 72:     }
+[; ;main.c: 72:     {
+{
+"73
+[; ;main.c: 73:     }
 }
 [e :U 2203 ]
 [e $U 2204  ]
 [e :U 2205 ]
-"73
-[; ;main.c: 73: }
+"74
+[; ;main.c: 74: }
 [e :UE 2202 ]
 }

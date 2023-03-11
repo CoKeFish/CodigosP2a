@@ -25,6 +25,9 @@ Version 4.0 HI-TECH Software Intermediate Code
 [n E15847 . channel_VSS channel_Temp channel_DAC1 channel_FVR_Buffer1 channel_FVR_Buffer2 channel_ANA0 channel_ANA1  ]
 "89 ./mcc_generated_files/uart/../system/../adc/adcc.h
 [v _ADCC_StartConversion `(v ~T0 @X0 0 ef1`E15847 ]
+"125 ./mcc_generated_files/uart/../system/../spi/spi1.h
+[; ;./mcc_generated_files/uart/../system/../spi/spi1.h: 125: void SPI1_ByteWrite(uint8_t byteData);
+[v _SPI1_ByteWrite `(v ~T0 @X0 0 ef1`uc ]
 "321 ./mcc_generated_files/uart/../system/../uart/uart1.h
 [; ;./mcc_generated_files/uart/../system/../uart/uart1.h: 321: void UART1_Write(uint8_t txData);
 [v _UART1_Write `(v ~T0 @X0 0 ef1`uc ]
@@ -2287,41 +2290,44 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;ADC_int.c: 14:         ADCC_StartConversion(channel_ANA1);
 [e ( _ADCC_StartConversion (1 . `E15847 6 ]
 "16
-[; ;ADC_int.c: 16:         UART1_Write(9);
-[e ( _UART1_Write (1 -> -> 9 `i `uc ]
+[; ;ADC_int.c: 16:         SPI1_ByteWrite(0b10101010);
+[e ( _SPI1_ByteWrite (1 -> -> 170 `i `uc ]
 "17
-[; ;ADC_int.c: 17:         UART1_Write(8);
-[e ( _UART1_Write (1 -> -> 8 `i `uc ]
+[; ;ADC_int.c: 17:         UART1_Write(9);
+[e ( _UART1_Write (1 -> -> 9 `i `uc ]
 "18
-[; ;ADC_int.c: 18:         UART1_Write(',');
-[e ( _UART1_Write (1 -> -> 44 `ui `uc ]
+[; ;ADC_int.c: 18:         UART1_Write(8);
+[e ( _UART1_Write (1 -> -> 8 `i `uc ]
 "19
-[; ;ADC_int.c: 19:     }
+[; ;ADC_int.c: 19:         UART1_Write(',');
+[e ( _UART1_Write (1 -> -> 44 `ui `uc ]
+"20
+[; ;ADC_int.c: 20:     }
 }
 [e $U 2204  ]
-"20
-[; ;ADC_int.c: 20:     else
-[e :U 2203 ]
 "21
-[; ;ADC_int.c: 21:     {
-{
+[; ;ADC_int.c: 21:     else
+[e :U 2203 ]
 "22
-[; ;ADC_int.c: 22:         LATDbits.LATD1 = !LATDbits.LATD1;
+[; ;ADC_int.c: 22:     {
+{
+"23
+[; ;ADC_int.c: 23:         LATDbits.LATD1 = !LATDbits.LATD1;
 [e = . . _LATDbits 0 1 -> -> ! != -> . . _LATDbits 0 1 `i -> 0 `i `i `uc ]
-"24
-[; ;ADC_int.c: 24:         UART1_Write(7);
-[e ( _UART1_Write (1 -> -> 7 `i `uc ]
 "25
-[; ;ADC_int.c: 25:         UART1_Write(6);
-[e ( _UART1_Write (1 -> -> 6 `i `uc ]
+[; ;ADC_int.c: 25:         UART1_Write(7);
+[e ( _UART1_Write (1 -> -> 7 `i `uc ]
 "26
-[; ;ADC_int.c: 26:         UART1_Write('\n');
-[e ( _UART1_Write (1 -> -> 10 `ui `uc ]
+[; ;ADC_int.c: 26:         UART1_Write(6);
+[e ( _UART1_Write (1 -> -> 6 `i `uc ]
 "27
-[; ;ADC_int.c: 27:     }
+[; ;ADC_int.c: 27:         UART1_Write('\n');
+[e ( _UART1_Write (1 -> -> 10 `ui `uc ]
+"28
+[; ;ADC_int.c: 28:     }
 }
 [e :U 2204 ]
-"28
-[; ;ADC_int.c: 28: }
+"29
+[; ;ADC_int.c: 29: }
 [e :UE 2202 ]
 }

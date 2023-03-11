@@ -158,23 +158,23 @@ channel_ANA1 1
 "26 C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/peripheral/src/uart2.c
 [v _UART2_Initialize UART2_Initialize `(v  1 e 1 0 ]
 "70 C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/spi/src/spi1.c
-[v _SPI_Initialize SPI_Initialize `(v  1 e 1 0 ]
+[v _SPI1_Initialize SPI1_Initialize `(v  1 e 1 0 ]
 "85
-[v _SPI_Open SPI_Open `(a  1 e 1 0 ]
+[v _SPI1_Open SPI1_Open `(a  1 e 1 0 ]
 "101
-[v _SPI_Close SPI_Close `(v  1 e 1 0 ]
+[v _SPI1_Close SPI1_Close `(v  1 e 1 0 ]
 "106
-[v _SPI_ByteExchange SPI_ByteExchange `(uc  1 e 1 0 ]
+[v _SPI1_ByteExchange SPI1_ByteExchange `(uc  1 e 1 0 ]
 "114
-[v _SPI_BufferExchange SPI_BufferExchange `(v  1 e 1 0 ]
+[v _SPI1_BufferExchange SPI1_BufferExchange `(v  1 e 1 0 ]
 "127
-[v _SPI_BufferWrite SPI_BufferWrite `(v  1 e 1 0 ]
+[v _SPI1_BufferWrite SPI1_BufferWrite `(v  1 e 1 0 ]
 "136
-[v _SPI_BufferRead SPI_BufferRead `(v  1 e 1 0 ]
+[v _SPI1_BufferRead SPI1_BufferRead `(v  1 e 1 0 ]
 "145
-[v _SPI_ByteWrite SPI_ByteWrite `(v  1 e 1 0 ]
+[v _SPI1_ByteWrite SPI1_ByteWrite `(v  1 e 1 0 ]
 "150
-[v _SPI_ByteRead SPI_ByteRead `(uc  1 e 1 0 ]
+[v _SPI1_ByteRead SPI1_ByteRead `(uc  1 e 1 0 ]
 "37 C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/clock.c
 [v _CLOCK_Initialize CLOCK_Initialize `(v  1 e 1 0 ]
 "42 C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
@@ -209,7 +209,7 @@ channel_ANA1 1
 [v _INT2_DefaultInterruptHandler INT2_DefaultInterruptHandler `(v  1 e 1 0 ]
 "38 C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/pins.c
 [v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
-"144
+"145
 [v _PIN_MANAGER_IOC PIN_MANAGER_IOC `(v  1 e 1 0 ]
 "36 C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/system.c
 [v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
@@ -283,7 +283,7 @@ channel_ANA1 1
 [v _UART1_RxInterruptHandler UART1_RxInterruptHandler `*.37(v  1 e 2 0 ]
 "10 C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X/Practica2a.h
 [v _PERIOD PERIOD `us  1 e 2 0 ]
-[s S1713 . 1 `uc 1 SWIP 1 0 :1:0 
+[s S1470 . 1 `uc 1 SWIP 1 0 :1:0 
 `uc 1 HLVDIP 1 0 :1:1 
 `uc 1 OSFIP 1 0 :1:2 
 `uc 1 CSWIP 1 0 :1:3 
@@ -293,9 +293,9 @@ channel_ANA1 1
 `uc 1 IOCIP 1 0 :1:7 
 ]
 "2782 C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h
-[u S1722 . 1 `S1713 1 . 1 0 ]
-[v _IPR0bits IPR0bits `VES1722  1 e 1 @14720 ]
-[s S1671 . 1 `uc 1 INT0IP 1 0 :1:0 
+[u S1479 . 1 `S1470 1 . 1 0 ]
+[v _IPR0bits IPR0bits `VES1479  1 e 1 @14720 ]
+[s S1428 . 1 `uc 1 INT0IP 1 0 :1:0 
 `uc 1 ZCDIP 1 0 :1:1 
 `uc 1 ADIP 1 0 :1:2 
 `uc 1 ADTIP 1 0 :1:3 
@@ -305,9 +305,9 @@ channel_ANA1 1
 `uc 1 SMT1PWAIP 1 0 :1:7 
 ]
 "2844
-[u S1680 . 1 `S1671 1 . 1 0 ]
-[v _IPR1bits IPR1bits `VES1680  1 e 1 @14721 ]
-[s S1692 . 1 `uc 1 I2C1TXIP 1 0 :1:0 
+[u S1437 . 1 `S1428 1 . 1 0 ]
+[v _IPR1bits IPR1bits `VES1437  1 e 1 @14721 ]
+[s S1449 . 1 `uc 1 I2C1TXIP 1 0 :1:0 
 `uc 1 I2C1IP 1 0 :1:1 
 `uc 1 I2C1EIP 1 0 :1:2 
 `uc 1 U1RXIP 1 0 :1:3 
@@ -317,9 +317,9 @@ channel_ANA1 1
 `uc 1 TMR0IP 1 0 :1:7 
 ]
 "2968
-[u S1701 . 1 `S1692 1 . 1 0 ]
-[v _IPR3bits IPR3bits `VES1701  1 e 1 @14723 ]
-[s S1734 . 1 `uc 1 INT1IP 1 0 :1:0 
+[u S1458 . 1 `S1449 1 . 1 0 ]
+[v _IPR3bits IPR3bits `VES1458  1 e 1 @14723 ]
+[s S1491 . 1 `uc 1 INT1IP 1 0 :1:0 
 `uc 1 C2IP 1 0 :1:1 
 `uc 1 DMA2SCNTIP 1 0 :1:2 
 `uc 1 DMA2DCNTIP 1 0 :1:3 
@@ -329,9 +329,9 @@ channel_ANA1 1
 `uc 1 I2C2TXIP 1 0 :1:7 
 ]
 "3087
-[u S1743 . 1 `S1734 1 . 1 0 ]
-[v _IPR5bits IPR5bits `VES1743  1 e 1 @14725 ]
-[s S1755 . 1 `uc 1 I2C2IP 1 0 :1:0 
+[u S1500 . 1 `S1491 1 . 1 0 ]
+[v _IPR5bits IPR5bits `VES1500  1 e 1 @14725 ]
+[s S1512 . 1 `uc 1 I2C2IP 1 0 :1:0 
 `uc 1 I2C2EIP 1 0 :1:1 
 `uc 1 U2RXIP 1 0 :1:2 
 `uc 1 U2TXIP 1 0 :1:3 
@@ -341,8 +341,8 @@ channel_ANA1 1
 `uc 1 TMR3GIP 1 0 :1:7 
 ]
 "3149
-[u S1764 . 1 `S1755 1 . 1 0 ]
-[v _IPR6bits IPR6bits `VES1764  1 e 1 @14726 ]
+[u S1521 . 1 `S1512 1 . 1 0 ]
+[v _IPR6bits IPR6bits `VES1521  1 e 1 @14726 ]
 [s S78 . 1 `uc 1 INT0IE 1 0 :1:0 
 `uc 1 ZCDIE 1 0 :1:1 
 `uc 1 ADIE 1 0 :1:2 
@@ -355,7 +355,7 @@ channel_ANA1 1
 "3409
 [u S87 . 1 `S78 1 . 1 0 ]
 [v _PIE1bits PIE1bits `VES87  1 e 1 @14737 ]
-[s S2060 . 1 `uc 1 I2C1TXIE 1 0 :1:0 
+[s S1817 . 1 `uc 1 I2C1TXIE 1 0 :1:0 
 `uc 1 I2C1IE 1 0 :1:1 
 `uc 1 I2C1EIE 1 0 :1:2 
 `uc 1 U1RXIE 1 0 :1:3 
@@ -365,8 +365,8 @@ channel_ANA1 1
 `uc 1 TMR0IE 1 0 :1:7 
 ]
 "3533
-[u S2069 . 1 `S2060 1 . 1 0 ]
-[v _PIE3bits PIE3bits `VES2069  1 e 1 @14739 ]
+[u S1826 . 1 `S1817 1 . 1 0 ]
+[v _PIE3bits PIE3bits `VES1826  1 e 1 @14739 ]
 [s S1021 . 1 `uc 1 INT1IE 1 0 :1:0 
 `uc 1 C2IE 1 0 :1:1 
 `uc 1 DMA2SCNTIE 1 0 :1:2 
@@ -403,7 +403,7 @@ channel_ANA1 1
 "3974
 [u S56 . 1 `S47 1 . 1 0 ]
 [v _PIR1bits PIR1bits `VES56  1 e 1 @14753 ]
-[s S1429 . 1 `uc 1 DMA1SCNTIF 1 0 :1:0 
+[s S2802 . 1 `uc 1 DMA1SCNTIF 1 0 :1:0 
 `uc 1 DMA1DCNTIF 1 0 :1:1 
 `uc 1 DMA1ORIF 1 0 :1:2 
 `uc 1 DMA1AIF 1 0 :1:3 
@@ -413,9 +413,9 @@ channel_ANA1 1
 `uc 1 I2C1RXIF 1 0 :1:7 
 ]
 "4036
-[u S1438 . 1 `S1429 1 . 1 0 ]
-[v _PIR2bits PIR2bits `VES1438  1 e 1 @14754 ]
-[s S2039 . 1 `uc 1 I2C1TXIF 1 0 :1:0 
+[u S2811 . 1 `S2802 1 . 1 0 ]
+[v _PIR2bits PIR2bits `VES2811  1 e 1 @14754 ]
+[s S1796 . 1 `uc 1 I2C1TXIF 1 0 :1:0 
 `uc 1 I2C1IF 1 0 :1:1 
 `uc 1 I2C1EIF 1 0 :1:2 
 `uc 1 U1RXIF 1 0 :1:3 
@@ -425,9 +425,9 @@ channel_ANA1 1
 `uc 1 TMR0IF 1 0 :1:7 
 ]
 "4098
-[u S2048 . 1 `S2039 1 . 1 0 ]
-[v _PIR3bits PIR3bits `VES2048  1 e 1 @14755 ]
-[s S1798 . 1 `uc 1 INT1IF 1 0 :1:0 
+[u S1805 . 1 `S1796 1 . 1 0 ]
+[v _PIR3bits PIR3bits `VES1805  1 e 1 @14755 ]
+[s S1555 . 1 `uc 1 INT1IF 1 0 :1:0 
 `uc 1 C2IF 1 0 :1:1 
 `uc 1 DMA2SCNTIF 1 0 :1:2 
 `uc 1 DMA2DCNTIF 1 0 :1:3 
@@ -437,9 +437,9 @@ channel_ANA1 1
 `uc 1 I2C2TXIF 1 0 :1:7 
 ]
 "4217
-[u S1807 . 1 `S1798 1 . 1 0 ]
-[v _PIR5bits PIR5bits `VES1807  1 e 1 @14757 ]
-[s S1829 . 1 `uc 1 TMR4IF 1 0 :1:0 
+[u S1564 . 1 `S1555 1 . 1 0 ]
+[v _PIR5bits PIR5bits `VES1564  1 e 1 @14757 ]
+[s S1586 . 1 `uc 1 TMR4IF 1 0 :1:0 
 `uc 1 CCP2IF 1 0 :1:1 
 `uc 1 . 1 0 :1:2 
 `uc 1 CWG2IF 1 0 :1:3 
@@ -447,8 +447,8 @@ channel_ANA1 1
 `uc 1 INT2IF 1 0 :1:5 
 ]
 "4339
-[u S1836 . 1 `S1829 1 . 1 0 ]
-[v _PIR7bits PIR7bits `VES1836  1 e 1 @14759 ]
+[u S1593 . 1 `S1586 1 . 1 0 ]
+[v _PIR7bits PIR7bits `VES1593  1 e 1 @14759 ]
 "4958
 [v _OSCCON1 OSCCON1 `VEuc  1 e 1 @14809 ]
 "5098
@@ -465,6 +465,8 @@ channel_ANA1 1
 [v _RB2PPS RB2PPS `VEuc  1 e 1 @14858 ]
 "7217
 [v _RC3PPS RC3PPS `VEuc  1 e 1 @14867 ]
+"7317
+[v _RC5PPS RC5PPS `VEuc  1 e 1 @14869 ]
 "7367
 [v _RC6PPS RC6PPS `VEuc  1 e 1 @14870 ]
 "8017
@@ -571,21 +573,21 @@ channel_ANA1 1
 [v _SPI1TCNTL SPI1TCNTL `VEuc  1 e 1 @15634 ]
 "22835
 [v _SPI1CON0 SPI1CON0 `VEuc  1 e 1 @15636 ]
-[s S1399 . 1 `uc 1 BMODE 1 0 :1:0 
+[s S2772 . 1 `uc 1 BMODE 1 0 :1:0 
 `uc 1 MST 1 0 :1:1 
 `uc 1 LSBF 1 0 :1:2 
 `uc 1 . 1 0 :4:3 
 `uc 1 EN 1 0 :1:7 
 ]
 "22856
-[s S1405 . 1 `uc 1 SPI1BMODE 1 0 :1:0 
+[s S2778 . 1 `uc 1 SPI1BMODE 1 0 :1:0 
 `uc 1 SPI1MST 1 0 :1:1 
 `uc 1 SPI1LSBF 1 0 :1:2 
 `uc 1 . 1 0 :4:3 
 `uc 1 SPI1SPIEN 1 0 :1:7 
 ]
-[u S1411 . 1 `S1399 1 . 1 0 `S1405 1 . 1 0 ]
-[v _SPI1CON0bits SPI1CON0bits `VES1411  1 e 1 @15636 ]
+[u S2784 . 1 `S2772 1 . 1 0 `S2778 1 . 1 0 ]
+[v _SPI1CON0bits SPI1CON0bits `VES2784  1 e 1 @15636 ]
 "22901
 [v _SPI1CON1 SPI1CON1 `VEuc  1 e 1 @15637 ]
 "23003
@@ -823,34 +825,34 @@ channel_ANA1 1
 [v _U1P3H U1P3H `VEuc  1 e 1 @15857 ]
 "26766
 [v _U1CON0 U1CON0 `VEuc  1 e 1 @15858 ]
-[s S2471 . 1 `uc 1 MODE0 1 0 :1:0 
+[s S2228 . 1 `uc 1 MODE0 1 0 :1:0 
 `uc 1 MODE1 1 0 :1:1 
 `uc 1 MODE2 1 0 :1:2 
 `uc 1 MODE3 1 0 :1:3 
 ]
 "26799
-[s S2476 . 1 `uc 1 U1MODE 1 0 :4:0 
+[s S2233 . 1 `uc 1 U1MODE 1 0 :4:0 
 `uc 1 U1RXEN 1 0 :1:4 
 `uc 1 U1TXEN 1 0 :1:5 
 `uc 1 U1ABDEN 1 0 :1:6 
 `uc 1 U1BRGS 1 0 :1:7 
 ]
-[s S2482 . 1 `uc 1 U1MODE0 1 0 :1:0 
+[s S2239 . 1 `uc 1 U1MODE0 1 0 :1:0 
 `uc 1 U1MODE1 1 0 :1:1 
 `uc 1 U1MODE2 1 0 :1:2 
 `uc 1 U1MODE3 1 0 :1:3 
 ]
-[s S2487 . 1 `uc 1 MODE 1 0 :4:0 
+[s S2244 . 1 `uc 1 MODE 1 0 :4:0 
 `uc 1 RXEN 1 0 :1:4 
 `uc 1 TXEN 1 0 :1:5 
 `uc 1 ABDEN 1 0 :1:6 
 `uc 1 BRGS 1 0 :1:7 
 ]
-[u S2493 . 1 `S2471 1 . 1 0 `S2476 1 . 1 0 `S2482 1 . 1 0 `S2487 1 . 1 0 ]
-[v _U1CON0bits U1CON0bits `VES2493  1 e 1 @15858 ]
+[u S2250 . 1 `S2228 1 . 1 0 `S2233 1 . 1 0 `S2239 1 . 1 0 `S2244 1 . 1 0 ]
+[v _U1CON0bits U1CON0bits `VES2250  1 e 1 @15858 ]
 "26894
 [v _U1CON1 U1CON1 `VEuc  1 e 1 @15859 ]
-[s S2435 . 1 `uc 1 SENDB 1 0 :1:0 
+[s S2192 . 1 `uc 1 SENDB 1 0 :1:0 
 `uc 1 BRKOVR 1 0 :1:1 
 `uc 1 . 1 0 :1:2 
 `uc 1 RXBIMD 1 0 :1:3 
@@ -859,7 +861,7 @@ channel_ANA1 1
 `uc 1 ON 1 0 :1:7 
 ]
 "26919
-[s S2443 . 1 `uc 1 U1SENDB 1 0 :1:0 
+[s S2200 . 1 `uc 1 U1SENDB 1 0 :1:0 
 `uc 1 U1BRKOVR 1 0 :1:1 
 `uc 1 . 1 0 :1:2 
 `uc 1 U1RXBIMD 1 0 :1:3 
@@ -867,8 +869,8 @@ channel_ANA1 1
 `uc 1 . 1 0 :2:5 
 `uc 1 U1ON 1 0 :1:7 
 ]
-[u S2451 . 1 `S2435 1 . 1 0 `S2443 1 . 1 0 ]
-[v _U1CON1bits U1CON1bits `VES2451  1 e 1 @15859 ]
+[u S2208 . 1 `S2192 1 . 1 0 `S2200 1 . 1 0 ]
+[v _U1CON1bits U1CON1bits `VES2208  1 e 1 @15859 ]
 "26974
 [v _U1CON2 U1CON2 `VEuc  1 e 1 @15860 ]
 "27123
@@ -879,24 +881,24 @@ channel_ANA1 1
 [v _U1FIFO U1FIFO `VEuc  1 e 1 @15863 ]
 "27293
 [v _U1UIR U1UIR `VEuc  1 e 1 @15864 ]
-[s S2521 . 1 `uc 1 . 1 0 :2:0 
+[s S2278 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 ABDIE 1 0 :1:2 
 `uc 1 . 1 0 :3:3 
 `uc 1 ABDIF 1 0 :1:6 
 `uc 1 WUIF 1 0 :1:7 
 ]
 "27314
-[s S2527 . 1 `uc 1 . 1 0 :2:0 
+[s S2284 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 U1ABDIE 1 0 :1:2 
 `uc 1 . 1 0 :3:3 
 `uc 1 U1ABDIF 1 0 :1:6 
 `uc 1 U1WUIF 1 0 :1:7 
 ]
-[u S2533 . 1 `S2521 1 . 1 0 `S2527 1 . 1 0 ]
-[v _U1UIRbits U1UIRbits `VES2533  1 e 1 @15864 ]
+[u S2290 . 1 `S2278 1 . 1 0 `S2284 1 . 1 0 ]
+[v _U1UIRbits U1UIRbits `VES2290  1 e 1 @15864 ]
 "27349
 [v _U1ERRIR U1ERRIR `VEuc  1 e 1 @15865 ]
-[s S2549 . 1 `uc 1 TXCIF 1 0 :1:0 
+[s S2306 . 1 `uc 1 TXCIF 1 0 :1:0 
 `uc 1 RXFOIF 1 0 :1:1 
 `uc 1 RXBKIF 1 0 :1:2 
 `uc 1 FERIF 1 0 :1:3 
@@ -906,7 +908,7 @@ channel_ANA1 1
 `uc 1 TXMTIF 1 0 :1:7 
 ]
 "27376
-[s S2558 . 1 `uc 1 U1TXCIF 1 0 :1:0 
+[s S2315 . 1 `uc 1 U1TXCIF 1 0 :1:0 
 `uc 1 U1RXFOIF 1 0 :1:1 
 `uc 1 U1RXBKIF 1 0 :1:2 
 `uc 1 U1FERIF 1 0 :1:3 
@@ -915,8 +917,8 @@ channel_ANA1 1
 `uc 1 U1PERIF 1 0 :1:6 
 `uc 1 U1TXMTIF 1 0 :1:7 
 ]
-[u S2567 . 1 `S2549 1 . 1 0 `S2558 1 . 1 0 ]
-[v _U1ERRIRbits U1ERRIRbits `VES2567  1 e 1 @15865 ]
+[u S2324 . 1 `S2306 1 . 1 0 `S2315 1 . 1 0 ]
+[v _U1ERRIRbits U1ERRIRbits `VES2324  1 e 1 @15865 ]
 "27461
 [v _U1ERRIE U1ERRIE `VEuc  1 e 1 @15866 ]
 "28240
@@ -1146,31 +1148,31 @@ channel_ANA1 1
 [v _TMR0H TMR0H `VEuc  1 e 1 @16311 ]
 "45195
 [v _T0CON0 T0CON0 `VEuc  1 e 1 @16312 ]
-[s S2082 . 1 `uc 1 OUTPS 1 0 :4:0 
+[s S1839 . 1 `uc 1 OUTPS 1 0 :4:0 
 `uc 1 MD16 1 0 :1:4 
 `uc 1 OUT 1 0 :1:5 
 `uc 1 . 1 0 :1:6 
 `uc 1 EN 1 0 :1:7 
 ]
 "45223
-[s S2088 . 1 `uc 1 T0OUTPS 1 0 :4:0 
+[s S1845 . 1 `uc 1 T0OUTPS 1 0 :4:0 
 `uc 1 T0MD16 1 0 :1:4 
 `uc 1 T0OUT 1 0 :1:5 
 `uc 1 . 1 0 :1:6 
 `uc 1 T0EN 1 0 :1:7 
 ]
 "45223
-[s S2094 . 1 `uc 1 OUTPS0 1 0 :1:0 
+[s S1851 . 1 `uc 1 OUTPS0 1 0 :1:0 
 `uc 1 OUTPS1 1 0 :1:1 
 `uc 1 OUTPS2 1 0 :1:2 
 `uc 1 OUTPS3 1 0 :1:3 
 `uc 1 T016BIT 1 0 :1:4 
 ]
 "45223
-[u S2100 . 1 `S2082 1 . 1 0 `S2088 1 . 1 0 `S2094 1 . 1 0 ]
+[u S1857 . 1 `S1839 1 . 1 0 `S1845 1 . 1 0 `S1851 1 . 1 0 ]
 "45223
 "45223
-[v _T0CON0bits T0CON0bits `VES2100  1 e 1 @16312 ]
+[v _T0CON0bits T0CON0bits `VES1857  1 e 1 @16312 ]
 "45293
 [v _T0CON1 T0CON1 `VEuc  1 e 1 @16313 ]
 "45435
@@ -1181,7 +1183,7 @@ channel_ANA1 1
 [v _LATC LATC `VEuc  1 e 1 @16316 ]
 "45771
 [v _LATD LATD `VEuc  1 e 1 @16317 ]
-[s S2808 . 1 `uc 1 LATD0 1 0 :1:0 
+[s S2570 . 1 `uc 1 LATD0 1 0 :1:0 
 `uc 1 LATD1 1 0 :1:1 
 `uc 1 LATD2 1 0 :1:2 
 `uc 1 LATD3 1 0 :1:3 
@@ -1191,7 +1193,7 @@ channel_ANA1 1
 `uc 1 LATD7 1 0 :1:7 
 ]
 "45798
-[s S2817 . 1 `uc 1 LD0 1 0 :1:0 
+[s S2579 . 1 `uc 1 LD0 1 0 :1:0 
 `uc 1 LD1 1 0 :1:1 
 `uc 1 LD2 1 0 :1:2 
 `uc 1 LD3 1 0 :1:3 
@@ -1201,10 +1203,10 @@ channel_ANA1 1
 `uc 1 LD7 1 0 :1:7 
 ]
 "45798
-[u S2826 . 1 `S2808 1 . 1 0 `S2817 1 . 1 0 ]
+[u S2588 . 1 `S2570 1 . 1 0 `S2579 1 . 1 0 ]
 "45798
 "45798
-[v _LATDbits LATDbits `VES2826  1 e 1 @16317 ]
+[v _LATDbits LATDbits `VES2588  1 e 1 @16317 ]
 "45883
 [v _LATE LATE `VEuc  1 e 1 @16318 ]
 "45935
@@ -1213,7 +1215,7 @@ channel_ANA1 1
 [v _TRISB TRISB `VEuc  1 e 1 @16323 ]
 "46059
 [v _TRISC TRISC `VEuc  1 e 1 @16324 ]
-[s S1377 . 1 `uc 1 TRISC0 1 0 :1:0 
+[s S2750 . 1 `uc 1 TRISC0 1 0 :1:0 
 `uc 1 TRISC1 1 0 :1:1 
 `uc 1 TRISC2 1 0 :1:2 
 `uc 1 TRISC3 1 0 :1:3 
@@ -1223,15 +1225,15 @@ channel_ANA1 1
 `uc 1 TRISC7 1 0 :1:7 
 ]
 "46076
-[u S1386 . 1 `S1377 1 . 1 0 ]
+[u S2759 . 1 `S2750 1 . 1 0 ]
 "46076
 "46076
-[v _TRISCbits TRISCbits `VES1386  1 e 1 @16324 ]
+[v _TRISCbits TRISCbits `VES2759  1 e 1 @16324 ]
 "46121
 [v _TRISD TRISD `VEuc  1 e 1 @16325 ]
 "46183
 [v _TRISE TRISE `VEuc  1 e 1 @16326 ]
-[s S1633 . 1 `uc 1 INT0EDG 1 0 :1:0 
+[s S1390 . 1 `uc 1 INT0EDG 1 0 :1:0 
 `uc 1 INT1EDG 1 0 :1:1 
 `uc 1 INT2EDG 1 0 :1:2 
 `uc 1 . 1 0 :2:3 
@@ -1240,23 +1242,23 @@ channel_ANA1 1
 `uc 1 GIE 1 0 :1:7 
 ]
 "46521
-[s S1641 . 1 `uc 1 . 1 0 :7:0 
+[s S1398 . 1 `uc 1 . 1 0 :7:0 
 `uc 1 GIEH 1 0 :1:7 
 ]
 "46521
-[u S1644 . 1 `S1633 1 . 1 0 `S1641 1 . 1 0 ]
+[u S1401 . 1 `S1390 1 . 1 0 `S1398 1 . 1 0 ]
 "46521
 "46521
-[v _INTCON0bits INTCON0bits `VES1644  1 e 1 @16338 ]
+[v _INTCON0bits INTCON0bits `VES1401  1 e 1 @16338 ]
 "46597
 [v _IVTLOCK IVTLOCK `VEuc  1 e 1 @16340 ]
-[s S1661 . 1 `uc 1 IVTLOCKED 1 0 :1:0 
+[s S1418 . 1 `uc 1 IVTLOCKED 1 0 :1:0 
 ]
 "46607
-[u S1663 . 1 `S1661 1 . 1 0 ]
+[u S1420 . 1 `S1418 1 . 1 0 ]
 "46607
 "46607
-[v _IVTLOCKbits IVTLOCKbits `VES1663  1 e 1 @16340 ]
+[v _IVTLOCKbits IVTLOCKbits `VES1420  1 e 1 @16340 ]
 "46626
 [v _IVTBASEL IVTBASEL `VEuc  1 e 1 @16341 ]
 "46688
@@ -1272,9 +1274,6 @@ channel_ANA1 1
 [s S651 . 13 `a 1 busy 1 0 `us 1 address 2 1 `*.2uc 1 writePtr 2 3 `ui 1 writeLength 2 5 `*.2uc 1 readPtr 2 7 `ui 1 readLength 2 9 `a 1 switchToRead 1 11 `E16163 1 errorState 1 12 ]
 "86
 [v _i2c2Status i2c2Status `VES651  1 e 13 0 ]
-[s S1367 . 5 `uc 1 con0 1 0 `uc 1 con1 1 1 `uc 1 con2 1 2 `uc 1 baud 1 3 `uc 1 operation 1 4 ]
-"65 C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/spi/src/spi1.c
-[v _spi1_configuration spi1_configuration `C[1]S1367  1 s 5 spi1_configuration ]
 "38 C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
 [v _INT0_InterruptHandler INT0_InterruptHandler `*.37(v  1 e 2 0 ]
 "39
@@ -1299,24 +1298,24 @@ channel_ANA1 1
 [v _uart1RxTail uart1RxTail `VEuc  1 s 1 uart1RxTail ]
 "90
 [v _uart1RxBuffer uart1RxBuffer `VE[8]uc  1 s 8 uart1RxBuffer ]
-[s S2369 . 1 `uc 1 perr 1 0 :1:0 
+[s S2126 . 1 `uc 1 perr 1 0 :1:0 
 `uc 1 ferr 1 0 :1:1 
 `uc 1 oerr 1 0 :1:2 
 `uc 1 reserved 1 0 :5:3 
 ]
 "91
-[u S2374 . 2 `S2369 1 . 1 0 `ui 1 status 2 0 ]
-[v _uart1RxStatusBuffer uart1RxStatusBuffer `VE[8]S2374  1 s 16 uart1RxStatusBuffer ]
+[u S2131 . 2 `S2126 1 . 1 0 `ui 1 status 2 0 ]
+[v _uart1RxStatusBuffer uart1RxStatusBuffer `VE[8]S2131  1 s 16 uart1RxStatusBuffer ]
 "92
 [v _uart1RxCount uart1RxCount `VEuc  1 e 1 0 ]
-[s S2369 . 1 `uc 1 perr 1 0 :1:0 
+[s S2126 . 1 `uc 1 perr 1 0 :1:0 
 `uc 1 ferr 1 0 :1:1 
 `uc 1 oerr 1 0 :1:2 
 `uc 1 reserved 1 0 :5:3 
 ]
 "94
-[u S2374 . 2 `S2369 1 . 1 0 `ui 1 status 2 0 ]
-[v _uart1RxLastError uart1RxLastError `VES2374  1 e 2 0 ]
+[u S2131 . 2 `S2126 1 . 1 0 `ui 1 status 2 0 ]
+[v _uart1RxLastError uart1RxLastError `VES2131  1 e 2 0 ]
 "100
 [v _UART1_FramingErrorHandler UART1_FramingErrorHandler `*.37(v  1 e 2 0 ]
 "101
@@ -1330,7 +1329,7 @@ channel_ANA1 1
 "42 C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\main.c
 [v _main main `(i  1 e 2 0 ]
 {
-"73
+"74
 } 0
 "36 C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/system.c
 [v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
@@ -1377,14 +1376,14 @@ channel_ANA1 1
 "135
 } 0
 "70 C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/spi/src/spi1.c
-[v _SPI_Initialize SPI_Initialize `(v  1 e 1 0 ]
+[v _SPI1_Initialize SPI1_Initialize `(v  1 e 1 0 ]
 {
 "83
 } 0
 "38 C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/pins.c
 [v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
 {
-"142
+"143
 } 0
 "42 C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
 [v _INTERRUPT_Initialize INTERRUPT_Initialize `(v  1 e 1 0 ]
@@ -1452,6 +1451,11 @@ channel_ANA1 1
 {
 [v ADCC_SetADIInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 18 ]
 "300
+} 0
+"85 C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/spi/src/spi1.c
+[v _SPI1_Open SPI1_Open `(a  1 e 1 0 ]
+{
+"99
 } 0
 "224 C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/i2c_host/src/i2c2.c
 [v _I2C2_ISR I2C2_ISR `IIL(v  1 e 1 0 ]
@@ -1600,10 +1604,10 @@ channel_ANA1 1
 {
 "105
 } 0
-"144 C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/pins.c
+"145 C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/pins.c
 [v _PIN_MANAGER_IOC PIN_MANAGER_IOC `(v  1 e 1 0 ]
 {
-"146
+"147
 } 0
 "115 C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
 [v _INT0_ISR INT0_ISR `IIL(v  1 e 1 0 ]
@@ -1675,7 +1679,7 @@ channel_ANA1 1
 "8 C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\ADC_int.c
 [v _ADC_int ADC_int `(v  1 e 1 0 ]
 {
-"28
+"29
 } 0
 "385 C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
 [v _UART1_Write UART1_Write `(v  1 e 1 0 ]
@@ -1688,6 +1692,15 @@ channel_ANA1 1
 "389
 [v UART1_Write@txData txData `uc  1 a 1 1 ]
 "407
+} 0
+"145 C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/spi/src/spi1.c
+[v _SPI1_ByteWrite SPI1_ByteWrite `(v  1 e 1 0 ]
+{
+[v SPI1_ByteWrite@byte byte `uc  1 a 1 wreg ]
+[v SPI1_ByteWrite@byte byte `uc  1 a 1 wreg ]
+"147
+[v SPI1_ByteWrite@byte byte `uc  1 a 1 0 ]
+"148
 } 0
 "106 C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/adc/src/adcc.c
 [v _ADCC_StartConversion ADCC_StartConversion `(v  1 e 1 0 ]

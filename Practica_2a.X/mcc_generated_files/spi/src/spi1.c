@@ -36,19 +36,19 @@
 
 /**
  * @ingroup spi1
- * @struct SPI_INTERFACE SPI
+ * @struct SPI_INTERFACE SPI1
  * @brief Defines an object for SPI_DRIVER_FUNCTIONS.
  */ 
-const struct SPI_INTERFACE SPI = {
-    .Initialize = SPI_Initialize,
-    .Close = SPI_Close,
-    .Open = SPI_Open,
-    .BufferExchange = SPI_BufferExchange,
-    .BufferRead = SPI_BufferRead,
-    .BufferWrite = SPI_BufferWrite,	
-    .ByteExchange = SPI_ByteExchange,
-    .ByteRead = SPI_ByteRead,	
-    .ByteWrite = SPI_ByteWrite,
+const struct SPI_INTERFACE SPI1 = {
+    .Initialize = SPI1_Initialize,
+    .Close = SPI1_Close,
+    .Open = SPI1_Open,
+    .BufferExchange = SPI1_BufferExchange,
+    .BufferRead = SPI1_BufferRead,
+    .BufferWrite = SPI1_BufferWrite,	
+    .ByteExchange = SPI1_ByteExchange,
+    .ByteRead = SPI1_ByteRead,	
+    .ByteWrite = SPI1_ByteWrite,
 };
 
 typedef struct 
@@ -64,10 +64,10 @@ typedef struct
 //con0 == SPIxCON0, con1 == SPIxCON1, con2 == SPIxCON2, baud == SPIxBAUD, operation == Host/Client
 static const spi1_configuration_t spi1_configuration[] = 
 {   
-    { 0x2, 0x40, 0x0, 0x1F, 0 }
+    { 0b10000011, 0x40, 0b00000010, 0x3F, 0 }
 };
 
-void SPI_Initialize(void)
+void SPI1_Initialize(void)
 {
     //SDOP active high; SDIP active high; SSP active high; FST disabled; CKP Idle:Low, Active:High; CKE Active to idle; SMP Middle; 
     SPI1CON1 = 0x40;
@@ -75,35 +75,35 @@ void SPI_Initialize(void)
     SPI1CON2 = 0x0;
     //CLKSEL FOSC; 
     SPI1CLK = 0x0;
-    //BAUD 31; 
-    SPI1BAUD = 0x1F;
+    //BAUD 63; 
+    SPI1BAUD = 0x3F;
     TRISCbits.TRISC3 = 0;
     //BMODE last byte; MST bus host; LSBF MSb first; EN disabled; 
     SPI1CON0 = 0x2;
 }
 
-bool SPI_Open(uint8_t spiConfigIndex)
+bool SPI1_Open(uint8_t spiConfigIndex)
 {   
     if(!SPI1CON0bits.EN)
     {
-        SPI1CON0 = spi1_configuration[spiConfigIndex].con0;
-        SPI1CON1 = spi1_configuration[spiConfigIndex].con1;
-        SPI1CON2 = spi1_configuration[spiConfigIndex].con2 | (_SPI1CON2_SPI1RXR_MASK | _SPI1CON2_SPI1TXR_MASK);
+        SPI1CON0 = 0b10000011;
+        SPI1CON1 = 0x40;
+        SPI1CON2 = 0b00000010;
         SPI1CLK  = 0x00;
-        SPI1BAUD = spi1_configuration[spiConfigIndex].baud;        
-        TRISCbits.TRISC3 = spi1_configuration[spiConfigIndex].operation;
+        SPI1BAUD = 0x3F;        
+        TRISCbits.TRISC3 = 0;
         SPI1CON0bits.EN = 1;
         return true;
     }
     return false;
 }
 
-void SPI_Close(void)
+void SPI1_Close(void)
 {
     SPI1CON0bits.EN = 0;
 }
 
-uint8_t SPI_ByteExchange(uint8_t data)
+uint8_t SPI1_ByteExchange(uint8_t data)
 {
     SPI1TCNTL = 1;
     SPI1TXB = data;
@@ -111,7 +111,7 @@ uint8_t SPI_ByteExchange(uint8_t data)
     return SPI1RXB;
 }
 
-void SPI_BufferExchange(void *block, size_t blockSize)
+void SPI1_BufferExchange(void *block, size_t blockSize)
 {
     uint8_t *data = block;
     while(blockSize--)
@@ -124,60 +124,60 @@ void SPI_BufferExchange(void *block, size_t blockSize)
 }
 
 // Half Duplex SPI Functions
-void SPI_BufferWrite(void *block, size_t blockSize)
+void SPI1_BufferWrite(void *block, size_t blockSize)
 {
     uint8_t *data = block;
     while(blockSize--)
     {
-        SPI_ByteExchange(*data++);
+        SPI1_ByteExchange(*data++);
     }
 }
 
-void SPI_BufferRead(void *block, size_t blockSize)
+void SPI1_BufferRead(void *block, size_t blockSize)
 {
     uint8_t *data = block;
     while(blockSize--)
     {
-        *data++ = SPI_ByteExchange(0);
+        *data++ = SPI1_ByteExchange(0);
     }
 }
 
-void SPI_ByteWrite(uint8_t byte)
+void SPI1_ByteWrite(uint8_t byte)
 {
     SPI1TXB = byte;
 }
 
-uint8_t SPI_ByteRead(void)
+uint8_t SPI1_ByteRead(void)
 {
     return SPI1RXB;
 }
 
 uint8_t SPI1_ExchangeByte(uint8_t data)
 {
-    return SPI_ByteExchange(data);
+    return SPI1_ByteExchange(data);
 }
 
 void SPI1_ExchangeBlock(void *block, size_t blockSize)
 {
-    SPI_BufferExchange(block, blockSize);
+    SPI1_BufferExchange(block, blockSize);
 }
 
 void SPI1_WriteBlock(void *block, size_t blockSize)
 {
-    SPI_BufferWrite(block, blockSize);
+    SPI1_BufferWrite(block, blockSize);
 }
 
 void SPI1_ReadBlock(void *block, size_t blockSize)
 {
-    SPI_BufferRead(block, blockSize);
+    SPI1_BufferRead(block, blockSize);
 }
 
 void SPI1_WriteByte(uint8_t byte)
 {
-    SPI_ByteWrite(byte);
+    SPI1_ByteWrite(byte);
 }
 
 uint8_t SPI1_ReadByte(void)
 {
-    return SPI_ByteRead();
+    return SPI1_ByteRead();
 }

@@ -4,8 +4,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 "48 mcc_generated_files/system/src/../../system/clock.h
 [; ;mcc_generated_files/system/src/../../system/clock.h: 48: void CLOCK_Initialize(void);
 [v _CLOCK_Initialize `(v ~T0 @X0 0 ef ]
-"698 mcc_generated_files/system/src/../../system/pins.h
-[; ;mcc_generated_files/system/src/../../system/pins.h: 698: void PIN_MANAGER_Initialize (void);
+"718 mcc_generated_files/system/src/../../system/pins.h
+[; ;mcc_generated_files/system/src/../../system/pins.h: 718: void PIN_MANAGER_Initialize (void);
 [v _PIN_MANAGER_Initialize `(v ~T0 @X0 0 ef ]
 "79 mcc_generated_files/system/src/../../adc/adcc.h
 [; ;mcc_generated_files/system/src/../../adc/adcc.h: 79: void ADCC_Initialize(void);
@@ -20,8 +20,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;mcc_generated_files/system/src/../../peripheral/i2c1.h: 22: void I2C1_Initialize(void);
 [v _I2C1_Initialize `(v ~T0 @X0 0 ef ]
 "65 mcc_generated_files/system/src/../../spi/spi1.h
-[; ;mcc_generated_files/system/src/../../spi/spi1.h: 65: void SPI_Initialize(void);
-[v _SPI_Initialize `(v ~T0 @X0 0 ef ]
+[; ;mcc_generated_files/system/src/../../spi/spi1.h: 65: void SPI1_Initialize(void);
+[v _SPI1_Initialize `(v ~T0 @X0 0 ef ]
 "55 mcc_generated_files/system/src/../../timer/tmr0.h
 [; ;mcc_generated_files/system/src/../../timer/tmr0.h: 55: void Timer_Initialize(void);
 [v _Timer_Initialize `(v ~T0 @X0 0 ef ]
@@ -2299,8 +2299,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;mcc_generated_files/system/src/system.c: 43:     I2C1_Initialize();
 [e ( _I2C1_Initialize ..  ]
 "44
-[; ;mcc_generated_files/system/src/system.c: 44:     SPI_Initialize();
-[e ( _SPI_Initialize ..  ]
+[; ;mcc_generated_files/system/src/system.c: 44:     SPI1_Initialize();
+[e ( _SPI1_Initialize ..  ]
 "45
 [; ;mcc_generated_files/system/src/system.c: 45:     Timer_Initialize();
 [e ( _Timer_Initialize ..  ]

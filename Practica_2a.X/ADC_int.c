@@ -13,6 +13,8 @@ void ADC_int(void)
         LATDbits.LATD0 = !LATDbits.LATD0;
         ADCC_StartConversion(channel_ANA1); //Iniciamos la segunda
         // y Cargamos la lectura al buffer de transmicion
+        SPI1_ByteWrite(0b10101010);
+        SPI1_ByteWrite(0b11101011);
         UART_Write(9);
         UART_Write(8);
         UART_Write(',');    // y separamos por ","
