@@ -27726,7 +27726,7 @@ const uart_drv_interface_t UART = {
 
 static volatile uint8_t uart1TxHead = 0;
 static volatile uint8_t uart1TxTail = 0;
-static volatile uint8_t uart1TxBuffer[(8)];
+static volatile uint8_t uart1TxBuffer[(16)];
 volatile uint8_t uart1TxBufferRemaining;
 
 static volatile uint8_t uart1RxHead = 0;
@@ -28037,7 +28037,7 @@ void UART1_Write(uint8_t txData)
     else if(uart1TxBufferRemaining)
     {
        uart1TxBuffer[uart1TxHead] = txData;
-       tempTxHead = (uart1TxHead + 1) & ((8) - 1);
+       tempTxHead = (uart1TxHead + 1) & ((16) - 1);
 
        uart1TxHead = tempTxHead;
        PIE3bits.U1TXIE = 0;
@@ -28063,7 +28063,7 @@ void UART1_TransmitISR(void)
     if(sizeof(uart1TxBuffer) > uart1TxBufferRemaining)
     {
        U1TXB = uart1TxBuffer[uart1TxTail];
-       tempTxTail = (uart1TxTail + 1) & ((8) - 1);
+       tempTxTail = (uart1TxTail + 1) & ((16) - 1);
 
        uart1TxTail = tempTxTail;
        uart1TxBufferRemaining++;

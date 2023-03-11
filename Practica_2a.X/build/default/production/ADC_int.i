@@ -27707,19 +27707,32 @@ void ADC_int(void)
     if(ADPCH == 0)
     {
         LATDbits.LATD0 = !LATDbits.LATD0;
+
+        LATEbits.LATE0 = 0;
         ADCC_StartConversion(channel_ANA1);
 
-        SPI1_ByteWrite(0b10101010);
-        UART1_Write(9);
-        UART1_Write(8);
+        SPI1_ByteWrite(0b00111111);
+        SPI1_ByteWrite(0b11111111);
+
+        _delay((unsigned long)((35)*(64000000/4000000.0)));
+        LATBbits.LATB4 = 0;
+        _delay((unsigned long)((2)*(64000000/4000000.0)));
+        LATBbits.LATB4 = 1;
+        LATEbits.LATE0 = 1;
+
+        UART1_Write('A');
+        UART1_Write('B');
+        UART1_Write('C');
         UART1_Write(',');
     }
     else
     {
+
         LATDbits.LATD1 = !LATDbits.LATD1;
 
-        UART1_Write(7);
-        UART1_Write(6);
+        UART1_Write('D');
+        UART1_Write('E');
+        UART1_Write('F');
         UART1_Write('\n');
     }
 }

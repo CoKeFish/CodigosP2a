@@ -11,20 +11,32 @@ void ADC_int(void)
     if(ADPCH == 0)  //Si hicimos la convercion de la primera muestra
     {
         LATDbits.LATD0 = !LATDbits.LATD0;
+        
+        LATEbits.LATE0 = 0;
         ADCC_StartConversion(channel_ANA1); //Iniciamos la segunda
         // y Cargamos la lectura al buffer de transmicion
-        SPI1_ByteWrite(0b10101010);
-        SPI1_ByteWrite(0b11101011);
-        UART_Write(9);
-        UART_Write(8);
+        SPI1_ByteWrite(0b00111111);
+        SPI1_ByteWrite(0b11111111);
+        
+        __delay_us(35);
+        LATBbits.LATB4 = 0;
+        __delay_us(2);
+        LATBbits.LATB4 = 1;
+        LATEbits.LATE0 = 1;
+    
+        UART_Write('A');
+        UART_Write('B');
+        UART_Write('C');
         UART_Write(',');    // y separamos por ","
     }
     else            //Si es la segunda convercion
     {
+        
         LATDbits.LATD1 = !LATDbits.LATD1;
         // Cargamos la lectura al buffer de transmicion
-        UART_Write(7);
-        UART_Write(6);
+        UART_Write('D');
+        UART_Write('E');
+        UART_Write('F');
         UART_Write('\n');   // y separamos por un salto de linea
     }
 }

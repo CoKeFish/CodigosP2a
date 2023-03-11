@@ -21,7 +21,37 @@ Version 4.0 HI-TECH Software Intermediate Code
 "74 ./mcc_generated_files/system/../spi/spi1.h
 [; ;./mcc_generated_files/system/../spi/spi1.h: 74: _Bool SPI1_Open(uint8_t spiConfigIndex);
 [v _SPI1_Open `(a ~T0 @X0 0 ef1`uc ]
-"46507 C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h
+"45553 C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h: 45553:     struct {
+[s S2054 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S2054 . LATB0 LATB1 LATB2 LATB3 LATB4 LATB5 LATB6 LATB7 ]
+"45563
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h: 45563:     struct {
+[s S2055 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S2055 . LB0 LB1 LB2 LB3 LB4 LB5 LB6 LB7 ]
+"45552
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h: 45552: typedef union {
+[u S2053 `S2054 1 `S2055 1 ]
+[n S2053 . . . ]
+"45574
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h: 45574: extern volatile LATBbits_t LATBbits __attribute__((address(0x3FBB)));
+[v _LATBbits `VS2053 ~T0 @X0 0 e@16315 ]
+"45889
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h: 45889:     struct {
+[s S2063 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S2063 . LATE0 LATE1 LATE2 ]
+"45894
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h: 45894:     struct {
+[s S2064 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S2064 . LE0 LE1 LE2 ]
+"45888
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h: 45888: typedef union {
+[u S2062 `S2063 1 `S2064 1 ]
+[n S2062 . . . ]
+"45900
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h: 45900: extern volatile LATEbits_t LATEbits __attribute__((address(0x3FBE)));
+[v _LATEbits `VS2062 ~T0 @X0 0 e@16318 ]
+"46507
 [; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h: 46507:     struct {
 [s S2086 :1 `uc 1 :1 `uc 1 :1 `uc 1 :2 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S2086 . INT0EDG INT1EDG INT2EDG . IPEN GIEL GIE ]
@@ -2301,25 +2331,31 @@ Version 4.0 HI-TECH Software Intermediate Code
 "50
 [; ;main.c: 50:     SPI1_Open(0);
 [e ( _SPI1_Open (1 -> -> 0 `i `uc ]
-"59
-[; ;main.c: 59:     (INTCON0bits.GIE = 1);
+"51
+[; ;main.c: 51:     LATBbits.LATB4 = 1;
+[e = . . _LATBbits 0 4 -> -> 1 `i `uc ]
+"52
+[; ;main.c: 52:     LATEbits.LATE0 = 1;
+[e = . . _LATEbits 0 0 -> -> 1 `i `uc ]
+"61
+[; ;main.c: 61:     (INTCON0bits.GIE = 1);
 [e = . . _INTCON0bits 0 6 -> -> 1 `i `uc ]
-"65
-[; ;main.c: 65:     (INTCON0bits.GIEL = 1);
+"67
+[; ;main.c: 67:     (INTCON0bits.GIEL = 1);
 [e = . . _INTCON0bits 0 5 -> -> 1 `i `uc ]
-"71
-[; ;main.c: 71:     while(1)
-[e :U 2204 ]
-"72
-[; ;main.c: 72:     {
-{
 "73
-[; ;main.c: 73:     }
+[; ;main.c: 73:     while(1)
+[e :U 2204 ]
+"74
+[; ;main.c: 74:     {
+{
+"75
+[; ;main.c: 75:     }
 }
 [e :U 2203 ]
 [e $U 2204  ]
 [e :U 2205 ]
-"74
-[; ;main.c: 74: }
+"76
+[; ;main.c: 76: }
 [e :UE 2202 ]
 }

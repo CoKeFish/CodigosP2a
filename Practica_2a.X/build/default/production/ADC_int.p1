@@ -19,8 +19,23 @@ Version 4.0 HI-TECH Software Intermediate Code
 "45798
 [; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h: 45798: extern volatile LATDbits_t LATDbits __attribute__((address(0x3FBD)));
 [v _LATDbits `VS2059 ~T0 @X0 0 e@16317 ]
-"14 ADC_int.c
-[; ;ADC_int.c: 14:         ADCC_StartConversion(channel_ANA1);
+"45889
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h: 45889:     struct {
+[s S2063 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S2063 . LATE0 LATE1 LATE2 ]
+"45894
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h: 45894:     struct {
+[s S2064 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S2064 . LE0 LE1 LE2 ]
+"45888
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h: 45888: typedef union {
+[u S2062 `S2063 1 `S2064 1 ]
+[n S2062 . . . ]
+"45900
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h: 45900: extern volatile LATEbits_t LATEbits __attribute__((address(0x3FBE)));
+[v _LATEbits `VS2062 ~T0 @X0 0 e@16318 ]
+"16 ADC_int.c
+[; ;ADC_int.c: 16:         ADCC_StartConversion(channel_ANA1);
 [c E15847 59 60 61 62 63 0 1 .. ]
 [n E15847 . channel_VSS channel_Temp channel_DAC1 channel_FVR_Buffer1 channel_FVR_Buffer2 channel_ANA0 channel_ANA1  ]
 "89 ./mcc_generated_files/uart/../system/../adc/adcc.h
@@ -28,6 +43,25 @@ Version 4.0 HI-TECH Software Intermediate Code
 "125 ./mcc_generated_files/uart/../system/../spi/spi1.h
 [; ;./mcc_generated_files/uart/../system/../spi/spi1.h: 125: void SPI1_ByteWrite(uint8_t byteData);
 [v _SPI1_ByteWrite `(v ~T0 @X0 0 ef1`uc ]
+[v F192 `(v ~T0 @X0 1 tf1`ul ]
+"12 C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\builtins.h
+[v __delay `JF192 ~T0 @X0 0 e ]
+[p i __delay ]
+"45553 C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h: 45553:     struct {
+[s S2054 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S2054 . LATB0 LATB1 LATB2 LATB3 LATB4 LATB5 LATB6 LATB7 ]
+"45563
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h: 45563:     struct {
+[s S2055 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S2055 . LB0 LB1 LB2 LB3 LB4 LB5 LB6 LB7 ]
+"45552
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h: 45552: typedef union {
+[u S2053 `S2054 1 `S2055 1 ]
+[n S2053 . . . ]
+"45574
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h: 45574: extern volatile LATBbits_t LATBbits __attribute__((address(0x3FBB)));
+[v _LATBbits `VS2053 ~T0 @X0 0 e@16315 ]
 "321 ./mcc_generated_files/uart/../system/../uart/uart1.h
 [; ;./mcc_generated_files/uart/../system/../uart/uart1.h: 321: void UART1_Write(uint8_t txData);
 [v _UART1_Write `(v ~T0 @X0 0 ef1`uc ]
@@ -2286,48 +2320,75 @@ Version 4.0 HI-TECH Software Intermediate Code
 "13
 [; ;ADC_int.c: 13:         LATDbits.LATD0 = !LATDbits.LATD0;
 [e = . . _LATDbits 0 0 -> -> ! != -> . . _LATDbits 0 0 `i -> 0 `i `i `uc ]
-"14
-[; ;ADC_int.c: 14:         ADCC_StartConversion(channel_ANA1);
-[e ( _ADCC_StartConversion (1 . `E15847 6 ]
+"15
+[; ;ADC_int.c: 15:         LATEbits.LATE0 = 0;
+[e = . . _LATEbits 0 0 -> -> 0 `i `uc ]
 "16
-[; ;ADC_int.c: 16:         SPI1_ByteWrite(0b10101010);
-[e ( _SPI1_ByteWrite (1 -> -> 170 `i `uc ]
-"17
-[; ;ADC_int.c: 17:         UART1_Write(9);
-[e ( _UART1_Write (1 -> -> 9 `i `uc ]
+[; ;ADC_int.c: 16:         ADCC_StartConversion(channel_ANA1);
+[e ( _ADCC_StartConversion (1 . `E15847 6 ]
 "18
-[; ;ADC_int.c: 18:         UART1_Write(8);
-[e ( _UART1_Write (1 -> -> 8 `i `uc ]
+[; ;ADC_int.c: 18:         SPI1_ByteWrite(0b00111111);
+[e ( _SPI1_ByteWrite (1 -> -> 63 `i `uc ]
 "19
-[; ;ADC_int.c: 19:         UART1_Write(',');
+[; ;ADC_int.c: 19:         SPI1_ByteWrite(0b11111111);
+[e ( _SPI1_ByteWrite (1 -> -> 255 `i `uc ]
+"21
+[; ;ADC_int.c: 21:         _delay((unsigned long)((35)*(64000000/4000000.0)));
+[e ( __delay (1 -> * -> -> 35 `i `d / -> -> 64000000 `l `d .4000000.0 `ul ]
+"22
+[; ;ADC_int.c: 22:         LATBbits.LATB4 = 0;
+[e = . . _LATBbits 0 4 -> -> 0 `i `uc ]
+"23
+[; ;ADC_int.c: 23:         _delay((unsigned long)((2)*(64000000/4000000.0)));
+[e ( __delay (1 -> * -> -> 2 `i `d / -> -> 64000000 `l `d .4000000.0 `ul ]
+"24
+[; ;ADC_int.c: 24:         LATBbits.LATB4 = 1;
+[e = . . _LATBbits 0 4 -> -> 1 `i `uc ]
+"25
+[; ;ADC_int.c: 25:         LATEbits.LATE0 = 1;
+[e = . . _LATEbits 0 0 -> -> 1 `i `uc ]
+"27
+[; ;ADC_int.c: 27:         UART1_Write('A');
+[e ( _UART1_Write (1 -> -> 65 `ui `uc ]
+"28
+[; ;ADC_int.c: 28:         UART1_Write('B');
+[e ( _UART1_Write (1 -> -> 66 `ui `uc ]
+"29
+[; ;ADC_int.c: 29:         UART1_Write('C');
+[e ( _UART1_Write (1 -> -> 67 `ui `uc ]
+"30
+[; ;ADC_int.c: 30:         UART1_Write(',');
 [e ( _UART1_Write (1 -> -> 44 `ui `uc ]
-"20
-[; ;ADC_int.c: 20:     }
+"31
+[; ;ADC_int.c: 31:     }
 }
 [e $U 2204  ]
-"21
-[; ;ADC_int.c: 21:     else
+"32
+[; ;ADC_int.c: 32:     else
 [e :U 2203 ]
-"22
-[; ;ADC_int.c: 22:     {
+"33
+[; ;ADC_int.c: 33:     {
 {
-"23
-[; ;ADC_int.c: 23:         LATDbits.LATD1 = !LATDbits.LATD1;
+"35
+[; ;ADC_int.c: 35:         LATDbits.LATD1 = !LATDbits.LATD1;
 [e = . . _LATDbits 0 1 -> -> ! != -> . . _LATDbits 0 1 `i -> 0 `i `i `uc ]
-"25
-[; ;ADC_int.c: 25:         UART1_Write(7);
-[e ( _UART1_Write (1 -> -> 7 `i `uc ]
-"26
-[; ;ADC_int.c: 26:         UART1_Write(6);
-[e ( _UART1_Write (1 -> -> 6 `i `uc ]
-"27
-[; ;ADC_int.c: 27:         UART1_Write('\n');
+"37
+[; ;ADC_int.c: 37:         UART1_Write('D');
+[e ( _UART1_Write (1 -> -> 68 `ui `uc ]
+"38
+[; ;ADC_int.c: 38:         UART1_Write('E');
+[e ( _UART1_Write (1 -> -> 69 `ui `uc ]
+"39
+[; ;ADC_int.c: 39:         UART1_Write('F');
+[e ( _UART1_Write (1 -> -> 70 `ui `uc ]
+"40
+[; ;ADC_int.c: 40:         UART1_Write('\n');
 [e ( _UART1_Write (1 -> -> 10 `ui `uc ]
-"28
-[; ;ADC_int.c: 28:     }
+"41
+[; ;ADC_int.c: 41:     }
 }
 [e :U 2204 ]
-"29
-[; ;ADC_int.c: 29: }
+"42
+[; ;ADC_int.c: 42: }
 [e :UE 2202 ]
 }

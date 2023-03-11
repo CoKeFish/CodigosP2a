@@ -40,7 +40,7 @@
   Section: Macro Declarations
 */
 
-#define UART1_TX_BUFFER_SIZE (8) //buffer size should be 2^n
+#define UART1_TX_BUFFER_SIZE (16) //buffer size should be 2^n
 #define UART1_TX_BUFFER_MASK (UART1_TX_BUFFER_SIZE - 1) 
 
 #define UART1_RX_BUFFER_SIZE (8) //buffer size should be 2^n

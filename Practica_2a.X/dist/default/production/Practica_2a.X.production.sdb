@@ -20,7 +20,7 @@ I2C_ERROR_ADDR_NACK 1
 I2C_ERROR_DATA_NACK 2
 I2C_ERROR_BUS_COLLISION 3
 ]
-"14 C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\ADC_int.c
+"16 C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\ADC_int.c
 [e E15847 . `uc
 channel_VSS 59
 channel_Temp 60
@@ -403,7 +403,7 @@ channel_ANA1 1
 "3974
 [u S56 . 1 `S47 1 . 1 0 ]
 [v _PIR1bits PIR1bits `VES56  1 e 1 @14753 ]
-[s S2802 . 1 `uc 1 DMA1SCNTIF 1 0 :1:0 
+[s S2909 . 1 `uc 1 DMA1SCNTIF 1 0 :1:0 
 `uc 1 DMA1DCNTIF 1 0 :1:1 
 `uc 1 DMA1ORIF 1 0 :1:2 
 `uc 1 DMA1AIF 1 0 :1:3 
@@ -413,8 +413,8 @@ channel_ANA1 1
 `uc 1 I2C1RXIF 1 0 :1:7 
 ]
 "4036
-[u S2811 . 1 `S2802 1 . 1 0 ]
-[v _PIR2bits PIR2bits `VES2811  1 e 1 @14754 ]
+[u S2918 . 1 `S2909 1 . 1 0 ]
+[v _PIR2bits PIR2bits `VES2918  1 e 1 @14754 ]
 [s S1796 . 1 `uc 1 I2C1TXIF 1 0 :1:0 
 `uc 1 I2C1IF 1 0 :1:1 
 `uc 1 I2C1EIF 1 0 :1:2 
@@ -573,21 +573,21 @@ channel_ANA1 1
 [v _SPI1TCNTL SPI1TCNTL `VEuc  1 e 1 @15634 ]
 "22835
 [v _SPI1CON0 SPI1CON0 `VEuc  1 e 1 @15636 ]
-[s S2772 . 1 `uc 1 BMODE 1 0 :1:0 
+[s S2879 . 1 `uc 1 BMODE 1 0 :1:0 
 `uc 1 MST 1 0 :1:1 
 `uc 1 LSBF 1 0 :1:2 
 `uc 1 . 1 0 :4:3 
 `uc 1 EN 1 0 :1:7 
 ]
 "22856
-[s S2778 . 1 `uc 1 SPI1BMODE 1 0 :1:0 
+[s S2885 . 1 `uc 1 SPI1BMODE 1 0 :1:0 
 `uc 1 SPI1MST 1 0 :1:1 
 `uc 1 SPI1LSBF 1 0 :1:2 
 `uc 1 . 1 0 :4:3 
 `uc 1 SPI1SPIEN 1 0 :1:7 
 ]
-[u S2784 . 1 `S2772 1 . 1 0 `S2778 1 . 1 0 ]
-[v _SPI1CON0bits SPI1CON0bits `VES2784  1 e 1 @15636 ]
+[u S2891 . 1 `S2879 1 . 1 0 `S2885 1 . 1 0 ]
+[v _SPI1CON0bits SPI1CON0bits `VES2891  1 e 1 @15636 ]
 "22901
 [v _SPI1CON1 SPI1CON1 `VEuc  1 e 1 @15637 ]
 "23003
@@ -1179,11 +1179,35 @@ channel_ANA1 1
 [v _LATA LATA `VEuc  1 e 1 @16314 ]
 "45547
 [v _LATB LATB `VEuc  1 e 1 @16315 ]
+[s S2543 . 1 `uc 1 LATB0 1 0 :1:0 
+`uc 1 LATB1 1 0 :1:1 
+`uc 1 LATB2 1 0 :1:2 
+`uc 1 LATB3 1 0 :1:3 
+`uc 1 LATB4 1 0 :1:4 
+`uc 1 LATB5 1 0 :1:5 
+`uc 1 LATB6 1 0 :1:6 
+`uc 1 LATB7 1 0 :1:7 
+]
+"45574
+[s S2552 . 1 `uc 1 LB0 1 0 :1:0 
+`uc 1 LB1 1 0 :1:1 
+`uc 1 LB2 1 0 :1:2 
+`uc 1 LB3 1 0 :1:3 
+`uc 1 LB4 1 0 :1:4 
+`uc 1 LB5 1 0 :1:5 
+`uc 1 LB6 1 0 :1:6 
+`uc 1 LB7 1 0 :1:7 
+]
+"45574
+[u S2561 . 1 `S2543 1 . 1 0 `S2552 1 . 1 0 ]
+"45574
+"45574
+[v _LATBbits LATBbits `VES2561  1 e 1 @16315 ]
 "45659
 [v _LATC LATC `VEuc  1 e 1 @16316 ]
 "45771
 [v _LATD LATD `VEuc  1 e 1 @16317 ]
-[s S2570 . 1 `uc 1 LATD0 1 0 :1:0 
+[s S2641 . 1 `uc 1 LATD0 1 0 :1:0 
 `uc 1 LATD1 1 0 :1:1 
 `uc 1 LATD2 1 0 :1:2 
 `uc 1 LATD3 1 0 :1:3 
@@ -1193,7 +1217,7 @@ channel_ANA1 1
 `uc 1 LATD7 1 0 :1:7 
 ]
 "45798
-[s S2579 . 1 `uc 1 LD0 1 0 :1:0 
+[s S2650 . 1 `uc 1 LD0 1 0 :1:0 
 `uc 1 LD1 1 0 :1:1 
 `uc 1 LD2 1 0 :1:2 
 `uc 1 LD3 1 0 :1:3 
@@ -1203,19 +1227,33 @@ channel_ANA1 1
 `uc 1 LD7 1 0 :1:7 
 ]
 "45798
-[u S2588 . 1 `S2570 1 . 1 0 `S2579 1 . 1 0 ]
+[u S2659 . 1 `S2641 1 . 1 0 `S2650 1 . 1 0 ]
 "45798
 "45798
-[v _LATDbits LATDbits `VES2588  1 e 1 @16317 ]
+[v _LATDbits LATDbits `VES2659  1 e 1 @16317 ]
 "45883
 [v _LATE LATE `VEuc  1 e 1 @16318 ]
+[s S2583 . 1 `uc 1 LATE0 1 0 :1:0 
+`uc 1 LATE1 1 0 :1:1 
+`uc 1 LATE2 1 0 :1:2 
+]
+"45900
+[s S2587 . 1 `uc 1 LE0 1 0 :1:0 
+`uc 1 LE1 1 0 :1:1 
+`uc 1 LE2 1 0 :1:2 
+]
+"45900
+[u S2591 . 1 `S2583 1 . 1 0 `S2587 1 . 1 0 ]
+"45900
+"45900
+[v _LATEbits LATEbits `VES2591  1 e 1 @16318 ]
 "45935
 [v _TRISA TRISA `VEuc  1 e 1 @16322 ]
 "45997
 [v _TRISB TRISB `VEuc  1 e 1 @16323 ]
 "46059
 [v _TRISC TRISC `VEuc  1 e 1 @16324 ]
-[s S2750 . 1 `uc 1 TRISC0 1 0 :1:0 
+[s S2857 . 1 `uc 1 TRISC0 1 0 :1:0 
 `uc 1 TRISC1 1 0 :1:1 
 `uc 1 TRISC2 1 0 :1:2 
 `uc 1 TRISC3 1 0 :1:3 
@@ -1225,10 +1263,10 @@ channel_ANA1 1
 `uc 1 TRISC7 1 0 :1:7 
 ]
 "46076
-[u S2759 . 1 `S2750 1 . 1 0 ]
+[u S2866 . 1 `S2857 1 . 1 0 ]
 "46076
 "46076
-[v _TRISCbits TRISCbits `VES2759  1 e 1 @16324 ]
+[v _TRISCbits TRISCbits `VES2866  1 e 1 @16324 ]
 "46121
 [v _TRISD TRISD `VEuc  1 e 1 @16325 ]
 "46183
@@ -1289,7 +1327,7 @@ channel_ANA1 1
 "84
 [v _uart1TxTail uart1TxTail `VEuc  1 s 1 uart1TxTail ]
 "85
-[v _uart1TxBuffer uart1TxBuffer `VE[8]uc  1 s 8 uart1TxBuffer ]
+[v _uart1TxBuffer uart1TxBuffer `VE[16]uc  1 s 16 uart1TxBuffer ]
 "86
 [v _uart1TxBufferRemaining uart1TxBufferRemaining `VEuc  1 e 1 0 ]
 "88
@@ -1329,7 +1367,7 @@ channel_ANA1 1
 "42 C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\main.c
 [v _main main `(i  1 e 2 0 ]
 {
-"74
+"76
 } 0
 "36 C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/system.c
 [v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
@@ -1679,7 +1717,7 @@ channel_ANA1 1
 "8 C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\ADC_int.c
 [v _ADC_int ADC_int `(v  1 e 1 0 ]
 {
-"29
+"42
 } 0
 "385 C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
 [v _UART1_Write UART1_Write `(v  1 e 1 0 ]

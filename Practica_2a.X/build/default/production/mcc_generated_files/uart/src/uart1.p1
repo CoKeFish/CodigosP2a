@@ -2577,8 +2577,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 -> -> 0 `i `uc
 ]
 "85
-[; ;mcc_generated_files/uart/src/uart1.c: 85: static volatile uint8_t uart1TxBuffer[(8)];
-[v _uart1TxBuffer `Vuc ~T0 @X0 -> 8 `i s ]
+[; ;mcc_generated_files/uart/src/uart1.c: 85: static volatile uint8_t uart1TxBuffer[(16)];
+[v _uart1TxBuffer `Vuc ~T0 @X0 -> 16 `i s ]
 "86
 [; ;mcc_generated_files/uart/src/uart1.c: 86: volatile uint8_t uart1TxBufferRemaining;
 [v _uart1TxBufferRemaining `Vuc ~T0 @X0 1 e ]
@@ -3413,8 +3413,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;mcc_generated_files/uart/src/uart1.c: 395:        uart1TxBuffer[uart1TxHead] = txData;
 [e = *U + &U _uart1TxBuffer * -> _uart1TxHead `ux -> -> # *U &U _uart1TxBuffer `ui `ux _txData ]
 "396
-[; ;mcc_generated_files/uart/src/uart1.c: 396:        tempTxHead = (uart1TxHead + 1) & ((8) - 1);
-[e = _tempTxHead -> & + -> _uart1TxHead `i -> 1 `i - -> 8 `i -> 1 `i `uc ]
+[; ;mcc_generated_files/uart/src/uart1.c: 396:        tempTxHead = (uart1TxHead + 1) & ((16) - 1);
+[e = _tempTxHead -> & + -> _uart1TxHead `i -> 1 `i - -> 16 `i -> 1 `i `uc ]
 "398
 [; ;mcc_generated_files/uart/src/uart1.c: 398:        uart1TxHead = tempTxHead;
 [e = _uart1TxHead _tempTxHead ]
@@ -3483,8 +3483,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;mcc_generated_files/uart/src/uart1.c: 421:        U1TXB = uart1TxBuffer[uart1TxTail];
 [e = _U1TXB *U + &U _uart1TxBuffer * -> _uart1TxTail `ux -> -> # *U &U _uart1TxBuffer `ui `ux ]
 "422
-[; ;mcc_generated_files/uart/src/uart1.c: 422:        tempTxTail = (uart1TxTail + 1) & ((8) - 1);
-[e = _tempTxTail -> & + -> _uart1TxTail `i -> 1 `i - -> 8 `i -> 1 `i `uc ]
+[; ;mcc_generated_files/uart/src/uart1.c: 422:        tempTxTail = (uart1TxTail + 1) & ((16) - 1);
+[e = _tempTxTail -> & + -> _uart1TxTail `i -> 1 `i - -> 16 `i -> 1 `i `uc ]
 "424
 [; ;mcc_generated_files/uart/src/uart1.c: 424:        uart1TxTail = tempTxTail;
 [e = _uart1TxTail _tempTxTail ]

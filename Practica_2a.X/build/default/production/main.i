@@ -27738,7 +27738,9 @@ int main(void)
     ADCC_SetADIInterruptHandler(ADC_int);
     Timer_OverflowCallbackRegister(Timer_int);
     SPI1_Open(0);
-# 59 "main.c"
+    LATBbits.LATB4 = 1;
+    LATEbits.LATE0 = 1;
+# 61 "main.c"
     (INTCON0bits.GIE = 1);
 
 
