@@ -40,7 +40,7 @@
   Section: Macro Declarations
 */
 
-#define UART1_TX_BUFFER_SIZE (8) //buffer size should be 2^n
+#define UART1_TX_BUFFER_SIZE (16) //buffer size should be 2^n
 #define UART1_TX_BUFFER_MASK (UART1_TX_BUFFER_SIZE - 1) 
 
 #define UART1_RX_BUFFER_SIZE (8) //buffer size should be 2^n
@@ -408,7 +408,7 @@ void UART1_Write(uint8_t txData)
 
 void __interrupt(irq(IRQ_U1TX), base(8), low_priority) UART1_Transmit_Vector_ISR(void)
 {   
-    LATDbits.LATD1 = !LATDbits.LATD1;
+    //LATDbits.LATD1 = !LATDbits.LATD1;
     UART1_TransmitISR();
 }
 

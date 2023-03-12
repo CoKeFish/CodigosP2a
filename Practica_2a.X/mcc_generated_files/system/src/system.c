@@ -41,7 +41,7 @@ void SYSTEM_Initialize(void)
     FVR_Initialize();
     I2C_Host_Initialize();
     I2C1_Initialize();
-    SPI_Initialize();
+    SPI1_Initialize();
     Timer_Initialize();
     UART1_Initialize();
     UART2_Initialize();

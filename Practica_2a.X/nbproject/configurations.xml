@@ -24,8 +24,8 @@
           <itemPath>mcc_generated_files/peripheral/uart2.h</itemPath>
         </logicalFolder>
         <logicalFolder name="spi" displayName="spi" projectFiles="true">
-          <itemPath>mcc_generated_files/spi/spi1.h</itemPath>
           <itemPath>mcc_generated_files/spi/spi_interface.h</itemPath>
+          <itemPath>mcc_generated_files/spi/spi1.h</itemPath>
         </logicalFolder>
         <logicalFolder name="system" displayName="system" projectFiles="true">
           <itemPath>mcc_generated_files/system/system.h</itemPath>
@@ -764,6 +764,8 @@
         <property key="periphComp4.gte" value="gt"/>
         <property key="periphComp5.gte" value="gt"/>
         <property key="periphComp6.gte" value="gt"/>
+        <property key="programmerToGoFilePath"
+                  value="C:/Users/rrtc2/OneDrive/Escritorio/2301/Proyecto 2/Practica 2a/Produccion/CodigosP2a/Practica_2a.X/debug/default/Practica_2a_ptg"/>
         <property key="programoptions.donoteraseauxmem" value="false"/>
         <property key="programoptions.eraseb4program" value="true"/>
         <property key="programoptions.pgmentry.voltage" value="low"/>

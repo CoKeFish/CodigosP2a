@@ -45,16 +45,16 @@
 
 /**
  * @ingroup spi1
- * @typedef enum spi_modes_t
- * @brief Enumeration of the different configurations supported by the driver. A configuration is specified as parameter to SPI_Open()
+ * @typedef enum spi1_modes_t
+ * @brief Enumeration of the different configurations supported by the driver. A configuration is specified as parameter to SPI1_Open()
  *        and is used by the function to set SPI parameters as specified by the configuration.
  */
 typedef enum 
 {
     SPI1_DEFAULT
-} spi_modes_t;
+} spi1_modes_t;
              
-extern const struct SPI_INTERFACE SPI;
+extern const struct SPI_INTERFACE SPI1;
 
 /**
  * @ingroup spi1
@@ -62,16 +62,16 @@ extern const struct SPI_INTERFACE SPI;
  * @param None.
  * @return None.
  */
-void SPI_Initialize(void);
+void SPI1_Initialize(void);
 
 /**
  * @ingroup spi1
  * @brief Sets the index of Configuration to use in the transfer.
- * @param uint8_t spiConfigIndex - Configuration index. See SPI_configuration_name_t for configuration list.
+ * @param uint8_t spiConfigIndex - Configuration index. See SPI1_configuration_name_t for configuration list.
  * @retval True  - SPI is open.
  * @retval False - SPI is not open.
  */
-bool SPI_Open(uint8_t spiConfigIndex);
+bool SPI1_Open(uint8_t spiConfigIndex);
 
 /**
  * @ingroup spi1
@@ -79,7 +79,7 @@ bool SPI_Open(uint8_t spiConfigIndex);
  * @param None.
  * @return None.
  */
-void SPI_Close(void);
+void SPI1_Close(void);
 
 /**
  * @ingroup spi1
@@ -87,7 +87,7 @@ void SPI_Close(void);
  * @param uint8_t byteData - The byte to transfer.
  * @return uint8_t - Received data byte.
  */
-uint8_t SPI_ByteExchange(uint8_t byteData);
+uint8_t SPI1_ByteExchange(uint8_t byteData);
 
 /**
  * @ingroup spi1
@@ -96,7 +96,7 @@ uint8_t SPI_ByteExchange(uint8_t byteData);
  * @param[in] size_t bufferSize The size of buffer to transfer.
  * @return None.
  */
-void SPI_BufferExchange(void * bufferData, size_t bufferSize);
+void SPI1_BufferExchange(void * bufferData, size_t bufferSize);
 
 /**
  * @ingroup spi1
@@ -105,7 +105,7 @@ void SPI_BufferExchange(void * bufferData, size_t bufferSize);
  * @param[in] size_t bufferSize The size of buffer to transfer.
  * @return None.
  */
-void SPI_BufferWrite(void * bufferData, size_t bufferSize);
+void SPI1_BufferWrite(void * bufferData, size_t bufferSize);
 
 /**
  * @ingroup spi1
@@ -114,7 +114,7 @@ void SPI_BufferWrite(void * bufferData, size_t bufferSize);
  * @param[in] size_t bufferSize The size of buffer to transfer.
  * @return None.
  */
-void SPI_BufferRead(void * bufferData, size_t bufferSize);
+void SPI1_BufferRead(void * bufferData, size_t bufferSize);
 
 /**
  * @ingroup spi1
@@ -122,7 +122,7 @@ void SPI_BufferRead(void * bufferData, size_t bufferSize);
  * @param uint8_t byteData The byte to transfer.
  * @return None.
  */
-void SPI_ByteWrite(uint8_t byteData);
+void SPI1_ByteWrite(uint8_t byteData);
 
 /**
  * @ingroup spi1
@@ -130,7 +130,7 @@ void SPI_ByteWrite(uint8_t byteData);
  * @param None.
  * @return uint8_t - The received data byte.
  */
-uint8_t SPI_ByteRead(void);
+uint8_t SPI1_ByteRead(void);
 
 uint8_t __attribute__((deprecated)) SPI1_ExchangeByte(uint8_t data);
 void __attribute__((deprecated)) SPI1_ExchangeBlock(void *block, size_t blockSize);

@@ -47,6 +47,9 @@ int main(void)
     
     ADCC_SetADIInterruptHandler(ADC_int);
     Timer_OverflowCallbackRegister(Timer_int);
+    SPI1_Open(0);
+    LATBbits.LATB4 = 1;
+    LATEbits.LATE0 = 1;
     
     
 
