@@ -35,7 +35,7 @@
   Section: Included Files
 */
 #include "../uart1.h"
-
+#include "../../../Practica2a.h"
 /**
   Section: Macro Declarations
 */
@@ -335,7 +335,24 @@ uint8_t UART1_Read(void)
 
 void __interrupt(irq(IRQ_U1RX), base(8)) UART1_Receive_Vector_ISR(void)
 {   
-    UART1_ReceiveISR();
+    static unsigned char status = 0;
+    static uint16_t mesage = 1;
+    
+    if(status == 0)
+    {
+        status++;
+        mesage = U1RXB;
+    }
+    else
+    {
+        status = 0;
+        mesage = (mesage << 8) + U1RXB;
+        
+        
+            PERIOD = mesage;
+        
+    }
+    LATDbits.LATD1 = !LATDbits.LATD1;
 }
 
 void UART1_ReceiveISR(void)
@@ -401,7 +418,6 @@ void UART1_Write(uint8_t txData)
     }
     else
     {
-        LATDbits.LATD1 = !LATDbits.LATD1;
         //overflow condition; uart1TxBufferRemaining is 0 means TX buffer is full
     }
     PIE3bits.U1TXIE = 1;

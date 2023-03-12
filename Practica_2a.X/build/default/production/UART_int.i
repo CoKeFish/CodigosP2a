@@ -27724,7 +27724,7 @@ void Timer_int(void);
 
 
 
-uint16_t PERIOD = 1;
+uint16_t PERIOD = 2;
 # 3 "UART_int.c" 2
 
 

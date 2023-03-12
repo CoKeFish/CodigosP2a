@@ -2305,10 +2305,10 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;./mcc_generated_files/system/../uart/uart1.h: 379: void (*UART1_RxInterruptHandler)(void);
 [v _UART1_RxInterruptHandler `*F16557 ~T0 @X0 1 e ]
 "10 ./Practica2a.h
-[; ;./Practica2a.h: 10: uint16_t PERIOD = 1;
+[; ;./Practica2a.h: 10: uint16_t PERIOD = 2;
 [v _PERIOD `us ~T0 @X0 1 e ]
 [i _PERIOD
--> -> 1 `i `us
+-> -> 2 `i `us
 ]
 [v $root$_main `(v ~T0 @X0 0 e ]
 "42 main.c

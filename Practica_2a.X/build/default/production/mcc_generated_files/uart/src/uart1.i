@@ -27693,6 +27693,39 @@ void UART1_RxCompleteCallbackRegister(void (* callbackHandler)(void));
 
 void UART1_ReceiveISR(void);
 # 37 "mcc_generated_files/uart/src/uart1.c" 2
+
+# 1 "mcc_generated_files/uart/src/../../../Practica2a.h" 1
+
+# 1 "./ADC_int.h" 1
+
+
+
+
+
+void ADC_int(void);
+# 2 "mcc_generated_files/uart/src/../../../Practica2a.h" 2
+
+# 1 "./UART_int.h" 1
+
+void UART_TX_int(void);
+void UART_RX_int(void);
+# 3 "mcc_generated_files/uart/src/../../../Practica2a.h" 2
+
+# 1 "./Timer_int.h" 1
+
+
+
+
+void Timer_int(void);
+# 4 "mcc_generated_files/uart/src/../../../Practica2a.h" 2
+
+
+
+
+
+
+uint16_t PERIOD = 2;
+# 38 "mcc_generated_files/uart/src/uart1.c" 2
 # 53 "mcc_generated_files/uart/src/uart1.c"
 const uart_drv_interface_t UART = {
     .Initialize = &UART1_Initialize,
@@ -27979,7 +28012,24 @@ uint8_t UART1_Read(void)
 
 void __attribute__((picinterrupt(("irq(27), base(8)")))) UART1_Receive_Vector_ISR(void)
 {
-    UART1_ReceiveISR();
+    static unsigned char status = 0;
+    static uint16_t mesage = 1;
+
+    if(status == 0)
+    {
+        status++;
+        mesage = U1RXB;
+    }
+    else
+    {
+        status = 0;
+        mesage = (mesage << 8) + U1RXB;
+
+
+            PERIOD = mesage;
+
+    }
+    LATDbits.LATD1 = !LATDbits.LATD1;
 }
 
 void UART1_ReceiveISR(void)
@@ -28045,7 +28095,6 @@ void UART1_Write(uint8_t txData)
     }
     else
     {
-        LATDbits.LATD1 = !LATDbits.LATD1;
 
     }
     PIE3bits.U1TXIE = 1;

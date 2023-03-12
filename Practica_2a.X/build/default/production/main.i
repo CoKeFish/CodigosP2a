@@ -27719,7 +27719,7 @@ void Timer_int(void);
 
 
 
-uint16_t PERIOD = 1;
+uint16_t PERIOD = 2;
 # 34 "main.c" 2
 
 

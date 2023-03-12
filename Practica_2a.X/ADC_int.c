@@ -3,6 +3,7 @@
 #include "ADC_int.h"
 #include "mcc_generated_files/adc/adcc.h"
 #include "mcc_generated_files/uart/uart1.h"
+#include "Practica2a.h"
 
 static uint8_t valp[] = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F'};
 
@@ -35,9 +36,12 @@ void ADC_int(void)
     else            //Si es la segunda convercion
     {
         // Cargamos la lectura al buffer de transmicion
-        UART_Write(valp[ADRESH  & 0b1111]);
-        UART_Write(valp[(ADRESL >> 4)  & 0b1111]);
-        UART_Write(valp[ADRESL  & 0b1111]);
+//        UART_Write(valp[ADRESH  & 0b1111]);
+//        UART_Write(valp[(ADRESL >> 4)  & 0b1111]);
+//        UART_Write(valp[ADRESL  & 0b1111]);
+        UART_Write(valp[(PERIOD >> 8)  & 0b1111]);
+        UART_Write(valp[(PERIOD >> 4)  & 0b1111]);
+        UART_Write(valp[PERIOD  & 0b1111]);
         UART_Write('\n');   // y separamos por un salto de linea
     }
 }

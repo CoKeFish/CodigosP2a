@@ -318,7 +318,7 @@ void Timer_int(void);
 
 
 
-uint16_t PERIOD = 1;
+uint16_t PERIOD = 2;
 # 2 "Timer_int.c" 2
 
 # 1 "./Timer_int.h" 1
@@ -27045,7 +27045,7 @@ void Timer_int(void)
     static int count = 0;
     count++;
 
-    if(count == 2)
+    if(count == PERIOD)
     {
         count = 0;
         ADCC_StartConversion(channel_ANA0);

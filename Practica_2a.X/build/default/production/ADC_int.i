@@ -27699,6 +27699,39 @@ void UART1_RxCompleteCallbackRegister(void (* callbackHandler)(void));
 void UART1_ReceiveISR(void);
 # 5 "ADC_int.c" 2
 
+# 1 "./Practica2a.h" 1
+
+# 1 "./ADC_int.h" 1
+
+
+
+
+
+void ADC_int(void);
+# 2 "./Practica2a.h" 2
+
+# 1 "./UART_int.h" 1
+
+void UART_TX_int(void);
+void UART_RX_int(void);
+# 3 "./Practica2a.h" 2
+
+# 1 "./Timer_int.h" 1
+
+
+
+
+void Timer_int(void);
+# 4 "./Practica2a.h" 2
+
+
+
+
+
+
+uint16_t PERIOD = 2;
+# 6 "ADC_int.c" 2
+
 
 static uint8_t valp[] = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F'};
 
@@ -27719,14 +27752,17 @@ void ADC_int(void)
         UART1_Write(valp[(ADRESL >> 4) & 0b1111]);
         UART1_Write(valp[ADRESL & 0b1111]);
         UART1_Write(',');
-# 34 "ADC_int.c"
+# 35 "ADC_int.c"
     }
     else
     {
 
-        UART1_Write(valp[ADRESH & 0b1111]);
-        UART1_Write(valp[(ADRESL >> 4) & 0b1111]);
-        UART1_Write(valp[ADRESL & 0b1111]);
+
+
+
+        UART1_Write(valp[(PERIOD >> 8) & 0b1111]);
+        UART1_Write(valp[(PERIOD >> 4) & 0b1111]);
+        UART1_Write(valp[PERIOD & 0b1111]);
         UART1_Write('\n');
     }
 }

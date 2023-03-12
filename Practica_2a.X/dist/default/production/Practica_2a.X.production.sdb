@@ -20,7 +20,7 @@ I2C_ERROR_ADDR_NACK 1
 I2C_ERROR_DATA_NACK 2
 I2C_ERROR_BUS_COLLISION 3
 ]
-"17 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\ADC_int.c
+"18 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\ADC_int.c
 [e E15847 . `uc
 channel_VSS 59
 channel_Temp 60
@@ -40,7 +40,7 @@ channel_FVR_Buffer2 63
 channel_ANA0 0
 channel_ANA1 1
 ]
-"9 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\ADC_int.c
+"10 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\ADC_int.c
 [v _ADC_int ADC_int `(v  1 e 1 0 ]
 "4 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\fleq.c
 [v ___fleq __fleq `(b  1 e 0 0 ]
@@ -251,29 +251,29 @@ channel_ANA1 1
 [v _UART1_Read UART1_Read `(uc  1 e 1 0 ]
 "336
 [v _UART1_Receive_Vector_ISR UART1_Receive_Vector_ISR `IIH(v  1 e 1 0 ]
-"341
+"358
 [v _UART1_ReceiveISR UART1_ReceiveISR `(v  1 e 1 0 ]
-"385
+"402
 [v _UART1_Write UART1_Write `(v  1 e 1 0 ]
-"410
+"426
 [v _UART1_Transmit_Vector_ISR UART1_Transmit_Vector_ISR `IIL(v  1 e 1 0 ]
-"416
+"432
 [v _UART1_TransmitISR UART1_TransmitISR `(v  1 e 1 0 ]
-"442
+"458
 [v _UART1_DefaultFramingErrorCallback UART1_DefaultFramingErrorCallback `(v  1 s 1 UART1_DefaultFramingErrorCallback ]
-"447
+"463
 [v _UART1_DefaultOverrunErrorCallback UART1_DefaultOverrunErrorCallback `(v  1 s 1 UART1_DefaultOverrunErrorCallback ]
-"452
+"468
 [v _UART1_DefaultParityErrorCallback UART1_DefaultParityErrorCallback `(v  1 s 1 UART1_DefaultParityErrorCallback ]
-"457
-[v _UART1_FramingErrorCallbackRegister UART1_FramingErrorCallbackRegister `(v  1 e 1 0 ]
-"465
-[v _UART1_OverrunErrorCallbackRegister UART1_OverrunErrorCallbackRegister `(v  1 e 1 0 ]
 "473
+[v _UART1_FramingErrorCallbackRegister UART1_FramingErrorCallbackRegister `(v  1 e 1 0 ]
+"481
+[v _UART1_OverrunErrorCallbackRegister UART1_OverrunErrorCallbackRegister `(v  1 e 1 0 ]
+"489
 [v _UART1_ParityErrorCallbackRegister UART1_ParityErrorCallbackRegister `(v  1 e 1 0 ]
-"480
+"496
 [v _UART1_RxCompleteCallbackRegister UART1_RxCompleteCallbackRegister `(v  1 e 1 0 ]
-"488
+"504
 [v _UART1_TxCompleteCallbackRegister UART1_TxCompleteCallbackRegister `(v  1 e 1 0 ]
 "7 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\Timer_int.c
 [v _Timer_int Timer_int `(v  1 e 1 0 ]
@@ -283,7 +283,7 @@ channel_ANA1 1
 [v _UART1_RxInterruptHandler UART1_RxInterruptHandler `*.37(v  1 e 2 0 ]
 "10 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X/Practica2a.h
 [v _PERIOD PERIOD `us  1 e 2 0 ]
-"7 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\ADC_int.c
+"8 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\ADC_int.c
 [v _valp valp `[16]uc  1 s 16 valp ]
 [s S1714 . 1 `uc 1 SWIP 1 0 :1:0 
 `uc 1 HLVDIP 1 0 :1:1 
@@ -1181,7 +1181,7 @@ channel_ANA1 1
 [v _LATA LATA `VEuc  1 e 1 @16314 ]
 "45547
 [v _LATB LATB `VEuc  1 e 1 @16315 ]
-[s S2831 . 1 `uc 1 LATB0 1 0 :1:0 
+[s S2834 . 1 `uc 1 LATB0 1 0 :1:0 
 `uc 1 LATB1 1 0 :1:1 
 `uc 1 LATB2 1 0 :1:2 
 `uc 1 LATB3 1 0 :1:3 
@@ -1191,7 +1191,7 @@ channel_ANA1 1
 `uc 1 LATB7 1 0 :1:7 
 ]
 "45574
-[s S2840 . 1 `uc 1 LB0 1 0 :1:0 
+[s S2843 . 1 `uc 1 LB0 1 0 :1:0 
 `uc 1 LB1 1 0 :1:1 
 `uc 1 LB2 1 0 :1:2 
 `uc 1 LB3 1 0 :1:3 
@@ -1201,15 +1201,15 @@ channel_ANA1 1
 `uc 1 LB7 1 0 :1:7 
 ]
 "45574
-[u S2849 . 1 `S2831 1 . 1 0 `S2840 1 . 1 0 ]
+[u S2852 . 1 `S2834 1 . 1 0 `S2843 1 . 1 0 ]
 "45574
 "45574
-[v _LATBbits LATBbits `VES2849  1 e 1 @16315 ]
+[v _LATBbits LATBbits `VES2852  1 e 1 @16315 ]
 "45659
 [v _LATC LATC `VEuc  1 e 1 @16316 ]
 "45771
 [v _LATD LATD `VEuc  1 e 1 @16317 ]
-[s S2593 . 1 `uc 1 LATD0 1 0 :1:0 
+[s S2590 . 1 `uc 1 LATD0 1 0 :1:0 
 `uc 1 LATD1 1 0 :1:1 
 `uc 1 LATD2 1 0 :1:2 
 `uc 1 LATD3 1 0 :1:3 
@@ -1219,7 +1219,7 @@ channel_ANA1 1
 `uc 1 LATD7 1 0 :1:7 
 ]
 "45798
-[s S2602 . 1 `uc 1 LD0 1 0 :1:0 
+[s S2599 . 1 `uc 1 LD0 1 0 :1:0 
 `uc 1 LD1 1 0 :1:1 
 `uc 1 LD2 1 0 :1:2 
 `uc 1 LD3 1 0 :1:3 
@@ -1229,26 +1229,26 @@ channel_ANA1 1
 `uc 1 LD7 1 0 :1:7 
 ]
 "45798
-[u S2611 . 1 `S2593 1 . 1 0 `S2602 1 . 1 0 ]
+[u S2608 . 1 `S2590 1 . 1 0 `S2599 1 . 1 0 ]
 "45798
 "45798
-[v _LATDbits LATDbits `VES2611  1 e 1 @16317 ]
+[v _LATDbits LATDbits `VES2608  1 e 1 @16317 ]
 "45883
 [v _LATE LATE `VEuc  1 e 1 @16318 ]
-[s S2871 . 1 `uc 1 LATE0 1 0 :1:0 
+[s S2874 . 1 `uc 1 LATE0 1 0 :1:0 
 `uc 1 LATE1 1 0 :1:1 
 `uc 1 LATE2 1 0 :1:2 
 ]
 "45900
-[s S2875 . 1 `uc 1 LE0 1 0 :1:0 
+[s S2878 . 1 `uc 1 LE0 1 0 :1:0 
 `uc 1 LE1 1 0 :1:1 
 `uc 1 LE2 1 0 :1:2 
 ]
 "45900
-[u S2879 . 1 `S2871 1 . 1 0 `S2875 1 . 1 0 ]
+[u S2882 . 1 `S2874 1 . 1 0 `S2878 1 . 1 0 ]
 "45900
 "45900
-[v _LATEbits LATEbits `VES2879  1 e 1 @16318 ]
+[v _LATEbits LATEbits `VES2882  1 e 1 @16318 ]
 "45935
 [v _TRISA TRISA `VEuc  1 e 1 @16322 ]
 "45997
@@ -1386,23 +1386,23 @@ channel_ANA1 1
 {
 "178
 } 0
-"473
+"489
 [v _UART1_ParityErrorCallbackRegister UART1_ParityErrorCallbackRegister `(v  1 e 1 0 ]
 {
-[v UART1_ParityErrorCallbackRegister@callbackHandler callbackHandler `*.37(v  1 p 2 9 ]
-"479
+[v UART1_ParityErrorCallbackRegister@callbackHandler callbackHandler `*.37(v  1 p 2 18 ]
+"495
 } 0
-"465
+"481
 [v _UART1_OverrunErrorCallbackRegister UART1_OverrunErrorCallbackRegister `(v  1 e 1 0 ]
 {
-[v UART1_OverrunErrorCallbackRegister@callbackHandler callbackHandler `*.37(v  1 p 2 9 ]
-"471
+[v UART1_OverrunErrorCallbackRegister@callbackHandler callbackHandler `*.37(v  1 p 2 18 ]
+"487
 } 0
-"457
+"473
 [v _UART1_FramingErrorCallbackRegister UART1_FramingErrorCallbackRegister `(v  1 e 1 0 ]
 {
-[v UART1_FramingErrorCallbackRegister@callbackHandler callbackHandler `*.37(v  1 p 2 9 ]
-"463
+[v UART1_FramingErrorCallbackRegister@callbackHandler callbackHandler `*.37(v  1 p 2 18 ]
+"479
 } 0
 "51 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/timer/src/tmr0.c
 [v _Timer_Initialize Timer_Initialize `(v  1 e 1 0 ]
@@ -1412,7 +1412,7 @@ channel_ANA1 1
 "132
 [v _Timer_OverflowCallbackRegister Timer_OverflowCallbackRegister `(v  1 e 1 0 ]
 {
-[v Timer_OverflowCallbackRegister@CallbackHandler CallbackHandler `*.37(v  1 p 2 9 ]
+[v Timer_OverflowCallbackRegister@CallbackHandler CallbackHandler `*.37(v  1 p 2 18 ]
 "135
 } 0
 "70 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/spi/src/spi1.c
@@ -1429,25 +1429,25 @@ channel_ANA1 1
 [v _INTERRUPT_Initialize INTERRUPT_Initialize `(v  1 e 1 0 ]
 {
 "46
-[v INTERRUPT_Initialize@state state `a  1 a 1 11 ]
+[v INTERRUPT_Initialize@state state `a  1 a 1 20 ]
 "96
 } 0
 "201
 [v _INT2_SetInterruptHandler INT2_SetInterruptHandler `(v  1 e 1 0 ]
 {
-[v INT2_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 9 ]
+[v INT2_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 18 ]
 "203
 } 0
 "167
 [v _INT1_SetInterruptHandler INT1_SetInterruptHandler `(v  1 e 1 0 ]
 {
-[v INT1_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 9 ]
+[v INT1_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 18 ]
 "169
 } 0
 "133
 [v _INT0_SetInterruptHandler INT0_SetInterruptHandler `(v  1 e 1 0 ]
 {
-[v INT0_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 9 ]
+[v INT0_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 18 ]
 "135
 } 0
 "91 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/i2c_host/src/i2c2.c
@@ -1463,7 +1463,7 @@ channel_ANA1 1
 "216
 [v _I2C2_CallbackRegister I2C2_CallbackRegister `(v  1 e 1 0 ]
 {
-[v I2C2_CallbackRegister@callbackHandler callbackHandler `*.37(v  1 p 2 9 ]
+[v I2C2_CallbackRegister@callbackHandler callbackHandler `*.37(v  1 p 2 18 ]
 "222
 } 0
 "26 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/peripheral/src/i2c1.c
@@ -1489,7 +1489,7 @@ channel_ANA1 1
 "297
 [v _ADCC_SetADIInterruptHandler ADCC_SetADIInterruptHandler `(v  1 e 1 0 ]
 {
-[v ADCC_SetADIInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 9 ]
+[v ADCC_SetADIInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 18 ]
 "300
 } 0
 "85 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/spi/src/spi1.c
@@ -1518,7 +1518,7 @@ channel_ANA1 1
 [v I2C2_DataTransmit@data data `uc  1 a 1 wreg ]
 [v I2C2_DataTransmit@data data `uc  1 a 1 wreg ]
 "359
-[v I2C2_DataTransmit@data data `uc  1 a 1 21 ]
+[v I2C2_DataTransmit@data data `uc  1 a 1 22 ]
 "360
 } 0
 "372
@@ -1542,7 +1542,7 @@ channel_ANA1 1
 [v I2C2_CounterSet@counter counter `uc  1 a 1 wreg ]
 [v I2C2_CounterSet@counter counter `uc  1 a 1 wreg ]
 "369
-[v I2C2_CounterSet@counter counter `uc  1 a 1 16 ]
+[v I2C2_CounterSet@counter counter `uc  1 a 1 20 ]
 "370
 } 0
 "352
@@ -1551,7 +1551,7 @@ channel_ANA1 1
 [v I2C2_AddrTransmit@addr addr `uc  1 a 1 wreg ]
 [v I2C2_AddrTransmit@addr addr `uc  1 a 1 wreg ]
 "354
-[v I2C2_AddrTransmit@addr addr `uc  1 a 1 14 ]
+[v I2C2_AddrTransmit@addr addr `uc  1 a 1 12 ]
 "355
 } 0
 "328
@@ -1694,17 +1694,17 @@ channel_ANA1 1
 {
 "208
 } 0
-"410 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
+"426 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
 [v _UART1_Transmit_Vector_ISR UART1_Transmit_Vector_ISR `IIL(v  1 e 1 0 ]
 {
-"414
+"430
 } 0
-"416
+"432
 [v _UART1_TransmitISR UART1_TransmitISR `(v  1 e 1 0 ]
 {
-"418
-[v UART1_TransmitISR@tempTxTail tempTxTail `uc  1 a 1 23 ]
-"436
+"434
+[v UART1_TransmitISR@tempTxTail tempTxTail `uc  1 a 1 16 ]
+"452
 } 0
 "286 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/adc/src/adcc.c
 [v _ADCC_ISR ADCC_ISR `IIH(v  1 e 1 0 ]
@@ -1716,22 +1716,22 @@ channel_ANA1 1
 {
 "306
 } 0
-"9 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\ADC_int.c
+"10 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\ADC_int.c
 [v _ADC_int ADC_int `(v  1 e 1 0 ]
 {
-"43
+"47
 } 0
-"385 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
+"402 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
 [v _UART1_Write UART1_Write `(v  1 e 1 0 ]
 {
 [v UART1_Write@txData txData `uc  1 a 1 wreg ]
-"387
-[v UART1_Write@tempTxHead tempTxHead `uc  1 a 1 1 ]
-"385
+"404
+[v UART1_Write@tempTxHead tempTxHead `uc  1 a 1 0 ]
+"402
 [v UART1_Write@txData txData `uc  1 a 1 wreg ]
-"389
-[v UART1_Write@txData txData `uc  1 a 1 2 ]
-"408
+"406
+[v UART1_Write@txData txData `uc  1 a 1 1 ]
+"424
 } 0
 "145 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/spi/src/spi1.c
 [v _SPI1_ByteWrite SPI1_ByteWrite `(v  1 e 1 0 ]
@@ -1776,24 +1776,9 @@ channel_ANA1 1
 "336 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
 [v _UART1_Receive_Vector_ISR UART1_Receive_Vector_ISR `IIH(v  1 e 1 0 ]
 {
+"338
+[v UART1_Receive_Vector_ISR@status status `uc  1 s 1 status ]
 "339
-} 0
-"341
-[v _UART1_ReceiveISR UART1_ReceiveISR `(v  1 e 1 0 ]
-{
-"344
-[v UART1_ReceiveISR@tempRxHead tempRxHead `uc  1 a 1 11 ]
-"343
-[v UART1_ReceiveISR@regValue regValue `uc  1 a 1 10 ]
-"383
-} 0
-"447
-[v _UART1_DefaultOverrunErrorCallback UART1_DefaultOverrunErrorCallback `(v  1 s 1 UART1_DefaultOverrunErrorCallback ]
-{
-"450
-} 0
-"442
-[v _UART1_DefaultFramingErrorCallback UART1_DefaultFramingErrorCallback `(v  1 s 1 UART1_DefaultFramingErrorCallback ]
-{
-"445
+[v UART1_Receive_Vector_ISR@mesage mesage `us  1 s 2 mesage ]
+"356
 } 0

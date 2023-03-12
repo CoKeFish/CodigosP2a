@@ -20,4 +20,8 @@ mcc_generated_files/uart/src/../../system/../uart/uart1.h  \
 mcc_generated_files/uart/src/../../system/../peripheral/uart2.h  \
 mcc_generated_files/uart/src/../../system/../system/interrupt.h  \
 mcc_generated_files/uart/src/../uart_drv_interface.h  \
-mcc_generated_files/uart/src/../uart_types.h 
+mcc_generated_files/uart/src/../uart_types.h  \
+mcc_generated_files/uart/src/../../../Practica2a.h  \
+ADC_int.h  \
+UART_int.h  \
+Timer_int.h 
