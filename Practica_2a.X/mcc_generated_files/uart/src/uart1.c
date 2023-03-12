@@ -336,7 +336,6 @@ uint8_t UART1_Read(void)
 void __interrupt(irq(IRQ_U1RX), base(8)) UART1_Receive_Vector_ISR(void)
 {   
     UART1_ReceiveISR();
-    LATDbits.LATD1 = !LATDbits.LATD1;
 }
 
 void UART1_ReceiveISR(void)
@@ -402,6 +401,7 @@ void UART1_Write(uint8_t txData)
     }
     else
     {
+        LATDbits.LATD1 = !LATDbits.LATD1;
         //overflow condition; uart1TxBufferRemaining is 0 means TX buffer is full
     }
     PIE3bits.U1TXIE = 1;
@@ -409,8 +409,7 @@ void UART1_Write(uint8_t txData)
 
 void __interrupt(irq(IRQ_U1TX), base(8), low_priority) UART1_Transmit_Vector_ISR(void)
 {   
-    //LATDbits.LATD1 = !LATDbits.LATD1;
-    LATDbits.LATD1 = !LATDbits.LATD1;
+//    LATDbits.LATD1 = !LATDbits.LATD1;
     UART1_TransmitISR();
 }
 

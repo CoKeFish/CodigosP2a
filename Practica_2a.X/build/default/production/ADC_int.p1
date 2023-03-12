@@ -2324,45 +2324,45 @@ Version 4.0 HI-TECH Software Intermediate Code
 "20
 [; ;ADC_int.c: 20:         SPI1_ByteWrite(0b11111111);
 [e ( _SPI1_ByteWrite (1 -> -> 255 `i `uc ]
-"24
-[; ;ADC_int.c: 24:         UART1_Write(valp[ADRESH & 0b1111]);
+"22
+[; ;ADC_int.c: 22:         UART1_Write(valp[ADRESH & 0b1111]);
 [e ( _UART1_Write (1 *U + &U _valp * -> -> & -> _ADRESH `i -> 15 `i `ui `ux -> -> # *U &U _valp `ui `ux ]
-"25
-[; ;ADC_int.c: 25:         UART1_Write(valp[(ADRESL >> 4) & 0b1111]);
+"23
+[; ;ADC_int.c: 23:         UART1_Write(valp[(ADRESL >> 4) & 0b1111]);
 [e ( _UART1_Write (1 *U + &U _valp * -> -> & >> -> _ADRESL `i -> 4 `i -> 15 `i `ui `ux -> -> # *U &U _valp `ui `ux ]
-"26
-[; ;ADC_int.c: 26:         UART1_Write(valp[ADRESL & 0b1111]);
+"24
+[; ;ADC_int.c: 24:         UART1_Write(valp[ADRESL & 0b1111]);
 [e ( _UART1_Write (1 *U + &U _valp * -> -> & -> _ADRESL `i -> 15 `i `ui `ux -> -> # *U &U _valp `ui `ux ]
-"27
-[; ;ADC_int.c: 27:         UART1_Write(',');
+"25
+[; ;ADC_int.c: 25:         UART1_Write(',');
 [e ( _UART1_Write (1 -> -> 44 `ui `uc ]
-"36
-[; ;ADC_int.c: 36:     }
+"34
+[; ;ADC_int.c: 34:     }
 }
 [e $U 2204  ]
-"37
-[; ;ADC_int.c: 37:     else
+"35
+[; ;ADC_int.c: 35:     else
 [e :U 2203 ]
-"38
-[; ;ADC_int.c: 38:     {
+"36
+[; ;ADC_int.c: 36:     {
 {
-"45
-[; ;ADC_int.c: 45:         UART1_Write(valp[ADRESH & 0b1111]);
+"38
+[; ;ADC_int.c: 38:         UART1_Write(valp[ADRESH & 0b1111]);
 [e ( _UART1_Write (1 *U + &U _valp * -> -> & -> _ADRESH `i -> 15 `i `ui `ux -> -> # *U &U _valp `ui `ux ]
-"46
-[; ;ADC_int.c: 46:         UART1_Write(valp[(ADRESL >> 4) & 0b1111]);
+"39
+[; ;ADC_int.c: 39:         UART1_Write(valp[(ADRESL >> 4) & 0b1111]);
 [e ( _UART1_Write (1 *U + &U _valp * -> -> & >> -> _ADRESL `i -> 4 `i -> 15 `i `ui `ux -> -> # *U &U _valp `ui `ux ]
-"47
-[; ;ADC_int.c: 47:         UART1_Write(valp[ADRESL & 0b1111]);
+"40
+[; ;ADC_int.c: 40:         UART1_Write(valp[ADRESL & 0b1111]);
 [e ( _UART1_Write (1 *U + &U _valp * -> -> & -> _ADRESL `i -> 15 `i `ui `ux -> -> # *U &U _valp `ui `ux ]
-"48
-[; ;ADC_int.c: 48:         UART1_Write('\n');
+"41
+[; ;ADC_int.c: 41:         UART1_Write('\n');
 [e ( _UART1_Write (1 -> -> 10 `ui `uc ]
-"49
-[; ;ADC_int.c: 49:     }
+"42
+[; ;ADC_int.c: 42:     }
 }
 [e :U 2204 ]
-"50
-[; ;ADC_int.c: 50: }
+"43
+[; ;ADC_int.c: 43: }
 [e :UE 2202 ]
 }

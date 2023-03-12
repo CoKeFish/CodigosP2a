@@ -27715,21 +27715,14 @@ void ADC_int(void)
         SPI1_ByteWrite(0b00111111);
         SPI1_ByteWrite(0b11111111);
 
-
-
         UART1_Write(valp[ADRESH & 0b1111]);
         UART1_Write(valp[(ADRESL >> 4) & 0b1111]);
         UART1_Write(valp[ADRESL & 0b1111]);
         UART1_Write(',');
-# 36 "ADC_int.c"
+# 34 "ADC_int.c"
     }
     else
     {
-
-
-
-
-
 
         UART1_Write(valp[ADRESH & 0b1111]);
         UART1_Write(valp[(ADRESL >> 4) & 0b1111]);

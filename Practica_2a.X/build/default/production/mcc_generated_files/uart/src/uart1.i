@@ -27980,7 +27980,6 @@ uint8_t UART1_Read(void)
 void __attribute__((picinterrupt(("irq(27), base(8)")))) UART1_Receive_Vector_ISR(void)
 {
     UART1_ReceiveISR();
-    LATDbits.LATD1 = !LATDbits.LATD1;
 }
 
 void UART1_ReceiveISR(void)
@@ -28046,6 +28045,7 @@ void UART1_Write(uint8_t txData)
     }
     else
     {
+        LATDbits.LATD1 = !LATDbits.LATD1;
 
     }
     PIE3bits.U1TXIE = 1;
@@ -28054,7 +28054,6 @@ void UART1_Write(uint8_t txData)
 void __attribute__((picinterrupt(("irq(28), base(8), low_priority")))) UART1_Transmit_Vector_ISR(void)
 {
 
-    LATDbits.LATD1 = !LATDbits.LATD1;
     UART1_TransmitISR();
 }
 

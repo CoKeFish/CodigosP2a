@@ -18,9 +18,7 @@ void ADC_int(void)
         // y Cargamos la lectura al buffer de transmicion
         SPI1_ByteWrite(0b00111111);
         SPI1_ByteWrite(0b11111111);
-//        UART_Write(HEX_c(ADRESH & 0b1111));
-//        UART_Write(HEX_c((ADRESL >> 4)  & 0b1111));
-//        UART_Write(HEX_c(ADRESL  & 0b1111));
+
         UART_Write(valp[ADRESH  & 0b1111]);
         UART_Write(valp[(ADRESL >> 4)  & 0b1111]);
         UART_Write(valp[ADRESL  & 0b1111]);
@@ -36,12 +34,7 @@ void ADC_int(void)
     }
     else            //Si es la segunda convercion
     {
-        
-//        LATDbits.LATD1 = !LATDbits.LATD1;
         // Cargamos la lectura al buffer de transmicion
-//        UART_Write(HEX_c(ADRESH & 0b1111));
-//        UART_Write(HEX_c((ADRESL >> 4)  & 0b1111));
-//        UART_Write(HEX_c(ADRESL  & 0b1111));
         UART_Write(valp[ADRESH  & 0b1111]);
         UART_Write(valp[(ADRESL >> 4)  & 0b1111]);
         UART_Write(valp[ADRESL  & 0b1111]);
