@@ -39,9 +39,6 @@
 #include "../tmr2.h"
 #include "../../system/interrupt.h"
 
-
-#define _XTAL_FREQ 64000000
-
 const struct TMR_INTERFACE Timer2 = {
     .Initialize = Timer2_Initialize,
     .Start = Timer2_Start,
@@ -67,8 +64,8 @@ void Timer2_Initialize(void){
     T2HLT = 0x20;
     // TRSEL T2CKIPPS pin; 
     T2RST = 0x0;
-    // PR 69; 
-    T2PR = 0x45;
+    // PR 31; 
+    T2PR = 0x1F;
     // TMR 0x0; 
     T2TMR = 0x0;
 
@@ -129,10 +126,10 @@ void __interrupt(irq(TMR2),base(8)) Timer2_ISR()
 {
     // clear the TMR2 interrupt flag
      PIR4bits.TMR2IF = 0;
-//LATDbits.LATD1 = !LATDbits.LATD1;
+LATDbits.LATD1 = !LATDbits.LATD1;
      LATEbits.LATE0 = 1;
              LATBbits.LATB4 = 0;
-        __delay_us(2);
+//        __delay_us(1);
         LATBbits.LATB4 = 1;
     if(Timer2_OverflowCallback)
     {

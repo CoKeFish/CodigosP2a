@@ -27113,9 +27113,6 @@ void INT2_DefaultInterruptHandler(void);
 # 40 "mcc_generated_files/timer/src/tmr2.c" 2
 
 
-
-
-
 const struct TMR_INTERFACE Timer2 = {
     .Initialize = Timer2_Initialize,
     .Start = Timer2_Start,
@@ -27142,7 +27139,7 @@ void Timer2_Initialize(void){
 
     T2RST = 0x0;
 
-    T2PR = 0x45;
+    T2PR = 0x1F;
 
     T2TMR = 0x0;
 
@@ -27203,10 +27200,10 @@ void __attribute__((picinterrupt(("irq(TMR2),base(8)")))) Timer2_ISR()
 {
 
      PIR4bits.TMR2IF = 0;
-
+LATDbits.LATD1 = !LATDbits.LATD1;
      LATEbits.LATE0 = 1;
              LATBbits.LATB4 = 0;
-        _delay((unsigned long)((2)*(64000000/4000000.0)));
+
         LATBbits.LATB4 = 1;
     if(Timer2_OverflowCallback)
     {

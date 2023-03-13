@@ -425,7 +425,7 @@ void UART1_Write(uint8_t txData)
 
 void __interrupt(irq(IRQ_U1TX), base(8)) UART1_Transmit_Vector_ISR(void)
 {   
-//    LATDbits.LATD1 = !LATDbits.LATD1;
+    
     UART1_TransmitISR();
 }
 

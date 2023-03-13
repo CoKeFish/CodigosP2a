@@ -283,7 +283,7 @@ uint8_t ADCC_GetConversionStageStatus(void)
     return ADSTATbits.ADSTAT;
 }
 
-void __interrupt(irq(AD),base(8)) ADCC_ISR(void)
+void __interrupt(irq(AD),base(8),low_priority) ADCC_ISR(void)
 {
     //Clears the ADCC interrupt flag
     PIR1bits.ADIF = 0;

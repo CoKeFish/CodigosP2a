@@ -1,22 +1,7 @@
 Version 4.0 HI-TECH Software Intermediate Code
 [v F16660 `(v ~T0 @X0 0 tf ]
 [v F16667 `(v ~T0 @X0 0 tf ]
-"45777 D:/Program Files/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h
-[; ;D:/Program Files/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h: 45777:     struct {
-[s S2060 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S2060 . LATD0 LATD1 LATD2 LATD3 LATD4 LATD5 LATD6 LATD7 ]
-"45787
-[; ;D:/Program Files/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h: 45787:     struct {
-[s S2061 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S2061 . LD0 LD1 LD2 LD3 LD4 LD5 LD6 LD7 ]
-"45776
-[; ;D:/Program Files/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h: 45776: typedef union {
-[u S2059 `S2060 1 `S2061 1 ]
-[n S2059 . . . ]
-"45798
-[; ;D:/Program Files/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h: 45798: extern volatile LATDbits_t LATDbits __attribute__((address(0x3FBD)));
-[v _LATDbits `VS2059 ~T0 @X0 0 e@16317 ]
-"31094
+"31094 D:/Program Files/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h
 [; ;D:/Program Files/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h: 31094: extern volatile unsigned char ADPCH __attribute__((address(0x3EF1)));
 [v _ADPCH `Vuc ~T0 @X0 0 e@16113 ]
 "45889
@@ -40,6 +25,21 @@ Version 4.0 HI-TECH Software Intermediate Code
 [n E15847 . channel_VSS channel_Temp channel_DAC1 channel_FVR_Buffer1 channel_FVR_Buffer2 channel_ANA0 channel_ANA1  ]
 "89 ./mcc_generated_files/uart/../system/../adc/adcc.h
 [v _ADCC_StartConversion `(v ~T0 @X0 0 ef1`E15847 ]
+"45777 D:/Program Files/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h
+[; ;D:/Program Files/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h: 45777:     struct {
+[s S2060 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S2060 . LATD0 LATD1 LATD2 LATD3 LATD4 LATD5 LATD6 LATD7 ]
+"45787
+[; ;D:/Program Files/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h: 45787:     struct {
+[s S2061 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S2061 . LD0 LD1 LD2 LD3 LD4 LD5 LD6 LD7 ]
+"45776
+[; ;D:/Program Files/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h: 45776: typedef union {
+[u S2059 `S2060 1 `S2061 1 ]
+[n S2059 . . . ]
+"45798
+[; ;D:/Program Files/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h: 45798: extern volatile LATDbits_t LATDbits __attribute__((address(0x3FBD)));
+[v _LATDbits `VS2059 ~T0 @X0 0 e@16317 ]
 "324 ./mcc_generated_files/uart/../system/../timer/tmr2.h
 [; ;./mcc_generated_files/uart/../system/../timer/tmr2.h: 324: void Timer2_Start(void);
 [v _Timer2_Start `(v ~T0 @X0 0 ef ]
@@ -2330,9 +2330,6 @@ Version 4.0 HI-TECH Software Intermediate Code
 {
 [e :U _ADC_int ]
 [f ]
-"12
-[; ;ADC_int.c: 12:     LATDbits.LATD1 = !LATDbits.LATD1;
-[e = . . _LATDbits 0 1 -> -> ! != -> . . _LATDbits 0 1 `i -> 0 `i `i `uc ]
 "14
 [; ;ADC_int.c: 14:     if(ADPCH == 0)
 [e $ ! == -> _ADPCH `i -> 0 `i 2203  ]
@@ -2345,43 +2342,55 @@ Version 4.0 HI-TECH Software Intermediate Code
 "20
 [; ;ADC_int.c: 20:         ADCC_StartConversion(channel_ANA1);
 [e ( _ADCC_StartConversion (1 . `E15847 6 ]
-"22
-[; ;ADC_int.c: 22:         Timer2_Start();
-[e ( _Timer2_Start ..  ]
 "23
-[; ;ADC_int.c: 23:         SPI1_ByteWrite(0b00110000 | ADRESH);
-[e ( _SPI1_ByteWrite (1 -> | -> 48 `i -> _ADRESH `i `uc ]
+[; ;ADC_int.c: 23:         LATDbits.LATD1 = !LATDbits.LATD1;
+[e = . . _LATDbits 0 1 -> -> ! != -> . . _LATDbits 0 1 `i -> 0 `i `i `uc ]
 "24
-[; ;ADC_int.c: 24:         SPI1_ByteWrite(ADRESL);
-[e ( _SPI1_ByteWrite (1 _ADRESL ]
+[; ;ADC_int.c: 24:         Timer2_Start();
+[e ( _Timer2_Start ..  ]
+"25
+[; ;ADC_int.c: 25:         SPI1_ByteWrite(0b00110000 | ADRESH);
+[e ( _SPI1_ByteWrite (1 -> | -> 48 `i -> _ADRESH `i `uc ]
 "26
-[; ;ADC_int.c: 26:         UART1_Write(valp[ADRESH & 0b1111]);
-[e ( _UART1_Write (1 *U + &U _valp * -> -> & -> _ADRESH `i -> 15 `i `ui `ux -> -> # *U &U _valp `ui `ux ]
-"27
-[; ;ADC_int.c: 27:         UART1_Write(valp[(ADRESL >> 4) & 0b1111]);
-[e ( _UART1_Write (1 *U + &U _valp * -> -> & >> -> _ADRESL `i -> 4 `i -> 15 `i `ui `ux -> -> # *U &U _valp `ui `ux ]
+[; ;ADC_int.c: 26:         SPI1_ByteWrite(ADRESL);
+[e ( _SPI1_ByteWrite (1 _ADRESL ]
 "28
-[; ;ADC_int.c: 28:         UART1_Write(valp[ADRESL & 0b1111]);
-[e ( _UART1_Write (1 *U + &U _valp * -> -> & -> _ADRESL `i -> 15 `i `ui `ux -> -> # *U &U _valp `ui `ux ]
+[; ;ADC_int.c: 28:         UART1_Write(valp[ADRESH & 0b1111]);
+[e ( _UART1_Write (1 *U + &U _valp * -> -> & -> _ADRESH `i -> 15 `i `ui `ux -> -> # *U &U _valp `ui `ux ]
 "29
-[; ;ADC_int.c: 29:         UART1_Write(',');
+[; ;ADC_int.c: 29:         UART1_Write(valp[(ADRESL >> 4) & 0b1111]);
+[e ( _UART1_Write (1 *U + &U _valp * -> -> & >> -> _ADRESL `i -> 4 `i -> 15 `i `ui `ux -> -> # *U &U _valp `ui `ux ]
+"30
+[; ;ADC_int.c: 30:         UART1_Write(valp[ADRESL & 0b1111]);
+[e ( _UART1_Write (1 *U + &U _valp * -> -> & -> _ADRESL `i -> 15 `i `ui `ux -> -> # *U &U _valp `ui `ux ]
+"31
+[; ;ADC_int.c: 31:         UART1_Write(',');
 [e ( _UART1_Write (1 -> -> 44 `ui `uc ]
-"38
-[; ;ADC_int.c: 38:     }
+"35
+[; ;ADC_int.c: 35:     }
 }
 [e $U 2204  ]
-"39
-[; ;ADC_int.c: 39:     else
+"36
+[; ;ADC_int.c: 36:     else
 [e :U 2203 ]
-"40
-[; ;ADC_int.c: 40:     {
+"37
+[; ;ADC_int.c: 37:     {
 {
+"40
+[; ;ADC_int.c: 40:         LATEbits.LATE0 = 0;
+[e = . . _LATEbits 0 0 -> -> 0 `i `uc ]
+"41
+[; ;ADC_int.c: 41:         LATDbits.LATD1 = !LATDbits.LATD1;
+[e = . . _LATDbits 0 1 -> -> ! != -> . . _LATDbits 0 1 `i -> 0 `i `i `uc ]
+"42
+[; ;ADC_int.c: 42:         Timer2_Start();
+[e ( _Timer2_Start ..  ]
 "43
-[; ;ADC_int.c: 43:         SPI1_ByteWrite(0b10110000 | 0b00001111);
-[e ( _SPI1_ByteWrite (1 -> | -> 176 `i -> 15 `i `uc ]
+[; ;ADC_int.c: 43:         SPI1_ByteWrite(0b10110000 | ADRESH);
+[e ( _SPI1_ByteWrite (1 -> | -> 176 `i -> _ADRESH `i `uc ]
 "44
-[; ;ADC_int.c: 44:         SPI1_ByteWrite(0b11111111);
-[e ( _SPI1_ByteWrite (1 -> -> 255 `i `uc ]
+[; ;ADC_int.c: 44:         SPI1_ByteWrite(ADRESL);
+[e ( _SPI1_ByteWrite (1 _ADRESL ]
 "45
 [; ;ADC_int.c: 45:         UART1_Write(valp[ADRESH & 0b1111]);
 [e ( _UART1_Write (1 *U + &U _valp * -> -> & -> _ADRESH `i -> 15 `i `ui `ux -> -> # *U &U _valp `ui `ux ]

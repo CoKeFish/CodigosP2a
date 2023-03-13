@@ -256,7 +256,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;D:/Program Files/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h: 31883: extern volatile ADCON1bits_t ADCON1bits __attribute__((address(0x3EF9)));
 [v _ADCON1bits `VS1413 ~T0 @X0 0 e@16121 ]
 [t ~ __interrupt . k ]
-[t T1 __interrupt irq ( AD ) base ( 8 ) ]
+[t T1 __interrupt irq ( AD ) base ( 8 ) low_priority ]
 [v F15948 `(v ~T0 @X0 0 tf ]
 [v F15950 `(v ~T0 @X0 0 tf ]
 [v F15952 `(v ~T0 @X0 0 tf ]
@@ -3078,7 +3078,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 }
 [v $root$_ADCC_ISR `(v ~T0 @X0 0 e ]
 "286
-[; ;mcc_generated_files/adc/src/adcc.c: 286: void __attribute__((picinterrupt(("irq(AD),base(8)")))) ADCC_ISR(void)
+[; ;mcc_generated_files/adc/src/adcc.c: 286: void __attribute__((picinterrupt(("irq(AD),base(8),low_priority")))) ADCC_ISR(void)
 [v _ADCC_ISR `(v ~T1 @X0 1 ef ]
 "287
 [; ;mcc_generated_files/adc/src/adcc.c: 287: {

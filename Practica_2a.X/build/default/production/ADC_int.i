@@ -28009,7 +28009,7 @@ static uint8_t valp[] = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 
 
 void ADC_int(void)
 {
-    LATDbits.LATD1 = !LATDbits.LATD1;
+
 
     if(ADPCH == 0)
     {
@@ -28019,6 +28019,8 @@ void ADC_int(void)
 
         ADCC_StartConversion(channel_ANA1);
 
+
+        LATDbits.LATD1 = !LATDbits.LATD1;
         Timer2_Start();
         SPI1_ByteWrite(0b00110000 | ADRESH);
         SPI1_ByteWrite(ADRESL);
@@ -28027,14 +28029,19 @@ void ADC_int(void)
         UART1_Write(valp[(ADRESL >> 4) & 0b1111]);
         UART1_Write(valp[ADRESL & 0b1111]);
         UART1_Write(',');
-# 38 "ADC_int.c"
+
+
+
     }
     else
     {
 
 
-        SPI1_ByteWrite(0b10110000 | 0b00001111);
-        SPI1_ByteWrite(0b11111111);
+        LATEbits.LATE0 = 0;
+        LATDbits.LATD1 = !LATDbits.LATD1;
+        Timer2_Start();
+        SPI1_ByteWrite(0b10110000 | ADRESH);
+        SPI1_ByteWrite(ADRESL);
         UART1_Write(valp[ADRESH & 0b1111]);
         UART1_Write(valp[(ADRESL >> 4) & 0b1111]);
         UART1_Write(valp[ADRESL & 0b1111]);
