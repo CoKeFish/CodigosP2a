@@ -2521,52 +2521,52 @@ Version 4.0 HI-TECH Software Intermediate Code
 "124
 [; ;mcc_generated_files/timer/src/tmr0.c: 124:     TMR0L = (uint8_t) timerTMR0ReloadVal16bit;
 [e = _TMR0L -> _timerTMR0ReloadVal16bit `uc ]
-"126
-[; ;mcc_generated_files/timer/src/tmr0.c: 126:     if(Timer_OverflowCallback)
-[e $ ! != _Timer_OverflowCallback -> -> 0 `i `*F15928 2201  ]
-"127
-[; ;mcc_generated_files/timer/src/tmr0.c: 127:     {
-{
 "128
-[; ;mcc_generated_files/timer/src/tmr0.c: 128:         Timer_OverflowCallback();
-[e ( *U _Timer_OverflowCallback ..  ]
+[; ;mcc_generated_files/timer/src/tmr0.c: 128:     if(Timer_OverflowCallback)
+[e $ ! != _Timer_OverflowCallback -> -> 0 `i `*F15928 2201  ]
 "129
-[; ;mcc_generated_files/timer/src/tmr0.c: 129:     }
+[; ;mcc_generated_files/timer/src/tmr0.c: 129:     {
+{
+"130
+[; ;mcc_generated_files/timer/src/tmr0.c: 130:         Timer_OverflowCallback();
+[e ( *U _Timer_OverflowCallback ..  ]
+"131
+[; ;mcc_generated_files/timer/src/tmr0.c: 131:     }
 }
 [e :U 2201 ]
-"130
-[; ;mcc_generated_files/timer/src/tmr0.c: 130: }
+"132
+[; ;mcc_generated_files/timer/src/tmr0.c: 132: }
 [e :UE 2200 ]
 }
-"132
-[; ;mcc_generated_files/timer/src/tmr0.c: 132: void Timer_OverflowCallbackRegister(void (* CallbackHandler)(void))
+"134
+[; ;mcc_generated_files/timer/src/tmr0.c: 134: void Timer_OverflowCallbackRegister(void (* CallbackHandler)(void))
 [v _Timer_OverflowCallbackRegister `(v ~T0 @X0 1 ef1`*F15930 ]
-"133
-[; ;mcc_generated_files/timer/src/tmr0.c: 133: {
+"135
+[; ;mcc_generated_files/timer/src/tmr0.c: 135: {
 {
 [e :U _Timer_OverflowCallbackRegister ]
-"132
-[; ;mcc_generated_files/timer/src/tmr0.c: 132: void Timer_OverflowCallbackRegister(void (* CallbackHandler)(void))
-[v _CallbackHandler `*F15932 ~T0 @X0 1 r1 ]
-"133
-[; ;mcc_generated_files/timer/src/tmr0.c: 133: {
-[f ]
 "134
-[; ;mcc_generated_files/timer/src/tmr0.c: 134:     Timer_OverflowCallback = CallbackHandler;
-[e = _Timer_OverflowCallback _CallbackHandler ]
+[; ;mcc_generated_files/timer/src/tmr0.c: 134: void Timer_OverflowCallbackRegister(void (* CallbackHandler)(void))
+[v _CallbackHandler `*F15932 ~T0 @X0 1 r1 ]
 "135
-[; ;mcc_generated_files/timer/src/tmr0.c: 135: }
+[; ;mcc_generated_files/timer/src/tmr0.c: 135: {
+[f ]
+"136
+[; ;mcc_generated_files/timer/src/tmr0.c: 136:     Timer_OverflowCallback = CallbackHandler;
+[e = _Timer_OverflowCallback _CallbackHandler ]
+"137
+[; ;mcc_generated_files/timer/src/tmr0.c: 137: }
 [e :UE 2202 ]
 }
-"137
-[; ;mcc_generated_files/timer/src/tmr0.c: 137: static void Timer_DefaultOverflowCallback(void)
+"139
+[; ;mcc_generated_files/timer/src/tmr0.c: 139: static void Timer_DefaultOverflowCallback(void)
 [v _Timer_DefaultOverflowCallback `(v ~T0 @X0 1 sf ]
-"138
-[; ;mcc_generated_files/timer/src/tmr0.c: 138: {
+"140
+[; ;mcc_generated_files/timer/src/tmr0.c: 140: {
 {
 [e :U _Timer_DefaultOverflowCallback ]
 [f ]
-"141
-[; ;mcc_generated_files/timer/src/tmr0.c: 141: }
+"143
+[; ;mcc_generated_files/timer/src/tmr0.c: 143: }
 [e :UE 2203 ]
 }

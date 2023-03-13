@@ -26816,7 +26816,7 @@ unsigned char __t1rd16on(void);
 unsigned char __t3rd16on(void);
 # 34 "D:/Program Files/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\\pic\\include\\xc.h" 2 3
 # 38 "mcc_generated_files/system/src/../pins.h" 2
-# 718 "mcc_generated_files/system/src/../pins.h"
+# 758 "mcc_generated_files/system/src/../pins.h"
 void PIN_MANAGER_Initialize (void);
 
 
@@ -26844,7 +26844,7 @@ void PIN_MANAGER_Initialize(void)
 
 
 
-    TRISA = 0xC3;
+    TRISA = 0x3;
     TRISB = 0x0;
     TRISC = 0x98;
     TRISD = 0x0;
@@ -26853,7 +26853,7 @@ void PIN_MANAGER_Initialize(void)
 
 
 
-    ANSELA = 0xC3;
+    ANSELA = 0x3;
     ANSELB = 0x0;
     ANSELC = 0x0;
     ANSELD = 0x0;

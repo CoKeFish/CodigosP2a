@@ -16,6 +16,8 @@ mcc_generated_files/uart/../system/../spi/spi1.h  \
 mcc_generated_files/uart/../system/../spi/spi_interface.h  \
 mcc_generated_files/uart/../system/../timer/tmr0.h  \
 mcc_generated_files/uart/../system/../timer/timer_interface.h  \
+mcc_generated_files/uart/../system/../timer/tmr1.h  \
+mcc_generated_files/uart/../system/../timer/tmr2.h  \
 mcc_generated_files/uart/../system/../uart/uart1.h  \
 mcc_generated_files/uart/../system/../peripheral/uart2.h  \
 mcc_generated_files/uart/../system/../system/interrupt.h  \

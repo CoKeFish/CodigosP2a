@@ -27105,7 +27105,7 @@ void SPI1_Initialize(void)
 
     SPI1CLK = 0x0;
 
-    SPI1BAUD = 0x3F;
+    SPI1BAUD = 0x1F;
     TRISCbits.TRISC3 = 0;
 
     SPI1CON0 = 0x2;
@@ -27119,7 +27119,7 @@ _Bool SPI1_Open(uint8_t spiConfigIndex)
         SPI1CON1 = 0x40;
         SPI1CON2 = 0b00000010;
         SPI1CLK = 0x00;
-        SPI1BAUD = 0x3F;
+        SPI1BAUD = 0x1F;
         TRISCbits.TRISC3 = 0;
         SPI1CON0bits.EN = 1;
         return 1;

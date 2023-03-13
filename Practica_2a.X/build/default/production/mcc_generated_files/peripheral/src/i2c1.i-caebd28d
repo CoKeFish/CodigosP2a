@@ -1,4 +1,4 @@
-# 1 "mcc_generated_files/timer/src/tmr0.c"
+# 1 "mcc_generated_files/peripheral/src/i2c1.c"
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
 # 288 "<built-in>" 3
@@ -6,8 +6,8 @@
 # 1 "<built-in>" 2
 # 1 "D:/Program Files/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\\pic\\include\\language_support.h" 1 3
 # 2 "<built-in>" 2
-# 1 "mcc_generated_files/timer/src/tmr0.c" 2
-# 33 "mcc_generated_files/timer/src/tmr0.c"
+# 1 "mcc_generated_files/peripheral/src/i2c1.c" 2
+# 22 "mcc_generated_files/peripheral/src/i2c1.c"
 # 1 "D:/Program Files/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\\pic\\include\\xc.h" 1 3
 # 18 "D:/Program Files/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\\pic\\include\\xc.h" 3
 extern const char __xc8_OPTIM_SPEED;
@@ -26813,199 +26813,48 @@ __attribute__((__unsupported__("The READTIMER" "3" "() macro is not available wi
 unsigned char __t1rd16on(void);
 unsigned char __t3rd16on(void);
 # 34 "D:/Program Files/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\\pic\\include\\xc.h" 2 3
-# 33 "mcc_generated_files/timer/src/tmr0.c" 2
+# 22 "mcc_generated_files/peripheral/src/i2c1.c" 2
 
-# 1 "mcc_generated_files/timer/src/../tmr0.h" 1
-# 37 "mcc_generated_files/timer/src/../tmr0.h"
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.40\\pic\\include\\c99\\stdbool.h" 1 3
-# 37 "mcc_generated_files/timer/src/../tmr0.h" 2
-
-# 1 "mcc_generated_files/timer/src/../timer_interface.h" 1
-# 42 "mcc_generated_files/timer/src/../timer_interface.h"
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.40\\pic\\include\\c99\\stddef.h" 1 3
-# 19 "C:\\Program Files\\Microchip\\xc8\\v2.40\\pic\\include\\c99\\stddef.h" 3
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.40\\pic\\include\\c99\\bits/alltypes.h" 1 3
-# 132 "C:\\Program Files\\Microchip\\xc8\\v2.40\\pic\\include\\c99\\bits/alltypes.h" 3
-typedef int ptrdiff_t;
-# 19 "C:\\Program Files\\Microchip\\xc8\\v2.40\\pic\\include\\c99\\stddef.h" 2 3
-# 42 "mcc_generated_files/timer/src/../timer_interface.h" 2
+# 1 "mcc_generated_files/peripheral/src/../i2c1.h" 1
+# 22 "mcc_generated_files/peripheral/src/../i2c1.h"
+void I2C1_Initialize(void);
+# 23 "mcc_generated_files/peripheral/src/i2c1.c" 2
 
 
 
+void I2C1_Initialize(void) {
 
+    I2C1TXB = 0x0;
 
+    I2C1CNT = 0x0;
 
+    I2C1ADB0 = 0x0;
 
+    I2C1ADB1 = 0x0;
 
-struct TMR_INTERFACE
-{
-    void (*Initialize)(void);
-    void (*Start)(void);
-    void (*Stop)(void);
-    void (*PeriodCountSet)(size_t count);
-    void (*TimeoutCallbackRegister)(void (* CallbackHandler)(void));
-    void (*Tasks)(void);
-};
-# 38 "mcc_generated_files/timer/src/../tmr0.h" 2
+    I2C1ADR0 = 0x0;
 
+    I2C1ADR1 = 0x0;
 
+    I2C1ADR2 = 0x0;
 
+    I2C1ADR3 = 0x0;
 
+    I2C1CON0 = 0x0;
 
+    I2C1CON1 = 0x0;
 
+    I2C1CON2 = 0x0;
 
+    I2C1ERR = 0x0;
 
-extern const struct TMR_INTERFACE Timer;
-# 55 "mcc_generated_files/timer/src/../tmr0.h"
-void Timer_Initialize(void);
-# 64 "mcc_generated_files/timer/src/../tmr0.h"
-void Timer_Start(void);
-# 73 "mcc_generated_files/timer/src/../tmr0.h"
-void Timer_Stop(void);
-# 82 "mcc_generated_files/timer/src/../tmr0.h"
-uint16_t Timer_Read(void);
-# 91 "mcc_generated_files/timer/src/../tmr0.h"
-void Timer_Write(size_t timerVal);
-# 100 "mcc_generated_files/timer/src/../tmr0.h"
-void Timer_Reload(void);
-# 109 "mcc_generated_files/timer/src/../tmr0.h"
-void Timer_PeriodCountSet(size_t periodVal);
-# 118 "mcc_generated_files/timer/src/../tmr0.h"
- void Timer_OverflowCallbackRegister(void (* CallbackHandler)(void));
-# 34 "mcc_generated_files/timer/src/tmr0.c" 2
+    I2C1STAT1 = 0x0;
 
-# 1 "mcc_generated_files/timer/src/../../system/interrupt.h" 1
-# 91 "mcc_generated_files/timer/src/../../system/interrupt.h"
-void INTERRUPT_Initialize (void);
-# 228 "mcc_generated_files/timer/src/../../system/interrupt.h"
-void INT0_CallBack(void);
-# 237 "mcc_generated_files/timer/src/../../system/interrupt.h"
-void INT0_SetInterruptHandler(void (* InterruptHandler)(void));
-# 247 "mcc_generated_files/timer/src/../../system/interrupt.h"
-extern void (*INT0_InterruptHandler)(void);
-# 256 "mcc_generated_files/timer/src/../../system/interrupt.h"
-void INT0_DefaultInterruptHandler(void);
-# 265 "mcc_generated_files/timer/src/../../system/interrupt.h"
-void INT1_CallBack(void);
-# 274 "mcc_generated_files/timer/src/../../system/interrupt.h"
-void INT1_SetInterruptHandler(void (* InterruptHandler)(void));
-# 284 "mcc_generated_files/timer/src/../../system/interrupt.h"
-extern void (*INT1_InterruptHandler)(void);
-# 293 "mcc_generated_files/timer/src/../../system/interrupt.h"
-void INT1_DefaultInterruptHandler(void);
-# 302 "mcc_generated_files/timer/src/../../system/interrupt.h"
-void INT2_CallBack(void);
-# 311 "mcc_generated_files/timer/src/../../system/interrupt.h"
-void INT2_SetInterruptHandler(void (* InterruptHandler)(void));
-# 321 "mcc_generated_files/timer/src/../../system/interrupt.h"
-extern void (*INT2_InterruptHandler)(void);
-# 330 "mcc_generated_files/timer/src/../../system/interrupt.h"
-void INT2_DefaultInterruptHandler(void);
-# 35 "mcc_generated_files/timer/src/tmr0.c" 2
+    I2C1PIR = 0x0;
 
+    I2C1PIE = 0x0;
 
-volatile uint16_t timerTMR0ReloadVal16bit;
+    I2C1CLK = 0x0;
 
-const struct TMR_INTERFACE Timer = {
-    .Initialize = Timer_Initialize,
-    .Start = Timer_Start,
-    .Stop = Timer_Stop,
-    .PeriodCountSet = Timer_PeriodCountSet,
-    .TimeoutCallbackRegister = Timer_OverflowCallbackRegister,
-    .Tasks = ((void*)0)
-};
-
-static void (*Timer_OverflowCallback)(void);
-static void Timer_DefaultOverflowCallback(void);
-
-void Timer_Initialize(void)
-{
-
-    TMR0H = 0xE7;
-
-
-    TMR0L = 0x5F;
-
-
-    T0CON1 = 0x70;
-
-
-    timerTMR0ReloadVal16bit = ((uint16_t)TMR0H << 8) | TMR0L;
-
-
-    Timer_OverflowCallbackRegister(Timer_DefaultOverflowCallback);
-
-
-    PIR3bits.TMR0IF = 0;
-
-
-    PIE3bits.TMR0IE = 1;
-
-
-    T0CON0 = 0x90;
-}
-
-void Timer_Start(void)
-{
-    T0CON0bits.T0EN = 1;
-}
-
-void Timer_Stop(void)
-{
-    T0CON0bits.T0EN = 0;
-}
-
-uint16_t Timer_Read(void)
-{
-    uint16_t readVal;
-    uint8_t readValLow;
-    uint8_t readValHigh;
-
-    readValLow = TMR0L;
-    readValHigh = TMR0H;
-    readVal = ((uint16_t)readValHigh << 8) + readValLow;
-
-    return readVal;
-}
-
-void Timer_Write(size_t timerVal)
-{
-    TMR0H = timerVal >> 8;
-    TMR0L = (uint8_t) timerVal;
-}
-
-void Timer_Reload(void)
-{
-    TMR0H = timerTMR0ReloadVal16bit >> 8;
-    TMR0L = (uint8_t) timerTMR0ReloadVal16bit;
-}
-
-void Timer_PeriodCountSet(size_t periodVal)
-{
-   timerTMR0ReloadVal16bit = (uint16_t) periodVal;
-}
-
-void __attribute__((picinterrupt(("irq(TMR0),base(8)")))) Timer_OverflowISR()
-{
-
-    PIR3bits.TMR0IF = 0;
-
-    TMR0H = timerTMR0ReloadVal16bit >> 8;
-    TMR0L = (uint8_t) timerTMR0ReloadVal16bit;
-
-    if(Timer_OverflowCallback)
-    {
-        Timer_OverflowCallback();
-    }
-}
-
-void Timer_OverflowCallbackRegister(void (* CallbackHandler)(void))
-{
-    Timer_OverflowCallback = CallbackHandler;
-}
-
-static void Timer_DefaultOverflowCallback(void)
-{
-
-
+    I2C1BTO = 0x1;
 }

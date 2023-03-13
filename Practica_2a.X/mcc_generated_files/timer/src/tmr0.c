@@ -123,6 +123,8 @@ void __interrupt(irq(TMR0),base(8)) Timer_OverflowISR()
     TMR0H = timerTMR0ReloadVal16bit >> 8;
     TMR0L = (uint8_t) timerTMR0ReloadVal16bit;
 
+//    LATDbits.LATD1 = !LATDbits.LATD1;
+    
     if(Timer_OverflowCallback)
     {
         Timer_OverflowCallback();

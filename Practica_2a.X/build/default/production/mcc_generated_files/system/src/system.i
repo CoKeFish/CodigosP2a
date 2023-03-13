@@ -26985,7 +26985,7 @@ void CLOCK_Initialize(void);
 
 
 # 1 "mcc_generated_files/system/src/../../system/pins.h" 1
-# 718 "mcc_generated_files/system/src/../../system/pins.h"
+# 758 "mcc_generated_files/system/src/../../system/pins.h"
 void PIN_MANAGER_Initialize (void);
 
 
@@ -27390,6 +27390,278 @@ void Timer_PeriodCountSet(size_t periodVal);
  void Timer_OverflowCallbackRegister(void (* CallbackHandler)(void));
 # 48 "mcc_generated_files/system/src/../system.h" 2
 
+# 1 "mcc_generated_files/system/src/../../timer/tmr1.h" 1
+# 46 "mcc_generated_files/system/src/../../timer/tmr1.h"
+extern const struct TMR_INTERFACE Timer1;
+# 55 "mcc_generated_files/system/src/../../timer/tmr1.h"
+void Timer1_Initialize(void);
+# 64 "mcc_generated_files/system/src/../../timer/tmr1.h"
+void Timer1_Start(void);
+# 73 "mcc_generated_files/system/src/../../timer/tmr1.h"
+void Timer1_Stop(void);
+# 82 "mcc_generated_files/system/src/../../timer/tmr1.h"
+uint16_t Timer1_Read(void);
+# 91 "mcc_generated_files/system/src/../../timer/tmr1.h"
+void Timer1_Write(size_t timerVal);
+# 100 "mcc_generated_files/system/src/../../timer/tmr1.h"
+void Timer1_Reload(void);
+
+
+
+
+
+
+
+void Timer1_PeriodCountSet(size_t periodVal);
+# 117 "mcc_generated_files/system/src/../../timer/tmr1.h"
+void Timer1_StartSinglePulseAcquisition(void);
+# 126 "mcc_generated_files/system/src/../../timer/tmr1.h"
+uint8_t Timer1_CheckGateValueStatus(void);
+# 135 "mcc_generated_files/system/src/../../timer/tmr1.h"
+ void Timer1_OverflowCallbackRegister(void (* CallbackHandler)(void));
+# 145 "mcc_generated_files/system/src/../../timer/tmr1.h"
+_Bool Timer1_HasOverflowOccured(void);
+# 154 "mcc_generated_files/system/src/../../timer/tmr1.h"
+void Timer1_GateISR(void);
+# 49 "mcc_generated_files/system/src/../system.h" 2
+
+# 1 "mcc_generated_files/system/src/../../timer/tmr2.h" 1
+# 50 "mcc_generated_files/system/src/../../timer/tmr2.h"
+extern const struct TMR_INTERFACE Timer2;
+
+
+
+
+
+
+
+typedef enum
+{
+# 68 "mcc_generated_files/system/src/../../timer/tmr2.h"
+   Timer2_ROP_STARTS_TMRON,
+
+
+
+
+   Timer2_ROP_STARTS_TMRON_ERSHIGH,
+
+
+
+
+   Timer2_ROP_STARTS_TMRON_ERSLOW,
+
+
+
+
+   Timer2_ROP_RESETS_ERSBOTHEDGE,
+
+
+
+
+   Timer2_ROP_RESETS_ERSRISINGEDGE,
+
+
+
+
+   Timer2_ROP_RESETS_ERSFALLINGEDGE,
+
+
+
+
+   Timer2_ROP_RESETS_ERSLOW,
+
+
+
+
+   Timer2_ROP_RESETS_ERSHIGH,
+# 114 "mcc_generated_files/system/src/../../timer/tmr2.h"
+   Timer2_OS_STARTS_TMRON,
+
+
+
+
+   Timer2_OS_STARTS_ERSRISINGEDGE ,
+
+
+
+
+   Timer2_OS_STARTS_ERSFALLINGEDGE ,
+
+
+
+
+   Timer2_OS_STARTS_ERSBOTHEDGE,
+
+
+
+
+
+   Timer2_OS_STARTS_ERSFIRSTRISINGEDGE,
+
+
+
+
+
+   Timer2_OS_STARTS_ERSFIRSTFALLINGEDGE,
+
+
+
+
+
+   Timer2_OS_STARTS_ERSRISINGEDGEDETECT,
+
+
+
+
+   Timer2_OS_STARTS_ERSFALLINGEDGEDETECT,
+
+
+
+
+   Timer2_OS_STARTS_TMRON_ERSHIGH = 0x16,
+
+
+
+
+   Timer2_OS_STARTS_TMRON_ERSLOW = 0x17,
+# 171 "mcc_generated_files/system/src/../../timer/tmr2.h"
+   Timer2_MS_STARTS_TMRON_ERSRISINGEDGEDETECT = 0x11,
+
+
+
+
+   Timer2_MS_STARTS_TMRON_ERSFALLINGEDGEDETECT = 0x12,
+
+
+
+
+
+   Timer2_MS_STARTS_TMRON_ERSBOTHEDGE = 0x13
+
+} Timer2_HLT_MODE;
+
+
+
+
+
+
+typedef enum
+{
+
+
+
+    Timer2_T2CKIPPS_PIN = 0x0,
+
+
+
+    Timer2_TMR4_POSTSCALED = 0x2,
+
+
+
+    Timer2_TMR6_POSTSCALED = 0x3,
+
+
+
+    Timer2_CCP1OUT = 0x4,
+
+
+
+    Timer2_CCP2OUT = 0x5,
+
+
+
+    Timer2_CCP3OUT = 0x6,
+
+
+
+    Timer2_CCP4OUT = 0x7,
+
+
+
+    Timer2_PWM5OUT = 0x8,
+
+
+
+    Timer2_PWM6OUT = 0x9,
+
+
+
+    Timer2_PWM7OUT = 0xa,
+
+
+
+    Timer2_PWM8OUT = 0xb,
+
+
+
+    Timer2_CMP1OUT = 0xe,
+
+
+
+    Timer2_CMP2OUT = 0xf,
+
+
+
+    Timer2_ZCDOUT = 0x10,
+
+
+
+    Timer2_CLC1_OUT = 0x11,
+
+
+
+    Timer2_CLC2_OUT = 0x12,
+
+
+
+    Timer2_CLC3_OUT = 0x13,
+
+
+
+    Timer2_CLC4_OUT = 0x14,
+
+
+
+    Timer2_UART1_RX_EDGE = 0x15,
+
+
+
+    Timer2_UART1_TX_EDGE = 0x16,
+
+
+
+    Timer2_UART2_RX_EDGE = 0x17,
+
+
+
+    Timer2_UART2_TX_EDGE = 0x18
+} Timer2_HLT_EXT_RESET_SOURCE;
+# 297 "mcc_generated_files/system/src/../../timer/tmr2.h"
+ void Timer2_Initialize(void);
+# 306 "mcc_generated_files/system/src/../../timer/tmr2.h"
+void Timer2_ModeSet(Timer2_HLT_MODE mode);
+# 315 "mcc_generated_files/system/src/../../timer/tmr2.h"
+void Timer2_ExtResetSourceSet(Timer2_HLT_EXT_RESET_SOURCE reset);
+# 324 "mcc_generated_files/system/src/../../timer/tmr2.h"
+void Timer2_Start(void);
+# 333 "mcc_generated_files/system/src/../../timer/tmr2.h"
+void Timer2_Stop(void);
+# 342 "mcc_generated_files/system/src/../../timer/tmr2.h"
+uint8_t Timer2_Read(void);
+# 351 "mcc_generated_files/system/src/../../timer/tmr2.h"
+void Timer2_Write(uint8_t timerVal);
+# 360 "mcc_generated_files/system/src/../../timer/tmr2.h"
+void Timer2_PeriodCountSet(size_t periodVal);
+
+
+
+
+
+
+
+void Timer2_OverflowCallbackRegister(void (* InterruptHandler)(void));
+# 50 "mcc_generated_files/system/src/../system.h" 2
+
 # 1 "mcc_generated_files/system/src/../../uart/uart1.h" 1
 # 43 "mcc_generated_files/system/src/../../uart/uart1.h"
 # 1 "mcc_generated_files/system/src/../../uart/../system/system.h" 1
@@ -27650,12 +27922,12 @@ void UART1_RxCompleteCallbackRegister(void (* callbackHandler)(void));
 
 
 void UART1_ReceiveISR(void);
-# 49 "mcc_generated_files/system/src/../../uart/../system/system.h" 2
+# 51 "mcc_generated_files/system/src/../../uart/../system/system.h" 2
 
 # 1 "mcc_generated_files/system/src/../../peripheral/uart2.h" 1
 # 22 "mcc_generated_files/system/src/../../peripheral/uart2.h"
 void UART2_Initialize(void);
-# 50 "mcc_generated_files/system/src/../../uart/../system/system.h" 2
+# 52 "mcc_generated_files/system/src/../../uart/../system/system.h" 2
 
 # 1 "mcc_generated_files/system/src/../../system/interrupt.h" 1
 # 91 "mcc_generated_files/system/src/../../system/interrupt.h"
@@ -27684,8 +27956,8 @@ void INT2_SetInterruptHandler(void (* InterruptHandler)(void));
 extern void (*INT2_InterruptHandler)(void);
 # 330 "mcc_generated_files/system/src/../../system/interrupt.h"
 void INT2_DefaultInterruptHandler(void);
-# 51 "mcc_generated_files/system/src/../../uart/../system/system.h" 2
-# 60 "mcc_generated_files/system/src/../../uart/../system/system.h"
+# 53 "mcc_generated_files/system/src/../../uart/../system/system.h" 2
+# 62 "mcc_generated_files/system/src/../../uart/../system/system.h"
 void SYSTEM_Initialize(void);
 # 33 "mcc_generated_files/system/src/system.c" 2
 
@@ -27701,6 +27973,8 @@ void SYSTEM_Initialize(void)
     I2C1_Initialize();
     SPI1_Initialize();
     Timer_Initialize();
+    Timer1_Initialize();
+    Timer2_Initialize();
     UART1_Initialize();
     UART2_Initialize();
     INTERRUPT_Initialize();

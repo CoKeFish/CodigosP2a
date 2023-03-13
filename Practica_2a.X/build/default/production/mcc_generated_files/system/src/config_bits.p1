@@ -18,7 +18,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 "49
 [p x BOREN  =  SBORDIS      ]
 "50
-[p x PWRTS  =  PWRT_OFF      ]
+[p x PWRTS  =  PWRT_64      ]
 "51
 [p x MVECEN  =  ON      ]
 "52

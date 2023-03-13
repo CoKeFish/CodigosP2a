@@ -15,6 +15,8 @@ mcc_generated_files/system/../spi/spi1.h  \
 mcc_generated_files/system/../spi/spi_interface.h  \
 mcc_generated_files/system/../timer/tmr0.h  \
 mcc_generated_files/system/../timer/timer_interface.h  \
+mcc_generated_files/system/../timer/tmr1.h  \
+mcc_generated_files/system/../timer/tmr2.h  \
 mcc_generated_files/system/../uart/uart1.h  \
 mcc_generated_files/system/../uart/../system/system.h  \
 mcc_generated_files/system/../uart/uart_drv_interface.h  \
