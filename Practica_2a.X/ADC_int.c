@@ -20,7 +20,6 @@ void ADC_int(void)
         ADCC_StartConversion(channel_ANA1); //Iniciamos la segunda
         // y Cargamos la lectura al buffer de transmicion
 //        LATDbits.LATD1 = !LATDbits.LATD1;
-        LATDbits.LATD1 = !LATDbits.LATD1;
         Timer2_Start();
         SPI1_ByteWrite(0b00110000 | ADRESH);
         SPI1_ByteWrite(ADRESL);
@@ -36,9 +35,9 @@ void ADC_int(void)
     else            //Si es la segunda convercion
     {
         // Cargamos la lectura al buffer de transmicion
-
+//LATDbits.LATD1 = !LATDbits.LATD1;
         LATEbits.LATE0 = 0;
-        LATDbits.LATD1 = !LATDbits.LATD1;
+//        LATDbits.LATD1 = !LATDbits.LATD1;
         Timer2_Start();
         SPI1_ByteWrite(0b10110000 | ADRESH);
         SPI1_ByteWrite(ADRESL);

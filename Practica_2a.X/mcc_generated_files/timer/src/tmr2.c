@@ -126,7 +126,7 @@ void __interrupt(irq(TMR2),base(8)) Timer2_ISR()
 {
     // clear the TMR2 interrupt flag
      PIR4bits.TMR2IF = 0;
-LATDbits.LATD1 = !LATDbits.LATD1;
+//LATDbits.LATD1 = !LATDbits.LATD1;
      LATEbits.LATE0 = 1;
              LATBbits.LATB4 = 0;
 //        __delay_us(1);
