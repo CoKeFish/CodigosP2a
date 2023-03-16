@@ -62,14 +62,9 @@ void  INTERRUPT_Initialize (void)
     IPR3bits.U1RXIP = 1;
     IPR3bits.U1TXIP = 1;
     IPR3bits.TMR0IP = 1;
-    IPR4bits.TMR1IP = 1;
     IPR4bits.TMR2IP = 1;
     IPR0bits.IOCIP = 0;
     IPR1bits.ADIP = 0;
-    IPR5bits.I2C2RXIP = 0;
-    IPR5bits.I2C2TXIP = 0;
-    IPR6bits.I2C2IP = 0;
-    IPR6bits.I2C2EIP = 0;
 
     // Clear the interrupt flag
     // Set the external interrupt edge detect

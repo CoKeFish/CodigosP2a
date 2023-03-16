@@ -13,14 +13,7 @@
         <logicalFolder name="fvr" displayName="fvr" projectFiles="true">
           <itemPath>mcc_generated_files/fvr/fvr.h</itemPath>
         </logicalFolder>
-        <logicalFolder name="i2c_host" displayName="i2c_host" projectFiles="true">
-          <itemPath>mcc_generated_files/i2c_host/i2c2.h</itemPath>
-          <itemPath>mcc_generated_files/i2c_host/i2c_host_types.h</itemPath>
-          <itemPath>mcc_generated_files/i2c_host/i2c_host_event_types.h</itemPath>
-          <itemPath>mcc_generated_files/i2c_host/i2c_host_interface.h</itemPath>
-        </logicalFolder>
         <logicalFolder name="peripheral" displayName="peripheral" projectFiles="true">
-          <itemPath>mcc_generated_files/peripheral/i2c1.h</itemPath>
           <itemPath>mcc_generated_files/peripheral/uart2.h</itemPath>
         </logicalFolder>
         <logicalFolder name="spi" displayName="spi" projectFiles="true">
@@ -37,7 +30,6 @@
         <logicalFolder name="timer" displayName="timer" projectFiles="true">
           <itemPath>mcc_generated_files/timer/tmr0.h</itemPath>
           <itemPath>mcc_generated_files/timer/timer_interface.h</itemPath>
-          <itemPath>mcc_generated_files/timer/tmr1.h</itemPath>
           <itemPath>mcc_generated_files/timer/tmr2.h</itemPath>
         </logicalFolder>
         <logicalFolder name="uart" displayName="uart" projectFiles="true">
@@ -71,14 +63,8 @@
             <itemPath>mcc_generated_files/fvr/src/fvr.c</itemPath>
           </logicalFolder>
         </logicalFolder>
-        <logicalFolder name="i2c_host" displayName="i2c_host" projectFiles="true">
-          <logicalFolder name="src" displayName="src" projectFiles="true">
-            <itemPath>mcc_generated_files/i2c_host/src/i2c2.c</itemPath>
-          </logicalFolder>
-        </logicalFolder>
         <logicalFolder name="peripheral" displayName="peripheral" projectFiles="true">
           <logicalFolder name="src" displayName="src" projectFiles="true">
-            <itemPath>mcc_generated_files/peripheral/src/i2c1.c</itemPath>
             <itemPath>mcc_generated_files/peripheral/src/uart2.c</itemPath>
           </logicalFolder>
         </logicalFolder>
@@ -100,7 +86,6 @@
           <logicalFolder name="src" displayName="src" projectFiles="true">
             <itemPath>mcc_generated_files/timer/src/tmr0.c</itemPath>
             <itemPath>mcc_generated_files/timer/src/tmr2.c</itemPath>
-            <itemPath>mcc_generated_files/timer/src/tmr1.c</itemPath>
           </logicalFolder>
         </logicalFolder>
         <logicalFolder name="uart" displayName="uart" projectFiles="true">
