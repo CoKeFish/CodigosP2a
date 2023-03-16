@@ -6,16 +6,10 @@ mcc_generated_files/system/src/../../system/clock.h  \
 mcc_generated_files/system/src/../../system/pins.h  \
 mcc_generated_files/system/src/../../adc/adcc.h  \
 mcc_generated_files/system/src/../../fvr/fvr.h  \
-mcc_generated_files/system/src/../../i2c_host/i2c2.h  \
-mcc_generated_files/system/src/../../i2c_host/i2c_host_event_types.h  \
-mcc_generated_files/system/src/../../i2c_host/i2c_host_types.h  \
-mcc_generated_files/system/src/../../i2c_host/i2c_host_interface.h  \
-mcc_generated_files/system/src/../../peripheral/i2c1.h  \
 mcc_generated_files/system/src/../../spi/spi1.h  \
 mcc_generated_files/system/src/../../spi/spi_interface.h  \
 mcc_generated_files/system/src/../../timer/tmr0.h  \
 mcc_generated_files/system/src/../../timer/timer_interface.h  \
-mcc_generated_files/system/src/../../timer/tmr1.h  \
 mcc_generated_files/system/src/../../timer/tmr2.h  \
 mcc_generated_files/system/src/../../uart/uart1.h  \
 mcc_generated_files/system/src/../../uart/../system/system.h  \
