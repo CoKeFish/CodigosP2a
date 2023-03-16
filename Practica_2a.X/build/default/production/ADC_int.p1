@@ -2351,41 +2351,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 "34
 [; ;ADC_int.c: 34:     }
 }
-[e $U 2204  ]
-"35
-[; ;ADC_int.c: 35:     else
 [e :U 2203 ]
-"36
-[; ;ADC_int.c: 36:     {
-{
-"39
-[; ;ADC_int.c: 39:         LATEbits.LATE0 = 0;
-[e = . . _LATEbits 0 0 -> -> 0 `i `uc ]
-"41
-[; ;ADC_int.c: 41:         Timer2_Start();
-[e ( _Timer2_Start ..  ]
-"42
-[; ;ADC_int.c: 42:         SPI1_ByteWrite(0b10110000 | ADRESH);
-[e ( _SPI1_ByteWrite (1 -> | -> 176 `i -> _ADRESH `i `uc ]
-"43
-[; ;ADC_int.c: 43:         SPI1_ByteWrite(ADRESL);
-[e ( _SPI1_ByteWrite (1 _ADRESL ]
-"44
-[; ;ADC_int.c: 44:         UART1_Write(valp[ADRESH & 0b1111]);
-[e ( _UART1_Write (1 *U + &U _valp * -> -> & -> _ADRESH `i -> 15 `i `ui `ux -> -> # *U &U _valp `ui `ux ]
-"45
-[; ;ADC_int.c: 45:         UART1_Write(valp[(ADRESL >> 4) & 0b1111]);
-[e ( _UART1_Write (1 *U + &U _valp * -> -> & >> -> _ADRESL `i -> 4 `i -> 15 `i `ui `ux -> -> # *U &U _valp `ui `ux ]
-"46
-[; ;ADC_int.c: 46:         UART1_Write(valp[ADRESL & 0b1111]);
-[e ( _UART1_Write (1 *U + &U _valp * -> -> & -> _ADRESL `i -> 15 `i `ui `ux -> -> # *U &U _valp `ui `ux ]
-"50
-[; ;ADC_int.c: 50:         UART1_Write('\n');
-[e ( _UART1_Write (1 -> -> 10 `ui `uc ]
-"51
-[; ;ADC_int.c: 51:     }
-}
-[e :U 2204 ]
 "52
 [; ;ADC_int.c: 52: }
 [e :UE 2202 ]

@@ -26945,7 +26945,7 @@ void Timer1_Initialize(void)
 
     T1CLK = 0x2;
 
-    TMR1H = 0xFD;
+    TMR1H = 0xF3;
 
     TMR1L = 0x7F;
 
@@ -27037,10 +27037,12 @@ uint8_t Timer1_CheckGateValueStatus(void)
 void __attribute__((picinterrupt(("irq(TMR1),base(8)")))) Timer1_OverflowISR()
 {
 
+    static int a = 0;
+
 
     PIR4bits.TMR1IF = 0;
-    Timer1_Write(timer1ReloadVal);
-
+    Timer1_Write(0xE757);
+    LATDbits.LATD1 = !LATDbits.LATD1;
     if(Timer1_OverflowCallback)
     {
         Timer1_OverflowCallback();

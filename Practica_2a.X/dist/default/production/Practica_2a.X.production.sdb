@@ -79,7 +79,7 @@ channel_FVR_Buffer2 63
 channel_ANA0 0
 channel_ANA1 1
 ]
-"17 C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\Timer_int.c
+"18 C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\Timer_int.c
 [e E41 . `uc
 channel_VSS 59
 channel_Temp 60
@@ -289,11 +289,11 @@ channel_ANA1 1
 [v _Timer1_PeriodCountSet Timer1_PeriodCountSet `(v  1 e 1 0 ]
 "156
 [v _Timer1_OverflowISR Timer1_OverflowISR `IIH(v  1 e 1 0 ]
-"169
+"171
 [v _Timer1_OverflowCallbackRegister Timer1_OverflowCallbackRegister `(v  1 e 1 0 ]
-"174
+"176
 [v _Timer1_DefaultOverflowCallback Timer1_DefaultOverflowCallback `(v  1 s 1 Timer1_DefaultOverflowCallback ]
-"185
+"187
 [v _Timer1_GateISR Timer1_GateISR `IIL(v  1 e 1 0 ]
 "58 C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/timer/src/tmr2.c
 [v _Timer2_Initialize Timer2_Initialize `(v  1 e 1 0 ]
@@ -945,34 +945,34 @@ channel_ANA1 1
 [v _U1P3H U1P3H `VEuc  1 e 1 @15857 ]
 "26766
 [v _U1CON0 U1CON0 `VEuc  1 e 1 @15858 ]
-[s S3165 . 1 `uc 1 MODE0 1 0 :1:0 
+[s S3214 . 1 `uc 1 MODE0 1 0 :1:0 
 `uc 1 MODE1 1 0 :1:1 
 `uc 1 MODE2 1 0 :1:2 
 `uc 1 MODE3 1 0 :1:3 
 ]
 "26799
-[s S3170 . 1 `uc 1 U1MODE 1 0 :4:0 
+[s S3219 . 1 `uc 1 U1MODE 1 0 :4:0 
 `uc 1 U1RXEN 1 0 :1:4 
 `uc 1 U1TXEN 1 0 :1:5 
 `uc 1 U1ABDEN 1 0 :1:6 
 `uc 1 U1BRGS 1 0 :1:7 
 ]
-[s S3176 . 1 `uc 1 U1MODE0 1 0 :1:0 
+[s S3225 . 1 `uc 1 U1MODE0 1 0 :1:0 
 `uc 1 U1MODE1 1 0 :1:1 
 `uc 1 U1MODE2 1 0 :1:2 
 `uc 1 U1MODE3 1 0 :1:3 
 ]
-[s S3181 . 1 `uc 1 MODE 1 0 :4:0 
+[s S3230 . 1 `uc 1 MODE 1 0 :4:0 
 `uc 1 RXEN 1 0 :1:4 
 `uc 1 TXEN 1 0 :1:5 
 `uc 1 ABDEN 1 0 :1:6 
 `uc 1 BRGS 1 0 :1:7 
 ]
-[u S3187 . 1 `S3165 1 . 1 0 `S3170 1 . 1 0 `S3176 1 . 1 0 `S3181 1 . 1 0 ]
-[v _U1CON0bits U1CON0bits `VES3187  1 e 1 @15858 ]
+[u S3236 . 1 `S3214 1 . 1 0 `S3219 1 . 1 0 `S3225 1 . 1 0 `S3230 1 . 1 0 ]
+[v _U1CON0bits U1CON0bits `VES3236  1 e 1 @15858 ]
 "26894
 [v _U1CON1 U1CON1 `VEuc  1 e 1 @15859 ]
-[s S3129 . 1 `uc 1 SENDB 1 0 :1:0 
+[s S3178 . 1 `uc 1 SENDB 1 0 :1:0 
 `uc 1 BRKOVR 1 0 :1:1 
 `uc 1 . 1 0 :1:2 
 `uc 1 RXBIMD 1 0 :1:3 
@@ -981,7 +981,7 @@ channel_ANA1 1
 `uc 1 ON 1 0 :1:7 
 ]
 "26919
-[s S3137 . 1 `uc 1 U1SENDB 1 0 :1:0 
+[s S3186 . 1 `uc 1 U1SENDB 1 0 :1:0 
 `uc 1 U1BRKOVR 1 0 :1:1 
 `uc 1 . 1 0 :1:2 
 `uc 1 U1RXBIMD 1 0 :1:3 
@@ -989,8 +989,8 @@ channel_ANA1 1
 `uc 1 . 1 0 :2:5 
 `uc 1 U1ON 1 0 :1:7 
 ]
-[u S3145 . 1 `S3129 1 . 1 0 `S3137 1 . 1 0 ]
-[v _U1CON1bits U1CON1bits `VES3145  1 e 1 @15859 ]
+[u S3194 . 1 `S3178 1 . 1 0 `S3186 1 . 1 0 ]
+[v _U1CON1bits U1CON1bits `VES3194  1 e 1 @15859 ]
 "26974
 [v _U1CON2 U1CON2 `VEuc  1 e 1 @15860 ]
 "27123
@@ -1001,24 +1001,24 @@ channel_ANA1 1
 [v _U1FIFO U1FIFO `VEuc  1 e 1 @15863 ]
 "27293
 [v _U1UIR U1UIR `VEuc  1 e 1 @15864 ]
-[s S3215 . 1 `uc 1 . 1 0 :2:0 
+[s S3264 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 ABDIE 1 0 :1:2 
 `uc 1 . 1 0 :3:3 
 `uc 1 ABDIF 1 0 :1:6 
 `uc 1 WUIF 1 0 :1:7 
 ]
 "27314
-[s S3221 . 1 `uc 1 . 1 0 :2:0 
+[s S3270 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 U1ABDIE 1 0 :1:2 
 `uc 1 . 1 0 :3:3 
 `uc 1 U1ABDIF 1 0 :1:6 
 `uc 1 U1WUIF 1 0 :1:7 
 ]
-[u S3227 . 1 `S3215 1 . 1 0 `S3221 1 . 1 0 ]
-[v _U1UIRbits U1UIRbits `VES3227  1 e 1 @15864 ]
+[u S3276 . 1 `S3264 1 . 1 0 `S3270 1 . 1 0 ]
+[v _U1UIRbits U1UIRbits `VES3276  1 e 1 @15864 ]
 "27349
 [v _U1ERRIR U1ERRIR `VEuc  1 e 1 @15865 ]
-[s S3243 . 1 `uc 1 TXCIF 1 0 :1:0 
+[s S3292 . 1 `uc 1 TXCIF 1 0 :1:0 
 `uc 1 RXFOIF 1 0 :1:1 
 `uc 1 RXBKIF 1 0 :1:2 
 `uc 1 FERIF 1 0 :1:3 
@@ -1028,7 +1028,7 @@ channel_ANA1 1
 `uc 1 TXMTIF 1 0 :1:7 
 ]
 "27376
-[s S3252 . 1 `uc 1 U1TXCIF 1 0 :1:0 
+[s S3301 . 1 `uc 1 U1TXCIF 1 0 :1:0 
 `uc 1 U1RXFOIF 1 0 :1:1 
 `uc 1 U1RXBKIF 1 0 :1:2 
 `uc 1 U1FERIF 1 0 :1:3 
@@ -1037,8 +1037,8 @@ channel_ANA1 1
 `uc 1 U1PERIF 1 0 :1:6 
 `uc 1 U1TXMTIF 1 0 :1:7 
 ]
-[u S3261 . 1 `S3243 1 . 1 0 `S3252 1 . 1 0 ]
-[v _U1ERRIRbits U1ERRIRbits `VES3261  1 e 1 @15865 ]
+[u S3310 . 1 `S3292 1 . 1 0 `S3301 1 . 1 0 ]
+[v _U1ERRIRbits U1ERRIRbits `VES3310  1 e 1 @15865 ]
 "27461
 [v _U1ERRIE U1ERRIE `VEuc  1 e 1 @15866 ]
 "28240
@@ -1500,7 +1500,7 @@ channel_ANA1 1
 [v _LATC LATC `VEuc  1 e 1 @16316 ]
 "45771
 [v _LATD LATD `VEuc  1 e 1 @16317 ]
-[s S3583 . 1 `uc 1 LATD0 1 0 :1:0 
+[s S2810 . 1 `uc 1 LATD0 1 0 :1:0 
 `uc 1 LATD1 1 0 :1:1 
 `uc 1 LATD2 1 0 :1:2 
 `uc 1 LATD3 1 0 :1:3 
@@ -1510,7 +1510,7 @@ channel_ANA1 1
 `uc 1 LATD7 1 0 :1:7 
 ]
 "45798
-[s S3592 . 1 `uc 1 LD0 1 0 :1:0 
+[s S2819 . 1 `uc 1 LD0 1 0 :1:0 
 `uc 1 LD1 1 0 :1:1 
 `uc 1 LD2 1 0 :1:2 
 `uc 1 LD3 1 0 :1:3 
@@ -1520,10 +1520,10 @@ channel_ANA1 1
 `uc 1 LD7 1 0 :1:7 
 ]
 "45798
-[u S3601 . 1 `S3583 1 . 1 0 `S3592 1 . 1 0 ]
+[u S2828 . 1 `S2810 1 . 1 0 `S2819 1 . 1 0 ]
 "45798
 "45798
-[v _LATDbits LATDbits `VES3601  1 e 1 @16317 ]
+[v _LATDbits LATDbits `VES2828  1 e 1 @16317 ]
 "45883
 [v _LATE LATE `VEuc  1 e 1 @16318 ]
 [s S2502 . 1 `uc 1 LATE0 1 0 :1:0 
@@ -1635,24 +1635,24 @@ channel_ANA1 1
 [v _uart1RxTail uart1RxTail `VEuc  1 s 1 uart1RxTail ]
 "90
 [v _uart1RxBuffer uart1RxBuffer `VE[8]uc  1 s 8 uart1RxBuffer ]
-[s S3063 . 1 `uc 1 perr 1 0 :1:0 
+[s S3112 . 1 `uc 1 perr 1 0 :1:0 
 `uc 1 ferr 1 0 :1:1 
 `uc 1 oerr 1 0 :1:2 
 `uc 1 reserved 1 0 :5:3 
 ]
 "91
-[u S3068 . 2 `S3063 1 . 1 0 `ui 1 status 2 0 ]
-[v _uart1RxStatusBuffer uart1RxStatusBuffer `VE[8]S3068  1 s 16 uart1RxStatusBuffer ]
+[u S3117 . 2 `S3112 1 . 1 0 `ui 1 status 2 0 ]
+[v _uart1RxStatusBuffer uart1RxStatusBuffer `VE[8]S3117  1 s 16 uart1RxStatusBuffer ]
 "92
 [v _uart1RxCount uart1RxCount `VEuc  1 e 1 0 ]
-[s S3063 . 1 `uc 1 perr 1 0 :1:0 
+[s S3112 . 1 `uc 1 perr 1 0 :1:0 
 `uc 1 ferr 1 0 :1:1 
 `uc 1 oerr 1 0 :1:2 
 `uc 1 reserved 1 0 :5:3 
 ]
 "94
-[u S3068 . 2 `S3063 1 . 1 0 `ui 1 status 2 0 ]
-[v _uart1RxLastError uart1RxLastError `VES3068  1 e 2 0 ]
+[u S3117 . 2 `S3112 1 . 1 0 `ui 1 status 2 0 ]
+[v _uart1RxLastError uart1RxLastError `VES3117  1 e 2 0 ]
 "100
 [v _UART1_FramingErrorHandler UART1_FramingErrorHandler `*.37(v  1 e 2 0 ]
 "101
@@ -1728,11 +1728,11 @@ channel_ANA1 1
 {
 "84
 } 0
-"169
+"171
 [v _Timer1_OverflowCallbackRegister Timer1_OverflowCallbackRegister `(v  1 e 1 0 ]
 {
 [v Timer1_OverflowCallbackRegister@CallbackHandler CallbackHandler `*.37(v  1 p 2 17 ]
-"172
+"174
 } 0
 "70 C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/spi/src/spi1.c
 [v _SPI1_Initialize SPI1_Initialize `(v  1 e 1 0 ]
@@ -1836,11 +1836,11 @@ channel_ANA1 1
 {
 [v UART1_Write@txData txData `uc  1 a 1 wreg ]
 "404
-[v UART1_Write@tempTxHead tempTxHead `uc  1 a 1 15 ]
+[v UART1_Write@tempTxHead tempTxHead `uc  1 a 1 16 ]
 "402
 [v UART1_Write@txData txData `uc  1 a 1 wreg ]
 "406
-[v UART1_Write@txData txData `uc  1 a 1 16 ]
+[v UART1_Write@txData txData `uc  1 a 1 17 ]
 "424
 } 0
 "95 C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/timer/src/tmr2.c
@@ -1854,7 +1854,7 @@ channel_ANA1 1
 [v SPI1_ByteWrite@byte byte `uc  1 a 1 wreg ]
 [v SPI1_ByteWrite@byte byte `uc  1 a 1 wreg ]
 "147
-[v SPI1_ByteWrite@byte byte `uc  1 a 1 15 ]
+[v SPI1_ByteWrite@byte byte `uc  1 a 1 16 ]
 "148
 } 0
 "106 C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/adc/src/adcc.c
@@ -1863,7 +1863,7 @@ channel_ANA1 1
 [v ADCC_StartConversion@channel channel `E15846  1 a 1 wreg ]
 [v ADCC_StartConversion@channel channel `E15846  1 a 1 wreg ]
 "109
-[v ADCC_StartConversion@channel channel `E15846  1 a 1 15 ]
+[v ADCC_StartConversion@channel channel `E15846  1 a 1 16 ]
 "113
 } 0
 "224 C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/i2c_host/src/i2c2.c
@@ -1911,7 +1911,7 @@ channel_ANA1 1
 [v I2C2_CounterSet@counter counter `uc  1 a 1 wreg ]
 [v I2C2_CounterSet@counter counter `uc  1 a 1 wreg ]
 "369
-[v I2C2_CounterSet@counter counter `uc  1 a 1 24 ]
+[v I2C2_CounterSet@counter counter `uc  1 a 1 1 ]
 "370
 } 0
 "352
@@ -1920,7 +1920,7 @@ channel_ANA1 1
 [v I2C2_AddrTransmit@addr addr `uc  1 a 1 wreg ]
 [v I2C2_AddrTransmit@addr addr `uc  1 a 1 wreg ]
 "354
-[v I2C2_AddrTransmit@addr addr `uc  1 a 1 22 ]
+[v I2C2_AddrTransmit@addr addr `uc  1 a 1 23 ]
 "355
 } 0
 "328
@@ -2063,10 +2063,10 @@ channel_ANA1 1
 {
 "210
 } 0
-"185 C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/timer/src/tmr1.c
+"187 C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/timer/src/tmr1.c
 [v _Timer1_GateISR Timer1_GateISR `IIL(v  1 e 1 0 ]
 {
-"189
+"191
 } 0
 "100 C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
 [v _Default_ISR Default_ISR `IIH(v  1 e 1 0 ]
@@ -2078,10 +2078,10 @@ channel_ANA1 1
 {
 "132
 } 0
-"174 C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/timer/src/tmr1.c
+"176 C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/timer/src/tmr1.c
 [v _Timer1_DefaultOverflowCallback Timer1_DefaultOverflowCallback `(v  1 s 1 Timer1_DefaultOverflowCallback ]
 {
-"178
+"180
 } 0
 "145 C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/timer/src/tmr2.c
 [v _Timer2_DefaultOverflowCallback Timer2_DefaultOverflowCallback `(v  1 s 1 Timer2_DefaultOverflowCallback ]
@@ -2096,9 +2096,9 @@ channel_ANA1 1
 "7 C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\Timer_int.c
 [v _Timer_int Timer_int `(v  1 e 1 0 ]
 {
-"10
+"11
 [v Timer_int@count count `i  1 s 2 count ]
-"19
+"20
 } 0
 "106 C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/adc/src/adcc.c
 [v i2_ADCC_StartConversion ADCC_StartConversion `(v  1 e 1 0 ]
@@ -2122,7 +2122,7 @@ channel_ANA1 1
 "156 C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/timer/src/tmr1.c
 [v _Timer1_OverflowISR Timer1_OverflowISR `IIH(v  1 e 1 0 ]
 {
-"167
+"169
 } 0
 "114
 [v _Timer1_Write Timer1_Write `(v  1 e 1 0 ]
@@ -2148,6 +2148,6 @@ channel_ANA1 1
 [v _UART1_TransmitISR UART1_TransmitISR `(v  1 e 1 0 ]
 {
 "434
-[v UART1_TransmitISR@tempTxTail tempTxTail `uc  1 a 1 14 ]
+[v UART1_TransmitISR@tempTxTail tempTxTail `uc  1 a 1 15 ]
 "452
 } 0

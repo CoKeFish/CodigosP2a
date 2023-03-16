@@ -32,23 +32,23 @@ void ADC_int(void)
     
         
     }
-    else            //Si es la segunda convercion
-    {
-        // Cargamos la lectura al buffer de transmicion
-//LATDbits.LATD1 = !LATDbits.LATD1;
-        LATEbits.LATE0 = 0;
-//        LATDbits.LATD1 = !LATDbits.LATD1;
-        Timer2_Start();
-        SPI1_ByteWrite(0b10110000 | ADRESH);
-        SPI1_ByteWrite(ADRESL);
-        UART_Write(valp[ADRESH  & 0b1111]);
-        UART_Write(valp[(ADRESL >> 4)  & 0b1111]);
-        UART_Write(valp[ADRESL  & 0b1111]);
-//        UART_Write(valp[(PERIOD >> 8)  & 0b1111]);
-//        UART_Write(valp[(PERIOD >> 4)  & 0b1111]);
-//        UART_Write(valp[PERIOD  & 0b1111]);
-        UART_Write('\n');   // y separamos por un salto de linea
-    }
+//    else            //Si es la segunda convercion
+//    {
+//        // Cargamos la lectura al buffer de transmicion
+////LATDbits.LATD1 = !LATDbits.LATD1;
+//        LATEbits.LATE0 = 0;
+////        LATDbits.LATD1 = !LATDbits.LATD1;
+//        Timer2_Start();
+//        SPI1_ByteWrite(0b10110000 | ADRESH);
+//        SPI1_ByteWrite(ADRESL);
+//        UART_Write(valp[ADRESH  & 0b1111]);
+//        UART_Write(valp[(ADRESL >> 4)  & 0b1111]);
+//        UART_Write(valp[ADRESL  & 0b1111]);
+////        UART_Write(valp[(PERIOD >> 8)  & 0b1111]);
+////        UART_Write(valp[(PERIOD >> 4)  & 0b1111]);
+////        UART_Write(valp[PERIOD  & 0b1111]);
+//        UART_Write('\n');   // y separamos por un salto de linea
+//    }
 }
 
 

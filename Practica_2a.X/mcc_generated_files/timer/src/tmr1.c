@@ -63,8 +63,8 @@ void Timer1_Initialize(void)
     T1GATE = 0x0;
     //TMRCS FOSC; 
     T1CLK = 0x2;
-    //TMRH 253; 
-    TMR1H = 0xFD;
+    //TMRH 243; 
+    TMR1H = 0xF3;
     //TMRL 127; 
     TMR1L = 0x7F;
 
@@ -156,10 +156,12 @@ uint8_t Timer1_CheckGateValueStatus(void)
 void __interrupt(irq(TMR1),base(8)) Timer1_OverflowISR()
 {
 
+    static int a = 0;
+    
     // Clear the TMR1 interrupt flag
     PIR4bits.TMR1IF = 0;
-    Timer1_Write(timer1ReloadVal);
-//    LATDbits.LATD1 = !LATDbits.LATD1;
+    Timer1_Write(0xE757);
+    LATDbits.LATD1 = !LATDbits.LATD1;
     if(Timer1_OverflowCallback)
     {
         Timer1_OverflowCallback();

@@ -120,9 +120,24 @@ Version 4.0 HI-TECH Software Intermediate Code
 [v _T1GCONbits `VS1999 ~T0 @X0 0 e@16307 ]
 [t ~ __interrupt . k ]
 [t T1 __interrupt irq ( TMR1 ) base ( 8 ) ]
-[v F15936 `(v ~T0 @X0 0 tf ]
-[v F15938 `(v ~T0 @X0 0 tf ]
-[v F15940 `(v ~T0 @X0 0 tf ]
+"45777
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h: 45777:     struct {
+[s S2060 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S2060 . LATD0 LATD1 LATD2 LATD3 LATD4 LATD5 LATD6 LATD7 ]
+"45787
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h: 45787:     struct {
+[s S2061 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S2061 . LD0 LD1 LD2 LD3 LD4 LD5 LD6 LD7 ]
+"45776
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h: 45776: typedef union {
+[u S2059 `S2060 1 `S2061 1 ]
+[n S2059 . . . ]
+"45798
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h: 45798: extern volatile LATDbits_t LATDbits __attribute__((address(0x3FBD)));
+[v _LATDbits `VS2059 ~T0 @X0 0 e@16317 ]
+[v F15937 `(v ~T0 @X0 0 tf ]
+[v F15939 `(v ~T0 @X0 0 tf ]
+[v F15941 `(v ~T0 @X0 0 tf ]
 [t T2 __interrupt irq ( TMR1G ) base ( 8 ) low_priority ]
 "250 C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h
 [; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h: 250: __asm("STATUS_CSHAD equ 03880h");
@@ -2398,8 +2413,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;mcc_generated_files/timer/src/tmr1.c: 65:     T1CLK = 0x2;
 [e = _T1CLK -> -> 2 `i `uc ]
 "67
-[; ;mcc_generated_files/timer/src/tmr1.c: 67:     TMR1H = 0xFD;
-[e = _TMR1H -> -> 253 `i `uc ]
+[; ;mcc_generated_files/timer/src/tmr1.c: 67:     TMR1H = 0xF3;
+[e = _TMR1H -> -> 243 `i `uc ]
 "69
 [; ;mcc_generated_files/timer/src/tmr1.c: 69:     TMR1L = 0x7F;
 [e = _TMR1L -> -> 127 `i `uc ]
@@ -2619,90 +2634,99 @@ Version 4.0 HI-TECH Software Intermediate Code
 {
 [e :U _Timer1_OverflowISR ]
 [f ]
-"160
-[; ;mcc_generated_files/timer/src/tmr1.c: 160:     PIR4bits.TMR1IF = 0;
+"159
+[; ;mcc_generated_files/timer/src/tmr1.c: 159:     static int a = 0;
+[v F15936 `i ~T0 @X0 1 s a ]
+[i F15936
+-> 0 `i
+]
+"162
+[; ;mcc_generated_files/timer/src/tmr1.c: 162:     PIR4bits.TMR1IF = 0;
 [e = . . _PIR4bits 0 0 -> -> 0 `i `uc ]
-"161
-[; ;mcc_generated_files/timer/src/tmr1.c: 161:     Timer1_Write(timer1ReloadVal);
-[e ( _Timer1_Write (1 -> _timer1ReloadVal `ui ]
 "163
-[; ;mcc_generated_files/timer/src/tmr1.c: 163:     if(Timer1_OverflowCallback)
-[e $ ! != _Timer1_OverflowCallback -> -> 0 `i `*F15936 2205  ]
+[; ;mcc_generated_files/timer/src/tmr1.c: 163:     Timer1_Write(0xE757);
+[e ( _Timer1_Write (1 -> 59223 `ui ]
 "164
-[; ;mcc_generated_files/timer/src/tmr1.c: 164:     {
-{
+[; ;mcc_generated_files/timer/src/tmr1.c: 164:     LATDbits.LATD1 = !LATDbits.LATD1;
+[e = . . _LATDbits 0 1 -> -> ! != -> . . _LATDbits 0 1 `i -> 0 `i `i `uc ]
 "165
-[; ;mcc_generated_files/timer/src/tmr1.c: 165:         Timer1_OverflowCallback();
-[e ( *U _Timer1_OverflowCallback ..  ]
+[; ;mcc_generated_files/timer/src/tmr1.c: 165:     if(Timer1_OverflowCallback)
+[e $ ! != _Timer1_OverflowCallback -> -> 0 `i `*F15937 2205  ]
 "166
-[; ;mcc_generated_files/timer/src/tmr1.c: 166:     }
+[; ;mcc_generated_files/timer/src/tmr1.c: 166:     {
+{
+"167
+[; ;mcc_generated_files/timer/src/tmr1.c: 167:         Timer1_OverflowCallback();
+[e ( *U _Timer1_OverflowCallback ..  ]
+"168
+[; ;mcc_generated_files/timer/src/tmr1.c: 168:     }
 }
 [e :U 2205 ]
-"167
-[; ;mcc_generated_files/timer/src/tmr1.c: 167: }
+"169
+[; ;mcc_generated_files/timer/src/tmr1.c: 169: }
 [e :UE 2204 ]
 }
-"169
-[; ;mcc_generated_files/timer/src/tmr1.c: 169: void Timer1_OverflowCallbackRegister(void (* CallbackHandler)(void))
-[v _Timer1_OverflowCallbackRegister `(v ~T0 @X0 1 ef1`*F15938 ]
-"170
-[; ;mcc_generated_files/timer/src/tmr1.c: 170: {
+"171
+[; ;mcc_generated_files/timer/src/tmr1.c: 171: void Timer1_OverflowCallbackRegister(void (* CallbackHandler)(void))
+[v _Timer1_OverflowCallbackRegister `(v ~T0 @X0 1 ef1`*F15939 ]
+"172
+[; ;mcc_generated_files/timer/src/tmr1.c: 172: {
 {
 [e :U _Timer1_OverflowCallbackRegister ]
-"169
-[; ;mcc_generated_files/timer/src/tmr1.c: 169: void Timer1_OverflowCallbackRegister(void (* CallbackHandler)(void))
-[v _CallbackHandler `*F15940 ~T0 @X0 1 r1 ]
-"170
-[; ;mcc_generated_files/timer/src/tmr1.c: 170: {
-[f ]
 "171
-[; ;mcc_generated_files/timer/src/tmr1.c: 171:     Timer1_OverflowCallback = CallbackHandler;
-[e = _Timer1_OverflowCallback _CallbackHandler ]
+[; ;mcc_generated_files/timer/src/tmr1.c: 171: void Timer1_OverflowCallbackRegister(void (* CallbackHandler)(void))
+[v _CallbackHandler `*F15941 ~T0 @X0 1 r1 ]
 "172
-[; ;mcc_generated_files/timer/src/tmr1.c: 172: }
+[; ;mcc_generated_files/timer/src/tmr1.c: 172: {
+[f ]
+"173
+[; ;mcc_generated_files/timer/src/tmr1.c: 173:     Timer1_OverflowCallback = CallbackHandler;
+[e = _Timer1_OverflowCallback _CallbackHandler ]
+"174
+[; ;mcc_generated_files/timer/src/tmr1.c: 174: }
 [e :UE 2206 ]
 }
-"174
-[; ;mcc_generated_files/timer/src/tmr1.c: 174: static void Timer1_DefaultOverflowCallback(void)
+"176
+[; ;mcc_generated_files/timer/src/tmr1.c: 176: static void Timer1_DefaultOverflowCallback(void)
 [v _Timer1_DefaultOverflowCallback `(v ~T0 @X0 1 sf ]
-"175
-[; ;mcc_generated_files/timer/src/tmr1.c: 175: {
+"177
+[; ;mcc_generated_files/timer/src/tmr1.c: 177: {
 {
 [e :U _Timer1_DefaultOverflowCallback ]
 [f ]
-"178
-[; ;mcc_generated_files/timer/src/tmr1.c: 178: }
+"180
+[; ;mcc_generated_files/timer/src/tmr1.c: 180: }
 [e :UE 2207 ]
 }
-"180
-[; ;mcc_generated_files/timer/src/tmr1.c: 180: _Bool Timer1_HasOverflowOccured(void)
+"182
+[; ;mcc_generated_files/timer/src/tmr1.c: 182: _Bool Timer1_HasOverflowOccured(void)
 [v _Timer1_HasOverflowOccured `(a ~T0 @X0 1 ef ]
-"181
-[; ;mcc_generated_files/timer/src/tmr1.c: 181: {
+"183
+[; ;mcc_generated_files/timer/src/tmr1.c: 183: {
 {
 [e :U _Timer1_HasOverflowOccured ]
 [f ]
-"182
-[; ;mcc_generated_files/timer/src/tmr1.c: 182:     return(PIR4bits.TMR1IF);
+"184
+[; ;mcc_generated_files/timer/src/tmr1.c: 184:     return(PIR4bits.TMR1IF);
 [e ) -> . . _PIR4bits 0 0 `a ]
 [e $UE 2208  ]
-"183
-[; ;mcc_generated_files/timer/src/tmr1.c: 183: }
+"185
+[; ;mcc_generated_files/timer/src/tmr1.c: 185: }
 [e :UE 2208 ]
 }
 [v $root$_Timer1_GateISR `(v ~T0 @X0 0 e ]
-"185
-[; ;mcc_generated_files/timer/src/tmr1.c: 185: void __attribute__((picinterrupt(("irq(TMR1G),base(8),low_priority")))) Timer1_GateISR()
+"187
+[; ;mcc_generated_files/timer/src/tmr1.c: 187: void __attribute__((picinterrupt(("irq(TMR1G),base(8),low_priority")))) Timer1_GateISR()
 [v _Timer1_GateISR `(v ~T2 @X0 1 ef ]
-"186
-[; ;mcc_generated_files/timer/src/tmr1.c: 186: {
+"188
+[; ;mcc_generated_files/timer/src/tmr1.c: 188: {
 {
 [e :U _Timer1_GateISR ]
 [f ]
-"188
-[; ;mcc_generated_files/timer/src/tmr1.c: 188:     PIR4bits.TMR1GIF = 0;
+"190
+[; ;mcc_generated_files/timer/src/tmr1.c: 190:     PIR4bits.TMR1GIF = 0;
 [e = . . _PIR4bits 0 1 -> -> 0 `i `uc ]
-"189
-[; ;mcc_generated_files/timer/src/tmr1.c: 189: }
+"191
+[; ;mcc_generated_files/timer/src/tmr1.c: 191: }
 [e :UE 2209 ]
 }

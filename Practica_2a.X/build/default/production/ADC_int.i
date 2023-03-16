@@ -28032,21 +28032,5 @@ void ADC_int(void)
 
 
     }
-    else
-    {
-
-
-        LATEbits.LATE0 = 0;
-
-        Timer2_Start();
-        SPI1_ByteWrite(0b10110000 | ADRESH);
-        SPI1_ByteWrite(ADRESL);
-        UART1_Write(valp[ADRESH & 0b1111]);
-        UART1_Write(valp[(ADRESL >> 4) & 0b1111]);
-        UART1_Write(valp[ADRESL & 0b1111]);
-
-
-
-        UART1_Write('\n');
-    }
+# 52 "ADC_int.c"
 }
