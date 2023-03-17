@@ -27042,14 +27042,17 @@ unsigned char __t3rd16on(void);
 void Timer_int(void)
 {
 
-    LATDbits.LATD0 = !LATDbits.LATD0;
     static int count = 0;
+
     count++;
+
+
 
     if(count == PERIOD)
     {
 
         count = 0;
+
         ADCC_StartConversion(channel_ANA0);
     }
 }

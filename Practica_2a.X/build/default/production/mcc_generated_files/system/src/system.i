@@ -27216,7 +27216,7 @@ extern const struct SPI_INTERFACE SPI1;
 
 void SPI1_Initialize(void);
 # 74 "mcc_generated_files/system/src/../../spi/spi1.h"
-_Bool SPI1_Open(uint8_t spiConfigIndex);
+_Bool SPI1_Open();
 
 
 

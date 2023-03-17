@@ -41,35 +41,25 @@
 
 int main(void)
 {
-    
+    //Inicializamos pines, perifericos y interrupciones
     SYSTEM_Initialize();
+    SPI1_Open();
     
-    
+    //Usamos punteros a funciones para manejar algunos procesos
+    //Las siguientes interfaces almacenan el valor
     ADCC_SetADIInterruptHandler(ADC_int);
     Timer_OverflowCallbackRegister(Timer_int);
-    SPI1_Open(0);
-    LATBbits.LATB4 = 1;
-    LATEbits.LATE0 = 1;
     
+    LATBbits.LATB4 = 1;     //LDAC
+    LATEbits.LATE0 = 1;     //CS
     
-
-    // If using interrupts in PIC18 High/Low Priority Mode you need to enable the Global High and Low Interrupts 
-    // If using interrupts in PIC Mid-Range Compatibility Mode you need to enable the Global Interrupts 
-    // Use the following macros to: 
-
-    // Enable the Global High Interrupts 
+    // Habilitamos las interrupciones globales de alta prioridad
     INTERRUPT_GlobalInterruptHighEnable(); 
 
-    // Disable the Global High Interrupts 
-    //INTERRUPT_GlobalInterruptHighDisable(); 
-
-    // Enable the Global Low Interrupts 
+    // Habilitamos las interrupciones globales de baja prioridad
     INTERRUPT_GlobalInterruptLowEnable(); 
 
-    // Disable the Global Low Interrupts 
-    //INTERRUPT_GlobalInterruptLowDisable(); 
-
-
+    //Solo se manejan interrupciones, loop vacio
     while(1)
     {
     }    

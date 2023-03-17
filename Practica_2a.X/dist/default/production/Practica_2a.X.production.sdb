@@ -62,7 +62,7 @@ Timer2_UART1_TX_EDGE 22
 Timer2_UART2_RX_EDGE 23
 Timer2_UART2_TX_EDGE 24
 ]
-"20 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\ADC_int.c
+"18 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\ADC_int.c
 [e E15847 . `uc
 channel_VSS 59
 channel_Temp 60
@@ -72,7 +72,7 @@ channel_FVR_Buffer2 63
 channel_ANA0 0
 channel_ANA1 1
 ]
-"18 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\Timer_int.c
+"21 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\Timer_int.c
 [e E41 . `uc
 channel_VSS 59
 channel_Temp 60
@@ -267,7 +267,7 @@ channel_ANA1 1
 [v _PERIOD PERIOD `us  1 e 2 0 ]
 "8 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\ADC_int.c
 [v _valp valp `[16]uc  1 s 16 valp ]
-[s S993 . 1 `uc 1 SWIP 1 0 :1:0 
+[s S992 . 1 `uc 1 SWIP 1 0 :1:0 
 `uc 1 HLVDIP 1 0 :1:1 
 `uc 1 OSFIP 1 0 :1:2 
 `uc 1 CSWIP 1 0 :1:3 
@@ -277,9 +277,9 @@ channel_ANA1 1
 `uc 1 IOCIP 1 0 :1:7 
 ]
 "2782 D:/Program Files/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h
-[u S1002 . 1 `S993 1 . 1 0 ]
-[v _IPR0bits IPR0bits `VES1002  1 e 1 @14720 ]
-[s S1014 . 1 `uc 1 INT0IP 1 0 :1:0 
+[u S1001 . 1 `S992 1 . 1 0 ]
+[v _IPR0bits IPR0bits `VES1001  1 e 1 @14720 ]
+[s S1013 . 1 `uc 1 INT0IP 1 0 :1:0 
 `uc 1 ZCDIP 1 0 :1:1 
 `uc 1 ADIP 1 0 :1:2 
 `uc 1 ADTIP 1 0 :1:3 
@@ -289,9 +289,9 @@ channel_ANA1 1
 `uc 1 SMT1PWAIP 1 0 :1:7 
 ]
 "2844
-[u S1023 . 1 `S1014 1 . 1 0 ]
-[v _IPR1bits IPR1bits `VES1023  1 e 1 @14721 ]
-[s S951 . 1 `uc 1 I2C1TXIP 1 0 :1:0 
+[u S1022 . 1 `S1013 1 . 1 0 ]
+[v _IPR1bits IPR1bits `VES1022  1 e 1 @14721 ]
+[s S950 . 1 `uc 1 I2C1TXIP 1 0 :1:0 
 `uc 1 I2C1IP 1 0 :1:1 
 `uc 1 I2C1EIP 1 0 :1:2 
 `uc 1 U1RXIP 1 0 :1:3 
@@ -301,9 +301,9 @@ channel_ANA1 1
 `uc 1 TMR0IP 1 0 :1:7 
 ]
 "2968
-[u S960 . 1 `S951 1 . 1 0 ]
-[v _IPR3bits IPR3bits `VES960  1 e 1 @14723 ]
-[s S972 . 1 `uc 1 TMR1IP 1 0 :1:0 
+[u S959 . 1 `S950 1 . 1 0 ]
+[v _IPR3bits IPR3bits `VES959  1 e 1 @14723 ]
+[s S971 . 1 `uc 1 TMR1IP 1 0 :1:0 
 `uc 1 TMR1GIP 1 0 :1:1 
 `uc 1 TMR2IP 1 0 :1:2 
 `uc 1 CCP1IP 1 0 :1:3 
@@ -313,8 +313,8 @@ channel_ANA1 1
 `uc 1 CLC1IP 1 0 :1:7 
 ]
 "3030
-[u S981 . 1 `S972 1 . 1 0 ]
-[v _IPR4bits IPR4bits `VES981  1 e 1 @14724 ]
+[u S980 . 1 `S971 1 . 1 0 ]
+[v _IPR4bits IPR4bits `VES980  1 e 1 @14724 ]
 [s S78 . 1 `uc 1 INT0IE 1 0 :1:0 
 `uc 1 ZCDIE 1 0 :1:1 
 `uc 1 ADIE 1 0 :1:2 
@@ -327,7 +327,7 @@ channel_ANA1 1
 "3409
 [u S87 . 1 `S78 1 . 1 0 ]
 [v _PIE1bits PIE1bits `VES87  1 e 1 @14737 ]
-[s S1315 . 1 `uc 1 I2C1TXIE 1 0 :1:0 
+[s S1314 . 1 `uc 1 I2C1TXIE 1 0 :1:0 
 `uc 1 I2C1IE 1 0 :1:1 
 `uc 1 I2C1EIE 1 0 :1:2 
 `uc 1 U1RXIE 1 0 :1:3 
@@ -337,9 +337,9 @@ channel_ANA1 1
 `uc 1 TMR0IE 1 0 :1:7 
 ]
 "3533
-[u S1324 . 1 `S1315 1 . 1 0 ]
-[v _PIE3bits PIE3bits `VES1324  1 e 1 @14739 ]
-[s S1506 . 1 `uc 1 TMR1IE 1 0 :1:0 
+[u S1323 . 1 `S1314 1 . 1 0 ]
+[v _PIE3bits PIE3bits `VES1323  1 e 1 @14739 ]
+[s S1505 . 1 `uc 1 TMR1IE 1 0 :1:0 
 `uc 1 TMR1GIE 1 0 :1:1 
 `uc 1 TMR2IE 1 0 :1:2 
 `uc 1 CCP1IE 1 0 :1:3 
@@ -349,8 +349,8 @@ channel_ANA1 1
 `uc 1 CLC1IE 1 0 :1:7 
 ]
 "3595
-[u S1515 . 1 `S1506 1 . 1 0 ]
-[v _PIE4bits PIE4bits `VES1515  1 e 1 @14740 ]
+[u S1514 . 1 `S1505 1 . 1 0 ]
+[v _PIE4bits PIE4bits `VES1514  1 e 1 @14740 ]
 [s S47 . 1 `uc 1 INT0IF 1 0 :1:0 
 `uc 1 ZCDIF 1 0 :1:1 
 `uc 1 ADIF 1 0 :1:2 
@@ -375,7 +375,7 @@ channel_ANA1 1
 "4036
 [u S720 . 1 `S711 1 . 1 0 ]
 [v _PIR2bits PIR2bits `VES720  1 e 1 @14754 ]
-[s S1294 . 1 `uc 1 I2C1TXIF 1 0 :1:0 
+[s S1293 . 1 `uc 1 I2C1TXIF 1 0 :1:0 
 `uc 1 I2C1IF 1 0 :1:1 
 `uc 1 I2C1EIF 1 0 :1:2 
 `uc 1 U1RXIF 1 0 :1:3 
@@ -385,9 +385,9 @@ channel_ANA1 1
 `uc 1 TMR0IF 1 0 :1:7 
 ]
 "4098
-[u S1303 . 1 `S1294 1 . 1 0 ]
-[v _PIR3bits PIR3bits `VES1303  1 e 1 @14755 ]
-[s S1485 . 1 `uc 1 TMR1IF 1 0 :1:0 
+[u S1302 . 1 `S1293 1 . 1 0 ]
+[v _PIR3bits PIR3bits `VES1302  1 e 1 @14755 ]
+[s S1484 . 1 `uc 1 TMR1IF 1 0 :1:0 
 `uc 1 TMR1GIF 1 0 :1:1 
 `uc 1 TMR2IF 1 0 :1:2 
 `uc 1 CCP1IF 1 0 :1:3 
@@ -397,9 +397,9 @@ channel_ANA1 1
 `uc 1 CLC1IF 1 0 :1:7 
 ]
 "4160
-[u S1494 . 1 `S1485 1 . 1 0 ]
-[v _PIR4bits PIR4bits `VES1494  1 e 1 @14756 ]
-[s S1057 . 1 `uc 1 INT1IF 1 0 :1:0 
+[u S1493 . 1 `S1484 1 . 1 0 ]
+[v _PIR4bits PIR4bits `VES1493  1 e 1 @14756 ]
+[s S1056 . 1 `uc 1 INT1IF 1 0 :1:0 
 `uc 1 C2IF 1 0 :1:1 
 `uc 1 DMA2SCNTIF 1 0 :1:2 
 `uc 1 DMA2DCNTIF 1 0 :1:3 
@@ -409,9 +409,9 @@ channel_ANA1 1
 `uc 1 I2C2TXIF 1 0 :1:7 
 ]
 "4217
-[u S1066 . 1 `S1057 1 . 1 0 ]
-[v _PIR5bits PIR5bits `VES1066  1 e 1 @14757 ]
-[s S1088 . 1 `uc 1 TMR4IF 1 0 :1:0 
+[u S1065 . 1 `S1056 1 . 1 0 ]
+[v _PIR5bits PIR5bits `VES1065  1 e 1 @14757 ]
+[s S1087 . 1 `uc 1 TMR4IF 1 0 :1:0 
 `uc 1 CCP2IF 1 0 :1:1 
 `uc 1 . 1 0 :1:2 
 `uc 1 CWG2IF 1 0 :1:3 
@@ -419,8 +419,8 @@ channel_ANA1 1
 `uc 1 INT2IF 1 0 :1:5 
 ]
 "4339
-[u S1095 . 1 `S1088 1 . 1 0 ]
-[v _PIR7bits PIR7bits `VES1095  1 e 1 @14759 ]
+[u S1094 . 1 `S1087 1 . 1 0 ]
+[v _PIR7bits PIR7bits `VES1094  1 e 1 @14759 ]
 "4958
 [v _OSCCON1 OSCCON1 `VEuc  1 e 1 @14809 ]
 "5098
@@ -608,34 +608,34 @@ channel_ANA1 1
 [v _U1P3H U1P3H `VEuc  1 e 1 @15857 ]
 "26766
 [v _U1CON0 U1CON0 `VEuc  1 e 1 @15858 ]
-[s S2146 . 1 `uc 1 MODE0 1 0 :1:0 
+[s S2145 . 1 `uc 1 MODE0 1 0 :1:0 
 `uc 1 MODE1 1 0 :1:1 
 `uc 1 MODE2 1 0 :1:2 
 `uc 1 MODE3 1 0 :1:3 
 ]
 "26799
-[s S2151 . 1 `uc 1 U1MODE 1 0 :4:0 
+[s S2150 . 1 `uc 1 U1MODE 1 0 :4:0 
 `uc 1 U1RXEN 1 0 :1:4 
 `uc 1 U1TXEN 1 0 :1:5 
 `uc 1 U1ABDEN 1 0 :1:6 
 `uc 1 U1BRGS 1 0 :1:7 
 ]
-[s S2157 . 1 `uc 1 U1MODE0 1 0 :1:0 
+[s S2156 . 1 `uc 1 U1MODE0 1 0 :1:0 
 `uc 1 U1MODE1 1 0 :1:1 
 `uc 1 U1MODE2 1 0 :1:2 
 `uc 1 U1MODE3 1 0 :1:3 
 ]
-[s S2162 . 1 `uc 1 MODE 1 0 :4:0 
+[s S2161 . 1 `uc 1 MODE 1 0 :4:0 
 `uc 1 RXEN 1 0 :1:4 
 `uc 1 TXEN 1 0 :1:5 
 `uc 1 ABDEN 1 0 :1:6 
 `uc 1 BRGS 1 0 :1:7 
 ]
-[u S2168 . 1 `S2146 1 . 1 0 `S2151 1 . 1 0 `S2157 1 . 1 0 `S2162 1 . 1 0 ]
-[v _U1CON0bits U1CON0bits `VES2168  1 e 1 @15858 ]
+[u S2167 . 1 `S2145 1 . 1 0 `S2150 1 . 1 0 `S2156 1 . 1 0 `S2161 1 . 1 0 ]
+[v _U1CON0bits U1CON0bits `VES2167  1 e 1 @15858 ]
 "26894
 [v _U1CON1 U1CON1 `VEuc  1 e 1 @15859 ]
-[s S2110 . 1 `uc 1 SENDB 1 0 :1:0 
+[s S2109 . 1 `uc 1 SENDB 1 0 :1:0 
 `uc 1 BRKOVR 1 0 :1:1 
 `uc 1 . 1 0 :1:2 
 `uc 1 RXBIMD 1 0 :1:3 
@@ -644,7 +644,7 @@ channel_ANA1 1
 `uc 1 ON 1 0 :1:7 
 ]
 "26919
-[s S2118 . 1 `uc 1 U1SENDB 1 0 :1:0 
+[s S2117 . 1 `uc 1 U1SENDB 1 0 :1:0 
 `uc 1 U1BRKOVR 1 0 :1:1 
 `uc 1 . 1 0 :1:2 
 `uc 1 U1RXBIMD 1 0 :1:3 
@@ -652,8 +652,8 @@ channel_ANA1 1
 `uc 1 . 1 0 :2:5 
 `uc 1 U1ON 1 0 :1:7 
 ]
-[u S2126 . 1 `S2110 1 . 1 0 `S2118 1 . 1 0 ]
-[v _U1CON1bits U1CON1bits `VES2126  1 e 1 @15859 ]
+[u S2125 . 1 `S2109 1 . 1 0 `S2117 1 . 1 0 ]
+[v _U1CON1bits U1CON1bits `VES2125  1 e 1 @15859 ]
 "26974
 [v _U1CON2 U1CON2 `VEuc  1 e 1 @15860 ]
 "27123
@@ -664,24 +664,24 @@ channel_ANA1 1
 [v _U1FIFO U1FIFO `VEuc  1 e 1 @15863 ]
 "27293
 [v _U1UIR U1UIR `VEuc  1 e 1 @15864 ]
-[s S2196 . 1 `uc 1 . 1 0 :2:0 
+[s S2195 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 ABDIE 1 0 :1:2 
 `uc 1 . 1 0 :3:3 
 `uc 1 ABDIF 1 0 :1:6 
 `uc 1 WUIF 1 0 :1:7 
 ]
 "27314
-[s S2202 . 1 `uc 1 . 1 0 :2:0 
+[s S2201 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 U1ABDIE 1 0 :1:2 
 `uc 1 . 1 0 :3:3 
 `uc 1 U1ABDIF 1 0 :1:6 
 `uc 1 U1WUIF 1 0 :1:7 
 ]
-[u S2208 . 1 `S2196 1 . 1 0 `S2202 1 . 1 0 ]
-[v _U1UIRbits U1UIRbits `VES2208  1 e 1 @15864 ]
+[u S2207 . 1 `S2195 1 . 1 0 `S2201 1 . 1 0 ]
+[v _U1UIRbits U1UIRbits `VES2207  1 e 1 @15864 ]
 "27349
 [v _U1ERRIR U1ERRIR `VEuc  1 e 1 @15865 ]
-[s S2224 . 1 `uc 1 TXCIF 1 0 :1:0 
+[s S2223 . 1 `uc 1 TXCIF 1 0 :1:0 
 `uc 1 RXFOIF 1 0 :1:1 
 `uc 1 RXBKIF 1 0 :1:2 
 `uc 1 FERIF 1 0 :1:3 
@@ -691,7 +691,7 @@ channel_ANA1 1
 `uc 1 TXMTIF 1 0 :1:7 
 ]
 "27376
-[s S2233 . 1 `uc 1 U1TXCIF 1 0 :1:0 
+[s S2232 . 1 `uc 1 U1TXCIF 1 0 :1:0 
 `uc 1 U1RXFOIF 1 0 :1:1 
 `uc 1 U1RXBKIF 1 0 :1:2 
 `uc 1 U1FERIF 1 0 :1:3 
@@ -700,8 +700,8 @@ channel_ANA1 1
 `uc 1 U1PERIF 1 0 :1:6 
 `uc 1 U1TXMTIF 1 0 :1:7 
 ]
-[u S2242 . 1 `S2224 1 . 1 0 `S2233 1 . 1 0 ]
-[v _U1ERRIRbits U1ERRIRbits `VES2242  1 e 1 @15865 ]
+[u S2241 . 1 `S2223 1 . 1 0 `S2232 1 . 1 0 ]
+[v _U1ERRIRbits U1ERRIRbits `VES2241  1 e 1 @15865 ]
 "27461
 [v _U1ERRIE U1ERRIE `VEuc  1 e 1 @15866 ]
 "28240
@@ -935,17 +935,17 @@ channel_ANA1 1
 [v _PR2 PR2 `VEuc  1 e 1 @16299 ]
 "43403
 [v _T2CON T2CON `VEuc  1 e 1 @16300 ]
-[s S1661 . 1 `uc 1 OUTPS 1 0 :4:0 
+[s S1660 . 1 `uc 1 OUTPS 1 0 :4:0 
 `uc 1 CKPS 1 0 :3:4 
 `uc 1 ON 1 0 :1:7 
 ]
 "43439
-[s S1665 . 1 `uc 1 T2OUTPS 1 0 :4:0 
+[s S1664 . 1 `uc 1 T2OUTPS 1 0 :4:0 
 `uc 1 T2CKPS 1 0 :3:4 
 `uc 1 T2ON 1 0 :1:7 
 ]
 "43439
-[s S1669 . 1 `uc 1 T2OUTPS0 1 0 :1:0 
+[s S1668 . 1 `uc 1 T2OUTPS0 1 0 :1:0 
 `uc 1 T2OUTPS1 1 0 :1:1 
 `uc 1 T2OUTPS2 1 0 :1:2 
 `uc 1 T2OUTPS3 1 0 :1:3 
@@ -954,7 +954,7 @@ channel_ANA1 1
 `uc 1 T2CKPS2 1 0 :1:6 
 ]
 "43439
-[s S1677 . 1 `uc 1 OUTPS0 1 0 :1:0 
+[s S1676 . 1 `uc 1 OUTPS0 1 0 :1:0 
 `uc 1 OUTPS1 1 0 :1:1 
 `uc 1 OUTPS2 1 0 :1:2 
 `uc 1 OUTPS3 1 0 :1:3 
@@ -964,108 +964,108 @@ channel_ANA1 1
 `uc 1 TMR2ON 1 0 :1:7 
 ]
 "43439
-[u S1686 . 1 `S1661 1 . 1 0 `S1665 1 . 1 0 `S1669 1 . 1 0 `S1677 1 . 1 0 ]
+[u S1685 . 1 `S1660 1 . 1 0 `S1664 1 . 1 0 `S1668 1 . 1 0 `S1676 1 . 1 0 ]
 "43439
 "43439
-[v _T2CONbits T2CONbits `VES1686  1 e 1 @16300 ]
+[v _T2CONbits T2CONbits `VES1685  1 e 1 @16300 ]
 "43549
 [v _T2HLT T2HLT `VEuc  1 e 1 @16301 ]
-[s S1550 . 1 `uc 1 MODE 1 0 :5:0 
+[s S1549 . 1 `uc 1 MODE 1 0 :5:0 
 `uc 1 CKSYNC 1 0 :1:5 
 `uc 1 CKPOL 1 0 :1:6 
 `uc 1 PSYNC 1 0 :1:7 
 ]
 "43582
-[s S1555 . 1 `uc 1 MODE0 1 0 :1:0 
+[s S1554 . 1 `uc 1 MODE0 1 0 :1:0 
 `uc 1 MODE1 1 0 :1:1 
 `uc 1 MODE2 1 0 :1:2 
 `uc 1 MODE3 1 0 :1:3 
 `uc 1 MODE4 1 0 :1:4 
 ]
 "43582
-[s S1561 . 1 `uc 1 T2MODE 1 0 :5:0 
+[s S1560 . 1 `uc 1 T2MODE 1 0 :5:0 
 `uc 1 T2CKSYNC 1 0 :1:5 
 `uc 1 T2CKPOL 1 0 :1:6 
 `uc 1 T2PSYNC 1 0 :1:7 
 ]
 "43582
-[s S1566 . 1 `uc 1 T2MODE0 1 0 :1:0 
+[s S1565 . 1 `uc 1 T2MODE0 1 0 :1:0 
 `uc 1 T2MODE1 1 0 :1:1 
 `uc 1 T2MODE2 1 0 :1:2 
 `uc 1 T2MODE3 1 0 :1:3 
 `uc 1 T2MODE4 1 0 :1:4 
 ]
 "43582
-[u S1572 . 1 `S1550 1 . 1 0 `S1555 1 . 1 0 `S1561 1 . 1 0 `S1566 1 . 1 0 ]
+[u S1571 . 1 `S1549 1 . 1 0 `S1554 1 . 1 0 `S1560 1 . 1 0 `S1565 1 . 1 0 ]
 "43582
 "43582
-[v _T2HLTbits T2HLTbits `VES1572  1 e 1 @16301 ]
+[v _T2HLTbits T2HLTbits `VES1571  1 e 1 @16301 ]
 "43677
 [v _T2CLKCON T2CLKCON `VEuc  1 e 1 @16302 ]
 "43835
 [v _T2RST T2RST `VEuc  1 e 1 @16303 ]
-[s S1623 . 1 `uc 1 RSEL 1 0 :5:0 
+[s S1622 . 1 `uc 1 RSEL 1 0 :5:0 
 ]
 "43862
-[s S1625 . 1 `uc 1 RSEL0 1 0 :1:0 
+[s S1624 . 1 `uc 1 RSEL0 1 0 :1:0 
 `uc 1 RSEL1 1 0 :1:1 
 `uc 1 RSEL2 1 0 :1:2 
 `uc 1 RSEL3 1 0 :1:3 
 `uc 1 RSEL4 1 0 :1:4 
 ]
 "43862
-[s S1631 . 1 `uc 1 T2RSEL 1 0 :5:0 
+[s S1630 . 1 `uc 1 T2RSEL 1 0 :5:0 
 ]
 "43862
-[s S1633 . 1 `uc 1 T2RSEL0 1 0 :1:0 
+[s S1632 . 1 `uc 1 T2RSEL0 1 0 :1:0 
 `uc 1 T2RSEL1 1 0 :1:1 
 `uc 1 T2RSEL2 1 0 :1:2 
 `uc 1 T2RSEL3 1 0 :1:3 
 `uc 1 T2RSEL4 1 0 :1:4 
 ]
 "43862
-[u S1639 . 1 `S1623 1 . 1 0 `S1625 1 . 1 0 `S1631 1 . 1 0 `S1633 1 . 1 0 ]
+[u S1638 . 1 `S1622 1 . 1 0 `S1624 1 . 1 0 `S1630 1 . 1 0 `S1632 1 . 1 0 ]
 "43862
 "43862
-[v _T2RSTbits T2RSTbits `VES1639  1 e 1 @16303 ]
+[v _T2RSTbits T2RSTbits `VES1638  1 e 1 @16303 ]
 "44803
 [v _TMR0L TMR0L `VEuc  1 e 1 @16310 ]
 "44941
 [v _TMR0H TMR0H `VEuc  1 e 1 @16311 ]
 "45195
 [v _T0CON0 T0CON0 `VEuc  1 e 1 @16312 ]
-[s S1337 . 1 `uc 1 OUTPS 1 0 :4:0 
+[s S1336 . 1 `uc 1 OUTPS 1 0 :4:0 
 `uc 1 MD16 1 0 :1:4 
 `uc 1 OUT 1 0 :1:5 
 `uc 1 . 1 0 :1:6 
 `uc 1 EN 1 0 :1:7 
 ]
 "45223
-[s S1343 . 1 `uc 1 T0OUTPS 1 0 :4:0 
+[s S1342 . 1 `uc 1 T0OUTPS 1 0 :4:0 
 `uc 1 T0MD16 1 0 :1:4 
 `uc 1 T0OUT 1 0 :1:5 
 `uc 1 . 1 0 :1:6 
 `uc 1 T0EN 1 0 :1:7 
 ]
 "45223
-[s S1349 . 1 `uc 1 OUTPS0 1 0 :1:0 
+[s S1348 . 1 `uc 1 OUTPS0 1 0 :1:0 
 `uc 1 OUTPS1 1 0 :1:1 
 `uc 1 OUTPS2 1 0 :1:2 
 `uc 1 OUTPS3 1 0 :1:3 
 `uc 1 T016BIT 1 0 :1:4 
 ]
 "45223
-[u S1355 . 1 `S1337 1 . 1 0 `S1343 1 . 1 0 `S1349 1 . 1 0 ]
+[u S1354 . 1 `S1336 1 . 1 0 `S1342 1 . 1 0 `S1348 1 . 1 0 ]
 "45223
 "45223
-[v _T0CON0bits T0CON0bits `VES1355  1 e 1 @16312 ]
+[v _T0CON0bits T0CON0bits `VES1354  1 e 1 @16312 ]
 "45293
 [v _T0CON1 T0CON1 `VEuc  1 e 1 @16313 ]
 "45435
 [v _LATA LATA `VEuc  1 e 1 @16314 ]
 "45547
 [v _LATB LATB `VEuc  1 e 1 @16315 ]
-[s S1739 . 1 `uc 1 LATB0 1 0 :1:0 
+[s S1738 . 1 `uc 1 LATB0 1 0 :1:0 
 `uc 1 LATB1 1 0 :1:1 
 `uc 1 LATB2 1 0 :1:2 
 `uc 1 LATB3 1 0 :1:3 
@@ -1075,7 +1075,7 @@ channel_ANA1 1
 `uc 1 LATB7 1 0 :1:7 
 ]
 "45574
-[s S1748 . 1 `uc 1 LB0 1 0 :1:0 
+[s S1747 . 1 `uc 1 LB0 1 0 :1:0 
 `uc 1 LB1 1 0 :1:1 
 `uc 1 LB2 1 0 :1:2 
 `uc 1 LB3 1 0 :1:3 
@@ -1085,54 +1085,30 @@ channel_ANA1 1
 `uc 1 LB7 1 0 :1:7 
 ]
 "45574
-[u S1757 . 1 `S1739 1 . 1 0 `S1748 1 . 1 0 ]
+[u S1756 . 1 `S1738 1 . 1 0 `S1747 1 . 1 0 ]
 "45574
 "45574
-[v _LATBbits LATBbits `VES1757  1 e 1 @16315 ]
+[v _LATBbits LATBbits `VES1756  1 e 1 @16315 ]
 "45659
 [v _LATC LATC `VEuc  1 e 1 @16316 ]
 "45771
 [v _LATD LATD `VEuc  1 e 1 @16317 ]
-[s S2564 . 1 `uc 1 LATD0 1 0 :1:0 
-`uc 1 LATD1 1 0 :1:1 
-`uc 1 LATD2 1 0 :1:2 
-`uc 1 LATD3 1 0 :1:3 
-`uc 1 LATD4 1 0 :1:4 
-`uc 1 LATD5 1 0 :1:5 
-`uc 1 LATD6 1 0 :1:6 
-`uc 1 LATD7 1 0 :1:7 
-]
-"45798
-[s S2573 . 1 `uc 1 LD0 1 0 :1:0 
-`uc 1 LD1 1 0 :1:1 
-`uc 1 LD2 1 0 :1:2 
-`uc 1 LD3 1 0 :1:3 
-`uc 1 LD4 1 0 :1:4 
-`uc 1 LD5 1 0 :1:5 
-`uc 1 LD6 1 0 :1:6 
-`uc 1 LD7 1 0 :1:7 
-]
-"45798
-[u S2582 . 1 `S2564 1 . 1 0 `S2573 1 . 1 0 ]
-"45798
-"45798
-[v _LATDbits LATDbits `VES2582  1 e 1 @16317 ]
 "45883
 [v _LATE LATE `VEuc  1 e 1 @16318 ]
-[s S1719 . 1 `uc 1 LATE0 1 0 :1:0 
+[s S1718 . 1 `uc 1 LATE0 1 0 :1:0 
 `uc 1 LATE1 1 0 :1:1 
 `uc 1 LATE2 1 0 :1:2 
 ]
 "45900
-[s S1723 . 1 `uc 1 LE0 1 0 :1:0 
+[s S1722 . 1 `uc 1 LE0 1 0 :1:0 
 `uc 1 LE1 1 0 :1:1 
 `uc 1 LE2 1 0 :1:2 
 ]
 "45900
-[u S1727 . 1 `S1719 1 . 1 0 `S1723 1 . 1 0 ]
+[u S1726 . 1 `S1718 1 . 1 0 `S1722 1 . 1 0 ]
 "45900
 "45900
-[v _LATEbits LATEbits `VES1727  1 e 1 @16318 ]
+[v _LATEbits LATEbits `VES1726  1 e 1 @16318 ]
 "45935
 [v _TRISA TRISA `VEuc  1 e 1 @16322 ]
 "45997
@@ -1157,7 +1133,7 @@ channel_ANA1 1
 [v _TRISD TRISD `VEuc  1 e 1 @16325 ]
 "46183
 [v _TRISE TRISE `VEuc  1 e 1 @16326 ]
-[s S913 . 1 `uc 1 INT0EDG 1 0 :1:0 
+[s S912 . 1 `uc 1 INT0EDG 1 0 :1:0 
 `uc 1 INT1EDG 1 0 :1:1 
 `uc 1 INT2EDG 1 0 :1:2 
 `uc 1 . 1 0 :2:3 
@@ -1166,23 +1142,23 @@ channel_ANA1 1
 `uc 1 GIE 1 0 :1:7 
 ]
 "46521
-[s S921 . 1 `uc 1 . 1 0 :7:0 
+[s S920 . 1 `uc 1 . 1 0 :7:0 
 `uc 1 GIEH 1 0 :1:7 
 ]
 "46521
-[u S924 . 1 `S913 1 . 1 0 `S921 1 . 1 0 ]
+[u S923 . 1 `S912 1 . 1 0 `S920 1 . 1 0 ]
 "46521
 "46521
-[v _INTCON0bits INTCON0bits `VES924  1 e 1 @16338 ]
+[v _INTCON0bits INTCON0bits `VES923  1 e 1 @16338 ]
 "46597
 [v _IVTLOCK IVTLOCK `VEuc  1 e 1 @16340 ]
-[s S941 . 1 `uc 1 IVTLOCKED 1 0 :1:0 
+[s S940 . 1 `uc 1 IVTLOCKED 1 0 :1:0 
 ]
 "46607
-[u S943 . 1 `S941 1 . 1 0 ]
+[u S942 . 1 `S940 1 . 1 0 ]
 "46607
 "46607
-[v _IVTLOCKbits IVTLOCKbits `VES943  1 e 1 @16340 ]
+[v _IVTLOCKbits IVTLOCKbits `VES942  1 e 1 @16340 ]
 "46626
 [v _IVTBASEL IVTBASEL `VEuc  1 e 1 @16341 ]
 "46688
@@ -1219,24 +1195,24 @@ channel_ANA1 1
 [v _uart1RxTail uart1RxTail `VEuc  1 s 1 uart1RxTail ]
 "90
 [v _uart1RxBuffer uart1RxBuffer `VE[8]uc  1 s 8 uart1RxBuffer ]
-[s S2044 . 1 `uc 1 perr 1 0 :1:0 
+[s S2043 . 1 `uc 1 perr 1 0 :1:0 
 `uc 1 ferr 1 0 :1:1 
 `uc 1 oerr 1 0 :1:2 
 `uc 1 reserved 1 0 :5:3 
 ]
 "91
-[u S2049 . 2 `S2044 1 . 1 0 `ui 1 status 2 0 ]
-[v _uart1RxStatusBuffer uart1RxStatusBuffer `VE[8]S2049  1 s 16 uart1RxStatusBuffer ]
+[u S2048 . 2 `S2043 1 . 1 0 `ui 1 status 2 0 ]
+[v _uart1RxStatusBuffer uart1RxStatusBuffer `VE[8]S2048  1 s 16 uart1RxStatusBuffer ]
 "92
 [v _uart1RxCount uart1RxCount `VEuc  1 e 1 0 ]
-[s S2044 . 1 `uc 1 perr 1 0 :1:0 
+[s S2043 . 1 `uc 1 perr 1 0 :1:0 
 `uc 1 ferr 1 0 :1:1 
 `uc 1 oerr 1 0 :1:2 
 `uc 1 reserved 1 0 :5:3 
 ]
 "94
-[u S2049 . 2 `S2044 1 . 1 0 `ui 1 status 2 0 ]
-[v _uart1RxLastError uart1RxLastError `VES2049  1 e 2 0 ]
+[u S2048 . 2 `S2043 1 . 1 0 `ui 1 status 2 0 ]
+[v _uart1RxLastError uart1RxLastError `VES2048  1 e 2 0 ]
 "100
 [v _UART1_FramingErrorHandler UART1_FramingErrorHandler `*.37(v  1 e 2 0 ]
 "101
@@ -1250,7 +1226,7 @@ channel_ANA1 1
 "42 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\main.c
 [v _main main `(i  1 e 2 0 ]
 {
-"76
+"66
 } 0
 "36 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/system.c
 [v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
@@ -1381,18 +1357,18 @@ channel_ANA1 1
 "10 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\ADC_int.c
 [v _ADC_int ADC_int `(v  1 e 1 0 ]
 {
-"52
+"50
 } 0
 "402 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
 [v _UART1_Write UART1_Write `(v  1 e 1 0 ]
 {
 [v UART1_Write@txData txData `uc  1 a 1 wreg ]
 "404
-[v UART1_Write@tempTxHead tempTxHead `uc  1 a 1 11 ]
+[v UART1_Write@tempTxHead tempTxHead `uc  1 a 1 9 ]
 "402
 [v UART1_Write@txData txData `uc  1 a 1 wreg ]
 "406
-[v UART1_Write@txData txData `uc  1 a 1 12 ]
+[v UART1_Write@txData txData `uc  1 a 1 10 ]
 "424
 } 0
 "95 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/timer/src/tmr2.c
@@ -1406,7 +1382,7 @@ channel_ANA1 1
 [v SPI1_ByteWrite@byte byte `uc  1 a 1 wreg ]
 [v SPI1_ByteWrite@byte byte `uc  1 a 1 wreg ]
 "147
-[v SPI1_ByteWrite@byte byte `uc  1 a 1 11 ]
+[v SPI1_ByteWrite@byte byte `uc  1 a 1 9 ]
 "148
 } 0
 "106 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/adc/src/adcc.c
@@ -1415,7 +1391,7 @@ channel_ANA1 1
 [v ADCC_StartConversion@channel channel `E15846  1 a 1 wreg ]
 [v ADCC_StartConversion@channel channel `E15846  1 a 1 wreg ]
 "109
-[v ADCC_StartConversion@channel channel `E15846  1 a 1 11 ]
+[v ADCC_StartConversion@channel channel `E15846  1 a 1 9 ]
 "113
 } 0
 "99 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
@@ -1496,9 +1472,9 @@ channel_ANA1 1
 "7 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\Timer_int.c
 [v _Timer_int Timer_int `(v  1 e 1 0 ]
 {
-"11
+"10
 [v Timer_int@count count `i  1 s 2 count ]
-"20
+"23
 } 0
 "106 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/adc/src/adcc.c
 [v i2_ADCC_StartConversion ADCC_StartConversion `(v  1 e 1 0 ]
@@ -1506,7 +1482,7 @@ channel_ANA1 1
 [v i2ADCC_StartConversion@channel channel `E15846  1 a 1 wreg ]
 [v i2ADCC_StartConversion@channel channel `E15846  1 a 1 wreg ]
 "109
-[v i2ADCC_StartConversion@channel channel `E15846  1 a 1 4 ]
+[v i2ADCC_StartConversion@channel channel `E15846  1 a 1 3 ]
 "113
 } 0
 "125 C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/timer/src/tmr2.c
@@ -1537,6 +1513,6 @@ channel_ANA1 1
 [v _UART1_TransmitISR UART1_TransmitISR `(v  1 e 1 0 ]
 {
 "434
-[v UART1_TransmitISR@tempTxTail tempTxTail `uc  1 a 1 10 ]
+[v UART1_TransmitISR@tempTxTail tempTxTail `uc  1 a 1 8 ]
 "452
 } 0

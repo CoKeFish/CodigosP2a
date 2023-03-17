@@ -1,21 +1,6 @@
 Version 4.0 HI-TECH Software Intermediate Code
-"45777 D:/Program Files/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h
-[; ;D:/Program Files/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h: 45777:     struct {
-[s S2060 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S2060 . LATD0 LATD1 LATD2 LATD3 LATD4 LATD5 LATD6 LATD7 ]
-"45787
-[; ;D:/Program Files/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h: 45787:     struct {
-[s S2061 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S2061 . LD0 LD1 LD2 LD3 LD4 LD5 LD6 LD7 ]
-"45776
-[; ;D:/Program Files/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h: 45776: typedef union {
-[u S2059 `S2060 1 `S2061 1 ]
-[n S2059 . . . ]
-"45798
-[; ;D:/Program Files/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h: 45798: extern volatile LATDbits_t LATDbits __attribute__((address(0x3FBD)));
-[v _LATDbits `VS2059 ~T0 @X0 0 e@16317 ]
-"18 Timer_int.c
-[; ;Timer_int.c: 18:         ADCC_StartConversion(channel_ANA0);
+"21 Timer_int.c
+[; ;Timer_int.c: 21:         ADCC_StartConversion(channel_ANA0);
 [c E41 59 60 61 62 63 0 1 .. ]
 [n E41 . channel_VSS channel_Temp channel_DAC1 channel_FVR_Buffer1 channel_FVR_Buffer2 channel_ANA0 channel_ANA1  ]
 "89 ./mcc_generated_files/adc/adcc.h
@@ -2268,10 +2253,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e :U _Timer_int ]
 [f ]
 "10
-[; ;Timer_int.c: 10:     LATDbits.LATD0 = !LATDbits.LATD0;
-[e = . . _LATDbits 0 0 -> -> ! != -> . . _LATDbits 0 0 `i -> 0 `i `i `uc ]
-"11
-[; ;Timer_int.c: 11:     static int count = 0;
+[; ;Timer_int.c: 10:     static int count = 0;
 [v F15908 `i ~T0 @X0 1 s count ]
 [i F15908
 -> 0 `i
@@ -2279,23 +2261,23 @@ Version 4.0 HI-TECH Software Intermediate Code
 "12
 [; ;Timer_int.c: 12:     count++;
 [e ++ F15908 -> 1 `i ]
-"14
-[; ;Timer_int.c: 14:     if(count == PERIOD)
+"16
+[; ;Timer_int.c: 16:     if(count == PERIOD)
 [e $ ! == -> F15908 `ui -> _PERIOD `ui 2193  ]
-"15
-[; ;Timer_int.c: 15:     {
-{
 "17
-[; ;Timer_int.c: 17:         count = 0;
-[e = F15908 -> 0 `i ]
-"18
-[; ;Timer_int.c: 18:         ADCC_StartConversion(channel_ANA0);
-[e ( _ADCC_StartConversion (1 . `E41 5 ]
+[; ;Timer_int.c: 17:     {
+{
 "19
-[; ;Timer_int.c: 19:     }
+[; ;Timer_int.c: 19:         count = 0;
+[e = F15908 -> 0 `i ]
+"21
+[; ;Timer_int.c: 21:         ADCC_StartConversion(channel_ANA0);
+[e ( _ADCC_StartConversion (1 . `E41 5 ]
+"22
+[; ;Timer_int.c: 22:     }
 }
 [e :U 2193 ]
-"20
-[; ;Timer_int.c: 20: }
+"23
+[; ;Timer_int.c: 23: }
 [e :UE 2192 ]
 }

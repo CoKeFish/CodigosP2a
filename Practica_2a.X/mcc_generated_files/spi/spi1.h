@@ -71,7 +71,7 @@ void SPI1_Initialize(void);
  * @retval True  - SPI is open.
  * @retval False - SPI is not open.
  */
-bool SPI1_Open(uint8_t spiConfigIndex);
+bool SPI1_Open();
 
 /**
  * @ingroup spi1

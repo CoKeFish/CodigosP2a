@@ -1,26 +1,26 @@
 Version 4.0 HI-TECH Software Intermediate Code
-[v F16534 `(v ~T0 @X0 0 tf ]
-[v F16541 `(v ~T0 @X0 0 tf ]
+[v F16533 `(v ~T0 @X0 0 tf ]
+[v F16540 `(v ~T0 @X0 0 tf ]
 [p mainexit ]
 "59 ./mcc_generated_files/system/../uart/../system/system.h
 [; ;./mcc_generated_files/system/../uart/../system/system.h: 59: void SYSTEM_Initialize(void);
 [v _SYSTEM_Initialize `(v ~T0 @X0 0 ef ]
+"74 ./mcc_generated_files/system/../spi/spi1.h
+[; ;./mcc_generated_files/system/../spi/spi1.h: 74: _Bool SPI1_Open();
+[v _SPI1_Open `(a ~T0 @X0 0 e? ]
 [v F16219 `(v ~T0 @X0 0 tf ]
 "315 ./mcc_generated_files/adc/adcc.h
 [v _ADCC_SetADIInterruptHandler `(v ~T0 @X0 0 ef1`*F16219 ]
 "6 ./ADC_int.h
 [; ;./ADC_int.h: 6: void ADC_int(void);
 [v _ADC_int `(v ~T0 @X0 0 ef ]
-[v F16316 `(v ~T0 @X0 0 tf ]
+[v F16315 `(v ~T0 @X0 0 tf ]
 "118 ./mcc_generated_files/system/../timer/tmr0.h
 [; ;./mcc_generated_files/system/../timer/tmr0.h: 118:  void Timer_OverflowCallbackRegister(void (* CallbackHandler)(void));
-[v _Timer_OverflowCallbackRegister `(v ~T0 @X0 0 ef1`*F16316 ]
+[v _Timer_OverflowCallbackRegister `(v ~T0 @X0 0 ef1`*F16315 ]
 "5 ./Timer_int.h
 [; ;./Timer_int.h: 5: void Timer_int(void);
 [v _Timer_int `(v ~T0 @X0 0 ef ]
-"74 ./mcc_generated_files/system/../spi/spi1.h
-[; ;./mcc_generated_files/system/../spi/spi1.h: 74: _Bool SPI1_Open(uint8_t spiConfigIndex);
-[v _SPI1_Open `(a ~T0 @X0 0 ef1`uc ]
 "45553 D:/Program Files/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h
 [; ;D:/Program Files/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h: 45553:     struct {
 [s S2054 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
@@ -2300,10 +2300,10 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; <" TOSU equ 03FFFh ;# ">
 "354 ./mcc_generated_files/system/../uart/uart1.h
 [; ;./mcc_generated_files/system/../uart/uart1.h: 354: void (*UART1_TxInterruptHandler)(void);
-[v _UART1_TxInterruptHandler `*F16534 ~T0 @X0 1 e ]
+[v _UART1_TxInterruptHandler `*F16533 ~T0 @X0 1 e ]
 "379
 [; ;./mcc_generated_files/system/../uart/uart1.h: 379: void (*UART1_RxInterruptHandler)(void);
-[v _UART1_RxInterruptHandler `*F16541 ~T0 @X0 1 e ]
+[v _UART1_RxInterruptHandler `*F16540 ~T0 @X0 1 e ]
 "10 ./Practica2a.h
 [; ;./Practica2a.h: 10: uint16_t PERIOD = 2;
 [v _PERIOD `us ~T0 @X0 1 e ]
@@ -2322,40 +2322,40 @@ Version 4.0 HI-TECH Software Intermediate Code
 "45
 [; ;main.c: 45:     SYSTEM_Initialize();
 [e ( _SYSTEM_Initialize ..  ]
-"48
-[; ;main.c: 48:     ADCC_SetADIInterruptHandler(ADC_int);
-[e ( _ADCC_SetADIInterruptHandler (1 &U _ADC_int ]
-"49
-[; ;main.c: 49:     Timer_OverflowCallbackRegister(Timer_int);
-[e ( _Timer_OverflowCallbackRegister (1 &U _Timer_int ]
+"46
+[; ;main.c: 46:     SPI1_Open();
+[e ( _SPI1_Open ..  ]
 "50
-[; ;main.c: 50:     SPI1_Open(0);
-[e ( _SPI1_Open (1 -> -> 0 `i `uc ]
+[; ;main.c: 50:     ADCC_SetADIInterruptHandler(ADC_int);
+[e ( _ADCC_SetADIInterruptHandler (1 &U _ADC_int ]
 "51
-[; ;main.c: 51:     LATBbits.LATB4 = 1;
+[; ;main.c: 51:     Timer_OverflowCallbackRegister(Timer_int);
+[e ( _Timer_OverflowCallbackRegister (1 &U _Timer_int ]
+"53
+[; ;main.c: 53:     LATBbits.LATB4 = 1;
 [e = . . _LATBbits 0 4 -> -> 1 `i `uc ]
-"52
-[; ;main.c: 52:     LATEbits.LATE0 = 1;
+"54
+[; ;main.c: 54:     LATEbits.LATE0 = 1;
 [e = . . _LATEbits 0 0 -> -> 1 `i `uc ]
-"61
-[; ;main.c: 61:     (INTCON0bits.GIE = 1);
+"57
+[; ;main.c: 57:     (INTCON0bits.GIE = 1);
 [e = . . _INTCON0bits 0 6 -> -> 1 `i `uc ]
-"67
-[; ;main.c: 67:     (INTCON0bits.GIEL = 1);
+"60
+[; ;main.c: 60:     (INTCON0bits.GIEL = 1);
 [e = . . _INTCON0bits 0 5 -> -> 1 `i `uc ]
-"73
-[; ;main.c: 73:     while(1)
+"63
+[; ;main.c: 63:     while(1)
 [e :U 2201 ]
-"74
-[; ;main.c: 74:     {
+"64
+[; ;main.c: 64:     {
 {
-"75
-[; ;main.c: 75:     }
+"65
+[; ;main.c: 65:     }
 }
 [e :U 2200 ]
 [e $U 2201  ]
 [e :U 2202 ]
-"76
-[; ;main.c: 76: }
+"66
+[; ;main.c: 66: }
 [e :UE 2199 ]
 }

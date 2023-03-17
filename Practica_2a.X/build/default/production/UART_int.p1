@@ -1,6 +1,6 @@
 Version 4.0 HI-TECH Software Intermediate Code
-[v F16561 `(v ~T0 @X0 0 tf ]
-[v F16568 `(v ~T0 @X0 0 tf ]
+[v F16560 `(v ~T0 @X0 0 tf ]
+[v F16567 `(v ~T0 @X0 0 tf ]
 "311 ./mcc_generated_files/uart/../system/../uart/uart1.h
 [; ;./mcc_generated_files/uart/../system/../uart/uart1.h: 311: uint8_t UART1_Read(void);
 [v _UART1_Read `(uc ~T0 @X0 0 ef ]
@@ -2238,10 +2238,10 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; <" TOSU equ 03FFFh ;# ">
 "354 ./mcc_generated_files/uart/../system/../uart/uart1.h
 [; ;./mcc_generated_files/uart/../system/../uart/uart1.h: 354: void (*UART1_TxInterruptHandler)(void);
-[v _UART1_TxInterruptHandler `*F16561 ~T0 @X0 1 e ]
+[v _UART1_TxInterruptHandler `*F16560 ~T0 @X0 1 e ]
 "379
 [; ;./mcc_generated_files/uart/../system/../uart/uart1.h: 379: void (*UART1_RxInterruptHandler)(void);
-[v _UART1_RxInterruptHandler `*F16568 ~T0 @X0 1 e ]
+[v _UART1_RxInterruptHandler `*F16567 ~T0 @X0 1 e ]
 "10 ./Practica2a.h
 [; ;./Practica2a.h: 10: uint16_t PERIOD = 2;
 [v _PERIOD `us ~T0 @X0 1 e ]
@@ -2270,34 +2270,34 @@ Version 4.0 HI-TECH Software Intermediate Code
 [f ]
 "12
 [; ;UART_int.c: 12:     static unsigned char status = 0;
-[v F16581 `uc ~T0 @X0 1 s status ]
-[i F16581
+[v F16580 `uc ~T0 @X0 1 s status ]
+[i F16580
 -> -> 0 `i `uc
 ]
 "13
 [; ;UART_int.c: 13:     static uint8_t opcode = 0;
-[v F16582 `uc ~T0 @X0 1 s opcode ]
-[i F16582
+[v F16581 `uc ~T0 @X0 1 s opcode ]
+[i F16581
 -> -> 0 `i `uc
 ]
 "14
 [; ;UART_int.c: 14:     static uint16_t mesage = 0;
-[v F16583 `us ~T0 @X0 1 s mesage ]
-[i F16583
+[v F16582 `us ~T0 @X0 1 s mesage ]
+[i F16582
 -> -> 0 `i `us
 ]
 "16
 [; ;UART_int.c: 16:     if(status == 0)
-[e $ ! == -> F16581 `i -> 0 `i 2201  ]
+[e $ ! == -> F16580 `i -> 0 `i 2201  ]
 "17
 [; ;UART_int.c: 17:     {
 {
 "18
 [; ;UART_int.c: 18:         status++;
-[e ++ F16581 -> -> 1 `i `uc ]
+[e ++ F16580 -> -> 1 `i `uc ]
 "19
 [; ;UART_int.c: 19:         opcode = UART1_Read();
-[e = F16582 ( _UART1_Read ..  ]
+[e = F16581 ( _UART1_Read ..  ]
 "20
 [; ;UART_int.c: 20:     }
 }
@@ -2305,16 +2305,16 @@ Version 4.0 HI-TECH Software Intermediate Code
 "21
 [; ;UART_int.c: 21:     else if(status == 1)
 [e :U 2201 ]
-[e $ ! == -> F16581 `i -> 1 `i 2203  ]
+[e $ ! == -> F16580 `i -> 1 `i 2203  ]
 "22
 [; ;UART_int.c: 22:     {
 {
 "23
 [; ;UART_int.c: 23:         status++;
-[e ++ F16581 -> -> 1 `i `uc ]
+[e ++ F16580 -> -> 1 `i `uc ]
 "24
 [; ;UART_int.c: 24:         mesage = UART1_Read();
-[e = F16583 -> ( _UART1_Read ..  `us ]
+[e = F16582 -> ( _UART1_Read ..  `us ]
 "25
 [; ;UART_int.c: 25:     }
 }
@@ -2322,25 +2322,25 @@ Version 4.0 HI-TECH Software Intermediate Code
 "26
 [; ;UART_int.c: 26:     else if(status == 2)
 [e :U 2203 ]
-[e $ ! == -> F16581 `i -> 2 `i 2205  ]
+[e $ ! == -> F16580 `i -> 2 `i 2205  ]
 "27
 [; ;UART_int.c: 27:     {
 {
 "28
 [; ;UART_int.c: 28:         status = 0;
-[e = F16581 -> -> 0 `i `uc ]
+[e = F16580 -> -> 0 `i `uc ]
 "29
 [; ;UART_int.c: 29:         mesage = (mesage << 8) + UART1_Read();
-[e = F16583 -> + << -> F16583 `ui -> 8 `i -> ( _UART1_Read ..  `ui `us ]
+[e = F16582 -> + << -> F16582 `ui -> 8 `i -> ( _UART1_Read ..  `ui `us ]
 "30
 [; ;UART_int.c: 30:         if(opcode == 1)
-[e $ ! == -> F16582 `i -> 1 `i 2206  ]
+[e $ ! == -> F16581 `i -> 1 `i 2206  ]
 "31
 [; ;UART_int.c: 31:         {
 {
 "32
 [; ;UART_int.c: 32:             PERIOD = mesage;
-[e = _PERIOD F16583 ]
+[e = _PERIOD F16582 ]
 "33
 [; ;UART_int.c: 33:         }
 }

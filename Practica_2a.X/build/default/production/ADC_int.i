@@ -27228,7 +27228,7 @@ extern const struct SPI_INTERFACE SPI1;
 
 void SPI1_Initialize(void);
 # 74 "./mcc_generated_files/uart/../system/../spi/spi1.h"
-_Bool SPI1_Open(uint8_t spiConfigIndex);
+_Bool SPI1_Open();
 
 
 
@@ -27890,10 +27890,8 @@ static uint8_t valp[] = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 
 void ADC_int(void)
 {
 
-
     if(ADPCH == 0)
     {
-
 
         LATEbits.LATE0 = 0;
 
@@ -27912,5 +27910,21 @@ void ADC_int(void)
 
 
     }
-# 52 "ADC_int.c"
+    else
+    {
+
+
+        LATEbits.LATE0 = 0;
+
+        Timer2_Start();
+
+        SPI1_ByteWrite(0b10110000 | ADRESH);
+        SPI1_ByteWrite(ADRESL);
+
+        UART1_Write(valp[ADRESH & 0b1111]);
+        UART1_Write(valp[(ADRESL >> 4) & 0b1111]);
+        UART1_Write(valp[ADRESL & 0b1111]);
+
+        UART1_Write('\n');
+    }
 }

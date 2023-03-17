@@ -27216,7 +27216,7 @@ extern const struct SPI_INTERFACE SPI1;
 
 void SPI1_Initialize(void);
 # 74 "./mcc_generated_files/system/../spi/spi1.h"
-_Bool SPI1_Open(uint8_t spiConfigIndex);
+_Bool SPI1_Open();
 
 
 
@@ -27885,24 +27885,21 @@ int main(void)
 {
 
     SYSTEM_Initialize();
+    SPI1_Open();
+
 
 
     ADCC_SetADIInterruptHandler(ADC_int);
     Timer_OverflowCallbackRegister(Timer_int);
-    SPI1_Open(0);
+
     LATBbits.LATB4 = 1;
     LATEbits.LATE0 = 1;
-# 61 "main.c"
+
+
     (INTCON0bits.GIE = 1);
 
 
-
-
-
     (INTCON0bits.GIEL = 1);
-
-
-
 
 
     while(1)

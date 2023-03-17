@@ -19,8 +19,9 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;mcc_generated_files/spi/src/../spi1.h: 82: void SPI1_Close(void);
 [v _SPI1_Close `(v ~T0 @X0 0 ef ]
 "74
-[; ;mcc_generated_files/spi/src/../spi1.h: 74: _Bool SPI1_Open(uint8_t spiConfigIndex);
-[v _SPI1_Open `(a ~T0 @X0 0 ef1`uc ]
+[; ;mcc_generated_files/spi/src/../spi1.h: 74: _Bool SPI1_Open();
+[v _SPI1_Open `(a ~T0 @X0 0 e? ]
+[v F16229 `(a ~T0 @X0 0 tf1`uc ]
 "99
 [; ;mcc_generated_files/spi/src/../spi1.h: 99: void SPI1_BufferExchange(void * bufferData, size_t bufferSize);
 [v _SPI1_BufferExchange `(v ~T0 @X0 0 ef2`*v`ui ]
@@ -2346,7 +2347,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 :U ..
 &U _SPI1_Initialize
 &U _SPI1_Close
-&U _SPI1_Open
+-> &U _SPI1_Open `*F16229
 &U _SPI1_BufferExchange
 &U _SPI1_BufferRead
 &U _SPI1_BufferWrite
@@ -2401,17 +2402,12 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e :UE 2196 ]
 }
 "85
-[; ;mcc_generated_files/spi/src/spi1.c: 85: _Bool SPI1_Open(uint8_t spiConfigIndex)
-[v _SPI1_Open `(a ~T0 @X0 1 ef1`uc ]
+[; ;mcc_generated_files/spi/src/spi1.c: 85: _Bool SPI1_Open()
+[v _SPI1_Open `(a ~T0 @X0 1 ef ]
 "86
 [; ;mcc_generated_files/spi/src/spi1.c: 86: {
 {
 [e :U _SPI1_Open ]
-"85
-[; ;mcc_generated_files/spi/src/spi1.c: 85: _Bool SPI1_Open(uint8_t spiConfigIndex)
-[v _spiConfigIndex `uc ~T0 @X0 1 r1 ]
-"86
-[; ;mcc_generated_files/spi/src/spi1.c: 86: {
 [f ]
 "87
 [; ;mcc_generated_files/spi/src/spi1.c: 87:     if(!SPI1CON0bits.EN)
