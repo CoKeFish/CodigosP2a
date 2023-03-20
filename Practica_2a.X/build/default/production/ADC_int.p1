@@ -2285,9 +2285,9 @@ Version 4.0 HI-TECH Software Intermediate Code
 -> -> 2 `i `us
 ]
 "8 ADC_int.c
-[; ;ADC_int.c: 8: static uint8_t valp[] = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F'};
-[v _valp `uc ~T0 @X0 -> 16 `i s ]
-[i _valp
+[; ;ADC_int.c: 8: static uint8_t char_hex[] = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F'};
+[v _char_hex `uc ~T0 @X0 -> 16 `i s ]
+[i _char_hex
 :U ..
 -> -> 48 `ui `uc
 -> -> 49 `ui `uc
@@ -2336,49 +2336,49 @@ Version 4.0 HI-TECH Software Intermediate Code
 "23
 [; ;ADC_int.c: 23:         SPI1_ByteWrite(ADRESL);
 [e ( _SPI1_ByteWrite (1 _ADRESL ]
-"25
-[; ;ADC_int.c: 25:         UART1_Write(valp[ADRESH & 0b1111]);
-[e ( _UART1_Write (1 *U + &U _valp * -> -> & -> _ADRESH `i -> 15 `i `ui `ux -> -> # *U &U _valp `ui `ux ]
 "26
-[; ;ADC_int.c: 26:         UART1_Write(valp[(ADRESL >> 4) & 0b1111]);
-[e ( _UART1_Write (1 *U + &U _valp * -> -> & >> -> _ADRESL `i -> 4 `i -> 15 `i `ui `ux -> -> # *U &U _valp `ui `ux ]
+[; ;ADC_int.c: 26:         UART1_Write(char_hex[ADRESH & 0b1111]);
+[e ( _UART1_Write (1 *U + &U _char_hex * -> -> & -> _ADRESH `i -> 15 `i `ui `ux -> -> # *U &U _char_hex `ui `ux ]
 "27
-[; ;ADC_int.c: 27:         UART1_Write(valp[ADRESL & 0b1111]);
-[e ( _UART1_Write (1 *U + &U _valp * -> -> & -> _ADRESL `i -> 15 `i `ui `ux -> -> # *U &U _valp `ui `ux ]
+[; ;ADC_int.c: 27:         UART1_Write(char_hex[(ADRESL >> 4) & 0b1111]);
+[e ( _UART1_Write (1 *U + &U _char_hex * -> -> & >> -> _ADRESL `i -> 4 `i -> 15 `i `ui `ux -> -> # *U &U _char_hex `ui `ux ]
 "28
-[; ;ADC_int.c: 28:         UART1_Write(',');
+[; ;ADC_int.c: 28:         UART1_Write(char_hex[ADRESL & 0b1111]);
+[e ( _UART1_Write (1 *U + &U _char_hex * -> -> & -> _ADRESL `i -> 15 `i `ui `ux -> -> # *U &U _char_hex `ui `ux ]
+"29
+[; ;ADC_int.c: 29:         UART1_Write(',');
 [e ( _UART1_Write (1 -> -> 44 `ui `uc ]
-"32
-[; ;ADC_int.c: 32:     }
+"31
+[; ;ADC_int.c: 31:     }
 }
 [e $U 2201  ]
-"33
-[; ;ADC_int.c: 33:     else
+"32
+[; ;ADC_int.c: 32:     else
 [e :U 2200 ]
-"34
-[; ;ADC_int.c: 34:     {
+"33
+[; ;ADC_int.c: 33:     {
 {
-"37
-[; ;ADC_int.c: 37:         LATEbits.LATE0 = 0;
+"36
+[; ;ADC_int.c: 36:         LATEbits.LATE0 = 0;
 [e = . . _LATEbits 0 0 -> -> 0 `i `uc ]
-"39
-[; ;ADC_int.c: 39:         Timer2_Start();
+"38
+[; ;ADC_int.c: 38:         Timer2_Start();
 [e ( _Timer2_Start ..  ]
-"41
-[; ;ADC_int.c: 41:         SPI1_ByteWrite(0b10110000 | ADRESH);
+"40
+[; ;ADC_int.c: 40:         SPI1_ByteWrite(0b10110000 | ADRESH);
 [e ( _SPI1_ByteWrite (1 -> | -> 176 `i -> _ADRESH `i `uc ]
-"42
-[; ;ADC_int.c: 42:         SPI1_ByteWrite(ADRESL);
+"41
+[; ;ADC_int.c: 41:         SPI1_ByteWrite(ADRESL);
 [e ( _SPI1_ByteWrite (1 _ADRESL ]
 "44
-[; ;ADC_int.c: 44:         UART1_Write(valp[ADRESH & 0b1111]);
-[e ( _UART1_Write (1 *U + &U _valp * -> -> & -> _ADRESH `i -> 15 `i `ui `ux -> -> # *U &U _valp `ui `ux ]
+[; ;ADC_int.c: 44:         UART1_Write(char_hex[ADRESH & 0b1111]);
+[e ( _UART1_Write (1 *U + &U _char_hex * -> -> & -> _ADRESH `i -> 15 `i `ui `ux -> -> # *U &U _char_hex `ui `ux ]
 "45
-[; ;ADC_int.c: 45:         UART1_Write(valp[(ADRESL >> 4) & 0b1111]);
-[e ( _UART1_Write (1 *U + &U _valp * -> -> & >> -> _ADRESL `i -> 4 `i -> 15 `i `ui `ux -> -> # *U &U _valp `ui `ux ]
+[; ;ADC_int.c: 45:         UART1_Write(char_hex[(ADRESL >> 4) & 0b1111]);
+[e ( _UART1_Write (1 *U + &U _char_hex * -> -> & >> -> _ADRESL `i -> 4 `i -> 15 `i `ui `ux -> -> # *U &U _char_hex `ui `ux ]
 "46
-[; ;ADC_int.c: 46:         UART1_Write(valp[ADRESL & 0b1111]);
-[e ( _UART1_Write (1 *U + &U _valp * -> -> & -> _ADRESL `i -> 15 `i `ui `ux -> -> # *U &U _valp `ui `ux ]
+[; ;ADC_int.c: 46:         UART1_Write(char_hex[ADRESL & 0b1111]);
+[e ( _UART1_Write (1 *U + &U _char_hex * -> -> & -> _ADRESL `i -> 15 `i `ui `ux -> -> # *U &U _char_hex `ui `ux ]
 "48
 [; ;ADC_int.c: 48:         UART1_Write('\n');
 [e ( _UART1_Write (1 -> -> 10 `ui `uc ]

@@ -48,5 +48,3 @@ void ADC_int(void)
         UART_Write('\n');   // y separamos por un salto de linea
     }
 }
-
-

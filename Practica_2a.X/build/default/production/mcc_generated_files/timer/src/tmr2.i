@@ -27129,7 +27129,7 @@ static void Timer2_DefaultOverflowCallback(void);
 
 
 
-void Timer2_Initialize(void){
+void Timer2_Initialize(void) {
 
 
 
@@ -27147,76 +27147,64 @@ void Timer2_Initialize(void){
     Timer2_OverflowCallbackRegister(Timer2_DefaultOverflowCallback);
 
 
-     PIR4bits.TMR2IF = 0;
+    PIR4bits.TMR2IF = 0;
 
-     PIE4bits.TMR2IE = 1;
+    PIE4bits.TMR2IE = 1;
 
     T2CON = 0x30;
 }
 
-void Timer2_ModeSet(Timer2_HLT_MODE mode)
-{
+void Timer2_ModeSet(Timer2_HLT_MODE mode) {
 
     T2HLTbits.T2MODE = mode;
 }
 
-void Timer2_ExtResetSourceSet(Timer2_HLT_EXT_RESET_SOURCE reset)
-{
+void Timer2_ExtResetSourceSet(Timer2_HLT_EXT_RESET_SOURCE reset) {
 
     T2RSTbits.T2RSEL = reset;
 }
 
-void Timer2_Start(void)
-{
+void Timer2_Start(void) {
 
     T2CONbits.TMR2ON = 1;
 }
 
-void Timer2_Stop(void)
-{
+void Timer2_Stop(void) {
 
     T2CONbits.TMR2ON = 0;
 }
 
-uint8_t Timer2_Read(void)
-{
+uint8_t Timer2_Read(void) {
     uint8_t readVal;
     readVal = TMR2;
     return readVal;
 }
 
-void Timer2_Write(uint8_t timerVal)
-{
+void Timer2_Write(uint8_t timerVal) {
 
-    TMR2 = timerVal;;
+    TMR2 = timerVal;
+    ;
 }
 
-void Timer2_PeriodCountSet(size_t periodVal)
-{
-   PR2 = (uint8_t) periodVal;
+void Timer2_PeriodCountSet(size_t periodVal) {
+    PR2 = (uint8_t) periodVal;
 }
 
-void __attribute__((picinterrupt(("irq(TMR2),base(8)")))) Timer2_ISR()
-{
+void __attribute__((picinterrupt(("irq(TMR2), base(8)")))) Timer2_ISR() {
 
-     PIR4bits.TMR2IF = 0;
+    PIR4bits.TMR2IF = 0;
+    LATEbits.LATE0 = 1;
+    LATBbits.LATB4 = 0;
+    LATBbits.LATB4 = 1;
 
-     LATEbits.LATE0 = 1;
-             LATBbits.LATB4 = 0;
-
-        LATBbits.LATB4 = 1;
-    if(Timer2_OverflowCallback)
-    {
-        Timer2_OverflowCallback();
-    }
-Timer2_Stop();
+    Timer2_Stop();
 }
 
-void Timer2_OverflowCallbackRegister(void (* InterruptHandler)(void)){
+void Timer2_OverflowCallbackRegister(void (* InterruptHandler)(void)) {
     Timer2_OverflowCallback = InterruptHandler;
 }
 
-static void Timer2_DefaultOverflowCallback(void){
+static void Timer2_DefaultOverflowCallback(void) {
 
 
 }

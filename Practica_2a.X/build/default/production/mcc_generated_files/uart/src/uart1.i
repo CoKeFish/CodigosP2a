@@ -27937,15 +27937,14 @@ static void (*UART1_RxCompleteInterruptHandler)(void);
 static void UART1_DefaultFramingErrorCallback(void);
 static void UART1_DefaultOverrunErrorCallback(void);
 static void UART1_DefaultParityErrorCallback(void);
-void UART1_TransmitISR (void);
+void UART1_TransmitISR(void);
 void UART1_ReceiveISR(void);
 
 
 
 
 
-void UART1_Initialize(void)
-{
+void UART1_Initialize(void) {
     PIE3bits.U1RXIE = 0;
     UART1_RxInterruptHandler = UART1_ReceiveISR;
     PIE3bits.U1TXIE = 0;
@@ -27999,15 +27998,14 @@ void UART1_Initialize(void)
     uart1RxLastError.status = 0;
     uart1TxHead = 0;
     uart1TxTail = 0;
-    uart1TxBufferRemaining = sizeof(uart1TxBuffer);
+    uart1TxBufferRemaining = sizeof (uart1TxBuffer);
     uart1RxHead = 0;
     uart1RxTail = 0;
     uart1RxCount = 0;
     PIE3bits.U1RXIE = 1;
 }
 
-void UART1_Deinitialize(void)
-{
+void UART1_Deinitialize(void) {
     PIE3bits.U1RXIE = 0;
     PIE3bits.U1TXIE = 0;
     U1RXB = 0x00;
@@ -28031,122 +28029,97 @@ void UART1_Deinitialize(void)
     U1ERRIE = 0x00;
 }
 
-__attribute__((inline)) void UART1_Enable(void)
-{
+__attribute__((inline)) void UART1_Enable(void) {
     U1CON1bits.ON = 1;
 }
 
-__attribute__((inline)) void UART1_Disable(void)
-{
+__attribute__((inline)) void UART1_Disable(void) {
     U1CON1bits.ON = 0;
 }
 
-__attribute__((inline)) void UART1_TransmitEnable(void)
-{
+__attribute__((inline)) void UART1_TransmitEnable(void) {
     U1CON0bits.TXEN = 1;
 }
 
-__attribute__((inline)) void UART1_TransmitDisable(void)
-{
+__attribute__((inline)) void UART1_TransmitDisable(void) {
     U1CON0bits.TXEN = 0;
 }
 
-__attribute__((inline)) void UART1_ReceiveEnable(void)
-{
+__attribute__((inline)) void UART1_ReceiveEnable(void) {
     U1CON0bits.RXEN = 1;
 }
 
-__attribute__((inline)) void UART1_ReceiveDisable(void)
-{
+__attribute__((inline)) void UART1_ReceiveDisable(void) {
     U1CON0bits.RXEN = 0;
 }
 
-__attribute__((inline)) void UART1_SendBreakControlEnable(void)
-{
+__attribute__((inline)) void UART1_SendBreakControlEnable(void) {
     U1CON1bits.SENDB = 1;
 }
 
-__attribute__((inline)) void UART1_SendBreakControlDisable(void)
-{
+__attribute__((inline)) void UART1_SendBreakControlDisable(void) {
     U1CON1bits.SENDB = 0;
 }
 
-__attribute__((inline)) void UART1_AutoBaudSet(_Bool enable)
-{
-    if(enable)
-    {
+__attribute__((inline)) void UART1_AutoBaudSet(_Bool enable) {
+    if (enable) {
         U1CON0bits.ABDEN = 1;
-    }
-    else
-    {
-      U1CON0bits.ABDEN = 0;
+    } else {
+        U1CON0bits.ABDEN = 0;
     }
 }
 
-
-__attribute__((inline)) _Bool UART1_AutoBaudQuery(void)
-{
-    return (_Bool)U1UIRbits.ABDIF;
+__attribute__((inline)) _Bool UART1_AutoBaudQuery(void) {
+    return (_Bool) U1UIRbits.ABDIF;
 }
 
-__attribute__((inline)) void UART1_AutoBaudDetectCompleteReset(void)
-{
+__attribute__((inline)) void UART1_AutoBaudDetectCompleteReset(void) {
     U1UIRbits.ABDIF = 0;
 }
 
-__attribute__((inline)) _Bool UART1_IsAutoBaudDetectOverflow(void)
-{
-    return (_Bool)U1ERRIRbits.ABDOVF;
+__attribute__((inline)) _Bool UART1_IsAutoBaudDetectOverflow(void) {
+    return (_Bool) U1ERRIRbits.ABDOVF;
 }
 
-__attribute__((inline)) void UART1_AutoBaudDetectOverflowReset(void)
-{
+__attribute__((inline)) void UART1_AutoBaudDetectOverflowReset(void) {
     U1ERRIRbits.ABDOVF = 0;
 }
 
-__attribute__((inline)) void UART1_TransmitInterruptEnable(void)
-{
+__attribute__((inline)) void UART1_TransmitInterruptEnable(void) {
     PIE3bits.U1TXIE = 1;
 }
 
-__attribute__((inline)) void UART1_TransmitInterruptDisable(void)
-{
+__attribute__((inline)) void UART1_TransmitInterruptDisable(void) {
     PIE3bits.U1TXIE = 0;
 }
 
-__attribute__((inline)) void UART1_ReceiveInterruptEnable(void)
-{
+__attribute__((inline)) void UART1_ReceiveInterruptEnable(void) {
     PIE3bits.U1RXIE = 1;
 }
-__attribute__((inline)) void UART1_ReceiveInterruptDisable(void)
-{
+
+__attribute__((inline)) void UART1_ReceiveInterruptDisable(void) {
     PIE3bits.U1RXIE = 0;
 }
 
-_Bool UART1_IsRxReady(void)
-{
+_Bool UART1_IsRxReady(void) {
     return (uart1RxCount ? 1 : 0);
 }
 
-_Bool UART1_IsTxReady(void)
-{
+_Bool UART1_IsTxReady(void) {
     return (uart1TxBufferRemaining ? 1 : 0);
 }
 
-_Bool UART1_IsTxDone(void)
-{
+_Bool UART1_IsTxDone(void) {
     return U1ERRIRbits.TXMTIF;
 }
 
-size_t UART1_ErrorGet(void)
-{
+size_t UART1_ErrorGet(void) {
     uart1RxLastError.status = uart1RxStatusBuffer[(uart1RxTail + 1) & ((8) - 1)].status;
 
     return uart1RxLastError.status;
 }
 
-uint8_t UART1_Read(void)
-{
+uint8_t UART1_Read(void) {
     uint8_t readValue = 0;
     uint8_t tempRxTail;
 
@@ -28154,56 +28127,43 @@ uint8_t UART1_Read(void)
     tempRxTail = (uart1RxTail + 1) & ((8) - 1);
     uart1RxTail = tempRxTail;
     PIE3bits.U1RXIE = 0;
-    if(uart1RxCount != 0)
-    {
+    if (uart1RxCount != 0) {
         uart1RxCount--;
     }
     PIE3bits.U1RXIE = 1;
     return readValue;
 }
 
-void __attribute__((picinterrupt(("irq(27), base(8)")))) UART1_Receive_Vector_ISR(void)
-{
+void __attribute__((picinterrupt(("irq(27), base(8)")))) UART1_Receive_Vector_ISR(void) {
     static unsigned char status = 0;
     static uint16_t mesage = 1;
 
-    if(status == 0)
-    {
+    if (status == 0) {
         status++;
         mesage = U1RXB;
-    }
-    else
-    {
+    } else {
         status = 0;
         mesage = (mesage << 8) + U1RXB;
 
-
-            PERIOD = mesage;
-
+        PERIOD = mesage;
     }
-
 }
 
-void UART1_ReceiveISR(void)
-{
+void UART1_ReceiveISR(void) {
     uint8_t regValue;
- uint8_t tempRxHead;
+    uint8_t tempRxHead;
 
     uart1RxStatusBuffer[uart1RxHead].status = 0;
 
-    if(U1ERRIRbits.FERIF)
-    {
+    if (U1ERRIRbits.FERIF) {
         uart1RxStatusBuffer[uart1RxHead].ferr = 1;
-        if(((void*)0) != UART1_FramingErrorHandler)
-        {
+        if (((void*)0) != UART1_FramingErrorHandler) {
             UART1_FramingErrorHandler();
         }
     }
-    if(U1ERRIRbits.RXFOIF)
-    {
+    if (U1ERRIRbits.RXFOIF) {
         uart1RxStatusBuffer[uart1RxHead].oerr = 1;
-        if(((void*)0) != UART1_OverrunErrorHandler)
-        {
+        if (((void*)0) != UART1_OverrunErrorHandler) {
             UART1_OverrunErrorHandler();
         }
     }
@@ -28211,129 +28171,100 @@ void UART1_ReceiveISR(void)
     regValue = U1RXB;
 
     tempRxHead = (uart1RxHead + 1) & ((8) - 1);
-    if (tempRxHead == uart1RxTail)
-    {
+    if (tempRxHead == uart1RxTail) {
 
- }
-    else
-    {
+    }
+    else {
         uart1RxBuffer[uart1RxHead] = regValue;
-  uart1RxHead = tempRxHead;
-  uart1RxCount++;
- }
+        uart1RxHead = tempRxHead;
+        uart1RxCount++;
+    }
 
-    if(UART1_RxCompleteInterruptHandler != ((void*)0))
-    {
+    if (UART1_RxCompleteInterruptHandler != ((void*)0)) {
         (*UART1_RxCompleteInterruptHandler)();
     }
 }
 
-void UART1_Write(uint8_t txData)
-{
+void UART1_Write(uint8_t txData) {
     uint8_t tempTxHead;
 
-    if(0 == PIE3bits.U1TXIE)
+    if (0 == PIE3bits.U1TXIE)
     {
         U1TXB = txData;
-    }
-    else if(uart1TxBufferRemaining)
+    } else if (uart1TxBufferRemaining)
     {
-       uart1TxBuffer[uart1TxHead] = txData;
-       tempTxHead = (uart1TxHead + 1) & ((16) - 1);
+        uart1TxBuffer[uart1TxHead] = txData;
 
-       uart1TxHead = tempTxHead;
-       PIE3bits.U1TXIE = 0;
-       uart1TxBufferRemaining--;
-    }
-    else
-    {
+        tempTxHead = (uart1TxHead + 1) & ((16) - 1);
+
+        uart1TxHead = tempTxHead;
+        PIE3bits.U1TXIE = 0;
+        uart1TxBufferRemaining--;
+    } else {
 
     }
     PIE3bits.U1TXIE = 1;
 }
 
-void __attribute__((picinterrupt(("irq(28), base(8)")))) UART1_Transmit_Vector_ISR(void)
-{
+void __attribute__((picinterrupt(("irq(28), base(8)")))) UART1_Transmit_Vector_ISR(void) {
 
     UART1_TransmitISR();
 }
 
-void UART1_TransmitISR(void)
-{
+void UART1_TransmitISR(void) {
     uint8_t tempTxTail;
 
-    if(sizeof(uart1TxBuffer) > uart1TxBufferRemaining)
+    if (sizeof (uart1TxBuffer) > uart1TxBufferRemaining)
     {
-       U1TXB = uart1TxBuffer[uart1TxTail];
-       tempTxTail = (uart1TxTail + 1) & ((16) - 1);
+        U1TXB = uart1TxBuffer[uart1TxTail];
 
-       uart1TxTail = tempTxTail;
-       uart1TxBufferRemaining++;
-    }
-    else
-    {
+        tempTxTail = (uart1TxTail + 1) & ((16) - 1);
+
+        uart1TxTail = tempTxTail;
+        uart1TxBufferRemaining++;
+    } else {
         PIE3bits.U1TXIE = 0;
     }
-    if(UART1_TxCompleteInterruptHandler != ((void*)0))
-    {
-        (*UART1_TxCompleteInterruptHandler)();
-    }
 }
 
-
-
-
-
-static void UART1_DefaultFramingErrorCallback(void)
-{
+static void UART1_DefaultFramingErrorCallback(void) {
 
 }
 
-static void UART1_DefaultOverrunErrorCallback(void)
-{
+static void UART1_DefaultOverrunErrorCallback(void) {
 
 }
 
-static void UART1_DefaultParityErrorCallback(void)
-{
+static void UART1_DefaultParityErrorCallback(void) {
 
 }
 
-void UART1_FramingErrorCallbackRegister(void (* callbackHandler)(void))
-{
-    if(((void*)0) != callbackHandler)
-    {
+void UART1_FramingErrorCallbackRegister(void (* callbackHandler)(void)) {
+    if (((void*)0) != callbackHandler) {
         UART1_FramingErrorHandler = callbackHandler;
     }
 }
 
-void UART1_OverrunErrorCallbackRegister(void (* callbackHandler)(void))
-{
-    if(((void*)0) != callbackHandler)
-    {
+void UART1_OverrunErrorCallbackRegister(void (* callbackHandler)(void)) {
+    if (((void*)0) != callbackHandler) {
         UART1_OverrunErrorHandler = callbackHandler;
     }
 }
 
-void UART1_ParityErrorCallbackRegister(void (* callbackHandler)(void))
-{
-    if(((void*)0) != callbackHandler)
-    {
+void UART1_ParityErrorCallbackRegister(void (* callbackHandler)(void)) {
+    if (((void*)0) != callbackHandler) {
         UART1_ParityErrorHandler = callbackHandler;
     }
 }
-void UART1_RxCompleteCallbackRegister(void (* callbackHandler)(void))
-{
-    if(((void*)0) != callbackHandler)
-    {
-       UART1_RxCompleteInterruptHandler = callbackHandler;
+
+void UART1_RxCompleteCallbackRegister(void (* callbackHandler)(void)) {
+    if (((void*)0) != callbackHandler) {
+        UART1_RxCompleteInterruptHandler = callbackHandler;
     }
 }
 
-void UART1_TxCompleteCallbackRegister(void (* callbackHandler)(void))
-{
-    if(((void*)0) != callbackHandler)
-    {
-       UART1_TxCompleteInterruptHandler = callbackHandler;
+void UART1_TxCompleteCallbackRegister(void (* callbackHandler)(void)) {
+    if (((void*)0) != callbackHandler) {
+        UART1_TxCompleteInterruptHandler = callbackHandler;
     }
 }
