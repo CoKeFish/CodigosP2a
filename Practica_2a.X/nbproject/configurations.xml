@@ -42,6 +42,8 @@
       <itemPath>Practica2a.h</itemPath>
       <itemPath>UART_int.h</itemPath>
       <itemPath>Timer_int.h</itemPath>
+      <itemPath>FIR.h</itemPath>
+      <itemPath>IIR.h</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
@@ -98,6 +100,8 @@
       <itemPath>ADC_int.c</itemPath>
       <itemPath>UART_int.c</itemPath>
       <itemPath>Timer_int.c</itemPath>
+      <itemPath>FIR.c</itemPath>
+      <itemPath>IIR.c</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"

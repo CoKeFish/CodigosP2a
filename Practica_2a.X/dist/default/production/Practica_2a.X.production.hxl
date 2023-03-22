@@ -12,28 +12,28 @@
   0h - 3h		(dist/default/production\Practica_2a.X.production.hex)
   8h - B1h		(dist/default/production\Practica_2a.X.production.hex)
   1000h - 1060h		(dist/default/production\Practica_2a.X.production.hex)
-  1062h - 1555h		(dist/default/production\Practica_2a.X.production.hex)
-  1558h - 1695h		(dist/default/production\Practica_2a.X.production.hex)
-  1698h - 16C5h		(dist/default/production\Practica_2a.X.production.hex)
-  16C8h - 16F5h		(dist/default/production\Practica_2a.X.production.hex)
-  16F8h - 18C5h		(dist/default/production\Practica_2a.X.production.hex)
-  18C8h - 1941h		(dist/default/production\Practica_2a.X.production.hex)
-  1944h - 1949h		(dist/default/production\Practica_2a.X.production.hex)
-  194Ch - 196Dh		(dist/default/production\Practica_2a.X.production.hex)
+  1062h - 1559h		(dist/default/production\Practica_2a.X.production.hex)
+  155Ch - 1699h		(dist/default/production\Practica_2a.X.production.hex)
+  169Ch - 16C9h		(dist/default/production\Practica_2a.X.production.hex)
+  16CCh - 16F9h		(dist/default/production\Practica_2a.X.production.hex)
+  16FCh - 18C9h		(dist/default/production\Practica_2a.X.production.hex)
+  18CCh - 1945h		(dist/default/production\Practica_2a.X.production.hex)
+  1948h - 194Dh		(dist/default/production\Practica_2a.X.production.hex)
+  1950h - 1971h		(dist/default/production\Practica_2a.X.production.hex)
   200000h - 20000Fh		(dist/default/production\Practica_2a.X.production.hex)
   300000h - 300009h		(dist/default/production\Practica_2a.X.production.hex)
  Unused ranges:
   4h - 7h
   B2h - FFFh
   1061h - 1061h
-  1556h - 1557h
-  1696h - 1697h
-  16C6h - 16C7h
-  16F6h - 16F7h
-  18C6h - 18C7h
-  1942h - 1943h
-  194Ah - 194Bh
-  196Eh - 1FFFFFh
+  155Ah - 155Bh
+  169Ah - 169Bh
+  16CAh - 16CBh
+  16FAh - 16FBh
+  18CAh - 18CBh
+  1946h - 1947h
+  194Eh - 194Fh
+  1972h - 1FFFFFh
   200010h - 2FFFFFh
 
 ### Hex Memory Map ###
@@ -141,7 +141,7 @@
 00001520 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
 00001530 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
 00001540 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
-00001550 | H1 H1 H1 H1 H1 H1 -- -- H1 H1 H1 H1 H1 H1 H1 H1
+00001550 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 -- -- H1 H1 H1 H1
 00001560 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
 00001570 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
 00001580 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
@@ -161,13 +161,13 @@
 00001660 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
 00001670 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
 00001680 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
-00001690 | H1 H1 H1 H1 H1 H1 -- -- H1 H1 H1 H1 H1 H1 H1 H1
+00001690 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 -- -- H1 H1 H1 H1
 000016A0 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
 000016B0 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
-000016C0 | H1 H1 H1 H1 H1 H1 -- -- H1 H1 H1 H1 H1 H1 H1 H1
+000016C0 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 -- -- H1 H1 H1 H1
 000016D0 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
 000016E0 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
-000016F0 | H1 H1 H1 H1 H1 H1 -- -- H1 H1 H1 H1 H1 H1 H1 H1
+000016F0 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 -- -- H1 H1 H1 H1
 00001700 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
 00001710 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
 00001720 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
@@ -196,7 +196,7 @@
 00001890 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
 000018A0 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
 000018B0 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
-000018C0 | H1 H1 H1 H1 H1 H1 -- -- H1 H1 H1 H1 H1 H1 H1 H1
+000018C0 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 -- -- H1 H1 H1 H1
 000018D0 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
 000018E0 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
 000018F0 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
@@ -204,9 +204,10 @@
 00001910 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
 00001920 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
 00001930 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
-00001940 | H1 H1 -- -- H1 H1 H1 H1 H1 H1 -- -- H1 H1 H1 H1
+00001940 | H1 H1 H1 H1 H1 H1 -- -- H1 H1 H1 H1 H1 H1 -- --
 00001950 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
-00001960 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 -- --
+00001960 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
+00001970 | H1 H1 -- -- -- -- -- -- -- -- -- -- -- -- -- --
 ----------------------------------------------------------
 00200000 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
 ----------------------------------------------------------
