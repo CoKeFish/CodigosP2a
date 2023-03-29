@@ -1,0 +1,313 @@
+Version 4.0 HI-TECH Software Intermediate Code
+"43 C:\Program Files\Microchip\xc8\v2.40\pic\include\c99\stdlib.h
+[; ;C:\Program Files\Microchip\xc8\v2.40\pic\include\c99\stdlib.h: 43: void *calloc (size_t, size_t);
+[v _calloc `(*v ~T0 @X0 0 ef2`ui`ui ]
+"9 FIR.c
+[; ;FIR.c: 9: unsigned long FIR(int* coeffs, int input)
+[v _FIR `(ul ~T0 @X0 1 ef2`*i`i ]
+"10
+[; ;FIR.c: 10: {
+{
+[e :U _FIR ]
+"9
+[; ;FIR.c: 9: unsigned long FIR(int* coeffs, int input)
+[v _coeffs `*i ~T0 @X0 1 r1 ]
+[v _input `i ~T0 @X0 1 r2 ]
+"10
+[; ;FIR.c: 10: {
+[f ]
+"11
+[; ;FIR.c: 11:     static int buffer[8] = {0};
+[v F475 `i ~T0 @X0 -> 8 `i s buffer ]
+[i F475
+:U ..
+-> 0 `i
+..
+]
+"12
+[; ;FIR.c: 12:     static int index = 0;
+[v F476 `i ~T0 @X0 1 s index ]
+[i F476
+-> 0 `i
+]
+"13
+[; ;FIR.c: 13:     static int inpar = 5 & 1;
+[v F477 `i ~T0 @X0 1 s inpar ]
+[i F477
+& -> 5 `i -> 1 `i
+]
+"14
+[; ;FIR.c: 14:     unsigned long output = 0;
+[v _output `ul ~T0 @X0 1 a ]
+[e = _output -> -> -> 0 `i `l `ul ]
+"17
+[; ;FIR.c: 17:     buffer[index] = input;
+[e = *U + &U F475 * -> -> F476 `ui `ux -> -> # *U &U F475 `ui `ux _input ]
+"20
+[; ;FIR.c: 20:     for (int i = 0; i < 5; i++) {
+{
+[v _i `i ~T0 @X0 1 a ]
+[e = _i -> 0 `i ]
+[e $ < _i -> 5 `i 9  ]
+[e $U 10  ]
+[e :U 9 ]
+{
+"21
+[; ;FIR.c: 21:         output += (unsigned long)coeffs[i] * (unsigned long)buffer[(index - i) & 7];
+[e =+ _output * -> *U + _coeffs * -> _i `x -> -> # *U _coeffs `i `x `ul -> *U + &U F475 * -> -> & - F476 _i -> 7 `i `ui `ux -> -> # *U &U F475 `ui `ux `ul ]
+"22
+[; ;FIR.c: 22:     }
+}
+[e ++ _i -> 1 `i ]
+[e $ < _i -> 5 `i 9  ]
+[e :U 10 ]
+}
+"24
+[; ;FIR.c: 24:     index = (index + 1) & 7;
+[e = F476 & + F476 -> 1 `i -> 7 `i ]
+"25
+[; ;FIR.c: 25:     return output;
+[e ) _output ]
+[e $UE 8  ]
+"26
+[; ;FIR.c: 26: }
+[e :UE 8 ]
+}
+"30
+[; ;FIR.c: 30: unsigned long FIR_p(int* coeffs, int input)
+[v _FIR_p `(ul ~T0 @X0 1 ef2`*i`i ]
+"31
+[; ;FIR.c: 31: {
+{
+[e :U _FIR_p ]
+"30
+[; ;FIR.c: 30: unsigned long FIR_p(int* coeffs, int input)
+[v _coeffs `*i ~T0 @X0 1 r1 ]
+[v _input `i ~T0 @X0 1 r2 ]
+"31
+[; ;FIR.c: 31: {
+[f ]
+"33
+[; ;FIR.c: 33:     static int index = 0;
+[v F483 `i ~T0 @X0 1 s index ]
+[i F483
+-> 0 `i
+]
+"36
+[; ;FIR.c: 36: int* buffer = (int*)calloc(8, sizeof(int));
+[v _buffer `*i ~T0 @X0 1 a ]
+[e = _buffer -> ( _calloc (2 , -> -> 8 `i `ui -> # `i `ui `*i ]
+"37
+[; ;FIR.c: 37:     unsigned long output = 0;
+[v _output `ul ~T0 @X0 1 a ]
+[e = _output -> -> -> 0 `i `l `ul ]
+"40
+[; ;FIR.c: 40:     *(buffer + index) = input;
+[e = *U + _buffer * -> F483 `x -> -> # *U _buffer `i `x _input ]
+"43
+[; ;FIR.c: 43:     for (int i = 0; i < 5; i++) {
+{
+[v _i `i ~T0 @X0 1 a ]
+[e = _i -> 0 `i ]
+[e $ < _i -> 5 `i 13  ]
+[e $U 14  ]
+[e :U 13 ]
+{
+"44
+[; ;FIR.c: 44:         output += (unsigned long)*(coeffs + i) * ((unsigned long)*(buffer + ((index - i) & 7)));
+[e =+ _output * -> *U + _coeffs * -> _i `x -> -> # *U _coeffs `i `x `ul -> *U + _buffer * -> & - F483 _i -> 7 `i `x -> -> # *U _buffer `i `x `ul ]
+"45
+[; ;FIR.c: 45:     }
+}
+[e ++ _i -> 1 `i ]
+[e $ < _i -> 5 `i 13  ]
+[e :U 14 ]
+}
+"47
+[; ;FIR.c: 47:     index = (index + 1) & 7;
+[e = F483 & + F483 -> 1 `i -> 7 `i ]
+"48
+[; ;FIR.c: 48:     return output;
+[e ) _output ]
+[e $UE 12  ]
+"49
+[; ;FIR.c: 49: }
+[e :UE 12 ]
+}
+"51
+[; ;FIR.c: 51: unsigned long FIR_pE(int *coeffs, int input) {
+[v _FIR_pE `(ul ~T0 @X0 1 ef2`*i`i ]
+{
+[e :U _FIR_pE ]
+[v _coeffs `*i ~T0 @X0 1 r1 ]
+[v _input `i ~T0 @X0 1 r2 ]
+[f ]
+"53
+[; ;FIR.c: 53:     static int buffer[8] = {0};
+[v F490 `i ~T0 @X0 -> 8 `i s buffer ]
+[i F490
+:U ..
+-> 0 `i
+..
+]
+"55
+[; ;FIR.c: 55:     static int *startBuffer = buffer;
+[v F491 `*i ~T0 @X0 1 s startBuffer ]
+[i F491
+&U F490
+]
+"56
+[; ;FIR.c: 56:     static int *endBuffer = buffer + 7;
+[v F492 `*i ~T0 @X0 1 s endBuffer ]
+[i F492
++ &U F490 * -> -> 7 `i `x -> -> # *U &U F490 `i `x
+]
+"58
+[; ;FIR.c: 58:     static int *head = buffer;
+[v F493 `*i ~T0 @X0 1 s head ]
+[i F493
+&U F490
+]
+"59
+[; ;FIR.c: 59:     static int *tail = buffer + ((-5) & 7) ;
+[v F494 `*i ~T0 @X0 1 s tail ]
+[i F494
++ &U F490 * -> & -U -> 5 `i -> 7 `i `x -> -> # *U &U F490 `i `x
+]
+"62
+[; ;FIR.c: 62:     static int *head_i = buffer;
+[v F495 `*i ~T0 @X0 1 s head_i ]
+[i F495
+&U F490
+]
+"63
+[; ;FIR.c: 63:     static int *tail_i = buffer + ((-5 + 1) & 7);
+[v F496 `*i ~T0 @X0 1 s tail_i ]
+[i F496
++ &U F490 * -> & + -U -> 5 `i -> 1 `i -> 7 `i `x -> -> # *U &U F490 `i `x
+]
+"66
+[; ;FIR.c: 66:     static int indexHead = 0;
+[v F497 `i ~T0 @X0 1 s indexHead ]
+[i F497
+-> 0 `i
+]
+"67
+[; ;FIR.c: 67:     static int indexTail = ((-5 + 1) & 7);
+[v F498 `i ~T0 @X0 1 s indexTail ]
+[i F498
+& + -U -> 5 `i -> 1 `i -> 7 `i
+]
+"69
+[; ;FIR.c: 69:     unsigned long output = 0;
+[v _output `ul ~T0 @X0 1 a ]
+[e = _output -> -> -> 0 `i `l `ul ]
+"73
+[; ;FIR.c: 73:     *(head) = input;
+[e = *U F493 _input ]
+"76
+[; ;FIR.c: 76:     for (int i = 0; i < 2; i++) {
+{
+[v _i `i ~T0 @X0 1 a ]
+[e = _i -> 0 `i ]
+[e $ < _i -> 2 `i 17  ]
+[e $U 18  ]
+[e :U 17 ]
+{
+"78
+[; ;FIR.c: 78:         output += (unsigned long) *(coeffs++) * ((unsigned long) * (head_i) + (unsigned long) * (tail_i));
+[e =+ _output * -> *U ++ _coeffs * -> -> 1 `i `x -> -> # *U _coeffs `i `x `ul + -> *U F495 `ul -> *U F496 `ul ]
+"79
+[; ;FIR.c: 79:         if(head_i == startBuffer)
+[e $ ! == F495 F491 20  ]
+"80
+[; ;FIR.c: 80:         {
+{
+"81
+[; ;FIR.c: 81:             head_i = endBuffer;
+[e = F495 F492 ]
+"82
+[; ;FIR.c: 82:         } else
+}
+[e $U 21  ]
+[e :U 20 ]
+"83
+[; ;FIR.c: 83:         {
+{
+"84
+[; ;FIR.c: 84:             head_i--;
+[e -- F495 * -> -> 1 `i `x -> -> # *U F495 `i `x ]
+"85
+[; ;FIR.c: 85:         }
+}
+[e :U 21 ]
+"86
+[; ;FIR.c: 86:         if(tail_i == endBuffer)
+[e $ ! == F496 F492 22  ]
+"87
+[; ;FIR.c: 87:         {
+{
+"88
+[; ;FIR.c: 88:             tail_i = startBuffer;
+[e = F496 F491 ]
+"89
+[; ;FIR.c: 89:         } else
+}
+[e $U 23  ]
+[e :U 22 ]
+"90
+[; ;FIR.c: 90:         {
+{
+"91
+[; ;FIR.c: 91:             tail_i++;
+[e ++ F496 * -> -> 1 `i `x -> -> # *U F496 `i `x ]
+"92
+[; ;FIR.c: 92:         }
+}
+[e :U 23 ]
+"93
+[; ;FIR.c: 93:         if(head_i == tail_i)
+[e $ ! == F495 F496 24  ]
+"94
+[; ;FIR.c: 94:         {
+{
+"95
+[; ;FIR.c: 95:             output += (unsigned long) *(coeffs) * ((unsigned long) * (head_i));
+[e =+ _output * -> *U _coeffs `ul -> *U F495 `ul ]
+"96
+[; ;FIR.c: 96:         }
+}
+[e :U 24 ]
+"97
+[; ;FIR.c: 97:     }
+}
+[e ++ _i -> 1 `i ]
+[e $ < _i -> 2 `i 17  ]
+[e :U 18 ]
+}
+"100
+[; ;FIR.c: 100:     indexHead = (indexHead + 1) & 7;
+[e = F497 & + F497 -> 1 `i -> 7 `i ]
+"101
+[; ;FIR.c: 101:     indexTail = (indexTail + 1) & 7;
+[e = F498 & + F498 -> 1 `i -> 7 `i ]
+"103
+[; ;FIR.c: 103:     head = (buffer + indexHead);
+[e = F493 + &U F490 * -> F497 `x -> -> # *U &U F490 `i `x ]
+"104
+[; ;FIR.c: 104:     tail = (buffer + indexTail);
+[e = F494 + &U F490 * -> F498 `x -> -> # *U &U F490 `i `x ]
+"106
+[; ;FIR.c: 106:     head_i = head;
+[e = F495 F493 ]
+"107
+[; ;FIR.c: 107:     tail_i = tail;
+[e = F496 F494 ]
+"109
+[; ;FIR.c: 109:     return output;
+[e ) _output ]
+[e $UE 16  ]
+"110
+[; ;FIR.c: 110: }
+[e :UE 16 ]
+}

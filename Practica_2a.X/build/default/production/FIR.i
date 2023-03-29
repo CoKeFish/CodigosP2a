@@ -247,9 +247,7 @@ unsigned long FIR(int* coeffs, int input)
 {
     static int buffer[8] = {0};
     static int index = 0;
-
-
-
+    static int inpar = 5 & 1;
     unsigned long output = 0;
 
 
@@ -264,14 +262,15 @@ unsigned long FIR(int* coeffs, int input)
     return output;
 }
 
+
+
 unsigned long FIR_p(int* coeffs, int input)
 {
 
     static int index = 0;
 
-    static int* buffer = (int*)calloc(8, sizeof(int));
 
-
+int* buffer = (int*)calloc(8, sizeof(int));
     unsigned long output = 0;
 
 
@@ -283,5 +282,66 @@ unsigned long FIR_p(int* coeffs, int input)
     }
 
     index = (index + 1) & 7;
+    return output;
+}
+
+unsigned long FIR_pE(int *coeffs, int input) {
+
+    static int buffer[8] = {0};
+
+    static int *startBuffer = buffer;
+    static int *endBuffer = buffer + 7;
+
+    static int *head = buffer;
+    static int *tail = buffer + ((-5) & 7) ;
+
+
+    static int *head_i = buffer;
+    static int *tail_i = buffer + ((-5 + 1) & 7);
+
+
+    static int indexHead = 0;
+    static int indexTail = ((-5 + 1) & 7);
+
+    unsigned long output = 0;
+
+
+
+    *(head) = input;
+
+
+    for (int i = 0; i < 2; i++) {
+
+        output += (unsigned long) *(coeffs++) * ((unsigned long) * (head_i) + (unsigned long) * (tail_i));
+        if(head_i == startBuffer)
+        {
+            head_i = endBuffer;
+        } else
+        {
+            head_i--;
+        }
+        if(tail_i == endBuffer)
+        {
+            tail_i = startBuffer;
+        } else
+        {
+            tail_i++;
+        }
+        if(head_i == tail_i)
+        {
+            output += (unsigned long) *(coeffs) * ((unsigned long) * (head_i));
+        }
+    }
+
+
+    indexHead = (indexHead + 1) & 7;
+    indexTail = (indexTail + 1) & 7;
+
+    head = (buffer + indexHead);
+    tail = (buffer + indexTail);
+
+    head_i = head;
+    tail_i = tail;
+
     return output;
 }

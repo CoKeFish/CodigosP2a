@@ -44,6 +44,13 @@
       <itemPath>Timer_int.h</itemPath>
       <itemPath>FIR.h</itemPath>
       <itemPath>IIR.h</itemPath>
+      <itemPath>10hzorden7 8bL 10bIL.h</itemPath>
+      <itemPath>15hzorden11 12bL 10bL.h</itemPath>
+      <itemPath>20hzorden17 14bL 10bL.h</itemPath>
+      <itemPath>25hzorden30 12bL 10bL.h</itemPath>
+      <itemPath>HighPass 10hzorden4.h</itemPath>
+      <itemPath>LowPass 50hzorden4.h</itemPath>
+      <itemPath>Notch 60hzorden4.h</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
@@ -110,6 +117,9 @@
       <itemPath>Practica_2a.mc3</itemPath>
     </logicalFolder>
   </logicalFolder>
+  <sourceRootList>
+    <Elem>.</Elem>
+  </sourceRootList>
   <projectmakefile>Makefile</projectmakefile>
   <confs>
     <conf name="default" type="2">
