@@ -34,7 +34,8 @@
  *   Use the Filter Design & Analysis Tool to design accurate
  *   int16 filter coefficients.
  */
-#include <stdint.h>
+
+#include <xc.h>
 
 #define BL 12
 const int32_t B[12] = {

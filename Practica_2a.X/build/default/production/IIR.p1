@@ -1,1 +1,450 @@
 Version 4.0 HI-TECH Software Intermediate Code
+"23 ./Notch 60hzorden4.h
+[; ;./Notch 60hzorden4.h: 23: const int NL[5] = { 1,3,1,3,1 };
+[v _NL `Ci ~T0 @X0 -> 5 `i e ]
+[i _NL
+:U ..
+-> 1 `i
+-> 3 `i
+-> 1 `i
+-> 3 `i
+-> 1 `i
+..
+]
+[v F4 `Cd ~T0 @X0 -> 3 `i t ]
+"24
+[; ;./Notch 60hzorden4.h: 24: const double NUM[5][3] = {
+[v _NUM `F4 ~T0 @X0 -> 5 `i e ]
+[i _NUM
+:U ..
+:U ..
+.0.6891427607528
+-> -> 0 `i `d
+-> -> 0 `i `d
+..
+:U ..
+-> -> 1 `i `d
+.1.419133025919
+-> -> 1 `i `d
+..
+:U ..
+.0.6891427607528
+-> -> 0 `i `d
+-> -> 0 `i `d
+..
+:U ..
+-> -> 1 `i `d
+.1.419133025919
+-> -> 1 `i `d
+..
+:U ..
+-> -> 1 `i `d
+-> -> 0 `i `d
+-> -> 0 `i `d
+..
+..
+]
+"41
+[; ;./Notch 60hzorden4.h: 41: const int DL[5] = { 1,3,1,3,1 };
+[v _DL `Ci ~T0 @X0 -> 5 `i e ]
+[i _DL
+:U ..
+-> 1 `i
+-> 3 `i
+-> 1 `i
+-> 3 `i
+-> 1 `i
+..
+]
+[v F7 `Cd ~T0 @X0 -> 3 `i t ]
+"42
+[; ;./Notch 60hzorden4.h: 42: const double DEN[5][3] = {
+[v _DEN `F7 ~T0 @X0 -> 5 `i e ]
+[i _DEN
+:U ..
+:U ..
+-> -> 1 `i `d
+-> -> 0 `i `d
+-> -> 0 `i `d
+..
+:U ..
+-> -> 1 `i `d
+.1.500213001995
+.0.6615935420864
+..
+:U ..
+-> -> 1 `i `d
+-> -> 0 `i `d
+-> -> 0 `i `d
+..
+:U ..
+-> -> 1 `i `d
+.0.381513719092
+.0.3744482215401
+..
+:U ..
+-> -> 1 `i `d
+-> -> 0 `i `d
+-> -> 0 `i `d
+..
+..
+]
+"9 IIR.c
+[; ;IIR.c: 9: double IIR_p1(double * Num, double * Den, double input, const double Gain)
+[v _IIR_p1 `(d ~T0 @X0 1 ef4`*d`*d`d`Cd ]
+"10
+[; ;IIR.c: 10: {
+{
+[e :U _IIR_p1 ]
+"9
+[; ;IIR.c: 9: double IIR_p1(double * Num, double * Den, double input, const double Gain)
+[v _Num `*d ~T0 @X0 1 r1 ]
+[v _Den `*d ~T0 @X0 1 r2 ]
+[v _input `d ~T0 @X0 1 r3 ]
+[v _Gain `Cd ~T0 @X0 1 r4 ]
+"10
+[; ;IIR.c: 10: {
+[f ]
+"12
+[; ;IIR.c: 12:     static double X[3] = {0};
+[v F13 `d ~T0 @X0 -> 3 `i s X ]
+[i F13
+:U ..
+-> -> 0 `i `d
+..
+]
+"13
+[; ;IIR.c: 13:     static double W[3] = {0};
+[v F14 `d ~T0 @X0 -> 3 `i s W ]
+[i F14
+:U ..
+-> -> 0 `i `d
+..
+]
+"15
+[; ;IIR.c: 15:     static double *X_i = X;
+[v F15 `*d ~T0 @X0 1 s X_i ]
+[i F15
+&U F13
+]
+"16
+[; ;IIR.c: 16:     static double *W_i = W;
+[v F16 `*d ~T0 @X0 1 s W_i ]
+[i F16
+&U F14
+]
+"18
+[; ;IIR.c: 18:     static double Y = 0;
+[v F17 `d ~T0 @X0 1 s Y ]
+[i F17
+-> -> 0 `i `d
+]
+"20
+[; ;IIR.c: 20:     *X_i = -(Gain) * (float)input;
+[e = *U F15 * -U _Gain -> -> _input `f `d ]
+"23
+[; ;IIR.c: 23:     for (int i = 0; i < 3; ++i) {
+{
+[v _i `i ~T0 @X0 1 a ]
+[e = _i -> 0 `i ]
+[e $ < _i -> 3 `i 2  ]
+[e $U 3  ]
+[e :U 2 ]
+{
+"24
+[; ;IIR.c: 24:         *W -= ((*Den) * (*W_i));
+[e =- *U &U F14 * *U _Den *U F16 ]
+"25
+[; ;IIR.c: 25:         Den++;
+[e ++ _Den * -> -> 1 `i `x -> -> # *U _Den `i `x ]
+"26
+[; ;IIR.c: 26:         W_i++;
+[e ++ F16 * -> -> 1 `i `x -> -> # *U F16 `i `x ]
+"27
+[; ;IIR.c: 27:     }
+}
+[e =+ _i -> 1 `i ]
+[e $ < _i -> 3 `i 2  ]
+[e :U 3 ]
+}
+"29
+[; ;IIR.c: 29:     X_i = X;
+[e = F15 &U F13 ]
+"30
+[; ;IIR.c: 30:     W_i = W;
+[e = F16 &U F14 ]
+"32
+[; ;IIR.c: 32:     for (int i = 0; i < 3; ++i) {
+{
+[v _i `i ~T0 @X0 1 a ]
+[e = _i -> 0 `i ]
+[e $ < _i -> 3 `i 5  ]
+[e $U 6  ]
+[e :U 5 ]
+{
+"33
+[; ;IIR.c: 33:         Y += ((*Num) * (*W_i));
+[e =+ F17 * *U _Num *U F16 ]
+"34
+[; ;IIR.c: 34:         Num++;
+[e ++ _Num * -> -> 1 `i `x -> -> # *U _Num `i `x ]
+"35
+[; ;IIR.c: 35:         X_i++;
+[e ++ F15 * -> -> 1 `i `x -> -> # *U F15 `i `x ]
+"36
+[; ;IIR.c: 36:     }
+}
+[e =+ _i -> 1 `i ]
+[e $ < _i -> 3 `i 5  ]
+[e :U 6 ]
+}
+"38
+[; ;IIR.c: 38:     X_i = X;
+[e = F15 &U F13 ]
+"39
+[; ;IIR.c: 39:     W_i = W;
+[e = F16 &U F14 ]
+"41
+[; ;IIR.c: 41:     W[2] = W[1];
+[e = *U + &U F14 * -> -> -> 2 `i `ui `ux -> -> # *U &U F14 `ui `ux *U + &U F14 * -> -> -> 1 `i `ui `ux -> -> # *U &U F14 `ui `ux ]
+"42
+[; ;IIR.c: 42:     W[1] = W[0];
+[e = *U + &U F14 * -> -> -> 1 `i `ui `ux -> -> # *U &U F14 `ui `ux *U + &U F14 * -> -> -> 0 `i `ui `ux -> -> # *U &U F14 `ui `ux ]
+"44
+[; ;IIR.c: 44:     return Y;
+[e ) F17 ]
+[e $UE 1  ]
+"45
+[; ;IIR.c: 45: }
+[e :UE 1 ]
+}
+"47
+[; ;IIR.c: 47: double IIR_p2(double * Num, double * Den, float input, const double Gain)
+[v _IIR_p2 `(d ~T0 @X0 1 ef4`*d`*d`f`Cd ]
+"48
+[; ;IIR.c: 48: {
+{
+[e :U _IIR_p2 ]
+"47
+[; ;IIR.c: 47: double IIR_p2(double * Num, double * Den, float input, const double Gain)
+[v _Num `*d ~T0 @X0 1 r1 ]
+[v _Den `*d ~T0 @X0 1 r2 ]
+[v _input `f ~T0 @X0 1 r3 ]
+[v _Gain `Cd ~T0 @X0 1 r4 ]
+"48
+[; ;IIR.c: 48: {
+[f ]
+"50
+[; ;IIR.c: 50:     static double X[3] = {0};
+[v F25 `d ~T0 @X0 -> 3 `i s X ]
+[i F25
+:U ..
+-> -> 0 `i `d
+..
+]
+"51
+[; ;IIR.c: 51:     static double W[3] = {0};
+[v F26 `d ~T0 @X0 -> 3 `i s W ]
+[i F26
+:U ..
+-> -> 0 `i `d
+..
+]
+"53
+[; ;IIR.c: 53:     static double *X_i = X;
+[v F27 `*d ~T0 @X0 1 s X_i ]
+[i F27
+&U F25
+]
+"54
+[; ;IIR.c: 54:     static double *W_i = W;
+[v F28 `*d ~T0 @X0 1 s W_i ]
+[i F28
+&U F26
+]
+"56
+[; ;IIR.c: 56:     static double Y = 0;
+[v F29 `d ~T0 @X0 1 s Y ]
+[i F29
+-> -> 0 `i `d
+]
+"58
+[; ;IIR.c: 58:     *X_i = -(Gain) * (float)input;
+[e = *U F27 * -U _Gain -> _input `d ]
+"61
+[; ;IIR.c: 61:     for (int i = 0; i < 3; ++i) {
+{
+[v _i `i ~T0 @X0 1 a ]
+[e = _i -> 0 `i ]
+[e $ < _i -> 3 `i 9  ]
+[e $U 10  ]
+[e :U 9 ]
+{
+"62
+[; ;IIR.c: 62:         *W_i -= ((*Den) * (*X_i));
+[e =- *U F28 * *U _Den *U F27 ]
+"63
+[; ;IIR.c: 63:         Den++;
+[e ++ _Den * -> -> 1 `i `x -> -> # *U _Den `i `x ]
+"64
+[; ;IIR.c: 64:         X_i++;
+[e ++ F27 * -> -> 1 `i `x -> -> # *U F27 `i `x ]
+"65
+[; ;IIR.c: 65:     }
+}
+[e =+ _i -> 1 `i ]
+[e $ < _i -> 3 `i 9  ]
+[e :U 10 ]
+}
+"67
+[; ;IIR.c: 67:     X_i = X;
+[e = F27 &U F25 ]
+"68
+[; ;IIR.c: 68:     W_i = W;
+[e = F28 &U F26 ]
+"70
+[; ;IIR.c: 70:     for (int i = 0; i < 3; ++i) {
+{
+[v _i `i ~T0 @X0 1 a ]
+[e = _i -> 0 `i ]
+[e $ < _i -> 3 `i 12  ]
+[e $U 13  ]
+[e :U 12 ]
+{
+"71
+[; ;IIR.c: 71:         Y += ((*Num) * (*W_i));
+[e =+ F29 * *U _Num *U F28 ]
+"72
+[; ;IIR.c: 72:         Num++;
+[e ++ _Num * -> -> 1 `i `x -> -> # *U _Num `i `x ]
+"73
+[; ;IIR.c: 73:         X_i++;
+[e ++ F27 * -> -> 1 `i `x -> -> # *U F27 `i `x ]
+"74
+[; ;IIR.c: 74:     }
+}
+[e =+ _i -> 1 `i ]
+[e $ < _i -> 3 `i 12  ]
+[e :U 13 ]
+}
+"76
+[; ;IIR.c: 76:     X_i = X;
+[e = F27 &U F25 ]
+"77
+[; ;IIR.c: 77:     W_i = W;
+[e = F28 &U F26 ]
+"79
+[; ;IIR.c: 79:     W[2] = W[1];
+[e = *U + &U F26 * -> -> -> 2 `i `ui `ux -> -> # *U &U F26 `ui `ux *U + &U F26 * -> -> -> 1 `i `ui `ux -> -> # *U &U F26 `ui `ux ]
+"80
+[; ;IIR.c: 80:     W[1] = W[0];
+[e = *U + &U F26 * -> -> -> 1 `i `ui `ux -> -> # *U &U F26 `ui `ux *U + &U F26 * -> -> -> 0 `i `ui `ux -> -> # *U &U F26 `ui `ux ]
+"82
+[; ;IIR.c: 82:     return Y;
+[e ) F29 ]
+[e $UE 8  ]
+"83
+[; ;IIR.c: 83: }
+[e :UE 8 ]
+}
+"104
+[; ;IIR.c: 104: unsigned int FilterIIR(double input)
+[v _FilterIIR `(ui ~T0 @X0 1 ef1`d ]
+"105
+[; ;IIR.c: 105: {
+{
+[e :U _FilterIIR ]
+"104
+[; ;IIR.c: 104: unsigned int FilterIIR(double input)
+[v _input `d ~T0 @X0 1 r1 ]
+"105
+[; ;IIR.c: 105: {
+[f ]
+"107
+[; ;IIR.c: 107:     static double W_1[3] = {0};
+[v F34 `d ~T0 @X0 -> 3 `i s W_1 ]
+[i F34
+:U ..
+-> -> 0 `i `d
+..
+]
+"109
+[; ;IIR.c: 109:     static double W_2[3] = {0};
+[v F35 `d ~T0 @X0 -> 3 `i s W_2 ]
+[i F35
+:U ..
+-> -> 0 `i `d
+..
+]
+[v F36 `d ~T0 @X0 -> 2 `i s ]
+[i F36
+:U ..
+"111
+[; ;IIR.c: 111:     double Y[2] = {0};
+-> -> 0 `i `d
+..
+]
+[v _Y `d ~T0 @X0 -> 2 `i a ]
+[e = _Y F36 ]
+"113
+[; ;IIR.c: 113:     W_1[0] = (DEN[1][0] * (NUM[0][0]) * input) - ((DEN[1][1]) * W_1[1]) - ((DEN[1][2]) * W_1[2]);
+[e = *U + &U F34 * -> -> -> 0 `i `ui `ux -> -> # *U &U F34 `ui `ux - - * * *U + &U *U + &U _DEN * -> -> -> 1 `i `ui `ux -> * -> # *U &U *U &U _DEN `ui -> -> 3 `i `ui `ux * -> -> -> 0 `i `ui `ux -> -> # *U &U *U + &U _DEN * -> -> -> 1 `i `ui `ux -> * -> # *U &U *U &U _DEN `ui -> -> 3 `i `ui `ux `ui `ux *U + &U *U + &U _NUM * -> -> -> 0 `i `ui `ux -> * -> # *U &U *U &U _NUM `ui -> -> 3 `i `ui `ux * -> -> -> 0 `i `ui `ux -> -> # *U &U *U + &U _NUM * -> -> -> 0 `i `ui `ux -> * -> # *U &U *U &U _NUM `ui -> -> 3 `i `ui `ux `ui `ux _input * *U + &U *U + &U _DEN * -> -> -> 1 `i `ui `ux -> * -> # *U &U *U &U _DEN `ui -> -> 3 `i `ui `ux * -> -> -> 1 `i `ui `ux -> -> # *U &U *U + &U _DEN * -> -> -> 1 `i `ui `ux -> * -> # *U &U *U &U _DEN `ui -> -> 3 `i `ui `ux `ui `ux *U + &U F34 * -> -> -> 1 `i `ui `ux -> -> # *U &U F34 `ui `ux * *U + &U *U + &U _DEN * -> -> -> 1 `i `ui `ux -> * -> # *U &U *U &U _DEN `ui -> -> 3 `i `ui `ux * -> -> -> 2 `i `ui `ux -> -> # *U &U *U + &U _DEN * -> -> -> 1 `i `ui `ux -> * -> # *U &U *U &U _DEN `ui -> -> 3 `i `ui `ux `ui `ux *U + &U F34 * -> -> -> 2 `i `ui `ux -> -> # *U &U F34 `ui `ux ]
+"114
+[; ;IIR.c: 114:     Y[0] = ((NUM[1][0]) * W_1[0]) + ((NUM[1][1]) * W_1[1]) + ((NUM[1][2]) * W_1[2]);
+[e = *U + &U _Y * -> -> -> 0 `i `ui `ux -> -> # *U &U _Y `ui `ux + + * *U + &U *U + &U _NUM * -> -> -> 1 `i `ui `ux -> * -> # *U &U *U &U _NUM `ui -> -> 3 `i `ui `ux * -> -> -> 0 `i `ui `ux -> -> # *U &U *U + &U _NUM * -> -> -> 1 `i `ui `ux -> * -> # *U &U *U &U _NUM `ui -> -> 3 `i `ui `ux `ui `ux *U + &U F34 * -> -> -> 0 `i `ui `ux -> -> # *U &U F34 `ui `ux * *U + &U *U + &U _NUM * -> -> -> 1 `i `ui `ux -> * -> # *U &U *U &U _NUM `ui -> -> 3 `i `ui `ux * -> -> -> 1 `i `ui `ux -> -> # *U &U *U + &U _NUM * -> -> -> 1 `i `ui `ux -> * -> # *U &U *U &U _NUM `ui -> -> 3 `i `ui `ux `ui `ux *U + &U F34 * -> -> -> 1 `i `ui `ux -> -> # *U &U F34 `ui `ux * *U + &U *U + &U _NUM * -> -> -> 1 `i `ui `ux -> * -> # *U &U *U &U _NUM `ui -> -> 3 `i `ui `ux * -> -> -> 2 `i `ui `ux -> -> # *U &U *U + &U _NUM * -> -> -> 1 `i `ui `ux -> * -> # *U &U *U &U _NUM `ui -> -> 3 `i `ui `ux `ui `ux *U + &U F34 * -> -> -> 2 `i `ui `ux -> -> # *U &U F34 `ui `ux ]
+"115
+[; ;IIR.c: 115:     W_1[2] = W_1[1];
+[e = *U + &U F34 * -> -> -> 2 `i `ui `ux -> -> # *U &U F34 `ui `ux *U + &U F34 * -> -> -> 1 `i `ui `ux -> -> # *U &U F34 `ui `ux ]
+"116
+[; ;IIR.c: 116:     W_1[1] = W_1[0];
+[e = *U + &U F34 * -> -> -> 1 `i `ui `ux -> -> # *U &U F34 `ui `ux *U + &U F34 * -> -> -> 0 `i `ui `ux -> -> # *U &U F34 `ui `ux ]
+"118
+[; ;IIR.c: 118:     W_2[0] = (DEN[3][0] * Y[0] * NUM[2][0]) - ((DEN[3][1]) * W_2[1]) - ((DEN[3][2]) * W_2[2]);
+[e = *U + &U F35 * -> -> -> 0 `i `ui `ux -> -> # *U &U F35 `ui `ux - - * * *U + &U *U + &U _DEN * -> -> -> 3 `i `ui `ux -> * -> # *U &U *U &U _DEN `ui -> -> 3 `i `ui `ux * -> -> -> 0 `i `ui `ux -> -> # *U &U *U + &U _DEN * -> -> -> 3 `i `ui `ux -> * -> # *U &U *U &U _DEN `ui -> -> 3 `i `ui `ux `ui `ux *U + &U _Y * -> -> -> 0 `i `ui `ux -> -> # *U &U _Y `ui `ux *U + &U *U + &U _NUM * -> -> -> 2 `i `ui `ux -> * -> # *U &U *U &U _NUM `ui -> -> 3 `i `ui `ux * -> -> -> 0 `i `ui `ux -> -> # *U &U *U + &U _NUM * -> -> -> 2 `i `ui `ux -> * -> # *U &U *U &U _NUM `ui -> -> 3 `i `ui `ux `ui `ux * *U + &U *U + &U _DEN * -> -> -> 3 `i `ui `ux -> * -> # *U &U *U &U _DEN `ui -> -> 3 `i `ui `ux * -> -> -> 1 `i `ui `ux -> -> # *U &U *U + &U _DEN * -> -> -> 3 `i `ui `ux -> * -> # *U &U *U &U _DEN `ui -> -> 3 `i `ui `ux `ui `ux *U + &U F35 * -> -> -> 1 `i `ui `ux -> -> # *U &U F35 `ui `ux * *U + &U *U + &U _DEN * -> -> -> 3 `i `ui `ux -> * -> # *U &U *U &U _DEN `ui -> -> 3 `i `ui `ux * -> -> -> 2 `i `ui `ux -> -> # *U &U *U + &U _DEN * -> -> -> 3 `i `ui `ux -> * -> # *U &U *U &U _DEN `ui -> -> 3 `i `ui `ux `ui `ux *U + &U F35 * -> -> -> 2 `i `ui `ux -> -> # *U &U F35 `ui `ux ]
+"119
+[; ;IIR.c: 119:     Y[1] = ((NUM[3][0]) * W_2[0]) + ((NUM[3][1]) * W_2[1]) + ((NUM[3][2]) * W_2[2]);
+[e = *U + &U _Y * -> -> -> 1 `i `ui `ux -> -> # *U &U _Y `ui `ux + + * *U + &U *U + &U _NUM * -> -> -> 3 `i `ui `ux -> * -> # *U &U *U &U _NUM `ui -> -> 3 `i `ui `ux * -> -> -> 0 `i `ui `ux -> -> # *U &U *U + &U _NUM * -> -> -> 3 `i `ui `ux -> * -> # *U &U *U &U _NUM `ui -> -> 3 `i `ui `ux `ui `ux *U + &U F35 * -> -> -> 0 `i `ui `ux -> -> # *U &U F35 `ui `ux * *U + &U *U + &U _NUM * -> -> -> 3 `i `ui `ux -> * -> # *U &U *U &U _NUM `ui -> -> 3 `i `ui `ux * -> -> -> 1 `i `ui `ux -> -> # *U &U *U + &U _NUM * -> -> -> 3 `i `ui `ux -> * -> # *U &U *U &U _NUM `ui -> -> 3 `i `ui `ux `ui `ux *U + &U F35 * -> -> -> 1 `i `ui `ux -> -> # *U &U F35 `ui `ux * *U + &U *U + &U _NUM * -> -> -> 3 `i `ui `ux -> * -> # *U &U *U &U _NUM `ui -> -> 3 `i `ui `ux * -> -> -> 2 `i `ui `ux -> -> # *U &U *U + &U _NUM * -> -> -> 3 `i `ui `ux -> * -> # *U &U *U &U _NUM `ui -> -> 3 `i `ui `ux `ui `ux *U + &U F35 * -> -> -> 2 `i `ui `ux -> -> # *U &U F35 `ui `ux ]
+"120
+[; ;IIR.c: 120:     W_2[2] = W_2[1];
+[e = *U + &U F35 * -> -> -> 2 `i `ui `ux -> -> # *U &U F35 `ui `ux *U + &U F35 * -> -> -> 1 `i `ui `ux -> -> # *U &U F35 `ui `ux ]
+"121
+[; ;IIR.c: 121:     W_2[1] = W_2[0];
+[e = *U + &U F35 * -> -> -> 1 `i `ui `ux -> -> # *U &U F35 `ui `ux *U + &U F35 * -> -> -> 0 `i `ui `ux -> -> # *U &U F35 `ui `ux ]
+"123
+[; ;IIR.c: 123:     int temp = (int)Y[1];
+[v _temp `i ~T0 @X0 1 a ]
+[e = _temp -> *U + &U _Y * -> -> -> 1 `i `ui `ux -> -> # *U &U _Y `ui `ux `i ]
+"124
+[; ;IIR.c: 124:     if(temp > 4095)
+[e $ ! > _temp -> 4095 `i 16  ]
+"125
+[; ;IIR.c: 125:     {
+{
+"126
+[; ;IIR.c: 126:         return 4095;
+[e ) -> -> 4095 `i `ui ]
+[e $UE 15  ]
+"127
+[; ;IIR.c: 127:     }
+}
+[e :U 16 ]
+"128
+[; ;IIR.c: 128:     if(temp < 0) {
+[e $ ! < _temp -> 0 `i 17  ]
+{
+"129
+[; ;IIR.c: 129:         return 0;
+[e ) -> -> 0 `i `ui ]
+[e $UE 15  ]
+"130
+[; ;IIR.c: 130:     }
+}
+[e :U 17 ]
+"131
+[; ;IIR.c: 131:     return (unsigned int)temp;
+[e ) -> _temp `ui ]
+[e $UE 15  ]
+"132
+[; ;IIR.c: 132: }
+[e :UE 15 ]
+}

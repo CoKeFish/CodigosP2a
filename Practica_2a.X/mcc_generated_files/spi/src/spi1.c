@@ -82,7 +82,7 @@ void SPI1_Initialize(void)
     SPI1CON0 = 0x2;
 }
 
-bool SPI1_Open()
+bool SPI1_Open(void)
 {   
     if(!SPI1CON0bits.EN)
     {

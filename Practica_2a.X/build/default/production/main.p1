@@ -1,23 +1,23 @@
 Version 4.0 HI-TECH Software Intermediate Code
-[v F16533 `(v ~T0 @X0 0 tf ]
-[v F16540 `(v ~T0 @X0 0 tf ]
+[v F16532 `(v ~T0 @X0 0 tf ]
+[v F16539 `(v ~T0 @X0 0 tf ]
 [p mainexit ]
 "59 ./mcc_generated_files/system/../uart/../system/system.h
 [; ;./mcc_generated_files/system/../uart/../system/system.h: 59: void SYSTEM_Initialize(void);
 [v _SYSTEM_Initialize `(v ~T0 @X0 0 ef ]
 "74 ./mcc_generated_files/system/../spi/spi1.h
-[; ;./mcc_generated_files/system/../spi/spi1.h: 74: _Bool SPI1_Open();
-[v _SPI1_Open `(a ~T0 @X0 0 e? ]
-[v F16219 `(v ~T0 @X0 0 tf ]
+[; ;./mcc_generated_files/system/../spi/spi1.h: 74: _Bool SPI1_Open(void);
+[v _SPI1_Open `(a ~T0 @X0 0 ef ]
+[v F15901 `(v ~T0 @X0 0 tf ]
 "315 ./mcc_generated_files/adc/adcc.h
-[v _ADCC_SetADIInterruptHandler `(v ~T0 @X0 0 ef1`*F16219 ]
+[v _ADCC_SetADIInterruptHandler `(v ~T0 @X0 0 ef1`*F15901 ]
 "6 ./ADC_int.h
 [; ;./ADC_int.h: 6: void ADC_int(void);
 [v _ADC_int `(v ~T0 @X0 0 ef ]
-[v F16315 `(v ~T0 @X0 0 tf ]
+[v F16314 `(v ~T0 @X0 0 tf ]
 "118 ./mcc_generated_files/system/../timer/tmr0.h
 [; ;./mcc_generated_files/system/../timer/tmr0.h: 118:  void Timer_OverflowCallbackRegister(void (* CallbackHandler)(void));
-[v _Timer_OverflowCallbackRegister `(v ~T0 @X0 0 ef1`*F16315 ]
+[v _Timer_OverflowCallbackRegister `(v ~T0 @X0 0 ef1`*F16314 ]
 "5 ./Timer_int.h
 [; ;./Timer_int.h: 5: void Timer_int(void);
 [v _Timer_int `(v ~T0 @X0 0 ef ]
@@ -2300,10 +2300,10 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; <" TOSU equ 03FFFh ;# ">
 "354 ./mcc_generated_files/system/../uart/uart1.h
 [; ;./mcc_generated_files/system/../uart/uart1.h: 354: void (*UART1_TxInterruptHandler)(void);
-[v _UART1_TxInterruptHandler `*F16533 ~T0 @X0 1 e ]
+[v _UART1_TxInterruptHandler `*F16532 ~T0 @X0 1 e ]
 "379
 [; ;./mcc_generated_files/system/../uart/uart1.h: 379: void (*UART1_RxInterruptHandler)(void);
-[v _UART1_RxInterruptHandler `*F16540 ~T0 @X0 1 e ]
+[v _UART1_RxInterruptHandler `*F16539 ~T0 @X0 1 e ]
 "10 ./Practica2a.h
 [; ;./Practica2a.h: 10: uint16_t PERIOD = 2;
 [v _PERIOD `us ~T0 @X0 1 e ]

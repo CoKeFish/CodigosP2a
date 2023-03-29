@@ -83,23 +83,23 @@ double IIR_p2(double * Num, double * Den, float input, const double Gain)
 }
 
 
-double IIR(double input)
-{
-
-    double gain1 = 0.026611328125;
-    double a1[] = {1, 2, 1};
-    double b1[] = {1, -1.65625,  0.765625};
-
-    double gain2 = 0.02294921875;
-    double a2[] = {1, 2, 1};
-    double b2[] = {1, -1.421875,   0.515625};
-
-    double Y[2] = {0};
-
-    Y[0] = IIR_p1(a1, b1, input, gain1);
-    Y[1] = IIR_p2(a2, b2, Y[0], gain2);
-    return Y[1];
-}
+//double IIR(double input)
+//{
+//
+//    double gain1 = 0.026611328125;
+//    double a1[] = {1, 2, 1};
+//    double b1[] = {1, -1.65625,  0.765625};
+//
+//    double gain2 = 0.02294921875;
+//    double a2[] = {1, 2, 1};
+//    double b2[] = {1, -1.421875,   0.515625};
+//
+//    double Y[2] = {0};
+//
+//    Y[0] = IIR_p1(a1, b1, input, gain1);
+//    Y[1] = IIR_p2(a2, b2, Y[0], gain2);
+//    return Y[1];
+//}
 
 unsigned int FilterIIR(double input)
 {
@@ -128,5 +128,5 @@ unsigned int FilterIIR(double input)
     if(temp < 0) {
         return 0;
     }
-    return temp;
+    return (unsigned int)temp;
 }

@@ -34,7 +34,7 @@ unsigned long FIR(const int *coeffs, int input) {
 
 
 
-unsigned long FIR_p(const uint32_t *coeffs, int input) {
+unsigned long FIR_p(const int32_t *coeffs, int input) {
     // buffer de entrada
     static int buffer[N_BUFFER] = {0};
 

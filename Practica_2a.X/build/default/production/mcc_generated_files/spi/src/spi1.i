@@ -281,7 +281,7 @@ struct SPI_INTERFACE
 {
     void (*Initialize)(void);
     void (*Close)(void);
-    _Bool (*Open)(uint8_t spiConfigIndex);
+    _Bool (*Open)(void);
     void (*BufferExchange)(void *bufferData, size_t bufferSize);
     void (*BufferRead)(void *bufferData, size_t bufferSize);
     void (*BufferWrite)(void *bufferData, size_t bufferSize);
@@ -313,7 +313,7 @@ extern const struct SPI_INTERFACE SPI1;
 
 void SPI1_Initialize(void);
 # 74 "mcc_generated_files/spi/src/../spi1.h"
-_Bool SPI1_Open();
+_Bool SPI1_Open(void);
 
 
 
@@ -27111,7 +27111,7 @@ void SPI1_Initialize(void)
     SPI1CON0 = 0x2;
 }
 
-_Bool SPI1_Open()
+_Bool SPI1_Open(void)
 {
     if(!SPI1CON0bits.EN)
     {

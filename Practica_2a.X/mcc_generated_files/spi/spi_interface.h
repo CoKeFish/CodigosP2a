@@ -68,7 +68,7 @@ struct SPI_INTERFACE
 {   
     void (*Initialize)(void);
     void (*Close)(void);
-    bool (*Open)(uint8_t spiConfigIndex);
+    bool (*Open)(void);
     void (*BufferExchange)(void *bufferData, size_t bufferSize);
     void (*BufferRead)(void *bufferData, size_t bufferSize);
     void (*BufferWrite)(void *bufferData, size_t bufferSize); 

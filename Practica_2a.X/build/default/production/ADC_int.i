@@ -27146,10 +27146,7 @@ char *tempnam(const char *, const char *);
 # 42 "./mcc_generated_files/uart/uart1.h" 2
 
 # 1 "./mcc_generated_files/uart/../system/system.h" 1
-# 39 "./mcc_generated_files/uart/../system/system.h"
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.40\\pic\\include\\c99\\conio.h" 1 3
-# 39 "./mcc_generated_files/uart/../system/system.h" 2
-
+# 40 "./mcc_generated_files/uart/../system/system.h"
 # 1 "./mcc_generated_files/uart/../system/config_bits.h" 1
 # 37 "./mcc_generated_files/uart/../system/config_bits.h"
 # 1 "./mcc_generated_files/uart/../system/../system/clock.h" 1
@@ -27196,7 +27193,7 @@ struct SPI_INTERFACE
 {
     void (*Initialize)(void);
     void (*Close)(void);
-    _Bool (*Open)(uint8_t spiConfigIndex);
+    _Bool (*Open)(void);
     void (*BufferExchange)(void *bufferData, size_t bufferSize);
     void (*BufferRead)(void *bufferData, size_t bufferSize);
     void (*BufferWrite)(void *bufferData, size_t bufferSize);
@@ -27228,7 +27225,7 @@ extern const struct SPI_INTERFACE SPI1;
 
 void SPI1_Initialize(void);
 # 74 "./mcc_generated_files/uart/../system/../spi/spi1.h"
-_Bool SPI1_Open();
+_Bool SPI1_Open(void);
 
 
 
