@@ -27881,6 +27881,24 @@ void Timer_int(void);
 uint16_t PERIOD = 2;
 # 6 "ADC_int.c" 2
 
+# 1 "./FIR.h" 1
+# 10 "./FIR.h"
+unsigned long FIR_p(const int32_t *coeffs, int input);
+uint16_t FilterFIR(int input);
+# 7 "ADC_int.c" 2
+
+# 1 "./IIR.h" 1
+
+
+
+
+
+
+
+double IIR(double input);
+unsigned int FilterIIR(double input);
+# 8 "ADC_int.c" 2
+
 
 static uint8_t char_hex[] = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F'};
 
@@ -27910,17 +27928,18 @@ void ADC_int(void)
     {
 
 
+        int result = FilterFIR((ADRESH << 8) + ADRESL);
         LATEbits.LATE0 = 0;
 
         Timer2_Start();
 
-        SPI1_ByteWrite(0b10110000 | ADRESH);
-        SPI1_ByteWrite(ADRESL);
+        SPI1_ByteWrite(0b10110000 | (result >> 8));
+        SPI1_ByteWrite(result & 0b11111111);
 
 
-        UART1_Write(char_hex[ADRESH & 0b1111]);
-        UART1_Write(char_hex[(ADRESL >> 4) & 0b1111]);
-        UART1_Write(char_hex[ADRESL & 0b1111]);
+        UART1_Write(char_hex[(result >> 8) & 0b1111]);
+        UART1_Write(char_hex[(result >> 4) & 0b1111]);
+        UART1_Write(char_hex[result & 0b1111]);
 
         UART1_Write('\n');
     }

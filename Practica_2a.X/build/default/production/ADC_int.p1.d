@@ -20,4 +20,6 @@ mcc_generated_files/uart/uart_drv_interface.h  \
 mcc_generated_files/uart/uart_types.h  \
 Practica2a.h  \
 UART_int.h  \
-Timer_int.h 
+Timer_int.h  \
+FIR.h  \
+IIR.h 
