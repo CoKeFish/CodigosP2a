@@ -17,7 +17,7 @@ void ADC_int(void)
 
         LATEbits.LATE0 = 0;     // CS
         
-        ADCC_StartConversion(channel_ANA1); //Iniciamos la segunda
+        ADCC_StartConversion(channel_ANA0); //Iniciamos la segunda
         // y Cargamos la lectura a los buffers de transmicion(UART, SPI)
         
         Timer2_Start(); //Maneja el tiempo de CS
