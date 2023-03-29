@@ -6,11 +6,11 @@ Linker command line:
   --edf=C:\Program Files\Microchip\xc8\v2.40\pic\dat\20220703182018_en.msgs \
   -pivt0x8=08h -cn -h+dist/default/production\Practica_2a.X.production.sym \
   --cmf=dist/default/production\Practica_2a.X.production.cmf -z -Q18F46K42 \
-  -oC:\Users\rrtc2\AppData\Local\Temp\xcAsabo.4 --defsym=__MPLAB_BUILD=1 \
+  -oC:\Users\AULASI~1\AppData\Local\Temp\xcAshg8.4 --defsym=__MPLAB_BUILD=1 \
   --fixupoverflow=error \
   -Mdist/default/production/Practica_2a.X.production.map \
-  --md=C:\Users\rrtc2\AppData\Local\Temp\xcAsabo.dat -E1 -ver=XC8 Compiler \
-  --acfsm=1493 -ACODE=00h-0FFFFh -ACONST=00h-0FFFFh \
+  --md=C:\Users\AULASI~1\AppData\Local\Temp\xcAshg8.dat -E1 \
+  -ver=XC8 Compiler --acfsm=1493 -ACODE=00h-0FFFFh -ACONST=00h-0FFFFh \
   -ASMALLCONST=01000h-010FFhx240 -AMEDIUMCONST=01000h-0FFFFh \
   -ACOMRAM=01h-05Fh -AABS1=00h-0FFFh -ABIGRAM=01h-0FFFh \
   -ARAM=060h-0FFh,0100h-01FFhx15 -ABANK0=060h-0FFh -ABANK1=0100h-01FFh \
@@ -28,7 +28,7 @@ Linker command line:
   -pfarbss=FARRAM,fardata=FARRAM,nvFARRAM=FARRAM \
   -pintsave_regs=BIGRAM,bigbss=BIGRAM,bigdata=BIGRAM -pbss=RAM \
   -pidata=CODE,irdata=CODE,ibigdata=CODE,ifardata=CODE -prparam=COMRAM \
-  C:\Users\rrtc2\AppData\Local\Temp\xcAsabo.o \
+  C:\Users\AULASI~1\AppData\Local\Temp\xcAshg8.o \
   dist/default/production\Practica_2a.X.production.o 
 
 Object code version is 3.11
@@ -38,7 +38,7 @@ Machine type is 18F46K42
 
 
                 Name                               Link     Load   Length Selector   Space Scale
-C:\Users\rrtc2\AppData\Local\Temp\xcAsabo.o
+C:\Users\AULASI~1\AppData\Local\Temp\xcAshg8.o
                 idloc                            200000   200000       10        0       5
                 config                           300000   300000        A        0       4
                 init                                 AE       AE        4        4       0

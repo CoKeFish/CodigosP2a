@@ -11,7 +11,7 @@
 # All addresses and the length are given in unqualified hexadecimal
 # in delta units.  Any other numeric values are decimal.
 %PSECTS
-$C:\Users\rrtc2\AppData\Local\Temp\xcAsabo.o
+$C:\Users\AULASI~1\AppData\Local\Temp\xcAshg8.o
 idloc IDLOC 5 200000 200000 10 1 1
 init CODE 0 AE AE 4 1 2
 reset_vec CODE 0 0 0 4 1 2
@@ -150,108 +150,108 @@ MEDIUMCONST 1000-FEE1 1
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/production\Practica_2a.X.production.o
-982 text53 CODE >385:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
-982 text53 CODE >388:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
-992 text53 CODE >390:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
-9A4 text53 CODE >392:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
-9AA text53 CODE >394:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
-9AE text53 CODE >395:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
-9B0 text53 CODE >396:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
-9B4 text53 CODE >397:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
-9B8 text53 CODE >399:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
-D54 text52 CODE >321:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
-D54 text52 CODE >380:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
-D54 text52 CODE >382:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
-D58 text52 CODE >383:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
-910 text51 CODE >101:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/timer/src/tmr2.c
-910 text51 CODE >308:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
-910 text51 CODE >312:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
-920 text51 CODE >313:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
-922 text51 CODE >314:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
-92A text51 CODE >315:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
-92E text51 CODE >316:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
-932 text51 CODE >317:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
-940 text51 CODE >319:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
-948 text51 CODE >321:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
-D62 text50 CODE >98:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/timer/src/tmr2.c
-D62 text50 CODE >100:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/timer/src/tmr2.c
-D64 text50 CODE >101:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/timer/src/tmr2.c
-CD0 text49 CODE >113:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/adc/src/adcc.c
-CD0 text49 CODE >119:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/timer/src/tmr2.c
-CD0 text49 CODE >121:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/timer/src/tmr2.c
-CD4 text49 CODE >122:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/timer/src/tmr2.c
-CD6 text49 CODE >123:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/timer/src/tmr2.c
-CD8 text49 CODE >124:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/timer/src/tmr2.c
-CDA text49 CODE >126:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/timer/src/tmr2.c
-CDE text49 CODE >127:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/timer/src/tmr2.c
-CEE text48 CODE >106:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/adc/src/adcc.c
-CF0 text48 CODE >109:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/adc/src/adcc.c
-CF6 text48 CODE >112:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/adc/src/adcc.c
-CFA text48 CODE >113:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/adc/src/adcc.c
-B9C text47 CODE >7:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\Timer_int.c
-B9C text47 CODE >12:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\Timer_int.c
-BA2 text47 CODE >16:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\Timer_int.c
-BBA text47 CODE >19:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\Timer_int.c
-BC2 text47 CODE >21:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\Timer_int.c
-BC8 text47 CODE >23:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\Timer_int.c
-D74 text46 CODE >139:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/timer/src/tmr0.c
-D74 text46 CODE >143:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/timer/src/tmr0.c
-D72 text45 CODE >133:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/timer/src/tmr2.c
-D72 text45 CODE >136:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/timer/src/tmr2.c
-86C text44 CODE >97:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
-86C text44 CODE >118:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/timer/src/tmr0.c
-878 text44 CODE >121:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/timer/src/tmr0.c
-87C text44 CODE >123:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/timer/src/tmr0.c
-882 text44 CODE >124:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/timer/src/tmr0.c
-888 text44 CODE >128:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/timer/src/tmr0.c
-89A text44 CODE >130:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/timer/src/tmr0.c
-8B2 text44 CODE >132:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/timer/src/tmr0.c
-D70 text43 CODE >95:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
-D70 text43 CODE >97:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
-D70 text43 CODE >205:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
-D6E text42 CODE >202:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
-D6E text42 CODE >205:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
-B6E text41 CODE >189:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
-B6E text41 CODE >192:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
-B82 text41 CODE >194:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
-B9A text41 CODE >196:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
-B40 text40 CODE >171:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
-B40 text40 CODE >180:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
-B52 text40 CODE >182:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
-B56 text40 CODE >185:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
-B5A text40 CODE >186:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
-D6C text39 CODE >168:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
-D6C text39 CODE >171:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
-B12 text38 CODE >155:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
-B12 text38 CODE >158:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
-B26 text38 CODE >160:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
-B3E text38 CODE >162:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
-AE4 text37 CODE >137:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
-AE4 text37 CODE >146:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
-AF6 text37 CODE >148:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
-AFA text37 CODE >151:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
-AFE text37 CODE >152:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
-D6A text36 CODE >134:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
-D6A text36 CODE >137:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
-AB6 text35 CODE >121:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
-AB6 text35 CODE >124:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
-ACA text35 CODE >126:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
-AE2 text35 CODE >128:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
-A88 text34 CODE >112:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
-A88 text34 CODE >143:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/pins.c
-A9A text34 CODE >114:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
-A9E text34 CODE >117:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
-AA2 text34 CODE >118:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
-D68 text33 CODE >141:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/pins.c
-D68 text33 CODE >143:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/pins.c
-D4C text32 CODE >113:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/adc/src/adcc.c
-D4C text32 CODE >99:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
-D4C text32 CODE >101:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
-D50 text32 CODE >102:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
-CE0 text31 CODE >106:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/adc/src/adcc.c
-CE2 text31 CODE >109:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/adc/src/adcc.c
-CE8 text31 CODE >112:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/adc/src/adcc.c
-CEC text31 CODE >113:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/adc/src/adcc.c
+982 text53 CODE >385:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
+982 text53 CODE >388:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
+992 text53 CODE >390:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
+9A4 text53 CODE >392:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
+9AA text53 CODE >394:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
+9AE text53 CODE >395:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
+9B0 text53 CODE >396:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
+9B4 text53 CODE >397:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
+9B8 text53 CODE >399:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
+D54 text52 CODE >321:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
+D54 text52 CODE >380:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
+D54 text52 CODE >382:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
+D58 text52 CODE >383:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
+910 text51 CODE >101:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/timer/src/tmr2.c
+910 text51 CODE >308:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
+910 text51 CODE >312:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
+920 text51 CODE >313:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
+922 text51 CODE >314:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
+92A text51 CODE >315:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
+92E text51 CODE >316:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
+932 text51 CODE >317:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
+940 text51 CODE >319:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
+948 text51 CODE >321:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
+D62 text50 CODE >98:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/timer/src/tmr2.c
+D62 text50 CODE >100:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/timer/src/tmr2.c
+D64 text50 CODE >101:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/timer/src/tmr2.c
+CD0 text49 CODE >113:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/adc/src/adcc.c
+CD0 text49 CODE >119:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/timer/src/tmr2.c
+CD0 text49 CODE >121:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/timer/src/tmr2.c
+CD4 text49 CODE >122:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/timer/src/tmr2.c
+CD6 text49 CODE >123:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/timer/src/tmr2.c
+CD8 text49 CODE >124:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/timer/src/tmr2.c
+CDA text49 CODE >126:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/timer/src/tmr2.c
+CDE text49 CODE >127:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/timer/src/tmr2.c
+CEE text48 CODE >106:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/adc/src/adcc.c
+CF0 text48 CODE >109:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/adc/src/adcc.c
+CF6 text48 CODE >112:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/adc/src/adcc.c
+CFA text48 CODE >113:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/adc/src/adcc.c
+B9C text47 CODE >7:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\Timer_int.c
+B9C text47 CODE >12:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\Timer_int.c
+BA2 text47 CODE >16:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\Timer_int.c
+BBA text47 CODE >19:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\Timer_int.c
+BC2 text47 CODE >21:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\Timer_int.c
+BC8 text47 CODE >23:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\Timer_int.c
+D74 text46 CODE >139:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/timer/src/tmr0.c
+D74 text46 CODE >143:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/timer/src/tmr0.c
+D72 text45 CODE >133:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/timer/src/tmr2.c
+D72 text45 CODE >136:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/timer/src/tmr2.c
+86C text44 CODE >97:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
+86C text44 CODE >118:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/timer/src/tmr0.c
+878 text44 CODE >121:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/timer/src/tmr0.c
+87C text44 CODE >123:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/timer/src/tmr0.c
+882 text44 CODE >124:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/timer/src/tmr0.c
+888 text44 CODE >128:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/timer/src/tmr0.c
+89A text44 CODE >130:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/timer/src/tmr0.c
+8B2 text44 CODE >132:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/timer/src/tmr0.c
+D70 text43 CODE >95:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
+D70 text43 CODE >97:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
+D70 text43 CODE >205:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
+D6E text42 CODE >202:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
+D6E text42 CODE >205:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
+B6E text41 CODE >189:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
+B6E text41 CODE >192:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
+B82 text41 CODE >194:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
+B9A text41 CODE >196:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
+B40 text40 CODE >171:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
+B40 text40 CODE >180:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
+B52 text40 CODE >182:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
+B56 text40 CODE >185:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
+B5A text40 CODE >186:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
+D6C text39 CODE >168:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
+D6C text39 CODE >171:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
+B12 text38 CODE >155:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
+B12 text38 CODE >158:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
+B26 text38 CODE >160:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
+B3E text38 CODE >162:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
+AE4 text37 CODE >137:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
+AE4 text37 CODE >146:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
+AF6 text37 CODE >148:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
+AFA text37 CODE >151:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
+AFE text37 CODE >152:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
+D6A text36 CODE >134:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
+D6A text36 CODE >137:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
+AB6 text35 CODE >121:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
+AB6 text35 CODE >124:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
+ACA text35 CODE >126:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
+AE2 text35 CODE >128:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
+A88 text34 CODE >112:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
+A88 text34 CODE >143:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/pins.c
+A9A text34 CODE >114:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
+A9E text34 CODE >117:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
+AA2 text34 CODE >118:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
+D68 text33 CODE >141:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/pins.c
+D68 text33 CODE >143:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/pins.c
+D4C text32 CODE >113:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/adc/src/adcc.c
+D4C text32 CODE >99:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
+D4C text32 CODE >101:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
+D50 text32 CODE >102:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
+CE0 text31 CODE >106:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/adc/src/adcc.c
+CE2 text31 CODE >109:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/adc/src/adcc.c
+CE8 text31 CODE >112:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/adc/src/adcc.c
+CEC text31 CODE >113:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/adc/src/adcc.c
 800 text30 CODE >15:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\Umul32.c
 800 text30 CODE >119:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\Umul32.c
 810 text30 CODE >121:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\Umul32.c
@@ -261,427 +261,427 @@ CEC text31 CODE >113:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica
 842 text30 CODE >125:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\Umul32.c
 858 text30 CODE >128:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\Umul32.c
 868 text30 CODE >129:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\Umul32.c
-B2 text29 CODE >37:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\FIR.c
-B2 text29 CODE >55:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\FIR.c
-C2 text29 CODE >59:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\FIR.c
-DA text29 CODE >62:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\FIR.c
-E2 text29 CODE >64:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\FIR.c
-198 text29 CODE >65:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\FIR.c
-1B0 text29 CODE >67:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\FIR.c
-1B8 text29 CODE >68:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\FIR.c
-1BC text29 CODE >70:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\FIR.c
-1C4 text29 CODE >71:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\FIR.c
-1C4 text29 CODE >72:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\FIR.c
-1DC text29 CODE >74:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\FIR.c
-1E4 text29 CODE >75:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\FIR.c
-1E8 text29 CODE >77:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\FIR.c
-1F0 text29 CODE >78:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\FIR.c
-1F0 text29 CODE >79:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\FIR.c
-208 text29 CODE >81:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\FIR.c
-26C text29 CODE >83:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\FIR.c
-28C text29 CODE >86:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\FIR.c
-2A0 text29 CODE >87:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\FIR.c
-2B4 text29 CODE >89:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\FIR.c
-2CE text29 CODE >90:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\FIR.c
-2EA text29 CODE >92:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\FIR.c
-2F2 text29 CODE >93:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\FIR.c
-2FA text29 CODE >95:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\FIR.c
-30A text29 CODE >96:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\FIR.c
-A24 text28 CODE >99:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\FIR.c
-A24 text28 CODE >101:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\FIR.c
-A56 text28 CODE >102:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\FIR.c
-D38 text27 CODE >145:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/spi/src/spi1.c
-D3A text27 CODE >147:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/spi/src/spi1.c
-D40 text27 CODE >148:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/spi/src/spi1.c
-D5E text26 CODE >93:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/timer/src/tmr2.c
-D5E text26 CODE >95:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/timer/src/tmr2.c
-D60 text26 CODE >96:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/timer/src/tmr2.c
-8C0 text25 CODE >359:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
-8C2 text25 CODE >362:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
-8D2 text25 CODE >364:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
-8D8 text25 CODE >365:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
-8EC text25 CODE >367:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
-8FE text25 CODE >369:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
-904 text25 CODE >371:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
-908 text25 CODE >372:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
-90A text25 CODE >373:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
-90C text25 CODE >376:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
-90C text25 CODE >377:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
-90E text25 CODE >378:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
-30C text24 CODE >12:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\ADC_int.c
-30C text24 CODE >15:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\ADC_int.c
-31E text24 CODE >18:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\ADC_int.c
-320 text24 CODE >20:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\ADC_int.c
-326 text24 CODE >23:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\ADC_int.c
-32A text24 CODE >24:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\ADC_int.c
-334 text24 CODE >25:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\ADC_int.c
-33C text24 CODE >28:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\ADC_int.c
-358 text24 CODE >29:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\ADC_int.c
-376 text24 CODE >30:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\ADC_int.c
-392 text24 CODE >31:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\ADC_int.c
-398 text24 CODE >33:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\ADC_int.c
-39C text24 CODE >38:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\ADC_int.c
-3BA text24 CODE >39:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\ADC_int.c
-3BC text24 CODE >41:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\ADC_int.c
-3C0 text24 CODE >43:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\ADC_int.c
-3C8 text24 CODE >44:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\ADC_int.c
-3CE text24 CODE >47:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\ADC_int.c
-3F2 text24 CODE >48:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\ADC_int.c
-424 text24 CODE >49:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\ADC_int.c
-442 text24 CODE >51:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\ADC_int.c
-448 text24 CODE >53:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\ADC_int.c
-D66 text23 CODE >302:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/adc/src/adcc.c
-D66 text23 CODE >306:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/adc/src/adcc.c
-684 text22 CODE >286:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/adc/src/adcc.c
-684 text22 CODE >99:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/spi/src/spi1.c
-6AE text22 CODE >289:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/adc/src/adcc.c
-6B2 text22 CODE >291:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/adc/src/adcc.c
-6C6 text22 CODE >293:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/adc/src/adcc.c
-6DE text22 CODE >295:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/adc/src/adcc.c
-BF4 text21 CODE >85:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/spi/src/spi1.c
-BF4 text21 CODE >87:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/spi/src/spi1.c
-C04 text21 CODE >89:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/spi/src/spi1.c
-C08 text21 CODE >90:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/spi/src/spi1.c
-C0C text21 CODE >91:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/spi/src/spi1.c
-C10 text21 CODE >92:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/spi/src/spi1.c
-C14 text21 CODE >93:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/spi/src/spi1.c
-C18 text21 CODE >94:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/spi/src/spi1.c
-C1A text21 CODE >95:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/spi/src/spi1.c
-C1C text21 CODE >99:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/spi/src/spi1.c
-D2E text20 CODE >297:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/adc/src/adcc.c
-D2E text20 CODE >299:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/adc/src/adcc.c
-D36 text20 CODE >300:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/adc/src/adcc.c
-78C text19 CODE >47:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/adc/src/adcc.c
-78C text19 CODE >51:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/adc/src/adcc.c
-792 text19 CODE >53:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/adc/src/adcc.c
-796 text19 CODE >55:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/adc/src/adcc.c
-79A text19 CODE >57:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/adc/src/adcc.c
-79E text19 CODE >59:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/adc/src/adcc.c
-7A2 text19 CODE >61:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/adc/src/adcc.c
-7A6 text19 CODE >63:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/adc/src/adcc.c
-7AA text19 CODE >65:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/adc/src/adcc.c
-7AE text19 CODE >67:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/adc/src/adcc.c
-7B2 text19 CODE >69:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/adc/src/adcc.c
-7B6 text19 CODE >71:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/adc/src/adcc.c
-7BA text19 CODE >73:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/adc/src/adcc.c
-7BE text19 CODE >75:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/adc/src/adcc.c
-7C2 text19 CODE >77:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/adc/src/adcc.c
-7C6 text19 CODE >79:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/adc/src/adcc.c
-7CA text19 CODE >81:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/adc/src/adcc.c
-7CE text19 CODE >83:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/adc/src/adcc.c
-7D2 text19 CODE >85:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/adc/src/adcc.c
-7D6 text19 CODE >87:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/adc/src/adcc.c
-7DA text19 CODE >89:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/adc/src/adcc.c
-7DE text19 CODE >91:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/adc/src/adcc.c
-7E2 text19 CODE >93:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/adc/src/adcc.c
-7E6 text19 CODE >96:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/adc/src/adcc.c
-7EA text19 CODE >98:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/adc/src/adcc.c
-7F8 text19 CODE >100:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/adc/src/adcc.c
-7FC text19 CODE >103:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/adc/src/adcc.c
-7FE text19 CODE >104:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/adc/src/adcc.c
-C92 text18 CODE >37:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/clock.c
-C92 text18 CODE >41:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/clock.c
-C98 text18 CODE >43:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/clock.c
-C9C text18 CODE >45:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/clock.c
-CA0 text18 CODE >47:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/clock.c
-CA4 text18 CODE >49:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/clock.c
-CA8 text18 CODE >51:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/clock.c
-D42 text17 CODE >43:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/fvr/src/fvr.c
-D42 text17 CODE >46:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/fvr/src/fvr.c
-D48 text17 CODE >47:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/fvr/src/fvr.c
-D24 text16 CODE >130:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
-D24 text16 CODE >131:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
-D2C text16 CODE >132:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
-D1A text15 CODE >164:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
-D1A text15 CODE >165:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
-D22 text15 CODE >166:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
-D10 text14 CODE >198:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
-D10 text14 CODE >199:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
-D18 text14 CODE >200:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
-70A text13 CODE >42:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
-70A text13 CODE >44:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
-70C text13 CODE >46:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
-716 text13 CODE >47:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
-718 text13 CODE >48:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
-71C text13 CODE >49:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
-720 text13 CODE >50:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
-722 text13 CODE >52:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
-726 text13 CODE >53:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
-72A text13 CODE >54:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
-72E text13 CODE >56:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
-732 text13 CODE >57:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
-736 text13 CODE >58:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
-738 text13 CODE >60:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
-742 text13 CODE >62:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
-746 text13 CODE >63:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
-748 text13 CODE >64:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
-74A text13 CODE >65:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
-74C text13 CODE >66:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
-74E text13 CODE >67:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
-750 text13 CODE >71:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
-752 text13 CODE >72:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
-754 text13 CODE >74:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
-762 text13 CODE >79:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
-766 text13 CODE >80:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
-768 text13 CODE >82:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
-776 text13 CODE >87:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
-77A text13 CODE >88:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
-77C text13 CODE >90:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
-78A text13 CODE >93:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
-44A text12 CODE >38:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/pins.c
-44A text12 CODE >43:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/pins.c
-44E text12 CODE >44:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/pins.c
-452 text12 CODE >45:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/pins.c
-456 text12 CODE >46:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/pins.c
-45A text12 CODE >47:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/pins.c
-45E text12 CODE >52:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/pins.c
-462 text12 CODE >53:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/pins.c
-466 text12 CODE >54:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/pins.c
-46A text12 CODE >55:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/pins.c
-46E text12 CODE >56:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/pins.c
-472 text12 CODE >61:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/pins.c
-478 text12 CODE >62:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/pins.c
-47C text12 CODE >63:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/pins.c
-480 text12 CODE >64:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/pins.c
-484 text12 CODE >65:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/pins.c
-488 text12 CODE >70:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/pins.c
-48C text12 CODE >71:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/pins.c
-490 text12 CODE >72:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/pins.c
-494 text12 CODE >73:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/pins.c
-498 text12 CODE >74:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/pins.c
-49C text12 CODE >79:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/pins.c
-4A0 text12 CODE >80:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/pins.c
-4A4 text12 CODE >81:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/pins.c
-4A8 text12 CODE >82:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/pins.c
-4AC text12 CODE >83:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/pins.c
-4B0 text12 CODE >84:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/pins.c
-4B4 text12 CODE >89:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/pins.c
-4B8 text12 CODE >90:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/pins.c
-4BC text12 CODE >91:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/pins.c
-4C0 text12 CODE >92:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/pins.c
-4C4 text12 CODE >93:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/pins.c
-4C8 text12 CODE >98:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/pins.c
-4CA text12 CODE >99:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/pins.c
-4CC text12 CODE >100:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/pins.c
-4CE text12 CODE >101:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/pins.c
-4D0 text12 CODE >102:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/pins.c
-4D4 text12 CODE >107:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/pins.c
-4D6 text12 CODE >108:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/pins.c
-4D8 text12 CODE >109:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/pins.c
-4DA text12 CODE >110:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/pins.c
-4DC text12 CODE >111:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/pins.c
-4E0 text12 CODE >115:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/pins.c
-4E4 text12 CODE >116:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/pins.c
-4E8 text12 CODE >117:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/pins.c
-4EC text12 CODE >118:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/pins.c
-4F0 text12 CODE >119:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/pins.c
-4F4 text12 CODE >120:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/pins.c
-4F8 text12 CODE >125:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/pins.c
-4FC text12 CODE >126:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/pins.c
-500 text12 CODE >127:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/pins.c
-504 text12 CODE >128:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/pins.c
-508 text12 CODE >129:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/pins.c
-50C text12 CODE >130:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/pins.c
-510 text12 CODE >131:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/pins.c
-514 text12 CODE >132:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/pins.c
-518 text12 CODE >133:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/pins.c
-51C text12 CODE >134:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/pins.c
-520 text12 CODE >135:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/pins.c
-524 text12 CODE >136:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/pins.c
-528 text12 CODE >139:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/pins.c
-C78 text11 CODE >70:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/spi/src/spi1.c
-C78 text11 CODE >73:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/spi/src/spi1.c
-C7E text11 CODE >75:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/spi/src/spi1.c
-C82 text11 CODE >77:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/spi/src/spi1.c
-C86 text11 CODE >79:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/spi/src/spi1.c
-C8A text11 CODE >80:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/spi/src/spi1.c
-C8C text11 CODE >82:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/spi/src/spi1.c
-C90 text11 CODE >83:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/spi/src/spi1.c
-D06 text10 CODE >129:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/timer/src/tmr2.c
-D06 text10 CODE >130:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/timer/src/tmr2.c
-D0E text10 CODE >131:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/timer/src/tmr2.c
-A58 text9 CODE >58:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/timer/src/tmr2.c
-A58 text9 CODE >62:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/timer/src/tmr2.c
-A5C text9 CODE >64:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/timer/src/tmr2.c
-A60 text9 CODE >66:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/timer/src/tmr2.c
-A64 text9 CODE >68:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/timer/src/tmr2.c
-A68 text9 CODE >70:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/timer/src/tmr2.c
-A6C text9 CODE >73:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/timer/src/tmr2.c
-A7A text9 CODE >76:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/timer/src/tmr2.c
-A7E text9 CODE >78:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/timer/src/tmr2.c
-A80 text9 CODE >80:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/timer/src/tmr2.c
-A84 text9 CODE >81:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/timer/src/tmr2.c
-CFC text8 CODE >134:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/timer/src/tmr0.c
-CFC text8 CODE >136:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/timer/src/tmr0.c
-D04 text8 CODE >137:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/timer/src/tmr0.c
-9BA text7 CODE >51:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/timer/src/tmr0.c
-9BA text7 CODE >54:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/timer/src/tmr0.c
-9BE text7 CODE >57:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/timer/src/tmr0.c
-9C2 text7 CODE >60:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/timer/src/tmr0.c
-9C6 text7 CODE >63:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/timer/src/tmr0.c
-9D6 text7 CODE >66:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/timer/src/tmr0.c
-9E4 text7 CODE >69:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/timer/src/tmr0.c
-9E8 text7 CODE >72:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/timer/src/tmr0.c
-9EA text7 CODE >75:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/timer/src/tmr0.c
-9EE text7 CODE >76:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/timer/src/tmr0.c
-C5A text6 CODE >413:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
-C5A text6 CODE >414:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
-C6E text6 CODE >415:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
-C76 text6 CODE >417:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
-C3C text5 CODE >419:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
-C3C text5 CODE >420:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
-C50 text5 CODE >421:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
-C58 text5 CODE >423:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
-C1E text4 CODE >425:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
-C1E text4 CODE >426:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
-C32 text4 CODE >427:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
-C3A text4 CODE >429:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
-52A text3 CODE >118:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
-52A text3 CODE >119:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
-52E text3 CODE >120:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
-538 text3 CODE >121:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
-53C text3 CODE >122:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
-546 text3 CODE >127:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
-54C text3 CODE >129:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
-550 text3 CODE >131:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
-554 text3 CODE >133:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
-558 text3 CODE >135:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
-55C text3 CODE >137:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
-560 text3 CODE >139:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
-564 text3 CODE >141:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
-568 text3 CODE >143:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
-56C text3 CODE >145:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
-570 text3 CODE >147:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
-574 text3 CODE >149:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
-578 text3 CODE >151:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
-57C text3 CODE >153:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
-580 text3 CODE >155:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
-584 text3 CODE >157:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
-588 text3 CODE >159:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
-58C text3 CODE >161:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
-590 text3 CODE >163:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
-594 text3 CODE >165:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
-5A2 text3 CODE >166:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
-5B0 text3 CODE >167:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
-5BE text3 CODE >169:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
-5C8 text3 CODE >170:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
-5CC text3 CODE >171:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
-5D0 text3 CODE >172:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
-5D4 text3 CODE >173:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
-5D8 text3 CODE >174:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
-5DC text3 CODE >175:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
-5E0 text3 CODE >176:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
-5E4 text3 CODE >177:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
-94A text2 CODE >26:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/peripheral/src/uart2.c
-94A text2 CODE >28:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/peripheral/src/uart2.c
-950 text2 CODE >30:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/peripheral/src/uart2.c
-954 text2 CODE >32:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/peripheral/src/uart2.c
-958 text2 CODE >34:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/peripheral/src/uart2.c
-95C text2 CODE >36:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/peripheral/src/uart2.c
-960 text2 CODE >38:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/peripheral/src/uart2.c
-964 text2 CODE >40:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/peripheral/src/uart2.c
-968 text2 CODE >42:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/peripheral/src/uart2.c
-96C text2 CODE >44:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/peripheral/src/uart2.c
-970 text2 CODE >46:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/peripheral/src/uart2.c
-974 text2 CODE >48:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/peripheral/src/uart2.c
-978 text2 CODE >50:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/peripheral/src/uart2.c
-97C text2 CODE >52:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/peripheral/src/uart2.c
-980 text2 CODE >53:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/peripheral/src/uart2.c
-BCA text1 CODE >36:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/system.c
-BCA text1 CODE >38:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/system.c
-BCE text1 CODE >39:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/system.c
-BD2 text1 CODE >40:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/system.c
-BD6 text1 CODE >41:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/system.c
-BDA text1 CODE >42:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/system.c
-BDE text1 CODE >43:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/system.c
-BE2 text1 CODE >44:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/system.c
-BE6 text1 CODE >45:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/system.c
-BEA text1 CODE >46:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/system.c
-BEE text1 CODE >47:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/system.c
-BF2 text1 CODE >48:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/system.c
-9F0 text0 CODE >42:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\main.c
-9F0 text0 CODE >45:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\main.c
-9F4 text0 CODE >46:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\main.c
-9F8 text0 CODE >50:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\main.c
-A06 text0 CODE >51:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\main.c
-A14 text0 CODE >53:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\main.c
-A16 text0 CODE >54:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\main.c
-A18 text0 CODE >57:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\main.c
-A1A text0 CODE >60:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\main.c
-A1C text0 CODE >63:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\main.c
-A1C text0 CODE >65:C:\Users\rrtc2\OneDrive\Escritorio\2301\Proyecto 2\Practica 2a\Produccion\CodigosP2a\Practica_2a.X\main.c
-5E6 cinit CODE >24984:C:\Users\rrtc2\AppData\Local\Temp\xcAsabo.s
-5E6 cinit CODE >24986:C:\Users\rrtc2\AppData\Local\Temp\xcAsabo.s
-5E6 cinit CODE >24989:C:\Users\rrtc2\AppData\Local\Temp\xcAsabo.s
-5E6 cinit CODE >25165:C:\Users\rrtc2\AppData\Local\Temp\xcAsabo.s
-5E8 cinit CODE >25166:C:\Users\rrtc2\AppData\Local\Temp\xcAsabo.s
-5EA cinit CODE >25167:C:\Users\rrtc2\AppData\Local\Temp\xcAsabo.s
-5EC cinit CODE >25168:C:\Users\rrtc2\AppData\Local\Temp\xcAsabo.s
-5EE cinit CODE >25169:C:\Users\rrtc2\AppData\Local\Temp\xcAsabo.s
-5F0 cinit CODE >25170:C:\Users\rrtc2\AppData\Local\Temp\xcAsabo.s
-5F2 cinit CODE >25171:C:\Users\rrtc2\AppData\Local\Temp\xcAsabo.s
-5F6 cinit CODE >25172:C:\Users\rrtc2\AppData\Local\Temp\xcAsabo.s
-5FA cinit CODE >25173:C:\Users\rrtc2\AppData\Local\Temp\xcAsabo.s
-5FA cinit CODE >25174:C:\Users\rrtc2\AppData\Local\Temp\xcAsabo.s
-5FC cinit CODE >25175:C:\Users\rrtc2\AppData\Local\Temp\xcAsabo.s
-602 cinit CODE >25176:C:\Users\rrtc2\AppData\Local\Temp\xcAsabo.s
-604 cinit CODE >25177:C:\Users\rrtc2\AppData\Local\Temp\xcAsabo.s
-606 cinit CODE >25178:C:\Users\rrtc2\AppData\Local\Temp\xcAsabo.s
-608 cinit CODE >25182:C:\Users\rrtc2\AppData\Local\Temp\xcAsabo.s
-60A cinit CODE >25183:C:\Users\rrtc2\AppData\Local\Temp\xcAsabo.s
-60C cinit CODE >25184:C:\Users\rrtc2\AppData\Local\Temp\xcAsabo.s
-60E cinit CODE >25185:C:\Users\rrtc2\AppData\Local\Temp\xcAsabo.s
-610 cinit CODE >25186:C:\Users\rrtc2\AppData\Local\Temp\xcAsabo.s
-612 cinit CODE >25187:C:\Users\rrtc2\AppData\Local\Temp\xcAsabo.s
-614 cinit CODE >25188:C:\Users\rrtc2\AppData\Local\Temp\xcAsabo.s
-618 cinit CODE >25189:C:\Users\rrtc2\AppData\Local\Temp\xcAsabo.s
-61C cinit CODE >25190:C:\Users\rrtc2\AppData\Local\Temp\xcAsabo.s
-61C cinit CODE >25191:C:\Users\rrtc2\AppData\Local\Temp\xcAsabo.s
-61E cinit CODE >25192:C:\Users\rrtc2\AppData\Local\Temp\xcAsabo.s
-624 cinit CODE >25193:C:\Users\rrtc2\AppData\Local\Temp\xcAsabo.s
-626 cinit CODE >25194:C:\Users\rrtc2\AppData\Local\Temp\xcAsabo.s
-628 cinit CODE >25195:C:\Users\rrtc2\AppData\Local\Temp\xcAsabo.s
-62A cinit CODE >25199:C:\Users\rrtc2\AppData\Local\Temp\xcAsabo.s
-62C cinit CODE >25200:C:\Users\rrtc2\AppData\Local\Temp\xcAsabo.s
-62E cinit CODE >25201:C:\Users\rrtc2\AppData\Local\Temp\xcAsabo.s
-630 cinit CODE >25202:C:\Users\rrtc2\AppData\Local\Temp\xcAsabo.s
-632 cinit CODE >25203:C:\Users\rrtc2\AppData\Local\Temp\xcAsabo.s
-634 cinit CODE >25204:C:\Users\rrtc2\AppData\Local\Temp\xcAsabo.s
-636 cinit CODE >25205:C:\Users\rrtc2\AppData\Local\Temp\xcAsabo.s
-63A cinit CODE >25206:C:\Users\rrtc2\AppData\Local\Temp\xcAsabo.s
-63E cinit CODE >25207:C:\Users\rrtc2\AppData\Local\Temp\xcAsabo.s
-63E cinit CODE >25208:C:\Users\rrtc2\AppData\Local\Temp\xcAsabo.s
-640 cinit CODE >25209:C:\Users\rrtc2\AppData\Local\Temp\xcAsabo.s
-646 cinit CODE >25210:C:\Users\rrtc2\AppData\Local\Temp\xcAsabo.s
-648 cinit CODE >25211:C:\Users\rrtc2\AppData\Local\Temp\xcAsabo.s
-64A cinit CODE >25212:C:\Users\rrtc2\AppData\Local\Temp\xcAsabo.s
-64C cinit CODE >25216:C:\Users\rrtc2\AppData\Local\Temp\xcAsabo.s
-650 cinit CODE >25217:C:\Users\rrtc2\AppData\Local\Temp\xcAsabo.s
-652 cinit CODE >25218:C:\Users\rrtc2\AppData\Local\Temp\xcAsabo.s
-652 cinit CODE >25219:C:\Users\rrtc2\AppData\Local\Temp\xcAsabo.s
-654 cinit CODE >25220:C:\Users\rrtc2\AppData\Local\Temp\xcAsabo.s
-656 cinit CODE >25221:C:\Users\rrtc2\AppData\Local\Temp\xcAsabo.s
-658 cinit CODE >25224:C:\Users\rrtc2\AppData\Local\Temp\xcAsabo.s
-65C cinit CODE >25225:C:\Users\rrtc2\AppData\Local\Temp\xcAsabo.s
-65E cinit CODE >25226:C:\Users\rrtc2\AppData\Local\Temp\xcAsabo.s
-65E cinit CODE >25227:C:\Users\rrtc2\AppData\Local\Temp\xcAsabo.s
-660 cinit CODE >25228:C:\Users\rrtc2\AppData\Local\Temp\xcAsabo.s
-662 cinit CODE >25229:C:\Users\rrtc2\AppData\Local\Temp\xcAsabo.s
-664 cinit CODE >25232:C:\Users\rrtc2\AppData\Local\Temp\xcAsabo.s
-668 cinit CODE >25233:C:\Users\rrtc2\AppData\Local\Temp\xcAsabo.s
-66A cinit CODE >25234:C:\Users\rrtc2\AppData\Local\Temp\xcAsabo.s
-66A cinit CODE >25235:C:\Users\rrtc2\AppData\Local\Temp\xcAsabo.s
-66C cinit CODE >25236:C:\Users\rrtc2\AppData\Local\Temp\xcAsabo.s
-66E cinit CODE >25237:C:\Users\rrtc2\AppData\Local\Temp\xcAsabo.s
-670 cinit CODE >25245:C:\Users\rrtc2\AppData\Local\Temp\xcAsabo.s
-672 cinit CODE >25246:C:\Users\rrtc2\AppData\Local\Temp\xcAsabo.s
-674 cinit CODE >25247:C:\Users\rrtc2\AppData\Local\Temp\xcAsabo.s
-676 cinit CODE >25248:C:\Users\rrtc2\AppData\Local\Temp\xcAsabo.s
-678 cinit CODE >25249:C:\Users\rrtc2\AppData\Local\Temp\xcAsabo.s
-67A cinit CODE >25250:C:\Users\rrtc2\AppData\Local\Temp\xcAsabo.s
-67C cinit CODE >25256:C:\Users\rrtc2\AppData\Local\Temp\xcAsabo.s
-67C cinit CODE >25258:C:\Users\rrtc2\AppData\Local\Temp\xcAsabo.s
-67E cinit CODE >25259:C:\Users\rrtc2\AppData\Local\Temp\xcAsabo.s
+B2 text29 CODE >37:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\FIR.c
+B2 text29 CODE >55:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\FIR.c
+C2 text29 CODE >59:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\FIR.c
+DA text29 CODE >62:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\FIR.c
+E2 text29 CODE >64:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\FIR.c
+198 text29 CODE >65:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\FIR.c
+1B0 text29 CODE >67:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\FIR.c
+1B8 text29 CODE >68:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\FIR.c
+1BC text29 CODE >70:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\FIR.c
+1C4 text29 CODE >71:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\FIR.c
+1C4 text29 CODE >72:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\FIR.c
+1DC text29 CODE >74:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\FIR.c
+1E4 text29 CODE >75:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\FIR.c
+1E8 text29 CODE >77:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\FIR.c
+1F0 text29 CODE >78:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\FIR.c
+1F0 text29 CODE >79:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\FIR.c
+208 text29 CODE >81:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\FIR.c
+26C text29 CODE >83:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\FIR.c
+28C text29 CODE >86:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\FIR.c
+2A0 text29 CODE >87:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\FIR.c
+2B4 text29 CODE >89:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\FIR.c
+2CE text29 CODE >90:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\FIR.c
+2EA text29 CODE >92:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\FIR.c
+2F2 text29 CODE >93:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\FIR.c
+2FA text29 CODE >95:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\FIR.c
+30A text29 CODE >96:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\FIR.c
+A24 text28 CODE >99:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\FIR.c
+A24 text28 CODE >101:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\FIR.c
+A56 text28 CODE >102:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\FIR.c
+D38 text27 CODE >145:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/spi/src/spi1.c
+D3A text27 CODE >147:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/spi/src/spi1.c
+D40 text27 CODE >148:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/spi/src/spi1.c
+D5E text26 CODE >93:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/timer/src/tmr2.c
+D5E text26 CODE >95:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/timer/src/tmr2.c
+D60 text26 CODE >96:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/timer/src/tmr2.c
+8C0 text25 CODE >359:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
+8C2 text25 CODE >362:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
+8D2 text25 CODE >364:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
+8D8 text25 CODE >365:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
+8EC text25 CODE >367:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
+8FE text25 CODE >369:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
+904 text25 CODE >371:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
+908 text25 CODE >372:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
+90A text25 CODE >373:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
+90C text25 CODE >376:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
+90C text25 CODE >377:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
+90E text25 CODE >378:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
+30C text24 CODE >12:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\ADC_int.c
+30C text24 CODE >15:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\ADC_int.c
+31E text24 CODE >18:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\ADC_int.c
+320 text24 CODE >20:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\ADC_int.c
+326 text24 CODE >23:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\ADC_int.c
+32A text24 CODE >24:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\ADC_int.c
+334 text24 CODE >25:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\ADC_int.c
+33C text24 CODE >28:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\ADC_int.c
+358 text24 CODE >29:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\ADC_int.c
+376 text24 CODE >30:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\ADC_int.c
+392 text24 CODE >31:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\ADC_int.c
+398 text24 CODE >33:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\ADC_int.c
+39C text24 CODE >38:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\ADC_int.c
+3BA text24 CODE >39:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\ADC_int.c
+3BC text24 CODE >41:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\ADC_int.c
+3C0 text24 CODE >43:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\ADC_int.c
+3C8 text24 CODE >44:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\ADC_int.c
+3CE text24 CODE >47:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\ADC_int.c
+3F2 text24 CODE >48:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\ADC_int.c
+424 text24 CODE >49:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\ADC_int.c
+442 text24 CODE >51:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\ADC_int.c
+448 text24 CODE >53:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\ADC_int.c
+D66 text23 CODE >302:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/adc/src/adcc.c
+D66 text23 CODE >306:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/adc/src/adcc.c
+684 text22 CODE >286:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/adc/src/adcc.c
+684 text22 CODE >99:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/spi/src/spi1.c
+6AE text22 CODE >289:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/adc/src/adcc.c
+6B2 text22 CODE >291:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/adc/src/adcc.c
+6C6 text22 CODE >293:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/adc/src/adcc.c
+6DE text22 CODE >295:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/adc/src/adcc.c
+BF4 text21 CODE >85:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/spi/src/spi1.c
+BF4 text21 CODE >87:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/spi/src/spi1.c
+C04 text21 CODE >89:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/spi/src/spi1.c
+C08 text21 CODE >90:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/spi/src/spi1.c
+C0C text21 CODE >91:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/spi/src/spi1.c
+C10 text21 CODE >92:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/spi/src/spi1.c
+C14 text21 CODE >93:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/spi/src/spi1.c
+C18 text21 CODE >94:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/spi/src/spi1.c
+C1A text21 CODE >95:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/spi/src/spi1.c
+C1C text21 CODE >99:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/spi/src/spi1.c
+D2E text20 CODE >297:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/adc/src/adcc.c
+D2E text20 CODE >299:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/adc/src/adcc.c
+D36 text20 CODE >300:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/adc/src/adcc.c
+78C text19 CODE >47:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/adc/src/adcc.c
+78C text19 CODE >51:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/adc/src/adcc.c
+792 text19 CODE >53:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/adc/src/adcc.c
+796 text19 CODE >55:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/adc/src/adcc.c
+79A text19 CODE >57:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/adc/src/adcc.c
+79E text19 CODE >59:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/adc/src/adcc.c
+7A2 text19 CODE >61:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/adc/src/adcc.c
+7A6 text19 CODE >63:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/adc/src/adcc.c
+7AA text19 CODE >65:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/adc/src/adcc.c
+7AE text19 CODE >67:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/adc/src/adcc.c
+7B2 text19 CODE >69:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/adc/src/adcc.c
+7B6 text19 CODE >71:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/adc/src/adcc.c
+7BA text19 CODE >73:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/adc/src/adcc.c
+7BE text19 CODE >75:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/adc/src/adcc.c
+7C2 text19 CODE >77:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/adc/src/adcc.c
+7C6 text19 CODE >79:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/adc/src/adcc.c
+7CA text19 CODE >81:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/adc/src/adcc.c
+7CE text19 CODE >83:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/adc/src/adcc.c
+7D2 text19 CODE >85:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/adc/src/adcc.c
+7D6 text19 CODE >87:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/adc/src/adcc.c
+7DA text19 CODE >89:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/adc/src/adcc.c
+7DE text19 CODE >91:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/adc/src/adcc.c
+7E2 text19 CODE >93:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/adc/src/adcc.c
+7E6 text19 CODE >96:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/adc/src/adcc.c
+7EA text19 CODE >98:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/adc/src/adcc.c
+7F8 text19 CODE >100:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/adc/src/adcc.c
+7FC text19 CODE >103:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/adc/src/adcc.c
+7FE text19 CODE >104:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/adc/src/adcc.c
+C92 text18 CODE >37:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/clock.c
+C92 text18 CODE >41:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/clock.c
+C98 text18 CODE >43:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/clock.c
+C9C text18 CODE >45:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/clock.c
+CA0 text18 CODE >47:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/clock.c
+CA4 text18 CODE >49:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/clock.c
+CA8 text18 CODE >51:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/clock.c
+D42 text17 CODE >43:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/fvr/src/fvr.c
+D42 text17 CODE >46:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/fvr/src/fvr.c
+D48 text17 CODE >47:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/fvr/src/fvr.c
+D24 text16 CODE >130:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
+D24 text16 CODE >131:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
+D2C text16 CODE >132:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
+D1A text15 CODE >164:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
+D1A text15 CODE >165:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
+D22 text15 CODE >166:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
+D10 text14 CODE >198:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
+D10 text14 CODE >199:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
+D18 text14 CODE >200:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
+70A text13 CODE >42:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
+70A text13 CODE >44:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
+70C text13 CODE >46:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
+716 text13 CODE >47:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
+718 text13 CODE >48:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
+71C text13 CODE >49:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
+720 text13 CODE >50:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
+722 text13 CODE >52:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
+726 text13 CODE >53:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
+72A text13 CODE >54:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
+72E text13 CODE >56:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
+732 text13 CODE >57:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
+736 text13 CODE >58:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
+738 text13 CODE >60:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
+742 text13 CODE >62:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
+746 text13 CODE >63:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
+748 text13 CODE >64:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
+74A text13 CODE >65:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
+74C text13 CODE >66:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
+74E text13 CODE >67:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
+750 text13 CODE >71:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
+752 text13 CODE >72:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
+754 text13 CODE >74:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
+762 text13 CODE >79:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
+766 text13 CODE >80:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
+768 text13 CODE >82:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
+776 text13 CODE >87:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
+77A text13 CODE >88:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
+77C text13 CODE >90:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
+78A text13 CODE >93:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/interrupt.c
+44A text12 CODE >38:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/pins.c
+44A text12 CODE >43:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/pins.c
+44E text12 CODE >44:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/pins.c
+452 text12 CODE >45:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/pins.c
+456 text12 CODE >46:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/pins.c
+45A text12 CODE >47:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/pins.c
+45E text12 CODE >52:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/pins.c
+462 text12 CODE >53:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/pins.c
+466 text12 CODE >54:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/pins.c
+46A text12 CODE >55:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/pins.c
+46E text12 CODE >56:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/pins.c
+472 text12 CODE >61:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/pins.c
+478 text12 CODE >62:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/pins.c
+47C text12 CODE >63:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/pins.c
+480 text12 CODE >64:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/pins.c
+484 text12 CODE >65:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/pins.c
+488 text12 CODE >70:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/pins.c
+48C text12 CODE >71:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/pins.c
+490 text12 CODE >72:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/pins.c
+494 text12 CODE >73:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/pins.c
+498 text12 CODE >74:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/pins.c
+49C text12 CODE >79:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/pins.c
+4A0 text12 CODE >80:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/pins.c
+4A4 text12 CODE >81:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/pins.c
+4A8 text12 CODE >82:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/pins.c
+4AC text12 CODE >83:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/pins.c
+4B0 text12 CODE >84:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/pins.c
+4B4 text12 CODE >89:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/pins.c
+4B8 text12 CODE >90:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/pins.c
+4BC text12 CODE >91:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/pins.c
+4C0 text12 CODE >92:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/pins.c
+4C4 text12 CODE >93:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/pins.c
+4C8 text12 CODE >98:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/pins.c
+4CA text12 CODE >99:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/pins.c
+4CC text12 CODE >100:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/pins.c
+4CE text12 CODE >101:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/pins.c
+4D0 text12 CODE >102:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/pins.c
+4D4 text12 CODE >107:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/pins.c
+4D6 text12 CODE >108:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/pins.c
+4D8 text12 CODE >109:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/pins.c
+4DA text12 CODE >110:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/pins.c
+4DC text12 CODE >111:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/pins.c
+4E0 text12 CODE >115:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/pins.c
+4E4 text12 CODE >116:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/pins.c
+4E8 text12 CODE >117:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/pins.c
+4EC text12 CODE >118:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/pins.c
+4F0 text12 CODE >119:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/pins.c
+4F4 text12 CODE >120:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/pins.c
+4F8 text12 CODE >125:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/pins.c
+4FC text12 CODE >126:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/pins.c
+500 text12 CODE >127:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/pins.c
+504 text12 CODE >128:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/pins.c
+508 text12 CODE >129:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/pins.c
+50C text12 CODE >130:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/pins.c
+510 text12 CODE >131:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/pins.c
+514 text12 CODE >132:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/pins.c
+518 text12 CODE >133:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/pins.c
+51C text12 CODE >134:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/pins.c
+520 text12 CODE >135:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/pins.c
+524 text12 CODE >136:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/pins.c
+528 text12 CODE >139:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/pins.c
+C78 text11 CODE >70:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/spi/src/spi1.c
+C78 text11 CODE >73:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/spi/src/spi1.c
+C7E text11 CODE >75:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/spi/src/spi1.c
+C82 text11 CODE >77:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/spi/src/spi1.c
+C86 text11 CODE >79:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/spi/src/spi1.c
+C8A text11 CODE >80:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/spi/src/spi1.c
+C8C text11 CODE >82:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/spi/src/spi1.c
+C90 text11 CODE >83:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/spi/src/spi1.c
+D06 text10 CODE >129:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/timer/src/tmr2.c
+D06 text10 CODE >130:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/timer/src/tmr2.c
+D0E text10 CODE >131:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/timer/src/tmr2.c
+A58 text9 CODE >58:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/timer/src/tmr2.c
+A58 text9 CODE >62:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/timer/src/tmr2.c
+A5C text9 CODE >64:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/timer/src/tmr2.c
+A60 text9 CODE >66:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/timer/src/tmr2.c
+A64 text9 CODE >68:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/timer/src/tmr2.c
+A68 text9 CODE >70:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/timer/src/tmr2.c
+A6C text9 CODE >73:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/timer/src/tmr2.c
+A7A text9 CODE >76:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/timer/src/tmr2.c
+A7E text9 CODE >78:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/timer/src/tmr2.c
+A80 text9 CODE >80:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/timer/src/tmr2.c
+A84 text9 CODE >81:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/timer/src/tmr2.c
+CFC text8 CODE >134:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/timer/src/tmr0.c
+CFC text8 CODE >136:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/timer/src/tmr0.c
+D04 text8 CODE >137:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/timer/src/tmr0.c
+9BA text7 CODE >51:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/timer/src/tmr0.c
+9BA text7 CODE >54:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/timer/src/tmr0.c
+9BE text7 CODE >57:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/timer/src/tmr0.c
+9C2 text7 CODE >60:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/timer/src/tmr0.c
+9C6 text7 CODE >63:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/timer/src/tmr0.c
+9D6 text7 CODE >66:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/timer/src/tmr0.c
+9E4 text7 CODE >69:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/timer/src/tmr0.c
+9E8 text7 CODE >72:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/timer/src/tmr0.c
+9EA text7 CODE >75:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/timer/src/tmr0.c
+9EE text7 CODE >76:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/timer/src/tmr0.c
+C5A text6 CODE >413:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
+C5A text6 CODE >414:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
+C6E text6 CODE >415:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
+C76 text6 CODE >417:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
+C3C text5 CODE >419:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
+C3C text5 CODE >420:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
+C50 text5 CODE >421:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
+C58 text5 CODE >423:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
+C1E text4 CODE >425:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
+C1E text4 CODE >426:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
+C32 text4 CODE >427:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
+C3A text4 CODE >429:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
+52A text3 CODE >118:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
+52A text3 CODE >119:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
+52E text3 CODE >120:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
+538 text3 CODE >121:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
+53C text3 CODE >122:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
+546 text3 CODE >127:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
+54C text3 CODE >129:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
+550 text3 CODE >131:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
+554 text3 CODE >133:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
+558 text3 CODE >135:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
+55C text3 CODE >137:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
+560 text3 CODE >139:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
+564 text3 CODE >141:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
+568 text3 CODE >143:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
+56C text3 CODE >145:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
+570 text3 CODE >147:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
+574 text3 CODE >149:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
+578 text3 CODE >151:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
+57C text3 CODE >153:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
+580 text3 CODE >155:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
+584 text3 CODE >157:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
+588 text3 CODE >159:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
+58C text3 CODE >161:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
+590 text3 CODE >163:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
+594 text3 CODE >165:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
+5A2 text3 CODE >166:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
+5B0 text3 CODE >167:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
+5BE text3 CODE >169:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
+5C8 text3 CODE >170:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
+5CC text3 CODE >171:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
+5D0 text3 CODE >172:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
+5D4 text3 CODE >173:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
+5D8 text3 CODE >174:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
+5DC text3 CODE >175:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
+5E0 text3 CODE >176:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
+5E4 text3 CODE >177:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/uart/src/uart1.c
+94A text2 CODE >26:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/peripheral/src/uart2.c
+94A text2 CODE >28:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/peripheral/src/uart2.c
+950 text2 CODE >30:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/peripheral/src/uart2.c
+954 text2 CODE >32:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/peripheral/src/uart2.c
+958 text2 CODE >34:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/peripheral/src/uart2.c
+95C text2 CODE >36:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/peripheral/src/uart2.c
+960 text2 CODE >38:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/peripheral/src/uart2.c
+964 text2 CODE >40:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/peripheral/src/uart2.c
+968 text2 CODE >42:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/peripheral/src/uart2.c
+96C text2 CODE >44:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/peripheral/src/uart2.c
+970 text2 CODE >46:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/peripheral/src/uart2.c
+974 text2 CODE >48:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/peripheral/src/uart2.c
+978 text2 CODE >50:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/peripheral/src/uart2.c
+97C text2 CODE >52:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/peripheral/src/uart2.c
+980 text2 CODE >53:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/peripheral/src/uart2.c
+BCA text1 CODE >36:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/system.c
+BCA text1 CODE >38:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/system.c
+BCE text1 CODE >39:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/system.c
+BD2 text1 CODE >40:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/system.c
+BD6 text1 CODE >41:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/system.c
+BDA text1 CODE >42:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/system.c
+BDE text1 CODE >43:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/system.c
+BE2 text1 CODE >44:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/system.c
+BE6 text1 CODE >45:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/system.c
+BEA text1 CODE >46:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/system.c
+BEE text1 CODE >47:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/system.c
+BF2 text1 CODE >48:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\mcc_generated_files/system/src/system.c
+9F0 text0 CODE >42:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\main.c
+9F0 text0 CODE >45:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\main.c
+9F4 text0 CODE >46:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\main.c
+9F8 text0 CODE >50:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\main.c
+A06 text0 CODE >51:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\main.c
+A14 text0 CODE >53:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\main.c
+A16 text0 CODE >54:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\main.c
+A18 text0 CODE >57:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\main.c
+A1A text0 CODE >60:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\main.c
+A1C text0 CODE >63:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\main.c
+A1C text0 CODE >65:C:\Users\aulasingenieria\Documents\GitHub\CodigosP2a\Practica_2a.X\main.c
+5E6 cinit CODE >24984:C:\Users\AULASI~1\AppData\Local\Temp\xcAshg8.s
+5E6 cinit CODE >24986:C:\Users\AULASI~1\AppData\Local\Temp\xcAshg8.s
+5E6 cinit CODE >24989:C:\Users\AULASI~1\AppData\Local\Temp\xcAshg8.s
+5E6 cinit CODE >25165:C:\Users\AULASI~1\AppData\Local\Temp\xcAshg8.s
+5E8 cinit CODE >25166:C:\Users\AULASI~1\AppData\Local\Temp\xcAshg8.s
+5EA cinit CODE >25167:C:\Users\AULASI~1\AppData\Local\Temp\xcAshg8.s
+5EC cinit CODE >25168:C:\Users\AULASI~1\AppData\Local\Temp\xcAshg8.s
+5EE cinit CODE >25169:C:\Users\AULASI~1\AppData\Local\Temp\xcAshg8.s
+5F0 cinit CODE >25170:C:\Users\AULASI~1\AppData\Local\Temp\xcAshg8.s
+5F2 cinit CODE >25171:C:\Users\AULASI~1\AppData\Local\Temp\xcAshg8.s
+5F6 cinit CODE >25172:C:\Users\AULASI~1\AppData\Local\Temp\xcAshg8.s
+5FA cinit CODE >25173:C:\Users\AULASI~1\AppData\Local\Temp\xcAshg8.s
+5FA cinit CODE >25174:C:\Users\AULASI~1\AppData\Local\Temp\xcAshg8.s
+5FC cinit CODE >25175:C:\Users\AULASI~1\AppData\Local\Temp\xcAshg8.s
+602 cinit CODE >25176:C:\Users\AULASI~1\AppData\Local\Temp\xcAshg8.s
+604 cinit CODE >25177:C:\Users\AULASI~1\AppData\Local\Temp\xcAshg8.s
+606 cinit CODE >25178:C:\Users\AULASI~1\AppData\Local\Temp\xcAshg8.s
+608 cinit CODE >25182:C:\Users\AULASI~1\AppData\Local\Temp\xcAshg8.s
+60A cinit CODE >25183:C:\Users\AULASI~1\AppData\Local\Temp\xcAshg8.s
+60C cinit CODE >25184:C:\Users\AULASI~1\AppData\Local\Temp\xcAshg8.s
+60E cinit CODE >25185:C:\Users\AULASI~1\AppData\Local\Temp\xcAshg8.s
+610 cinit CODE >25186:C:\Users\AULASI~1\AppData\Local\Temp\xcAshg8.s
+612 cinit CODE >25187:C:\Users\AULASI~1\AppData\Local\Temp\xcAshg8.s
+614 cinit CODE >25188:C:\Users\AULASI~1\AppData\Local\Temp\xcAshg8.s
+618 cinit CODE >25189:C:\Users\AULASI~1\AppData\Local\Temp\xcAshg8.s
+61C cinit CODE >25190:C:\Users\AULASI~1\AppData\Local\Temp\xcAshg8.s
+61C cinit CODE >25191:C:\Users\AULASI~1\AppData\Local\Temp\xcAshg8.s
+61E cinit CODE >25192:C:\Users\AULASI~1\AppData\Local\Temp\xcAshg8.s
+624 cinit CODE >25193:C:\Users\AULASI~1\AppData\Local\Temp\xcAshg8.s
+626 cinit CODE >25194:C:\Users\AULASI~1\AppData\Local\Temp\xcAshg8.s
+628 cinit CODE >25195:C:\Users\AULASI~1\AppData\Local\Temp\xcAshg8.s
+62A cinit CODE >25199:C:\Users\AULASI~1\AppData\Local\Temp\xcAshg8.s
+62C cinit CODE >25200:C:\Users\AULASI~1\AppData\Local\Temp\xcAshg8.s
+62E cinit CODE >25201:C:\Users\AULASI~1\AppData\Local\Temp\xcAshg8.s
+630 cinit CODE >25202:C:\Users\AULASI~1\AppData\Local\Temp\xcAshg8.s
+632 cinit CODE >25203:C:\Users\AULASI~1\AppData\Local\Temp\xcAshg8.s
+634 cinit CODE >25204:C:\Users\AULASI~1\AppData\Local\Temp\xcAshg8.s
+636 cinit CODE >25205:C:\Users\AULASI~1\AppData\Local\Temp\xcAshg8.s
+63A cinit CODE >25206:C:\Users\AULASI~1\AppData\Local\Temp\xcAshg8.s
+63E cinit CODE >25207:C:\Users\AULASI~1\AppData\Local\Temp\xcAshg8.s
+63E cinit CODE >25208:C:\Users\AULASI~1\AppData\Local\Temp\xcAshg8.s
+640 cinit CODE >25209:C:\Users\AULASI~1\AppData\Local\Temp\xcAshg8.s
+646 cinit CODE >25210:C:\Users\AULASI~1\AppData\Local\Temp\xcAshg8.s
+648 cinit CODE >25211:C:\Users\AULASI~1\AppData\Local\Temp\xcAshg8.s
+64A cinit CODE >25212:C:\Users\AULASI~1\AppData\Local\Temp\xcAshg8.s
+64C cinit CODE >25216:C:\Users\AULASI~1\AppData\Local\Temp\xcAshg8.s
+650 cinit CODE >25217:C:\Users\AULASI~1\AppData\Local\Temp\xcAshg8.s
+652 cinit CODE >25218:C:\Users\AULASI~1\AppData\Local\Temp\xcAshg8.s
+652 cinit CODE >25219:C:\Users\AULASI~1\AppData\Local\Temp\xcAshg8.s
+654 cinit CODE >25220:C:\Users\AULASI~1\AppData\Local\Temp\xcAshg8.s
+656 cinit CODE >25221:C:\Users\AULASI~1\AppData\Local\Temp\xcAshg8.s
+658 cinit CODE >25224:C:\Users\AULASI~1\AppData\Local\Temp\xcAshg8.s
+65C cinit CODE >25225:C:\Users\AULASI~1\AppData\Local\Temp\xcAshg8.s
+65E cinit CODE >25226:C:\Users\AULASI~1\AppData\Local\Temp\xcAshg8.s
+65E cinit CODE >25227:C:\Users\AULASI~1\AppData\Local\Temp\xcAshg8.s
+660 cinit CODE >25228:C:\Users\AULASI~1\AppData\Local\Temp\xcAshg8.s
+662 cinit CODE >25229:C:\Users\AULASI~1\AppData\Local\Temp\xcAshg8.s
+664 cinit CODE >25232:C:\Users\AULASI~1\AppData\Local\Temp\xcAshg8.s
+668 cinit CODE >25233:C:\Users\AULASI~1\AppData\Local\Temp\xcAshg8.s
+66A cinit CODE >25234:C:\Users\AULASI~1\AppData\Local\Temp\xcAshg8.s
+66A cinit CODE >25235:C:\Users\AULASI~1\AppData\Local\Temp\xcAshg8.s
+66C cinit CODE >25236:C:\Users\AULASI~1\AppData\Local\Temp\xcAshg8.s
+66E cinit CODE >25237:C:\Users\AULASI~1\AppData\Local\Temp\xcAshg8.s
+670 cinit CODE >25245:C:\Users\AULASI~1\AppData\Local\Temp\xcAshg8.s
+672 cinit CODE >25246:C:\Users\AULASI~1\AppData\Local\Temp\xcAshg8.s
+674 cinit CODE >25247:C:\Users\AULASI~1\AppData\Local\Temp\xcAshg8.s
+676 cinit CODE >25248:C:\Users\AULASI~1\AppData\Local\Temp\xcAshg8.s
+678 cinit CODE >25249:C:\Users\AULASI~1\AppData\Local\Temp\xcAshg8.s
+67A cinit CODE >25250:C:\Users\AULASI~1\AppData\Local\Temp\xcAshg8.s
+67C cinit CODE >25256:C:\Users\AULASI~1\AppData\Local\Temp\xcAshg8.s
+67C cinit CODE >25258:C:\Users\AULASI~1\AppData\Local\Temp\xcAshg8.s
+67E cinit CODE >25259:C:\Users\AULASI~1\AppData\Local\Temp\xcAshg8.s
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -714,7 +714,7 @@ __HidataBANK1 0 0 ABS 0 idataBANK1 dist/default/production\Practica_2a.X.product
 __end_of_INT1_DefaultInterruptHandler D6E 0 CODE 0 text39 dist/default/production\Practica_2a.X.production.o
 _FilterFIR A24 0 CODE 0 text28 dist/default/production\Practica_2a.X.production.o
 __Hibigdata 0 0 CODE 0 ibigdata dist/default/production\Practica_2a.X.production.o
-__mediumconst FEE2 0 MEDIUMCONST 0 mediumconst C:\Users\rrtc2\AppData\Local\Temp\xcAsabo.o
+__mediumconst FEE2 0 MEDIUMCONST 0 mediumconst C:\Users\AULASI~1\AppData\Local\Temp\xcAshg8.o
 _INT0_DefaultInterruptHandler D6A 0 CODE 0 text36 dist/default/production\Practica_2a.X.production.o
 __Heeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\Practica_2a.X.production.o
 __end_of_INTERRUPT_Initialize 78C 0 CODE 0 text13 dist/default/production\Practica_2a.X.production.o
@@ -736,11 +736,11 @@ _WPUB 3A51 0 ABS 0 - dist/default/production\Practica_2a.X.production.o
 _WPUC 3A61 0 ABS 0 - dist/default/production\Practica_2a.X.production.o
 _WPUD 3A71 0 ABS 0 - dist/default/production\Practica_2a.X.production.o
 _WPUE 3A81 0 ABS 0 - dist/default/production\Practica_2a.X.production.o
-___sp 0 0 STACK 2 stack C:\Users\rrtc2\AppData\Local\Temp\xcAsabo.o
+___sp 0 0 STACK 2 stack C:\Users\AULASI~1\AppData\Local\Temp\xcAshg8.o
 _main 9F0 0 CODE 0 text0 dist/default/production\Practica_2a.X.production.o
 __end_of_Default_ISR D72 0 CODE 0 text43 dist/default/production\Practica_2a.X.production.o
 UART1_Receive_Vector_ISR@status 52 0 COMRAM 1 bssCOMRAM dist/default/production\Practica_2a.X.production.o
-start AE 0 CODE 0 init C:\Users\rrtc2\AppData\Local\Temp\xcAsabo.o
+start AE 0 CODE 0 init C:\Users\AULASI~1\AppData\Local\Temp\xcAshg8.o
 _uart1TxBufferRemaining 56 0 COMRAM 1 bssCOMRAM dist/default/production\Practica_2a.X.production.o
 __HbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production\Practica_2a.X.production.o
 __end_of_SPI1_Initialize C92 0 CODE 0 text11 dist/default/production\Practica_2a.X.production.o
@@ -763,11 +763,11 @@ ADCC_StartConversion@channel 7 0 COMRAM 1 cstackCOMRAM dist/default/production\P
 FilterFIR@input 29 0 COMRAM 1 cstackCOMRAM dist/default/production\Practica_2a.X.production.o
 __end_of_Timer2 FFA9 0 MEDIUMCONST 0 mediumconst dist/default/production\Practica_2a.X.production.o
 __HdataCOMRAM 0 0 ABS 0 dataCOMRAM dist/default/production\Practica_2a.X.production.o
-__accesstop 60 0 ABS 0 - C:\Users\rrtc2\AppData\Local\Temp\xcAsabo.o
-intlevel0 0 0 CODE 0 text C:\Users\rrtc2\AppData\Local\Temp\xcAsabo.o
-intlevel1 0 0 CODE 0 text C:\Users\rrtc2\AppData\Local\Temp\xcAsabo.o
-intlevel2 0 0 CODE 0 text C:\Users\rrtc2\AppData\Local\Temp\xcAsabo.o
-intlevel3 0 0 CODE 0 text C:\Users\rrtc2\AppData\Local\Temp\xcAsabo.o
+__accesstop 60 0 ABS 0 - C:\Users\AULASI~1\AppData\Local\Temp\xcAshg8.o
+intlevel0 0 0 CODE 0 text C:\Users\AULASI~1\AppData\Local\Temp\xcAshg8.o
+intlevel1 0 0 CODE 0 text C:\Users\AULASI~1\AppData\Local\Temp\xcAshg8.o
+intlevel2 0 0 CODE 0 text C:\Users\AULASI~1\AppData\Local\Temp\xcAshg8.o
+intlevel3 0 0 CODE 0 text C:\Users\AULASI~1\AppData\Local\Temp\xcAshg8.o
 __LbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production\Practica_2a.X.production.o
 _ADCC_StartConversion CE0 0 CODE 0 text31 dist/default/production\Practica_2a.X.production.o
 __LnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production\Practica_2a.X.production.o
@@ -820,8 +820,8 @@ _ANSELC 3A60 0 ABS 0 - dist/default/production\Practica_2a.X.production.o
 _ANSELD 3A70 0 ABS 0 - dist/default/production\Practica_2a.X.production.o
 _ANSELE 3A80 0 ABS 0 - dist/default/production\Practica_2a.X.production.o
 _FVR_Initialize D42 0 CODE 0 text17 dist/default/production\Practica_2a.X.production.o
-___inthi_sp 0 0 STACK 2 stack C:\Users\rrtc2\AppData\Local\Temp\xcAsabo.o
-___intlo_sp 0 0 STACK 2 stack C:\Users\rrtc2\AppData\Local\Temp\xcAsabo.o
+___inthi_sp 0 0 STACK 2 stack C:\Users\AULASI~1\AppData\Local\Temp\xcAshg8.o
+___intlo_sp 0 0 STACK 2 stack C:\Users\AULASI~1\AppData\Local\Temp\xcAshg8.o
 _Timer_PeriodCountSet 0 0 ABS 0 - dist/default/production\Practica_2a.X.production.o
 _UART1_IsTxDone 0 0 ABS 0 - dist/default/production\Practica_2a.X.production.o
 __LdataCOMRAM 0 0 ABS 0 dataCOMRAM dist/default/production\Practica_2a.X.production.o
@@ -922,7 +922,7 @@ _INT2_CallBack B6E 0 CODE 0 text41 dist/default/production\Practica_2a.X.product
 _INT2_DefaultInterruptHandler D6E 0 CODE 0 text42 dist/default/production\Practica_2a.X.production.o
 _Timer2 FF9D 0 MEDIUMCONST 0 mediumconst dist/default/production\Practica_2a.X.production.o
 FIR@buffer 100 0 BANK1 1 bssBANK1 dist/default/production\Practica_2a.X.production.o
-isa$xinst 0 0 ABS 0 - C:\Users\rrtc2\AppData\Local\Temp\xcAsabo.o
+isa$xinst 0 0 ABS 0 - C:\Users\AULASI~1\AppData\Local\Temp\xcAshg8.o
 __end_of_ADCC_Initialize 800 0 CODE 0 text19 dist/default/production\Practica_2a.X.production.o
 FIR_p@indexHead 46 0 COMRAM 1 bssCOMRAM dist/default/production\Practica_2a.X.production.o
 FIR_p@indexTail 36 0 COMRAM 1 dataCOMRAM dist/default/production\Practica_2a.X.production.o
@@ -964,7 +964,7 @@ __Hbank15 0 0 ABS 0 bank15 dist/default/production\Practica_2a.X.production.o
 __Hbigbss 0 0 BIGRAM 1 bigbss dist/default/production\Practica_2a.X.production.o
 __Hbigram 0 0 ABS 0 bigram dist/default/production\Practica_2a.X.production.o
 __Hbigsfr 0 0 ABS 0 bigsfr dist/default/production\Practica_2a.X.production.o
-__smallconst 0 0 SMALLCONST 0 smallconst C:\Users\rrtc2\AppData\Local\Temp\xcAsabo.o
+__smallconst 0 0 SMALLCONST 0 smallconst C:\Users\AULASI~1\AppData\Local\Temp\xcAshg8.o
 __end_of_UART1_ParityErrorCallbackRegister C3C 0 CODE 0 text4 dist/default/production\Practica_2a.X.production.o
 __Hcomram 0 0 ABS 0 comram dist/default/production\Practica_2a.X.production.o
 __Hconfig 30000A 0 CONFIG 4 config dist/default/production\Practica_2a.X.production.o
@@ -1219,14 +1219,14 @@ __end_of_INT2_CallBack B9C 0 CODE 0 text41 dist/default/production\Practica_2a.X
 __Lfarbss 0 0 FARRAM 0 farbss dist/default/production\Practica_2a.X.production.o
 _Default_ISR D70 0 CODE 0 text43 dist/default/production\Practica_2a.X.production.o
 __Lfardata 0 0 FARRAM 0 fardata dist/default/production\Practica_2a.X.production.o
-isa$std 1 0 ABS 0 - C:\Users\rrtc2\AppData\Local\Temp\xcAsabo.o
+isa$std 1 0 ABS 0 - C:\Users\AULASI~1\AppData\Local\Temp\xcAshg8.o
 __end_of_Timer2_ISR CE0 0 CODE 0 text49 dist/default/production\Practica_2a.X.production.o
 __end_of_CLOCK_Initialize CAA 0 CODE 0 text18 dist/default/production\Practica_2a.X.production.o
 _UART1_ParityErrorHandler A8 0 BANK0 1 bssBANK0 dist/default/production\Practica_2a.X.production.o
 __end_of_SPI1_Open C1E 0 CODE 0 text21 dist/default/production\Practica_2a.X.production.o
 __end_of_UART1_Write 910 0 CODE 0 text25 dist/default/production\Practica_2a.X.production.o
-stackhi 0 0 ABS 0 - C:\Users\rrtc2\AppData\Local\Temp\xcAsabo.o
-stacklo 0 0 ABS 0 - C:\Users\rrtc2\AppData\Local\Temp\xcAsabo.o
+stackhi 0 0 ABS 0 - C:\Users\AULASI~1\AppData\Local\Temp\xcAshg8.o
+stacklo 0 0 ABS 0 - C:\Users\AULASI~1\AppData\Local\Temp\xcAshg8.o
 _Timer2_PeriodCountSet 0 0 ABS 0 - dist/default/production\Practica_2a.X.production.o
 _OSCCON1 39D9 0 ABS 0 - dist/default/production\Practica_2a.X.production.o
 _OSCCON3 39DB 0 ABS 0 - dist/default/production\Practica_2a.X.production.o
@@ -1344,7 +1344,7 @@ __Ltext51 0 0 ABS 0 text51 dist/default/production\Practica_2a.X.production.o
 __Ltext52 0 0 ABS 0 text52 dist/default/production\Practica_2a.X.production.o
 __Ltext53 0 0 ABS 0 text53 dist/default/production\Practica_2a.X.production.o
 __Ltext54 0 0 ABS 0 text54 dist/default/production\Practica_2a.X.production.o
-__ramtop 1000 0 RAM 0 ramtop C:\Users\rrtc2\AppData\Local\Temp\xcAsabo.o
+__ramtop 1000 0 RAM 0 ramtop C:\Users\AULASI~1\AppData\Local\Temp\xcAshg8.o
 __Lpowerup 0 0 CODE 0 powerup dist/default/production\Practica_2a.X.production.o
 __Leeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\Practica_2a.X.production.o
 __end_of_INT0_ISR AB6 0 CODE 0 text34 dist/default/production\Practica_2a.X.production.o
@@ -1363,8 +1363,8 @@ _SLRCONC 3A63 0 ABS 0 - dist/default/production\Practica_2a.X.production.o
 _SLRCOND 3A73 0 ABS 0 - dist/default/production\Practica_2a.X.production.o
 _SLRCONE 3A83 0 ABS 0 - dist/default/production\Practica_2a.X.production.o
 _UART1_Receive_Vector_ISR 910 0 CODE 0 text51 dist/default/production\Practica_2a.X.production.o
-___heap_hi 0 0 ABS 0 - C:\Users\rrtc2\AppData\Local\Temp\xcAsabo.o
-___heap_lo 0 0 ABS 0 - C:\Users\rrtc2\AppData\Local\Temp\xcAsabo.o
+___heap_hi 0 0 ABS 0 - C:\Users\AULASI~1\AppData\Local\Temp\xcAshg8.o
+___heap_lo 0 0 ABS 0 - C:\Users\AULASI~1\AppData\Local\Temp\xcAshg8.o
 __end_of_SPI1_ByteWrite D42 0 CODE 0 text27 dist/default/production\Practica_2a.X.production.o
 ___param_bank 0 0 ABS 0 - dist/default/production\Practica_2a.X.production.o
 __Hbigdata 0 0 BIGRAM 1 bigdata dist/default/production\Practica_2a.X.production.o

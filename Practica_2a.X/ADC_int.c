@@ -40,7 +40,7 @@ void ADC_int(void)
         
         Timer2_Start(); //Maneja el tiempo de CS
         
-        SPI1_ByteWrite(0b10110000 | (result >> 8));
+        SPI1_ByteWrite(0b10110000 | (uint8_t)(result >> 8));
         SPI1_ByteWrite(result & 0b11111111);
         
         //Transmicion UART

@@ -805,8 +805,8 @@ text32 D4C D51 CODE D4C 0
 text52 D54 D75 CODE D54 0
 %locals
 dist/default/production\Practica_2a.X.production.o
-D:/Program Files/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h
-C:\Users\rrtc2\AppData\Local\Temp\xcAsabo.s
+C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h
+C:\Users\AULASI~1\AppData\Local\Temp\xcAshg8.s
 24984 5E6 0 CODE 0
 24986 5E6 0 CODE 0
 24989 5E6 0 CODE 0

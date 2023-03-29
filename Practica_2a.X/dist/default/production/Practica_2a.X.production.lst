@@ -1,7 +1,7 @@
 
 
 Microchip MPLAB XC8 Assembler V2.40 build 20220703182018 
-                                                                                               Wed Mar 29 11:45:55 2023
+                                                                                               Wed Mar 29 14:17:29 2023
 
 Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1 
      1                           	processor	18F46K42
@@ -222,7 +222,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
    208   000CBC  0001               	dw	1
    209                           
    210                           ;initializer for _PERIOD
-   211   000CBE  0002               	dw	2
+   211   000CBE  0037               	dw	55
    212                           
    213                           	psect	idataBANK0
    214   000D5A                     __pidataBANK0:
@@ -3438,8 +3438,8 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   3260   00031E  90BE               	bcf	190,0,c	;volatile
   3261   000320                     
   3262                           ; BSR set to: 62
-  3263                           ;ADC_int.c: 20:         ADCC_StartConversion(channel_ANA1);
-  3264   000320  0E01               	movlw	1
+  3263                           ;ADC_int.c: 20:         ADCC_StartConversion(channel_ANA0);
+  3264   000320  0E00               	movlw	0
   3265   000322  EC70  F006         	call	_ADCC_StartConversion
   3266   000326                     
   3267                           ;ADC_int.c: 23:         Timer2_Start();
@@ -3532,7 +3532,7 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og1
   3353                           ;ADC_int.c: 41:         Timer2_Start();
   3354   0003BC  ECAF  F006         	call	_Timer2_Start	;wreg free
   3355   0003C0                     
-  3356                           ;ADC_int.c: 43:         SPI1_ByteWrite(0b10110000 | (result >> 8));
+  3356                           ;ADC_int.c: 43:         SPI1_ByteWrite(0b10110000 | (uint8_t)(result >> 8));
   3357   0003C0  502F               	movf	(ADC_int@result+1)^0,w,c
   3358   0003C2  09B0               	iorlw	176
   3359   0003C4  EC9C  F006         	call	_SPI1_ByteWrite
@@ -7729,7 +7729,7 @@ CODE                 0      0       0       0        0.0%
 
 
 Microchip Technology PIC18 Macro Assembler V2.40 build 20220703182018 
-Symbol Table                                                                                   Wed Mar 29 11:45:55 2023
+Symbol Table                                                                                   Wed Mar 29 14:17:29 2023
 
                                 _SPI1_ByteExchange 000000                                                  _B FFCE  
                                                _DL FFB5                                                 l89 07FE  

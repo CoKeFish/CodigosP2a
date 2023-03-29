@@ -7,4 +7,4 @@
 /**
  * @brief Variable global externa, indica TS = N*100uS, donde N es PERIOD
  */
-uint16_t PERIOD = 2;
+uint16_t PERIOD = 55;
