@@ -27044,8 +27044,8 @@ void ADCC_SetADIInterruptHandler(void (* InterruptHandler)(void));
 _Bool FVR_IsOutputReady(void);
 # 44 "mcc_generated_files/system/src/../../system/system.h" 2
 
-# 1 "mcc_generated_files/system/src/../../system/../spi/spi1.h" 1
-# 41 "mcc_generated_files/system/src/../../system/../spi/spi1.h"
+# 1 "mcc_generated_files/system/src/../../system/../i2c_host/i2c1.h" 1
+# 41 "mcc_generated_files/system/src/../../system/../i2c_host/i2c1.h"
 # 1 "C:\\Program Files\\Microchip\\xc8\\v2.40\\pic\\include\\c99\\stdio.h" 1 3
 # 24 "C:\\Program Files\\Microchip\\xc8\\v2.40\\pic\\include\\c99\\stdio.h" 3
 # 1 "C:\\Program Files\\Microchip\\xc8\\v2.40\\pic\\include\\c99\\bits/alltypes.h" 1 3
@@ -27190,10 +27190,90 @@ char *ctermid(char *);
 
 
 char *tempnam(const char *, const char *);
-# 41 "mcc_generated_files/system/src/../../system/../spi/spi1.h" 2
+# 41 "mcc_generated_files/system/src/../../system/../i2c_host/i2c1.h" 2
 
 
 
+# 1 "mcc_generated_files/system/src/../../system/../i2c_host/i2c_host_event_types.h" 1
+# 37 "mcc_generated_files/system/src/../../system/../i2c_host/i2c_host_event_types.h"
+# 1 "mcc_generated_files/system/src/../../system/../i2c_host/i2c_host_types.h" 1
+# 42 "mcc_generated_files/system/src/../../system/../i2c_host/i2c_host_types.h"
+typedef enum
+{
+    I2C_ERROR_NONE,
+    I2C_ERROR_ADDR_NACK,
+    I2C_ERROR_DATA_NACK,
+    I2C_ERROR_BUS_COLLISION,
+} i2c_host_error_t;
+
+
+
+
+
+
+typedef struct
+{
+  uint32_t clkSpeed;
+} i2c_host_transfer_setup_t;
+# 37 "mcc_generated_files/system/src/../../system/../i2c_host/i2c_host_event_types.h" 2
+
+
+
+
+
+
+
+typedef struct
+{
+    _Bool busy;
+    uint16_t address;
+    uint8_t *writePtr;
+    size_t writeLength;
+    uint8_t *readPtr;
+    size_t readLength;
+    _Bool switchToRead;
+    i2c_host_error_t errorState;
+} i2c_host_event_status_t;
+# 44 "mcc_generated_files/system/src/../../system/../i2c_host/i2c1.h" 2
+
+# 1 "mcc_generated_files/system/src/../../system/../i2c_host/i2c_host_interface.h" 1
+# 50 "mcc_generated_files/system/src/../../system/../i2c_host/i2c_host_interface.h"
+typedef struct
+{
+    void (*Initialize)(void);
+    void (*Deinitialize)(void);
+    _Bool (*Write)(uint16_t address, uint8_t *data, size_t dataLength);
+    _Bool (*Read)(uint16_t address, uint8_t *data, size_t dataLength);
+    _Bool (*WriteRead)(uint16_t address, uint8_t *writeData, size_t writeLength, uint8_t *readData, size_t readLength);
+    _Bool (*TransferSetup)(i2c_host_transfer_setup_t* setup, uint32_t srcClkFreq);
+    i2c_host_error_t (*ErrorGet)(void);
+    _Bool (*IsBusy)(void);
+    void (*CallbackRegister)(void (*callback)(void));
+    void (*Tasks)(void);
+} i2c_host_interface_t;
+# 45 "mcc_generated_files/system/src/../../system/../i2c_host/i2c1.h" 2
+# 70 "mcc_generated_files/system/src/../../system/../i2c_host/i2c1.h"
+extern const i2c_host_interface_t I2C1_Host;
+# 80 "mcc_generated_files/system/src/../../system/../i2c_host/i2c1.h"
+void I2C1_Initialize(void);
+# 89 "mcc_generated_files/system/src/../../system/../i2c_host/i2c1.h"
+void I2C1_Deinitialize(void);
+# 120 "mcc_generated_files/system/src/../../system/../i2c_host/i2c1.h"
+_Bool I2C1_Write(uint16_t address, uint8_t *data, size_t dataLength);
+# 151 "mcc_generated_files/system/src/../../system/../i2c_host/i2c1.h"
+_Bool I2C1_Read(uint16_t address, uint8_t *data, size_t dataLength);
+# 187 "mcc_generated_files/system/src/../../system/../i2c_host/i2c1.h"
+_Bool I2C1_WriteRead(uint16_t address, uint8_t *writeData, size_t writeLength, uint8_t *readData, size_t readLength);
+# 198 "mcc_generated_files/system/src/../../system/../i2c_host/i2c1.h"
+i2c_host_error_t I2C1_ErrorGet(void);
+# 208 "mcc_generated_files/system/src/../../system/../i2c_host/i2c1.h"
+_Bool I2C1_IsBusy(void);
+# 235 "mcc_generated_files/system/src/../../system/../i2c_host/i2c1.h"
+void I2C1_CallbackRegister(void (*callbackHandler)(void));
+# 45 "mcc_generated_files/system/src/../../system/system.h" 2
+
+# 1 "mcc_generated_files/system/src/../../system/../spi/spi1.h" 1
+# 44 "mcc_generated_files/system/src/../../system/../spi/spi1.h"
 # 1 "mcc_generated_files/system/src/../../system/../spi/spi_interface.h" 1
 # 49 "mcc_generated_files/system/src/../../system/../spi/spi_interface.h"
 # 1 "C:\\Program Files\\Microchip\\xc8\\v2.40\\pic\\include\\c99\\stddef.h" 1 3
@@ -27286,7 +27366,7 @@ void __attribute__((deprecated)) SPI1_WriteBlock(void *block, size_t blockSize);
 void __attribute__((deprecated)) SPI1_ReadBlock(void *block, size_t blockSize);
 void __attribute__((deprecated)) SPI1_WriteByte(uint8_t byte);
 uint8_t __attribute__((deprecated)) SPI1_ReadByte(void);
-# 45 "mcc_generated_files/system/src/../../system/system.h" 2
+# 46 "mcc_generated_files/system/src/../../system/system.h" 2
 
 # 1 "mcc_generated_files/system/src/../../system/../timer/tmr0.h" 1
 # 38 "mcc_generated_files/system/src/../../system/../timer/tmr0.h"
@@ -27327,7 +27407,7 @@ void Timer_Reload(void);
 void Timer_PeriodCountSet(size_t periodVal);
 # 118 "mcc_generated_files/system/src/../../system/../timer/tmr0.h"
  void Timer_OverflowCallbackRegister(void (* CallbackHandler)(void));
-# 46 "mcc_generated_files/system/src/../../system/system.h" 2
+# 47 "mcc_generated_files/system/src/../../system/system.h" 2
 
 # 1 "mcc_generated_files/system/src/../../system/../timer/tmr2.h" 1
 # 50 "mcc_generated_files/system/src/../../system/../timer/tmr2.h"
@@ -27564,7 +27644,7 @@ void Timer2_PeriodCountSet(size_t periodVal);
 
 
 void Timer2_OverflowCallbackRegister(void (* InterruptHandler)(void));
-# 47 "mcc_generated_files/system/src/../../system/system.h" 2
+# 48 "mcc_generated_files/system/src/../../system/system.h" 2
 
 # 1 "mcc_generated_files/system/src/../../system/../uart/uart1.h" 1
 # 43 "mcc_generated_files/system/src/../../system/../uart/uart1.h"
@@ -27826,13 +27906,13 @@ void UART1_RxCompleteCallbackRegister(void (* callbackHandler)(void));
 
 
 void UART1_ReceiveISR(void);
-# 48 "mcc_generated_files/system/src/../../system/../uart/../system/system.h" 2
+# 49 "mcc_generated_files/system/src/../../system/../uart/../system/system.h" 2
 
 # 1 "mcc_generated_files/system/src/../../system/../peripheral/uart2.h" 1
 # 22 "mcc_generated_files/system/src/../../system/../peripheral/uart2.h"
 void UART2_Initialize(void);
-# 49 "mcc_generated_files/system/src/../../system/../uart/../system/system.h" 2
-# 59 "mcc_generated_files/system/src/../../system/../uart/../system/system.h"
+# 50 "mcc_generated_files/system/src/../../system/../uart/../system/system.h" 2
+# 60 "mcc_generated_files/system/src/../../system/../uart/../system/system.h"
 void SYSTEM_Initialize(void);
 # 35 "mcc_generated_files/system/src/interrupt.c" 2
 
@@ -27862,6 +27942,10 @@ void INTERRUPT_Initialize (void)
 
     GIE = state;
 
+    IPR2bits.I2C1RXIP = 1;
+    IPR3bits.I2C1TXIP = 1;
+    IPR3bits.I2C1IP = 1;
+    IPR3bits.I2C1EIP = 1;
     IPR3bits.U1RXIP = 1;
     IPR3bits.U1TXIP = 1;
     IPR3bits.TMR0IP = 1;
@@ -27903,7 +27987,7 @@ void __attribute__((picinterrupt(("irq(IOC), base(8), low_priority")))) IOC_ISR(
 {
     PIN_MANAGER_IOC();
 }
-# 112 "mcc_generated_files/system/src/interrupt.c"
+# 116 "mcc_generated_files/system/src/interrupt.c"
 void __attribute__((picinterrupt(("irq(INT0),base(8),low_priority")))) INT0_ISR()
 {
     (PIR1bits.INT0IF = 0);
@@ -27930,7 +28014,7 @@ void INT0_DefaultInterruptHandler(void){
 
 
 }
-# 146 "mcc_generated_files/system/src/interrupt.c"
+# 150 "mcc_generated_files/system/src/interrupt.c"
 void __attribute__((picinterrupt(("irq(INT1),base(8),low_priority")))) INT1_ISR()
 {
     (PIR5bits.INT1IF = 0);
@@ -27957,7 +28041,7 @@ void INT1_DefaultInterruptHandler(void){
 
 
 }
-# 180 "mcc_generated_files/system/src/interrupt.c"
+# 184 "mcc_generated_files/system/src/interrupt.c"
 void __attribute__((picinterrupt(("irq(INT2),base(8),low_priority")))) INT2_ISR()
 {
     (PIR7bits.INT2IF = 0);

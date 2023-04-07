@@ -1,14 +1,15 @@
 /**
- * System Driver Header File
- * 
- * @file system.h
- * 
- * @defgroup systemdriver System Driver
- * 
- * @brief This is the generated header file for the System driver.
+ * I2C Generated Driver Types Header File
  *
- * @version Driver Version 1.0.0
-*/
+ * @file i2c_host_types.h
+ *
+ * @ingroup i2c_host_interface
+ *
+ * @brief This file contains other data types for I2C module.
+ *
+ * @version I2C Driver Version 2.1.0
+ */
+
 /*
 © [2023] Microchip Technology Inc. and its subsidiaries.
 
@@ -30,36 +31,30 @@
     THIS SOFTWARE.
 */
 
-#ifndef SYSTEM_H
-#define	SYSTEM_H
-
-#include <xc.h>
-#include <stdint.h>
-#include <stdbool.h>
-//#include <stdio.h>
-#include "config_bits.h"
-#include "../system/clock.h"
-#include "../system/pins.h"
-#include "../adc/adcc.h"
-#include "../fvr/fvr.h"
-#include "../i2c_host/i2c1.h"
-#include "../spi/spi1.h"
-#include "../timer/tmr0.h"
-#include "../timer/tmr2.h"
-#include "../uart/uart1.h"
-#include "../peripheral/uart2.h"
-#include "../system/interrupt.h"
+#ifndef I2C_HOST_TYPES_H
+#define	I2C_HOST_TYPES_H
 
 /**
- * @ingroup systemdriver
- * @brief Initializes the system module.
- * This routine is called only once during system initialization, before calling other APIs.
- * @param None.
- * @return None.
-*/
-void SYSTEM_Initialize(void);
+ * @ingroup i2c_host_interface
+ * @enum  i2c_host_error_t
+ * @brief Enumeration for I2C errors
+ */
+typedef enum
+{
+    I2C_ERROR_NONE,             /**< No Error */
+    I2C_ERROR_ADDR_NACK,        /**< Client returned Address NACK */
+    I2C_ERROR_DATA_NACK,        /**< Client returned Data NACK */
+    I2C_ERROR_BUS_COLLISION,    /**< Bus Collision Error */
+} i2c_host_error_t;
 
-#endif	/* SYSTEM_H */
 /**
- End of File
-*/
+ * @ingroup i2c_host_interface
+ * @struct i2c_host_transfer_setup_t
+ * @brief Structure for i2c clock change
+ */
+typedef struct
+{
+  uint32_t clkSpeed;            /**< I2C Clock Speed */
+} i2c_host_transfer_setup_t;
+
+#endif // end of I2C_HOST_TYPES_H

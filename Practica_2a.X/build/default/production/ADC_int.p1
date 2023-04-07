@@ -1,6 +1,6 @@
 Version 4.0 HI-TECH Software Intermediate Code
-[v F16560 `(v ~T0 @X0 0 tf ]
-[v F16567 `(v ~T0 @X0 0 tf ]
+[v F16639 `(v ~T0 @X0 0 tf ]
+[v F16646 `(v ~T0 @X0 0 tf ]
 "31094 D:/Program Files/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h
 [; ;D:/Program Files/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h: 31094: extern volatile unsigned char ADPCH __attribute__((address(0x3EF1)));
 [v _ADPCH `Vuc ~T0 @X0 0 e@16113 ]
@@ -20,7 +20,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;D:/Program Files/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h: 45900: extern volatile LATEbits_t LATEbits __attribute__((address(0x3FBE)));
 [v _LATEbits `VS2062 ~T0 @X0 0 e@16318 ]
 "20 ADC_int.c
-[; ;ADC_int.c: 20:         ADCC_StartConversion(channel_ANA1);
+[; ;ADC_int.c: 20:         ADCC_StartConversion(channel_ANA0);
 [c E15847 59 60 61 62 63 0 1 .. ]
 [n E15847 . channel_VSS channel_Temp channel_DAC1 channel_FVR_Buffer1 channel_FVR_Buffer2 channel_ANA0 channel_ANA1  ]
 "89 ./mcc_generated_files/uart/../system/../adc/adcc.h
@@ -2277,10 +2277,10 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; <" TOSU equ 03FFFh ;# ">
 "354 ./mcc_generated_files/uart/../system/../uart/uart1.h
 [; ;./mcc_generated_files/uart/../system/../uart/uart1.h: 354: void (*UART1_TxInterruptHandler)(void);
-[v _UART1_TxInterruptHandler `*F16560 ~T0 @X0 1 e ]
+[v _UART1_TxInterruptHandler `*F16639 ~T0 @X0 1 e ]
 "379
 [; ;./mcc_generated_files/uart/../system/../uart/uart1.h: 379: void (*UART1_RxInterruptHandler)(void);
-[v _UART1_RxInterruptHandler `*F16567 ~T0 @X0 1 e ]
+[v _UART1_RxInterruptHandler `*F16646 ~T0 @X0 1 e ]
 "10 ./Practica2a.h
 [; ;./Practica2a.h: 10: uint16_t PERIOD = 2;
 [v _PERIOD `us ~T0 @X0 1 e ]
@@ -2320,7 +2320,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 [f ]
 "15
 [; ;ADC_int.c: 15:     if(ADPCH == 0)
-[e $ ! == -> _ADPCH `i -> 0 `i 2200  ]
+[e $ ! == -> _ADPCH `i -> 0 `i 2203  ]
 "16
 [; ;ADC_int.c: 16:     {
 {
@@ -2328,8 +2328,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;ADC_int.c: 18:         LATEbits.LATE0 = 0;
 [e = . . _LATEbits 0 0 -> -> 0 `i `uc ]
 "20
-[; ;ADC_int.c: 20:         ADCC_StartConversion(channel_ANA1);
-[e ( _ADCC_StartConversion (1 . `E15847 6 ]
+[; ;ADC_int.c: 20:         ADCC_StartConversion(channel_ANA0);
+[e ( _ADCC_StartConversion (1 . `E15847 5 ]
 "23
 [; ;ADC_int.c: 23:         Timer2_Start();
 [e ( _Timer2_Start ..  ]
@@ -2354,10 +2354,10 @@ Version 4.0 HI-TECH Software Intermediate Code
 "33
 [; ;ADC_int.c: 33:     }
 }
-[e $U 2201  ]
+[e $U 2204  ]
 "34
 [; ;ADC_int.c: 34:     else
-[e :U 2200 ]
+[e :U 2203 ]
 "35
 [; ;ADC_int.c: 35:     {
 {
@@ -2392,8 +2392,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 "52
 [; ;ADC_int.c: 52:     }
 }
-[e :U 2201 ]
+[e :U 2204 ]
 "53
 [; ;ADC_int.c: 53: }
-[e :UE 2199 ]
+[e :UE 2202 ]
 }

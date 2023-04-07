@@ -1,6 +1,6 @@
 Version 4.0 HI-TECH Software Intermediate Code
-[v F16532 `(v ~T0 @X0 0 tf ]
-[v F16539 `(v ~T0 @X0 0 tf ]
+[v F16611 `(v ~T0 @X0 0 tf ]
+[v F16618 `(v ~T0 @X0 0 tf ]
 "48 mcc_generated_files/system/src/../../system/clock.h
 [; ;mcc_generated_files/system/src/../../system/clock.h: 48: void CLOCK_Initialize(void);
 [v _CLOCK_Initialize `(v ~T0 @X0 0 ef ]
@@ -13,6 +13,9 @@ Version 4.0 HI-TECH Software Intermediate Code
 "61 mcc_generated_files/system/src/../../fvr/fvr.h
 [; ;mcc_generated_files/system/src/../../fvr/fvr.h: 61:  void FVR_Initialize(void);
 [v _FVR_Initialize `(v ~T0 @X0 0 ef ]
+"80 mcc_generated_files/system/src/../../i2c_host/i2c1.h
+[; ;mcc_generated_files/system/src/../../i2c_host/i2c1.h: 80: void I2C1_Initialize(void);
+[v _I2C1_Initialize `(v ~T0 @X0 0 ef ]
 "65 mcc_generated_files/system/src/../../spi/spi1.h
 [; ;mcc_generated_files/system/src/../../spi/spi1.h: 65: void SPI1_Initialize(void);
 [v _SPI1_Initialize `(v ~T0 @X0 0 ef ]
@@ -2265,10 +2268,10 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; <" TOSU equ 03FFFh ;# ">
 "354 mcc_generated_files/system/src/../../uart/uart1.h
 [; ;mcc_generated_files/system/src/../../uart/uart1.h: 354: void (*UART1_TxInterruptHandler)(void);
-[v _UART1_TxInterruptHandler `*F16532 ~T0 @X0 1 e ]
+[v _UART1_TxInterruptHandler `*F16611 ~T0 @X0 1 e ]
 "379
 [; ;mcc_generated_files/system/src/../../uart/uart1.h: 379: void (*UART1_RxInterruptHandler)(void);
-[v _UART1_RxInterruptHandler `*F16539 ~T0 @X0 1 e ]
+[v _UART1_RxInterruptHandler `*F16618 ~T0 @X0 1 e ]
 "36 mcc_generated_files/system/src/system.c
 [; ;mcc_generated_files/system/src/system.c: 36: void SYSTEM_Initialize(void)
 [v _SYSTEM_Initialize `(v ~T0 @X0 1 ef ]
@@ -2290,24 +2293,27 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;mcc_generated_files/system/src/system.c: 41:     FVR_Initialize();
 [e ( _FVR_Initialize ..  ]
 "42
-[; ;mcc_generated_files/system/src/system.c: 42:     SPI1_Initialize();
-[e ( _SPI1_Initialize ..  ]
+[; ;mcc_generated_files/system/src/system.c: 42:     I2C1_Initialize();
+[e ( _I2C1_Initialize ..  ]
 "43
-[; ;mcc_generated_files/system/src/system.c: 43:     Timer_Initialize();
-[e ( _Timer_Initialize ..  ]
+[; ;mcc_generated_files/system/src/system.c: 43:     SPI1_Initialize();
+[e ( _SPI1_Initialize ..  ]
 "44
-[; ;mcc_generated_files/system/src/system.c: 44:     Timer2_Initialize();
-[e ( _Timer2_Initialize ..  ]
+[; ;mcc_generated_files/system/src/system.c: 44:     Timer_Initialize();
+[e ( _Timer_Initialize ..  ]
 "45
-[; ;mcc_generated_files/system/src/system.c: 45:     UART1_Initialize();
-[e ( _UART1_Initialize ..  ]
+[; ;mcc_generated_files/system/src/system.c: 45:     Timer2_Initialize();
+[e ( _Timer2_Initialize ..  ]
 "46
-[; ;mcc_generated_files/system/src/system.c: 46:     UART2_Initialize();
-[e ( _UART2_Initialize ..  ]
+[; ;mcc_generated_files/system/src/system.c: 46:     UART1_Initialize();
+[e ( _UART1_Initialize ..  ]
 "47
-[; ;mcc_generated_files/system/src/system.c: 47:     INTERRUPT_Initialize();
-[e ( _INTERRUPT_Initialize ..  ]
+[; ;mcc_generated_files/system/src/system.c: 47:     UART2_Initialize();
+[e ( _UART2_Initialize ..  ]
 "48
-[; ;mcc_generated_files/system/src/system.c: 48: }
-[e :UE 2199 ]
+[; ;mcc_generated_files/system/src/system.c: 48:     INTERRUPT_Initialize();
+[e ( _INTERRUPT_Initialize ..  ]
+"49
+[; ;mcc_generated_files/system/src/system.c: 49: }
+[e :UE 2202 ]
 }

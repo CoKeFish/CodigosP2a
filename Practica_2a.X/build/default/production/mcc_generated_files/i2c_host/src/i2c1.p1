@@ -1,297 +1,321 @@
 Version 4.0 HI-TECH Software Intermediate Code
-[v F16638 `(v ~T0 @X0 0 tf ]
-[v F16645 `(v ~T0 @X0 0 tf ]
-[v F16505 `(v ~T0 @X0 0 tf ]
-[v F16507 `(v ~T0 @X0 0 tf ]
-[v F16509 `(uc ~T0 @X0 0 tf ]
-[v F16511 `(v ~T0 @X0 0 tf1`uc ]
-[v F16514 `(a ~T0 @X0 0 tf ]
-[v F16516 `(a ~T0 @X0 0 tf ]
-[v F16518 `(a ~T0 @X0 0 tf ]
-[v F16520 `(v ~T0 @X0 0 tf ]
-[v F16522 `(v ~T0 @X0 0 tf ]
-[v F16524 `(v ~T0 @X0 0 tf1`a ]
-[v F16527 `(a ~T0 @X0 0 tf ]
-[v F16529 `(a ~T0 @X0 0 tf ]
-[v F16531 `(v ~T0 @X0 0 tf1`ul ]
-[v F16534 `(ul ~T0 @X0 0 tf ]
-[v F16536 `(v ~T0 @X0 0 tf1`ul ]
-[v F16539 `(ul ~T0 @X0 0 tf ]
-[v F16541 `(ui ~T0 @X0 0 tf ]
-[v F16544 `(v ~T0 @X0 0 tf ]
-[v F16543 `(v ~T0 @X0 0 tf1`*F16544 ]
-[v F16548 `(v ~T0 @X0 0 tf ]
-[v F16547 `(v ~T0 @X0 0 tf1`*F16548 ]
-[v F16552 `(v ~T0 @X0 0 tf ]
-[v F16551 `(v ~T0 @X0 0 tf1`*F16552 ]
-[v F16556 `(v ~T0 @X0 0 tf ]
-[v F16555 `(v ~T0 @X0 0 tf1`*F16556 ]
-[v F16560 `(v ~T0 @X0 0 tf ]
-[v F16559 `(v ~T0 @X0 0 tf1`*F16560 ]
-[v F16564 `(v ~T0 @X0 0 tf ]
-[v F16563 `(v ~T0 @X0 0 tf1`*F16564 ]
-[v F16568 `(v ~T0 @X0 0 tf ]
-[v F16567 `(v ~T0 @X0 0 tf1`*F16568 ]
-"57 mcc_generated_files/uart/src/../uart_drv_interface.h
-[; ;mcc_generated_files/uart/src/../uart_drv_interface.h: 57: typedef struct {
-[s S2199 `*F16505 1 `*F16507 1 `*F16509 1 `*F16511 1 `*F16514 1 `*F16516 1 `*F16518 1 `*F16520 1 `*F16522 1 `*F16524 1 `*F16527 1 `*F16529 1 `*F16531 1 `*F16534 1 `*F16536 1 `*F16539 1 `*F16541 1 `*F16543 1 `*F16547 1 `*F16551 1 `*F16555 1 `*F16559 1 `*F16563 1 `*F16567 1 ]
-[n S2199 . Initialize Deinitialize Read Write IsRxReady IsTxReady IsTxDone TransmitEnable TransmitDisable AutoBaudSet AutoBaudQuery AutoBaudEventEnableGet BRGCountSet BRGCountGet BaudRateSet BaudRateGet ErrorGet TxCompleteCallbackRegister RxCompleteCallbackRegister TxCollisionCallbackRegister FramingErrorCallbackRegister OverrunErrorCallbackRegister ParityErrorCallbackRegister EventCallbackRegister ]
-"116 mcc_generated_files/uart/src/../../system/../uart/uart1.h
-[; ;mcc_generated_files/uart/src/../../system/../uart/uart1.h: 116: void UART1_Initialize(void);
-[v _UART1_Initialize `(v ~T0 @X0 0 ef ]
-"125
-[; ;mcc_generated_files/uart/src/../../system/../uart/uart1.h: 125: void UART1_Deinitialize(void);
-[v _UART1_Deinitialize `(v ~T0 @X0 0 ef ]
-"311
-[; ;mcc_generated_files/uart/src/../../system/../uart/uart1.h: 311: uint8_t UART1_Read(void);
-[v _UART1_Read `(uc ~T0 @X0 0 ef ]
-"321
-[; ;mcc_generated_files/uart/src/../../system/../uart/uart1.h: 321: void UART1_Write(uint8_t txData);
-[v _UART1_Write `(v ~T0 @X0 0 ef1`uc ]
-"273
-[; ;mcc_generated_files/uart/src/../../system/../uart/uart1.h: 273: _Bool UART1_IsRxReady(void);
-[v _UART1_IsRxReady `(a ~T0 @X0 0 ef ]
-"282
-[; ;mcc_generated_files/uart/src/../../system/../uart/uart1.h: 282: _Bool UART1_IsTxReady(void);
-[v _UART1_IsTxReady `(a ~T0 @X0 0 ef ]
-"291
-[; ;mcc_generated_files/uart/src/../../system/../uart/uart1.h: 291: _Bool UART1_IsTxDone(void);
-[v _UART1_IsTxDone `(a ~T0 @X0 0 ef ]
-[v F16588 `(v ~T0 @X0 1 tf ]
-"150
-[; ;mcc_generated_files/uart/src/../../system/../uart/uart1.h: 150: __attribute__((inline)) void UART1_TransmitEnable(void);
-[v _UART1_TransmitEnable `TF16588 ~T0 @X0 0 e ]
-[v F16590 `(v ~T0 @X0 1 tf ]
-"158
-[; ;mcc_generated_files/uart/src/../../system/../uart/uart1.h: 158: __attribute__((inline)) void UART1_TransmitDisable(void);
-[v _UART1_TransmitDisable `TF16590 ~T0 @X0 0 e ]
-[v F16608 `(v ~T0 @X0 1 tf1`a ]
-"231
-[; ;mcc_generated_files/uart/src/../../system/../uart/uart1.h: 231: __attribute__((inline)) void UART1_AutoBaudSet(_Bool enable);
-[v _UART1_AutoBaudSet `TF16608 ~T0 @X0 0 e ]
-[v F16611 `(a ~T0 @X0 1 tf ]
-"240
-[; ;mcc_generated_files/uart/src/../../system/../uart/uart1.h: 240: __attribute__((inline)) _Bool UART1_AutoBaudQuery(void);
-[v _UART1_AutoBaudQuery `TF16611 ~T0 @X0 0 e ]
-[v F16670 `(a ~T0 @X0 0 tf ]
-[v F16671 `(v ~T0 @X0 0 tf1`ul ]
-[v F16673 `(ul ~T0 @X0 0 tf ]
-[v F16674 `(v ~T0 @X0 0 tf1`ul ]
-[v F16676 `(ul ~T0 @X0 0 tf ]
-"301
-[; ;mcc_generated_files/uart/src/../../system/../uart/uart1.h: 301: size_t UART1_ErrorGet(void);
-[v _UART1_ErrorGet `(ui ~T0 @X0 0 ef ]
-[v F16640 `(v ~T0 @X0 0 tf ]
-"362
-[; ;mcc_generated_files/uart/src/../../system/../uart/uart1.h: 362: void UART1_TxCompleteCallbackRegister(void (* callbackHandler)(void));
-[v _UART1_TxCompleteCallbackRegister `(v ~T0 @X0 0 ef1`*F16640 ]
-[v F16647 `(v ~T0 @X0 0 tf ]
-"386
-[; ;mcc_generated_files/uart/src/../../system/../uart/uart1.h: 386: void UART1_RxCompleteCallbackRegister(void (* callbackHandler)(void));
-[v _UART1_RxCompleteCallbackRegister `(v ~T0 @X0 0 ef1`*F16647 ]
-[v F16685 `(v ~T0 @X0 0 tf ]
-[v F16684 `(v ~T0 @X0 0 tf1`*F16685 ]
-[v F16626 `(v ~T0 @X0 0 tf ]
-"329
-[; ;mcc_generated_files/uart/src/../../system/../uart/uart1.h: 329: void UART1_FramingErrorCallbackRegister(void (* callbackHandler)(void));
-[v _UART1_FramingErrorCallbackRegister `(v ~T0 @X0 0 ef1`*F16626 ]
-[v F16630 `(v ~T0 @X0 0 tf ]
-"337
-[; ;mcc_generated_files/uart/src/../../system/../uart/uart1.h: 337: void UART1_OverrunErrorCallbackRegister(void (* callbackHandler)(void));
-[v _UART1_OverrunErrorCallbackRegister `(v ~T0 @X0 0 ef1`*F16630 ]
-[v F16634 `(v ~T0 @X0 0 tf ]
-"345
-[; ;mcc_generated_files/uart/src/../../system/../uart/uart1.h: 345: void UART1_ParityErrorCallbackRegister(void (* callbackHandler)(void));
-[v _UART1_ParityErrorCallbackRegister `(v ~T0 @X0 0 ef1`*F16634 ]
-[v F16697 `(v ~T0 @X0 0 tf ]
-[v F16696 `(v ~T0 @X0 0 tf1`*F16697 ]
-"88
-[; ;mcc_generated_files/uart/src/../../system/../uart/uart1.h: 88:     struct {
-[s S2201 :1 `uc 1 :1 `uc 1 :1 `uc 1 :5 `uc 1 ]
-[n S2201 . perr ferr oerr reserved ]
-"87
-[; ;mcc_generated_files/uart/src/../../system/../uart/uart1.h: 87: typedef union {
-[u S2200 `S2201 1 `ui 1 ]
-[n S2200 . . status ]
-[v F16710 `(v ~T0 @X0 0 tf ]
-[v F16712 `(v ~T0 @X0 0 tf ]
-[v F16714 `(v ~T0 @X0 0 tf ]
-[v F16716 `(v ~T0 @X0 0 tf ]
-[v F16718 `(v ~T0 @X0 0 tf ]
-[v F16720 `(v ~T0 @X0 0 tf ]
-[v F16722 `(v ~T0 @X0 0 tf ]
-"3522 D:/Program Files/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h
+[v F16184 `(v ~T0 @X0 0 tf ]
+[v F16186 `(v ~T0 @X0 0 tf ]
+[v F16188 `(a ~T0 @X0 0 tf3`us`*uc`ui ]
+[v F16193 `(a ~T0 @X0 0 tf3`us`*uc`ui ]
+[v F16198 `(a ~T0 @X0 0 tf5`us`*uc`ui`*uc`ui ]
+"56 mcc_generated_files/i2c_host/src/../i2c_host_types.h
+[; ;mcc_generated_files/i2c_host/src/../i2c_host_types.h: 56: {
+[s S2194 `ul 1 ]
+[n S2194 . clkSpeed ]
+[v F16205 `(a ~T0 @X0 0 tf2`*S2194`ul ]
+"69 mcc_generated_files/i2c_host/src/i2c1.c
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 69: const i2c_host_interface_t I2C1_Host = {
+[c E16163 0 1 2 3 .. ]
+[n E16163 . I2C_ERROR_NONE I2C_ERROR_ADDR_NACK I2C_ERROR_DATA_NACK I2C_ERROR_BUS_COLLISION  ]
+[v F16209 `(E16163 ~T0 @X0 0 tf ]
+[v F16211 `(a ~T0 @X0 0 tf ]
+[v F16214 `(v ~T0 @X0 0 tf ]
+[v F16213 `(v ~T0 @X0 0 tf1`*F16214 ]
+[v F16217 `(v ~T0 @X0 0 tf ]
+"51 mcc_generated_files/i2c_host/src/../i2c_host_interface.h
+[; ;mcc_generated_files/i2c_host/src/../i2c_host_interface.h: 51: {
+[s S2196 `*F16184 1 `*F16186 1 `*F16188 1 `*F16193 1 `*F16198 1 `*F16205 1 `*F16209 1 `*F16211 1 `*F16213 1 `*F16217 1 ]
+[n S2196 . Initialize Deinitialize Write Read WriteRead TransferSetup ErrorGet IsBusy CallbackRegister Tasks ]
+"80 mcc_generated_files/i2c_host/src/../i2c1.h
+[; ;mcc_generated_files/i2c_host/src/../i2c1.h: 80: void I2C1_Initialize(void);
+[v _I2C1_Initialize `(v ~T0 @X0 0 ef ]
+"89
+[; ;mcc_generated_files/i2c_host/src/../i2c1.h: 89: void I2C1_Deinitialize(void);
+[v _I2C1_Deinitialize `(v ~T0 @X0 0 ef ]
+"120
+[; ;mcc_generated_files/i2c_host/src/../i2c1.h: 120: _Bool I2C1_Write(uint16_t address, uint8_t *data, size_t dataLength);
+[v _I2C1_Write `(a ~T0 @X0 0 ef3`us`*uc`ui ]
+"151
+[; ;mcc_generated_files/i2c_host/src/../i2c1.h: 151: _Bool I2C1_Read(uint16_t address, uint8_t *data, size_t dataLength);
+[v _I2C1_Read `(a ~T0 @X0 0 ef3`us`*uc`ui ]
+"187
+[; ;mcc_generated_files/i2c_host/src/../i2c1.h: 187: _Bool I2C1_WriteRead(uint16_t address, uint8_t *writeData, size_t writeLength, uint8_t *readData, size_t readLength);
+[v _I2C1_WriteRead `(a ~T0 @X0 0 ef5`us`*uc`ui`*uc`ui ]
+[v F16294 `(a ~T0 @X0 0 tf2`*S2194`ul ]
+"198
+[; ;mcc_generated_files/i2c_host/src/../i2c1.h: 198: i2c_host_error_t I2C1_ErrorGet(void);
+[v _I2C1_ErrorGet `(E16163 ~T0 @X0 0 ef ]
+"208
+[; ;mcc_generated_files/i2c_host/src/../i2c1.h: 208: _Bool I2C1_IsBusy(void);
+[v _I2C1_IsBusy `(a ~T0 @X0 0 ef ]
+[v F16239 `(v ~T0 @X0 0 tf ]
+"235
+[; ;mcc_generated_files/i2c_host/src/../i2c1.h: 235: void I2C1_CallbackRegister(void (*callbackHandler)(void));
+[v _I2C1_CallbackRegister `(v ~T0 @X0 0 ef1`*F16239 ]
+[v F16302 `(v ~T0 @X0 0 tf ]
+[v F16304 `(v ~T0 @X0 0 tf ]
+[v F16305 `(v ~T0 @X0 0 tf ]
+"45 mcc_generated_files/i2c_host/src/../i2c_host_event_types.h
+[; ;mcc_generated_files/i2c_host/src/../i2c_host_event_types.h: 45: {
+[s S2195 `a 1 `us 1 `*uc 1 `ui 1 `*uc 1 `ui 1 `a 1 `E16163 1 ]
+[n S2195 . busy address writePtr writeLength readPtr readLength switchToRead errorState ]
+"24778 D:/Program Files/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h
+[; ;D:/Program Files/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h: 24778: extern volatile unsigned char I2C1CON0 __attribute__((address(0x3D73)));
+[v _I2C1CON0 `Vuc ~T0 @X0 0 e@15731 ]
+"24855
+[; ;D:/Program Files/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h: 24855: extern volatile unsigned char I2C1CON1 __attribute__((address(0x3D74)));
+[v _I2C1CON1 `Vuc ~T0 @X0 0 e@15732 ]
+"24912
+[; ;D:/Program Files/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h: 24912: extern volatile unsigned char I2C1CON2 __attribute__((address(0x3D75)));
+[v _I2C1CON2 `Vuc ~T0 @X0 0 e@15733 ]
+"25419
+[; ;D:/Program Files/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h: 25419: extern volatile unsigned char I2C1CLK __attribute__((address(0x3D7B)));
+[v _I2C1CLK `Vuc ~T0 @X0 0 e@15739 ]
+"25215
+[; ;D:/Program Files/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h: 25215: extern volatile unsigned char I2C1PIR __attribute__((address(0x3D79)));
+[v _I2C1PIR `Vuc ~T0 @X0 0 e@15737 ]
+"25317
+[; ;D:/Program Files/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h: 25317: extern volatile unsigned char I2C1PIE __attribute__((address(0x3D7A)));
+[v _I2C1PIE `Vuc ~T0 @X0 0 e@15738 ]
+"24988
+[; ;D:/Program Files/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h: 24988: extern volatile unsigned char I2C1ERR __attribute__((address(0x3D76)));
+[v _I2C1ERR `Vuc ~T0 @X0 0 e@15734 ]
+"24586
+[; ;D:/Program Files/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h: 24586: extern volatile unsigned char I2C1CNT __attribute__((address(0x3D6C)));
+[v _I2C1CNT `Vuc ~T0 @X0 0 e@15724 ]
+"10093
+[; ;D:/Program Files/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h: 10093: extern volatile unsigned char RC3I2C __attribute__((address(0x3A6A)));
+[v _RC3I2C `Vuc ~T0 @X0 0 e@14954 ]
+"10201
+[; ;D:/Program Files/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h: 10201: extern volatile unsigned char RC4I2C __attribute__((address(0x3A6B)));
+[v _RC4I2C `Vuc ~T0 @X0 0 e@14955 ]
+[v F16268 `(v ~T0 @X0 1 tf ]
+"60 mcc_generated_files/i2c_host/src/i2c1.c
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 60: static __attribute__((inline)) void I2C1_InterruptsEnable(void);
+[v _I2C1_InterruptsEnable `TF16268 ~T0 @X0 0 s ]
+"25323 D:/Program Files/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h
+[; ;D:/Program Files/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h: 25323:     struct {
+[s S1116 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S1116 . SCIE RSCIE PCIE ADRIE WRIE . ACKTIE CNTIE ]
+"25333
+[; ;D:/Program Files/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h: 25333:     struct {
+[s S1117 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S1117 . SC1IE RSC1IE PC1IE ADR1IE WR1IE . ACKT1IE CNT1IE ]
+"25322
+[; ;D:/Program Files/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h: 25322: typedef union {
+[u S1115 `S1116 1 `S1117 1 ]
+[n S1115 . . . ]
+"25344
+[; ;D:/Program Files/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h: 25344: extern volatile I2C1PIEbits_t I2C1PIEbits __attribute__((address(0x3D7A)));
+[v _I2C1PIEbits `VS1115 ~T0 @X0 0 e@15738 ]
+"24784
+[; ;D:/Program Files/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h: 24784:     struct {
+[s S1095 :3 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S1095 . MODE MDR CSTR S RSEN EN ]
+"24792
+[; ;D:/Program Files/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h: 24792:     struct {
+[s S1096 :1 `uc 1 :1 `uc 1 :1 `uc 1 :4 `uc 1 :1 `uc 1 ]
+[n S1096 . MODE0 MODE1 MODE2 . I2CEN ]
+"24783
+[; ;D:/Program Files/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h: 24783: typedef union {
+[u S1094 `S1095 1 `S1096 1 ]
+[n S1094 . . . ]
+"24800
+[; ;D:/Program Files/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h: 24800: extern volatile I2C1CON0bits_t I2C1CON0bits __attribute__((address(0x3D73)));
+[v _I2C1CON0bits `VS1094 ~T0 @X0 0 e@15731 ]
+[v F192 `(v ~T0 @X0 1 tf1`ul ]
+"12 D:/Program Files/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\builtins.h
+[v __delay `JF192 ~T0 @X0 0 e ]
+[p i __delay ]
+"8
+[v ___nop `(v ~T0 @X0 0 ef ]
+[p i ___nop ]
+"25221 D:/Program Files/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h
+[; ;D:/Program Files/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h: 25221:     struct {
+[s S1113 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S1113 . SCIF RSCIF PCIF ADRIF WRIF . ACKTIF CNTIF ]
+"25231
+[; ;D:/Program Files/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h: 25231:     struct {
+[s S1114 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S1114 . SC1IF RSC1IF PC1IF ADR1IF WR1IF . ACKT1IF CNT1IF ]
+"25220
+[; ;D:/Program Files/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h: 25220: typedef union {
+[u S1112 `S1113 1 `S1114 1 ]
+[n S1112 . . . ]
+"25242
+[; ;D:/Program Files/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h: 25242: extern volatile I2C1PIRbits_t I2C1PIRbits __attribute__((address(0x3D79)));
+[v _I2C1PIRbits `VS1112 ~T0 @X0 0 e@15737 ]
+"42 mcc_generated_files/i2c_host/src/i2c1.c
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 42: static void I2C1_DefaultCallback(void);
+[v _I2C1_DefaultCallback `(v ~T0 @X0 0 sf ]
+[v F16270 `(v ~T0 @X0 1 tf ]
+"61
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 61: static __attribute__((inline)) void I2C1_InterruptsDisable(void);
+[v _I2C1_InterruptsDisable `TF16270 ~T0 @X0 0 s ]
+"40
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 40: static void I2C1_WriteStart(void);
+[v _I2C1_WriteStart `(v ~T0 @X0 0 sf ]
+"39
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 39: static void I2C1_ReadStart(void);
+[v _I2C1_ReadStart `(v ~T0 @X0 0 sf ]
+"25084 D:/Program Files/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h
+[; ;D:/Program Files/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h: 25084:     struct {
+[s S1106 :3 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S1106 . . D R MMA SMA BFRE ]
+"25092
+[; ;D:/Program Files/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h: 25092:     struct {
+[s S1107 :3 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S1107 . . DATA READ ]
+"25097
+[; ;D:/Program Files/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h: 25097:     struct {
+[s S1108 :3 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S1108 . . NOT_ADDRESS NOT_WRITE ]
+"25102
+[; ;D:/Program Files/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h: 25102:     struct {
+[s S1109 :3 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S1109 . . NOT_A NOT_W ]
+"25083
+[; ;D:/Program Files/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h: 25083: typedef union {
+[u S1105 `S1106 1 `S1107 1 `S1108 1 `S1109 1 ]
+[n S1105 . . . . . ]
+"25108
+[; ;D:/Program Files/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h: 25108: extern volatile I2C1STAT0bits_t I2C1STAT0bits __attribute__((address(0x3D77)));
+[v _I2C1STAT0bits `VS1105 ~T0 @X0 0 e@15735 ]
+[v F16340 `(v ~T0 @X0 0 tf ]
+[v F16342 `(v ~T0 @X0 0 tf ]
+[v F16343 `(v ~T0 @X0 0 tf ]
+[t ~ __interrupt . k ]
+[t T1 __interrupt irq ( I2C1 ) base ( 8 ) ]
+"41 mcc_generated_files/i2c_host/src/i2c1.c
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 41: static void I2C1_Close(void);
+[v _I2C1_Close `(v ~T0 @X0 0 sf ]
+"54
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 54: static void I2C1_StopSend(void);
+[v _I2C1_StopSend `(v ~T0 @X0 0 sf ]
+[v F16260 `(v ~T0 @X0 1 tf ]
+"53
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 53: static __attribute__((inline)) void I2C1_RestartDisable(void);
+[v _I2C1_RestartDisable `TF16260 ~T0 @X0 0 s ]
+[t T2 __interrupt irq ( I2C1E ) base ( 8 ) ]
+"56
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 56: static _Bool I2C1_IsBusCol(void);
+[v _I2C1_IsBusCol `(a ~T0 @X0 0 sf ]
+"24994 D:/Program Files/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h
+[; ;D:/Program Files/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h: 24994:     struct {
+[s S1103 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S1103 . NACKIE BCLIE BTOIE . NACKIF BCLIF BTOIF ]
+"25003
+[; ;D:/Program Files/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h: 25003:     struct {
+[s S1104 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S1104 . NACK1IE BCL1IE BTO1IE . NACK1IF BCL1IF BTO1IF ]
+"24993
+[; ;D:/Program Files/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h: 24993: typedef union {
+[u S1102 `S1103 1 `S1104 1 ]
+[n S1102 . . . ]
+"25013
+[; ;D:/Program Files/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h: 25013: extern volatile I2C1ERRbits_t I2C1ERRbits __attribute__((address(0x3D76)));
+[v _I2C1ERRbits `VS1102 ~T0 @X0 0 e@15734 ]
+[v F16256 `(v ~T0 @X0 1 tf ]
+"51 mcc_generated_files/i2c_host/src/i2c1.c
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 51: static __attribute__((inline)) void I2C1_BusReset(void);
+[v _I2C1_BusReset `TF16256 ~T0 @X0 0 s ]
+"59
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 59: static _Bool I2C1_IsAddr(void);
+[v _I2C1_IsAddr `(a ~T0 @X0 0 sf ]
+"55
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 55: static _Bool I2C1_IsNack(void);
+[v _I2C1_IsNack `(a ~T0 @X0 0 sf ]
+"58
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 58: static _Bool I2C1_IsData(void);
+[v _I2C1_IsData `(a ~T0 @X0 0 sf ]
+"57
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 57: static _Bool I2C1_IsBusTimeOut(void);
+[v _I2C1_IsBusTimeOut `(a ~T0 @X0 0 sf ]
+[t T3 __interrupt irq ( I2C1RX ) base ( 8 ) ]
+"48
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 48: static uint8_t I2C1_DataReceive(void);
+[v _I2C1_DataReceive `(uc ~T0 @X0 0 sf ]
+[t T4 __interrupt irq ( I2C1TX ) base ( 8 ) ]
+"47
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 47: static void I2C1_DataTransmit(uint8_t data);
+[v _I2C1_DataTransmit `(v ~T0 @X0 0 sf1`uc ]
+"49
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 49: static void I2C1_CounterSet(uint8_t counter);
+[v _I2C1_CounterSet `(v ~T0 @X0 0 sf1`uc ]
+"46
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 46: static void I2C1_AddrTransmit(uint8_t addr);
+[v _I2C1_AddrTransmit `(v ~T0 @X0 0 sf1`uc ]
+"45
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 45: static void I2C1_StartSend(void);
+[v _I2C1_StartSend `(v ~T0 @X0 0 sf ]
+[v F16258 `(v ~T0 @X0 1 tf ]
+"52
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 52: static __attribute__((inline)) void I2C1_RestartEnable(void);
+[v _I2C1_RestartEnable `TF16258 ~T0 @X0 0 s ]
+[v F16272 `(v ~T0 @X0 1 tf ]
+"62
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 62: static __attribute__((inline)) void I2C1_InterruptsClear(void);
+[v _I2C1_InterruptsClear `TF16272 ~T0 @X0 0 s ]
+[v F16274 `(v ~T0 @X0 1 tf ]
+"63
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 63: static __attribute__((inline)) void I2C1_ErrorFlagsClear(void);
+[v _I2C1_ErrorFlagsClear `TF16274 ~T0 @X0 0 s ]
+[v F16276 `(v ~T0 @X0 1 tf ]
+"64
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 64: static __attribute__((inline)) void I2C1_BufferClear(void);
+[v _I2C1_BufferClear `TF16276 ~T0 @X0 0 s ]
+"24676 D:/Program Files/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h
+[; ;D:/Program Files/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h: 24676: extern volatile unsigned char I2C1ADB1 __attribute__((address(0x3D6E)));
+[v _I2C1ADB1 `Vuc ~T0 @X0 0 e@15726 ]
+"24566
+[; ;D:/Program Files/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h: 24566: extern volatile unsigned char I2C1TXB __attribute__((address(0x3D6B)));
+[v _I2C1TXB `Vuc ~T0 @X0 0 e@15723 ]
+"24546
+[; ;D:/Program Files/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h: 24546: extern volatile unsigned char I2C1RXB __attribute__((address(0x3D6A)));
+[v _I2C1RXB `Vuc ~T0 @X0 0 e@15722 ]
+"24861
+[; ;D:/Program Files/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h: 24861:     struct {
+[s S1098 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S1098 . CSD TXU RXO . ACKT ACKSTAT ACKDT ACKCNT ]
+"24860
+[; ;D:/Program Files/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h: 24860: typedef union {
+[u S1097 `S1098 1 ]
+[n S1097 . . ]
+"24872
+[; ;D:/Program Files/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h: 24872: extern volatile I2C1CON1bits_t I2C1CON1bits __attribute__((address(0x3D74)));
+[v _I2C1CON1bits `VS1097 ~T0 @X0 0 e@15732 ]
+"3522
 [; ;D:/Program Files/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h: 3522:     struct {
-[s S158 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S158 . I2C1TXIE I2C1IE I2C1EIE U1RXIE U1TXIE U1EIE U1IE TMR0IE ]
+[s S156 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S156 . I2C1TXIE I2C1IE I2C1EIE U1RXIE U1TXIE U1EIE U1IE TMR0IE ]
 "3521
 [; ;D:/Program Files/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h: 3521: typedef union {
-[u S157 `S158 1 ]
-[n S157 . . ]
+[u S155 `S156 1 ]
+[n S155 . . ]
 "3533
 [; ;D:/Program Files/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h: 3533: extern volatile PIE3bits_t PIE3bits __attribute__((address(0x3993)));
-[v _PIE3bits `VS157 ~T0 @X0 0 e@14739 ]
-"112 mcc_generated_files/uart/src/uart1.c
-[; ;mcc_generated_files/uart/src/uart1.c: 112: void UART1_ReceiveISR(void);
-[v _UART1_ReceiveISR `(v ~T0 @X0 0 ef ]
-"111
-[; ;mcc_generated_files/uart/src/uart1.c: 111: void UART1_TransmitISR(void);
-[v _UART1_TransmitISR `(v ~T0 @X0 0 ef ]
-"26509 D:/Program Files/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h
-[; ;D:/Program Files/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h: 26509: extern volatile unsigned char U1RXB __attribute__((address(0x3DE8)));
-[v _U1RXB `Vuc ~T0 @X0 0 e@15848 ]
-"26547
-[; ;D:/Program Files/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h: 26547: extern volatile unsigned char U1RXCHK __attribute__((address(0x3DE9)));
-[v _U1RXCHK `Vuc ~T0 @X0 0 e@15849 ]
-"26567
-[; ;D:/Program Files/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h: 26567: extern volatile unsigned char U1TXB __attribute__((address(0x3DEA)));
-[v _U1TXB `Vuc ~T0 @X0 0 e@15850 ]
-"26605
-[; ;D:/Program Files/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h: 26605: extern volatile unsigned char U1TXCHK __attribute__((address(0x3DEB)));
-[v _U1TXCHK `Vuc ~T0 @X0 0 e@15851 ]
-"26632
-[; ;D:/Program Files/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h: 26632: extern volatile unsigned char U1P1L __attribute__((address(0x3DEC)));
-[v _U1P1L `Vuc ~T0 @X0 0 e@15852 ]
-"26652
-[; ;D:/Program Files/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h: 26652: extern volatile unsigned char U1P1H __attribute__((address(0x3DED)));
-[v _U1P1H `Vuc ~T0 @X0 0 e@15853 ]
-"26679
-[; ;D:/Program Files/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h: 26679: extern volatile unsigned char U1P2L __attribute__((address(0x3DEE)));
-[v _U1P2L `Vuc ~T0 @X0 0 e@15854 ]
-"26699
-[; ;D:/Program Files/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h: 26699: extern volatile unsigned char U1P2H __attribute__((address(0x3DEF)));
-[v _U1P2H `Vuc ~T0 @X0 0 e@15855 ]
-"26726
-[; ;D:/Program Files/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h: 26726: extern volatile unsigned char U1P3L __attribute__((address(0x3DF0)));
-[v _U1P3L `Vuc ~T0 @X0 0 e@15856 ]
-"26746
-[; ;D:/Program Files/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h: 26746: extern volatile unsigned char U1P3H __attribute__((address(0x3DF1)));
-[v _U1P3H `Vuc ~T0 @X0 0 e@15857 ]
-"26766
-[; ;D:/Program Files/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h: 26766: extern volatile unsigned char U1CON0 __attribute__((address(0x3DF2)));
-[v _U1CON0 `Vuc ~T0 @X0 0 e@15858 ]
-"26894
-[; ;D:/Program Files/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h: 26894: extern volatile unsigned char U1CON1 __attribute__((address(0x3DF3)));
-[v _U1CON1 `Vuc ~T0 @X0 0 e@15859 ]
-"26974
-[; ;D:/Program Files/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h: 26974: extern volatile unsigned char U1CON2 __attribute__((address(0x3DF4)));
-[v _U1CON2 `Vuc ~T0 @X0 0 e@15860 ]
-"27123
-[; ;D:/Program Files/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h: 27123: extern volatile unsigned char U1BRGL __attribute__((address(0x3DF5)));
-[v _U1BRGL `Vuc ~T0 @X0 0 e@15861 ]
-"27143
-[; ;D:/Program Files/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h: 27143: extern volatile unsigned char U1BRGH __attribute__((address(0x3DF6)));
-[v _U1BRGH `Vuc ~T0 @X0 0 e@15862 ]
-"27163
-[; ;D:/Program Files/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h: 27163: extern volatile unsigned char U1FIFO __attribute__((address(0x3DF7)));
-[v _U1FIFO `Vuc ~T0 @X0 0 e@15863 ]
-"27293
-[; ;D:/Program Files/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h: 27293: extern volatile unsigned char U1UIR __attribute__((address(0x3DF8)));
-[v _U1UIR `Vuc ~T0 @X0 0 e@15864 ]
-"27349
-[; ;D:/Program Files/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h: 27349: extern volatile unsigned char U1ERRIR __attribute__((address(0x3DF9)));
-[v _U1ERRIR `Vuc ~T0 @X0 0 e@15865 ]
-"27461
-[; ;D:/Program Files/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h: 27461: extern volatile unsigned char U1ERRIE __attribute__((address(0x3DFA)));
-[v _U1ERRIE `Vuc ~T0 @X0 0 e@15866 ]
-"108 mcc_generated_files/uart/src/uart1.c
-[; ;mcc_generated_files/uart/src/uart1.c: 108: static void UART1_DefaultFramingErrorCallback(void);
-[v _UART1_DefaultFramingErrorCallback `(v ~T0 @X0 0 sf ]
-"109
-[; ;mcc_generated_files/uart/src/uart1.c: 109: static void UART1_DefaultOverrunErrorCallback(void);
-[v _UART1_DefaultOverrunErrorCallback `(v ~T0 @X0 0 sf ]
-"110
-[; ;mcc_generated_files/uart/src/uart1.c: 110: static void UART1_DefaultParityErrorCallback(void);
-[v _UART1_DefaultParityErrorCallback `(v ~T0 @X0 0 sf ]
-"26900 D:/Program Files/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h
-[; ;D:/Program Files/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h: 26900:     struct {
-[s S1205 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :2 `uc 1 :1 `uc 1 ]
-[n S1205 . SENDB BRKOVR . RXBIMD WUE . ON ]
-"26909
-[; ;D:/Program Files/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h: 26909:     struct {
-[s S1206 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :2 `uc 1 :1 `uc 1 ]
-[n S1206 . U1SENDB U1BRKOVR . U1RXBIMD U1WUE . U1ON ]
-"26899
-[; ;D:/Program Files/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h: 26899: typedef union {
-[u S1204 `S1205 1 `S1206 1 ]
-[n S1204 . . . ]
-"26919
-[; ;D:/Program Files/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h: 26919: extern volatile U1CON1bits_t U1CON1bits __attribute__((address(0x3DF3)));
-[v _U1CON1bits `VS1204 ~T0 @X0 0 e@15859 ]
-"26772
-[; ;D:/Program Files/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h: 26772:     struct {
-[s S1200 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S1200 . MODE0 MODE1 MODE2 MODE3 ]
-"26778
-[; ;D:/Program Files/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h: 26778:     struct {
-[s S1201 :4 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S1201 . U1MODE U1RXEN U1TXEN U1ABDEN U1BRGS ]
-"26785
-[; ;D:/Program Files/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h: 26785:     struct {
-[s S1202 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S1202 . U1MODE0 U1MODE1 U1MODE2 U1MODE3 ]
-"26791
-[; ;D:/Program Files/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h: 26791:     struct {
-[s S1203 :4 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S1203 . MODE RXEN TXEN ABDEN BRGS ]
-"26771
-[; ;D:/Program Files/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h: 26771: typedef union {
-[u S1199 `S1200 1 `S1201 1 `S1202 1 `S1203 1 ]
-[n S1199 . . . . . ]
-"26799
-[; ;D:/Program Files/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h: 26799: extern volatile U1CON0bits_t U1CON0bits __attribute__((address(0x3DF2)));
-[v _U1CON0bits `VS1199 ~T0 @X0 0 e@15858 ]
-"27299
-[; ;D:/Program Files/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h: 27299:     struct {
-[s S1222 :2 `uc 1 :1 `uc 1 :3 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S1222 . . ABDIE . ABDIF WUIF ]
-"27306
-[; ;D:/Program Files/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h: 27306:     struct {
-[s S1223 :2 `uc 1 :1 `uc 1 :3 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S1223 . . U1ABDIE . U1ABDIF U1WUIF ]
-"27298
-[; ;D:/Program Files/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h: 27298: typedef union {
-[u S1221 `S1222 1 `S1223 1 ]
-[n S1221 . . . ]
-"27314
-[; ;D:/Program Files/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h: 27314: extern volatile U1UIRbits_t U1UIRbits __attribute__((address(0x3DF8)));
-[v _U1UIRbits `VS1221 ~T0 @X0 0 e@15864 ]
-"27355
-[; ;D:/Program Files/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h: 27355:     struct {
-[s S1225 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S1225 . TXCIF RXFOIF RXBKIF FERIF CERIF ABDOVF PERIF TXMTIF ]
-"27365
-[; ;D:/Program Files/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h: 27365:     struct {
-[s S1226 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S1226 . U1TXCIF U1RXFOIF U1RXBKIF U1FERIF U1CERIF U1ABDOVF U1PERIF U1TXMTIF ]
-"27354
-[; ;D:/Program Files/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h: 27354: typedef union {
-[u S1224 `S1225 1 `S1226 1 ]
-[n S1224 . . . ]
-"27376
-[; ;D:/Program Files/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h: 27376: extern volatile U1ERRIRbits_t U1ERRIRbits __attribute__((address(0x3DF9)));
-[v _U1ERRIRbits `VS1224 ~T0 @X0 0 e@15865 ]
-[t ~ __interrupt . k ]
-[t T7 __interrupt irq ( 27 ) base ( 8 ) ]
-[v F16785 `(v ~T0 @X0 0 tf ]
-[v F16786 `(v ~T0 @X0 0 tf ]
-[v F16787 `(v ~T0 @X0 0 tf ]
-[t T8 __interrupt irq ( 28 ) base ( 8 ) ]
-[v F16798 `(v ~T0 @X0 0 tf ]
-[v F16800 `(v ~T0 @X0 0 tf ]
-[v F16801 `(v ~T0 @X0 0 tf ]
-[v F16804 `(v ~T0 @X0 0 tf ]
-[v F16806 `(v ~T0 @X0 0 tf ]
-[v F16807 `(v ~T0 @X0 0 tf ]
-[v F16810 `(v ~T0 @X0 0 tf ]
-[v F16812 `(v ~T0 @X0 0 tf ]
-[v F16813 `(v ~T0 @X0 0 tf ]
-[v F16816 `(v ~T0 @X0 0 tf ]
-[v F16818 `(v ~T0 @X0 0 tf ]
-[v F16819 `(v ~T0 @X0 0 tf ]
-[v F16822 `(v ~T0 @X0 0 tf ]
-[v F16824 `(v ~T0 @X0 0 tf ]
-[v F16825 `(v ~T0 @X0 0 tf ]
+[v _PIE3bits `VS155 ~T0 @X0 0 e@14739 ]
+"3460
+[; ;D:/Program Files/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h: 3460:     struct {
+[s S154 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S154 . DMA1SCNTIE DMA1DCNTIE DMA1ORIE DMA1AIE SPI1RXIE SPI1TXIE SPI1IE I2C1RXIE ]
+"3459
+[; ;D:/Program Files/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h: 3459: typedef union {
+[u S153 `S154 1 ]
+[n S153 . . ]
+"3471
+[; ;D:/Program Files/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h: 3471: extern volatile PIE2bits_t PIE2bits __attribute__((address(0x3992)));
+[v _PIE2bits `VS153 ~T0 @X0 0 e@14738 ]
+"25168
+[; ;D:/Program Files/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h: 25168: extern volatile unsigned char I2C1STAT1 __attribute__((address(0x3D78)));
+[v _I2C1STAT1 `Vuc ~T0 @X0 0 e@15736 ]
+"25174
+[; ;D:/Program Files/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h: 25174:     struct {
+[s S1111 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S1111 . RXBF . CLRBF RXRE . TXBE . TXWE ]
+"25173
+[; ;D:/Program Files/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h: 25173: typedef union {
+[u S1110 `S1111 1 ]
+[n S1110 . . ]
+"25185
+[; ;D:/Program Files/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h: 25185: extern volatile I2C1STAT1bits_t I2C1STAT1bits __attribute__((address(0x3D78)));
+[v _I2C1STAT1bits `VS1110 ~T0 @X0 0 e@15736 ]
 "250 D:/Program Files/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h
 [; ;D:/Program Files/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h: 250: __asm("STATUS_CSHAD equ 03880h");
 [; <" STATUS_CSHAD equ 03880h ;# ">
@@ -2524,1076 +2548,1252 @@ Version 4.0 HI-TECH Software Intermediate Code
 "47941
 [; ;D:/Program Files/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h: 47941: __asm("TOSU equ 03FFFh");
 [; <" TOSU equ 03FFFh ;# ">
-"354 mcc_generated_files/uart/src/../../system/../uart/uart1.h
-[; ;mcc_generated_files/uart/src/../../system/../uart/uart1.h: 354: void (*UART1_TxInterruptHandler)(void);
-[v _UART1_TxInterruptHandler `*F16638 ~T0 @X0 1 e ]
-"379
-[; ;mcc_generated_files/uart/src/../../system/../uart/uart1.h: 379: void (*UART1_RxInterruptHandler)(void);
-[v _UART1_RxInterruptHandler `*F16645 ~T0 @X0 1 e ]
-"10 mcc_generated_files/uart/src/../../../Practica2a.h
-[; ;mcc_generated_files/uart/src/../../../Practica2a.h: 10: uint16_t PERIOD = 2;
-[v _PERIOD `us ~T0 @X0 1 e ]
-[i _PERIOD
--> -> 2 `i `us
-]
-"53 mcc_generated_files/uart/src/uart1.c
-[; ;mcc_generated_files/uart/src/uart1.c: 53: const uart_drv_interface_t UART = {
-[v _UART `CS2199 ~T0 @X0 1 e ]
-[i _UART
+"69 mcc_generated_files/i2c_host/src/i2c1.c
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 69: const i2c_host_interface_t I2C1_Host = {
+[v _I2C1_Host `CS2196 ~T0 @X0 1 e ]
+[i _I2C1_Host
 :U ..
 :U ..
-&U _UART1_Initialize
-&U _UART1_Deinitialize
-&U _UART1_Read
-&U _UART1_Write
-&U _UART1_IsRxReady
-&U _UART1_IsTxReady
-&U _UART1_IsTxDone
-&U _UART1_TransmitEnable
-&U _UART1_TransmitDisable
-&U _UART1_AutoBaudSet
-&U _UART1_AutoBaudQuery
--> -> -> 0 `i `*v `*F16670
--> -> -> 0 `i `*v `*F16671
--> -> -> 0 `i `*v `*F16673
--> -> -> 0 `i `*v `*F16674
--> -> -> 0 `i `*v `*F16676
-&U _UART1_ErrorGet
-&U _UART1_TxCompleteCallbackRegister
-&U _UART1_RxCompleteCallbackRegister
--> -> -> 0 `i `*v `*F16684
-&U _UART1_FramingErrorCallbackRegister
-&U _UART1_OverrunErrorCallbackRegister
-&U _UART1_ParityErrorCallbackRegister
--> -> -> 0 `i `*v `*F16696
+&U _I2C1_Initialize
+&U _I2C1_Deinitialize
+&U _I2C1_Write
+&U _I2C1_Read
+&U _I2C1_WriteRead
+-> -> -> 0 `i `*v `*F16294
+&U _I2C1_ErrorGet
+&U _I2C1_IsBusy
+&U _I2C1_CallbackRegister
+-> -> -> 0 `i `*v `*F16302
 ..
 ..
-]
-"83
-[; ;mcc_generated_files/uart/src/uart1.c: 83: static volatile uint8_t uart1TxHead = 0;
-[v _uart1TxHead `Vuc ~T0 @X0 1 s ]
-[i _uart1TxHead
--> -> 0 `i `uc
-]
-"84
-[; ;mcc_generated_files/uart/src/uart1.c: 84: static volatile uint8_t uart1TxTail = 0;
-[v _uart1TxTail `Vuc ~T0 @X0 1 s ]
-[i _uart1TxTail
--> -> 0 `i `uc
 ]
 "85
-[; ;mcc_generated_files/uart/src/uart1.c: 85: static volatile uint8_t uart1TxBuffer[(16)];
-[v _uart1TxBuffer `Vuc ~T0 @X0 -> 16 `i s ]
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 85: static void (*I2C1_Callback)(void) = ((void*)0);
+[v _I2C1_Callback `*F16304 ~T0 @X0 1 s ]
+[i _I2C1_Callback
+-> -> -> 0 `i `*v `*F16305
+]
 "86
-[; ;mcc_generated_files/uart/src/uart1.c: 86: volatile uint8_t uart1TxBufferRemaining;
-[v _uart1TxBufferRemaining `Vuc ~T0 @X0 1 e ]
-"88
-[; ;mcc_generated_files/uart/src/uart1.c: 88: static volatile uint8_t uart1RxHead = 0;
-[v _uart1RxHead `Vuc ~T0 @X0 1 s ]
-[i _uart1RxHead
--> -> 0 `i `uc
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 86: volatile i2c_host_event_status_t i2c1Status = {0};
+[v _i2c1Status `VS2195 ~T0 @X0 1 e ]
+[i _i2c1Status
+:U ..
+:U ..
+-> -> 0 `i `a
+..
+..
 ]
-"89
-[; ;mcc_generated_files/uart/src/uart1.c: 89: static volatile uint8_t uart1RxTail = 0;
-[v _uart1RxTail `Vuc ~T0 @X0 1 s ]
-[i _uart1RxTail
--> -> 0 `i `uc
-]
-"90
-[; ;mcc_generated_files/uart/src/uart1.c: 90: static volatile uint8_t uart1RxBuffer[(8)];
-[v _uart1RxBuffer `Vuc ~T0 @X0 -> 8 `i s ]
 "91
-[; ;mcc_generated_files/uart/src/uart1.c: 91: static volatile uart1_status_t uart1RxStatusBuffer[(8)];
-[v _uart1RxStatusBuffer `VS2200 ~T0 @X0 -> 8 `i s ]
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 91: void I2C1_Initialize(void)
+[v _I2C1_Initialize `(v ~T0 @X0 1 ef ]
 "92
-[; ;mcc_generated_files/uart/src/uart1.c: 92: volatile uint8_t uart1RxCount;
-[v _uart1RxCount `Vuc ~T0 @X0 1 e ]
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 92: {
+{
+[e :U _I2C1_Initialize ]
+[f ]
 "94
-[; ;mcc_generated_files/uart/src/uart1.c: 94: volatile uart1_status_t uart1RxLastError;
-[v _uart1RxLastError `VS2200 ~T0 @X0 1 e ]
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 94:     I2C1CON0 = 0x4;
+[e = _I2C1CON0 -> -> 4 `i `uc ]
+"96
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 96:     I2C1CON1 = 0x80;
+[e = _I2C1CON1 -> -> 128 `i `uc ]
+"98
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 98:     I2C1CON2 = 0x8;
+[e = _I2C1CON2 -> -> 8 `i `uc ]
 "100
-[; ;mcc_generated_files/uart/src/uart1.c: 100: void (*UART1_FramingErrorHandler)(void);
-[v _UART1_FramingErrorHandler `*F16710 ~T0 @X0 1 e ]
-"101
-[; ;mcc_generated_files/uart/src/uart1.c: 101: void (*UART1_OverrunErrorHandler)(void);
-[v _UART1_OverrunErrorHandler `*F16712 ~T0 @X0 1 e ]
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 100:     I2C1CLK = 0x1;
+[e = _I2C1CLK -> -> 1 `i `uc ]
 "102
-[; ;mcc_generated_files/uart/src/uart1.c: 102: void (*UART1_ParityErrorHandler)(void);
-[v _UART1_ParityErrorHandler `*F16714 ~T0 @X0 1 e ]
-"103
-[; ;mcc_generated_files/uart/src/uart1.c: 103: void (*UART1_TxInterruptHandler)(void);
-[v _UART1_TxInterruptHandler `*F16716 ~T0 @X0 1 e ]
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 102:     I2C1PIR = 0x0;
+[e = _I2C1PIR -> -> 0 `i `uc ]
 "104
-[; ;mcc_generated_files/uart/src/uart1.c: 104: static void (*UART1_TxCompleteInterruptHandler)(void);
-[v _UART1_TxCompleteInterruptHandler `*F16718 ~T0 @X0 1 s ]
-"105
-[; ;mcc_generated_files/uart/src/uart1.c: 105: void (*UART1_RxInterruptHandler)(void);
-[v _UART1_RxInterruptHandler `*F16720 ~T0 @X0 1 e ]
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 104:     I2C1PIE = 0x0;
+[e = _I2C1PIE -> -> 0 `i `uc ]
 "106
-[; ;mcc_generated_files/uart/src/uart1.c: 106: static void (*UART1_RxCompleteInterruptHandler)(void);
-[v _UART1_RxCompleteInterruptHandler `*F16722 ~T0 @X0 1 s ]
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 106:     I2C1ERR = 0x0;
+[e = _I2C1ERR -> -> 0 `i `uc ]
+"108
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 108:     I2C1CNT = 0x0;
+[e = _I2C1CNT -> -> 0 `i `uc ]
+"110
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 110:     RC3I2C = 0x51;
+[e = _RC3I2C -> -> 81 `i `uc ]
+"112
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 112:     RC4I2C = 0x51;
+[e = _RC4I2C -> -> 81 `i `uc ]
+"113
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 113:     I2C1_InterruptsEnable();
+[e ( _I2C1_InterruptsEnable ..  ]
+"117
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 117:     I2C1PIEbits.SCIE = 0;
+[e = . . _I2C1PIEbits 0 0 -> -> 0 `i `uc ]
 "118
-[; ;mcc_generated_files/uart/src/uart1.c: 118: void UART1_Initialize(void) {
-[v _UART1_Initialize `(v ~T0 @X0 1 ef ]
-{
-[e :U _UART1_Initialize ]
-[f ]
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 118:     I2C1PIEbits.PCIE = 0;
+[e = . . _I2C1PIEbits 0 2 -> -> 0 `i `uc ]
 "119
-[; ;mcc_generated_files/uart/src/uart1.c: 119:     PIE3bits.U1RXIE = 0;
-[e = . . _PIE3bits 0 3 -> -> 0 `i `uc ]
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 119:     I2C1CON0bits.EN = 1;
+[e = . . _I2C1CON0bits 0 5 -> -> 1 `i `uc ]
 "120
-[; ;mcc_generated_files/uart/src/uart1.c: 120:     UART1_RxInterruptHandler = UART1_ReceiveISR;
-[e = _UART1_RxInterruptHandler &U _UART1_ReceiveISR ]
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 120:     _delay((unsigned long)((1)*(64000000/4000000.0)));
+[e ( __delay (1 -> * -> -> 1 `i `d / -> -> 64000000 `l `d .4000000.0 `ul ]
 "121
-[; ;mcc_generated_files/uart/src/uart1.c: 121:     PIE3bits.U1TXIE = 0;
-[e = . . _PIE3bits 0 4 -> -> 0 `i `uc ]
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 121:     __nop();
+[e ( ___nop ..  ]
 "122
-[; ;mcc_generated_files/uart/src/uart1.c: 122:     UART1_TxInterruptHandler = UART1_TransmitISR;
-[e = _UART1_TxInterruptHandler &U _UART1_TransmitISR ]
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 122:     __nop();
+[e ( ___nop ..  ]
+"123
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 123:     __nop();
+[e ( ___nop ..  ]
+"124
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 124:     __nop();
+[e ( ___nop ..  ]
+"125
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 125:     __nop();
+[e ( ___nop ..  ]
+"126
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 126:     __nop();
+[e ( ___nop ..  ]
 "127
-[; ;mcc_generated_files/uart/src/uart1.c: 127:     U1RXB = 0x0;
-[e = _U1RXB -> -> 0 `i `uc ]
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 127:     I2C1PIRbits.SCIF = 0;
+[e = . . _I2C1PIRbits 0 0 -> -> 0 `i `uc ]
+"128
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 128:     I2C1PIRbits.PCIF = 0;
+[e = . . _I2C1PIRbits 0 2 -> -> 0 `i `uc ]
 "129
-[; ;mcc_generated_files/uart/src/uart1.c: 129:     U1RXCHK = 0x0;
-[e = _U1RXCHK -> -> 0 `i `uc ]
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 129:     I2C1PIEbits.PCIE = 1;
+[e = . . _I2C1PIEbits 0 2 -> -> 1 `i `uc ]
+"130
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 130:     I2C1_CallbackRegister(I2C1_DefaultCallback);
+[e ( _I2C1_CallbackRegister (1 &U _I2C1_DefaultCallback ]
 "131
-[; ;mcc_generated_files/uart/src/uart1.c: 131:     U1TXB = 0x0;
-[e = _U1TXB -> -> 0 `i `uc ]
-"133
-[; ;mcc_generated_files/uart/src/uart1.c: 133:     U1TXCHK = 0x0;
-[e = _U1TXCHK -> -> 0 `i `uc ]
-"135
-[; ;mcc_generated_files/uart/src/uart1.c: 135:     U1P1L = 0x0;
-[e = _U1P1L -> -> 0 `i `uc ]
-"137
-[; ;mcc_generated_files/uart/src/uart1.c: 137:     U1P1H = 0x0;
-[e = _U1P1H -> -> 0 `i `uc ]
-"139
-[; ;mcc_generated_files/uart/src/uart1.c: 139:     U1P2L = 0x0;
-[e = _U1P2L -> -> 0 `i `uc ]
-"141
-[; ;mcc_generated_files/uart/src/uart1.c: 141:     U1P2H = 0x0;
-[e = _U1P2H -> -> 0 `i `uc ]
-"143
-[; ;mcc_generated_files/uart/src/uart1.c: 143:     U1P3L = 0x0;
-[e = _U1P3L -> -> 0 `i `uc ]
-"145
-[; ;mcc_generated_files/uart/src/uart1.c: 145:     U1P3H = 0x0;
-[e = _U1P3H -> -> 0 `i `uc ]
-"147
-[; ;mcc_generated_files/uart/src/uart1.c: 147:     U1CON0 = 0xB0;
-[e = _U1CON0 -> -> 176 `i `uc ]
-"149
-[; ;mcc_generated_files/uart/src/uart1.c: 149:     U1CON1 = 0x80;
-[e = _U1CON1 -> -> 128 `i `uc ]
-"151
-[; ;mcc_generated_files/uart/src/uart1.c: 151:     U1CON2 = 0x8;
-[e = _U1CON2 -> -> 8 `i `uc ]
-"153
-[; ;mcc_generated_files/uart/src/uart1.c: 153:     U1BRGL = 0x7;
-[e = _U1BRGL -> -> 7 `i `uc ]
-"155
-[; ;mcc_generated_files/uart/src/uart1.c: 155:     U1BRGH = 0x0;
-[e = _U1BRGH -> -> 0 `i `uc ]
-"157
-[; ;mcc_generated_files/uart/src/uart1.c: 157:     U1FIFO = 0x20;
-[e = _U1FIFO -> -> 32 `i `uc ]
-"159
-[; ;mcc_generated_files/uart/src/uart1.c: 159:     U1UIR = 0x0;
-[e = _U1UIR -> -> 0 `i `uc ]
-"161
-[; ;mcc_generated_files/uart/src/uart1.c: 161:     U1ERRIR = 0x80;
-[e = _U1ERRIR -> -> 128 `i `uc ]
-"163
-[; ;mcc_generated_files/uart/src/uart1.c: 163:     U1ERRIE = 0x0;
-[e = _U1ERRIE -> -> 0 `i `uc ]
-"165
-[; ;mcc_generated_files/uart/src/uart1.c: 165:     UART1_FramingErrorCallbackRegister(UART1_DefaultFramingErrorCallback);
-[e ( _UART1_FramingErrorCallbackRegister (1 &U _UART1_DefaultFramingErrorCallback ]
-"166
-[; ;mcc_generated_files/uart/src/uart1.c: 166:     UART1_OverrunErrorCallbackRegister(UART1_DefaultOverrunErrorCallback);
-[e ( _UART1_OverrunErrorCallbackRegister (1 &U _UART1_DefaultOverrunErrorCallback ]
-"167
-[; ;mcc_generated_files/uart/src/uart1.c: 167:     UART1_ParityErrorCallbackRegister(UART1_DefaultParityErrorCallback);
-[e ( _UART1_ParityErrorCallbackRegister (1 &U _UART1_DefaultParityErrorCallback ]
-"169
-[; ;mcc_generated_files/uart/src/uart1.c: 169:     uart1RxLastError.status = 0;
-[e = . _uart1RxLastError 1 -> -> 0 `i `ui ]
-"170
-[; ;mcc_generated_files/uart/src/uart1.c: 170:     uart1TxHead = 0;
-[e = _uart1TxHead -> -> 0 `i `uc ]
-"171
-[; ;mcc_generated_files/uart/src/uart1.c: 171:     uart1TxTail = 0;
-[e = _uart1TxTail -> -> 0 `i `uc ]
-"172
-[; ;mcc_generated_files/uart/src/uart1.c: 172:     uart1TxBufferRemaining = sizeof (uart1TxBuffer);
-[e = _uart1TxBufferRemaining -> -> # _uart1TxBuffer `ui `uc ]
-"173
-[; ;mcc_generated_files/uart/src/uart1.c: 173:     uart1RxHead = 0;
-[e = _uart1RxHead -> -> 0 `i `uc ]
-"174
-[; ;mcc_generated_files/uart/src/uart1.c: 174:     uart1RxTail = 0;
-[e = _uart1RxTail -> -> 0 `i `uc ]
-"175
-[; ;mcc_generated_files/uart/src/uart1.c: 175:     uart1RxCount = 0;
-[e = _uart1RxCount -> -> 0 `i `uc ]
-"176
-[; ;mcc_generated_files/uart/src/uart1.c: 176:     PIE3bits.U1RXIE = 1;
-[e = . . _PIE3bits 0 3 -> -> 1 `i `uc ]
-"177
-[; ;mcc_generated_files/uart/src/uart1.c: 177: }
-[e :UE 2202 ]
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 131: }
+[e :UE 2197 ]
 }
-"179
-[; ;mcc_generated_files/uart/src/uart1.c: 179: void UART1_Deinitialize(void) {
-[v _UART1_Deinitialize `(v ~T0 @X0 1 ef ]
+"133
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 133: void I2C1_Deinitialize(void)
+[v _I2C1_Deinitialize `(v ~T0 @X0 1 ef ]
+"134
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 134: {
 {
-[e :U _UART1_Deinitialize ]
+[e :U _I2C1_Deinitialize ]
 [f ]
+"135
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 135:     I2C1CON0 = 0x00;
+[e = _I2C1CON0 -> -> 0 `i `uc ]
+"136
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 136:     I2C1CON1 = 0x00;
+[e = _I2C1CON1 -> -> 0 `i `uc ]
+"137
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 137:     I2C1CON2 = 0x00;
+[e = _I2C1CON2 -> -> 0 `i `uc ]
+"138
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 138:     I2C1CLK = 0x00;
+[e = _I2C1CLK -> -> 0 `i `uc ]
+"139
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 139:     I2C1PIR = 0x00;
+[e = _I2C1PIR -> -> 0 `i `uc ]
+"140
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 140:     I2C1PIE = 0x00;
+[e = _I2C1PIE -> -> 0 `i `uc ]
+"141
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 141:     I2C1ERR = 0x00;
+[e = _I2C1ERR -> -> 0 `i `uc ]
+"142
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 142:     I2C1CNT = 0x00;
+[e = _I2C1CNT -> -> 0 `i `uc ]
+"143
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 143:     I2C1_InterruptsDisable();
+[e ( _I2C1_InterruptsDisable ..  ]
+"144
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 144:     I2C1_CallbackRegister(I2C1_DefaultCallback);
+[e ( _I2C1_CallbackRegister (1 &U _I2C1_DefaultCallback ]
+"145
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 145: }
+[e :UE 2198 ]
+}
+"147
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 147: _Bool I2C1_Write(uint16_t address, uint8_t *data, size_t dataLength)
+[v _I2C1_Write `(a ~T0 @X0 1 ef3`us`*uc`ui ]
+"148
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 148: {
+{
+[e :U _I2C1_Write ]
+"147
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 147: _Bool I2C1_Write(uint16_t address, uint8_t *data, size_t dataLength)
+[v _address `us ~T0 @X0 1 r1 ]
+[v _data `*uc ~T0 @X0 1 r2 ]
+[v _dataLength `ui ~T0 @X0 1 r3 ]
+"148
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 148: {
+[f ]
+"149
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 149:     _Bool retStatus = 0;
+[v _retStatus `a ~T0 @X0 1 a ]
+[e = _retStatus -> -> 0 `i `a ]
+"150
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 150:     if (!I2C1_IsBusy())
+[e $ ! ! != -> ( _I2C1_IsBusy ..  `i -> 0 `i 2200  ]
+"151
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 151:     {
+{
+"152
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 152:         i2c1Status.busy = 1;
+[e = . _i2c1Status 0 -> -> 1 `i `a ]
+"153
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 153:         i2c1Status.address = address;
+[e = . _i2c1Status 1 _address ]
+"154
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 154:         i2c1Status.switchToRead = 0;
+[e = . _i2c1Status 6 -> -> 0 `i `a ]
+"155
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 155:         i2c1Status.writePtr = data;
+[e = . _i2c1Status 2 _data ]
+"156
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 156:         i2c1Status.writeLength = dataLength;
+[e = . _i2c1Status 3 _dataLength ]
+[v F16318 `*uc ~T0 @X0 1 t ]
+"157
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 157:         i2c1Status.readPtr = ((void*)0);
+[e = . _i2c1Status 4 -> -> -> 0 `i `*v `V*uc ]
+"158
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 158:         i2c1Status.readLength = 0;
+[e = . _i2c1Status 5 -> -> 0 `i `ui ]
+"159
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 159:         i2c1Status.errorState = I2C_ERROR_NONE;
+[e = . _i2c1Status 7 . `E16163 0 ]
+"160
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 160:         I2C1_WriteStart();
+[e ( _I2C1_WriteStart ..  ]
+"161
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 161:         retStatus = 1;
+[e = _retStatus -> -> 1 `i `a ]
+"162
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 162:     }
+}
+[e :U 2200 ]
+"163
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 163:     return retStatus;
+[e ) _retStatus ]
+[e $UE 2199  ]
+"164
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 164: }
+[e :UE 2199 ]
+}
+"166
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 166: _Bool I2C1_Read(uint16_t address, uint8_t *data, size_t dataLength)
+[v _I2C1_Read `(a ~T0 @X0 1 ef3`us`*uc`ui ]
+"167
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 167: {
+{
+[e :U _I2C1_Read ]
+"166
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 166: _Bool I2C1_Read(uint16_t address, uint8_t *data, size_t dataLength)
+[v _address `us ~T0 @X0 1 r1 ]
+[v _data `*uc ~T0 @X0 1 r2 ]
+[v _dataLength `ui ~T0 @X0 1 r3 ]
+"167
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 167: {
+[f ]
+"168
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 168:     _Bool retStatus = 0;
+[v _retStatus `a ~T0 @X0 1 a ]
+[e = _retStatus -> -> 0 `i `a ]
+"169
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 169:     if (!I2C1_IsBusy())
+[e $ ! ! != -> ( _I2C1_IsBusy ..  `i -> 0 `i 2202  ]
+"170
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 170:     {
+{
+"171
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 171:         i2c1Status.busy = 1;
+[e = . _i2c1Status 0 -> -> 1 `i `a ]
+"172
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 172:         i2c1Status.address = address;
+[e = . _i2c1Status 1 _address ]
+"173
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 173:         i2c1Status.switchToRead = 0;
+[e = . _i2c1Status 6 -> -> 0 `i `a ]
+"174
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 174:         i2c1Status.readPtr = data;
+[e = . _i2c1Status 4 _data ]
+"175
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 175:         i2c1Status.readLength = dataLength;
+[e = . _i2c1Status 5 _dataLength ]
+[v F16326 `*uc ~T0 @X0 1 t ]
+"176
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 176:         i2c1Status.writePtr = ((void*)0);
+[e = . _i2c1Status 2 -> -> -> 0 `i `*v `V*uc ]
+"177
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 177:         i2c1Status.writeLength = 0;
+[e = . _i2c1Status 3 -> -> 0 `i `ui ]
+"178
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 178:         i2c1Status.errorState = I2C_ERROR_NONE;
+[e = . _i2c1Status 7 . `E16163 0 ]
+"179
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 179:         I2C1_ReadStart();
+[e ( _I2C1_ReadStart ..  ]
 "180
-[; ;mcc_generated_files/uart/src/uart1.c: 180:     PIE3bits.U1RXIE = 0;
-[e = . . _PIE3bits 0 3 -> -> 0 `i `uc ]
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 180:         retStatus = 1;
+[e = _retStatus -> -> 1 `i `a ]
 "181
-[; ;mcc_generated_files/uart/src/uart1.c: 181:     PIE3bits.U1TXIE = 0;
-[e = . . _PIE3bits 0 4 -> -> 0 `i `uc ]
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 181:     }
+}
+[e :U 2202 ]
 "182
-[; ;mcc_generated_files/uart/src/uart1.c: 182:     U1RXB = 0x00;
-[e = _U1RXB -> -> 0 `i `uc ]
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 182:     return retStatus;
+[e ) _retStatus ]
+[e $UE 2201  ]
 "183
-[; ;mcc_generated_files/uart/src/uart1.c: 183:     U1RXCHK = 0x00;
-[e = _U1RXCHK -> -> 0 `i `uc ]
-"184
-[; ;mcc_generated_files/uart/src/uart1.c: 184:     U1TXB = 0x00;
-[e = _U1TXB -> -> 0 `i `uc ]
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 183: }
+[e :UE 2201 ]
+}
 "185
-[; ;mcc_generated_files/uart/src/uart1.c: 185:     U1TXCHK = 0x00;
-[e = _U1TXCHK -> -> 0 `i `uc ]
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 185: _Bool I2C1_WriteRead(uint16_t address, uint8_t *writeData, size_t writeLength, uint8_t *readData, size_t readLength)
+[v _I2C1_WriteRead `(a ~T0 @X0 1 ef5`us`*uc`ui`*uc`ui ]
 "186
-[; ;mcc_generated_files/uart/src/uart1.c: 186:     U1P1L = 0x00;
-[e = _U1P1L -> -> 0 `i `uc ]
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 186: {
+{
+[e :U _I2C1_WriteRead ]
+"185
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 185: _Bool I2C1_WriteRead(uint16_t address, uint8_t *writeData, size_t writeLength, uint8_t *readData, size_t readLength)
+[v _address `us ~T0 @X0 1 r1 ]
+[v _writeData `*uc ~T0 @X0 1 r2 ]
+[v _writeLength `ui ~T0 @X0 1 r3 ]
+[v _readData `*uc ~T0 @X0 1 r4 ]
+[v _readLength `ui ~T0 @X0 1 r5 ]
+"186
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 186: {
+[f ]
 "187
-[; ;mcc_generated_files/uart/src/uart1.c: 187:     U1P1H = 0x00;
-[e = _U1P1H -> -> 0 `i `uc ]
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 187:     _Bool retStatus = 0;
+[v _retStatus `a ~T0 @X0 1 a ]
+[e = _retStatus -> -> 0 `i `a ]
 "188
-[; ;mcc_generated_files/uart/src/uart1.c: 188:     U1P2L = 0x00;
-[e = _U1P2L -> -> 0 `i `uc ]
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 188:     if (!I2C1_IsBusy())
+[e $ ! ! != -> ( _I2C1_IsBusy ..  `i -> 0 `i 2204  ]
 "189
-[; ;mcc_generated_files/uart/src/uart1.c: 189:     U1P2H = 0x00;
-[e = _U1P2H -> -> 0 `i `uc ]
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 189:     {
+{
 "190
-[; ;mcc_generated_files/uart/src/uart1.c: 190:     U1P3L = 0x00;
-[e = _U1P3L -> -> 0 `i `uc ]
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 190:         i2c1Status.busy = 1;
+[e = . _i2c1Status 0 -> -> 1 `i `a ]
 "191
-[; ;mcc_generated_files/uart/src/uart1.c: 191:     U1P3H = 0x00;
-[e = _U1P3H -> -> 0 `i `uc ]
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 191:         i2c1Status.address = address;
+[e = . _i2c1Status 1 _address ]
 "192
-[; ;mcc_generated_files/uart/src/uart1.c: 192:     U1CON0 = 0x00;
-[e = _U1CON0 -> -> 0 `i `uc ]
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 192:         i2c1Status.switchToRead = 1;
+[e = . _i2c1Status 6 -> -> 1 `i `a ]
 "193
-[; ;mcc_generated_files/uart/src/uart1.c: 193:     U1CON1 = 0x00;
-[e = _U1CON1 -> -> 0 `i `uc ]
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 193:         i2c1Status.writePtr = writeData;
+[e = . _i2c1Status 2 _writeData ]
 "194
-[; ;mcc_generated_files/uart/src/uart1.c: 194:     U1CON2 = 0x00;
-[e = _U1CON2 -> -> 0 `i `uc ]
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 194:         i2c1Status.writeLength = writeLength;
+[e = . _i2c1Status 3 _writeLength ]
 "195
-[; ;mcc_generated_files/uart/src/uart1.c: 195:     U1BRGL = 0x00;
-[e = _U1BRGL -> -> 0 `i `uc ]
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 195:         i2c1Status.readPtr = readData;
+[e = . _i2c1Status 4 _readData ]
 "196
-[; ;mcc_generated_files/uart/src/uart1.c: 196:     U1BRGH = 0x00;
-[e = _U1BRGH -> -> 0 `i `uc ]
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 196:         i2c1Status.readLength = readLength;
+[e = . _i2c1Status 5 _readLength ]
 "197
-[; ;mcc_generated_files/uart/src/uart1.c: 197:     U1FIFO = 0x00;
-[e = _U1FIFO -> -> 0 `i `uc ]
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 197:         i2c1Status.errorState = I2C_ERROR_NONE;
+[e = . _i2c1Status 7 . `E16163 0 ]
 "198
-[; ;mcc_generated_files/uart/src/uart1.c: 198:     U1UIR = 0x00;
-[e = _U1UIR -> -> 0 `i `uc ]
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 198:         I2C1_WriteStart();
+[e ( _I2C1_WriteStart ..  ]
 "199
-[; ;mcc_generated_files/uart/src/uart1.c: 199:     U1ERRIR = 0x00;
-[e = _U1ERRIR -> -> 0 `i `uc ]
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 199:         retStatus = 1;
+[e = _retStatus -> -> 1 `i `a ]
 "200
-[; ;mcc_generated_files/uart/src/uart1.c: 200:     U1ERRIE = 0x00;
-[e = _U1ERRIE -> -> 0 `i `uc ]
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 200:     }
+}
+[e :U 2204 ]
 "201
-[; ;mcc_generated_files/uart/src/uart1.c: 201: }
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 201:     return retStatus;
+[e ) _retStatus ]
+[e $UE 2203  ]
+"202
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 202: }
 [e :UE 2203 ]
 }
-[v F16738 `(v ~T0 @X0 1 tf ]
-"203
-[; ;mcc_generated_files/uart/src/uart1.c: 203: __attribute__((inline)) void UART1_Enable(void) {
-[v _UART1_Enable `TF16738 ~T0 @X0 1 e ]
-{
-[e :U _UART1_Enable ]
-[f ]
 "204
-[; ;mcc_generated_files/uart/src/uart1.c: 204:     U1CON1bits.ON = 1;
-[e = . . _U1CON1bits 0 6 -> -> 1 `i `uc ]
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 204: i2c_host_error_t I2C1_ErrorGet(void)
+[v _I2C1_ErrorGet `(E16163 ~T0 @X0 1 ef ]
 "205
-[; ;mcc_generated_files/uart/src/uart1.c: 205: }
-[e :UE 2204 ]
-}
-[v F16740 `(v ~T0 @X0 1 tf ]
-"207
-[; ;mcc_generated_files/uart/src/uart1.c: 207: __attribute__((inline)) void UART1_Disable(void) {
-[v _UART1_Disable `TF16740 ~T0 @X0 1 e ]
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 205: {
 {
-[e :U _UART1_Disable ]
+[e :U _I2C1_ErrorGet ]
 [f ]
+"206
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 206:     i2c_host_error_t retErrorState = i2c1Status.errorState;
+[v _retErrorState `E16163 ~T0 @X0 1 a ]
+[e = _retErrorState . _i2c1Status 7 ]
+"207
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 207:     i2c1Status.errorState = I2C_ERROR_NONE;
+[e = . _i2c1Status 7 . `E16163 0 ]
 "208
-[; ;mcc_generated_files/uart/src/uart1.c: 208:     U1CON1bits.ON = 0;
-[e = . . _U1CON1bits 0 6 -> -> 0 `i `uc ]
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 208:     return retErrorState;
+[e ) _retErrorState ]
+[e $UE 2205  ]
 "209
-[; ;mcc_generated_files/uart/src/uart1.c: 209: }
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 209: }
 [e :UE 2205 ]
 }
-[v F16742 `(v ~T0 @X0 1 tf ]
 "211
-[; ;mcc_generated_files/uart/src/uart1.c: 211: __attribute__((inline)) void UART1_TransmitEnable(void) {
-[v _UART1_TransmitEnable `TF16742 ~T0 @X0 1 e ]
-{
-[e :U _UART1_TransmitEnable ]
-[f ]
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 211: _Bool I2C1_IsBusy(void)
+[v _I2C1_IsBusy `(a ~T0 @X0 1 ef ]
 "212
-[; ;mcc_generated_files/uart/src/uart1.c: 212:     U1CON0bits.TXEN = 1;
-[e = . . _U1CON0bits 3 2 -> -> 1 `i `uc ]
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 212: {
+{
+[e :U _I2C1_IsBusy ]
+[f ]
 "213
-[; ;mcc_generated_files/uart/src/uart1.c: 213: }
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 213:     return i2c1Status.busy || !I2C1STAT0bits.BFRE;
+[e ) -> -> || != -> . _i2c1Status 0 `i -> 0 `i ! != -> . . _I2C1STAT0bits 0 5 `i -> 0 `i `i `a ]
+[e $UE 2206  ]
+"214
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 214: }
 [e :UE 2206 ]
 }
-[v F16744 `(v ~T0 @X0 1 tf ]
-"215
-[; ;mcc_generated_files/uart/src/uart1.c: 215: __attribute__((inline)) void UART1_TransmitDisable(void) {
-[v _UART1_TransmitDisable `TF16744 ~T0 @X0 1 e ]
-{
-[e :U _UART1_TransmitDisable ]
-[f ]
 "216
-[; ;mcc_generated_files/uart/src/uart1.c: 216:     U1CON0bits.TXEN = 0;
-[e = . . _U1CON0bits 3 2 -> -> 0 `i `uc ]
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 216: void I2C1_CallbackRegister(void (*callbackHandler)(void))
+[v _I2C1_CallbackRegister `(v ~T0 @X0 1 ef1`*F16340 ]
 "217
-[; ;mcc_generated_files/uart/src/uart1.c: 217: }
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 217: {
+{
+[e :U _I2C1_CallbackRegister ]
+"216
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 216: void I2C1_CallbackRegister(void (*callbackHandler)(void))
+[v _callbackHandler `*F16342 ~T0 @X0 1 r1 ]
+"217
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 217: {
+[f ]
+"218
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 218:     if (callbackHandler != ((void*)0))
+[e $ ! != _callbackHandler -> -> -> 0 `i `*v `*F16343 2208  ]
+"219
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 219:     {
+{
+"220
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 220:         I2C1_Callback = callbackHandler;
+[e = _I2C1_Callback _callbackHandler ]
+"221
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 221:     }
+}
+[e :U 2208 ]
+"222
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 222: }
 [e :UE 2207 ]
 }
-[v F16746 `(v ~T0 @X0 1 tf ]
-"219
-[; ;mcc_generated_files/uart/src/uart1.c: 219: __attribute__((inline)) void UART1_ReceiveEnable(void) {
-[v _UART1_ReceiveEnable `TF16746 ~T0 @X0 1 e ]
-{
-[e :U _UART1_ReceiveEnable ]
-[f ]
-"220
-[; ;mcc_generated_files/uart/src/uart1.c: 220:     U1CON0bits.RXEN = 1;
-[e = . . _U1CON0bits 3 1 -> -> 1 `i `uc ]
-"221
-[; ;mcc_generated_files/uart/src/uart1.c: 221: }
-[e :UE 2208 ]
-}
-[v F16748 `(v ~T0 @X0 1 tf ]
-"223
-[; ;mcc_generated_files/uart/src/uart1.c: 223: __attribute__((inline)) void UART1_ReceiveDisable(void) {
-[v _UART1_ReceiveDisable `TF16748 ~T0 @X0 1 e ]
-{
-[e :U _UART1_ReceiveDisable ]
-[f ]
+[v $root$_I2C1_ISR `(v ~T0 @X0 0 e ]
 "224
-[; ;mcc_generated_files/uart/src/uart1.c: 224:     U1CON0bits.RXEN = 0;
-[e = . . _U1CON0bits 3 1 -> -> 0 `i `uc ]
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 224: void __attribute__((picinterrupt(("irq(I2C1), base(8)")))) I2C1_ISR(void)
+[v _I2C1_ISR `(v ~T1 @X0 1 ef ]
 "225
-[; ;mcc_generated_files/uart/src/uart1.c: 225: }
-[e :UE 2209 ]
-}
-[v F16750 `(v ~T0 @X0 1 tf ]
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 225: {
+{
+[e :U _I2C1_ISR ]
+[f ]
+"226
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 226:     if (I2C1PIEbits.PCIE && I2C1PIRbits.PCIF)
+[e $ ! && != -> . . _I2C1PIEbits 0 2 `i -> 0 `i != -> . . _I2C1PIRbits 0 2 `i -> 0 `i 2210  ]
 "227
-[; ;mcc_generated_files/uart/src/uart1.c: 227: __attribute__((inline)) void UART1_SendBreakControlEnable(void) {
-[v _UART1_SendBreakControlEnable `TF16750 ~T0 @X0 1 e ]
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 227:     {
 {
-[e :U _UART1_SendBreakControlEnable ]
-[f ]
 "228
-[; ;mcc_generated_files/uart/src/uart1.c: 228:     U1CON1bits.SENDB = 1;
-[e = . . _U1CON1bits 0 0 -> -> 1 `i `uc ]
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 228:         I2C1_Close();
+[e ( _I2C1_Close ..  ]
 "229
-[; ;mcc_generated_files/uart/src/uart1.c: 229: }
-[e :UE 2210 ]
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 229:     }
 }
-[v F16752 `(v ~T0 @X0 1 tf ]
+[e $U 2211  ]
+"230
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 230:     else if (I2C1PIEbits.CNTIE && I2C1PIRbits.CNTIF)
+[e :U 2210 ]
+[e $ ! && != -> . . _I2C1PIEbits 0 7 `i -> 0 `i != -> . . _I2C1PIRbits 0 7 `i -> 0 `i 2212  ]
 "231
-[; ;mcc_generated_files/uart/src/uart1.c: 231: __attribute__((inline)) void UART1_SendBreakControlDisable(void) {
-[v _UART1_SendBreakControlDisable `TF16752 ~T0 @X0 1 e ]
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 231:     {
 {
-[e :U _UART1_SendBreakControlDisable ]
-[f ]
-"232
-[; ;mcc_generated_files/uart/src/uart1.c: 232:     U1CON1bits.SENDB = 0;
-[e = . . _U1CON1bits 0 0 -> -> 0 `i `uc ]
 "233
-[; ;mcc_generated_files/uart/src/uart1.c: 233: }
-[e :UE 2211 ]
-}
-[v F16754 `(v ~T0 @X0 1 tf1`a ]
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 233:         if (i2c1Status.switchToRead)
+[e $ ! != -> . _i2c1Status 6 `i -> 0 `i 2213  ]
+"234
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 234:         {
+{
 "235
-[; ;mcc_generated_files/uart/src/uart1.c: 235: __attribute__((inline)) void UART1_AutoBaudSet(_Bool enable) {
-[v _UART1_AutoBaudSet `TF16754 ~T0 @X0 1 e ]
-{
-[e :U _UART1_AutoBaudSet ]
-[v _enable `a ~T0 @X0 1 r1 ]
-[f ]
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 235:             i2c1Status.switchToRead = 0;
+[e = . _i2c1Status 6 -> -> 0 `i `a ]
 "236
-[; ;mcc_generated_files/uart/src/uart1.c: 236:     if (enable) {
-[e $ ! != -> _enable `i -> 0 `i 2213  ]
-{
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 236:             I2C1PIRbits.SCIF = 0;
+[e = . . _I2C1PIRbits 0 0 -> -> 0 `i `uc ]
 "237
-[; ;mcc_generated_files/uart/src/uart1.c: 237:         U1CON0bits.ABDEN = 1;
-[e = . . _U1CON0bits 3 3 -> -> 1 `i `uc ]
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 237:             I2C1PIRbits.CNTIF = 0;
+[e = . . _I2C1PIRbits 0 7 -> -> 0 `i `uc ]
 "238
-[; ;mcc_generated_files/uart/src/uart1.c: 238:     } else {
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 238:             I2C1_ReadStart();
+[e ( _I2C1_ReadStart ..  ]
+"239
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 239:         }
 }
 [e $U 2214  ]
-[e :U 2213 ]
-{
-"239
-[; ;mcc_generated_files/uart/src/uart1.c: 239:         U1CON0bits.ABDEN = 0;
-[e = . . _U1CON0bits 3 3 -> -> 0 `i `uc ]
 "240
-[; ;mcc_generated_files/uart/src/uart1.c: 240:     }
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 240:         else
+[e :U 2213 ]
+"241
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 241:         {
+{
+"242
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 242:             I2C1_StopSend();
+[e ( _I2C1_StopSend ..  ]
+"243
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 243:             I2C1_Close();
+[e ( _I2C1_Close ..  ]
+"244
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 244:         }
 }
 [e :U 2214 ]
-"241
-[; ;mcc_generated_files/uart/src/uart1.c: 241: }
-[e :UE 2212 ]
-}
-[v F16757 `(a ~T0 @X0 1 tf ]
-"243
-[; ;mcc_generated_files/uart/src/uart1.c: 243: __attribute__((inline)) _Bool UART1_AutoBaudQuery(void) {
-[v _UART1_AutoBaudQuery `TF16757 ~T0 @X0 1 e ]
-{
-[e :U _UART1_AutoBaudQuery ]
-[f ]
-"244
-[; ;mcc_generated_files/uart/src/uart1.c: 244:     return (_Bool) U1UIRbits.ABDIF;
-[e ) -> . . _U1UIRbits 0 3 `a ]
-[e $UE 2215  ]
 "245
-[; ;mcc_generated_files/uart/src/uart1.c: 245: }
-[e :UE 2215 ]
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 245:     }
 }
-[v F16759 `(v ~T0 @X0 1 tf ]
+[e $U 2215  ]
+"246
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 246:     else if (I2C1PIEbits.RSCIE && I2C1PIRbits.RSCIF)
+[e :U 2212 ]
+[e $ ! && != -> . . _I2C1PIEbits 0 1 `i -> 0 `i != -> . . _I2C1PIRbits 0 1 `i -> 0 `i 2216  ]
 "247
-[; ;mcc_generated_files/uart/src/uart1.c: 247: __attribute__((inline)) void UART1_AutoBaudDetectCompleteReset(void) {
-[v _UART1_AutoBaudDetectCompleteReset `TF16759 ~T0 @X0 1 e ]
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 247:     {
 {
-[e :U _UART1_AutoBaudDetectCompleteReset ]
-[f ]
 "248
-[; ;mcc_generated_files/uart/src/uart1.c: 248:     U1UIRbits.ABDIF = 0;
-[e = . . _U1UIRbits 0 3 -> -> 0 `i `uc ]
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 248:         I2C1_RestartDisable();
+[e ( _I2C1_RestartDisable ..  ]
 "249
-[; ;mcc_generated_files/uart/src/uart1.c: 249: }
-[e :UE 2216 ]
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 249:         I2C1PIRbits.RSCIF = 0;
+[e = . . _I2C1PIRbits 0 1 -> -> 0 `i `uc ]
+"250
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 250:     }
 }
-[v F16761 `(a ~T0 @X0 1 tf ]
+[e :U 2216 ]
+[e :U 2215 ]
+[e :U 2211 ]
 "251
-[; ;mcc_generated_files/uart/src/uart1.c: 251: __attribute__((inline)) _Bool UART1_IsAutoBaudDetectOverflow(void) {
-[v _UART1_IsAutoBaudDetectOverflow `TF16761 ~T0 @X0 1 e ]
-{
-[e :U _UART1_IsAutoBaudDetectOverflow ]
-[f ]
-"252
-[; ;mcc_generated_files/uart/src/uart1.c: 252:     return (_Bool) U1ERRIRbits.ABDOVF;
-[e ) -> . . _U1ERRIRbits 0 5 `a ]
-[e $UE 2217  ]
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 251: }
+[e :UE 2209 ]
+}
+[v $root$_I2C1_ERROR_ISR `(v ~T0 @X0 0 e ]
 "253
-[; ;mcc_generated_files/uart/src/uart1.c: 253: }
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 253: void __attribute__((picinterrupt(("irq(I2C1E), base(8)")))) I2C1_ERROR_ISR(void)
+[v _I2C1_ERROR_ISR `(v ~T2 @X0 1 ef ]
+"254
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 254: {
+{
+[e :U _I2C1_ERROR_ISR ]
+[f ]
+"255
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 255:     if (I2C1_IsBusCol())
+[e $ ! != -> ( _I2C1_IsBusCol ..  `i -> 0 `i 2218  ]
+"256
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 256:     {
+{
+"257
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 257:         i2c1Status.errorState = I2C_ERROR_BUS_COLLISION;
+[e = . _i2c1Status 7 . `E16163 3 ]
+"258
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 258:         I2C1ERRbits.BCLIF = 0;
+[e = . . _I2C1ERRbits 0 5 -> -> 0 `i `uc ]
+"259
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 259:         I2C1_BusReset();
+[e ( _I2C1_BusReset ..  ]
+"260
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 260:     }
+}
+[e $U 2219  ]
+"261
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 261:     else if (I2C1_IsAddr() && I2C1_IsNack())
+[e :U 2218 ]
+[e $ ! && != -> ( _I2C1_IsAddr ..  `i -> 0 `i != -> ( _I2C1_IsNack ..  `i -> 0 `i 2220  ]
+"262
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 262:     {
+{
+"263
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 263:         i2c1Status.errorState = I2C_ERROR_ADDR_NACK;
+[e = . _i2c1Status 7 . `E16163 1 ]
+"264
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 264:         I2C1ERRbits.NACKIF = 0;
+[e = . . _I2C1ERRbits 0 4 -> -> 0 `i `uc ]
+"265
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 265:         I2C1_StopSend();
+[e ( _I2C1_StopSend ..  ]
+"266
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 266:     }
+}
+[e $U 2221  ]
+"267
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 267:     else if (I2C1_IsData() && I2C1_IsNack())
+[e :U 2220 ]
+[e $ ! && != -> ( _I2C1_IsData ..  `i -> 0 `i != -> ( _I2C1_IsNack ..  `i -> 0 `i 2222  ]
+"268
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 268:     {
+{
+"269
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 269:         i2c1Status.errorState = I2C_ERROR_DATA_NACK;
+[e = . _i2c1Status 7 . `E16163 2 ]
+"270
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 270:         I2C1ERRbits.NACKIF = 0;
+[e = . . _I2C1ERRbits 0 4 -> -> 0 `i `uc ]
+"271
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 271:         I2C1_StopSend();
+[e ( _I2C1_StopSend ..  ]
+"272
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 272:     }
+}
+[e $U 2223  ]
+"273
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 273:     else if (I2C1_IsBusTimeOut())
+[e :U 2222 ]
+[e $ ! != -> ( _I2C1_IsBusTimeOut ..  `i -> 0 `i 2224  ]
+"274
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 274:     {
+{
+"275
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 275:         i2c1Status.errorState = I2C_ERROR_BUS_COLLISION;
+[e = . _i2c1Status 7 . `E16163 3 ]
+"276
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 276:         I2C1ERRbits.BTOIF = 0;
+[e = . . _I2C1ERRbits 0 6 -> -> 0 `i `uc ]
+"277
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 277:     }
+}
+[e $U 2225  ]
+"278
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 278:     else
+[e :U 2224 ]
+"279
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 279:     {
+{
+"280
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 280:         I2C1ERRbits.NACKIF = 0;
+[e = . . _I2C1ERRbits 0 4 -> -> 0 `i `uc ]
+"281
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 281:     }
+}
+[e :U 2225 ]
+[e :U 2223 ]
+[e :U 2221 ]
+[e :U 2219 ]
+"283
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 283:     if (i2c1Status.errorState != I2C_ERROR_NONE)
+[e $ ! != -> . _i2c1Status 7 `ui -> . `E16163 0 `ui 2226  ]
+"284
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 284:     {
+{
+"285
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 285:         I2C1_Callback();
+[e ( *U _I2C1_Callback ..  ]
+"286
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 286:     }
+}
+[e :U 2226 ]
+"287
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 287: }
 [e :UE 2217 ]
 }
-[v F16763 `(v ~T0 @X0 1 tf ]
-"255
-[; ;mcc_generated_files/uart/src/uart1.c: 255: __attribute__((inline)) void UART1_AutoBaudDetectOverflowReset(void) {
-[v _UART1_AutoBaudDetectOverflowReset `TF16763 ~T0 @X0 1 e ]
-{
-[e :U _UART1_AutoBaudDetectOverflowReset ]
-[f ]
-"256
-[; ;mcc_generated_files/uart/src/uart1.c: 256:     U1ERRIRbits.ABDOVF = 0;
-[e = . . _U1ERRIRbits 0 5 -> -> 0 `i `uc ]
-"257
-[; ;mcc_generated_files/uart/src/uart1.c: 257: }
-[e :UE 2218 ]
-}
-[v F16765 `(v ~T0 @X0 1 tf ]
-"259
-[; ;mcc_generated_files/uart/src/uart1.c: 259: __attribute__((inline)) void UART1_TransmitInterruptEnable(void) {
-[v _UART1_TransmitInterruptEnable `TF16765 ~T0 @X0 1 e ]
-{
-[e :U _UART1_TransmitInterruptEnable ]
-[f ]
-"260
-[; ;mcc_generated_files/uart/src/uart1.c: 260:     PIE3bits.U1TXIE = 1;
-[e = . . _PIE3bits 0 4 -> -> 1 `i `uc ]
-"261
-[; ;mcc_generated_files/uart/src/uart1.c: 261: }
-[e :UE 2219 ]
-}
-[v F16767 `(v ~T0 @X0 1 tf ]
-"263
-[; ;mcc_generated_files/uart/src/uart1.c: 263: __attribute__((inline)) void UART1_TransmitInterruptDisable(void) {
-[v _UART1_TransmitInterruptDisable `TF16767 ~T0 @X0 1 e ]
-{
-[e :U _UART1_TransmitInterruptDisable ]
-[f ]
-"264
-[; ;mcc_generated_files/uart/src/uart1.c: 264:     PIE3bits.U1TXIE = 0;
-[e = . . _PIE3bits 0 4 -> -> 0 `i `uc ]
-"265
-[; ;mcc_generated_files/uart/src/uart1.c: 265: }
-[e :UE 2220 ]
-}
-[v F16769 `(v ~T0 @X0 1 tf ]
-"267
-[; ;mcc_generated_files/uart/src/uart1.c: 267: __attribute__((inline)) void UART1_ReceiveInterruptEnable(void) {
-[v _UART1_ReceiveInterruptEnable `TF16769 ~T0 @X0 1 e ]
-{
-[e :U _UART1_ReceiveInterruptEnable ]
-[f ]
-"268
-[; ;mcc_generated_files/uart/src/uart1.c: 268:     PIE3bits.U1RXIE = 1;
-[e = . . _PIE3bits 0 3 -> -> 1 `i `uc ]
-"269
-[; ;mcc_generated_files/uart/src/uart1.c: 269: }
-[e :UE 2221 ]
-}
-[v F16771 `(v ~T0 @X0 1 tf ]
-"271
-[; ;mcc_generated_files/uart/src/uart1.c: 271: __attribute__((inline)) void UART1_ReceiveInterruptDisable(void) {
-[v _UART1_ReceiveInterruptDisable `TF16771 ~T0 @X0 1 e ]
-{
-[e :U _UART1_ReceiveInterruptDisable ]
-[f ]
-"272
-[; ;mcc_generated_files/uart/src/uart1.c: 272:     PIE3bits.U1RXIE = 0;
-[e = . . _PIE3bits 0 3 -> -> 0 `i `uc ]
-"273
-[; ;mcc_generated_files/uart/src/uart1.c: 273: }
-[e :UE 2222 ]
-}
-"275
-[; ;mcc_generated_files/uart/src/uart1.c: 275: _Bool UART1_IsRxReady(void) {
-[v _UART1_IsRxReady `(a ~T0 @X0 1 ef ]
-{
-[e :U _UART1_IsRxReady ]
-[f ]
-"276
-[; ;mcc_generated_files/uart/src/uart1.c: 276:     return (uart1RxCount ? 1 : 0);
-[e ) -> ? != -> _uart1RxCount `i -> 0 `i : -> 1 `i -> 0 `i `a ]
-[e $UE 2223  ]
-"277
-[; ;mcc_generated_files/uart/src/uart1.c: 277: }
-[e :UE 2223 ]
-}
-"279
-[; ;mcc_generated_files/uart/src/uart1.c: 279: _Bool UART1_IsTxReady(void) {
-[v _UART1_IsTxReady `(a ~T0 @X0 1 ef ]
-{
-[e :U _UART1_IsTxReady ]
-[f ]
-"280
-[; ;mcc_generated_files/uart/src/uart1.c: 280:     return (uart1TxBufferRemaining ? 1 : 0);
-[e ) -> ? != -> _uart1TxBufferRemaining `i -> 0 `i : -> 1 `i -> 0 `i `a ]
-[e $UE 2224  ]
-"281
-[; ;mcc_generated_files/uart/src/uart1.c: 281: }
-[e :UE 2224 ]
-}
-"283
-[; ;mcc_generated_files/uart/src/uart1.c: 283: _Bool UART1_IsTxDone(void) {
-[v _UART1_IsTxDone `(a ~T0 @X0 1 ef ]
-{
-[e :U _UART1_IsTxDone ]
-[f ]
-"284
-[; ;mcc_generated_files/uart/src/uart1.c: 284:     return U1ERRIRbits.TXMTIF;
-[e ) -> . . _U1ERRIRbits 0 7 `a ]
-[e $UE 2225  ]
-"285
-[; ;mcc_generated_files/uart/src/uart1.c: 285: }
-[e :UE 2225 ]
-}
-"287
-[; ;mcc_generated_files/uart/src/uart1.c: 287: size_t UART1_ErrorGet(void) {
-[v _UART1_ErrorGet `(ui ~T0 @X0 1 ef ]
-{
-[e :U _UART1_ErrorGet ]
-[f ]
-"288
-[; ;mcc_generated_files/uart/src/uart1.c: 288:     uart1RxLastError.status = uart1RxStatusBuffer[(uart1RxTail + 1) & ((8) - 1)].status;
-[e = . _uart1RxLastError 1 . *U + &U _uart1RxStatusBuffer * -> -> & + -> _uart1RxTail `i -> 1 `i - -> 8 `i -> 1 `i `ui `ux -> -> # *U &U _uart1RxStatusBuffer `ui `ux 1 ]
+[v $root$_I2C1_RX_ISR `(v ~T0 @X0 0 e ]
+"289
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 289: void __attribute__((picinterrupt(("irq(I2C1RX), base(8)")))) I2C1_RX_ISR(void)
+[v _I2C1_RX_ISR `(v ~T3 @X0 1 ef ]
 "290
-[; ;mcc_generated_files/uart/src/uart1.c: 290:     return uart1RxLastError.status;
-[e ) . _uart1RxLastError 1 ]
-[e $UE 2226  ]
-"291
-[; ;mcc_generated_files/uart/src/uart1.c: 291: }
-[e :UE 2226 ]
-}
-"293
-[; ;mcc_generated_files/uart/src/uart1.c: 293: uint8_t UART1_Read(void) {
-[v _UART1_Read `(uc ~T0 @X0 1 ef ]
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 290: {
 {
-[e :U _UART1_Read ]
+[e :U _I2C1_RX_ISR ]
 [f ]
-"294
-[; ;mcc_generated_files/uart/src/uart1.c: 294:     uint8_t readValue = 0;
-[v _readValue `uc ~T0 @X0 1 a ]
-[e = _readValue -> -> 0 `i `uc ]
-"295
-[; ;mcc_generated_files/uart/src/uart1.c: 295:     uint8_t tempRxTail;
-[v _tempRxTail `uc ~T0 @X0 1 a ]
-"297
-[; ;mcc_generated_files/uart/src/uart1.c: 297:     readValue = uart1RxBuffer[uart1RxTail];
-[e = _readValue *U + &U _uart1RxBuffer * -> _uart1RxTail `ux -> -> # *U &U _uart1RxBuffer `ui `ux ]
-"298
-[; ;mcc_generated_files/uart/src/uart1.c: 298:     tempRxTail = (uart1RxTail + 1) & ((8) - 1);
-[e = _tempRxTail -> & + -> _uart1RxTail `i -> 1 `i - -> 8 `i -> 1 `i `uc ]
-"299
-[; ;mcc_generated_files/uart/src/uart1.c: 299:     uart1RxTail = tempRxTail;
-[e = _uart1RxTail _tempRxTail ]
-"300
-[; ;mcc_generated_files/uart/src/uart1.c: 300:     PIE3bits.U1RXIE = 0;
-[e = . . _PIE3bits 0 3 -> -> 0 `i `uc ]
-"301
-[; ;mcc_generated_files/uart/src/uart1.c: 301:     if (uart1RxCount != 0) {
-[e $ ! != -> _uart1RxCount `i -> 0 `i 2228  ]
-{
-"302
-[; ;mcc_generated_files/uart/src/uart1.c: 302:         uart1RxCount--;
-[e -- _uart1RxCount -> -> 1 `i `Vuc ]
-"303
-[; ;mcc_generated_files/uart/src/uart1.c: 303:     }
-}
-[e :U 2228 ]
-"304
-[; ;mcc_generated_files/uart/src/uart1.c: 304:     PIE3bits.U1RXIE = 1;
-[e = . . _PIE3bits 0 3 -> -> 1 `i `uc ]
-"305
-[; ;mcc_generated_files/uart/src/uart1.c: 305:     return readValue;
-[e ) _readValue ]
-[e $UE 2227  ]
-"306
-[; ;mcc_generated_files/uart/src/uart1.c: 306: }
+"291
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 291:     *i2c1Status.readPtr++ = I2C1_DataReceive();
+[e = *U ++ . _i2c1Status 4 * -> -> 1 `i `x -> -> # *U . _i2c1Status 4 `i `x ( _I2C1_DataReceive ..  ]
+"292
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 292: }
 [e :UE 2227 ]
 }
-[v $root$_UART1_Receive_Vector_ISR `(v ~T0 @X0 0 e ]
-"308
-[; ;mcc_generated_files/uart/src/uart1.c: 308: void __attribute__((picinterrupt(("irq(27), base(8)")))) UART1_Receive_Vector_ISR(void) {
-[v _UART1_Receive_Vector_ISR `(v ~T7 @X0 1 ef ]
+[v $root$_I2C1_TX_ISR `(v ~T0 @X0 0 e ]
+"294
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 294: void __attribute__((picinterrupt(("irq(I2C1TX), base(8)")))) I2C1_TX_ISR(void)
+[v _I2C1_TX_ISR `(v ~T4 @X0 1 ef ]
+"295
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 295: {
 {
-[e :U _UART1_Receive_Vector_ISR ]
+[e :U _I2C1_TX_ISR ]
 [f ]
-"309
-[; ;mcc_generated_files/uart/src/uart1.c: 309:     static unsigned char status = 0;
-[v F16780 `uc ~T0 @X0 1 s status ]
-[i F16780
--> -> 0 `i `uc
-]
-"310
-[; ;mcc_generated_files/uart/src/uart1.c: 310:     static uint16_t mesage = 1;
-[v F16781 `us ~T0 @X0 1 s mesage ]
-[i F16781
--> -> 1 `i `us
-]
-"312
-[; ;mcc_generated_files/uart/src/uart1.c: 312:     if (status == 0) {
-[e $ ! == -> F16780 `i -> 0 `i 2230  ]
-{
-"313
-[; ;mcc_generated_files/uart/src/uart1.c: 313:         status++;
-[e ++ F16780 -> -> 1 `i `uc ]
-"314
-[; ;mcc_generated_files/uart/src/uart1.c: 314:         mesage = U1RXB;
-[e = F16781 -> _U1RXB `us ]
-"315
-[; ;mcc_generated_files/uart/src/uart1.c: 315:     } else {
+"296
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 296:     I2C1_DataTransmit(*i2c1Status.writePtr++);
+[e ( _I2C1_DataTransmit (1 *U ++ . _i2c1Status 2 * -> -> 1 `i `x -> -> # *U . _i2c1Status 2 `i `x ]
+"297
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 297: }
+[e :UE 2228 ]
 }
-[e $U 2231  ]
+"302
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 302: static void I2C1_ReadStart(void)
+[v _I2C1_ReadStart `(v ~T0 @X0 1 sf ]
+"303
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 303: {
+{
+[e :U _I2C1_ReadStart ]
+[f ]
+"304
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 304:     if (i2c1Status.readLength)
+[e $ ! != . _i2c1Status 5 -> -> 0 `i `ui 2230  ]
+"305
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 305:     {
+{
+"306
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 306:         I2C1_CounterSet((uint8_t) i2c1Status.readLength);
+[e ( _I2C1_CounterSet (1 -> . _i2c1Status 5 `uc ]
+"307
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 307:     }
+}
 [e :U 2230 ]
-{
-"316
-[; ;mcc_generated_files/uart/src/uart1.c: 316:         status = 0;
-[e = F16780 -> -> 0 `i `uc ]
-"317
-[; ;mcc_generated_files/uart/src/uart1.c: 317:         mesage = (mesage << 8) + U1RXB;
-[e = F16781 -> + << -> F16781 `ui -> 8 `i -> _U1RXB `ui `us ]
-"319
-[; ;mcc_generated_files/uart/src/uart1.c: 319:         PERIOD = mesage;
-[e = _PERIOD F16781 ]
-"320
-[; ;mcc_generated_files/uart/src/uart1.c: 320:     }
-}
-[e :U 2231 ]
-"321
-[; ;mcc_generated_files/uart/src/uart1.c: 321: }
+"309
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 309:     I2C1_AddrTransmit((uint8_t) (i2c1Status.address << 1 | 1));
+[e ( _I2C1_AddrTransmit (1 -> | << -> . _i2c1Status 1 `ui -> 1 `i -> -> 1 `i `ui `uc ]
+"310
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 310:     I2C1_StartSend();
+[e ( _I2C1_StartSend ..  ]
+"311
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 311: }
 [e :UE 2229 ]
 }
-"323
-[; ;mcc_generated_files/uart/src/uart1.c: 323: void UART1_ReceiveISR(void) {
-[v _UART1_ReceiveISR `(v ~T0 @X0 1 ef ]
+"313
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 313: static void I2C1_WriteStart(void)
+[v _I2C1_WriteStart `(v ~T0 @X0 1 sf ]
+"314
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 314: {
 {
-[e :U _UART1_ReceiveISR ]
+[e :U _I2C1_WriteStart ]
 [f ]
-"324
-[; ;mcc_generated_files/uart/src/uart1.c: 324:     uint8_t regValue;
-[v _regValue `uc ~T0 @X0 1 a ]
-"325
-[; ;mcc_generated_files/uart/src/uart1.c: 325:     uint8_t tempRxHead;
-[v _tempRxHead `uc ~T0 @X0 1 a ]
-"327
-[; ;mcc_generated_files/uart/src/uart1.c: 327:     uart1RxStatusBuffer[uart1RxHead].status = 0;
-[e = . *U + &U _uart1RxStatusBuffer * -> _uart1RxHead `ux -> -> # *U &U _uart1RxStatusBuffer `ui `ux 1 -> -> 0 `i `ui ]
-"329
-[; ;mcc_generated_files/uart/src/uart1.c: 329:     if (U1ERRIRbits.FERIF) {
-[e $ ! != -> . . _U1ERRIRbits 0 3 `i -> 0 `i 2233  ]
+"315
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 315:     if (i2c1Status.writeLength)
+[e $ ! != . _i2c1Status 3 -> -> 0 `i `ui 2232  ]
+"316
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 316:     {
 {
-"330
-[; ;mcc_generated_files/uart/src/uart1.c: 330:         uart1RxStatusBuffer[uart1RxHead].ferr = 1;
-[e = . . *U + &U _uart1RxStatusBuffer * -> _uart1RxHead `ux -> -> # *U &U _uart1RxStatusBuffer `ui `ux 0 1 -> -> 1 `i `uc ]
-"331
-[; ;mcc_generated_files/uart/src/uart1.c: 331:         if (((void*)0) != UART1_FramingErrorHandler) {
-[e $ ! != -> -> -> 0 `i `*v `*F16785 _UART1_FramingErrorHandler 2234  ]
+"317
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 317:         I2C1_CounterSet((uint8_t) i2c1Status.writeLength);
+[e ( _I2C1_CounterSet (1 -> . _i2c1Status 3 `uc ]
+"318
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 318:         if (i2c1Status.switchToRead)
+[e $ ! != -> . _i2c1Status 6 `i -> 0 `i 2233  ]
+"319
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 319:         {
 {
-"332
-[; ;mcc_generated_files/uart/src/uart1.c: 332:             UART1_FramingErrorHandler();
-[e ( *U _UART1_FramingErrorHandler ..  ]
-"333
-[; ;mcc_generated_files/uart/src/uart1.c: 333:         }
-}
-[e :U 2234 ]
-"334
-[; ;mcc_generated_files/uart/src/uart1.c: 334:     }
+"320
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 320:             I2C1_RestartEnable();
+[e ( _I2C1_RestartEnable ..  ]
+"321
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 321:         }
 }
 [e :U 2233 ]
-"335
-[; ;mcc_generated_files/uart/src/uart1.c: 335:     if (U1ERRIRbits.RXFOIF) {
-[e $ ! != -> . . _U1ERRIRbits 0 1 `i -> 0 `i 2235  ]
-{
-"336
-[; ;mcc_generated_files/uart/src/uart1.c: 336:         uart1RxStatusBuffer[uart1RxHead].oerr = 1;
-[e = . . *U + &U _uart1RxStatusBuffer * -> _uart1RxHead `ux -> -> # *U &U _uart1RxStatusBuffer `ui `ux 0 2 -> -> 1 `i `uc ]
-"337
-[; ;mcc_generated_files/uart/src/uart1.c: 337:         if (((void*)0) != UART1_OverrunErrorHandler) {
-[e $ ! != -> -> -> 0 `i `*v `*F16786 _UART1_OverrunErrorHandler 2236  ]
-{
-"338
-[; ;mcc_generated_files/uart/src/uart1.c: 338:             UART1_OverrunErrorHandler();
-[e ( *U _UART1_OverrunErrorHandler ..  ]
-"339
-[; ;mcc_generated_files/uart/src/uart1.c: 339:         }
+"322
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 322:     }
 }
-[e :U 2236 ]
-"340
-[; ;mcc_generated_files/uart/src/uart1.c: 340:     }
+[e :U 2232 ]
+"324
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 324:     I2C1_AddrTransmit((uint8_t) (i2c1Status.address << 1));
+[e ( _I2C1_AddrTransmit (1 -> << -> . _i2c1Status 1 `ui -> 1 `i `uc ]
+"325
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 325:     I2C1_StartSend();
+[e ( _I2C1_StartSend ..  ]
+"326
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 326: }
+[e :UE 2231 ]
 }
-[e :U 2235 ]
-"342
-[; ;mcc_generated_files/uart/src/uart1.c: 342:     regValue = U1RXB;
-[e = _regValue _U1RXB ]
-"344
-[; ;mcc_generated_files/uart/src/uart1.c: 344:     tempRxHead = (uart1RxHead + 1) & ((8) - 1);
-[e = _tempRxHead -> & + -> _uart1RxHead `i -> 1 `i - -> 8 `i -> 1 `i `uc ]
-"345
-[; ;mcc_generated_files/uart/src/uart1.c: 345:     if (tempRxHead == uart1RxTail) {
-[e $ ! == -> _tempRxHead `i -> _uart1RxTail `i 2237  ]
+"328
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 328: static void I2C1_Close(void)
+[v _I2C1_Close `(v ~T0 @X0 1 sf ]
+"329
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 329: {
 {
-"347
-[; ;mcc_generated_files/uart/src/uart1.c: 347:     }
-}
-[e $U 2238  ]
-"348
-[; ;mcc_generated_files/uart/src/uart1.c: 348:     else {
-[e :U 2237 ]
-{
-"349
-[; ;mcc_generated_files/uart/src/uart1.c: 349:         uart1RxBuffer[uart1RxHead] = regValue;
-[e = *U + &U _uart1RxBuffer * -> _uart1RxHead `ux -> -> # *U &U _uart1RxBuffer `ui `ux _regValue ]
-"350
-[; ;mcc_generated_files/uart/src/uart1.c: 350:         uart1RxHead = tempRxHead;
-[e = _uart1RxHead _tempRxHead ]
-"351
-[; ;mcc_generated_files/uart/src/uart1.c: 351:         uart1RxCount++;
-[e ++ _uart1RxCount -> -> 1 `i `Vuc ]
-"352
-[; ;mcc_generated_files/uart/src/uart1.c: 352:     }
-}
-[e :U 2238 ]
-"354
-[; ;mcc_generated_files/uart/src/uart1.c: 354:     if (UART1_RxCompleteInterruptHandler != ((void*)0)) {
-[e $ ! != _UART1_RxCompleteInterruptHandler -> -> -> 0 `i `*v `*F16787 2239  ]
-{
-"355
-[; ;mcc_generated_files/uart/src/uart1.c: 355:         (*UART1_RxCompleteInterruptHandler)();
-[e ( *U _UART1_RxCompleteInterruptHandler ..  ]
-"356
-[; ;mcc_generated_files/uart/src/uart1.c: 356:     }
-}
-[e :U 2239 ]
-"357
-[; ;mcc_generated_files/uart/src/uart1.c: 357: }
-[e :UE 2232 ]
-}
-"359
-[; ;mcc_generated_files/uart/src/uart1.c: 359: void UART1_Write(uint8_t txData) {
-[v _UART1_Write `(v ~T0 @X0 1 ef1`uc ]
-{
-[e :U _UART1_Write ]
-[v _txData `uc ~T0 @X0 1 r1 ]
+[e :U _I2C1_Close ]
 [f ]
+"330
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 330:     i2c1Status.busy = 0;
+[e = . _i2c1Status 0 -> -> 0 `i `a ]
+"331
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 331:     i2c1Status.address = 0xFF;
+[e = . _i2c1Status 1 -> -> 255 `i `us ]
+[v F16357 `*uc ~T0 @X0 1 t ]
+"332
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 332:     i2c1Status.writePtr = ((void*)0);
+[e = . _i2c1Status 2 -> -> -> 0 `i `*v `V*uc ]
+[v F16359 `*uc ~T0 @X0 1 t ]
+"333
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 333:     i2c1Status.readPtr = ((void*)0);
+[e = . _i2c1Status 4 -> -> -> 0 `i `*v `V*uc ]
+"334
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 334:     I2C1_InterruptsClear();
+[e ( _I2C1_InterruptsClear ..  ]
+"335
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 335:     I2C1_ErrorFlagsClear();
+[e ( _I2C1_ErrorFlagsClear ..  ]
+"336
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 336:     I2C1_BufferClear();
+[e ( _I2C1_BufferClear ..  ]
+"337
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 337: }
+[e :UE 2234 ]
+}
+"339
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 339: static void I2C1_DefaultCallback(void)
+[v _I2C1_DefaultCallback `(v ~T0 @X0 1 sf ]
+"340
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 340: {
+{
+[e :U _I2C1_DefaultCallback ]
+[f ]
+"342
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 342: }
+[e :UE 2235 ]
+}
+"347
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 347: static void I2C1_StartSend(void)
+[v _I2C1_StartSend `(v ~T0 @X0 1 sf ]
+"348
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 348: {
+{
+[e :U _I2C1_StartSend ]
+[f ]
+"349
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 349:     I2C1CON0bits.S = 1;
+[e = . . _I2C1CON0bits 0 3 -> -> 1 `i `uc ]
+"350
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 350: }
+[e :UE 2236 ]
+}
+"352
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 352: static void I2C1_AddrTransmit(uint8_t addr)
+[v _I2C1_AddrTransmit `(v ~T0 @X0 1 sf1`uc ]
+"353
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 353: {
+{
+[e :U _I2C1_AddrTransmit ]
+"352
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 352: static void I2C1_AddrTransmit(uint8_t addr)
+[v _addr `uc ~T0 @X0 1 r1 ]
+"353
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 353: {
+[f ]
+"354
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 354:     I2C1ADB1 = addr;
+[e = _I2C1ADB1 _addr ]
+"355
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 355: }
+[e :UE 2237 ]
+}
+"357
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 357: static void I2C1_DataTransmit(uint8_t data)
+[v _I2C1_DataTransmit `(v ~T0 @X0 1 sf1`uc ]
+"358
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 358: {
+{
+[e :U _I2C1_DataTransmit ]
+"357
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 357: static void I2C1_DataTransmit(uint8_t data)
+[v _data `uc ~T0 @X0 1 r1 ]
+"358
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 358: {
+[f ]
+"359
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 359:     I2C1TXB = data;
+[e = _I2C1TXB _data ]
 "360
-[; ;mcc_generated_files/uart/src/uart1.c: 360:     uint8_t tempTxHead;
-[v _tempTxHead `uc ~T0 @X0 1 a ]
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 360: }
+[e :UE 2238 ]
+}
 "362
-[; ;mcc_generated_files/uart/src/uart1.c: 362:     if (0 == PIE3bits.U1TXIE)
-[e $ ! == -> 0 `i -> . . _PIE3bits 0 4 `i 2241  ]
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 362: static uint8_t I2C1_DataReceive(void)
+[v _I2C1_DataReceive `(uc ~T0 @X0 1 sf ]
 "363
-[; ;mcc_generated_files/uart/src/uart1.c: 363:     {
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 363: {
 {
+[e :U _I2C1_DataReceive ]
+[f ]
 "364
-[; ;mcc_generated_files/uart/src/uart1.c: 364:         U1TXB = txData;
-[e = _U1TXB _txData ]
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 364:     return I2C1RXB;
+[e ) _I2C1RXB ]
+[e $UE 2239  ]
 "365
-[; ;mcc_generated_files/uart/src/uart1.c: 365:     } else if (uart1TxBufferRemaining)
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 365: }
+[e :UE 2239 ]
 }
-[e $U 2242  ]
-[e :U 2241 ]
-[e $ ! != -> _uart1TxBufferRemaining `i -> 0 `i 2243  ]
-"366
-[; ;mcc_generated_files/uart/src/uart1.c: 366:     {
-{
 "367
-[; ;mcc_generated_files/uart/src/uart1.c: 367:         uart1TxBuffer[uart1TxHead] = txData;
-[e = *U + &U _uart1TxBuffer * -> _uart1TxHead `ux -> -> # *U &U _uart1TxBuffer `ui `ux _txData ]
-"369
-[; ;mcc_generated_files/uart/src/uart1.c: 369:         tempTxHead = (uart1TxHead + 1) & ((16) - 1);
-[e = _tempTxHead -> & + -> _uart1TxHead `i -> 1 `i - -> 16 `i -> 1 `i `uc ]
-"371
-[; ;mcc_generated_files/uart/src/uart1.c: 371:         uart1TxHead = tempTxHead;
-[e = _uart1TxHead _tempTxHead ]
-"372
-[; ;mcc_generated_files/uart/src/uart1.c: 372:         PIE3bits.U1TXIE = 0;
-[e = . . _PIE3bits 0 4 -> -> 0 `i `uc ]
-"373
-[; ;mcc_generated_files/uart/src/uart1.c: 373:         uart1TxBufferRemaining--;
-[e -- _uart1TxBufferRemaining -> -> 1 `i `Vuc ]
-"374
-[; ;mcc_generated_files/uart/src/uart1.c: 374:     } else {
-}
-[e $U 2244  ]
-[e :U 2243 ]
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 367: static void I2C1_CounterSet(uint8_t counter)
+[v _I2C1_CounterSet `(v ~T0 @X0 1 sf1`uc ]
+"368
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 368: {
 {
-"376
-[; ;mcc_generated_files/uart/src/uart1.c: 376:     }
-}
-[e :U 2244 ]
-[e :U 2242 ]
-"377
-[; ;mcc_generated_files/uart/src/uart1.c: 377:     PIE3bits.U1TXIE = 1;
-[e = . . _PIE3bits 0 4 -> -> 1 `i `uc ]
-"378
-[; ;mcc_generated_files/uart/src/uart1.c: 378: }
+[e :U _I2C1_CounterSet ]
+"367
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 367: static void I2C1_CounterSet(uint8_t counter)
+[v _counter `uc ~T0 @X0 1 r1 ]
+"368
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 368: {
+[f ]
+"369
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 369:     I2C1CNT = counter;
+[e = _I2C1CNT _counter ]
+"370
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 370: }
 [e :UE 2240 ]
 }
-[v $root$_UART1_Transmit_Vector_ISR `(v ~T0 @X0 0 e ]
+"372
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 372: static uint8_t I2C1_CounterGet(void)
+[v _I2C1_CounterGet `(uc ~T0 @X0 1 sf ]
+"373
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 373: {
+{
+[e :U _I2C1_CounterGet ]
+[f ]
+"374
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 374:     return (uint8_t) I2C1CNT;
+[e ) _I2C1CNT ]
+[e $UE 2241  ]
+"375
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 375: }
+[e :UE 2241 ]
+}
+[v F16371 `(v ~T0 @X0 1 tf ]
+"377
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 377: static __attribute__((inline)) void I2C1_BusReset(void)
+[v _I2C1_BusReset `TF16371 ~T0 @X0 1 s ]
+"378
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 378: {
+{
+[e :U _I2C1_BusReset ]
+[f ]
+"379
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 379:     I2C1_InterruptsClear();
+[e ( _I2C1_InterruptsClear ..  ]
 "380
-[; ;mcc_generated_files/uart/src/uart1.c: 380: void __attribute__((picinterrupt(("irq(28), base(8)")))) UART1_Transmit_Vector_ISR(void) {
-[v _UART1_Transmit_Vector_ISR `(v ~T8 @X0 1 ef ]
-{
-[e :U _UART1_Transmit_Vector_ISR ]
-[f ]
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 380:     I2C1_ErrorFlagsClear();
+[e ( _I2C1_ErrorFlagsClear ..  ]
+"381
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 381:     I2C1_InterruptsDisable();
+[e ( _I2C1_InterruptsDisable ..  ]
 "382
-[; ;mcc_generated_files/uart/src/uart1.c: 382:     UART1_TransmitISR();
-[e ( _UART1_TransmitISR ..  ]
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 382:     I2C1_BufferClear();
+[e ( _I2C1_BufferClear ..  ]
 "383
-[; ;mcc_generated_files/uart/src/uart1.c: 383: }
-[e :UE 2245 ]
-}
-"385
-[; ;mcc_generated_files/uart/src/uart1.c: 385: void UART1_TransmitISR(void) {
-[v _UART1_TransmitISR `(v ~T0 @X0 1 ef ]
-{
-[e :U _UART1_TransmitISR ]
-[f ]
-"386
-[; ;mcc_generated_files/uart/src/uart1.c: 386:     uint8_t tempTxTail;
-[v _tempTxTail `uc ~T0 @X0 1 a ]
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 383:     I2C1CON0bits.EN = 0;
+[e = . . _I2C1CON0bits 0 5 -> -> 0 `i `uc ]
+"384
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 384:     I2C1_InterruptsEnable();
+[e ( _I2C1_InterruptsEnable ..  ]
 "388
-[; ;mcc_generated_files/uart/src/uart1.c: 388:     if (sizeof (uart1TxBuffer) > uart1TxBufferRemaining)
-[e $ ! > -> # _uart1TxBuffer `ui -> _uart1TxBufferRemaining `ui 2247  ]
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 388:     I2C1PIEbits.SCIE = 0;
+[e = . . _I2C1PIEbits 0 0 -> -> 0 `i `uc ]
 "389
-[; ;mcc_generated_files/uart/src/uart1.c: 389:     {
-{
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 389:     I2C1PIEbits.PCIE = 0;
+[e = . . _I2C1PIEbits 0 2 -> -> 0 `i `uc ]
 "390
-[; ;mcc_generated_files/uart/src/uart1.c: 390:         U1TXB = uart1TxBuffer[uart1TxTail];
-[e = _U1TXB *U + &U _uart1TxBuffer * -> _uart1TxTail `ux -> -> # *U &U _uart1TxBuffer `ui `ux ]
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 390:     I2C1CON0bits.EN = 1;
+[e = . . _I2C1CON0bits 0 5 -> -> 1 `i `uc ]
+"391
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 391:     _delay((unsigned long)((1)*(64000000/4000000.0)));
+[e ( __delay (1 -> * -> -> 1 `i `d / -> -> 64000000 `l `d .4000000.0 `ul ]
 "392
-[; ;mcc_generated_files/uart/src/uart1.c: 392:         tempTxTail = (uart1TxTail + 1) & ((16) - 1);
-[e = _tempTxTail -> & + -> _uart1TxTail `i -> 1 `i - -> 16 `i -> 1 `i `uc ]
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 392:     __nop();
+[e ( ___nop ..  ]
+"393
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 393:     __nop();
+[e ( ___nop ..  ]
 "394
-[; ;mcc_generated_files/uart/src/uart1.c: 394:         uart1TxTail = tempTxTail;
-[e = _uart1TxTail _tempTxTail ]
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 394:     __nop();
+[e ( ___nop ..  ]
 "395
-[; ;mcc_generated_files/uart/src/uart1.c: 395:         uart1TxBufferRemaining++;
-[e ++ _uart1TxBufferRemaining -> -> 1 `i `Vuc ]
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 395:     __nop();
+[e ( ___nop ..  ]
 "396
-[; ;mcc_generated_files/uart/src/uart1.c: 396:     } else {
-}
-[e $U 2248  ]
-[e :U 2247 ]
-{
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 396:     __nop();
+[e ( ___nop ..  ]
 "397
-[; ;mcc_generated_files/uart/src/uart1.c: 397:         PIE3bits.U1TXIE = 0;
-[e = . . _PIE3bits 0 4 -> -> 0 `i `uc ]
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 397:     __nop();
+[e ( ___nop ..  ]
 "398
-[; ;mcc_generated_files/uart/src/uart1.c: 398:     }
-}
-[e :U 2248 ]
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 398:     I2C1PIRbits.SCIF = 0;
+[e = . . _I2C1PIRbits 0 0 -> -> 0 `i `uc ]
 "399
-[; ;mcc_generated_files/uart/src/uart1.c: 399: }
-[e :UE 2246 ]
-}
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 399:     I2C1PIRbits.PCIF = 0;
+[e = . . _I2C1PIRbits 0 2 -> -> 0 `i `uc ]
+"400
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 400:     I2C1PIEbits.PCIE = 1;
+[e = . . _I2C1PIEbits 0 2 -> -> 1 `i `uc ]
 "401
-[; ;mcc_generated_files/uart/src/uart1.c: 401: static void UART1_DefaultFramingErrorCallback(void) {
-[v _UART1_DefaultFramingErrorCallback `(v ~T0 @X0 1 sf ]
-{
-[e :U _UART1_DefaultFramingErrorCallback ]
-[f ]
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 401: }
+[e :UE 2242 ]
+}
+[v F16373 `(v ~T0 @X0 1 tf ]
 "403
-[; ;mcc_generated_files/uart/src/uart1.c: 403: }
-[e :UE 2249 ]
-}
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 403: static __attribute__((inline)) void I2C1_RestartEnable(void)
+[v _I2C1_RestartEnable `TF16373 ~T0 @X0 1 s ]
+"404
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 404: {
+{
+[e :U _I2C1_RestartEnable ]
+[f ]
 "405
-[; ;mcc_generated_files/uart/src/uart1.c: 405: static void UART1_DefaultOverrunErrorCallback(void) {
-[v _UART1_DefaultOverrunErrorCallback `(v ~T0 @X0 1 sf ]
-{
-[e :U _UART1_DefaultOverrunErrorCallback ]
-[f ]
-"407
-[; ;mcc_generated_files/uart/src/uart1.c: 407: }
-[e :UE 2250 ]
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 405:     I2C1CON0bits.RSEN = 1;
+[e = . . _I2C1CON0bits 0 4 -> -> 1 `i `uc ]
+"406
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 406: }
+[e :UE 2243 ]
 }
+[v F16375 `(v ~T0 @X0 1 tf ]
+"408
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 408: static __attribute__((inline)) void I2C1_RestartDisable(void)
+[v _I2C1_RestartDisable `TF16375 ~T0 @X0 1 s ]
 "409
-[; ;mcc_generated_files/uart/src/uart1.c: 409: static void UART1_DefaultParityErrorCallback(void) {
-[v _UART1_DefaultParityErrorCallback `(v ~T0 @X0 1 sf ]
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 409: {
 {
-[e :U _UART1_DefaultParityErrorCallback ]
+[e :U _I2C1_RestartDisable ]
 [f ]
+"410
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 410:     I2C1CON0bits.RSEN = 0;
+[e = . . _I2C1CON0bits 0 4 -> -> 0 `i `uc ]
 "411
-[; ;mcc_generated_files/uart/src/uart1.c: 411: }
-[e :UE 2251 ]
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 411: }
+[e :UE 2244 ]
 }
 "413
-[; ;mcc_generated_files/uart/src/uart1.c: 413: void UART1_FramingErrorCallbackRegister(void (* callbackHandler)(void)) {
-[v _UART1_FramingErrorCallbackRegister `(v ~T0 @X0 1 ef1`*F16798 ]
-{
-[e :U _UART1_FramingErrorCallbackRegister ]
-[v _callbackHandler `*F16800 ~T0 @X0 1 r1 ]
-[f ]
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 413: static void I2C1_StopSend(void)
+[v _I2C1_StopSend `(v ~T0 @X0 1 sf ]
 "414
-[; ;mcc_generated_files/uart/src/uart1.c: 414:     if (((void*)0) != callbackHandler) {
-[e $ ! != -> -> -> 0 `i `*v `*F16801 _callbackHandler 2253  ]
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 414: {
 {
+[e :U _I2C1_StopSend ]
+[f ]
 "415
-[; ;mcc_generated_files/uart/src/uart1.c: 415:         UART1_FramingErrorHandler = callbackHandler;
-[e = _UART1_FramingErrorHandler _callbackHandler ]
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 415:     I2C1_RestartDisable();
+[e ( _I2C1_RestartDisable ..  ]
 "416
-[; ;mcc_generated_files/uart/src/uart1.c: 416:     }
-}
-[e :U 2253 ]
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 416:     if (I2C1_CounterGet())
+[e $ ! != -> ( _I2C1_CounterGet ..  `i -> 0 `i 2246  ]
 "417
-[; ;mcc_generated_files/uart/src/uart1.c: 417: }
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 417:     {
+{
+"418
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 418:         I2C1_CounterSet(0);
+[e ( _I2C1_CounterSet (1 -> -> 0 `i `uc ]
+"419
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 419:         I2C1_DataTransmit(0);
+[e ( _I2C1_DataTransmit (1 -> -> 0 `i `uc ]
+"420
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 420:     }
+}
+[e :U 2246 ]
+"421
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 421: }
+[e :UE 2245 ]
+}
+"423
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 423: static _Bool I2C1_IsNack(void)
+[v _I2C1_IsNack `(a ~T0 @X0 1 sf ]
+"424
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 424: {
+{
+[e :U _I2C1_IsNack ]
+[f ]
+"425
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 425:     return I2C1CON1bits.ACKSTAT;
+[e ) -> . . _I2C1CON1bits 0 5 `a ]
+[e $UE 2247  ]
+"426
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 426: }
+[e :UE 2247 ]
+}
+"428
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 428: static _Bool I2C1_IsBusCol(void)
+[v _I2C1_IsBusCol `(a ~T0 @X0 1 sf ]
+"429
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 429: {
+{
+[e :U _I2C1_IsBusCol ]
+[f ]
+"430
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 430:     return I2C1ERRbits.BCLIF;
+[e ) -> . . _I2C1ERRbits 0 5 `a ]
+[e $UE 2248  ]
+"431
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 431: }
+[e :UE 2248 ]
+}
+"433
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 433: static _Bool I2C1_IsBusTimeOut(void)
+[v _I2C1_IsBusTimeOut `(a ~T0 @X0 1 sf ]
+"434
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 434: {
+{
+[e :U _I2C1_IsBusTimeOut ]
+[f ]
+"435
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 435:     return I2C1ERRbits.BTOIF;
+[e ) -> . . _I2C1ERRbits 0 6 `a ]
+[e $UE 2249  ]
+"436
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 436: }
+[e :UE 2249 ]
+}
+"438
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 438: static _Bool I2C1_IsData(void)
+[v _I2C1_IsData `(a ~T0 @X0 1 sf ]
+"439
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 439: {
+{
+[e :U _I2C1_IsData ]
+[f ]
+"440
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 440:     return I2C1STAT0bits.D;
+[e ) -> . . _I2C1STAT0bits 0 1 `a ]
+[e $UE 2250  ]
+"441
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 441: }
+[e :UE 2250 ]
+}
+"443
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 443: static _Bool I2C1_IsAddr(void)
+[v _I2C1_IsAddr `(a ~T0 @X0 1 sf ]
+"444
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 444: {
+{
+[e :U _I2C1_IsAddr ]
+[f ]
+"445
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 445:     return !I2C1STAT0bits.D;
+[e ) -> -> ! != -> . . _I2C1STAT0bits 0 1 `i -> 0 `i `i `a ]
+[e $UE 2251  ]
+"446
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 446: }
+[e :UE 2251 ]
+}
+[v F16383 `(v ~T0 @X0 1 tf ]
+"448
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 448: static __attribute__((inline)) void I2C1_InterruptsEnable(void)
+[v _I2C1_InterruptsEnable `TF16383 ~T0 @X0 1 s ]
+"449
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 449: {
+{
+[e :U _I2C1_InterruptsEnable ]
+[f ]
+"450
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 450:     PIE3bits.I2C1IE = 1;
+[e = . . _PIE3bits 0 1 -> -> 1 `i `uc ]
+"451
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 451:     PIE3bits.I2C1EIE = 1;
+[e = . . _PIE3bits 0 2 -> -> 1 `i `uc ]
+"452
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 452:     PIE2bits.I2C1RXIE = 1;
+[e = . . _PIE2bits 0 7 -> -> 1 `i `uc ]
+"453
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 453:     PIE3bits.I2C1TXIE = 1;
+[e = . . _PIE3bits 0 0 -> -> 1 `i `uc ]
+"455
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 455:     I2C1PIEbits.PCIE = 1;
+[e = . . _I2C1PIEbits 0 2 -> -> 1 `i `uc ]
+"456
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 456:     I2C1PIEbits.RSCIE = 1;
+[e = . . _I2C1PIEbits 0 1 -> -> 1 `i `uc ]
+"457
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 457:     I2C1PIEbits.CNTIE = 1;
+[e = . . _I2C1PIEbits 0 7 -> -> 1 `i `uc ]
+"458
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 458:     I2C1ERRbits.NACKIE = 1;
+[e = . . _I2C1ERRbits 0 0 -> -> 1 `i `uc ]
+"459
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 459: }
 [e :UE 2252 ]
 }
-"419
-[; ;mcc_generated_files/uart/src/uart1.c: 419: void UART1_OverrunErrorCallbackRegister(void (* callbackHandler)(void)) {
-[v _UART1_OverrunErrorCallbackRegister `(v ~T0 @X0 1 ef1`*F16804 ]
+[v F16385 `(v ~T0 @X0 1 tf ]
+"461
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 461: static __attribute__((inline)) void I2C1_InterruptsDisable(void)
+[v _I2C1_InterruptsDisable `TF16385 ~T0 @X0 1 s ]
+"462
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 462: {
 {
-[e :U _UART1_OverrunErrorCallbackRegister ]
-[v _callbackHandler `*F16806 ~T0 @X0 1 r1 ]
+[e :U _I2C1_InterruptsDisable ]
 [f ]
-"420
-[; ;mcc_generated_files/uart/src/uart1.c: 420:     if (((void*)0) != callbackHandler) {
-[e $ ! != -> -> -> 0 `i `*v `*F16807 _callbackHandler 2255  ]
-{
-"421
-[; ;mcc_generated_files/uart/src/uart1.c: 421:         UART1_OverrunErrorHandler = callbackHandler;
-[e = _UART1_OverrunErrorHandler _callbackHandler ]
-"422
-[; ;mcc_generated_files/uart/src/uart1.c: 422:     }
+"463
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 463:     PIE3bits.I2C1IE = 0;
+[e = . . _PIE3bits 0 1 -> -> 0 `i `uc ]
+"464
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 464:     PIE3bits.I2C1EIE = 0;
+[e = . . _PIE3bits 0 2 -> -> 0 `i `uc ]
+"465
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 465:     PIE2bits.I2C1RXIE = 0;
+[e = . . _PIE2bits 0 7 -> -> 0 `i `uc ]
+"466
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 466:     PIE3bits.I2C1TXIE = 0;
+[e = . . _PIE3bits 0 0 -> -> 0 `i `uc ]
+"467
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 467:     I2C1PIE = 0x00;
+[e = _I2C1PIE -> -> 0 `i `uc ]
+"468
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 468:     I2C1ERR = 0x00;
+[e = _I2C1ERR -> -> 0 `i `uc ]
+"469
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 469: }
+[e :UE 2253 ]
 }
-[e :U 2255 ]
-"423
-[; ;mcc_generated_files/uart/src/uart1.c: 423: }
+[v F16387 `(v ~T0 @X0 1 tf ]
+"471
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 471: static __attribute__((inline)) void I2C1_InterruptsClear(void)
+[v _I2C1_InterruptsClear `TF16387 ~T0 @X0 1 s ]
+"472
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 472: {
+{
+[e :U _I2C1_InterruptsClear ]
+[f ]
+"473
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 473:     I2C1PIR = 0x00;
+[e = _I2C1PIR -> -> 0 `i `uc ]
+"474
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 474: }
 [e :UE 2254 ]
 }
-"425
-[; ;mcc_generated_files/uart/src/uart1.c: 425: void UART1_ParityErrorCallbackRegister(void (* callbackHandler)(void)) {
-[v _UART1_ParityErrorCallbackRegister `(v ~T0 @X0 1 ef1`*F16810 ]
+[v F16389 `(v ~T0 @X0 1 tf ]
+"476
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 476: static __attribute__((inline)) void I2C1_ErrorFlagsClear(void)
+[v _I2C1_ErrorFlagsClear `TF16389 ~T0 @X0 1 s ]
+"477
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 477: {
 {
-[e :U _UART1_ParityErrorCallbackRegister ]
-[v _callbackHandler `*F16812 ~T0 @X0 1 r1 ]
+[e :U _I2C1_ErrorFlagsClear ]
 [f ]
-"426
-[; ;mcc_generated_files/uart/src/uart1.c: 426:     if (((void*)0) != callbackHandler) {
-[e $ ! != -> -> -> 0 `i `*v `*F16813 _callbackHandler 2257  ]
-{
-"427
-[; ;mcc_generated_files/uart/src/uart1.c: 427:         UART1_ParityErrorHandler = callbackHandler;
-[e = _UART1_ParityErrorHandler _callbackHandler ]
-"428
-[; ;mcc_generated_files/uart/src/uart1.c: 428:     }
+"478
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 478:     I2C1ERRbits.BCLIF = 0;
+[e = . . _I2C1ERRbits 0 5 -> -> 0 `i `uc ]
+"479
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 479:     I2C1ERRbits.BTOIF = 0;
+[e = . . _I2C1ERRbits 0 6 -> -> 0 `i `uc ]
+"480
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 480:     I2C1ERRbits.NACKIF = 0;
+[e = . . _I2C1ERRbits 0 4 -> -> 0 `i `uc ]
+"481
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 481: }
+[e :UE 2255 ]
 }
-[e :U 2257 ]
-"429
-[; ;mcc_generated_files/uart/src/uart1.c: 429: }
+[v F16391 `(v ~T0 @X0 1 tf ]
+"483
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 483: static __attribute__((inline)) void I2C1_BufferClear(void)
+[v _I2C1_BufferClear `TF16391 ~T0 @X0 1 s ]
+"484
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 484: {
+{
+[e :U _I2C1_BufferClear ]
+[f ]
+"485
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 485:     I2C1STAT1 = 0x00;
+[e = _I2C1STAT1 -> -> 0 `i `uc ]
+"486
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 486:     I2C1STAT1bits.CLRBF = 1;
+[e = . . _I2C1STAT1bits 0 2 -> -> 1 `i `uc ]
+"487
+[; ;mcc_generated_files/i2c_host/src/i2c1.c: 487: }
 [e :UE 2256 ]
-}
-"431
-[; ;mcc_generated_files/uart/src/uart1.c: 431: void UART1_RxCompleteCallbackRegister(void (* callbackHandler)(void)) {
-[v _UART1_RxCompleteCallbackRegister `(v ~T0 @X0 1 ef1`*F16816 ]
-{
-[e :U _UART1_RxCompleteCallbackRegister ]
-[v _callbackHandler `*F16818 ~T0 @X0 1 r1 ]
-[f ]
-"432
-[; ;mcc_generated_files/uart/src/uart1.c: 432:     if (((void*)0) != callbackHandler) {
-[e $ ! != -> -> -> 0 `i `*v `*F16819 _callbackHandler 2259  ]
-{
-"433
-[; ;mcc_generated_files/uart/src/uart1.c: 433:         UART1_RxCompleteInterruptHandler = callbackHandler;
-[e = _UART1_RxCompleteInterruptHandler _callbackHandler ]
-"434
-[; ;mcc_generated_files/uart/src/uart1.c: 434:     }
-}
-[e :U 2259 ]
-"435
-[; ;mcc_generated_files/uart/src/uart1.c: 435: }
-[e :UE 2258 ]
-}
-"437
-[; ;mcc_generated_files/uart/src/uart1.c: 437: void UART1_TxCompleteCallbackRegister(void (* callbackHandler)(void)) {
-[v _UART1_TxCompleteCallbackRegister `(v ~T0 @X0 1 ef1`*F16822 ]
-{
-[e :U _UART1_TxCompleteCallbackRegister ]
-[v _callbackHandler `*F16824 ~T0 @X0 1 r1 ]
-[f ]
-"438
-[; ;mcc_generated_files/uart/src/uart1.c: 438:     if (((void*)0) != callbackHandler) {
-[e $ ! != -> -> -> 0 `i `*v `*F16825 _callbackHandler 2261  ]
-{
-"439
-[; ;mcc_generated_files/uart/src/uart1.c: 439:         UART1_TxCompleteInterruptHandler = callbackHandler;
-[e = _UART1_TxCompleteInterruptHandler _callbackHandler ]
-"440
-[; ;mcc_generated_files/uart/src/uart1.c: 440:     }
-}
-[e :U 2261 ]
-"441
-[; ;mcc_generated_files/uart/src/uart1.c: 441: }
-[e :UE 2260 ]
 }

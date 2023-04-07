@@ -26837,7 +26837,7 @@ void PIN_MANAGER_Initialize(void)
 
     LATA = 0x0;
     LATB = 0x0;
-    LATC = 0x0;
+    LATC = 0x18;
     LATD = 0x0;
     LATE = 0x0;
 
@@ -26846,7 +26846,7 @@ void PIN_MANAGER_Initialize(void)
 
     TRISA = 0x3;
     TRISB = 0x6;
-    TRISC = 0x98;
+    TRISC = 0x80;
     TRISD = 0x0;
     TRISE = 0x0;
 
@@ -26883,7 +26883,7 @@ void PIN_MANAGER_Initialize(void)
 
     ODCONA = 0x0;
     ODCONB = 0x0;
-    ODCONC = 0x0;
+    ODCONC = 0x18;
     ODCOND = 0x0;
     ODCONE = 0x0;
 
@@ -26907,12 +26907,15 @@ void PIN_MANAGER_Initialize(void)
 
 
 
-    U1RXPPS = 0x17;
     SPI1SDIPPS = 0x14;
+    U1RXPPS = 0x17;
     RC6PPS = 0x13;
     RC5PPS = 0x1F;
+    I2C1SCLPPS = 0x13;
+    RC3PPS = 0x21;
     SPI1SCKPPS = 0x13;
-    RC3PPS = 0x1E;
+    I2C1SDAPPS = 0x14;
+    RC4PPS = 0x22;
 
 
 

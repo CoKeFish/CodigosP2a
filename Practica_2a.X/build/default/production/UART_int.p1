@@ -1,9 +1,30 @@
 Version 4.0 HI-TECH Software Intermediate Code
-[v F16559 `(v ~T0 @X0 0 tf ]
-[v F16566 `(v ~T0 @X0 0 tf ]
-"311 ./mcc_generated_files/uart/../system/../uart/uart1.h
-[; ;./mcc_generated_files/uart/../system/../uart/uart1.h: 311: uint8_t UART1_Read(void);
-[v _UART1_Read `(uc ~T0 @X0 0 ef ]
+[v F16638 `(v ~T0 @X0 0 tf ]
+[v F16645 `(v ~T0 @X0 0 tf ]
+"23 UART_int.c
+[; ;UART_int.c: 23:     static enum State status = WaitOpcode_1;
+[c E16662 0 1 2 3 4 .. ]
+[n E16662 State WaitOpcode_1 WaitOpcode_2 WaitAddres_1 WaitAddres_2 WaitValue  ]
+"24
+[; ;UART_int.c: 24:     static enum Operation OperationV = Write;
+[c E16668 0 1 .. ]
+[n E16668 Operation Write Read  ]
+"25
+[; ;UART_int.c: 25:     static enum OpType TypeV = Byte;
+[c E16671 0 1 .. ]
+[n E16671 OpType Byte String  ]
+"26509 D:/Program Files/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h
+[; ;D:/Program Files/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h: 26509: extern volatile unsigned char U1RXB __attribute__((address(0x3DE8)));
+[v _U1RXB `Vuc ~T0 @X0 0 e@15848 ]
+"5 UART_int.c
+[; ;UART_int.c: 5: void errorMessage();
+[v _errorMessage `(v ~T0 @X0 0 e? ]
+"7
+[; ;UART_int.c: 7: void WriteMemory(int16_t addres, int8_t value);
+[v _WriteMemory `(v ~T0 @X0 0 ef2`s`c ]
+"8
+[; ;UART_int.c: 8: int ReadMemory(int16_t Addres);
+[v _ReadMemory `(i ~T0 @X0 0 ef1`s ]
 "250 D:/Program Files/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h
 [; ;D:/Program Files/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f46k42.h: 250: __asm("STATUS_CSHAD equ 03880h");
 [; <" STATUS_CSHAD equ 03880h ;# ">
@@ -2238,120 +2259,303 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; <" TOSU equ 03FFFh ;# ">
 "354 ./mcc_generated_files/uart/../system/../uart/uart1.h
 [; ;./mcc_generated_files/uart/../system/../uart/uart1.h: 354: void (*UART1_TxInterruptHandler)(void);
-[v _UART1_TxInterruptHandler `*F16559 ~T0 @X0 1 e ]
+[v _UART1_TxInterruptHandler `*F16638 ~T0 @X0 1 e ]
 "379
 [; ;./mcc_generated_files/uart/../system/../uart/uart1.h: 379: void (*UART1_RxInterruptHandler)(void);
-[v _UART1_RxInterruptHandler `*F16566 ~T0 @X0 1 e ]
+[v _UART1_RxInterruptHandler `*F16645 ~T0 @X0 1 e ]
 "10 ./Practica2a.h
 [; ;./Practica2a.h: 10: uint16_t PERIOD = 2;
 [v _PERIOD `us ~T0 @X0 1 e ]
 [i _PERIOD
 -> -> 2 `i `us
 ]
-"5 UART_int.c
-[; ;UART_int.c: 5: void UART_TX_int(void)
-[v _UART_TX_int `(v ~T0 @X0 1 ef ]
-"6
-[; ;UART_int.c: 6: {
-{
-[e :U _UART_TX_int ]
-[f ]
-"8
-[; ;UART_int.c: 8: }
-[e :UE 2199 ]
-}
-"10
-[; ;UART_int.c: 10: void UART_RX_int(void)
+"21 UART_int.c
+[; ;UART_int.c: 21: void UART_RX_int(void)
 [v _UART_RX_int `(v ~T0 @X0 1 ef ]
-"11
-[; ;UART_int.c: 11: {
+"22
+[; ;UART_int.c: 22: {
 {
 [e :U _UART_RX_int ]
 [f ]
-"12
-[; ;UART_int.c: 12:     static unsigned char status = 0;
-[v F16579 `uc ~T0 @X0 1 s status ]
-[i F16579
--> -> 0 `i `uc
-]
-"13
-[; ;UART_int.c: 13:     static uint8_t opcode = 0;
-[v F16580 `uc ~T0 @X0 1 s opcode ]
-[i F16580
--> -> 0 `i `uc
-]
-"14
-[; ;UART_int.c: 14:     static uint16_t mesage = 0;
-[v F16581 `us ~T0 @X0 1 s mesage ]
-[i F16581
--> -> 0 `i `us
-]
-"16
-[; ;UART_int.c: 16:     if(status == 0)
-[e $ ! == -> F16579 `i -> 0 `i 2201  ]
-"17
-[; ;UART_int.c: 17:     {
-{
-"18
-[; ;UART_int.c: 18:         status++;
-[e ++ F16579 -> -> 1 `i `uc ]
-"19
-[; ;UART_int.c: 19:         opcode = UART1_Read();
-[e = F16580 ( _UART1_Read ..  ]
-"20
-[; ;UART_int.c: 20:     }
-}
-[e $U 2202  ]
-"21
-[; ;UART_int.c: 21:     else if(status == 1)
-[e :U 2201 ]
-[e $ ! == -> F16579 `i -> 1 `i 2203  ]
-"22
-[; ;UART_int.c: 22:     {
-{
 "23
-[; ;UART_int.c: 23:         status++;
-[e ++ F16579 -> -> 1 `i `uc ]
+[; ;UART_int.c: 23:     static enum State status = WaitOpcode_1;
+[v F16675 `E16662 ~T0 @X0 1 s status ]
+[i F16675
+. `E16662 0
+]
 "24
-[; ;UART_int.c: 24:         mesage = UART1_Read();
-[e = F16581 -> ( _UART1_Read ..  `us ]
+[; ;UART_int.c: 24:     static enum Operation OperationV = Write;
+[v F16676 `E16668 ~T0 @X0 1 s OperationV ]
+[i F16676
+. `E16668 0
+]
 "25
-[; ;UART_int.c: 25:     }
-}
-[e $U 2204  ]
-"26
-[; ;UART_int.c: 26:     else if(status == 2)
-[e :U 2203 ]
-[e $ ! == -> F16579 `i -> 2 `i 2205  ]
+[; ;UART_int.c: 25:     static enum OpType TypeV = Byte;
+[v F16677 `E16671 ~T0 @X0 1 s TypeV ]
+[i F16677
+. `E16671 0
+]
 "27
-[; ;UART_int.c: 27:     {
-{
+[; ;UART_int.c: 27:     static uint8_t Addres = 0;
+[v F16678 `uc ~T0 @X0 1 s Addres ]
+[i F16678
+-> -> 0 `i `uc
+]
 "28
-[; ;UART_int.c: 28:         status = 0;
-[e = F16579 -> -> 0 `i `uc ]
-"29
-[; ;UART_int.c: 29:         mesage = (mesage << 8) + UART1_Read();
-[e = F16581 -> + << -> F16581 `ui -> 8 `i -> ( _UART1_Read ..  `ui `us ]
+[; ;UART_int.c: 28:     static uint8_t Value = 0;
+[v F16679 `uc ~T0 @X0 1 s Value ]
+[i F16679
+-> -> 0 `i `uc
+]
 "30
-[; ;UART_int.c: 30:         if(opcode == 1)
-[e $ ! == -> F16580 `i -> 1 `i 2206  ]
+[; ;UART_int.c: 30:     if(U1RXB == '\n')
+[e $ ! == -> _U1RXB `ui -> 10 `ui 2203  ]
 "31
-[; ;UART_int.c: 31:         {
+[; ;UART_int.c: 31:     {
 {
 "32
-[; ;UART_int.c: 32:             PERIOD = mesage;
-[e = _PERIOD F16581 ]
+[; ;UART_int.c: 32:         status = WaitOpcode_1;
+[e = F16675 . `E16662 0 ]
 "33
-[; ;UART_int.c: 33:         }
-}
-[e :U 2206 ]
+[; ;UART_int.c: 33:         return;
+[e $UE 2202  ]
 "34
 [; ;UART_int.c: 34:     }
 }
-[e :U 2205 ]
-[e :U 2204 ]
-[e :U 2202 ]
+[e :U 2203 ]
 "36
-[; ;UART_int.c: 36: }
-[e :UE 2200 ]
+[; ;UART_int.c: 36:     if(status == WaitOpcode_1)
+[e $ ! == -> F16675 `ui -> . `E16662 0 `ui 2204  ]
+"37
+[; ;UART_int.c: 37:     {
+{
+"38
+[; ;UART_int.c: 38:         if(U1RXB == 'W' || U1RXB == 'w')
+[e $ ! || == -> _U1RXB `ui -> 87 `ui == -> _U1RXB `ui -> 119 `ui 2205  ]
+"39
+[; ;UART_int.c: 39:         {
+{
+"40
+[; ;UART_int.c: 40:             OperationV = Write;
+[e = F16676 . `E16668 0 ]
+"42
+[; ;UART_int.c: 42:         }
+}
+[e $U 2206  ]
+"43
+[; ;UART_int.c: 43:         else if(U1RXB == 'R' || U1RXB == 'r')
+[e :U 2205 ]
+[e $ ! || == -> _U1RXB `ui -> 82 `ui == -> _U1RXB `ui -> 114 `ui 2207  ]
+"44
+[; ;UART_int.c: 44:         {
+{
+"45
+[; ;UART_int.c: 45:             OperationV = Read;
+[e = F16676 . `E16668 1 ]
+"46
+[; ;UART_int.c: 46:         }
+}
+[e $U 2208  ]
+"47
+[; ;UART_int.c: 47:         else
+[e :U 2207 ]
+"48
+[; ;UART_int.c: 48:         {
+{
+"49
+[; ;UART_int.c: 49:             errorMessage();
+[e ( _errorMessage ..  ]
+"50
+[; ;UART_int.c: 50:             return;
+[e $UE 2202  ]
+"51
+[; ;UART_int.c: 51:         }
+}
+[e :U 2208 ]
+[e :U 2206 ]
+"53
+[; ;UART_int.c: 53:         status = WaitOpcode_2;
+[e = F16675 . `E16662 1 ]
+"54
+[; ;UART_int.c: 54:         return;
+[e $UE 2202  ]
+"56
+[; ;UART_int.c: 56:     }
+}
+[e :U 2204 ]
+"57
+[; ;UART_int.c: 57:     if(status == WaitOpcode_2)
+[e $ ! == -> F16675 `ui -> . `E16662 1 `ui 2209  ]
+"58
+[; ;UART_int.c: 58:     {
+{
+"59
+[; ;UART_int.c: 59:         if(U1RXB == 'B' || U1RXB == 'b')
+[e $ ! || == -> _U1RXB `ui -> 66 `ui == -> _U1RXB `ui -> 98 `ui 2210  ]
+"60
+[; ;UART_int.c: 60:         {
+{
+"61
+[; ;UART_int.c: 61:             TypeV = Byte;
+[e = F16677 . `E16671 0 ]
+"62
+[; ;UART_int.c: 62:         }
+}
+[e $U 2211  ]
+"63
+[; ;UART_int.c: 63:         else if(U1RXB == 'S' || U1RXB == 's')
+[e :U 2210 ]
+[e $ ! || == -> _U1RXB `ui -> 83 `ui == -> _U1RXB `ui -> 115 `ui 2212  ]
+"64
+[; ;UART_int.c: 64:         {
+{
+"65
+[; ;UART_int.c: 65:             TypeV = String;
+[e = F16677 . `E16671 1 ]
+"66
+[; ;UART_int.c: 66:         }
+}
+[e $U 2213  ]
+"67
+[; ;UART_int.c: 67:         else
+[e :U 2212 ]
+"68
+[; ;UART_int.c: 68:         {
+{
+"69
+[; ;UART_int.c: 69:             status = WaitOpcode_1;
+[e = F16675 . `E16662 0 ]
+"70
+[; ;UART_int.c: 70:             errorMessage();
+[e ( _errorMessage ..  ]
+"71
+[; ;UART_int.c: 71:             return;
+[e $UE 2202  ]
+"72
+[; ;UART_int.c: 72:         }
+}
+[e :U 2213 ]
+[e :U 2211 ]
+"74
+[; ;UART_int.c: 74:         status = WaitAddres_1;
+[e = F16675 . `E16662 2 ]
+"75
+[; ;UART_int.c: 75:         return;
+[e $UE 2202  ]
+"76
+[; ;UART_int.c: 76:     }
+}
+[e :U 2209 ]
+"78
+[; ;UART_int.c: 78:     if(status == WaitAddres_1)
+[e $ ! == -> F16675 `ui -> . `E16662 2 `ui 2214  ]
+"79
+[; ;UART_int.c: 79:     {
+{
+"80
+[; ;UART_int.c: 80:         Addres = U1RXB << 8;
+[e = F16678 -> << -> _U1RXB `i -> 8 `i `uc ]
+"81
+[; ;UART_int.c: 81:         status == WaitAddres_2;
+[e == -> F16675 `ui -> . `E16662 3 `ui ]
+"82
+[; ;UART_int.c: 82:         return;
+[e $UE 2202  ]
+"83
+[; ;UART_int.c: 83:     }
+}
+[e :U 2214 ]
+"84
+[; ;UART_int.c: 84:     if(status == WaitAddres_2)
+[e $ ! == -> F16675 `ui -> . `E16662 3 `ui 2215  ]
+"85
+[; ;UART_int.c: 85:     {
+{
+"86
+[; ;UART_int.c: 86:         Addres |= U1RXB;
+[e =| F16678 -> _U1RXB `uc ]
+"87
+[; ;UART_int.c: 87:         status == WaitValue;
+[e == -> F16675 `ui -> . `E16662 4 `ui ]
+"88
+[; ;UART_int.c: 88:         return;
+[e $UE 2202  ]
+"89
+[; ;UART_int.c: 89:     }
+}
+[e :U 2215 ]
+"90
+[; ;UART_int.c: 90:     if(status == WaitValue)
+[e $ ! == -> F16675 `ui -> . `E16662 4 `ui 2216  ]
+"91
+[; ;UART_int.c: 91:     {
+{
+"92
+[; ;UART_int.c: 92:         if(OperationV == Write && TypeV == Byte)
+[e $ ! && == -> F16676 `ui -> . `E16668 0 `ui == -> F16677 `ui -> . `E16671 0 `ui 2217  ]
+"93
+[; ;UART_int.c: 93:         {
+{
+"94
+[; ;UART_int.c: 94:             WriteMemory(Addres, U1RXB);
+[e ( _WriteMemory (2 , -> F16678 `s -> _U1RXB `c ]
+"95
+[; ;UART_int.c: 95:         }
+}
+[e $U 2218  ]
+"96
+[; ;UART_int.c: 96:         else if(OperationV == Write && TypeV == String)
+[e :U 2217 ]
+[e $ ! && == -> F16676 `ui -> . `E16668 0 `ui == -> F16677 `ui -> . `E16671 1 `ui 2219  ]
+"97
+[; ;UART_int.c: 97:         {
+{
+"98
+[; ;UART_int.c: 98:             WriteMemory(Addres++, U1RXB);
+[e ( _WriteMemory (2 , -> ++ F16678 -> -> 1 `i `uc `s -> _U1RXB `c ]
+"99
+[; ;UART_int.c: 99:         }
+}
+[e $U 2220  ]
+"100
+[; ;UART_int.c: 100:         else if(OperationV == Read && TypeV == Byte)
+[e :U 2219 ]
+[e $ ! && == -> F16676 `ui -> . `E16668 1 `ui == -> F16677 `ui -> . `E16671 0 `ui 2221  ]
+"101
+[; ;UART_int.c: 101:         {
+{
+"102
+[; ;UART_int.c: 102:             ReadMemory(Addres);
+[e ( _ReadMemory (1 -> F16678 `s ]
+"103
+[; ;UART_int.c: 103:         }
+}
+[e $U 2222  ]
+"104
+[; ;UART_int.c: 104:         else if(OperationV == Read && TypeV == String)
+[e :U 2221 ]
+[e $ ! && == -> F16676 `ui -> . `E16668 1 `ui == -> F16677 `ui -> . `E16671 1 `ui 2223  ]
+"105
+[; ;UART_int.c: 105:         {
+{
+"106
+[; ;UART_int.c: 106:             ReadMemory(Addres++);
+[e ( _ReadMemory (1 -> ++ F16678 -> -> 1 `i `uc `s ]
+"107
+[; ;UART_int.c: 107:         }
+}
+[e :U 2223 ]
+[e :U 2222 ]
+[e :U 2220 ]
+[e :U 2218 ]
+"108
+[; ;UART_int.c: 108:         return;
+[e $UE 2202  ]
+"109
+[; ;UART_int.c: 109:     }
+}
+[e :U 2216 ]
+"112
+[; ;UART_int.c: 112: }
+[e :UE 2202 ]
 }

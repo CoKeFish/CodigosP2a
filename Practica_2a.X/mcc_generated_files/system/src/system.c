@@ -39,6 +39,7 @@ void SYSTEM_Initialize(void)
     PIN_MANAGER_Initialize();
     ADCC_Initialize();
     FVR_Initialize();
+    I2C1_Host_Initialize();
     SPI1_Initialize();
     Timer_Initialize();
     Timer2_Initialize();

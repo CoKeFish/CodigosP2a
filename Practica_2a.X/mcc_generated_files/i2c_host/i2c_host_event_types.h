@@ -1,14 +1,15 @@
 /**
- * System Driver Header File
- * 
- * @file system.h
- * 
- * @defgroup systemdriver System Driver
- * 
- * @brief This is the generated header file for the System driver.
+ * I2C Generated Driver Event Header File
  *
- * @version Driver Version 1.0.0
-*/
+ * @file i2c_host_event_types.h
+ *
+ * @defgroup i2c_host_events I2C_HOST_EVENTS
+ *
+ * @brief This file contains other data types for I2C module.
+ *
+ * @version I2C Driver Version 2.1.0
+ */
+
 /*
 © [2023] Microchip Technology Inc. and its subsidiaries.
 
@@ -30,36 +31,26 @@
     THIS SOFTWARE.
 */
 
-#ifndef SYSTEM_H
-#define	SYSTEM_H
+#ifndef I2C_EVENT_TYPES_H
+#define	I2C_EVENT_TYPES_H
 
-#include <xc.h>
-#include <stdint.h>
-#include <stdbool.h>
-//#include <stdio.h>
-#include "config_bits.h"
-#include "../system/clock.h"
-#include "../system/pins.h"
-#include "../adc/adcc.h"
-#include "../fvr/fvr.h"
-#include "../i2c_host/i2c1.h"
-#include "../spi/spi1.h"
-#include "../timer/tmr0.h"
-#include "../timer/tmr2.h"
-#include "../uart/uart1.h"
-#include "../peripheral/uart2.h"
-#include "../system/interrupt.h"
+#include "i2c_host_types.h"
 
 /**
- * @ingroup systemdriver
- * @brief Initializes the system module.
- * This routine is called only once during system initialization, before calling other APIs.
- * @param None.
- * @return None.
-*/
-void SYSTEM_Initialize(void);
+ * @ingroup i2c_host_events
+ * @struct i2c_host_event_status_t
+ * @brief I2C Event Status Structure
+ */
+typedef struct
+{
+    bool busy; /**< Software busy flag*/
+    uint16_t address; /**< Pointer to write buffer*/
+    uint8_t *writePtr; /**< Pointer to write buffer*/
+    size_t writeLength; /**< Write buffer length*/
+    uint8_t *readPtr; /**< Pointer to read buffer*/
+    size_t readLength; /**< Read buffer length*/
+    bool switchToRead; /**< Switch i2c write to read mode*/
+    i2c_host_error_t errorState; /**< Error State*/
+} i2c_host_event_status_t;
 
-#endif	/* SYSTEM_H */
-/**
- End of File
-*/
+#endif /* end of I2C_EVENT_TYPES_H */
